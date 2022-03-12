@@ -99,5 +99,37 @@ namespace Proyecto_Xarxa_Desktop.modelo
             get { return _perteneceXarxa; }
             set { SetProperty(ref _perteneceXarxa, value); }
         }
+
+        // Constructor sin lote
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, DateTime fechaNacimiento, EstadoMatricula matricula, string curso, string grupo, string incidencias, bool perteneceXarxa)
+        {
+            Nia = nia;
+            Nombre = nombre;
+            Apellido1 = apellido1;
+            Apellido2 = apellido2;
+            FechaNacimiento = fechaNacimiento;
+            Matricula = matricula;
+            Curso = curso;
+            Grupo = grupo;
+            Incidencias = incidencias;
+            PerteneceXarxa = perteneceXarxa;
+        }
+
+        // Constructor sin lote y sin PerteneceXarxa
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, DateTime fechaNacimiento, EstadoMatricula matricula, string curso, string grupo, string incidencias)
+        {
+            Nia = nia;
+            Nombre = nombre;
+            Apellido1 = apellido1;
+            Apellido2 = apellido2;
+            FechaNacimiento = fechaNacimiento;
+            Matricula = matricula;
+            Curso = curso;
+            Grupo = grupo;
+            Incidencias = incidencias;
+        }
+        public Alumno()
+        {
+        }
     }
 }
