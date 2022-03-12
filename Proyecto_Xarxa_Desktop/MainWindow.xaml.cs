@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Xarxa_Desktop.servicios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Proyecto_Xarxa_Desktop
         public MainWindow()
         {
             InitializeComponent();
+            ServicioCsv.LeeCsv();
         }
     }
 }
