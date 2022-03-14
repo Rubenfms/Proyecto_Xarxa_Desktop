@@ -26,9 +26,21 @@ namespace Proyecto_Xarxa_Desktop.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("../../data/todos.csv")]
-        public string UbicacionCsv {
+        public string UbicacionCsvListaAlumnosGeneral {
             get {
-                return ((string)(this["UbicacionCsv"]));
+                return ((string)(this["UbicacionCsvListaAlumnosGeneral"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("../../data/alumnosxarxa.csv")]
+        public string UbicacionCsvListaAlumnosXarxa {
+            get {
+                return ((string)(this["UbicacionCsvListaAlumnosXarxa"]));
+            }
+            set {
+                this["UbicacionCsvListaAlumnosXarxa"] = value;
             }
         }
     }

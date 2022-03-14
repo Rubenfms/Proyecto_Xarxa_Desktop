@@ -1,6 +1,8 @@
-﻿using Proyecto_Xarxa_Desktop.servicios;
+﻿using Proyecto_Xarxa_Desktop.modelo;
+using Proyecto_Xarxa_Desktop.servicios;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +26,8 @@ namespace Proyecto_Xarxa_Desktop
         public MainWindow()
         {
             InitializeComponent();
-            ServicioCsv.LeeCsv();
+
+            ObservableCollection<Alumno> listaAlumnos = ServicioCsv.GetListaAlumnos();
         }
     }
 }

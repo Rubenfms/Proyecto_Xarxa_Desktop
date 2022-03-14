@@ -82,6 +82,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="servicios\ServicioCsv.cs" />
+    <Compile Include="servicios\ServicioDialogos.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -119,6 +120,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="data\alumnosxarxa.csv" />
     <None Include="data\todos.csv" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
