@@ -1,5 +1,6 @@
 ﻿using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
+using Proyecto_Xarxa_Desktop.vistas;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -28,6 +29,7 @@ namespace Proyecto_Xarxa_Desktop
             InitializeComponent();
 
             ObservableCollection<Alumno> listaAlumnos = ServicioCsv.GetListaAlumnos();
+            new LogIn().Show();
         }
     }
 }

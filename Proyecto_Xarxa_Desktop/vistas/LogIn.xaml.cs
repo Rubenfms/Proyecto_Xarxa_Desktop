@@ -15,13 +15,24 @@ using System.Windows.Shapes;
 namespace Proyecto_Xarxa_Desktop.vistas
 {
     /// <summary>
-    /// Lógica de interacción para LogIn.xaml
+    /// Lógica de interacción para LogIn2.xaml
     /// </summary>
     public partial class LogIn : Window
     {
         public LogIn()
         {
             InitializeComponent();
+        }
+
+        private void EntrarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // Hace se pueda arrastrar la pantalla
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }

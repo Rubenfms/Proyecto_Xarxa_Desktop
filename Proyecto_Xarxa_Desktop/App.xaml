@@ -4,6 +4,23 @@
              xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" /> -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Primary -->
+            <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#F9AA33" />
+            <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="Blue" />
+            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#F9AA33" />
+            <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush" Color="#232f34" />
+            <SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="Green" />
+            <SolidColorBrush x:Key="PrimaryHueDarkForegroundBrush" Color="Brown" />
+            <!-- Accent -->
+            <SolidColorBrush x:Key="SecondaryAccentBrush" Color="Blue" />
+            <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="Blue" />
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

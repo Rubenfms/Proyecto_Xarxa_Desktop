@@ -4,25 +4,52 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="LogIn" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition Width="2*" />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+        Title="LogIn2" Height="450" Width="800">
 
-        </Grid.RowDefinitions>
-
-        <TextBlock Text="Gestor Xarxa" Grid.Column="1" Grid.Row="0" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <StackPanel Grid.Column="1" Grid.Row="1">
-            <TextBlock Text="Usuario" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35"/>
-            <TextBox />
-        </StackPanel>
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Foreground" Value="#4A6572" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+    </Window.Resources>
+    <Grid MouseDown="Grid_MouseDown">
+        <Grid.Background>
+            <SolidColorBrush Color="#F9AA33" />
+        </Grid.Background>
+        <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#232f34">
+            <StackPanel Orientation="Horizontal">
+                <!-- StackPanel izquierdo para la imagen-->
+                <StackPanel Width="350">
+                    <Image Source="/assets/xarxa.png" Margin="30,120,0,0"/>
+                </StackPanel>
+                <!-- StackPanel derecho con el formulario-->
+                <StackPanel Width="350">
+                    <StackPanel Margin="40,20,0,0">
+                        <TextBlock Text=" Gestor Xarxa" FontSize="38" HorizontalAlignment="Center" FontFamily="Great Vibes"/>
+                        <!-- Entrada Username-->
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="User" Width="40" Height="40" Foreground="#4A6572"/>
+                            <TextBox x:Name="UsernameTextBox" materialDesign:HintAssist.Hint="Introduzca su nombre de usuario" Foreground="#4A6572" 
+                                     Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="#4A6572" 
+                                     SelectionBrush="#F9AA33" Width="250"/>
+                        </StackPanel>
+                        <!-- Entrada Contraseña-->
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon Kind="Password" Width="40" Height="40" Foreground="#4A6572"/>
+                            <PasswordBox x:Name="PasswordTextBox" materialDesign:HintAssist.Hint="********" Foreground="#4A6572" Width="250"
+                                     Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" BorderBrush="#4A6572" SelectionBrush="#F9AA33"/>
+                        </StackPanel>
+                        <!-- Botón Entrar-->
+                        <StackPanel Orientation="Vertical" Margin="10">
+                            <Button x:Name="EntrarButton" HorizontalAlignment="Center" Style="{StaticResource MaterialDesignRaisedButton}"
+                                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#232f34" 
+                                    ToolTip="Entrar al sistema" Content="Entrar" Click="EntrarButton_Click" IsDefault="True"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
