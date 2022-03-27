@@ -30,7 +30,7 @@ namespace Proyecto_Xarxa_Desktop
         {
             InitializeComponent();
             DataContext = vm;
-            ObservableCollection<Alumno> listaAlumnos = ServicioCsv.GetListaAlumnos();
+            ServicioCargarDatos.CargarDatos();
         }
 
         // Evento para salir de la aplicación
