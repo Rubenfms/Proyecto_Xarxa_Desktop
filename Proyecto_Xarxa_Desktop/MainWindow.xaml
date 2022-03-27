@@ -6,9 +6,11 @@
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="MainWindow"
+    Title="Inicio"
     Width="1080"
     Height="600"
+    MinWidth="1080"
+    MinHeight="600"
     mc:Ignorable="d">
 
     <Window.Resources>
@@ -86,7 +88,7 @@
             </StackPanel>
             <!--  Lista de opciones Ventanas  -->
             <ListView Foreground="#F9AA33" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
-                <ListViewItem Height="60">
+                <ListViewItem Height="60" MouseDoubleClick="Lotes_MouseDoubleClick">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon
                             Width="25"
@@ -162,7 +164,7 @@
             <TextBlock
                 VerticalAlignment="Center"
                 DockPanel.Dock="Right"
-                Text="Usuario?" />
+                Text="Usuario" />
             <!--  Barra de búsqueda es el último hijo para que rellene y quede centrada  -->
             <TextBox
                 Width="400"
@@ -175,6 +177,6 @@
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
         </DockPanel>
 
-        <StackPanel Background="#4A6572" />
+        <ContentControl Content="{Binding Path=PestanyaActual}" />
     </DockPanel>
 </Window>
