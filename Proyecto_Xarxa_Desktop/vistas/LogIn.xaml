@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="LogIn2" Height="450" Width="800">
+        Title="Log In Xarxa" Height="450" Width="800" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen" >
 
     <Window.Resources>
         <Style TargetType="{x:Type TextBlock}">
@@ -16,7 +16,11 @@
     </Window.Resources>
     <Grid MouseDown="Grid_MouseDown">
         <Grid.Background>
-            <SolidColorBrush Color="#F9AA33" />
+            <!--<SolidColorBrush Color="#F9AA33" />-->
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop Color="#F9AA33" Offset="1" />
+                <GradientStop Color="#232f34" Offset="0" />
+            </LinearGradientBrush>
         </Grid.Background>
         <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#232f34">
             <StackPanel Orientation="Horizontal">
