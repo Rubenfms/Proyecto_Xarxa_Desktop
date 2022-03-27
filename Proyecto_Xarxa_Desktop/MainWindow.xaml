@@ -1,13 +1,180 @@
-﻿<Window x:Class="Proyecto_Xarxa_Desktop.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
-        mc:Ignorable="d"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+﻿<Window
+    x:Class="Proyecto_Xarxa_Desktop.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="1080"
+    Height="600"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <!--  Estilo genérico para los textblock  -->
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Foreground" Value="#4A6572" />
+        </Style>
+
+        <!--  Estilo para los iconos del menú lateral  -->
+        <!--<Style x:Key="EstiloIconosMenuLateral" TargetType="{x:Type materialDesign:PackIcon}" >
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="Width" Value="25" />
+            <Setter Property="Height" Value="25" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>-->
+        <!--  Evento para abrir el menú lateral (sube de 70 width a 200)  -->
+        <Storyboard x:Key="AbrirMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MenuLateralStackPanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="60" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <!--  Evento para cerrar el menú lateral (baja de 200 width a 70)  -->
+        <Storyboard x:Key="CerrarMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MenuLateralStackPanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="200" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+    </Window.Resources>
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="AbrirMenuButton">
+            <BeginStoryboard Storyboard="{StaticResource AbrirMenu}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="CerrarMenuButton">
+            <BeginStoryboard Storyboard="{StaticResource CerrarMenu}" />
+        </EventTrigger>
+    </Window.Triggers>
+    <DockPanel>
+        <!--  StackPanel Barra Lateral  -->
+        <StackPanel
+            x:Name="MenuLateralStackPanel"
+            Width="60"
+            Background="#232f34"
+            DockPanel.Dock="Left"
+            Orientation="Vertical">
+            <!--  Primer Contenedor con el botón para desplegar y la foto  -->
+            <StackPanel Height="150" Background="#F9AA33">
+                <Button
+                    x:Name="CerrarMenuButton"
+                    HorizontalAlignment="Right"
+                    Background="{x:Null}"
+                    BorderBrush="{x:Null}"
+                    Click="CerrarMenuButton_Click"
+                    Visibility="Collapsed">
+                    <materialDesign:PackIcon Kind="ArrowLeft" />
+                </Button>
+                <Button
+                    x:Name="AbrirMenuButton"
+                    HorizontalAlignment="Right"
+                    Background="{x:Null}"
+                    BorderBrush="{x:Null}"
+                    Click="AbrirMenuButton_Click">
+                    <materialDesign:PackIcon Kind="Menu" />
+                </Button>
+                <Image
+                    x:Name="BalmisImagen"
+                    Margin="10"
+                    Source="/assets/logo_ies.png"
+                    Visibility="Collapsed" />
+            </StackPanel>
+            <!--  Lista de opciones Ventanas  -->
+            <ListView Foreground="#F9AA33" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Width="25"
+                            Height="25"
+                            Margin="10"
+                            Foreground="#F9AA33"
+                            Kind="ViewDashboard" />
+                        <TextBlock Margin="10,0,0,0" Text="Item One" />
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Width="25"
+                            Height="25"
+                            Margin="10"
+                            Foreground="#F9AA33"
+                            Kind="Pencil" />
+                        <TextBlock Margin="10,0,0,0" Text="Item Two" />
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Width="25"
+                            Height="25"
+                            Margin="10"
+                            Foreground="#F9AA33"
+                            Kind="About" />
+                        <TextBlock Margin="10,0,0,0" Text="Item Three" />
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Width="25"
+                            Height="25"
+                            Margin="10"
+                            Foreground="#F9AA33"
+                            Kind="Message" />
+                        <TextBlock Margin="10,0,0,0" Text="Item Four" />
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+        </StackPanel>
+        <!--  Dock Panel Parte de Arriba con la barra de búsqueda  -->
+        <DockPanel
+            Height="70"
+            Background="#232f34"
+            DockPanel.Dock="Top"
+            LastChildFill="True">
+            <materialDesign:PopupBox
+                DockPanel.Dock="Right"
+                Foreground="#4A6572"
+                PlacementMode="BottomAndAlignRightEdges"
+                StaysOpen="False">
+                <StackPanel>
+                    <Button Content="Cuenta" />
+                    <Button Content="Opciones SuperUser" />
+                    <Button Content="Ayuda" />
+                    <Separator />
+                    <Button
+                        x:Name="CerrarSesionButton"
+                        Click="CerrarSesionButton_Click"
+                        Content="Cerrar Sesión" />
+                    <Button
+                        x:Name="SalirButton"
+                        Click="SalirButton_Click"
+                        Content="Salir Aplicación" />
+                </StackPanel>
+            </materialDesign:PopupBox>
+
+            <TextBlock
+                VerticalAlignment="Center"
+                DockPanel.Dock="Right"
+                Text="Usuario?" />
+            <!--  Barra de búsqueda es el último hijo para que rellene y quede centrada  -->
+            <TextBox
+                Width="400"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                materialDesign:HintAssist.Hint="Introduce algo para buscar..."
+                BorderBrush="#4A6572"
+                FontSize="18"
+                Foreground="#4A6572"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        </DockPanel>
+
+        <StackPanel Background="#4A6572" />
+    </DockPanel>
 </Window>

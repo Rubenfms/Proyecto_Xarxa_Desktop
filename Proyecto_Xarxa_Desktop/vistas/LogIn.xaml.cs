@@ -26,7 +26,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
 
         private void EntrarButton_Click(object sender, RoutedEventArgs e)
         {
-
+            new MainWindow().Show();
         }
 
         // Hace se pueda arrastrar la pantalla

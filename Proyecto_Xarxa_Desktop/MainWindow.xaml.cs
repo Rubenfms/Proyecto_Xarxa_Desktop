@@ -31,5 +31,30 @@ namespace Proyecto_Xarxa_Desktop
             ObservableCollection<Alumno> listaAlumnos = ServicioCsv.GetListaAlumnos();
             new LogIn().Show();
         }
+
+        private void SalirButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void CerrarSesionButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CerrarMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            AbrirMenuButton.Visibility = Visibility.Visible;
+            CerrarMenuButton.Visibility = Visibility.Collapsed;
+            BalmisImagen.Visibility = Visibility.Collapsed;
+        }
+
+        private void AbrirMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            CerrarMenuButton.Visibility = Visibility.Visible;
+            AbrirMenuButton.Visibility = Visibility.Collapsed;
+            BalmisImagen.Visibility = Visibility.Visible;
+
+        }
     }
 }
