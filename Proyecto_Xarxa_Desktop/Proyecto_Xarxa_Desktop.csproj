@@ -92,7 +92,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="convertidores\IdModalidadToNombre.cs" />
     <Compile Include="servicios\ServicioAPI.cs" />
+    <Compile Include="servicios\ServicioCargarDatos.cs" />
     <Compile Include="servicios\ServicioCsv.cs" />
     <Compile Include="servicios\ServicioDialogos.cs" />
     <Compile Include="servicios\ServicioNavegacion.cs" />

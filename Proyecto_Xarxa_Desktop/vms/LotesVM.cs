@@ -20,9 +20,18 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref listaLotes, value); }
         }
 
+        private Lote loteSeleccionado;
+
+        public Lote LoteSeleccionado
+        {
+            get { return loteSeleccionado; }
+            set { SetProperty(ref loteSeleccionado, value); }
+        }
+
         public LotesVM()
         {
             listaLotes = ServicioAPI.GetLotes();
+            LoteSeleccionado = new Lote();
         }
     }
 }
