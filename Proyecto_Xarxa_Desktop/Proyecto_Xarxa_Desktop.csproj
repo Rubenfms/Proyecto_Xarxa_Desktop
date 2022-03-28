@@ -93,17 +93,20 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="convertidores\IdModalidadToNombre.cs" />
+    <Compile Include="modelo\Usuario.cs" />
     <Compile Include="servicios\ServicioAPI.cs" />
     <Compile Include="servicios\ServicioCargarDatos.cs" />
     <Compile Include="servicios\ServicioCsv.cs" />
     <Compile Include="servicios\ServicioDialogos.cs" />
     <Compile Include="servicios\ServicioNavegacion.cs" />
+    <Compile Include="servicios\ServicioValidarUsuario.cs" />
     <Compile Include="vistas\LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistas\LotesUserControl.xaml.cs">
       <DependentUpon>LotesUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vms\LogInVM.cs" />
     <Compile Include="vms\LotesVM.cs" />
     <Compile Include="vms\MainWindowVM.cs" />
     <Page Include="MainWindow.xaml">

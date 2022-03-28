@@ -16,6 +16,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
     {
         private static ObservableCollection<Lote> listaLotes = new ObservableCollection<Lote>();
         private static ObservableCollection<Modalidad> listaModalidades = new ObservableCollection<Modalidad>();
+        private static ObservableCollection<Usuario> listaUsuarios = new ObservableCollection<Usuario>();
         public static ObservableCollection<Lote> GetLotes()
         {
             var url = $"http://localhost:8081/apixarxa/xarxa/lotes";
@@ -66,6 +67,35 @@ namespace Proyecto_Xarxa_Desktop.servicios
                             string responseBody = objReader.ReadToEnd();
                             listaModalidades = JsonConvert.DeserializeObject<ObservableCollection<Modalidad>>(responseBody);
                             return listaModalidades;
+                        }
+                    }
+                }
+            }
+            catch (WebException ex)
+            {
+                return null;
+            }
+        }
+
+        public static ObservableCollection<Usuario> GetUsuarios()
+        {
+            var url = $"http://localhost:8081/apixarxa/xarxa/usuarios";
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            request.ContentType = "application/json";
+            request.Accept = "application/json";
+            try
+            {
+                using (WebResponse response = request.GetResponse())
+                {
+                    using (Stream strReader = response.GetResponseStream())
+                    {
+                        if (strReader == null) return null;
+                        using (StreamReader objReader = new StreamReader(strReader))
+                        {
+                            string responseBody = objReader.ReadToEnd();
+                            listaUsuarios = JsonConvert.DeserializeObject<ObservableCollection<Usuario>>(responseBody);
+                            return listaUsuarios;
                         }
                     }
                 }

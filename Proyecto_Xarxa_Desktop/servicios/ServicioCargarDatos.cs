@@ -34,11 +34,20 @@ namespace Proyecto_Xarxa_Desktop.servicios
             set { listaModalidades = value; }
         }
 
+        private static ObservableCollection<Usuario> listaUsuarios;
+
+        public static ObservableCollection<Usuario> ListaUsuarios
+        {
+            get { return listaUsuarios; }
+            set { listaUsuarios = value; }
+        }
+
+
         public static void CargarDatos()
         {
             ListaAlumnos = ServicioCsv.GetListaAlumnos();
-            ListaLotes = ServicioAPI.GetLotes();
             ListaModalidades = ServicioAPI.GetModalidades();
+            ListaUsuarios = ServicioAPI.GetUsuarios();
         }
     }
 }

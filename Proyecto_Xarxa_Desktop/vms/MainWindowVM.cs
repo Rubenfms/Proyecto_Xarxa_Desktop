@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,14 @@ namespace Proyecto_Xarxa_Desktop.vms
 {
     class MainWindowVM : ObservableObject
     {
+        private Usuario usuarioLogeado;
+
+        public Usuario UsuarioLogeado
+        {
+            get { return usuarioLogeado; }
+            set { SetProperty(ref usuarioLogeado, value); }
+        }
+
         private UserControl pestanyaActual;
 
         public UserControl PestanyaActual
@@ -23,6 +32,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             // Instancia vacía para que al iniciar el programa no aparezca ningún UserControl seleccionado
             PestanyaActual = new UserControl();
+            UsuarioLogeado = ServicioValidarUsuario.UsuarioActual;
         }
 
         public void AbrirVistaLotes() => PestanyaActual = ServicioNavegacion.AbrirVistaLotes();

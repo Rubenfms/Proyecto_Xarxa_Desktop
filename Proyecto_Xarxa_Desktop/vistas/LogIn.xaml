@@ -32,7 +32,7 @@
         <Border
             Height="390"
             VerticalAlignment="Top"
-            Background="#232f34"
+            Background="white"
             CornerRadius="0 0 180 0">
             <StackPanel Orientation="Horizontal">
                 <!--  StackPanel izquierdo para la imagen  -->
@@ -61,7 +61,8 @@
                                 BorderBrush="#4A6572"
                                 Foreground="#4A6572"
                                 SelectionBrush="#F9AA33"
-                                Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                                Text="{Binding Path=UsuarioXarxa.NombreUsuario}" />
                         </StackPanel>
                         <!--  Entrada Contraseña  -->
                         <StackPanel Margin="10" Orientation="Horizontal">
@@ -70,14 +71,15 @@
                                 Height="40"
                                 Foreground="#4A6572"
                                 Kind="Password" />
-                            <PasswordBox
+                            <TextBox
                                 x:Name="PasswordTextBox"
+                                Text="{Binding Path=UsuarioXarxa.Contrasenya}" 
                                 Width="250"
                                 materialDesign:HintAssist.Hint="********"
                                 BorderBrush="#4A6572"
                                 Foreground="#4A6572"
-                                SelectionBrush="#F9AA33"
-                                Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
+                                SelectionBrush="#F9AA33"/>
+                            <!--  ="{StaticResource MaterialDesignFloatingHintPasswordBox}" />  -->
                         </StackPanel>
                         <!--  Botón Entrar  -->
                         <StackPanel Margin="10" Orientation="Vertical">
