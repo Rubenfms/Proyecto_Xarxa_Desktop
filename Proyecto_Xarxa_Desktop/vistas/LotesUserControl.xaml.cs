@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Xarxa_Desktop.vms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,29 +11,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Proyecto_Xarxa_Desktop.vistas
 {
     /// <summary>
-    /// Lógica de interacción para LogIn2.xaml
+    /// Lógica de interacción para LotesUserControl.xaml
     /// </summary>
-    public partial class LogIn : Window
+    public partial class LotesUserControl : UserControl
     {
-        public LogIn()
+        private LotesVM vm = new LotesVM();
+        public LotesUserControl()
         {
             InitializeComponent();
-        }
-
-        private void EntrarButton_Click(object sender, RoutedEventArgs e)
-        {
-            new MainWindow().Show();
-        }
-
-        // Hace se pueda arrastrar la pantalla
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            DragMove();
+            DataContext = vm;
         }
     }
 }

@@ -17,6 +17,10 @@ namespace Proyecto_Xarxa_Desktop.modelo
             LibrosLote = librosLote;
         }
 
+        public Lote()
+        {
+        }
+
         private int _idLote;
 
         public int IdLote

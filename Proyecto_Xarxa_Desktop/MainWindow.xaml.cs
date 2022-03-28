@@ -1,6 +1,7 @@
 ﻿using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using Proyecto_Xarxa_Desktop.vistas;
+using Proyecto_Xarxa_Desktop.vms;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -24,12 +25,37 @@ namespace Proyecto_Xarxa_Desktop
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MainWindowVM vm = new MainWindowVM();
         public MainWindow()
         {
             InitializeComponent();
-
-            ObservableCollection<Alumno> listaAlumnos = ServicioCsv.GetListaAlumnos();
-            new LogIn().Show();
+            DataContext = vm;
+            ServicioCargarDatos.CargarDatos();
         }
+
+        // Evento para salir de la aplicación
+        private void SalirButton_Click(object sender, RoutedEventArgs e) => Application.Current.Shutdown();
+
+        private void CerrarSesionButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CerrarMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            AbrirMenuButton.Visibility = Visibility.Visible;
+            CerrarMenuButton.Visibility = Visibility.Collapsed;
+            BalmisImagen.Visibility = Visibility.Collapsed;
+        }
+
+        private void AbrirMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            CerrarMenuButton.Visibility = Visibility.Visible;
+            AbrirMenuButton.Visibility = Visibility.Collapsed;
+            BalmisImagen.Visibility = Visibility.Visible;
+
+        }
+
+        private void Lotes_MouseDoubleClick(object sender, MouseButtonEventArgs e) => vm.AbrirVistaLotes();
     }
 }
