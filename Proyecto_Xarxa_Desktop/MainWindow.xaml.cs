@@ -30,7 +30,6 @@ namespace Proyecto_Xarxa_Desktop
         {
             InitializeComponent();
             DataContext = vm;
-            ServicioCargarDatos.CargarDatos();
         }
 
         // Evento para salir de la aplicación
@@ -55,7 +54,6 @@ namespace Proyecto_Xarxa_Desktop
             BalmisImagen.Visibility = Visibility.Visible;
 
         }
-
-        private void Lotes_MouseDoubleClick(object sender, MouseButtonEventArgs e) => vm.AbrirVistaLotes();
+        private void ListViewItem_Selected(object sender, RoutedEventArgs e) => vm.AbrirVistaLotes();
     }
 }

@@ -1,5 +1,9 @@
-﻿using System;
+﻿using Proyecto_Xarxa_Desktop.modelo;
+using Proyecto_Xarxa_Desktop.servicios;
+using Proyecto_Xarxa_Desktop.vms;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,14 +23,18 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class LogIn : Window
     {
+        private LogInVM vm = new LogInVM();
         public LogIn()
         {
             InitializeComponent();
+            DataContext = vm;
+            ServicioCargarDatos.CargarDatos();
         }
 
         private void EntrarButton_Click(object sender, RoutedEventArgs e)
         {
-            new MainWindow().Show();
+            // Si el usuario es valido, entramos al sistema
+            if(vm.ValidarUsuario()) new MainWindow().Show();
         }
 
         // Hace se pueda arrastrar la pantalla

@@ -88,7 +88,7 @@
             </StackPanel>
             <!--  Lista de opciones Ventanas  -->
             <ListView Foreground="#F9AA33" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
-                <ListViewItem Height="60" MouseDoubleClick="Lotes_MouseDoubleClick">
+                <ListViewItem Height="60" Selected="ListViewItem_Selected">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon
                             Width="25"
@@ -164,7 +164,7 @@
             <TextBlock
                 VerticalAlignment="Center"
                 DockPanel.Dock="Right"
-                Text="Usuario" />
+                Text="{Binding Path=UsuarioLogeado.NombreUsuario}" />
             <!--  Barra de búsqueda es el último hijo para que rellene y quede centrada  -->
             <TextBox
                 Width="400"

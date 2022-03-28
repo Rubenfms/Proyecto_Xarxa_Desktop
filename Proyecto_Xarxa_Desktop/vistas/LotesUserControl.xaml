@@ -27,7 +27,7 @@
         </ListBox.ItemsPanel>
         <ListBox.ItemTemplate>
             <DataTemplate>
-                <TextBlock Text="{Binding Path=ModalidadLote.Nombre}" />
+                <TextBlock Text="{Binding Path=IdLote}" />
             </DataTemplate>
         </ListBox.ItemTemplate>
     </ListBox>

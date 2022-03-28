@@ -1,4 +1,5 @@
-﻿using Proyecto_Xarxa_Desktop.vms;
+﻿using Proyecto_Xarxa_Desktop.servicios;
+using Proyecto_Xarxa_Desktop.vms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         {
             InitializeComponent();
             DataContext = vm;
+            ServicioCargarDatos.ListaLotes = ServicioAPI.GetLotes();
         }
     }
 }
