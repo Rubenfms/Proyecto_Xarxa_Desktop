@@ -28,7 +28,6 @@ namespace Proyecto_Xarxa_Desktop.vistas
         {
             InitializeComponent();
             DataContext = vm;
-            ServicioCargarDatos.CargarDatos();
         }
 
         private void EntrarButton_Click(object sender, RoutedEventArgs e)

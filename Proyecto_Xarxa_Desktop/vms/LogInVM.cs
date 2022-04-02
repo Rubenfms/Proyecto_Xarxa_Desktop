@@ -27,12 +27,15 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref usuarioXarxa, value); }
         }
 
+        ServicioValidarUsuario servicioValidarUsuario;
+
         public LogInVM()
         {
             UsuarioXarxa = new Usuario();
             listaUsuarios = ServicioAPI.GetUsuarios();
+            servicioValidarUsuario = new ServicioValidarUsuario();
         }
 
-        public bool ValidarUsuario() => ServicioValidarUsuario.ValidarUsuario(UsuarioXarxa);
+        public bool ValidarUsuario() => servicioValidarUsuario.ValidarUsuario(UsuarioXarxa);
     }
 }

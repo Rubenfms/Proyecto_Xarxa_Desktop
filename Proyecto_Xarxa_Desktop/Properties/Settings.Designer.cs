@@ -32,15 +32,21 @@ namespace Proyecto_Xarxa_Desktop.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("../../data/alumnosxarxa.csv")]
         public string UbicacionCsvListaAlumnosXarxa {
             get {
                 return ((string)(this["UbicacionCsvListaAlumnosXarxa"]));
             }
-            set {
-                this["UbicacionCsvListaAlumnosXarxa"] = value;
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:8081/apixarxa")]
+        public string CadenaConexionLocalhost {
+            get {
+                return ((string)(this["CadenaConexionLocalhost"]));
             }
         }
     }

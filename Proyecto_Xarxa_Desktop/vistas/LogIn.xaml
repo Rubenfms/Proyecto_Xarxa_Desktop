@@ -55,12 +55,11 @@
                                 Foreground="#4A6572"
                                 Kind="User" />
                             <TextBox
-                                FontSize="21"
                                 x:Name="UsernameTextBox"
                                 Width="270"
-
                                 materialDesign:HintAssist.Hint="Username"
                                 BorderBrush="#4A6572"
+                                FontSize="21"
                                 Foreground="#4A6572"
                                 SelectionBrush="#F9AA33"
                                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
@@ -75,11 +74,11 @@
                                 Kind="Password" />
                             <TextBox
                                 x:Name="PasswordTextBox"
-                                FontSize="40"
                                 Width="270"
                                 Height="50"
                                 materialDesign:HintAssist.Hint="********"
                                 BorderBrush="#4A6572"
+                                FontSize="35"
                                 Foreground="#4A6572"
                                 SelectionBrush="#F9AA33"
                                 Text="{Binding Path=UsuarioXarxa.Contrasenya}" />
