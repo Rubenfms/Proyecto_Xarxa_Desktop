@@ -24,7 +24,7 @@
     <Grid MouseDown="Grid_MouseDown">
         <Grid.Background>
             <!--<SolidColorBrush Color="#F9AA33" />-->
-            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,0">
                 <GradientStop Offset="1" Color="#F9AA33" />
                 <GradientStop Offset="0" Color="#232f34" />
             </LinearGradientBrush>
@@ -45,19 +45,21 @@
                         <TextBlock
                             HorizontalAlignment="Center"
                             FontFamily="Great Vibes"
-                            FontSize="38"
+                            FontSize="58"
                             Text=" Gestor Xarxa" />
                         <!--  Entrada Username  -->
-                        <StackPanel Margin="10" Orientation="Horizontal">
+                        <StackPanel Margin="20" Orientation="Horizontal">
                             <materialDesign:PackIcon
-                                Width="40"
-                                Height="40"
+                                Width="60"
+                                Height="60"
                                 Foreground="#4A6572"
                                 Kind="User" />
                             <TextBox
+                                FontSize="21"
                                 x:Name="UsernameTextBox"
-                                Width="250"
-                                materialDesign:HintAssist.Hint="Introduzca su nombre de usuario"
+                                Width="270"
+
+                                materialDesign:HintAssist.Hint="Username"
                                 BorderBrush="#4A6572"
                                 Foreground="#4A6572"
                                 SelectionBrush="#F9AA33"
@@ -65,26 +67,30 @@
                                 Text="{Binding Path=UsuarioXarxa.NombreUsuario}" />
                         </StackPanel>
                         <!--  Entrada Contraseña  -->
-                        <StackPanel Margin="10" Orientation="Horizontal">
+                        <StackPanel Margin="20" Orientation="Horizontal">
                             <materialDesign:PackIcon
-                                Width="40"
-                                Height="40"
+                                Width="60"
+                                Height="60"
                                 Foreground="#4A6572"
                                 Kind="Password" />
                             <TextBox
                                 x:Name="PasswordTextBox"
-                                Text="{Binding Path=UsuarioXarxa.Contrasenya}" 
-                                Width="250"
+                                FontSize="40"
+                                Width="270"
+                                Height="50"
                                 materialDesign:HintAssist.Hint="********"
                                 BorderBrush="#4A6572"
                                 Foreground="#4A6572"
-                                SelectionBrush="#F9AA33"/>
+                                SelectionBrush="#F9AA33"
+                                Text="{Binding Path=UsuarioXarxa.Contrasenya}" />
                             <!--  ="{StaticResource MaterialDesignFloatingHintPasswordBox}" />  -->
                         </StackPanel>
                         <!--  Botón Entrar  -->
                         <StackPanel Margin="10" Orientation="Vertical">
                             <Button
                                 x:Name="EntrarButton"
+                                Width="100"
+                                Height="40"
                                 HorizontalAlignment="Center"
                                 materialDesign:ButtonAssist.CornerRadius="10"
                                 BorderBrush="#232f34"
