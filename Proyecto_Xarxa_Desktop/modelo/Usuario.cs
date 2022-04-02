@@ -25,12 +25,22 @@ namespace Proyecto_Xarxa_Desktop.modelo
             set { SetProperty(ref contrasenya, value); }
         }
 
+        private string tipoUsuario;
+
+        public string TipoUsuario
+        {
+            get { return tipoUsuario; }
+            set { SetProperty(ref tipoUsuario, value); }
+        }
+
+
         public Usuario() {; }
 
-        public Usuario(string nombreUsuario, string contrasenya)
+        public Usuario(string nombreUsuario, string contrasenya, string tipoUsuario)
         {
             NombreUsuario = nombreUsuario;
             Contrasenya = contrasenya;
+            TipoUsuario = tipoUsuario;
         }
     }
 }

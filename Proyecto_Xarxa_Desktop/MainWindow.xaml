@@ -19,7 +19,7 @@
             <Setter Property="FontSize" Value="18" />
             <Setter Property="Foreground" Value="#4A6572" />
         </Style>
-        
+
         <!--  Evento para abrir el menú lateral (sube de 70 width a 200)  -->
         <Storyboard x:Key="AbrirMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MenuLateralStackPanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
@@ -36,6 +36,15 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
 
+        <!--  Estilo para que aparezca o no la opción de SuperUser  -->
+        <Style x:Key="EstiloSuperUser" TargetType="{x:Type Button}">
+            <Setter Property="Visibility" Value="Collapsed" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=UsuarioActual.tipo_usuario}" Value="superadmin">
+                    <Setter Property="Visibility" Value="Visible" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
     </Window.Resources>
 
     <Window.Triggers>
