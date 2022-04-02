@@ -30,12 +30,6 @@ namespace Proyecto_Xarxa_Desktop.vistas
             DataContext = vm;
         }
 
-        private void EntrarButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Si el usuario es valido, entramos al sistema
-            if(vm.ValidarUsuario()) new MainWindow().Show();
-        }
-
         // Hace se pueda arrastrar la pantalla
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {

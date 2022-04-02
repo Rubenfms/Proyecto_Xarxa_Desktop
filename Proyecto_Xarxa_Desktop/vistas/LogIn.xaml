@@ -94,7 +94,7 @@
                                 materialDesign:ButtonAssist.CornerRadius="10"
                                 BorderBrush="#232f34"
                                 BorderThickness="2"
-                                Click="EntrarButton_Click"
+                                Command="{Binding Path=ValidarUsuarioCommand}"
                                 Content="Entrar"
                                 IsDefault="True"
                                 Style="{StaticResource MaterialDesignRaisedButton}"

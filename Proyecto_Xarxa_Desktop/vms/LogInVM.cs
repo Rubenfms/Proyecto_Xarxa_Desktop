@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Input;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -27,6 +28,8 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref usuarioXarxa, value); }
         }
 
+        public RelayCommand ValidarUsuarioCommand { get; }
+
         ServicioValidarUsuario servicioValidarUsuario;
 
         public LogInVM()
@@ -34,8 +37,14 @@ namespace Proyecto_Xarxa_Desktop.vms
             UsuarioXarxa = new Usuario();
             listaUsuarios = ServicioAPI.GetUsuarios();
             servicioValidarUsuario = new ServicioValidarUsuario();
+            ValidarUsuarioCommand = new RelayCommand(ValidarUsuario);
         }
 
-        public bool ValidarUsuario() => servicioValidarUsuario.ValidarUsuario(UsuarioXarxa);
+        public void ValidarUsuario()
+        {
+            // Si el usuario es valido, entramos al sistema
+            if (servicioValidarUsuario.ValidarUsuario(UsuarioXarxa)) new MainWindow().Show();
+            else ServicioDialogos.ServicioMessageBox("Usuario o contraseña incorrectos", "Credenciales Incorrectas", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+        }
     }
 }
