@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,23 +25,31 @@ namespace Proyecto_Xarxa_Desktop.vistas
     public partial class LogIn : Window
     {
         private LogInVM vm = new LogInVM();
+
+        private SecureString password;
+
+        public SecureString Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
         public LogIn()
         {
             InitializeComponent();
             DataContext = vm;
-            ServicioCargarDatos.CargarDatos();
-        }
-
-        private void EntrarButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Si el usuario es valido, entramos al sistema
-            if(vm.ValidarUsuario()) new MainWindow().Show();
         }
 
         // Hace se pueda arrastrar la pantalla
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+        }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            // Actualiza la propiedad Password del vm con la password que esta siendo introducida en el SecureBox
+            if (this.DataContext != null)
+            { ((dynamic)this.DataContext).Password = ((PasswordBox)sender).Password; }
         }
     }
 }

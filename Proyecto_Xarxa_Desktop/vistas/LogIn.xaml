@@ -17,14 +17,14 @@
 
     <Window.Resources>
         <Style TargetType="{x:Type TextBlock}">
-            <Setter Property="Foreground" Value="#4A6572" />
+            <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
             <Setter Property="FontSize" Value="18" />
         </Style>
     </Window.Resources>
     <Grid MouseDown="Grid_MouseDown">
         <Grid.Background>
-            <!--<SolidColorBrush Color="#F9AA33" />-->
-            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+            <!--<SolidColorBrush Color="{StaticResource SecondaryColor1}" />-->
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,0">
                 <GradientStop Offset="1" Color="#F9AA33" />
                 <GradientStop Offset="0" Color="#232f34" />
             </LinearGradientBrush>
@@ -45,54 +45,59 @@
                         <TextBlock
                             HorizontalAlignment="Center"
                             FontFamily="Great Vibes"
-                            FontSize="38"
+                            FontSize="58"
                             Text=" Gestor Xarxa" />
                         <!--  Entrada Username  -->
-                        <StackPanel Margin="10" Orientation="Horizontal">
+                        <StackPanel Margin="20" Orientation="Horizontal">
                             <materialDesign:PackIcon
-                                Width="40"
-                                Height="40"
-                                Foreground="#4A6572"
+                                Width="60"
+                                Height="60"
+                                Foreground="{StaticResource PrimaryColor3}"
                                 Kind="User" />
                             <TextBox
                                 x:Name="UsernameTextBox"
-                                Width="250"
-                                materialDesign:HintAssist.Hint="Introduzca su nombre de usuario"
-                                BorderBrush="#4A6572"
-                                Foreground="#4A6572"
-                                SelectionBrush="#F9AA33"
+                                Width="270"
+                                materialDesign:HintAssist.Hint="Username"
+                                BorderBrush="{StaticResource PrimaryColor3}"
+                                FontSize="21"
+                                Foreground="{StaticResource PrimaryColor3}"
+                                SelectionBrush="{StaticResource SecondaryColor1}"
                                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                                 Text="{Binding Path=UsuarioXarxa.NombreUsuario}" />
                         </StackPanel>
                         <!--  Entrada Contraseña  -->
-                        <StackPanel Margin="10" Orientation="Horizontal">
+                        <StackPanel Margin="20" Orientation="Horizontal">
                             <materialDesign:PackIcon
-                                Width="40"
-                                Height="40"
-                                Foreground="#4A6572"
+                                Width="60"
+                                Height="60"
+                                Foreground="{StaticResource PrimaryColor3}"
                                 Kind="Password" />
-                            <TextBox
-                                x:Name="PasswordTextBox"
-                                Text="{Binding Path=UsuarioXarxa.Contrasenya}" 
-                                Width="250"
+                            <PasswordBox
+                                x:Name="PasswordBox"
+                                Width="270"
+                                Height="50"
                                 materialDesign:HintAssist.Hint="********"
-                                BorderBrush="#4A6572"
-                                Foreground="#4A6572"
-                                SelectionBrush="#F9AA33"/>
+                                BorderBrush="{StaticResource PrimaryColor3}"
+                                FontSize="28"
+                                Foreground="{StaticResource PrimaryColor3}"
+                                PasswordChanged="PasswordBox_PasswordChanged"
+                                SelectionBrush="{StaticResource SecondaryColor1}" />
                             <!--  ="{StaticResource MaterialDesignFloatingHintPasswordBox}" />  -->
                         </StackPanel>
                         <!--  Botón Entrar  -->
                         <StackPanel Margin="10" Orientation="Vertical">
                             <Button
                                 x:Name="EntrarButton"
+                                Width="100"
+                                Height="40"
                                 HorizontalAlignment="Center"
                                 materialDesign:ButtonAssist.CornerRadius="10"
-                                BorderBrush="#232f34"
+                                BorderBrush="{StaticResource PrimaryColor1}"
                                 BorderThickness="2"
-                                Click="EntrarButton_Click"
+                                Command="{Binding Path=ValidarUsuarioCommand}"
                                 Content="Entrar"
                                 IsDefault="True"
-                                Style="{StaticResource MaterialDesignRaisedButton}"
+                                Style="{StaticResource MaterialDesignFlatSecondaryDarkBgButton}"
                                 ToolTip="Entrar al sistema" />
                         </StackPanel>
                     </StackPanel>

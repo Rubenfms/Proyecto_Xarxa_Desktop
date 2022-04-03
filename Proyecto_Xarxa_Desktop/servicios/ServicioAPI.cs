@@ -9,17 +9,31 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using RestSharp;
 
 namespace Proyecto_Xarxa_Desktop.servicios
 {
     class ServicioAPI
     {
+        private RestClient cliente;
+
+        public RestClient Cliente
+        {
+            get { return cliente; }
+            set { cliente = value; }
+        }
+
+        public ServicioAPI(string cadenaConexion)
+        {
+            Cliente = new RestClient(cadenaConexion);
+        }
+
         private static ObservableCollection<Lote> listaLotes = new ObservableCollection<Lote>();
         private static ObservableCollection<Modalidad> listaModalidades = new ObservableCollection<Modalidad>();
         private static ObservableCollection<Usuario> listaUsuarios = new ObservableCollection<Usuario>();
         public static ObservableCollection<Lote> GetLotes()
         {
-            var url = $"http://localhost:8081/apixarxa/xarxa/lotes";
+            var url = Properties.Settings.Default.CadenaConexionLocalhost + "/xarxa/lotes";
             var request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.ContentType = "application/json";
@@ -50,7 +64,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
         public static ObservableCollection<Modalidad> GetModalidades()
         {
-            var url = $"http://localhost:8081/apixarxa/xarxa/modalidades";
+            var url = Properties.Settings.Default.CadenaConexionLocalhost + "/xarxa/modalidades";
             var request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.ContentType = "application/json";
@@ -79,7 +93,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
         public static ObservableCollection<Usuario> GetUsuarios()
         {
-            var url = $"http://localhost:8081/apixarxa/xarxa/usuarios";
+            var url = Properties.Settings.Default.CadenaConexionLocalhost + "/xarxa/usuarios";
             var request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.ContentType = "application/json";
@@ -104,6 +118,19 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 return null;
             }
+        }
+
+        // Método que recibe un nombre de usuario y hace una petición a /xarxa/usuarios/nombre
+        public Usuario GetUsuario(String username)
+        {
+            Usuario result = new Usuario();
+
+            RestRequest peticion = new RestRequest($"/xarxa/usuarios/{username}", Method.Get);
+
+            var response = Cliente.GetAsync(peticion);
+
+            result = JsonConvert.DeserializeObject<Usuario>(response.Result.Content); 
+            return result;
         }
     }
 }
