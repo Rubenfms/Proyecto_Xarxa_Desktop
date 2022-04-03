@@ -1,26 +1,35 @@
-﻿<Application x:Class="Proyecto_Xarxa_Desktop.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
-             StartupUri="/vistas/LogIn.xaml">
+﻿<Application
+    x:Class="Proyecto_Xarxa_Desktop.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
+    StartupUri="/vistas/LogIn.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" /> -->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />-->
             </ResourceDictionary.MergedDictionaries>
-            <!-- Primary -->
+
+            <!--  Colores MaterialDesign  -->
             <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#F9AA33" />
             <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="Blue" />
             <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#F9AA33" />
             <SolidColorBrush x:Key="PrimaryHueMidForegroundBrush" Color="#232f34" />
             <SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="Green" />
             <SolidColorBrush x:Key="PrimaryHueDarkForegroundBrush" Color="Brown" />
-            <!-- Accent -->
+            <!--  Accent  -->
             <SolidColorBrush x:Key="SecondaryAccentBrush" Color="Blue" />
             <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="Blue" />
+
+            <!--  Colores Paleta  -->
+            <SolidColorBrush x:Key="PrimaryColor1" Color="#232f34" />
+            <SolidColorBrush x:Key="PrimaryColor2" Color="#344955" />
+            <SolidColorBrush x:Key="PrimaryColor3" Color="#4A6572" />
+            <SolidColorBrush x:Key="SecondaryColor1" Color="#F9AA33" />
+            <SolidColorBrush x:Key="SecondaryColor2" Color="White" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>
