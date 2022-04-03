@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,6 +33,14 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         ServicioValidarUsuario servicioValidarUsuario;
 
+        private String securePassword;
+
+        public String Password
+        {
+            get { return securePassword; }
+            set { SetProperty(ref securePassword, value); }
+        }
+
         public LogInVM()
         {
             UsuarioXarxa = new Usuario();
@@ -42,6 +51,7 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         public void ValidarUsuario()
         {
+            UsuarioXarxa.Contrasenya = Password;
             // Si el usuario es valido, entramos al sistema
             if (servicioValidarUsuario.ValidarUsuario(UsuarioXarxa)) new MainWindow().Show();
             else ServicioDialogos.ServicioMessageBox("Usuario o contraseña incorrectos", "Credenciales Incorrectas", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
