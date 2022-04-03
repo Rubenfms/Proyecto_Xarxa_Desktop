@@ -54,6 +54,11 @@ namespace Proyecto_Xarxa_Desktop
             BalmisImagen.Visibility = Visibility.Visible;
 
         }
-        private void ListViewItem_Selected(object sender, RoutedEventArgs e) => vm.AbrirVistaLotes();
+
+        private void LotesButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirVistaLotes();
+            SubMenuLotes.Visibility = (SubMenuLotes.Visibility == Visibility.Visible) ? Visibility.Collapsed : Visibility.Visible;
+        }
     }
 }

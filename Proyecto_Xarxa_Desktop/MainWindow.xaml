@@ -17,7 +17,7 @@
         <!--  Estilo genérico para los textblock  -->
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontSize" Value="18" />
-            <Setter Property="Foreground" Value="#4A6572" />
+            <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
         </Style>
 
         <!--  Evento para abrir el menú lateral (sube de 70 width a 200)  -->
@@ -40,9 +40,19 @@
         <Style x:Key="EstiloSuperUser" TargetType="{x:Type Button}">
             <Setter Property="Visibility" Value="Collapsed" />
             <Style.Triggers>
-                <DataTrigger Binding="{Binding Path=UsuarioActual.tipo_usuario}" Value="superadmin">
+                <DataTrigger Binding="{Binding Path=UsuarioActual.TipoUsuario}" Value="superadmin">
                     <Setter Property="Visibility" Value="Visible" />
                 </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <!--  Estilo para los botones del menú desplegable  -->
+        <Style x:Key="EstiloBotonesMenu" TargetType="{x:Type Button}">
+            <Setter Property="BorderThickness" Value="0" />
+            <Style.Triggers>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="Background" Value="Red" />
+                </Trigger>
             </Style.Triggers>
         </Style>
     </Window.Resources>
@@ -60,11 +70,11 @@
         <StackPanel
             x:Name="MenuLateralStackPanel"
             Width="60"
-            Background="#232f34"
+            Background="{StaticResource PrimaryColor1}"
             DockPanel.Dock="Left"
             Orientation="Vertical">
             <!--  Primer Contenedor con el botón para desplegar y la foto  -->
-            <StackPanel Height="150" Background="#F9AA33">
+            <StackPanel Height="130" Background="{StaticResource SecondaryColor1}">
                 <Button
                     x:Name="CerrarMenuButton"
                     HorizontalAlignment="Right"
@@ -89,62 +99,150 @@
                     Visibility="Collapsed" />
             </StackPanel>
             <!--  Lista de opciones Ventanas  -->
-            <ListView Foreground="#F9AA33" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
-                <ListViewItem Height="60" Selected="ListViewItem_Selected">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon
-                            Width="25"
-                            Height="25"
-                            Margin="10"
-                            Foreground="#F9AA33"
-                            Kind="ViewDashboard" />
-                        <TextBlock Margin="10,0,0,0" Text="Item One" />
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon
-                            Width="25"
-                            Height="25"
-                            Margin="10"
-                            Foreground="#F9AA33"
-                            Kind="Pencil" />
-                        <TextBlock Margin="10,0,0,0" Text="Item Two" />
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon
-                            Width="25"
-                            Height="25"
-                            Margin="10"
-                            Foreground="#F9AA33"
-                            Kind="About" />
-                        <TextBlock Margin="10,0,0,0" Text="Item Three" />
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon
-                            Width="25"
-                            Height="25"
-                            Margin="10"
-                            Foreground="#F9AA33"
-                            Kind="Message" />
-                        <TextBlock Margin="10,0,0,0" Text="Item Four" />
-                    </StackPanel>
-                </ListViewItem>
-            </ListView>
+            <DockPanel LastChildFill="False">
+                <!--  Opción Lotes  -->
+                <Button
+                    Height="60"
+                    Background="{StaticResource PrimaryColor1}"
+                    Click="LotesButton_Click"
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource EstiloBotonesMenu}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Width="25"
+                                Height="25"
+                                Margin="20,0,12,0"
+                                Foreground="{StaticResource SecondaryColor2}"
+                                Kind="Account" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Lotes" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <!--  Sub Menú lotes  -->
+                <DockPanel
+                    x:Name="SubMenuLotes"
+                    DockPanel.Dock="Top"
+                    LastChildFill="False"
+                    Visibility="Collapsed">
+                    <Button
+                        Height="40"
+                        Background="{StaticResource PrimaryColor3}"
+                        DockPanel.Dock="Top"
+                        Style="{StaticResource EstiloBotonesMenu}">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon
+                                    Width="25"
+                                    Height="25"
+                                    Margin="20,0,12,0"
+                                    Foreground="{StaticResource SecondaryColor2}"
+                                    Kind="Eye" />
+                                <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Listar Lotes" />
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                    <Button
+                        Height="40"
+                        Background="{StaticResource PrimaryColor3}"
+                        DockPanel.Dock="Top"
+                        Style="{StaticResource EstiloBotonesMenu}">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon
+                                    Width="25"
+                                    Height="25"
+                                    Margin="20,0,13,0"
+                                    Foreground="{StaticResource SecondaryColor2}"
+                                    Kind="PencilAdd" />
+                                <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Generar Lote" />
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                    <Button
+                        Height="40"
+                        Background="{StaticResource PrimaryColor3}"
+                        DockPanel.Dock="Top"
+                        Style="{StaticResource EstiloBotonesMenu}">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon
+                                    Width="25"
+                                    Height="25"
+                                    Margin="20,0,13,0"
+                                    Foreground="{StaticResource SecondaryColor2}"
+                                    Kind="Oar" />
+                                <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="xxx Lote" />
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                </DockPanel>
+                <!--  Opción 2  -->
+                <Button
+                    Height="60"
+                    Background="{StaticResource PrimaryColor1}"
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource EstiloBotonesMenu}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Width="25"
+                                Height="25"
+                                Margin="20,0,13,0"
+                                Foreground="{StaticResource SecondaryColor2}"
+                                Kind="AccessPointPlus" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Opción 2" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <!--  Opción 3  -->
+                <Button
+                    Height="60"
+                    Background="{StaticResource PrimaryColor1}"
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource EstiloBotonesMenu}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Width="25"
+                                Height="25"
+                                Margin="20,0,13,0"
+                                Foreground="{StaticResource SecondaryColor2}"
+                                Kind="ChevronUpCircleOutline" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Opción 3" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <!--  Opción 4  -->
+                <Button
+                    Height="60"
+                    Background="{StaticResource PrimaryColor1}"
+                    BorderBrush="{x:Null}"
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource EstiloBotonesMenu}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Width="25"
+                                Height="25"
+                                Margin="20,0,13,0"
+                                Foreground="{StaticResource SecondaryColor2}"
+                                Kind="Zelda" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Opción 4" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </DockPanel>
         </StackPanel>
         <!--  Dock Panel Parte de Arriba con la barra de búsqueda  -->
         <DockPanel
             Height="70"
-            Background="#232f34"
+            Background="{StaticResource PrimaryColor1}"
             DockPanel.Dock="Top"
             LastChildFill="True">
             <materialDesign:PopupBox
                 DockPanel.Dock="Right"
-                Foreground="#4A6572"
+                Foreground="{StaticResource PrimaryColor3}"
                 PlacementMode="BottomAndAlignRightEdges"
                 StaysOpen="False">
                 <StackPanel>
@@ -173,9 +271,9 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 materialDesign:HintAssist.Hint="Introduce algo para buscar..."
-                BorderBrush="#4A6572"
+                BorderBrush="{StaticResource PrimaryColor3}"
                 FontSize="18"
-                Foreground="#4A6572"
+                Foreground="{StaticResource PrimaryColor3}"
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
         </DockPanel>
 
