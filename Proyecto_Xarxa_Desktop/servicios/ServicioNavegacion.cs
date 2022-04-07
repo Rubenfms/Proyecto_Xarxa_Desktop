@@ -15,5 +15,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
         // Devuelve un nuevo UserControl de Lotes
         internal static UserControl AbrirVistaLotes() => new LotesUserControl();
+
+        internal static void AbrirVistaLogIn() => new LogIn().Show();
     }
 }

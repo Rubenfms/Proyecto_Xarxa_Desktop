@@ -94,7 +94,7 @@
                                 materialDesign:ButtonAssist.CornerRadius="10"
                                 BorderBrush="{StaticResource PrimaryColor1}"
                                 BorderThickness="2"
-                                Command="{Binding Path=ValidarUsuarioCommand}"
+                                Command="{Binding Path=ValidarUsuarioCommand, UpdateSourceTrigger=PropertyChanged}"
                                 Content="Entrar"
                                 IsDefault="True"
                                 Style="{StaticResource MaterialDesignFlatSecondaryDarkBgButton}"

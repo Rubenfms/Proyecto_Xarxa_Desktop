@@ -27,18 +27,25 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
         }
 
-        // Método que recibe un usuario introducido en el formulario de LogIn y devuelve true si se encuentra en la BD 
+        // Método que recibe un usuario introducido en el formulario de LogIn y lo compara con el que devuelve la API a partir de su nickname
         public bool ValidarUsuario(Usuario UsuarioAValidar)
         {
-            Usuario usuarioBD = servicioApi.GetUsuario(UsuarioAValidar.NombreUsuario);
-
-            string hashedPass = Sha256encrypt(UsuarioAValidar.Contrasenya);
-            if (usuarioBD.Contrasenya.Equals(hashedPass) && usuarioBD.NombreUsuario.Equals(UsuarioAValidar.NombreUsuario))
+            try
             {
-                UsuarioActual = usuarioBD;
-                return true;
-            }
+                Usuario usuarioBD = servicioApi.GetUsuario(UsuarioAValidar.NombreUsuario);
 
+                string hashedPass = Sha256encrypt(UsuarioAValidar.Contrasenya);
+                if (usuarioBD.Contrasenya.Equals(hashedPass) && usuarioBD.NombreUsuario.Equals(UsuarioAValidar.NombreUsuario))
+                {
+                    UsuarioActual = usuarioBD;
+                    return true;
+                }
+            }
+            catch (NullReferenceException)
+            {
+                return false;
+            }
+            ServicioDialogos.ServicioMessageBox("Usuario o contraseña incorrectos", "Credenciales Incorrectas", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             return false;
         }
         public string Sha256encrypt(string phrase)

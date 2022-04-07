@@ -10,6 +10,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using RestSharp;
+using System.Net.Sockets;
 
 namespace Proyecto_Xarxa_Desktop.servicios
 {
@@ -123,14 +124,23 @@ namespace Proyecto_Xarxa_Desktop.servicios
         // Método que recibe un nombre de usuario y hace una petición a /xarxa/usuarios/nombre
         public Usuario GetUsuario(String username)
         {
-            Usuario result = new Usuario();
+            try
+            {
+                Usuario result = new Usuario();
 
-            RestRequest peticion = new RestRequest($"/xarxa/usuarios/{username}", Method.Get);
+                RestRequest peticion = new RestRequest($"/xarxa/usuarios/{username}", Method.Get);
 
-            var response = Cliente.GetAsync(peticion);
+                var response = Cliente.GetAsync(peticion);
 
-            result = JsonConvert.DeserializeObject<Usuario>(response.Result.Content); 
-            return result;
+                result = JsonConvert.DeserializeObject<Usuario>(response.Result.Content);
+                return result;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("Error con la API", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
         }
     }
 }

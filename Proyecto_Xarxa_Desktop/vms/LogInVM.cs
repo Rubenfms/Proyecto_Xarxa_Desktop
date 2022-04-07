@@ -54,7 +54,6 @@ namespace Proyecto_Xarxa_Desktop.vms
             UsuarioXarxa.Contrasenya = Password;
             // Si el usuario es valido, entramos al sistema
             if (servicioValidarUsuario.ValidarUsuario(UsuarioXarxa)) new MainWindow().Show();
-            else ServicioDialogos.ServicioMessageBox("Usuario o contraseña incorrectos", "Credenciales Incorrectas", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
         }
     }
 }
