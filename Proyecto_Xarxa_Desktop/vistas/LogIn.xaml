@@ -15,6 +15,11 @@
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
 
+    <Window.InputBindings>
+        <!--  Key Binding para que al pulsar enter se presione el botón de logeo  -->
+        <KeyBinding Key="Return" Command="{Binding Path=ValidarUsuarioCommand}" />
+    </Window.InputBindings>
+
     <Window.Resources>
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
