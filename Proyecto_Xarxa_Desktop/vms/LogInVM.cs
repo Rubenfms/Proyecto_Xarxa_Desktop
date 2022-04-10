@@ -9,6 +9,7 @@ using System.Linq;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
@@ -52,9 +53,24 @@ namespace Proyecto_Xarxa_Desktop.vms
         public void ValidarUsuario()
         {
             UsuarioXarxa.Contrasenya = Password;
+            if (UsuarioXarxa.NombreUsuario == null || UsuarioXarxa.NombreUsuario.Length == 0)
+                ServicioDialogos.ServicioMessageBox("Tienes que introducir un usuario", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+            else if (UsuarioXarxa.Contrasenya == null || UsuarioXarxa.Contrasenya.Length == 0)
+                ServicioDialogos.ServicioMessageBox("Tienes que introducir una contraseña", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             // Si el usuario es valido, entramos al sistema
-            if (servicioValidarUsuario.ValidarUsuario(UsuarioXarxa)) new MainWindow().Show();
-            else ServicioDialogos.ServicioMessageBox("Usuario o contraseña incorrectos", "Credenciales Incorrectas", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+            else
+            {
+                if (servicioValidarUsuario.ValidarUsuario(UsuarioXarxa))
+                {
+                    new MainWindow().Show();
+
+                    // Recorre las ventanas existentes y cierra la de login
+                    foreach (Window item in Application.Current.Windows)
+                    {
+                        if (item.DataContext == this) item.Close();
+                    }
+                }
+            }
         }
     }
 }

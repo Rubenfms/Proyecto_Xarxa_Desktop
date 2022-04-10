@@ -15,6 +15,11 @@
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
 
+    <Window.InputBindings>
+        <!--  Key Binding para que al pulsar enter se presione el botón de logeo  -->
+        <KeyBinding Key="Return" Command="{Binding Path=ValidarUsuarioCommand}" />
+    </Window.InputBindings>
+
     <Window.Resources>
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
@@ -94,7 +99,7 @@
                                 materialDesign:ButtonAssist.CornerRadius="10"
                                 BorderBrush="{StaticResource PrimaryColor1}"
                                 BorderThickness="2"
-                                Command="{Binding Path=ValidarUsuarioCommand}"
+                                Command="{Binding Path=ValidarUsuarioCommand, UpdateSourceTrigger=PropertyChanged}"
                                 Content="Entrar"
                                 IsDefault="True"
                                 Style="{StaticResource MaterialDesignFlatSecondaryDarkBgButton}"

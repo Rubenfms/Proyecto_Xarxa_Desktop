@@ -13,6 +13,11 @@
     MinHeight="600"
     mc:Ignorable="d">
 
+    <Window.InputBindings>
+        <!--  KeyBinding para que al pulsar el botón enter se pulse el botón de logeo  -->
+        <KeyBinding Key="Return" Command="{Binding Path=ValidarUsuarioCommand}" />
+    </Window.InputBindings>
+
     <Window.Resources>
         <!--  Estilo genérico para los textblock  -->
         <Style TargetType="{x:Type TextBlock}">
