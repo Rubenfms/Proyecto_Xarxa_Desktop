@@ -33,5 +33,10 @@ namespace Proyecto_Xarxa_Desktop.vms
             listaLotes = ServicioAPI.GetLotes();
             LoteSeleccionado = new Lote();
         }
+
+        public void AbrirVistaGenerarLote()
+        {
+            ServicioNavegacion.AbrirVistaGenerarLote();
+        }
     }
 }

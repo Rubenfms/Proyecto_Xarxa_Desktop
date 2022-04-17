@@ -17,5 +17,6 @@ namespace Proyecto_Xarxa_Desktop.servicios
         internal static UserControl AbrirVistaLotes() => new LotesUserControl();
 
         internal static void AbrirVistaLogIn() => new LogIn().Show();
+        internal static void AbrirVistaGenerarLote() => new GenerarLote().Show();
     }
 }

@@ -13,23 +13,87 @@
     mc:Ignorable="d">
 
     <UserControl.Resources>
-        <convertidores:IdModalidadToNombre x:Key="IdModalidadToNombreConverter" />
+
+        <Style
+            x:Key="EstiloBoton"
+            BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}"
+            TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+
+        <Style x:Key="TriggerRadioButton" TargetType="{x:Type RadioButton}">
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True" />
+            </Style.Triggers>
+
+        </Style>
+
     </UserControl.Resources>
 
-    <ListBox
-        ItemsSource="{Binding Path=ListaLotes}"
-        ScrollViewer.VerticalScrollBarVisibility="Hidden"
-        SelectedItem="{Binding Path=LoteSeleccionado}"
-        Style="{StaticResource MaterialDesignNavigationListBox}">
-        <ListBox.ItemsPanel>
-            <ItemsPanelTemplate>
-                <WrapPanel />
-            </ItemsPanelTemplate>
-        </ListBox.ItemsPanel>
-        <ListBox.ItemTemplate>
-            <DataTemplate>
-                <TextBlock Text="{Binding Path=IdLote}" />
-            </DataTemplate>
-        </ListBox.ItemTemplate>
-    </ListBox>
+    <DockPanel>
+        <StackPanel Margin="0,50,0,0" DockPanel.Dock="Right">
+            <Button Content="Generar Lote" Style="{StaticResource EstiloBoton}" Click="GenerarLoteButton_Click" />
+            <Button Content="Editar Lote" Style="{StaticResource EstiloBoton}" />
+            <Button Content="Eliminar Lote" Style="{StaticResource EstiloBoton}" />
+            <StackPanel Margin="0,60,0,0">
+                <Button Content="Asignar Lote" Style="{StaticResource EstiloBoton}" />
+                <Button Content="Desasignar Lote" Style="{StaticResource EstiloBoton}" />
+            </StackPanel>
+        </StackPanel>
+
+        <ListView
+            IsSynchronizedWithCurrentItem="True"
+            ItemsSource="{Binding Path=ListaLotes}"
+            SelectedItem="{Binding Path=LoteSeleccionado}"
+            SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="60">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <RadioButton
+                                    x:Name="myRadio"
+                                    GroupName="IsSelected"
+                                    IsChecked="{Binding Path=vm.IsSelected}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn
+                        Width="120"
+                        DisplayMemberBinding="{Binding IdLote}"
+                        Header="Id" />
+                    <GridViewColumn Width="120" Header="_Nombre" />
+                    <GridViewColumn Width="140" Header="_SampleSet" />
+                    <GridViewColumn Width="120" Header="_Hitsound" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!--  Listbox con los lotes (lastchild)
+        <ListBox
+            HorizontalContentAlignment="Stretch"
+            ItemsSource="{Binding Path=ListaLotes}"
+            ScrollViewer.VerticalScrollBarVisibility="Hidden"
+            SelectedItem="{Binding Path=LoteSeleccionado}"
+            Style="{StaticResource MaterialDesignNavigationListBox}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <materialDesign:Card Height="30" UniformCornerRadius="3">
+                        <TextBlock>
+                            <Run Text="{Binding Path=IdLote}" />
+                            <Run Text="Otra cosa" />
+                            <Run Text="sdsssssssds" />
+                            <Run Text="sdssssds" />
+                        </TextBlock>
+                    </materialDesign:Card>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>-->
+    </DockPanel>
 </UserControl>
