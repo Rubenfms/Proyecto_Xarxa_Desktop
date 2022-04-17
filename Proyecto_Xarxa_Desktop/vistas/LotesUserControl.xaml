@@ -32,7 +32,10 @@
 
     <DockPanel>
         <StackPanel Margin="0,50,0,0" DockPanel.Dock="Right">
-            <Button Content="Generar Lote" Style="{StaticResource EstiloBoton}" Click="GenerarLoteButton_Click" />
+            <Button
+                Click="GenerarLoteButton_Click"
+                Content="Generar Lote"
+                Style="{StaticResource EstiloBoton}" />
             <Button Content="Editar Lote" Style="{StaticResource EstiloBoton}" />
             <Button Content="Eliminar Lote" Style="{StaticResource EstiloBoton}" />
             <StackPanel Margin="0,60,0,0">
@@ -44,8 +47,7 @@
         <ListView
             IsSynchronizedWithCurrentItem="True"
             ItemsSource="{Binding Path=ListaLotes}"
-            SelectedItem="{Binding Path=LoteSeleccionado}"
-            SelectionChanged="ListView_SelectionChanged">
+            SelectedItem="{Binding Path=LoteSeleccionado}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="60">

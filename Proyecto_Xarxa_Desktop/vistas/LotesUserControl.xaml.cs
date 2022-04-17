@@ -30,9 +30,6 @@ namespace Proyecto_Xarxa_Desktop.vistas
             ServicioCargarDatos.ListaLotes = ServicioAPI.GetLotes();
         }
 
-        private void GenerarLoteButton_Click(object sender, RoutedEventArgs e)
-        {
-            vm.AbrirVistaGenerarLote();
-        }
+        private void GenerarLoteButton_Click(object sender, RoutedEventArgs e) => vm.AbrirVistaGenerarLote();
     }
 }

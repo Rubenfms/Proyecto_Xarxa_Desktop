@@ -9,7 +9,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 {
     class LibroXarxa:Libro
     {
-        public LibroXarxa(int codigoXarxa, int isbn, string titulo, string curso, string departamento, string editorial) : base(isbn, titulo, curso, departamento, editorial)
+        public LibroXarxa(int codigoXarxa, string isbn, string titulo, string curso, string departamento, string editorial) : base(isbn, titulo, curso, departamento, editorial)
         {
             CodigoXarxa = codigoXarxa;
         }
