@@ -49,14 +49,21 @@
             Grid.Row="2"
             Grid.RowSpan="3"
             Grid.Column="0"
-            IsSynchronizedWithCurrentItem="True">
+            IsSynchronizedWithCurrentItem="True"
+            ItemsSource="{Binding Path=ModalidadSeleccionada}">
             <ListView.View>
                 <GridView>
+                    <GridViewColumn Width="210" Header="Libro">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Titulo}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                     <GridViewColumn
-                        Width="210"
-                        DisplayMemberBinding="{Binding IdLote}"
-                        Header="Libro" />
-                    <GridViewColumn Width="170" Header="ISBN" />
+                        Width="170"
+                        DisplayMemberBinding="{Binding Path=IsbnLibro}"
+                        Header="ISBN" />
                     <GridViewColumn Width="120" Header="Codigo" />
                 </GridView>
             </ListView.View>
@@ -67,7 +74,11 @@
                 Margin="0,0,0,20"
                 HorizontalAlignment="Center"
                 Text="Modalidad:" />
-            <ComboBox Width="150" />
+            <ComboBox
+                Width="150"
+                DisplayMemberPath="Nombre"
+                ItemsSource="{Binding Path=ListaModalidades}"
+                SelectedItem="{Binding Path=ModalidadSeleccionada}" />
         </StackPanel>
 
         <Button

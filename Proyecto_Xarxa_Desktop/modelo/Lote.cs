@@ -10,6 +10,14 @@ namespace Proyecto_Xarxa_Desktop.modelo
 {
     class Lote:ObservableObject
     {
+        public Lote(int idLote, ObservableCollection<LibroXarxa> librosLote, Modalidad modalidad, int niaAlumno)
+        {
+            IdLote = idLote;
+            ModalidadLote = modalidad;
+            LibrosLote = librosLote;
+            NiaAlumno = niaAlumno;
+        }
+
         public Lote(int idLote, ObservableCollection<LibroXarxa> librosLote, Modalidad modalidad)
         {
             IdLote = idLote;
@@ -44,5 +52,14 @@ namespace Proyecto_Xarxa_Desktop.modelo
             get { return _librosLote; }
             set { SetProperty(ref _librosLote, value); }
         }
+
+        private int niaAlumno;
+
+        public int NiaAlumno
+        {
+            get { return niaAlumno; }
+            set { SetProperty(ref niaAlumno, value); }
+        }
+
     }
 }

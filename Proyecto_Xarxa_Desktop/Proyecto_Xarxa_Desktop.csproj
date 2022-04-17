@@ -121,6 +121,7 @@
     <Compile Include="vistas\LotesUserControl.xaml.cs">
       <DependentUpon>LotesUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vms\GenerarLoteVM.cs" />
     <Compile Include="vms\LogInVM.cs" />
     <Compile Include="vms\LotesVM.cs" />
     <Compile Include="vms\MainWindowVM.cs" />

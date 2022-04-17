@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Xarxa_Desktop.vms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,11 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class GenerarLote : Window
     {
+        private GenerarLoteVM vm = new GenerarLoteVM();
         public GenerarLote()
         {
             InitializeComponent();
+            DataContext = vm;
         }
     }
 }

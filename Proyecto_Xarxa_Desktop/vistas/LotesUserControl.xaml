@@ -14,7 +14,7 @@
 
     <UserControl.Resources>
 
-        <!-- Estilo para aplicar margen a los botones de la derecha -->
+        <!--  Estilo para aplicar margen a los botones de la derecha  -->
         <Style
             x:Key="EstiloBoton"
             BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}"
@@ -50,34 +50,43 @@
             SelectedItem="{Binding Path=LoteSeleccionado}">
             <ListView.View>
                 <GridView>
+                    <!--  Columna que contiene la lista de IDs  -->
                     <GridViewColumn
                         Width="120"
                         DisplayMemberBinding="{Binding IdLote}"
                         Header="Id" />
                     <GridViewColumn Width="120" Header="_Nombre" />
 
-                    <!--  Celda que contiene la lista de libros  -->
+                    <!--  Columna que contiene la lista de libros  -->
                     <GridViewColumn Width="120" Header="Libros">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <ComboBox
+                                    Width="120"
                                     DisplayMemberPath="Titulo"
                                     ItemsSource="{Binding Path=LibrosLote}"
-                                    SelectedItem="Libros:"
-                                    Width="120"/>
+                                    SelectedItem="Libros:" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
-                    
-                    <!-- Celda que muestra la modalidad del lote -->
+
+                    <!--  Columna que muestra la modalidad del lote  -->
                     <GridViewColumn Width="140" Header="Modalidad">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Path=ModalidadLote.Nombre}"  />
+                                <TextBlock Text="{Binding Path=ModalidadLote.Nombre}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
-                    <GridViewColumn Width="120" Header="_Hitsound" />
+
+                    <!--  Columna que muestra el NIA del alumno asociado  -->
+                    <GridViewColumn Width="120" Header="NIA">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=NiaAlumno}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
