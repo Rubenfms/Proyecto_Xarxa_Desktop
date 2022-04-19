@@ -51,11 +51,17 @@
             <ListView.View>
                 <GridView>
                     <!--  Columna que contiene la lista de IDs  -->
-                    <GridViewColumn
-                        Width="120"
-                        DisplayMemberBinding="{Binding IdLote}"
-                        Header="Id" />
-                    <GridViewColumn Width="120" Header="_Nombre" />
+                    <GridViewColumn Width="120" Header="Id">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}"
+                                    Text="{Binding Path=IdLote}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
 
                     <!--  Columna que contiene la lista de libros  -->
                     <GridViewColumn Width="120" Header="Libros">
@@ -64,17 +70,25 @@
                                 <ComboBox
                                     Width="120"
                                     DisplayMemberPath="Titulo"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}"
+                                    IsEditable="True"
+                                    IsReadOnly="True"
                                     ItemsSource="{Binding Path=LibrosLote}"
-                                    SelectedItem="Libros:" />
+                                    Text="Ver libros:" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
                     <!--  Columna que muestra la modalidad del lote  -->
-                    <GridViewColumn Width="140" Header="Modalidad">
+                    <GridViewColumn Width="200" Header="Modalidad">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Path=ModalidadLote.Nombre}" />
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}"
+                                    Text="{Binding Path=ModalidadLote.Nombre}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -83,7 +97,11 @@
                     <GridViewColumn Width="120" Header="NIA">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Path=NiaAlumno}" />
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}"
+                                    Text="{Binding Path=NiaAlumno}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
