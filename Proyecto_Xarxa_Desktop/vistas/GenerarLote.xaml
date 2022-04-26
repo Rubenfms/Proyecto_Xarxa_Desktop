@@ -5,9 +5,11 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vms="clr-namespace:Proyecto_Xarxa_Desktop.vms"
     Title="Nuevo Lote"
     Width="700"
     Height="400"
+    d:DataContext="{d:DesignInstance Type=vms:GenerarLoteVM}"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterScreen"
@@ -50,21 +52,21 @@
             Grid.RowSpan="3"
             Grid.Column="0"
             IsSynchronizedWithCurrentItem="True"
-            ItemsSource="{Binding Path=ModalidadSeleccionada}">
+            ItemsSource="{Binding Path=ModalidadSeleccionada.LibrosModalidad}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="210" Header="Libro">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Path=Titulo}" />
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
+                    <GridViewColumn
+                        Width="210"
+                        DisplayMemberBinding="{Binding Path=Titulo}"
+                        Header="Libro" />
                     <GridViewColumn
                         Width="170"
-                        DisplayMemberBinding="{Binding Path=IsbnLibro}"
+                        DisplayMemberBinding="{Binding Path=Isbn}"
                         Header="ISBN" />
-                    <GridViewColumn Width="120" Header="Codigo" />
+                    <GridViewColumn
+                        Width="120"
+                        DisplayMemberBinding="{Binding Path=Curso}"
+                        Header="Curso" />
                 </GridView>
             </ListView.View>
         </ListView>
@@ -75,10 +77,12 @@
                 HorizontalAlignment="Center"
                 Text="Modalidad:" />
             <ComboBox
+                x:Name="ModalidadComboBox"
                 Width="150"
                 DisplayMemberPath="Nombre"
                 ItemsSource="{Binding Path=ListaModalidades}"
-                SelectedItem="{Binding Path=ModalidadSeleccionada}" />
+                SelectedItem="{Binding Path=ModalidadSeleccionada}"
+                SelectionChanged="ComboBoxModalidad_SelectionChanged" />
         </StackPanel>
 
         <Button

@@ -29,8 +29,6 @@ namespace Proyecto_Xarxa_Desktop.servicios
             Cliente = new RestClient(cadenaConexion);
         }
 
-        private static ObservableCollection<Usuario> listaUsuarios = new ObservableCollection<Usuario>();
-
         // Método que devuelve todos los lotes
         public ObservableCollection<Lote> GetLotes()
         {
@@ -74,35 +72,6 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de modalidades", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                 return null;
                 throw;
-            }
-        }
-
-        public static ObservableCollection<Usuario> GetUsuarios()
-        {
-            var url = Properties.Settings.Default.CadenaConexionLocalhost + "/xarxa/usuarios";
-            var request = (HttpWebRequest)WebRequest.Create(url);
-            request.Method = "GET";
-            request.ContentType = "application/json";
-            request.Accept = "application/json";
-            try
-            {
-                using (WebResponse response = request.GetResponse())
-                {
-                    using (Stream strReader = response.GetResponseStream())
-                    {
-                        if (strReader == null) return null;
-                        using (StreamReader objReader = new StreamReader(strReader))
-                        {
-                            string responseBody = objReader.ReadToEnd();
-                            listaUsuarios = JsonConvert.DeserializeObject<ObservableCollection<Usuario>>(responseBody);
-                            return listaUsuarios;
-                        }
-                    }
-                }
-            }
-            catch (WebException ex)
-            {
-                return null;
             }
         }
 

@@ -1,4 +1,5 @@
-﻿using Proyecto_Xarxa_Desktop.vms;
+﻿using Proyecto_Xarxa_Desktop.modelo;
+using Proyecto_Xarxa_Desktop.vms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,12 @@ namespace Proyecto_Xarxa_Desktop.vistas
         {
             InitializeComponent();
             DataContext = vm;
+        }
+
+        private void ComboBoxModalidad_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Modalidad modalidadSeleccionada = (Modalidad)ModalidadComboBox.SelectedItem;
+            vm.CargarModalidades(modalidadSeleccionada.Nombre);
         }
     }
 }

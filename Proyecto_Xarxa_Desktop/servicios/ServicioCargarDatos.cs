@@ -46,7 +46,6 @@ namespace Proyecto_Xarxa_Desktop.servicios
         public static void CargarDatos()
         {
             ListaAlumnos = ServicioCsv.GetListaAlumnos();
-            ListaUsuarios = ServicioAPI.GetUsuarios();
         }
     }
 }

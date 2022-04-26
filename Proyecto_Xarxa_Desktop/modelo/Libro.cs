@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _isbn;
 
+        [JsonProperty("isbnLibro")]
         public string Isbn
         {
             get { return _isbn; }

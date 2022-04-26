@@ -31,8 +31,18 @@ namespace Proyecto_Xarxa_Desktop.vms
         public GenerarLoteVM()
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
-
             ListaModalidades = servicioAPI.GetModalidades();
+        }
+
+        public void CargarModalidades(string modalidadSeleccionada)
+        {
+            foreach(Modalidad m in ListaModalidades)
+            {
+                if(m.Nombre.Equals(modalidadSeleccionada))
+                {
+                    ModalidadSeleccionada = m;
+                }
+            }
         }
     }
 }
