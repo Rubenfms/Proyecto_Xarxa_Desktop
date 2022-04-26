@@ -96,5 +96,28 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 throw;
             }
         }
+
+        // Método que devuelve todos los alumnos
+        public ObservableCollection<Alumno> GetAlumnos()
+        {
+            try
+            {
+                ObservableCollection<Alumno> result = new ObservableCollection<Alumno>();
+
+                RestRequest peticion = new RestRequest("/xarxa/alumnos", Method.Get);
+
+                var response = Cliente.GetAsync(peticion);
+
+                result = JsonConvert.DeserializeObject<ObservableCollection<Alumno>>(response.Result.Content);
+
+                return result;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de alumnos", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
     }
 }

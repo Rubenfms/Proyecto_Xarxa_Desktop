@@ -61,5 +61,10 @@ namespace Proyecto_Xarxa_Desktop
             vm.AbrirVistaLotes();
             SubMenuLotes.Visibility = (SubMenuLotes.Visibility == Visibility.Visible) ? Visibility.Collapsed : Visibility.Visible;
         }
+
+        private void AlumnosButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirVistaAlumnos();
+        }
     }
 }

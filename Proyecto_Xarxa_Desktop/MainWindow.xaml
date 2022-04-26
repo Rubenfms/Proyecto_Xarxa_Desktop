@@ -186,6 +186,7 @@
                 <Button
                     Height="60"
                     Background="{StaticResource PrimaryColor1}"
+                    Click="AlumnosButton_Click"
                     DockPanel.Dock="Top"
                     Style="{StaticResource EstiloBotonesMenu}">
                     <Button.Content>
