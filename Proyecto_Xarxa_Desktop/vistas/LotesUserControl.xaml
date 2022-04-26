@@ -13,23 +13,100 @@
     mc:Ignorable="d">
 
     <UserControl.Resources>
-        <convertidores:IdModalidadToNombre x:Key="IdModalidadToNombreConverter" />
+
+        <!--  Estilo para aplicar margen a los botones de la derecha  -->
+        <Style
+            x:Key="EstiloBoton"
+            BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}"
+            TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+
+        <!--  Estilo genérico para los textblock  -->
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
+        </Style>
+
     </UserControl.Resources>
 
-    <ListBox
-        ItemsSource="{Binding Path=ListaLotes}"
-        ScrollViewer.VerticalScrollBarVisibility="Hidden"
-        SelectedItem="{Binding Path=LoteSeleccionado}"
-        Style="{StaticResource MaterialDesignNavigationListBox}">
-        <ListBox.ItemsPanel>
-            <ItemsPanelTemplate>
-                <WrapPanel />
-            </ItemsPanelTemplate>
-        </ListBox.ItemsPanel>
-        <ListBox.ItemTemplate>
-            <DataTemplate>
-                <TextBlock Text="{Binding Path=IdLote}" />
-            </DataTemplate>
-        </ListBox.ItemTemplate>
-    </ListBox>
+    <DockPanel>
+        <StackPanel Margin="0,50,0,0" DockPanel.Dock="Right">
+            <Button
+                Click="GenerarLoteButton_Click"
+                Content="Generar Lote"
+                Style="{StaticResource EstiloBoton}" />
+            <Button Content="Editar Lote" Style="{StaticResource EstiloBoton}" />
+            <Button Content="Eliminar Lote" Style="{StaticResource EstiloBoton}" />
+            <StackPanel Margin="0,60,0,0">
+                <Button Content="Asignar Lote" Style="{StaticResource EstiloBoton}" />
+                <Button Content="Desasignar Lote" Style="{StaticResource EstiloBoton}" />
+            </StackPanel>
+        </StackPanel>
+
+        <ListView
+            IsSynchronizedWithCurrentItem="True"
+            ItemsSource="{Binding Path=ListaLotes}"
+            SelectedItem="{Binding Path=LoteSeleccionado}">
+            <ListView.View>
+                <GridView>
+                    <!--  Columna que contiene la lista de IDs  -->
+                    <GridViewColumn Width="120" Header="Id">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}"
+                                    Text="{Binding Path=IdLote}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <!--  Columna que contiene la lista de libros  -->
+                    <GridViewColumn Width="120" Header="Libros">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox
+                                    Width="120"
+                                    DisplayMemberPath="Titulo"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}"
+                                    IsEditable="True"
+                                    IsReadOnly="True"
+                                    ItemsSource="{Binding Path=LibrosLote}"
+                                    Text="Ver libros:" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <!--  Columna que muestra la modalidad del lote  -->
+                    <GridViewColumn Width="200" Header="Modalidad">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}"
+                                    Text="{Binding Path=ModalidadLote.Nombre}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <!--  Columna que muestra el NIA del alumno asociado  -->
+                    <GridViewColumn Width="120" Header="NIA">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}"
+                                    Text="{Binding Path=NiaAlumno}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
 </UserControl>

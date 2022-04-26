@@ -29,7 +29,7 @@
         <Storyboard x:Key="AbrirMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MenuLateralStackPanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
                 <EasingDoubleKeyFrame KeyTime="0" Value="60" />
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="200" />
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
 
@@ -37,7 +37,7 @@
         <Storyboard x:Key="CerrarMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MenuLateralStackPanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
                 <EasingDoubleKeyFrame KeyTime="0" Value="200" />
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="60" />
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
 
@@ -120,7 +120,7 @@
                                 Margin="20,0,12,0"
                                 Foreground="{StaticResource SecondaryColor2}"
                                 Kind="Account" />
-                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Lotes" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Listar lotes" />
                         </StackPanel>
                     </Button.Content>
                 </Button>
@@ -143,7 +143,7 @@
                                     Margin="20,0,12,0"
                                     Foreground="{StaticResource SecondaryColor2}"
                                     Kind="Eye" />
-                                <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Listar Lotes" />
+                                <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Generar Lote" />
                             </StackPanel>
                         </Button.Content>
                     </Button>
@@ -186,6 +186,7 @@
                 <Button
                     Height="60"
                     Background="{StaticResource PrimaryColor1}"
+                    Click="AlumnosButton_Click"
                     DockPanel.Dock="Top"
                     Style="{StaticResource EstiloBotonesMenu}">
                     <Button.Content>

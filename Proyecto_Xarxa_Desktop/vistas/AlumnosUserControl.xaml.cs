@@ -1,5 +1,4 @@
-﻿using Proyecto_Xarxa_Desktop.servicios;
-using Proyecto_Xarxa_Desktop.vms;
+﻿using Proyecto_Xarxa_Desktop.vms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,17 +17,15 @@ using System.Windows.Shapes;
 namespace Proyecto_Xarxa_Desktop.vistas
 {
     /// <summary>
-    /// Lógica de interacción para LotesUserControl.xaml
+    /// Lógica de interacción para AlumnosUserControl.xaml
     /// </summary>
-    public partial class LotesUserControl : UserControl
+    public partial class AlumnosUserControl : UserControl
     {
-        private LotesVM vm = new LotesVM();
-        public LotesUserControl()
+        private AlumnosVM vm = new AlumnosVM();
+        public AlumnosUserControl()
         {
             InitializeComponent();
             DataContext = vm;
         }
-
-        private void GenerarLoteButton_Click(object sender, RoutedEventArgs e) => vm.AbrirVistaGenerarLote();
     }
 }

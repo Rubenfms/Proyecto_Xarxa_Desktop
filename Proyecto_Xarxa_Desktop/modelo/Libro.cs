@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
     class Libro:ObservableObject
     {
 
-        public Libro(int isbn, string titulo, string curso, string departamento, string editorial)
+        public Libro(string isbn, string titulo, string curso, string departamento, string editorial)
         {
             Isbn = isbn;
             Titulo = titulo;
@@ -19,9 +20,10 @@ namespace Proyecto_Xarxa_Desktop.modelo
             Editorial = editorial;
         }
 
-        private int _isbn;
+        private string _isbn;
 
-        public int Isbn
+        [JsonProperty("isbnLibro")]
+        public string Isbn
         {
             get { return _isbn; }
             set { SetProperty(ref _isbn, value); }

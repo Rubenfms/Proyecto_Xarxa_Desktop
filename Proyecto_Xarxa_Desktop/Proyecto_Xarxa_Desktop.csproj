@@ -112,12 +112,20 @@
     <Compile Include="servicios\ServicioDialogos.cs" />
     <Compile Include="servicios\ServicioNavegacion.cs" />
     <Compile Include="servicios\ServicioValidarUsuario.cs" />
+    <Compile Include="vistas\AlumnosUserControl.xaml.cs">
+      <DependentUpon>AlumnosUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\GenerarLote.xaml.cs">
+      <DependentUpon>GenerarLote.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistas\LotesUserControl.xaml.cs">
       <DependentUpon>LotesUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vms\AlumnosVM.cs" />
+    <Compile Include="vms\GenerarLoteVM.cs" />
     <Compile Include="vms\LogInVM.cs" />
     <Compile Include="vms\LotesVM.cs" />
     <Compile Include="vms\MainWindowVM.cs" />
@@ -134,6 +142,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="vistas\AlumnosUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\GenerarLote.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="vistas\LogIn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

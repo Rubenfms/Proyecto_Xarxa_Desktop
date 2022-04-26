@@ -45,7 +45,6 @@ namespace Proyecto_Xarxa_Desktop.vms
         public LogInVM()
         {
             UsuarioXarxa = new Usuario();
-            listaUsuarios = ServicioAPI.GetUsuarios();
             servicioValidarUsuario = new ServicioValidarUsuario();
             ValidarUsuarioCommand = new RelayCommand(ValidarUsuario);
         }
