@@ -38,8 +38,10 @@
             Grid.Row="1"
             Grid.Column="0"
             HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Text="Numero de lote 12345" />
+            VerticalAlignment="Center">
+            <Run Text="Numero de lote:" />
+            <Run Name="NumeroLoteTB" Text="" />
+        </TextBlock>
 
         <ListView
             Grid.Row="2"
@@ -50,7 +52,7 @@
             <ListView.View>
                 <GridView>
                     <GridViewColumn
-                        Width="210"
+                        Width="330"
                         DisplayMemberBinding="{Binding Path=Titulo}"
                         Header="Libro" />
                     <GridViewColumn

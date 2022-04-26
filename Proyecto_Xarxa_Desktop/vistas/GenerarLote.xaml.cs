@@ -31,8 +31,15 @@ namespace Proyecto_Xarxa_Desktop.vistas
         private void ComboBoxModalidad_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Modalidad modalidadSeleccionada = (Modalidad)ModalidadComboBox.SelectedItem;
+
+            // Añadido condicional para que no de conflicto al limpiar la selección
             if(modalidadSeleccionada != null)
-            vm.CargarModalidades(modalidadSeleccionada.Nombre);
+            {
+                // Mostramos el listbox con todas las modalidades
+                vm.CargarModalidades(modalidadSeleccionada.Nombre);
+                // Generamos numero lote
+                NumeroLoteTB.Text = vm.GenerarNumeroLote(modalidadSeleccionada);
+            }
         }
 
         private void LimpiarButton_Click(object sender, RoutedEventArgs e)

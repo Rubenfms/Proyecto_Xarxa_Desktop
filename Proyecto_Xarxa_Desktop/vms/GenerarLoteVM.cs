@@ -44,5 +44,11 @@ namespace Proyecto_Xarxa_Desktop.vms
                 }
             }
         }
+
+        public string GenerarNumeroLote(Modalidad modalidadSeleccionada)
+        {
+            string curso = modalidadSeleccionada.Curso.Remove(1, modalidadSeleccionada.Curso.Length - 1); // Como viene en formato (1ºESO) me quedo solo con el numero
+            return $"{curso}{modalidadSeleccionada.Id}000";
+        }
     }
 }
