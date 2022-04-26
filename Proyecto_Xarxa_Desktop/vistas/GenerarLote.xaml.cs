@@ -31,7 +31,13 @@ namespace Proyecto_Xarxa_Desktop.vistas
         private void ComboBoxModalidad_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Modalidad modalidadSeleccionada = (Modalidad)ModalidadComboBox.SelectedItem;
+            if(modalidadSeleccionada != null)
             vm.CargarModalidades(modalidadSeleccionada.Nombre);
+        }
+
+        private void LimpiarButton_Click(object sender, RoutedEventArgs e)
+        {
+            ModalidadComboBox.SelectedItem = null;
         }
     }
 }
