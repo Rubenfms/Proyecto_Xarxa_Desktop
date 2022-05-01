@@ -40,7 +40,7 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
             <Run Text="Numero de lote:" />
-            <Run Name="NumeroLoteTB" Text="" />
+            <Run Name="NumeroLoteTB" Text="{Binding Path=IdLote}" />
         </TextBlock>
 
         <ListView
