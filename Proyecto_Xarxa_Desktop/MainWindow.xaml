@@ -119,7 +119,7 @@
                                 Height="25"
                                 Margin="20,0,12,0"
                                 Foreground="{StaticResource SecondaryColor2}"
-                                Kind="Account" />
+                                Kind="Pencil" />
                             <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Listar lotes" />
                         </StackPanel>
                     </Button.Content>
@@ -142,7 +142,7 @@
                                     Height="25"
                                     Margin="20,0,12,0"
                                     Foreground="{StaticResource SecondaryColor2}"
-                                    Kind="Eye" />
+                                    Kind="PencilPlus" />
                                 <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Generar Lote" />
                             </StackPanel>
                         </Button.Content>
@@ -196,7 +196,7 @@
                                 Height="25"
                                 Margin="20,0,13,0"
                                 Foreground="{StaticResource SecondaryColor2}"
-                                Kind="AccessPointPlus" />
+                                Kind="Account" />
                             <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Opción 2" />
                         </StackPanel>
                     </Button.Content>
@@ -214,7 +214,7 @@
                                 Height="25"
                                 Margin="20,0,13,0"
                                 Foreground="{StaticResource SecondaryColor2}"
-                                Kind="ChevronUpCircleOutline" />
+                                Kind="BookOpenVariant" />
                             <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Opción 3" />
                         </StackPanel>
                     </Button.Content>

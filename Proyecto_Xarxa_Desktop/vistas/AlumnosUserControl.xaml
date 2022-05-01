@@ -38,16 +38,27 @@
                 DockPanel.Dock="Right" />
             <Button
                 Margin="0,0,20,0"
+                Command="{Binding Path=DarDeAltaCommand}"
                 Content="Dar de Alta"
                 DockPanel.Dock="Right" />
-            <TextBox
-                x:Name="buscador"
-                Height="40"
-                HorizontalAlignment="Center"
-                materialDesign:HintAssist.Hint="Filtra por NIA, nombre, apellido o curso"
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                Text="{Binding Path=Buscador}"
-                TextChanged="buscador_TextChanged" />
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <materialDesign:PackIcon
+                    Width="30"
+                    Height="30"
+                    Margin="10,0,10,0"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Left"
+                    Kind="AccountFilter" />
+                <TextBox
+                    x:Name="buscador"
+                    Margin="0,0,0,10"
+                    VerticalAlignment="Center"
+                    materialDesign:HintAssist.Hint="Filtra por NIA, nombre, apellido o curso"
+                    DockPanel.Dock="Left"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                    Text="{Binding Path=Buscador}"
+                    TextChanged="buscador_TextChanged" />
+            </StackPanel>
         </DockPanel>
 
         <ListView

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Input;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -46,15 +47,20 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref buscador, value); }
         }
 
+        public RelayCommand DarDeAltaCommand { get; }
+
         public AlumnosVM()
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaAlumnos = servicioAPI.GetAlumnos();
+            //ListaAlumnos = ServicioCsv.GetListaAlumnosFromCSV();
+            // Comandos
+            DarDeAltaCommand = new RelayCommand(DarDeAlta);
         }
 
-        public void Buscar()
+        public void DarDeAlta()
         {
-
+            ServicioNavegacion.AbrirVistaDarDeAlta();
         }
     }
 }
