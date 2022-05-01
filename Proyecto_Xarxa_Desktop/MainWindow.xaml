@@ -273,6 +273,7 @@
                 Text="{Binding Path=UsuarioLogeado.NombreUsuario}" />
             <!--  Barra de búsqueda es el último hijo para que rellene y quede centrada  -->
             <TextBox
+                x:Name="Hola"
                 Width="400"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"

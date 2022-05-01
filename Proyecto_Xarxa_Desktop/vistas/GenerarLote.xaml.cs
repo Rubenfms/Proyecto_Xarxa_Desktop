@@ -41,11 +41,5 @@ namespace Proyecto_Xarxa_Desktop.vistas
                 vm.GenerarNumeroLote(modalidadSeleccionada);
             }
         }
-
-        private void LimpiarButton_Click(object sender, RoutedEventArgs e)
-        {
-            ModalidadComboBox.SelectedItem = null;
-            vm.LimpiarIdLote();
-        }
     }
 }

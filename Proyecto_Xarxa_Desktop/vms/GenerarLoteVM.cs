@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Input;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -37,10 +38,17 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref idLote, value); }
         }
 
+        public RelayCommand ConfirmarLoteCommand { get; }
+        public RelayCommand LimpiarSeleccionCommand { get; }
+
         public GenerarLoteVM()
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaModalidades = servicioAPI.GetModalidades();
+
+            // Comandos
+            LimpiarSeleccionCommand = new RelayCommand(LimpiarIdLote);
+            ConfirmarLoteCommand = new RelayCommand(ConfirmarLote);
         }
 
         public void CargarModalidades(string modalidadSeleccionada)
@@ -77,7 +85,13 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         public void LimpiarIdLote()
         {
+            ModalidadSeleccionada = null;
             IdLote = "";
+        }
+
+        public void ConfirmarLote()
+        {
+            // Lote nuevolote = new Lote(Int32.Parse(IdLote), modalidadSeleccionada.LibrosModalidad, ModalidadSeleccionada);
         }
     }
 }

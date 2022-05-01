@@ -1,4 +1,5 @@
-﻿using Proyecto_Xarxa_Desktop.vms;
+﻿using Proyecto_Xarxa_Desktop.modelo;
+using Proyecto_Xarxa_Desktop.vms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,25 @@ namespace Proyecto_Xarxa_Desktop.vistas
         {
             InitializeComponent();
             DataContext = vm;
+        }
+
+        private void buscador_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            listview.ClearValue(ListView.ItemsSourceProperty); // Eliminamos el valor de la propiedad Items Source para poder usar Clear items
+            listview.Items.Clear(); // Eliminamos los items actuales antes de añadir los nuevos filtrados
+
+
+            // Filtramos y mostramos el resultado filtrado
+            string filtro = buscador.Text.ToUpper();
+            foreach (Alumno a in vm.ListaAlumnos)
+            {
+                if (a.Nombre.ToUpper().Contains(filtro) || a.Nia.ToString().Contains(filtro) || 
+                    a.Apellido1.ToUpper().Contains(filtro) || a.Apellido2.ToUpper().Contains(filtro) ||
+                    a.Grupo.ToUpper().Contains(filtro))
+                {
+                    listview.Items.Add(a);
+                }
+            }
         }
     }
 }

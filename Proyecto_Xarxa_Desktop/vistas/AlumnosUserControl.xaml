@@ -2,15 +2,18 @@
     x:Class="Proyecto_Xarxa_Desktop.vistas.AlumnosUserControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:convertidores="clr-namespace:Proyecto_Xarxa_Desktop.convertidores"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     d:DesignHeight="450"
     d:DesignWidth="800"
     Background="{StaticResource SecondaryColor2}"
     mc:Ignorable="d">
-    <UserControl.Resources>
 
+    <UserControl.Resources>
+        <convertidores:BooleanToSiNo x:Key="BooleanToSiNoConverter" />
         <!--  Estilo para aplicar margen a los botones de la derecha  -->
         <Style
             x:Key="EstiloBoton"
@@ -28,9 +31,27 @@
     </UserControl.Resources>
 
     <DockPanel>
-        <StackPanel Margin="0,50,0,0" DockPanel.Dock="Right" />
+        <DockPanel DockPanel.Dock="Top">
+            <Button
+                Margin="0,0,20,0"
+                Content="Dar de Baja"
+                DockPanel.Dock="Right" />
+            <Button
+                Margin="0,0,20,0"
+                Content="Dar de Alta"
+                DockPanel.Dock="Right" />
+            <TextBox
+                x:Name="buscador"
+                Height="40"
+                HorizontalAlignment="Center"
+                materialDesign:HintAssist.Hint="Filtra por NIA, nombre, apellido o curso"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=Buscador}"
+                TextChanged="buscador_TextChanged" />
+        </DockPanel>
 
         <ListView
+            x:Name="listview"
             IsSynchronizedWithCurrentItem="True"
             ItemsSource="{Binding Path=ListaAlumnos}"
             SelectedItem="{Binding Path=AlumnoSeleccionado}">
@@ -49,23 +70,32 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <!--  Columna que contiene la lista de primeros apellidos  -->
+                    <!--  Columna que muestra los nombres  -->
                     <GridViewColumn
-                        Width="130"
+                        Width="120"
                         DisplayMemberBinding="{Binding Path=Nombre}"
                         Header="Nombre" />
 
-                    <!--  Columna que muestra los apellidos  -->
-                    <GridViewColumn Width="200" Header="Apellidos">
+                    <!--  Columna que contiene la lista de apellidos  -->
+                    <GridViewColumn Width="180" Header="Apellidos">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock
                                     HorizontalAlignment="Center"
                                     FontSize="18"
-                                    Foreground="{StaticResource PrimaryColor3}" />
+                                    Foreground="{StaticResource PrimaryColor3}">
+                                    <Run Text="{Binding Path=Apellido1}" />
+                                    <Run Text="{Binding Path=Apellido2}" />
+                                </TextBlock>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
+
+                    <!--  Columna que muestra el grupo  -->
+                    <GridViewColumn
+                        Width="120"
+                        DisplayMemberBinding="{Binding Path=Grupo}"
+                        Header="Grupo" />
 
                     <!--  Columna que muestra la matriculacion  -->
                     <GridViewColumn
@@ -73,6 +103,17 @@
                         DisplayMemberBinding="{Binding Path=Matricula}"
                         Header="Matriculación" />
 
+                    <!--  Columna que muestra si pertenece a la xarxa  -->
+                    <GridViewColumn
+                        Width="120"
+                        DisplayMemberBinding="{Binding Path=PerteneceXarxa, Converter={StaticResource BooleanToSiNoConverter}}"
+                        Header="Xarxa" />
+
+                    <!--  Columna que muestra el id del lote que tiene asignado  -->
+                    <GridViewColumn
+                        Width="120"
+                        DisplayMemberBinding="{Binding Path=Lote.IdLote}"
+                        Header="Lote" />
                 </GridView>
             </ListView.View>
         </ListView>

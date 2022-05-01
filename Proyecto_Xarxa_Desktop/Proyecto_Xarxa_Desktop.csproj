@@ -133,6 +133,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="convertidores\BooleanToSiNo.cs" />
     <Compile Include="convertidores\IdModalidadToNombre.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="servicios\ServicioAPI.cs" />

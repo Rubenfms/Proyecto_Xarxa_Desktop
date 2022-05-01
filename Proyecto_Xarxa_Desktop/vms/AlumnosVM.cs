@@ -38,10 +38,23 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref apellidos, value); }
         }
 
+        private string buscador;
+
+        public string Buscador
+        {
+            get { return buscador; }
+            set { SetProperty(ref buscador, value); }
+        }
+
         public AlumnosVM()
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaAlumnos = servicioAPI.GetAlumnos();
+        }
+
+        public void Buscar()
+        {
+
         }
     }
 }
