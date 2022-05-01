@@ -119,5 +119,27 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 throw;
             }
         }
+
+        // Método que devuelve un alumno a partir de su NIA
+        public Alumno GetAlumno(int nia)
+        {
+            try
+            {
+                Alumno result = new Alumno();
+
+                RestRequest peticion = new RestRequest($"/xarxa/alumnos/{nia}", Method.Get);
+
+                var response = Cliente.GetAsync(peticion);
+
+                result = JsonConvert.DeserializeObject<Alumno>(response.Result.Content);
+                return result;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("Error con la API", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
     }
 }
