@@ -72,14 +72,16 @@
     </Window.Triggers>
     <DockPanel>
         <!--  StackPanel Barra Lateral  -->
-        <StackPanel
+        <DockPanel
             x:Name="MenuLateralStackPanel"
             Width="60"
             Background="{StaticResource PrimaryColor1}"
-            DockPanel.Dock="Left"
-            Orientation="Vertical">
+            DockPanel.Dock="Left">
             <!--  Primer Contenedor con el botón para desplegar y la foto  -->
-            <StackPanel Height="130" Background="{StaticResource SecondaryColor1}">
+            <StackPanel
+                Height="130"
+                Background="{StaticResource SecondaryColor1}"
+                DockPanel.Dock="Top">
                 <Button
                     x:Name="CerrarMenuButton"
                     HorizontalAlignment="Right"
@@ -238,52 +240,30 @@
                         </StackPanel>
                     </Button.Content>
                 </Button>
+                <materialDesign:PopupBox
+                    DockPanel.Dock="Bottom"
+                    Foreground="{StaticResource PrimaryColor3}"
+                    PlacementMode="TopAndAlignLeftEdges"
+                    StaysOpen="False">
+                    <StackPanel>
+                        <Button Content="Cuenta" />
+                        <Button Content="Opciones SuperUser" />
+                        <Button Content="Ayuda" />
+                        <Separator />
+                        <Button
+                            x:Name="CerrarSesionButton"
+                            Click="CerrarSesionButton_Click"
+                            Content="Cerrar Sesión" />
+                        <Button
+                            x:Name="SalirButton"
+                            Click="SalirButton_Click"
+                            Content="Salir Aplicación" />
+                    </StackPanel>
+                </materialDesign:PopupBox>
             </DockPanel>
-        </StackPanel>
-        <!--  Dock Panel Parte de Arriba con la barra de búsqueda  -->
-        <DockPanel
-            Height="70"
-            Background="{StaticResource PrimaryColor1}"
-            DockPanel.Dock="Top"
-            LastChildFill="True">
-            <materialDesign:PopupBox
-                DockPanel.Dock="Right"
-                Foreground="{StaticResource PrimaryColor3}"
-                PlacementMode="BottomAndAlignRightEdges"
-                StaysOpen="False">
-                <StackPanel>
-                    <Button Content="Cuenta" />
-                    <Button Content="Opciones SuperUser" />
-                    <Button Content="Ayuda" />
-                    <Separator />
-                    <Button
-                        x:Name="CerrarSesionButton"
-                        Click="CerrarSesionButton_Click"
-                        Content="Cerrar Sesión" />
-                    <Button
-                        x:Name="SalirButton"
-                        Click="SalirButton_Click"
-                        Content="Salir Aplicación" />
-                </StackPanel>
-            </materialDesign:PopupBox>
-
-            <TextBlock
-                VerticalAlignment="Center"
-                DockPanel.Dock="Right"
-                Text="{Binding Path=UsuarioLogeado.NombreUsuario}" />
-            <!--  Barra de búsqueda es el último hijo para que rellene y quede centrada  -->
-            <TextBox
-                x:Name="Hola"
-                Width="400"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                materialDesign:HintAssist.Hint="Introduce algo para buscar..."
-                BorderBrush="{StaticResource PrimaryColor3}"
-                FontSize="18"
-                Foreground="{StaticResource PrimaryColor3}"
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
         </DockPanel>
 
+        <!--  Content Control que contiene las ventanas que se van a visualizar  -->
         <ContentControl Content="{Binding Path=PestanyaActual}" />
     </DockPanel>
 </Window>

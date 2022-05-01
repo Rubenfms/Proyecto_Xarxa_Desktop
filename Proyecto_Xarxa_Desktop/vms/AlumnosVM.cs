@@ -52,8 +52,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         public AlumnosVM()
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
-            ListaAlumnos = servicioAPI.GetAlumnos();
-            //ListaAlumnos = ServicioCsv.GetListaAlumnosFromCSV();
+            //ListaAlumnos = servicioAPI.GetAlumnos();
+            ListaAlumnos = ServicioCsv.GetListaAlumnosFromCSV();
             // Comandos
             DarDeAltaCommand = new RelayCommand(DarDeAlta);
         }
