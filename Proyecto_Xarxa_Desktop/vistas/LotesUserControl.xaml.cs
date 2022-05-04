@@ -28,7 +28,5 @@ namespace Proyecto_Xarxa_Desktop.vistas
             InitializeComponent();
             DataContext = vm;
         }
-
-        private void GenerarLoteButton_Click(object sender, RoutedEventArgs e) => vm.AbrirVistaGenerarLote();
     }
 }

@@ -47,7 +47,9 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref buscador, value); }
         }
 
+        // Comandos
         public RelayCommand DarDeAltaCommand { get; }
+
 
         public AlumnosVM()
         {

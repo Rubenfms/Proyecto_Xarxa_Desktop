@@ -41,6 +41,21 @@
                 Command="{Binding Path=DarDeAltaCommand}"
                 Content="Dar de Alta"
                 DockPanel.Dock="Right" />
+            <!--  StackPanel con el toggle button y text block  -->
+            <StackPanel Margin="20,0,0,0" Orientation="Horizontal">
+                <TextBlock
+                    Height="30"
+                    VerticalAlignment="Center"
+                    Text="Solo Xarxa" />
+                <ToggleButton
+                    x:Name="SoloXarxaToggleButton"
+                    VerticalAlignment="Center"
+                    Click="SoloXarxaToggleButton_Click"
+                    IsChecked="False"
+                    Style="{StaticResource MaterialDesignSwitchLightToggleButton}"
+                    ToolTip="Mostrar solo alumnos pertenecientes a la Xarxa" />
+            </StackPanel>
+            <!--  StackPanel superior  -->
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <materialDesign:PackIcon
                     Width="30"
@@ -61,6 +76,7 @@
             </StackPanel>
         </DockPanel>
 
+        <!--  Contenedor de la lista de alumnos  -->
         <ListView
             x:Name="listview"
             IsSynchronizedWithCurrentItem="True"

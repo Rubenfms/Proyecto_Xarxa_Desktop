@@ -135,6 +135,7 @@
     </ApplicationDefinition>
     <Compile Include="convertidores\BooleanToSiNo.cs" />
     <Compile Include="convertidores\NullToVisibilityModificado.cs" />
+    <Compile Include="convertidores\TipoUsuarioToEnabled.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="servicios\ServicioAPI.cs" />
     <Compile Include="servicios\ServicioCsv.cs" />

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Input;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -29,16 +30,75 @@ namespace Proyecto_Xarxa_Desktop.vms
         }
 
         private ServicioAPI servicioAPI;
+
+        // Comandos
+        public RelayCommand GenerarLoteCommand { get; }
+        public RelayCommand EliminarLoteCommand { get; }
+        public RelayCommand EditarLoteCommand { get; }
+        public RelayCommand AsignarLoteCommand { get; }
+        public RelayCommand DesasignarLoteCommand { get; }
+
         public LotesVM()
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaLotes = servicioAPI.GetLotes();
             LoteSeleccionado = new Lote();
+
+            // Comandos
+            GenerarLoteCommand = new RelayCommand(AbrirVistaGenerarLote);
+            AsignarLoteCommand = new RelayCommand(AsignarLote);
+            DesasignarLoteCommand = new RelayCommand(DesasignarLote);
+            EditarLoteCommand = new RelayCommand(EditarLote);
+            EliminarLoteCommand = new RelayCommand(EliminarLote);
         }
 
         public void AbrirVistaGenerarLote()
         {
             ServicioNavegacion.AbrirVistaGenerarLote();
+        }
+
+        public void AsignarLote()
+        {
+            // Comprobación de si hay lote seleccionado
+            if (LoteSeleccionado == null)
+            {
+                ServicioDialogos.ServicioMessageBox("Selecciona un lote para poder asignarlo", "Necesario Lote Seleccionado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+            }
+            // Comprobación de que el lote seleccionado no tenga nia asignado
+            else if (LoteSeleccionado.NiaAlumno != null || LoteSeleccionado.NiaAlumno != 0)
+            {
+                ServicioDialogos.ServicioMessageBox($"El lote ya tiene un nia asignado: {LoteSeleccionado.NiaAlumno}", "Lote ya asignado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+            }
+            else
+            {
+                
+            }
+
+        }
+        public void DesasignarLote()
+        {
+            // Comprobación de si hay lote seleccionado
+            if (LoteSeleccionado == null)
+            {
+                ServicioDialogos.ServicioMessageBox("Selecciona un lote para poder asignarlo", "Necesario Lote Seleccionado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+            }
+            // Comprobación de que el lote no tenga ningun nia asignado
+            else if (LoteSeleccionado.NiaAlumno > 0)
+            {
+                ServicioDialogos.ServicioMessageBox("El lote no tiene ningún nia asignado", "Nia no asignado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+            }
+            else
+            {
+                //LoteSeleccionado.NiaAlumno = null;
+            }
+        }
+        public void EditarLote()
+        {
+
+        }
+        public void EliminarLote()
+        {
+
         }
     }
 }

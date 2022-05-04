@@ -32,24 +32,16 @@ namespace Proyecto_Xarxa_Desktop.servicios
         // Método que devuelve todos los lotes
         public ObservableCollection<Lote> GetLotes()
         {
-            try
-            {
-                ObservableCollection<Lote> result = new ObservableCollection<Lote>();
+            ObservableCollection<Lote> result = new ObservableCollection<Lote>();
 
-                RestRequest peticion = new RestRequest("/xarxa/lotes", Method.Get);
+            RestRequest peticion = new RestRequest("/xarxa/lotes", Method.Get);
 
-                var response = Cliente.GetAsync(peticion);
+            var response = Cliente.GetAsync(peticion);
 
-                result = JsonConvert.DeserializeObject<ObservableCollection<Lote>>(response.Result.Content);
+            result = JsonConvert.DeserializeObject<ObservableCollection<Lote>>(response.Result.Content);
 
-                return result;
-            }
-            catch (AggregateException)
-            {
-                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de lotes", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
-                return null;
-                throw;
-            }
+            return result;
+
         }
 
         // Método que devuelve todas las modalidades
@@ -91,7 +83,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
             catch (AggregateException)
             {
-                ServicioDialogos.ServicioMessageBox("Error con la API", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                ServicioDialogos.ServicioMessageBox("Error con la API al autenticar al usuario", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                 return null;
                 throw;
             }

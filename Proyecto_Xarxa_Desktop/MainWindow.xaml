@@ -2,6 +2,7 @@
     x:Class="Proyecto_Xarxa_Desktop.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:convertidores="clr-namespace:Proyecto_Xarxa_Desktop.convertidores"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -12,13 +13,8 @@
     MinWidth="1080"
     MinHeight="600"
     mc:Ignorable="d">
-
-    <Window.InputBindings>
-        <!--  KeyBinding para que al pulsar el botón enter se pulse el botón de logeo  -->
-        <KeyBinding Key="Return" Command="{Binding Path=ValidarUsuarioCommand}" />
-    </Window.InputBindings>
-
     <Window.Resources>
+        <convertidores:TipoUsuarioToEnabled x:Key="TipoUsuarioToEnabledConverter" />
         <!--  Estilo genérico para los textblock  -->
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontSize" Value="18" />
@@ -240,26 +236,36 @@
                         </StackPanel>
                     </Button.Content>
                 </Button>
-                <materialDesign:PopupBox
-                    DockPanel.Dock="Bottom"
-                    Foreground="{StaticResource PrimaryColor3}"
-                    PlacementMode="TopAndAlignLeftEdges"
-                    StaysOpen="False">
-                    <StackPanel>
-                        <Button Content="Cuenta" />
-                        <Button Content="Opciones SuperUser" />
-                        <Button Content="Ayuda" />
-                        <Separator />
-                        <Button
-                            x:Name="CerrarSesionButton"
-                            Click="CerrarSesionButton_Click"
-                            Content="Cerrar Sesión" />
-                        <Button
-                            x:Name="SalirButton"
-                            Click="SalirButton_Click"
-                            Content="Salir Aplicación" />
-                    </StackPanel>
-                </materialDesign:PopupBox>
+                <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+                    <materialDesign:PopupBox
+                        Content="Ajustes"
+                        Foreground="{StaticResource PrimaryColor3}"
+                        PlacementMode="TopAndAlignLeftEdges"
+                        StaysOpen="False">
+                        <StackPanel>
+                            <Button Content="Cuenta" />
+                            <Button
+                                x:Name="OpcionesSUButton"
+                                Click="OpcionesSUButton_Click"
+                                Content="Opciones SuperUser"
+                                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource TipoUsuarioToEnabledConverter}}"/>
+                            <Button Content="Ayuda" />
+                            <Separator />
+                            <Button
+                                x:Name="CerrarSesionButton"
+                                Click="CerrarSesionButton_Click"
+                                Content="Cerrar Sesión" />
+                            <Button
+                                x:Name="SalirButton"
+                                Click="SalirButton_Click"
+                                Content="Salir Aplicación" />
+                        </StackPanel>
+                    </materialDesign:PopupBox>
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        DockPanel.Dock="Right"
+                        Text="{Binding Path=UsuarioLogeado.NombreUsuario}" />
+                </StackPanel>
             </DockPanel>
         </DockPanel>
 

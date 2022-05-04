@@ -47,5 +47,26 @@ namespace Proyecto_Xarxa_Desktop.vistas
                 }
             }
         }
+
+        private void SoloXarxaToggleButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            listview.ClearValue(ListView.ItemsSourceProperty); // Eliminamos el valor de la propiedad Items Source para poder usar Clear items
+            listview.Items.Clear(); // Eliminamos los items actuales antes de añadir los nuevos filtrados
+
+            // Mostramos alumnos solo que sean de la Xarxa
+            foreach (Alumno a in vm.ListaAlumnos)
+            {
+                // Si el botón está activo mostramos solo los alumnos que pertenezcan a la xarxa
+                if ((bool)SoloXarxaToggleButton.IsChecked)
+                {
+                    if (a.PerteneceXarxa)
+                    {
+                        listview.Items.Add(a);
+                    }
+                }
+                else listview.Items.Add(a); // Si no está checkeado mostramos todos
+            }
+        }
     }
 }
