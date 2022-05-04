@@ -24,6 +24,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         // Abre un dialogo dar de alta
         internal static void AbrirVistaDarDeAlta() => new DarDeAltaDialog().ShowDialog();
 
-
+        // Abre diálogo opciones superusuario
+        internal static void AbrirVistaOpcionesSU() => new OpcionesSuperUsuario().ShowDialog();
     }
 }

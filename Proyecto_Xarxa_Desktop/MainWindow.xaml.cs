@@ -69,7 +69,7 @@ namespace Proyecto_Xarxa_Desktop
 
         private void OpcionesSUButton_Click(object sender, RoutedEventArgs e)
         {
-
+            vm.AbrirOpcionesSU();
         }
     }
 }
