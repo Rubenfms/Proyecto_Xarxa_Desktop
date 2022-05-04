@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Newtonsoft.Json;
 using Proyecto_Xarxa_Desktop.enumerados;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,9 @@ namespace Proyecto_Xarxa_Desktop.modelo
 {
     class Alumno:ObservableObject
     {
-        private int nia;
-
         private Lote _lote;
 
+        //[JsonProperty("loteCollection")]
         public Lote Lote
         {
             get { return _lote; }
@@ -113,6 +113,22 @@ namespace Proyecto_Xarxa_Desktop.modelo
             Grupo = grupo;
             Incidencias = incidencias;
             PerteneceXarxa = perteneceXarxa;
+        }
+
+        // Constructor con lote
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, DateTime fechaNacimiento, EstadoMatricula matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, Lote lote)
+        {
+            Nia = nia;
+            Nombre = nombre;
+            Apellido1 = apellido1;
+            Apellido2 = apellido2;
+            FechaNacimiento = fechaNacimiento;
+            Matricula = matricula;
+            Curso = curso;
+            Grupo = grupo;
+            Incidencias = incidencias;
+            PerteneceXarxa = perteneceXarxa;
+            Lote = lote;
         }
 
         // Constructor sin lote y sin PerteneceXarxa

@@ -48,7 +48,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             ServicioDialogos.ServicioMessageBox("Usuario o contraseña incorrectos", "Credenciales Incorrectas", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             return false;
         }
-        public string Sha256encrypt(string phrase)
+        public static string Sha256encrypt(string phrase)
         {
             using (SHA256 sha256Hash = SHA256.Create())
             {

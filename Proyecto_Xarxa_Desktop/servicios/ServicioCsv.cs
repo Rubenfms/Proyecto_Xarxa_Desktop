@@ -100,7 +100,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         }
 
         // Devuelve lista de alumnos (contrastando si pertenecen a la xarxa o no)
-        public static ObservableCollection<Alumno> GetListaAlumnos()
+        public static ObservableCollection<Alumno> GetListaAlumnosFromCSV()
         {
             LeeCsvAlumnosGeneral();
             LeeCsvAlumnosXarxa();

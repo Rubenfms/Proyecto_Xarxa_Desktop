@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Input;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -28,27 +29,69 @@ namespace Proyecto_Xarxa_Desktop.vms
         }
 
         private ServicioAPI servicioAPI;
+
+        private string idLote;
+
+        public string IdLote
+        {
+            get { return idLote; }
+            set { SetProperty(ref idLote, value); }
+        }
+
+        public RelayCommand ConfirmarLoteCommand { get; }
+        public RelayCommand LimpiarSeleccionCommand { get; }
+
         public GenerarLoteVM()
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaModalidades = servicioAPI.GetModalidades();
+
+            // Comandos
+            LimpiarSeleccionCommand = new RelayCommand(LimpiarIdLote);
+            ConfirmarLoteCommand = new RelayCommand(ConfirmarLote);
         }
 
         public void CargarModalidades(string modalidadSeleccionada)
         {
-            foreach(Modalidad m in ListaModalidades)
+            foreach (Modalidad m in ListaModalidades)
             {
-                if(m.Nombre.Equals(modalidadSeleccionada))
+                if (m.Nombre.Equals(modalidadSeleccionada))
                 {
                     ModalidadSeleccionada = m;
                 }
             }
         }
 
-        public string GenerarNumeroLote(Modalidad modalidadSeleccionada)
+        public void GenerarNumeroLote(Modalidad modalidadSeleccionada)
         {
             string curso = modalidadSeleccionada.Curso.Remove(1, modalidadSeleccionada.Curso.Length - 1); // Como viene en formato (1ºESO) me quedo solo con el numero
-            return $"{curso}{modalidadSeleccionada.Id}000";
+
+            // Hallamos el idLote
+            int idLote = ServicioSQL.HallarUltLote(Int32.Parse(curso), modalidadSeleccionada.Id);
+
+            if(idLote <= 9)
+            {
+                IdLote = $"{curso}{modalidadSeleccionada.Id}00{idLote}";
+            }
+            else if(idLote>=10 && idLote<=99)
+            {
+                IdLote = $"{curso}{modalidadSeleccionada.Id}0{idLote}";
+            }
+            else
+            {
+                IdLote = $"{curso}{modalidadSeleccionada.Id}0{idLote}";
+            }
+        }
+
+        public void LimpiarIdLote()
+        {
+            ModalidadSeleccionada = null;
+            IdLote = "";
+        }
+
+        public void ConfirmarLote()
+        {
+            // Lote nuevolote = new Lote(Int32.Parse(IdLote), modalidadSeleccionada.LibrosModalidad, ModalidadSeleccionada);
         }
     }
 }

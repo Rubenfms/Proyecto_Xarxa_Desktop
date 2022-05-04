@@ -33,14 +33,26 @@
     <DockPanel>
         <StackPanel Margin="0,50,0,0" DockPanel.Dock="Right">
             <Button
-                Click="GenerarLoteButton_Click"
+                Command="{Binding Path=GenerarLoteCommand}"
                 Content="Generar Lote"
                 Style="{StaticResource EstiloBoton}" />
-            <Button Content="Editar Lote" Style="{StaticResource EstiloBoton}" />
-            <Button Content="Eliminar Lote" Style="{StaticResource EstiloBoton}" />
+            <Button
+                Command="{Binding Path=EditarLoteCommand}"
+                Content="Editar Lote"
+                Style="{StaticResource EstiloBoton}" />
+            <Button
+                Command="{Binding Path=EliminarLoteCommand}"
+                Content="Eliminar Lote"
+                Style="{StaticResource EstiloBoton}" />
             <StackPanel Margin="0,60,0,0">
-                <Button Content="Asignar Lote" Style="{StaticResource EstiloBoton}" />
-                <Button Content="Desasignar Lote" Style="{StaticResource EstiloBoton}" />
+                <Button
+                    Command="{Binding Path=AsignarLoteCommand}"
+                    Content="Asignar Lote"
+                    Style="{StaticResource EstiloBoton}" />
+                <Button
+                    Command="{Binding Path=DesasignarLoteCommand}"
+                    Content="Desasignar Lote"
+                    Style="{StaticResource EstiloBoton}" />
             </StackPanel>
         </StackPanel>
 

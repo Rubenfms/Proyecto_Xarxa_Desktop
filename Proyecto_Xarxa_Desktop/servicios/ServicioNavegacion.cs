@@ -20,6 +20,14 @@ namespace Proyecto_Xarxa_Desktop.servicios
         // Abre una nueva instancia de la ventana de login
         internal static void AbrirVistaLogIn() => new LogIn().Show();
         // Abre un dialogo generar lote
-        internal static void AbrirVistaGenerarLote() => new GenerarLote().Show();
+        internal static void AbrirVistaGenerarLote() => new GenerarLote().ShowDialog();
+        // Abre un dialogo dar de alta
+        internal static void AbrirVistaDarDeAlta() => new DarDeAltaDialog().ShowDialog();
+
+        // Abre diálogo opciones superusuario
+        internal static void AbrirVistaOpcionesSU() => new OpcionesSuperUsuario().ShowDialog();
+
+        // Abre diálogo nuevo usuario
+        internal static void AbrirVistaNuevoUsuario() => new NuevoUsuarioDialog().ShowDialog();
     }
 }
