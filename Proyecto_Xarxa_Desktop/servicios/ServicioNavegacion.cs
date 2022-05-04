@@ -26,5 +26,8 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
         // Abre diálogo opciones superusuario
         internal static void AbrirVistaOpcionesSU() => new OpcionesSuperUsuario().ShowDialog();
+
+        // Abre diálogo nuevo usuario
+        internal static void AbrirVistaNuevoUsuario() => new NuevoUsuarioDialog().ShowDialog();
     }
 }

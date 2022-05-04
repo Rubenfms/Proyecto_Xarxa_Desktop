@@ -158,15 +158,20 @@
     <Compile Include="vistas\LotesUserControl.xaml.cs">
       <DependentUpon>LotesUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\NuevoUsuarioDialog.xaml.cs">
+      <DependentUpon>NuevoUsuarioDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\OpcionesSuperUsuario.xaml.cs">
       <DependentUpon>OpcionesSuperUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="vms\AlumnosVM.cs" />
+    <Compile Include="vms\NuevoUsuarioVM.cs" />
     <Compile Include="vms\DarDeAltaAlumnoVM.cs" />
     <Compile Include="vms\GenerarLoteVM.cs" />
     <Compile Include="vms\LogInVM.cs" />
     <Compile Include="vms\LotesVM.cs" />
     <Compile Include="vms\MainWindowVM.cs" />
+    <Compile Include="vms\OpcionesSuperUsuarioVM.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -197,6 +202,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\LotesUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\NuevoUsuarioDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

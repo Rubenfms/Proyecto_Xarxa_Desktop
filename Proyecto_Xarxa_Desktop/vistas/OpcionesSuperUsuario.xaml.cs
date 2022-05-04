@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Xarxa_Desktop.vms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,16 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class OpcionesSuperUsuario : Window
     {
+        private OpcionesSuperUsuarioVM vm = new OpcionesSuperUsuarioVM();
         public OpcionesSuperUsuario()
         {
             InitializeComponent();
+            DataContext = vm;
+        }
+
+        private void NuevoUsuarioButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirVistaNuevoUsuario();
         }
     }
 }

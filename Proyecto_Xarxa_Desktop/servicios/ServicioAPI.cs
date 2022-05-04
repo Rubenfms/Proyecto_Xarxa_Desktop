@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RestSharp;
 using System.Net.Sockets;
+using RestSharp.Serializers;
 
 namespace Proyecto_Xarxa_Desktop.servicios
 {
@@ -89,6 +90,32 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        // Método que añade un usuario
+        public HttpStatusCode? PostUsuario(Usuario usuario)
+        {
+            try
+            {
+                Usuario result = new Usuario();
+
+                RestRequest peticion = new RestRequest($"/xarxa/usuarios", Method.Post);
+
+                var json = JsonConvert.SerializeObject(usuario);
+
+                peticion.RequestFormat = DataFormat.Json;
+
+                peticion.AddJsonBody(usuario);
+
+                var response = Cliente.ExecutePostAsync(peticion);
+
+                return response.Result.StatusCode;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("Error con la API al autenticar al usuario", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
         // Método que devuelve todos los alumnos
         public ObservableCollection<Alumno> GetAlumnos()
         {
