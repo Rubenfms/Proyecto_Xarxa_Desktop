@@ -65,7 +65,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                 ServicioDialogos.ServicioMessageBox("Selecciona un lote para poder asignarlo", "Necesario Lote Seleccionado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
             }
             // Comprobación de que el lote seleccionado no tenga nia asignado
-            else if (LoteSeleccionado.NiaAlumno != null || LoteSeleccionado.NiaAlumno != 0)
+            else if (LoteSeleccionado.NiaAlumno != 0)
             {
                 ServicioDialogos.ServicioMessageBox($"El lote ya tiene un nia asignado: {LoteSeleccionado.NiaAlumno}", "Lote ya asignado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }

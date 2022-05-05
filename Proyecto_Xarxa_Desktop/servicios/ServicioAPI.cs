@@ -37,12 +37,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
             RestRequest peticion = new RestRequest("/xarxa/lotes", Method.Get);
 
-            var response = Cliente.GetAsync(peticion);
+            var response = Cliente.ExecuteGetAsync(peticion);
 
             result = JsonConvert.DeserializeObject<ObservableCollection<Lote>>(response.Result.Content);
 
             return result;
-
         }
 
         // Método que devuelve todas las modalidades

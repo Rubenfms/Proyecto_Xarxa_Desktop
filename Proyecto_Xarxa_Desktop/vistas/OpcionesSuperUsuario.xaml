@@ -22,7 +22,10 @@
     </Window.Resources>
 
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button Margin="0,0,0,20" Content="Carga Inicial CSV" />
-        <Button Click="NuevoUsuarioButton_Click" Content="Crear Nuevo Usuario" />
+        <Button
+            Margin="0,0,0,20"
+            Command="{Binding Path=CargaInicialCSVCommand}"
+            Content="Carga Inicial CSV" />
+        <Button Command="{Binding Path=AbrirVistaUsuarioCommand}" Content="Crear Nuevo Usuario" />
     </StackPanel>
 </Window>

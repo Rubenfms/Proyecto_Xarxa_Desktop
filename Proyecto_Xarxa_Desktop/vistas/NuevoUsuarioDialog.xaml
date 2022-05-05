@@ -70,7 +70,8 @@
         <ComboBox
             Width="250"
             Margin="0,0,0,20"
-            SelectedItem="{Binding Path=UsuarioNuevo.TipoUsuario}">
+            SelectedValue="{Binding Path=UsuarioNuevo.TipoUsuario}"
+            SelectedValuePath="Content">
             <ComboBoxItem Content="superadmin" />
             <ComboBoxItem Content="admin" />
             <ComboBoxItem Content="invitado" />

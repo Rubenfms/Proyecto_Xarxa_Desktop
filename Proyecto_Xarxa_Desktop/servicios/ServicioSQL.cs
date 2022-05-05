@@ -10,7 +10,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
     class ServicioSQL
     {
         // Devuelve el último lote registrado con X numero de curso y X modalidad
-        public static int HallarUltLote(int numeroCurso, int numeroModalidad)
+        public static int? HallarUltLote(int numeroCurso, int numeroModalidad)
         {
             // Conexión a BD
             using (MySqlConnection cn = new MySqlConnection("server = 127.0.0.1; database = bdxarxa; Uid = root; pwd =1234"))
@@ -22,9 +22,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
                 if (dr.Read())
                 {
-                    return Int32.Parse(dr[0].ToString()) + 1; // Devolvemos el último lote registrado + 1 que será el próximo número libre
+                    int result = Int32.Parse(dr[0].ToString());
+
+                    return result + 1;// Devolvemos el último lote registrado + 1 que será el próximo número libre
                 }
-                else return 1;
+                else return null;
             }
         }
     }
