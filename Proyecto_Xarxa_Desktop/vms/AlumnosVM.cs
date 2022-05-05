@@ -50,6 +50,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         // Comandos
         public RelayCommand DarDeAltaCommand { get; }
 
+        public RelayCommand VerLoteUsuarioCommand { get; }
 
         public AlumnosVM()
         {
@@ -58,11 +59,18 @@ namespace Proyecto_Xarxa_Desktop.vms
             ListaAlumnos = ServicioCsv.GetListaAlumnosFromCSV();
             // Comandos
             DarDeAltaCommand = new RelayCommand(DarDeAlta);
+            VerLoteUsuarioCommand = new RelayCommand(VerLoteUsuario);
+
         }
 
         public void DarDeAlta()
         {
             ServicioNavegacion.AbrirVistaDarDeAlta();
+        }
+
+        public void VerLoteUsuario()
+        {
+            ServicioDialogos.ServicioMessageBox(AlumnoSeleccionado.Lote.ToString(), "TO DO:", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
         }
     }
 }

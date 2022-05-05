@@ -140,7 +140,7 @@
                     <GridViewColumn Width="120" Header="Lote">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Content="Ver Lote" />
+                                <Button Command="{Binding Path=VerLoteUsuarioCommand}" Content="Ver Lote" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
