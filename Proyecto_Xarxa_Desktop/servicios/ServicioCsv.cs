@@ -21,6 +21,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             set { listaAlumnosGeneral = value; }
         }
 
+        private static ObservableCollection<Alumno> listaAlumnosDefinitiva = new ObservableCollection<Alumno>();
 
         // Lee fichero con una lista de alumnos y lo guarda en un ObservableCollection<Alumno> (ListaAlumnosGeneral)
         public static void LeeCsvAlumnosGeneral()
@@ -99,11 +100,23 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        public static void QuitarAlumnosNoXarxa()
+        {
+            foreach(Alumno a in ListaAlumnosGeneral)
+            {
+                if(a.PerteneceXarxa)
+                {
+                    listaAlumnosDefinitiva.Add(a);
+                }
+            }
+        }
         // Devuelve lista de alumnos (contrastando si pertenecen a la xarxa o no)
         public static ObservableCollection<Alumno> GetListaAlumnosFromCSV()
         {
             LeeCsvAlumnosGeneral();
             LeeCsvAlumnosXarxa();
+            //QuitarAlumnosNoXarxa();
+            //return listaAlumnosDefinitiva;
             return ListaAlumnosGeneral;
         }
         // Recibe string y devuelve Enum EstadoMatricula

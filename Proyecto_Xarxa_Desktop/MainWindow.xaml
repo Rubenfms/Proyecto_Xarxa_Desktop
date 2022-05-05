@@ -145,7 +145,7 @@
                             </StackPanel>
                         </Button.Content>
                     </Button>
-                    <Button
+                    <!-- <Button
                         Height="40"
                         Background="{StaticResource PrimaryColor3}"
                         DockPanel.Dock="Top"
@@ -178,7 +178,7 @@
                                 <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="xxx Lote" />
                             </StackPanel>
                         </Button.Content>
-                    </Button>
+                    </Button>-->
                 </DockPanel>
                 <!--  Opción 2  -->
                 <Button
@@ -195,7 +195,7 @@
                                 Margin="20,0,13,0"
                                 Foreground="{StaticResource SecondaryColor2}"
                                 Kind="Account" />
-                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Opción 2" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Ver alumnos" />
                         </StackPanel>
                     </Button.Content>
                 </Button>
@@ -248,7 +248,7 @@
                                 x:Name="OpcionesSUButton"
                                 Click="OpcionesSUButton_Click"
                                 Content="Opciones SuperUser"
-                                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource TipoUsuarioToEnabledConverter}}"/>
+                                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource TipoUsuarioToEnabledConverter}}" />
                             <Button Content="Ayuda" />
                             <Separator />
                             <Button

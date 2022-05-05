@@ -30,9 +30,9 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         private ServicioAPI servicioAPI;
 
-        private string idLote;
+        private int? idLote;
 
-        public string IdLote
+        public int? IdLote
         {
             get { return idLote; }
             set { SetProperty(ref idLote, value); }
@@ -64,34 +64,22 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         public void GenerarNumeroLote(Modalidad modalidadSeleccionada)
         {
-            string curso = modalidadSeleccionada.Curso.Remove(1, modalidadSeleccionada.Curso.Length - 1); // Como viene en formato (1ºESO) me quedo solo con el numero
+            string curso = ModalidadSeleccionada.Curso.Remove(1, ModalidadSeleccionada.Curso.Length - 1); // Como viene en formato (1ºESO) me quedo solo con el numero
 
             // Hallamos el idLote
-            int idLote = ServicioSQL.HallarUltLote(Int32.Parse(curso), modalidadSeleccionada.Id);
+            IdLote = ServicioSQL.HallarUltLote(Int32.Parse(curso), modalidadSeleccionada.Id);
 
-            if(idLote <= 9)
-            {
-                IdLote = $"{curso}{modalidadSeleccionada.Id}00{idLote}";
-            }
-            else if(idLote>=10 && idLote<=99)
-            {
-                IdLote = $"{curso}{modalidadSeleccionada.Id}0{idLote}";
-            }
-            else
-            {
-                IdLote = $"{curso}{modalidadSeleccionada.Id}0{idLote}";
-            }
         }
 
         public void LimpiarIdLote()
         {
             ModalidadSeleccionada = null;
-            IdLote = "";
+            IdLote = null;
         }
 
         public void ConfirmarLote()
         {
-            // Lote nuevolote = new Lote(Int32.Parse(IdLote), modalidadSeleccionada.LibrosModalidad, ModalidadSeleccionada);
+            //Lote nuevolote = new Lote(Int32.Parse(IdLote), modalidadSeleccionada.LibrosModalidad, ModalidadSeleccionada);
         }
     }
 }
