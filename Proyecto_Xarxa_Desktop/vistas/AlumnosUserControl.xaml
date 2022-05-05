@@ -135,17 +135,13 @@
                         Width="120"
                         DisplayMemberBinding="{Binding Path=PerteneceXarxa, Converter={StaticResource BooleanToSiNoConverter}}"
                         Header="Xarxa" />
-
-                    <!--  Columna que muestra el id del lote que tiene asignado  -->
-                    <GridViewColumn Width="120" Header="Lote">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <Button Command="{Binding Path=VerLoteUsuarioCommand}" Content="Ver Lote" />
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button
+            Margin="10"
+            Command="{Binding Path=VerLoteAlumnoCommand}"
+            Content="Ver Lote"
+            DockPanel.Dock="Right" />
     </DockPanel>
 </UserControl>
