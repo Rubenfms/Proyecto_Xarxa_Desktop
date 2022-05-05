@@ -30,6 +30,33 @@
             <SolidColorBrush x:Key="PrimaryColor3" Color="#4A6572" />
             <SolidColorBrush x:Key="SecondaryColor1" Color="#F9AA33" />
             <SolidColorBrush x:Key="SecondaryColor2" Color="White" />
+            <ControlTemplate x:Key="ButtonControlTemplatePrueba" TargetType="{x:Type Button}">
+                <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                    <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                </Border>
+                <ControlTemplate.Triggers>
+                    <Trigger Property="IsDefaulted" Value="True">
+                        <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                    </Trigger>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" TargetName="border" Value="{StaticResource SecondaryColor1}"/>
+                        <Setter Property="BorderBrush" TargetName="border" Value="#FF3C7FB1"/>
+                    </Trigger>
+                    <Trigger Property="IsPressed" Value="True">
+                        <Setter Property="Background" TargetName="border" Value="{StaticResource SecondaryColor1}"/>
+                        <Setter Property="BorderBrush" TargetName="border" Value="#FF2C628B"/>
+                    </Trigger>
+                    <Trigger Property="ToggleButton.IsChecked" Value="True">
+                        <Setter Property="Background" TargetName="border" Value="#FFBCDDEE"/>
+                        <Setter Property="BorderBrush" TargetName="border" Value="#FF245A83"/>
+                    </Trigger>
+                    <Trigger Property="IsEnabled" Value="False">
+                        <Setter Property="Background" TargetName="border" Value="#FFF4F4F4"/>
+                        <Setter Property="BorderBrush" TargetName="border" Value="#FFADB2B5"/>
+                        <Setter Property="Foreground" Value="#FF838383"/>
+                    </Trigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

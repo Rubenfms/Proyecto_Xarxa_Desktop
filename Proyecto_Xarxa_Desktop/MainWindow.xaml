@@ -109,7 +109,8 @@
                     Background="{StaticResource PrimaryColor1}"
                     Click="LotesButton_Click"
                     DockPanel.Dock="Top"
-                    Style="{StaticResource EstiloBotonesMenu}">
+                    Style="{StaticResource EstiloBotonesMenu}" 
+                    Template="{DynamicResource ButtonControlTemplatePrueba}">
                     <Button.Content>
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -186,7 +187,8 @@
                     Background="{StaticResource PrimaryColor1}"
                     Click="AlumnosButton_Click"
                     DockPanel.Dock="Top"
-                    Style="{StaticResource EstiloBotonesMenu}">
+                    Style="{StaticResource EstiloBotonesMenu}"
+                    Template="{DynamicResource ButtonControlTemplatePrueba}">
                     <Button.Content>
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -204,7 +206,8 @@
                     Height="60"
                     Background="{StaticResource PrimaryColor1}"
                     DockPanel.Dock="Top"
-                    Style="{StaticResource EstiloBotonesMenu}">
+                    Style="{StaticResource EstiloBotonesMenu}"
+                    Template="{DynamicResource ButtonControlTemplatePrueba}">
                     <Button.Content>
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon
@@ -223,7 +226,8 @@
                     Background="{StaticResource PrimaryColor1}"
                     BorderBrush="{x:Null}"
                     DockPanel.Dock="Top"
-                    Style="{StaticResource EstiloBotonesMenu}">
+                    Style="{StaticResource EstiloBotonesMenu}"
+                    Template="{DynamicResource ButtonControlTemplatePrueba}">
                     <Button.Content>
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon

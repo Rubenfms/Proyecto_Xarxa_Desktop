@@ -110,7 +110,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
             catch (ArgumentNullException)
             {
-                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de lotes", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de modalidades", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                 return null;
                 throw;
             }
@@ -165,7 +165,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
             catch (ArgumentNullException)
             {
-                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de lotes", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de alumnos", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                 return null;
                 throw;
             }

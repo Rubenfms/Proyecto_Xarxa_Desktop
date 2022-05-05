@@ -47,11 +47,5 @@ namespace Proyecto_Xarxa_Desktop.vms
             ServicioNavegacion.AbrirVistaLogIn();
             UsuarioLogeado = new Usuario();
         }
-
-        public void VerLoteUsuario()
-        {
-
-        }
-
     }
 }
