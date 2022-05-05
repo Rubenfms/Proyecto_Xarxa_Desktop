@@ -37,8 +37,8 @@ namespace Proyecto_Xarxa_Desktop
 
         private void CerrarSesionButton_Click(object sender, RoutedEventArgs e)
         {
-            ServicioNavegacion.AbrirVistaLogIn();
-            this.Close();
+            this.Close(); // cerrar ventana
+            vm.CerrarSesion();
         }
 
         private void CerrarMenuButton_Click(object sender, RoutedEventArgs e)

@@ -12,7 +12,7 @@ namespace Proyecto_Xarxa_Desktop.convertidores
     class TipoUsuarioToEnabled : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        => (value.ToString().ToLower().Equals("superadmin"));
+        => value.ToString().ToLower().Equals("superadmin");
         
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

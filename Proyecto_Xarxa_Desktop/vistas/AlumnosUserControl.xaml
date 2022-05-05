@@ -104,7 +104,7 @@
                         Header="Nombre" />
 
                     <!--  Columna que contiene la lista de apellidos  -->
-                    <GridViewColumn Width="180" Header="Apellidos">
+                    <GridViewColumn Width="220" Header="Apellidos">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock
@@ -137,10 +137,13 @@
                         Header="Xarxa" />
 
                     <!--  Columna que muestra el id del lote que tiene asignado  -->
-                    <GridViewColumn
-                        Width="120"
-                        DisplayMemberBinding="{Binding Path=Lote.IdLote}"
-                        Header="Lote" />
+                    <GridViewColumn Width="120" Header="Lote">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Ver Lote" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>

@@ -41,6 +41,11 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         public void AbrirOpcionesSU() =>  ServicioNavegacion.AbrirVistaOpcionesSU();
 
+        public void CerrarSesion()
+        {
+            ServicioNavegacion.AbrirVistaLogIn();
+            UsuarioLogeado = new Usuario();
+        }
 
     }
 }
