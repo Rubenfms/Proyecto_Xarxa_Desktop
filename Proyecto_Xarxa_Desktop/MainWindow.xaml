@@ -126,11 +126,11 @@
                 <DockPanel
                     x:Name="SubMenuLotes"
                     DockPanel.Dock="Top"
-                    LastChildFill="False"
-                    Visibility="Collapsed">
+                    LastChildFill="False">
                     <Button
                         Height="40"
-                        Background="{StaticResource PrimaryColor3}"
+                        Background="{StaticResource PrimaryColor2}"
+                        Command="{Binding Path=GenerarLoteCommand}"
                         DockPanel.Dock="Top"
                         Style="{StaticResource EstiloBotonesMenu}">
                         <Button.Content>

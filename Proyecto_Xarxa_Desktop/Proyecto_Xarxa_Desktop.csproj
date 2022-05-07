@@ -164,6 +164,9 @@
     <Compile Include="vistas\OpcionesSuperUsuario.xaml.cs">
       <DependentUpon>OpcionesSuperUsuario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\VistaInicialContentControl.xaml.cs">
+      <DependentUpon>VistaInicialContentControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vms\AlumnosVM.cs" />
     <Compile Include="vms\NuevoUsuarioVM.cs" />
     <Compile Include="vms\DarDeAltaAlumnoVM.cs" />
@@ -210,6 +213,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\OpcionesSuperUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\VistaInicialContentControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
