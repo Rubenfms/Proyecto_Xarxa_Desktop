@@ -37,6 +37,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         public RelayCommand EditarLoteCommand { get; }
         public RelayCommand AsignarLoteCommand { get; }
         public RelayCommand DesasignarLoteCommand { get; }
+        public RelayCommand GenerarCBCommand { get; }
+
 
         public LotesVM()
         {
@@ -50,6 +52,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             DesasignarLoteCommand = new RelayCommand(DesasignarLote);
             EditarLoteCommand = new RelayCommand(EditarLote);
             EliminarLoteCommand = new RelayCommand(EliminarLote);
+            GenerarCBCommand = new RelayCommand(GenerarCodigoBarras);
         }
 
         public void AbrirVistaGenerarLote()
@@ -90,6 +93,20 @@ namespace Proyecto_Xarxa_Desktop.vms
             else
             {
                 //LoteSeleccionado.NiaAlumno = null;
+            }
+        }
+
+        public void GenerarCodigoBarras()
+        {
+
+            if (LoteSeleccionado == null)
+            {
+                ServicioDialogos.MensajeAlerta("No hay ningun lote seleccionado");
+            }
+            else
+            {
+                new ServicioCodigoBarras().GenerarCB(LoteSeleccionado.IdLote);
+                ServicioDialogos.MensajeAlerta("Codigo de barras creado en C:\\Xarxa");
             }
         }
         public void EditarLote()

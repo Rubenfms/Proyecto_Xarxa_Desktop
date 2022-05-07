@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IronBarCode;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,23 @@ namespace Proyecto_Xarxa_Desktop.servicios
 {
     class ServicioCodigoBarras
     {
+        private string path;
+        private string date;
 
+        public ServicioCodigoBarras()
+        {
+            path = Properties.Settings.Default.CarpetaXarxa;
+            date = DateTime.Now.ToString("dd-MM-yyyy");
+        }
 
-       // BarcodeWriter.CreateBarcode("https://ironsoftware.com/csharp/barcode", BarcodeWriterEncoding.QRCode).SaveAsJpeg("QuickStart.jpg");
+        public void GenerarCB(string numero)
+        {
+            BarcodeWriter.CreateBarcode(numero, BarcodeWriterEncoding.EAN8).AddAnnotationTextBelowBarcode(numero).SaveAsPng(path + "/" + date + "_" + numero + ".png" );   
+        }
 
-
-       // BarcodeResult Result = BarcodeReader.QuicklyReadOneBarcode("QuickStart.jpg");
+        public void GenerarCB(int numero)
+        {
+            GenerarCB(numero.ToString());
+        }
     }
 }
