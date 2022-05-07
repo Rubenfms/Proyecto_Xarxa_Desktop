@@ -1,5 +1,7 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
 using Microsoft.Toolkit.Mvvm.Input;
+using Microsoft.Toolkit.Mvvm.Messaging;
+using Proyecto_Xarxa_Desktop.mensajeria;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -53,6 +55,13 @@ namespace Proyecto_Xarxa_Desktop.vms
             EditarLoteCommand = new RelayCommand(EditarLote);
             EliminarLoteCommand = new RelayCommand(EliminarLote);
             GenerarCBCommand = new RelayCommand(GenerarCodigoBarras);
+
+            // Para mandar el lote en editar
+            WeakReferenceMessenger.Default.Register<LotesVM, LoteRequestMessage>
+                (this, (r, m) =>
+                {
+                    m.Reply(LoteSeleccionado);
+                });
         }
 
         public void AbrirVistaGenerarLote()
@@ -111,7 +120,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         }
         public void EditarLote()
         {
-
+            ServicioNavegacion.AbrirVistaEditarLote();
         }
         public void EliminarLote()
         {

@@ -37,8 +37,8 @@ namespace Proyecto_Xarxa_Desktop
 
         private void CerrarSesionButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Close(); // cerrar ventana
             vm.CerrarSesion();
+            this.Close(); // cerrar ventana
         }
 
         private void CerrarMenuButton_Click(object sender, RoutedEventArgs e)
@@ -59,7 +59,6 @@ namespace Proyecto_Xarxa_Desktop
         private void LotesButton_Click(object sender, RoutedEventArgs e)
         {
             vm.AbrirVistaLotes();
-            SubMenuLotes.Visibility = (SubMenuLotes.Visibility == Visibility.Visible) ? Visibility.Collapsed : Visibility.Visible;
         }
 
         private void AlumnosButton_Click(object sender, RoutedEventArgs e)

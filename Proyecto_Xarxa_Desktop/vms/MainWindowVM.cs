@@ -2,6 +2,7 @@
 using Microsoft.Toolkit.Mvvm.Input;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
+using Proyecto_Xarxa_Desktop.vistas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,11 +30,15 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref pestanyaActual, value); }
         }
 
+        public RelayCommand GenerarLoteCommand { get; }
         public MainWindowVM()
         {
             // Instancia vacía para que al iniciar el programa no aparezca ningún UserControl seleccionado
-            PestanyaActual = new UserControl();
+            PestanyaActual = new VistaInicialContentControl();
             UsuarioLogeado = ServicioValidarUsuario.UsuarioActual;
+
+            // Comandos
+            GenerarLoteCommand = new RelayCommand(AbrirVistaGenerarLote);
         }
 
         public void AbrirVistaLotes() => PestanyaActual = ServicioNavegacion.AbrirVistaLotes();
@@ -47,5 +52,8 @@ namespace Proyecto_Xarxa_Desktop.vms
             ServicioNavegacion.AbrirVistaLogIn();
             UsuarioLogeado = new Usuario();
         }
+
+        public void AbrirVistaGenerarLote() => ServicioNavegacion.AbrirVistaGenerarLote();
+
     }
 }

@@ -14,6 +14,7 @@
 
     <UserControl.Resources>
         <convertidores:BooleanToSiNo x:Key="BooleanToSiNoConverter" />
+        <!--<convertidores:IncidenciasToSiNo x:Key="IncidenciasConverter" />-->
         <!--  Estilo para aplicar margen a los botones de la derecha  -->
         <Style
             x:Key="EstiloBoton"
@@ -76,6 +77,15 @@
             </StackPanel>
         </DockPanel>
 
+        <StackPanel VerticalAlignment="Center" DockPanel.Dock="Right">
+            <Button
+                Margin="10"
+                Command="{Binding Path=VerLoteAlumnoCommand}"
+                Content="Ver Lote" />
+            <Button Margin="10" Content="Ver Incidencias" />
+        </StackPanel>
+
+
         <!--  Contenedor de la lista de alumnos  -->
         <ListView
             x:Name="listview"
@@ -135,13 +145,14 @@
                         Width="120"
                         DisplayMemberBinding="{Binding Path=PerteneceXarxa, Converter={StaticResource BooleanToSiNoConverter}}"
                         Header="Xarxa" />
+
+                    <!--  Columna que muestra si tiene incidencias  -->
+                    <GridViewColumn
+                        Width="130"
+                        DisplayMemberBinding="{Binding Path=Incidencias, Converter={StaticResource IncidenciasConverter}}"
+                        Header="Incidencias" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button
-            Margin="10"
-            Command="{Binding Path=VerLoteAlumnoCommand}"
-            Content="Ver Lote"
-            DockPanel.Dock="Right" />
     </DockPanel>
 </UserControl>
