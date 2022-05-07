@@ -21,10 +21,10 @@
             DockPanel.Dock="Top"
             FontSize="18"
             Foreground="{StaticResource PrimaryColor2}">
-            <Run Text="Lote de Alumno:" />
-            <Run Text="{Binding Path=Alumno.Nia}" />
+            <Run Text="Lote Nº:" />
+            <Run Text="{Binding Path=LoteAlumno.IdLote}" />
         </TextBlock>
-        <ListView IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Path=Alumno.Lote.LibrosLote}">
+        <ListView IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Path=LoteAlumno.LibrosLote}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn
