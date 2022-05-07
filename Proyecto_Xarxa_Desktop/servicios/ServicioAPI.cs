@@ -59,6 +59,34 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        // Método que devuelve un lote a partir de su id
+        public Lote GetLote(int id)
+        {
+            try
+            {
+                Lote result = new Lote();
+
+                RestRequest peticion = new RestRequest($"/xarxa/lotes/{id}", Method.Get);
+
+                var response = Cliente.ExecuteGetAsync(peticion);
+
+                result = JsonConvert.DeserializeObject<Lote>(response.Result.Content);
+
+                return result;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando lote", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+            catch (ArgumentNullException)
+            {
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando lote", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
         // Método que devuelve todas las modalidades
         public ObservableCollection<Modalidad> GetModalidades()
         {

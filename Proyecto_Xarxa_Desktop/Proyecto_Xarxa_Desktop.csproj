@@ -154,8 +154,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="convertidores\BooleanToSiNo.cs" />
+    <Compile Include="convertidores\IncidenciasToSiNo.cs" />
     <Compile Include="convertidores\NullToVisibilityModificado.cs" />
     <Compile Include="convertidores\TipoUsuarioToEnabled.cs" />
+    <Compile Include="mensajeria\AlumnoRequestMessage.cs" />
     <Compile Include="mensajeria\LoteRequestMessage.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="servicios\ServicioAPI.cs" />
@@ -188,6 +190,9 @@
     <Compile Include="vistas\OpcionesSuperUsuario.xaml.cs">
       <DependentUpon>OpcionesSuperUsuario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\VerLoteAlumno.xaml.cs">
+      <DependentUpon>VerLoteAlumno.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\VistaInicialContentControl.xaml.cs">
       <DependentUpon>VistaInicialContentControl.xaml</DependentUpon>
     </Compile>
@@ -200,6 +205,7 @@
     <Compile Include="vms\LotesVM.cs" />
     <Compile Include="vms\MainWindowVM.cs" />
     <Compile Include="vms\OpcionesSuperUsuarioVM.cs" />
+    <Compile Include="vms\VerLoteAlumnoVM.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -242,6 +248,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\OpcionesSuperUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\VerLoteAlumno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

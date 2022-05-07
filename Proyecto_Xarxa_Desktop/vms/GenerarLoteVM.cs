@@ -79,7 +79,7 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         public void ConfirmarLote()
         {
-            //Lote nuevolote = new Lote(Int32.Parse(IdLote), modalidadSeleccionada.LibrosModalidad, ModalidadSeleccionada);
+            //Lote nuevolote = new Lote((int)IdLote, modalidadSeleccionada.LibrosModalidad, ModalidadSeleccionada);
         }
     }
 }

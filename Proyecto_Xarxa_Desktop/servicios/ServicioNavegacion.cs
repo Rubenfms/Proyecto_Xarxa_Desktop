@@ -22,13 +22,13 @@ namespace Proyecto_Xarxa_Desktop.servicios
         // Abre un dialogo generar lote
         internal static void AbrirVistaGenerarLote() => new GenerarLote().ShowDialog();        
         // Abre un dialogo editar lote
-        internal static void AbrirVistaEditarLote() => new EditarLote().ShowDialog();
+        internal static void AbrirVistaEditarLote() => new EditarLote().ShowDialog();        
+        // Abre un dialogo ver lote del alumno
+        internal static void AbrirVistaVerLoteAlumno() => new VerLoteAlumno().ShowDialog();
         // Abre un dialogo dar de alta
         internal static void AbrirVistaDarDeAlta() => new DarDeAltaDialog().ShowDialog();
-
         // Abre diálogo opciones superusuario
         internal static void AbrirVistaOpcionesSU() => new OpcionesSuperUsuario().ShowDialog();
-
         // Abre diálogo nuevo usuario
         internal static void AbrirVistaNuevoUsuario() => new NuevoUsuarioDialog().ShowDialog();
     }

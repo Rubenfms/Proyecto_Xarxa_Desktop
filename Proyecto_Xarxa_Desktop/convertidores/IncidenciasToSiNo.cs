@@ -12,11 +12,15 @@ namespace Proyecto_Xarxa_Desktop.convertidores
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value.ToString().Equals("") || value == null)
+            try
+            {
+                return "No";
+                //if (value.ToString().Equals("") || value == null) return "No"; else return "Si";
+            }
+            catch (NullReferenceException)
             {
                 return "No";
             }
-            else return "Si";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

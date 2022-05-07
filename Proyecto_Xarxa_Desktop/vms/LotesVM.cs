@@ -53,7 +53,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             EditarLoteCommand = new RelayCommand(EditarLote);
             EliminarLoteCommand = new RelayCommand(EliminarLote);
 
-            // Para mandar el lote en editar
+            // Suscripción para mandar el lote en editar
             WeakReferenceMessenger.Default.Register<LotesVM, LoteRequestMessage>
                 (this, (r, m) =>
                 {
