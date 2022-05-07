@@ -27,7 +27,7 @@
             HorizontalAlignment="Center"
             DockPanel.Dock="Top">
             <Run Text="Editar Lote: " />
-            <Run Text="{Binding Path=Lote.Id}" />
+            <Run Text="{Binding Path=Lote.IdLote}" />
         </TextBlock>
 
         <StackPanel

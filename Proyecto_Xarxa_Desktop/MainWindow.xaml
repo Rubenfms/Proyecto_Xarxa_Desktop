@@ -107,9 +107,9 @@
                 <Button
                     Height="60"
                     Background="{StaticResource PrimaryColor1}"
-                    Click="LotesButton_Click"
+                    Command="{Binding Path=AbrirVistaLotesCommand}"
                     DockPanel.Dock="Top"
-                    Style="{StaticResource EstiloBotonesMenu}" 
+                    Style="{StaticResource EstiloBotonesMenu}"
                     Template="{DynamicResource ButtonControlTemplatePrueba}">
                     <Button.Content>
                         <StackPanel Orientation="Horizontal">
@@ -133,7 +133,8 @@
                         Background="{StaticResource PrimaryColor2}"
                         Command="{Binding Path=GenerarLoteCommand}"
                         DockPanel.Dock="Top"
-                        Style="{StaticResource EstiloBotonesMenu}">
+                        Style="{StaticResource EstiloBotonesMenu}"
+                        Template="{DynamicResource ButtonControlTemplatePrueba}">
                         <Button.Content>
                             <StackPanel Orientation="Horizontal">
                                 <materialDesign:PackIcon
@@ -185,7 +186,7 @@
                 <Button
                     Height="60"
                     Background="{StaticResource PrimaryColor1}"
-                    Click="AlumnosButton_Click"
+                    Command="{Binding Path=AbrirVistaAlumnosCommand}"
                     DockPanel.Dock="Top"
                     Style="{StaticResource EstiloBotonesMenu}"
                     Template="{DynamicResource ButtonControlTemplatePrueba}">
@@ -205,6 +206,7 @@
                 <Button
                     Height="60"
                     Background="{StaticResource PrimaryColor1}"
+                    Command="{Binding Path=AbrirVistaLibrosCommand}"
                     DockPanel.Dock="Top"
                     Style="{StaticResource EstiloBotonesMenu}"
                     Template="{DynamicResource ButtonControlTemplatePrueba}">
@@ -216,7 +218,7 @@
                                 Margin="20,0,13,0"
                                 Foreground="{StaticResource SecondaryColor2}"
                                 Kind="BookOpenVariant" />
-                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Opción 3" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Ver libros" />
                         </StackPanel>
                     </Button.Content>
                 </Button>
@@ -266,9 +268,11 @@
                         </StackPanel>
                     </materialDesign:PopupBox>
                     <TextBlock
+                        x:Name="NombreUsuarioTB"
                         VerticalAlignment="Center"
                         DockPanel.Dock="Right"
-                        Text="{Binding Path=UsuarioLogeado.NombreUsuario}" />
+                        Text="{Binding Path=UsuarioLogeado.NombreUsuario}"
+                        Visibility="Collapsed" />
                 </StackPanel>
             </DockPanel>
         </DockPanel>

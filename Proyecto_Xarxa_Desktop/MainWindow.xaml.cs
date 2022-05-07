@@ -46,6 +46,7 @@ namespace Proyecto_Xarxa_Desktop
             AbrirMenuButton.Visibility = Visibility.Visible;
             CerrarMenuButton.Visibility = Visibility.Collapsed;
             BalmisImagen.Visibility = Visibility.Collapsed;
+            NombreUsuarioTB.Visibility = Visibility.Collapsed;
         }
 
         private void AbrirMenuButton_Click(object sender, RoutedEventArgs e)
@@ -53,17 +54,8 @@ namespace Proyecto_Xarxa_Desktop
             CerrarMenuButton.Visibility = Visibility.Visible;
             AbrirMenuButton.Visibility = Visibility.Collapsed;
             BalmisImagen.Visibility = Visibility.Visible;
+            NombreUsuarioTB.Visibility = Visibility.Visible;
 
-        }
-
-        private void LotesButton_Click(object sender, RoutedEventArgs e)
-        {
-            vm.AbrirVistaLotes();
-        }
-
-        private void AlumnosButton_Click(object sender, RoutedEventArgs e)
-        {
-            vm.AbrirVistaAlumnos();
         }
 
         private void OpcionesSUButton_Click(object sender, RoutedEventArgs e)

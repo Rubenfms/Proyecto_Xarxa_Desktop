@@ -178,6 +178,9 @@
     <Compile Include="vistas\GenerarLote.xaml.cs">
       <DependentUpon>GenerarLote.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\LibrosUserControl.xaml.cs">
+      <DependentUpon>LibrosUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
@@ -198,6 +201,7 @@
     </Compile>
     <Compile Include="vms\AlumnosVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
+    <Compile Include="vms\LibrosVM.cs" />
     <Compile Include="vms\NuevoUsuarioVM.cs" />
     <Compile Include="vms\DarDeAltaAlumnoVM.cs" />
     <Compile Include="vms\GenerarLoteVM.cs" />
@@ -232,6 +236,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\GenerarLote.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\LibrosUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

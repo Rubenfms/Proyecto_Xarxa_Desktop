@@ -17,7 +17,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 cn.Open();
 
-                // Creamos la query y la ejecutamos
+                // Creamos la query buscando lotes que empiecen con el formato curso-modalidad-idlote (11XXX) y la ejecutamos
                 MySqlDataReader dr = new MySqlCommand($"select id_lote from lote where id_lote LIKE '{numeroCurso}{numeroModalidad}%' ORDER BY 1 DESC LIMIT 1;", cn).ExecuteReader();
 
                 if (dr.Read())
@@ -26,7 +26,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
                     return result + 1;// Devolvemos el último lote registrado + 1 que será el próximo número libre
                 }
-                else return null;
+                else
+                {
+                    // Si no devolvemos que el idlote será el primero (11001 por ej)
+                    return Int32.Parse($"{numeroCurso}{numeroModalidad}001"); 
+                }
             }
         }
     }

@@ -31,6 +31,9 @@ namespace Proyecto_Xarxa_Desktop.vms
         }
 
         public RelayCommand GenerarLoteCommand { get; }
+        public RelayCommand AbrirVistaLotesCommand { get; }
+        public RelayCommand AbrirVistaAlumnosCommand { get; }
+        public RelayCommand AbrirVistaLibrosCommand { get; }
         public MainWindowVM()
         {
             // Instancia vacía para que al iniciar el programa no aparezca ningún UserControl seleccionado
@@ -38,12 +41,16 @@ namespace Proyecto_Xarxa_Desktop.vms
             UsuarioLogeado = ServicioValidarUsuario.UsuarioActual;
 
             // Comandos
+            AbrirVistaLotesCommand = new RelayCommand(AbrirVistaLotes);
+            AbrirVistaAlumnosCommand = new RelayCommand(AbrirVistaAlumnos);
+            AbrirVistaLibrosCommand = new RelayCommand(AbrirVistaLibros);
             GenerarLoteCommand = new RelayCommand(AbrirVistaGenerarLote);
         }
 
         public void AbrirVistaLotes() => PestanyaActual = ServicioNavegacion.AbrirVistaLotes();
 
         public void AbrirVistaAlumnos() => PestanyaActual = ServicioNavegacion.AbrirVistaAlumnos();
+        public void AbrirVistaLibros() => PestanyaActual = ServicioNavegacion.AbrirVistaLibros();
 
         public void AbrirOpcionesSU() =>  ServicioNavegacion.AbrirVistaOpcionesSU();
 

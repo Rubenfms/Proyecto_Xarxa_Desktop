@@ -220,5 +220,35 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 throw;
             }
         }
+
+        // Método que devuelve todos los libros
+        // Método que devuelve todos los alumnos
+        public ObservableCollection<Libro> GetLibros()
+        {
+            try
+            {
+                ObservableCollection<Libro> result = new ObservableCollection<Libro>();
+
+                RestRequest peticion = new RestRequest("/xarxa/libros", Method.Get);
+
+                var response = Cliente.GetAsync(peticion);
+
+                result = JsonConvert.DeserializeObject<ObservableCollection<Libro>>(response.Result.Content);
+
+                return result;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de libros", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+            catch (ArgumentNullException)
+            {
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de libros", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
     }
 }
