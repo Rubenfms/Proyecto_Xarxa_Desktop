@@ -36,6 +36,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
@@ -136,6 +156,7 @@
     <Compile Include="convertidores\BooleanToSiNo.cs" />
     <Compile Include="convertidores\NullToVisibilityModificado.cs" />
     <Compile Include="convertidores\TipoUsuarioToEnabled.cs" />
+    <Compile Include="mensajeria\LoteRequestMessage.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="servicios\ServicioAPI.cs" />
     <Compile Include="servicios\ServicioCsv.cs" />
@@ -148,6 +169,9 @@
     </Compile>
     <Compile Include="vistas\DarDeAltaDialog.xaml.cs">
       <DependentUpon>DarDeAltaDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\EditarLote.xaml.cs">
+      <DependentUpon>EditarLote.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistas\GenerarLote.xaml.cs">
       <DependentUpon>GenerarLote.xaml</DependentUpon>
@@ -168,6 +192,7 @@
       <DependentUpon>VistaInicialContentControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="vms\AlumnosVM.cs" />
+    <Compile Include="vms\EditarLoteVM.cs" />
     <Compile Include="vms\NuevoUsuarioVM.cs" />
     <Compile Include="vms\DarDeAltaAlumnoVM.cs" />
     <Compile Include="vms\GenerarLoteVM.cs" />
@@ -193,6 +218,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\DarDeAltaDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\EditarLote.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
