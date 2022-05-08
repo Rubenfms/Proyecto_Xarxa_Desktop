@@ -36,5 +36,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
         public static MessageBoxResult ServicioMessageBoxResult(string mensaje, string titulo, MessageBoxButton boxButton, MessageBoxImage messageBoxImage)
             => MessageBox.Show(mensaje, titulo, boxButton, messageBoxImage);
+
+        public static void MensajeAlerta(string mensaje) => MessageBox.Show(mensaje, "Atención", MessageBoxButton.OK);
     }
 }
