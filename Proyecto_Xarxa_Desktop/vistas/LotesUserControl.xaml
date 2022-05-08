@@ -55,9 +55,10 @@
                     Style="{StaticResource EstiloBoton}" />
             </StackPanel>
             <StackPanel Margin="0,60,0,0">
-                <Button Command="{Binding Path=GenerarCBCommand}"
-                        Content="Generar Código de Barras"
-                        Style="{StaticResource EstiloBoton}" />
+                <Button
+                    Command="{Binding Path=GenerarCBCommand}"
+                    Content="Generar Código de Barras"
+                    Style="{StaticResource EstiloBoton}" />
             </StackPanel>
         </StackPanel>
 

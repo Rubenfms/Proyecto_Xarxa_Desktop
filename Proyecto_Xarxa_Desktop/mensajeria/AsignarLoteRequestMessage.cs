@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.mensajeria
 {
-    // Mensajeria para establecer comunicacion entre Alumno y Ver lote
-    class VerLoteRequestMessage : RequestMessage<Lote>
-    {
+    // Mensajeria para establecer comunicacion entre Alumno y Asignar lote
 
+    class AsignarLoteRequestMessage : RequestMessage<Lote>
+    {
     }
 }

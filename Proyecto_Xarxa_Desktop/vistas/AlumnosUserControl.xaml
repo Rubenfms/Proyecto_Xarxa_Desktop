@@ -42,6 +42,10 @@
                 Command="{Binding Path=DarDeAltaCommand}"
                 Content="Dar de Alta"
                 DockPanel.Dock="Right" />
+            <Button
+                Margin="0,0,20,0"
+                Content="Editar Alumno"
+                DockPanel.Dock="Right" />
             <!--  StackPanel con el toggle button y text block  -->
             <StackPanel Margin="20,0,0,0" Orientation="Horizontal">
                 <TextBlock

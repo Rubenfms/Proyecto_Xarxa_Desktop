@@ -5,6 +5,7 @@
     xmlns:convertidores="clr-namespace:Proyecto_Xarxa_Desktop.convertidores"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Dar de Alta Alumno"
     Width="400"
@@ -19,48 +20,73 @@
     </Window.Resources>
     <Grid>
 
-        <!--  Contenedor inicial que pedirá un NIA para buscarlo en la BD  -->
-        <!--  Si el NIA es null, la visibilidad será visible  -->
+        <Button
+            x:Name="VolverAtrasButton"
+            Margin="10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="VolverAtrasButton_Click"
+            Visibility="Collapsed">
+            <Button.Content>
+                <materialDesign:PackIcon Kind="ArrowLeft" />
+            </Button.Content>
+        </Button>
+        <!--  Contenedor inicial que pedirá buscar por NIA o Nombre y Apellidos  -->
         <StackPanel
             x:Name="ContenedorInicial"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Visibility="{Binding Path=AlumnoEncontrado, Converter={StaticResource NullToVisibilityModificadoConverter}}">
-            <TextBlock Text="Introduce el NIA del usuario a dar de alta:" />
-            <TextBox Margin="0,10,0,10" Text="{Binding Path=DatoABuscar}" />
-            <Button Command="{Binding Path=BuscarAlumnoCommand}" Content="Buscar" />
+            Visibility="Visible">
+            <Button
+                Margin="10"
+                Click="SeleccionBusquedaPorNiaButton_Click"
+                Content="Buscar Por Nia" />
+            <Button
+                Margin="10"
+                Click="SeleccionBusquedaPorNombreButton_Click"
+                Content="Buscar Por Nombre y Apellidos" />
         </StackPanel>
 
-        <!--  Contenedor una vez que se verifica que el NIA existe en el sistema  -->
-        <!--  Si el NIA es null, la visibilidad será collapsed  -->
+        <!--  Contenedor Buscar por nia  -->
         <StackPanel
-            x:Name="ContenedorDatosAlumno"
+            x:Name="ContenedorBuscarPorNia"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Visibility="{Binding Path=AlumnoEncontrado, Converter={StaticResource NullableToVisibilityConverter}}">
-            <TextBlock>
-                <Run Text="NIA:" />
-                <Run Text="{Binding Path=AlumnoEncontrado.Nia}" />
-            </TextBlock>
-            <TextBlock>
-                <Run Text="Nombre:" />
-                <Run Text="{Binding Path=AlumnoEncontrado.Nombre}" />
-            </TextBlock>
-            <TextBlock>
-                <Run Text="Apellidos:" />
-                <Run Text="{Binding Path=AlumnoEncontrado.Apellido1}" />
-                <Run Text="{Binding Path=AlumnoEncontrado.Apellido2}" />
-            </TextBlock>
-            <TextBlock>
-                <Run Text="Grupo:" />
-                <Run Text="{Binding Path=AlumnoEncontrado.Grupo}" />
-            </TextBlock>
-            <TextBlock>
-                <Run Text="Estado Matrícula:" />
-                <Run Text="{Binding Path=AlumnoEncontrado.Matricula}" />
-            </TextBlock>
+            Visibility="Collapsed">
+            <TextBox
+                Margin="0,0,0,10"
+                VerticalAlignment="Center"
+                materialDesign:HintAssist.Hint="Buscar por NIA..."
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=NiaIntroducido}" />
+            <Button Click="BuscarPorNiaButton_Click" Content="Buscar" />
+        </StackPanel>
 
-            <Button Margin="0,10,0,0" Content="Dar de alta" />
+        <!--  Contenedor Buscar por Nombre y Apellido  -->
+        <StackPanel
+            x:Name="ContenedorBuscarPorNombre"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Visibility="Collapsed">
+            <TextBox
+                Margin="0,0,0,10"
+                VerticalAlignment="Center"
+                materialDesign:HintAssist.Hint="Introduce el nombre del alumno..."
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=NombreIntroducido}" />
+            <TextBox
+                Margin="0,0,0,10"
+                VerticalAlignment="Center"
+                materialDesign:HintAssist.Hint="Introduce el primer apellido del alumno..."
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=PrimerApellidoIntroducido}" />
+            <TextBox
+                Margin="0,0,0,10"
+                VerticalAlignment="Center"
+                materialDesign:HintAssist.Hint="Introduce el segundo apellido del alumno..."
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=SegundoApellidoIntroducido}" />
+            <Button Click="BuscarPorNombreButton_Click" Content="Buscar" />
         </StackPanel>
     </Grid>
 </Window>

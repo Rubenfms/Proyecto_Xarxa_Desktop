@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Input;
 using Microsoft.Toolkit.Mvvm.Messaging;
 using Proyecto_Xarxa_Desktop.mensajeria;
 using Proyecto_Xarxa_Desktop.modelo;
@@ -19,6 +20,10 @@ namespace Proyecto_Xarxa_Desktop.vms
             get { return lote; }
             set { SetProperty(ref lote, value); }
         }
+
+        // Comandos
+        public RelayCommand AnyadirLibroCommand { get; }
+        public RelayCommand EliminarLibroCommand { get; }
 
         public EditarLoteVM()
         {

@@ -164,12 +164,14 @@
     <Compile Include="convertidores\NullToVisibilityModificado.cs" />
     <Compile Include="convertidores\TipoUsuarioToEnabled.cs" />
     <Compile Include="mensajeria\AlumnoRequestMessage.cs" />
+    <Compile Include="mensajeria\AsignarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\EditarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\VerLoteRequestMessage.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="servicios\ServicioAPI.cs" />
     <Compile Include="servicios\ServicioCodigoBarras.cs" />
     <Compile Include="servicios\ServicioCsv.cs" />
+    <Compile Include="servicios\ServicioDatos.cs" />
     <Compile Include="servicios\ServicioDialogos.cs" />
     <Compile Include="servicios\ServicioNavegacion.cs" />
     <Compile Include="servicios\ServicioSQL.cs" />
@@ -177,8 +179,14 @@
     <Compile Include="vistas\AlumnosUserControl.xaml.cs">
       <DependentUpon>AlumnosUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\AsignarLoteDialog.xaml.cs">
+      <DependentUpon>AsignarLoteDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\DarDeAltaDialog.xaml.cs">
       <DependentUpon>DarDeAltaDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\EditarAlumnoDialog.xaml.cs">
+      <DependentUpon>EditarAlumnoDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistas\EditarLote.xaml.cs">
       <DependentUpon>EditarLote.xaml</DependentUpon>
@@ -208,6 +216,7 @@
       <DependentUpon>VistaInicialContentControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="vms\AlumnosVM.cs" />
+    <Compile Include="vms\AsignarLoteVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
     <Compile Include="vms\LibrosVM.cs" />
     <Compile Include="vms\NuevoUsuarioVM.cs" />
@@ -235,7 +244,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="vistas\AsignarLoteDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="vistas\DarDeAltaDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\EditarAlumnoDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

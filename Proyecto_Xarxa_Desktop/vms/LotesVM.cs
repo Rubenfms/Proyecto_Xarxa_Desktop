@@ -57,8 +57,15 @@ namespace Proyecto_Xarxa_Desktop.vms
             EliminarLoteCommand = new RelayCommand(EliminarLote);
             GenerarCBCommand = new RelayCommand(GenerarCodigoBarras);
 
-            // Suscripción para mandar el lote en editar
+            // Suscripción para mandar el lote a Editar Lote
             WeakReferenceMessenger.Default.Register<LotesVM, EditarLoteRequestMessage>
+                (this, (r, m) =>
+                {
+                    m.Reply(LoteSeleccionado);
+                });
+
+            // Suscripción para mandar el lote a Asignar lote
+            WeakReferenceMessenger.Default.Register<LotesVM, AsignarLoteRequestMessage>
                 (this, (r, m) =>
                 {
                     m.Reply(LoteSeleccionado);
@@ -78,13 +85,13 @@ namespace Proyecto_Xarxa_Desktop.vms
                 ServicioDialogos.ServicioMessageBox("Selecciona un lote para poder asignarlo", "Necesario Lote Seleccionado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
             }
             // Comprobación de que el lote seleccionado no tenga nia asignado
-            else if (LoteSeleccionado.NiaAlumno != 0)
+            else if (LoteSeleccionado.NiaAlumno != null)
             {
                 ServicioDialogos.ServicioMessageBox($"El lote ya tiene un nia asignado: {LoteSeleccionado.NiaAlumno}", "Lote ya asignado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }
             else
             {
-                
+                ServicioNavegacion.AbrirVistaAsignarLote();
             }
 
         }
@@ -127,6 +134,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         }
         public void EliminarLote()
         {
+            HttpStatusCode? statusCode = servicioAPI.DeleteLote(LoteSeleccionado.IdLote);
+            ServicioDialogos.ServicioMessageBox($"Resultado de la eliminación del lote: {statusCode}", "Eliminación lote", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
 
         }
     }
