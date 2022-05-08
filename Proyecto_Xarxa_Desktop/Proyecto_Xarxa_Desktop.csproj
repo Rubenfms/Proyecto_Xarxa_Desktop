@@ -185,6 +185,9 @@
     <Compile Include="vistas\DarDeAltaDialog.xaml.cs">
       <DependentUpon>DarDeAltaDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\EditarAlumnoDialog.xaml.cs">
+      <DependentUpon>EditarAlumnoDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\EditarLote.xaml.cs">
       <DependentUpon>EditarLote.xaml</DependentUpon>
     </Compile>
@@ -246,6 +249,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\DarDeAltaDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\EditarAlumnoDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

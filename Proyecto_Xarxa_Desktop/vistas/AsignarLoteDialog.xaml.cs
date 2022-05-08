@@ -43,5 +43,12 @@ namespace Proyecto_Xarxa_Desktop.vistas
                 }
             }
         }
+
+        private void ConfirmarNiaButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para cerrar el diálogo si el nia se ha asignado correctamente
+            bool? result = vm.ConfirmarNia();
+            if (result == true) DialogResult = true;
+        }
     }
 }

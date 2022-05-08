@@ -52,17 +52,10 @@ namespace Proyecto_Xarxa_Desktop.modelo
             set { SetProperty(ref _apellido2, value); }
         }
 
-        private DateTime _fechaNacimiento;
+        private string _matricula;
 
-        public DateTime FechaNacimiento
-        {
-            get { return _fechaNacimiento; }
-            set { SetProperty(ref _fechaNacimiento, value); }
-        }
-
-        private EstadoMatricula _matricula;
-
-        public EstadoMatricula Matricula
+        [JsonProperty("estadoMatriculacion")]
+        public string Matricula
         {
             get { return _matricula; }
             set { SetProperty(ref _matricula, value); }
@@ -110,13 +103,12 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
 
         // Constructor sin lote
-        public Alumno(int nia, string nombre, string apellido1, string apellido2, DateTime fechaNacimiento, EstadoMatricula matricula, string curso, string grupo, string incidencias, bool perteneceXarxa)
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, string matricula, string curso, string grupo, string incidencias, bool perteneceXarxa)
         {
             Nia = nia;
             Nombre = nombre;
             Apellido1 = apellido1;
             Apellido2 = apellido2;
-            FechaNacimiento = fechaNacimiento;
             Matricula = matricula;
             Curso = curso;
             Grupo = grupo;
@@ -125,13 +117,12 @@ namespace Proyecto_Xarxa_Desktop.modelo
         }
 
         // Constructor con lote
-        public Alumno(int nia, string nombre, string apellido1, string apellido2, DateTime fechaNacimiento, EstadoMatricula matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, Lote lote)
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, string matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, Lote lote)
         {
             Nia = nia;
             Nombre = nombre;
             Apellido1 = apellido1;
             Apellido2 = apellido2;
-            FechaNacimiento = fechaNacimiento;
             Matricula = matricula;
             Curso = curso;
             Grupo = grupo;
@@ -141,31 +132,30 @@ namespace Proyecto_Xarxa_Desktop.modelo
         }
 
         // Constructor sin lote y sin PerteneceXarxa
-        public Alumno(int nia, string nombre, string apellido1, string apellido2, DateTime fechaNacimiento, EstadoMatricula matricula, string curso, string grupo, string incidencias)
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, string matricula, string curso, string grupo, string incidencias)
         {
             Nia = nia;
             Nombre = nombre;
             Apellido1 = apellido1;
             Apellido2 = apellido2;
-            FechaNacimiento = fechaNacimiento;
             Matricula = matricula;
             Curso = curso;
             Grupo = grupo;
             Incidencias = incidencias;
         }
 
-        // Constructor con IdLote
         public Alumno()
         {
 
         }
-        public Alumno(int nia, string nombre, string apellido1, string apellido2, DateTime fechaNacimiento, EstadoMatricula matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, int? idLote)
+
+        // Constructor con IdLote
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, string matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, int? idLote)
         {
             Nia = nia;
             Nombre = nombre;
             Apellido1 = apellido1;
             Apellido2 = apellido2;
-            FechaNacimiento = fechaNacimiento;
             Matricula = matricula;
             Curso = curso;
             Grupo = grupo;

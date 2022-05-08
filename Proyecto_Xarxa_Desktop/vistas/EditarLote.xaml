@@ -34,8 +34,14 @@
             VerticalAlignment="Center"
             DockPanel.Dock="Right"
             Orientation="Vertical">
-            <Button Margin="0,0,5,20" Content="Añadir Libro" />
-            <Button Margin="0,0,5,20" Content="Eliminar Libro" />
+            <Button
+                Margin="0,0,5,20"
+                Command="{Binding Path=AnyadirLibroCommand}"
+                Content="Añadir Libro" />
+            <Button
+                Margin="0,0,5,20"
+                Command="{Binding Path=EditarLoteCommand}"
+                Content="Eliminar Libro" />
             <Button Margin="0,0,5,20" Content="Confirmar Cambios" />
         </StackPanel>
         <ListView IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Path=Lote.LibrosLote}">

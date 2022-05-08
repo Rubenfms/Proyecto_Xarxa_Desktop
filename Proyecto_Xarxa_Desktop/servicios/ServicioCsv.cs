@@ -37,11 +37,16 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 {
                     string[] fila = linea.Replace("\"", "").Split(separador); // Replace para eliminar todas las comillas dobles 
 
-                    EstadoMatricula estadoMatricula = EstadoMatriculaStringToEnum(fila[7]); // Estado Matricula del alumno
+                    //EstadoMatricula estadoMatricula = EstadoMatriculaStringToEnum(fila[7]); // Estado Matricula del alumno
                     string date = fila[4];
                     DateTime fechaNacimiento = DateTime.ParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture); // Fecha Nacimiento del alumno
 
-                    ListaAlumnosGeneral.Add(new Alumno(int.Parse(fila[0]), fila[1], fila[2], fila[3], fechaNacimiento, estadoMatricula, fila[11], fila[12], "", false));
+                    // Añadimos solo los usuarios que puedan pertenecer a la xarxa (1,2,3 y 4 de la eso y 1FPB 2FPB)
+                    string filtro = fila[11].ToString();
+                    if(filtro.Equals("1ESO") || filtro.Equals("2ESO") || filtro.Equals("3ESO") || filtro.Equals("4ESO") || filtro.Equals("1FPB") || filtro.Equals("2FPB"))
+                    {
+                        ListaAlumnosGeneral.Add(new Alumno(int.Parse(fila[0]), fila[1], fila[2], fila[3], fila[7], fila[11], fila[12], "", false));
+                    }
                 }
             }
             catch (FormatException)

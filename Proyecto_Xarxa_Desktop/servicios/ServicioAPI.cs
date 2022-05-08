@@ -87,6 +87,10 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 return null;
                 throw;
             }
+            catch(JsonSerializationException)
+            {
+                return null;
+            }
         }
 
         // Método que actualiza un lote
@@ -104,7 +108,24 @@ namespace Proyecto_Xarxa_Desktop.servicios
             IRestResponse response = Cliente.Execute(request);
             return response.StatusCode;
 
+        }        
+        
+        // Método que elimina un lote a partir de su id
+        public HttpStatusCode? DeleteLote(int id)
+        {
+            var request = new RestRequest($"/xarxa/lotes/{id}", Method.DELETE);
+
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("x-", "");
+            var body = @"";
+            request.AddParameter("text/plain", body, ParameterType.RequestBody);
+
+            IRestResponse response = Cliente.Execute(request);
+            return response.StatusCode;
+
         }
+
+
         #endregion
 
         #region Métodos Modalidades
@@ -180,9 +201,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
                 peticion.AddJsonBody(usuario);
 
-                var response = Cliente.ExecutePostAsync(peticion);
+                var response = Cliente.Execute(peticion);
 
-                return response.Result.StatusCode;
+                return response.StatusCode;
             }
             catch (AggregateException)
             {
@@ -243,6 +264,23 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 return null;
                 throw;
             }
+        }
+
+        // Método que actualiza un alumno
+        public HttpStatusCode? PutAlumno(Alumno alumno)
+        {
+            var request = new RestRequest("/xarxa/alumnos", Method.PUT);
+
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("x-", "");
+            request.AddHeader("Content-Type", "application/json");
+
+            var body = JsonConvert.SerializeObject(alumno);
+            request.AddParameter("application/json", body, ParameterType.RequestBody);
+
+            IRestResponse response = Cliente.Execute(request);
+            return response.StatusCode;
+
         }
 
         #endregion

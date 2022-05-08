@@ -56,21 +56,26 @@ namespace Proyecto_Xarxa_Desktop.vms
         public AsignarLoteVM()
         {
             ListaNias = ServicioDatos.ObtenerNiasDisponibles();
-            ConfirmarNiaCommand = new RelayCommand(ConfirmarNia);
 
             // Recibimos el lote seleccionado de la vista de todos los lotes
             LoteAActualizar = WeakReferenceMessenger.Default.Send<EditarLoteRequestMessage>();
         }
 
-        public void ConfirmarNia()
+        public bool? ConfirmarNia()
         {
-            if(NiaSeleccionado != null)
+            if (NiaSeleccionado != null)
             {
                 LoteAActualizar.NiaAlumno = NiaSeleccionado;
                 HttpStatusCode? statusCode = servicioAPI.PutLote(LoteAActualizar);
                 ServicioDialogos.ServicioMessageBox($"Resultado de la asignación del NIA {NiaSeleccionado} al lote: {statusCode}", "Asignación NIA", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+                return true;
             }
-            else ServicioDialogos.ServicioMessageBox("Tienes que seleccionar un NIA", "Selecciona un NIA", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+            else
+            {
+                ServicioDialogos.ServicioMessageBox("Tienes que seleccionar un NIA", "Selecciona un NIA", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+                return false;
+            }
+
 
         }
 
