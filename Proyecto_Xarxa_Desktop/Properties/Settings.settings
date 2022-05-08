@@ -11,5 +11,8 @@
     <Setting Name="CadenaConexionLocalhost" Type="System.String" Scope="Application">
       <Value Profile="(Default)">http://localhost:8081/apixarxa</Value>
     </Setting>
+    <Setting Name="CarpetaXarxa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Xarxa</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
