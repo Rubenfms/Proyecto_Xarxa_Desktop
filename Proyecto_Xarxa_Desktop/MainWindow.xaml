@@ -12,6 +12,7 @@
     Height="600"
     MinWidth="1080"
     MinHeight="600"
+    WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <Window.Resources>
         <convertidores:TipoUsuarioToEnabled x:Key="TipoUsuarioToEnabledConverter" />

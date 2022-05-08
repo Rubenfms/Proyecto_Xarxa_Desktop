@@ -8,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.mensajeria
 {
-    class LoteRequestMessage : RequestMessage<Lote>
+    class VerLoteRequestMessage : RequestMessage<Lote>
     {
 
     }
-    
 }

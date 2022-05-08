@@ -30,6 +30,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             Cliente = new RestClient(cadenaConexion);
         }
 
+        #region Métodos Lotes
         // Método que devuelve todos los lotes
         public ObservableCollection<Lote> GetLotes()
         {
@@ -37,7 +38,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 ObservableCollection<Lote> result = new ObservableCollection<Lote>();
 
-                RestRequest peticion = new RestRequest("/xarxa/lotes", Method.Get);
+                RestRequest peticion = new RestRequest("/xarxa/lotes", Method.GET);
 
                 var response = Cliente.ExecuteGetAsync(peticion);
 
@@ -66,7 +67,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 Lote result = new Lote();
 
-                RestRequest peticion = new RestRequest($"/xarxa/lotes/{id}", Method.Get);
+                RestRequest peticion = new RestRequest($"/xarxa/lotes/{id}", Method.GET);
 
                 var response = Cliente.ExecuteGetAsync(peticion);
 
@@ -87,6 +88,26 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 throw;
             }
         }
+
+        // Método que actualiza un lote
+        public HttpStatusCode? PutLote(Lote lote)
+        {
+            var request = new RestRequest("/xarxa/lotes", Method.PUT);
+
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("x-", "");
+            request.AddHeader("Content-Type", "application/json");
+
+            var body = JsonConvert.SerializeObject(lote);
+            request.AddParameter("application/json", body, ParameterType.RequestBody);
+
+            IRestResponse response = Cliente.Execute(request);
+            return response.StatusCode;
+
+        }
+        #endregion
+
+        #region Métodos Modalidades
         // Método que devuelve todas las modalidades
         public ObservableCollection<Modalidad> GetModalidades()
         {
@@ -94,11 +115,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 ObservableCollection<Modalidad> result = new ObservableCollection<Modalidad>();
 
-                RestRequest peticion = new RestRequest("/xarxa/modalidades", Method.Get);
+                RestRequest peticion = new RestRequest("/xarxa/modalidades", Method.GET);
 
-                var response = Cliente.GetAsync(peticion);
+                var response = Cliente.Execute(peticion);
 
-                result = JsonConvert.DeserializeObject<ObservableCollection<Modalidad>>(response.Result.Content);
+                result = JsonConvert.DeserializeObject<ObservableCollection<Modalidad>>(response.Content);
 
                 return result;
             }
@@ -116,6 +137,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        #endregion
+
+        #region Métodos Usuarios
         // Método que recibe un nombre de usuario y hace una petición a /xarxa/usuarios/nombre
         public Usuario GetUsuario(String username)
         {
@@ -123,11 +147,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 Usuario result = new Usuario();
 
-                RestRequest peticion = new RestRequest($"/xarxa/usuarios/{username}", Method.Get);
+                RestRequest peticion = new RestRequest($"/xarxa/usuarios/{username}", Method.GET);
 
-                var response = Cliente.GetAsync(peticion);
+                var response = Cliente.Execute(peticion);
 
-                result = JsonConvert.DeserializeObject<Usuario>(response.Result.Content);
+                result = JsonConvert.DeserializeObject<Usuario>(response.Content);
                 return result;
             }
             catch (AggregateException)
@@ -149,12 +173,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
         {
             try
             {
-                Usuario result = new Usuario();
+                RestRequest peticion = new RestRequest($"/xarxa/usuarios", Method.POST);
 
-                RestRequest peticion = new RestRequest($"/xarxa/usuarios", Method.Post);
-
-                var json = JsonConvert.SerializeObject(usuario);
-
+                /*                var json = JsonConvert.SerializeObject(usuario); */
                 peticion.RequestFormat = DataFormat.Json;
 
                 peticion.AddJsonBody(usuario);
@@ -170,6 +191,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 throw;
             }
         }
+        #endregion
+
+        #region Métodos Alumnos
         // Método que devuelve todos los alumnos
         public ObservableCollection<Alumno> GetAlumnos()
         {
@@ -177,11 +201,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 ObservableCollection<Alumno> result = new ObservableCollection<Alumno>();
 
-                RestRequest peticion = new RestRequest("/xarxa/alumnos", Method.Get);
+                RestRequest peticion = new RestRequest("/xarxa/alumnos", Method.GET);
 
-                var response = Cliente.GetAsync(peticion);
+                var response = Cliente.Execute(peticion);
 
-                result = JsonConvert.DeserializeObject<ObservableCollection<Alumno>>(response.Result.Content);
+                result = JsonConvert.DeserializeObject<ObservableCollection<Alumno>>(response.Content);
 
                 return result;
             }
@@ -206,11 +230,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 Alumno result = new Alumno();
 
-                RestRequest peticion = new RestRequest($"/xarxa/alumnos/{nia}", Method.Get);
+                RestRequest peticion = new RestRequest($"/xarxa/alumnos/{nia}", Method.GET);
 
-                var response = Cliente.GetAsync(peticion);
+                var response = Cliente.Execute(peticion);
 
-                result = JsonConvert.DeserializeObject<Alumno>(response.Result.Content);
+                result = JsonConvert.DeserializeObject<Alumno>(response.Content);
                 return result;
             }
             catch (AggregateException)
@@ -221,6 +245,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        #endregion
+
+        #region Métodos Libros
         // Método que devuelve todos los libros
         // Método que devuelve todos los alumnos
         public ObservableCollection<Libro> GetLibros()
@@ -229,11 +256,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 ObservableCollection<Libro> result = new ObservableCollection<Libro>();
 
-                RestRequest peticion = new RestRequest("/xarxa/libros", Method.Get);
+                RestRequest peticion = new RestRequest("/xarxa/libros", Method.GET);
 
-                var response = Cliente.GetAsync(peticion);
+                var response = Cliente.Execute(peticion);
 
-                result = JsonConvert.DeserializeObject<ObservableCollection<Libro>>(response.Result.Content);
+                result = JsonConvert.DeserializeObject<ObservableCollection<Libro>>(response.Content);
 
                 return result;
             }
@@ -250,5 +277,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 throw;
             }
         }
+
+        #endregion
     }
 }

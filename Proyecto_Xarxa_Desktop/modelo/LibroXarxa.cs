@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Newtonsoft.Json;
 
 namespace Proyecto_Xarxa_Desktop.modelo
 {
@@ -16,6 +17,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private int _codigoXarxa;
 
+        [JsonProperty("codigoXarxa")]
         public int CodigoXarxa
         {
             get { return _codigoXarxa; }

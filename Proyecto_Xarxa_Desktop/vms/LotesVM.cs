@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -44,7 +45,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaLotes = servicioAPI.GetLotes();
-            LoteSeleccionado = new Lote();
+            LoteSeleccionado = null;
 
             // Comandos
             GenerarLoteCommand = new RelayCommand(AbrirVistaGenerarLote);
@@ -54,7 +55,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             EliminarLoteCommand = new RelayCommand(EliminarLote);
 
             // Suscripción para mandar el lote en editar
-            WeakReferenceMessenger.Default.Register<LotesVM, LoteRequestMessage>
+            WeakReferenceMessenger.Default.Register<LotesVM, EditarLoteRequestMessage>
                 (this, (r, m) =>
                 {
                     m.Reply(LoteSeleccionado);
@@ -92,13 +93,15 @@ namespace Proyecto_Xarxa_Desktop.vms
                 ServicioDialogos.ServicioMessageBox("Selecciona un lote para poder asignarlo", "Necesario Lote Seleccionado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
             }
             // Comprobación de que el lote no tenga ningun nia asignado
-            else if (LoteSeleccionado.NiaAlumno > 0)
+            else if (LoteSeleccionado.NiaAlumno == null)
             {
                 ServicioDialogos.ServicioMessageBox("El lote no tiene ningún nia asignado", "Nia no asignado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
             }
             else
             {
-                //LoteSeleccionado.NiaAlumno = null;
+                LoteSeleccionado.NiaAlumno = null;
+                HttpStatusCode? statusCode = servicioAPI.PutLote(LoteSeleccionado);
+                ServicioDialogos.ServicioMessageBox($"Resultado de la actualización del lote: {statusCode}", "Desasignación lote", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
             }
         }
         public void EditarLote()

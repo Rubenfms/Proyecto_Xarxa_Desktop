@@ -64,7 +64,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             VerLoteAlumnoCommand = new RelayCommand(VerLoteAlumno);
 
             // Suscripción para mandar el alumno a ver lote
-            WeakReferenceMessenger.Default.Register<AlumnosVM, LoteRequestMessage>
+            WeakReferenceMessenger.Default.Register<AlumnosVM, VerLoteRequestMessage>
                 (this, (r, m) =>
                 {
                     m.Reply(servicioAPI.GetLote(AlumnoSeleccionado.IdLote));
