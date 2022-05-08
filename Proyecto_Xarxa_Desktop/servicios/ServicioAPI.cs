@@ -61,7 +61,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         }
 
         // Método que devuelve un lote a partir de su id
-        public Lote GetLote(int id)
+        public Lote GetLote(int? id)
         {
             try
             {

@@ -68,10 +68,5 @@ namespace Proyecto_Xarxa_Desktop.vistas
                 else listview.Items.Add(a); // Si no está checkeado mostramos todos
             }
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

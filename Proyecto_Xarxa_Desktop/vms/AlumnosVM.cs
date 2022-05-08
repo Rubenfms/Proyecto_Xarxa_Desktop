@@ -31,8 +31,6 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref alumnoSeleccionado, value); }
         }
 
-        private ServicioAPI servicioAPI;
-
         private string apellidos;
 
         public string Apellidos
@@ -41,6 +39,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref apellidos, value); }
         }
 
+        // Propiedad de la cadena que se está pasando en el buscador
         private string buscador;
 
         public string Buscador
@@ -48,6 +47,9 @@ namespace Proyecto_Xarxa_Desktop.vms
             get { return buscador; }
             set { SetProperty(ref buscador, value); }
         }
+
+        // Api
+        private ServicioAPI servicioAPI;
 
         // Comandos
         public RelayCommand DarDeAltaCommand { get; }

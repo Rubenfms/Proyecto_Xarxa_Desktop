@@ -100,9 +100,9 @@ namespace Proyecto_Xarxa_Desktop.modelo
             set { SetProperty(ref _perteneceXarxa, value); }
         }
 
-        private int idLote;
+        private int? idLote;
 
-        public int IdLote
+        public int? IdLote
         {
             get { return idLote; }
             set { SetProperty(ref idLote, value); }
@@ -159,7 +159,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
         {
 
         }
-        public Alumno(int nia, string nombre, string apellido1, string apellido2, DateTime fechaNacimiento, EstadoMatricula matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, int idLote)
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, DateTime fechaNacimiento, EstadoMatricula matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, int? idLote)
         {
             Nia = nia;
             Nombre = nombre;
