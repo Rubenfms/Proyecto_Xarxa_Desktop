@@ -14,7 +14,7 @@
 
     <UserControl.Resources>
         <convertidores:BooleanToSiNo x:Key="BooleanToSiNoConverter" />
-        <!--<convertidores:IncidenciasToSiNo x:Key="IncidenciasConverter" />-->
+        <convertidores:IncidenciasToSiNo x:Key="IncidenciasConverter" />
         <!--  Estilo para aplicar margen a los botones de la derecha  -->
         <Style
             x:Key="EstiloBoton"
@@ -109,7 +109,7 @@
 
                     <!--  Columna que muestra los nombres  -->
                     <GridViewColumn
-                        Width="120"
+                        Width="170"
                         DisplayMemberBinding="{Binding Path=Nombre}"
                         Header="Nombre" />
 

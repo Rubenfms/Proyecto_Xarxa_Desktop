@@ -1,5 +1,7 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
 using Microsoft.Toolkit.Mvvm.Input;
+using Microsoft.Toolkit.Mvvm.Messaging;
+using Proyecto_Xarxa_Desktop.mensajeria;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -55,12 +57,18 @@ namespace Proyecto_Xarxa_Desktop.vms
         public AlumnosVM()
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
-            //ListaAlumnos = servicioAPI.GetAlumnos();
-            ListaAlumnos = ServicioCsv.GetListaAlumnosFromCSV();
+            ListaAlumnos = servicioAPI.GetAlumnos();
+            //ListaAlumnos = ServicioCsv.GetListaAlumnosFromCSV();
             // Comandos
             DarDeAltaCommand = new RelayCommand(DarDeAlta);
             VerLoteAlumnoCommand = new RelayCommand(VerLoteAlumno);
 
+            // Suscripción para mandar el alumno a ver lote
+            WeakReferenceMessenger.Default.Register<AlumnosVM, VerLoteRequestMessage>
+                (this, (r, m) =>
+                {
+                    m.Reply(servicioAPI.GetLote(AlumnoSeleccionado.IdLote));
+                });
         }
 
         public void DarDeAlta()
@@ -72,8 +80,9 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             try
             {
-                if (AlumnoSeleccionado.Lote != null) ServicioDialogos.ServicioMessageBox(AlumnoSeleccionado.Lote.ToString(), "TO DO:", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
-                else ServicioDialogos.ServicioMessageBox("No tiene lote asignado", "TO DO:", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+
+                ServicioNavegacion.AbrirVistaVerLoteAlumno();
+
             }
             catch (NullReferenceException)
             {

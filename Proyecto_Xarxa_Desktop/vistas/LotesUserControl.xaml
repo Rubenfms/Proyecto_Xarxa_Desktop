@@ -81,11 +81,11 @@
                     </GridViewColumn>
 
                     <!--  Columna que contiene la lista de libros  -->
-                    <GridViewColumn Width="120" Header="Libros">
+                    <GridViewColumn Width="180" Header="Libros">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <ComboBox
-                                    Width="120"
+                                    Width="180"
                                     DisplayMemberPath="Titulo"
                                     FontSize="18"
                                     Foreground="{StaticResource PrimaryColor3}"

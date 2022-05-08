@@ -31,6 +31,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _titulo;
 
+        [JsonProperty("titulo")]
         public string Titulo
         {
             get { return _titulo; }
@@ -39,6 +40,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _curso;
 
+        [JsonProperty("curso")]
         public string Curso
         {
             get { return _curso; }
@@ -47,6 +49,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _departamento;
 
+        [JsonProperty("departamento")]
         public string Departamento
         {
             get { return _departamento; }
@@ -54,7 +57,8 @@ namespace Proyecto_Xarxa_Desktop.modelo
         }
 
         private string _editorial;
- 
+
+        [JsonProperty("editorial")]
         public string Editorial
         {
             get { return _editorial; }

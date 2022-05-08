@@ -8,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.mensajeria
 {
-    class LoteRequestMessage : RequestMessage<Lote>
+    class AlumnoRequestMessage : ValueChangedMessage<Alumno>
     {
-
+        public AlumnoRequestMessage(Alumno a) : base(a) { }
     }
-    
 }
