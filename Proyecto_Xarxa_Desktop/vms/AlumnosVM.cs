@@ -74,6 +74,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                         m.Reply(servicioAPI.GetLote(AlumnoSeleccionado.IdLote));
                     });
             }
+            // Para que no salte error de null reference (controlado con dialogo en front)
             catch (NullReferenceException)
             {
 

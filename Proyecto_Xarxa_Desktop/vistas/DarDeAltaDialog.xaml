@@ -72,21 +72,27 @@
             VerticalAlignment="Center"
             Visibility="Collapsed">
             <TextBox
+                Height="50"
                 Margin="0,0,0,10"
                 VerticalAlignment="Center"
                 materialDesign:HintAssist.Hint="Introduce el nombre del alumno..."
+                FontSize="18"
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                 Text="{Binding Path=NombreIntroducido}" />
             <TextBox
+                Height="50"
                 Margin="0,0,0,10"
                 VerticalAlignment="Center"
                 materialDesign:HintAssist.Hint="Introduce el primer apellido del alumno..."
+                FontSize="18"
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                 Text="{Binding Path=PrimerApellidoIntroducido}" />
             <TextBox
+                Height="50"
                 Margin="0,0,0,10"
                 VerticalAlignment="Center"
                 materialDesign:HintAssist.Hint="Introduce el segundo apellido del alumno..."
+                FontSize="18"
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                 Text="{Binding Path=SegundoApellidoIntroducido}" />
             <Button Click="BuscarPorNombreButton_Click" Content="Buscar" />

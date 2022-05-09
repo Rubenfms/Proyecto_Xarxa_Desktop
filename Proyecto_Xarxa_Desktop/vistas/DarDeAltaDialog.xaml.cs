@@ -53,12 +53,13 @@ namespace Proyecto_Xarxa_Desktop.vistas
         private void BuscarPorNiaButton_Click(object sender, RoutedEventArgs e)
         {
             bool resultDialog = vm.BuscarPorNia();
-            DialogResult = resultDialog;
+            if (resultDialog) DialogResult = resultDialog;
         }
 
         private void BuscarPorNombreButton_Click(object sender, RoutedEventArgs e)
         {
-            vm.BuscarPorNombre();
+            bool resultDialog = vm.BuscarPorNombre();
+            if(resultDialog) DialogResult = resultDialog;
         }
     }
 }
