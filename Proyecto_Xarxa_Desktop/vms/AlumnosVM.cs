@@ -57,6 +57,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         public RelayCommand DarDeAltaCommand { get; }
 
         public RelayCommand VerLoteAlumnoCommand { get; }
+        public RelayCommand VerIncidenciasCommand { get; }
 
         public AlumnosVM()
         {
@@ -66,7 +67,9 @@ namespace Proyecto_Xarxa_Desktop.vms
             // Comandos
             DarDeAltaCommand = new RelayCommand(DarDeAlta);
             VerLoteAlumnoCommand = new RelayCommand(VerLoteAlumno);
+            VerIncidenciasCommand = new RelayCommand(VerIncidenciasAlumno);
 
+            // Mensajeria Ver Lote
             try
             {
                 // Suscripción para mandar el alumno a ver lote
@@ -81,6 +84,15 @@ namespace Proyecto_Xarxa_Desktop.vms
             {
 
             }
+
+            // Mensajeria Ver Incidencias
+
+            // Suscripción para mandar el alumno a Ver Incidencias
+            WeakReferenceMessenger.Default.Register<AlumnosVM, IncidenciasRequestMessage>
+                (this, (r, m) =>
+                {
+                    m.Reply(AlumnoSeleccionado);
+                });
         }
 
         // Método que abre ventana de dar de alta al pulsar el botón "Dar de alta"
@@ -94,7 +106,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             try
             {
-                if(!AlumnoSeleccionado.PerteneceXarxa)
+                if (!AlumnoSeleccionado.PerteneceXarxa)
                 {
                     ServicioDialogos.ServicioMessageBox("El alumno seleccionado no pertenece a la Xarxa", "Alumno no dado de alta", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                 }
@@ -104,7 +116,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                     MessageBoxResult resultDialog = ServicioDialogos.ServicioMessageBoxResult($"Seguro que quieres dar de baja al alumno con NIA: {AlumnoSeleccionado.Nia}", "¿Estas seguro?", System.Windows.MessageBoxButton.YesNo, System.Windows.MessageBoxImage.Question);
 
                     // Si selecciona que si damos de baja el alumno
-                    if(resultDialog.Equals(MessageBoxResult.Yes))
+                    if (resultDialog.Equals(MessageBoxResult.Yes))
                     {
                         AlumnoSeleccionado.PerteneceXarxa = false;
                         HttpStatusCode? statusCode = servicioAPI.PutAlumno(AlumnoSeleccionado);
@@ -132,6 +144,12 @@ namespace Proyecto_Xarxa_Desktop.vms
             {
                 ServicioDialogos.ServicioMessageBox("Selecciona un alumno para ver su lote", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }
+        }
+
+        // Abre una instancia del diálogo de ver incidencias
+        public void VerIncidenciasAlumno()
+        {
+            ServicioNavegacion.AbrirVistaVerIncidenciasAlumno();
         }
     }
 }

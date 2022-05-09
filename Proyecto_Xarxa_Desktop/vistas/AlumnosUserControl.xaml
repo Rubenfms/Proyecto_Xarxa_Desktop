@@ -29,6 +29,16 @@
             <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
         </Style>
 
+        <!--  Estilo para que incidencias aparezca en rojo si el alumno tiene incidencias  -->
+        <Style x:Key="EstiloTriggerIncidencias" TargetType="{x:Type TextBlock}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=Incidencias, Converter={StaticResource IncidenciasConverter}}" Value="Si">
+                    <Setter Property="Foreground" Value="Red" />
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
     </UserControl.Resources>
 
     <DockPanel>
@@ -87,7 +97,10 @@
                 Margin="10"
                 Command="{Binding Path=VerLoteAlumnoCommand}"
                 Content="Ver Lote" />
-            <Button Margin="10" Content="Ver Incidencias" />
+            <Button
+                Margin="10"
+                Command="{Binding Path=VerIncidenciasCommand}"
+                Content="Ver Incidencias" />
         </StackPanel>
 
 
@@ -97,6 +110,7 @@
             IsSynchronizedWithCurrentItem="True"
             ItemsSource="{Binding Path=ListaAlumnos}"
             SelectedItem="{Binding Path=AlumnoSeleccionado}">
+
             <ListView.View>
                 <GridView>
                     <!--  Columna que contiene la lista de NIAs  -->
@@ -116,7 +130,13 @@
                     <GridViewColumn
                         Width="170"
                         DisplayMemberBinding="{Binding Path=Nombre}"
-                        Header="Nombre" />
+                        Header="Nombre">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock HorizontalAlignment="Center" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
 
                     <!--  Columna que contiene la lista de apellidos  -->
                     <GridViewColumn Width="220" Header="Apellidos">
@@ -152,10 +172,13 @@
                         Header="Xarxa" />
 
                     <!--  Columna que muestra si tiene incidencias  -->
-                    <GridViewColumn
-                        Width="130"
-                        DisplayMemberBinding="{Binding Path=Incidencias, Converter={StaticResource IncidenciasConverter}}"
-                        Header="Incidencias" />
+                    <GridViewColumn Width="130" Header="Incidencias">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Style="{StaticResource EstiloTriggerIncidencias}" Text="{Binding Path=Incidencias, Converter={StaticResource IncidenciasConverter}}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>

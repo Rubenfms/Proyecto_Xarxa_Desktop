@@ -7,7 +7,7 @@
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="Inicio"
+    Title="Gestion Xarxa"
     Width="1080"
     Height="600"
     MinWidth="1080"
