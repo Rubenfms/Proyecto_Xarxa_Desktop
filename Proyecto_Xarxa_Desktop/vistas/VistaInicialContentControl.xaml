@@ -10,8 +10,14 @@
     mc:Ignorable="d">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <TextBlock
+            Margin="0,0,0,20"
+            HorizontalAlignment="Center"
             FontSize="28"
-            Foreground="{StaticResource PrimaryColor2}"
-            Text="Has entrado al sistema" />
+            Foreground="{StaticResource PrimaryColor2}">
+            <Run Text="Bienvenid@ " />
+            <Run Text="{Binding Path=UsuarioLogeado.NombreUsuario}" />
+            <Run Text="!" />
+        </TextBlock>
+        <Image Width="500" Source="/assets/xarxa.png" />
     </StackPanel>
 </UserControl>

@@ -31,7 +31,10 @@
     </UserControl.Resources>
 
     <DockPanel>
-        <StackPanel Margin="0,50,0,0" DockPanel.Dock="Right">
+        <StackPanel
+            Margin="0,50,0,0"
+            VerticalAlignment="Center"
+            DockPanel.Dock="Right">
             <Button
                 Command="{Binding Path=GenerarLoteCommand}"
                 Content="Generar Lote"

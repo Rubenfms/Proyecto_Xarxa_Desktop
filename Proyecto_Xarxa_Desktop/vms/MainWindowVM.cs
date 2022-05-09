@@ -52,7 +52,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         public void AbrirVistaAlumnos() => PestanyaActual = ServicioNavegacion.AbrirVistaAlumnos();
         public void AbrirVistaLibros() => PestanyaActual = ServicioNavegacion.AbrirVistaLibros();
 
-        public void AbrirOpcionesSU() =>  ServicioNavegacion.AbrirVistaOpcionesSU();
+        public void AbrirOpcionesSU() => ServicioNavegacion.AbrirVistaOpcionesSU();
 
         public void CerrarSesion()
         {
@@ -61,6 +61,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         }
 
         public void AbrirVistaGenerarLote() => ServicioNavegacion.AbrirVistaGenerarLote();
+        public void AbrirVistaDarDeAltaAlumno() => ServicioNavegacion.AbrirVistaDarDeAlta();
 
     }
 }

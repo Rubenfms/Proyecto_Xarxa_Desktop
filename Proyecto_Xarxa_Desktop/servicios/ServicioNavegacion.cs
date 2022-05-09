@@ -28,7 +28,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
         // Abre un dialogo asignar lote
         internal static void AbrirVistaAsignarLote() => new AsignarLoteDialog().ShowDialog();        
         // Abre un dialogo ver lote del alumno
-        internal static void AbrirVistaVerLoteAlumno() => new VerLoteAlumno().ShowDialog();
+        internal static void AbrirVistaVerLoteAlumno() => new VerLoteAlumno().ShowDialog();       
+        // Abre un dialogo ver incidencias del alumno
+        internal static void AbrirVistaVerIncidenciasAlumno() => new VerIncidenciasAlumno().ShowDialog();
         // Abre un dialogo dar de alta
         internal static void AbrirVistaDarDeAlta() => new DarDeAltaDialog().ShowDialog();
         // Abre diálogo opciones superusuario

@@ -62,5 +62,10 @@ namespace Proyecto_Xarxa_Desktop
         {
             vm.AbrirOpcionesSU();
         }
+
+        private void DarDeAltaButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirVistaDarDeAltaAlumno();
+        }
     }
 }

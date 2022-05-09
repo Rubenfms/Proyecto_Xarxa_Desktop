@@ -7,7 +7,7 @@
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="Inicio"
+    Title="Gestion Xarxa"
     Width="1080"
     Height="600"
     MinWidth="1080"
@@ -200,6 +200,25 @@
                                 Foreground="{StaticResource SecondaryColor2}"
                                 Kind="Account" />
                             <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Ver alumnos" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button
+                    Height="40"
+                    Background="{StaticResource PrimaryColor2}"
+                    Click="DarDeAltaButton_Click"
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource EstiloBotonesMenu}"
+                    Template="{DynamicResource ButtonControlTemplatePrueba}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Width="25"
+                                Height="25"
+                                Margin="20,0,12,0"
+                                Foreground="{StaticResource SecondaryColor2}"
+                                Kind="AccountPlus" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Dar de Alta" />
                         </StackPanel>
                     </Button.Content>
                 </Button>
