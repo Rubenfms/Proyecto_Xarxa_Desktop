@@ -54,9 +54,12 @@
             VerticalAlignment="Center"
             Visibility="Collapsed">
             <TextBox
+                Width="200"
+                Height="50"
                 Margin="0,0,0,10"
                 VerticalAlignment="Center"
                 materialDesign:HintAssist.Hint="Buscar por NIA..."
+                FontSize="18"
                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                 Text="{Binding Path=NiaIntroducido}" />
             <Button Click="BuscarPorNiaButton_Click" Content="Buscar" />

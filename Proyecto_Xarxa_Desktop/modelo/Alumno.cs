@@ -22,6 +22,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private int _nia;
 
+        [JsonProperty("nia")]
         public int Nia
         {
             get { return _nia; }
@@ -30,6 +31,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _nombre;
 
+        [JsonProperty("nombre")]
         public string Nombre
         {
             get { return _nombre; }
@@ -38,6 +40,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _apellido1;
 
+        [JsonProperty("apellido1")]
         public string Apellido1
         {
             get { return _apellido1; }
@@ -46,6 +49,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _apellido2;
 
+        [JsonProperty("apellido2")]
         public string Apellido2
         {
             get { return _apellido2; }
@@ -63,6 +67,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _curso;
 
+        [JsonProperty("curso")]
         public string Curso
         {
             get { return _curso; }
@@ -71,6 +76,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _grupo;
 
+        [JsonProperty("grupo")]
         public string Grupo
         {
             get { return _grupo; }
@@ -79,6 +85,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string _incidencias;
 
+        [JsonProperty("incidencias")]
         public string Incidencias
         {
             get { return _incidencias; }
@@ -87,6 +94,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private bool _perteneceXarxa;
 
+        [JsonProperty("perteneceXarxa")]
         public bool PerteneceXarxa
         {
             get { return _perteneceXarxa; }
@@ -95,6 +103,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private int? idLote;
 
+        [JsonProperty("idLote")]
         public int? IdLote
         {
             get { return idLote; }

@@ -67,7 +67,7 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         }
 
-        public void BuscarPorNia()
+        public bool BuscarPorNia()
         {
             if (Int32.TryParse(NiaIntroducido, out _))
             {
@@ -75,19 +75,26 @@ namespace Proyecto_Xarxa_Desktop.vms
                 if (aEncontrado == null)
                 {
                     ServicioDialogos.ServicioMessageBox("No hay un alumno con ese NIA registrado", "NIA no encontrado", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
                 }
                 else if (aEncontrado.PerteneceXarxa)
                 {
                     ServicioDialogos.ServicioMessageBox($"El alumno ya está dado de alta en la Xarxa", "Alumno ya dado de alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return false;
                 }
                 else
                 {
                     aEncontrado.PerteneceXarxa = true;
                     HttpStatusCode? statusCode = servicioAPI.PutAlumno(aEncontrado);
                     ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Alta correcta", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return true;
                 }
             }
-            else ServicioDialogos.ServicioMessageBox("El formato de NIA introducido no es válido. Prueba a introducir solo números.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Error);
+            else
+            {
+                ServicioDialogos.ServicioMessageBox("El formato de NIA introducido no es válido. Prueba a introducir solo números.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
         }
     }
 }

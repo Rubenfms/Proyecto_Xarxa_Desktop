@@ -65,12 +65,19 @@ namespace Proyecto_Xarxa_Desktop.vms
             DarDeAltaCommand = new RelayCommand(DarDeAlta);
             VerLoteAlumnoCommand = new RelayCommand(VerLoteAlumno);
 
-            // Suscripción para mandar el alumno a ver lote
-            WeakReferenceMessenger.Default.Register<AlumnosVM, VerLoteRequestMessage>
-                (this, (r, m) =>
-                {
-                    m.Reply(servicioAPI.GetLote(AlumnoSeleccionado.IdLote));
-                });
+            try
+            {
+                // Suscripción para mandar el alumno a ver lote
+                WeakReferenceMessenger.Default.Register<AlumnosVM, VerLoteRequestMessage>
+                    (this, (r, m) =>
+                    {
+                        m.Reply(servicioAPI.GetLote(AlumnoSeleccionado.IdLote));
+                    });
+            }
+            catch (NullReferenceException)
+            {
+
+            }
         }
 
         public void DarDeAlta()

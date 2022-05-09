@@ -17,6 +17,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             {
                 cn.Open();
 
+                // TODO: Controlar el tema de 1FPB y 2FPB
                 // Creamos la query buscando lotes que empiecen con el formato curso-modalidad-idlote (11XXX) y la ejecutamos
                 MySqlDataReader dr = new MySqlCommand($"select id_lote from lote where id_lote LIKE '{numeroCurso}{numeroModalidad}%' ORDER BY 1 DESC LIMIT 1;", cn).ExecuteReader();
 

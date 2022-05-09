@@ -203,6 +203,25 @@
                         </StackPanel>
                     </Button.Content>
                 </Button>
+                <Button
+                    Height="40"
+                    Background="{StaticResource PrimaryColor2}"
+                    Click="DarDeAltaButton_Click"
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource EstiloBotonesMenu}"
+                    Template="{DynamicResource ButtonControlTemplatePrueba}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Width="25"
+                                Height="25"
+                                Margin="20,0,12,0"
+                                Foreground="{StaticResource SecondaryColor2}"
+                                Kind="AccountPlus" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Dar de Alta" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
                 <!--  Opción 3  -->
                 <Button
                     Height="60"
