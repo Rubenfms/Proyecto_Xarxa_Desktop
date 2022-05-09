@@ -35,6 +35,7 @@
         <DockPanel DockPanel.Dock="Top">
             <Button
                 Margin="0,0,20,0"
+                Click="DarDeBajaButton_Click"
                 Content="Dar de Baja"
                 DockPanel.Dock="Right" />
             <Button

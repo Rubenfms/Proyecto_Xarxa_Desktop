@@ -95,7 +95,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                         {
                             alumnoEncontrado.PerteneceXarxa = true;
                             HttpStatusCode? statusCode = servicioAPI.PutAlumno(alumnoEncontrado);
-                            ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Alta correcta", MessageBoxButton.OK, MessageBoxImage.Information);
+                            ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
                             return true;
                         }
                     }
@@ -127,7 +127,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                 {
                     aEncontrado.PerteneceXarxa = true;
                     HttpStatusCode? statusCode = servicioAPI.PutAlumno(aEncontrado);
-                    ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Alta correcta", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
                     return true;
                 }
             }
