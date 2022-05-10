@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
     {
         private string nombreUsuario;
 
+        [JsonProperty("nombreUsuario")]
         public string NombreUsuario
         {
             get { return nombreUsuario; }
@@ -19,6 +21,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string contrasenya;
 
+        [JsonProperty("contrasenya")]
         public string Contrasenya
         {
             get { return contrasenya; }
@@ -27,12 +30,21 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         private string tipoUsuario;
 
+        [JsonProperty("tipoUsuario")]
         public string TipoUsuario
         {
             get { return tipoUsuario; }
             set { SetProperty(ref tipoUsuario, value); }
         }
 
+        private bool activo;
+
+        [JsonProperty("activo")]
+        public bool Activo
+        {
+            get { return activo; }
+            set { SetProperty(ref activo, value); }
+        }
 
         public Usuario() {; }
 
@@ -41,6 +53,13 @@ namespace Proyecto_Xarxa_Desktop.modelo
             NombreUsuario = nombreUsuario;
             Contrasenya = contrasenya;
             TipoUsuario = tipoUsuario;
+        }
+        public Usuario(string nombreUsuario, string contrasenya, string tipoUsuario, bool activo)
+        {
+            NombreUsuario = nombreUsuario;
+            Contrasenya = contrasenya;
+            TipoUsuario = tipoUsuario;
+            Activo = activo;
         }
     }
 }

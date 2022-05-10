@@ -194,15 +194,17 @@ namespace Proyecto_Xarxa_Desktop.servicios
         {
             try
             {
-                RestRequest peticion = new RestRequest($"/xarxa/usuarios", Method.POST);
-
-                /*                var json = JsonConvert.SerializeObject(usuario); */
-                peticion.RequestFormat = DataFormat.Json;
-
-                peticion.AddJsonBody(usuario);
-
-                var response = Cliente.Execute(peticion);
-
+                var client = new RestClient("http://localhost:8081/apixarxa/xarxa/usuarios");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.POST);
+                request.AddHeader("Accept", "application/json");
+                request.AddHeader("x-", "");
+                request.AddHeader("Content-Type", "application/json");
+                request.RequestFormat = DataFormat.Json;
+                request.AddJsonBody(usuario);
+                var body = JsonConvert.SerializeObject(usuario);
+                //request.AddParameter("application/json", usuario, ParameterType.RequestBody);
+                IRestResponse response = Cliente.Execute(request);
                 return response.StatusCode;
             }
             catch (AggregateException)

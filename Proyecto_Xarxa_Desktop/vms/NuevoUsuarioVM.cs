@@ -52,8 +52,10 @@ namespace Proyecto_Xarxa_Desktop.vms
 
             if(usuarioCorrecto)
             {
+                UsuarioNuevo.Activo = true;
                 HttpStatusCode? statusCode = servicioApi.PostUsuario(UsuarioNuevo);
 
+                //ServicioDialogos.ServicioMessageBox($" Resultado de la creación del usuario: {statusCode}", "Operación completada", MessageBoxButton.OK, MessageBoxImage.Information);
                 ServicioDialogos.ServicioMessageBox($" Resultado de la creación del usuario: {statusCode}", "Operación completada", MessageBoxButton.OK, MessageBoxImage.Information);
                 
             }
