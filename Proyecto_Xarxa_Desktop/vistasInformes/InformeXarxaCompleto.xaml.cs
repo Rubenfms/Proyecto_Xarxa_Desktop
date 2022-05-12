@@ -25,7 +25,7 @@ namespace Proyecto_Xarxa_Desktop.vistasInformes
         {
             InitializeComponent();
             GenerarInforme();
-           
+
         }
 
         private void GenerarInforme()

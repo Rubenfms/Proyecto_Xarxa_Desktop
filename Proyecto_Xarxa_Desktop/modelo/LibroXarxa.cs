@@ -4,18 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Newtonsoft.Json;
 
 namespace Proyecto_Xarxa_Desktop.modelo
 {
     class LibroXarxa:Libro
     {
-        public LibroXarxa(int codigoXarxa, int isbn, string titulo, string curso, string departamento, string editorial) : base(isbn, titulo, curso, departamento, editorial)
+        public LibroXarxa(int codigoXarxa, string isbn, string titulo, string curso, string departamento, string editorial) : base(isbn, titulo, curso, departamento, editorial)
         {
             CodigoXarxa = codigoXarxa;
         }
 
         private int _codigoXarxa;
 
+        [JsonProperty("codigoXarxa")]
         public int CodigoXarxa
         {
             get { return _codigoXarxa; }

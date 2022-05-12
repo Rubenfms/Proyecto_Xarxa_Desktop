@@ -1,0 +1,186 @@
+﻿<UserControl
+    x:Class="Proyecto_Xarxa_Desktop.vistas.AlumnosUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:convertidores="clr-namespace:Proyecto_Xarxa_Desktop.convertidores"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Background="{StaticResource SecondaryColor2}"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <convertidores:BooleanToSiNo x:Key="BooleanToSiNoConverter" />
+        <convertidores:IncidenciasToSiNo x:Key="IncidenciasConverter" />
+        <!--  Estilo para aplicar margen a los botones de la derecha  -->
+        <Style
+            x:Key="EstiloBoton"
+            BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}"
+            TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+
+        <!--  Estilo genérico para los textblock  -->
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
+        </Style>
+
+        <!--  Estilo para que incidencias aparezca en rojo si el alumno tiene incidencias  -->
+        <Style x:Key="EstiloTriggerIncidencias" TargetType="{x:Type TextBlock}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=Incidencias, Converter={StaticResource IncidenciasConverter}}" Value="Si">
+                    <Setter Property="Foreground" Value="Red" />
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+    </UserControl.Resources>
+
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Button
+                Margin="0,0,20,0"
+                Click="DarDeBajaButton_Click"
+                Content="Dar de Baja"
+                DockPanel.Dock="Right" />
+            <Button
+                Margin="0,0,20,0"
+                Command="{Binding Path=DarDeAltaCommand}"
+                Content="Dar de Alta"
+                DockPanel.Dock="Right" />
+            <Button
+                Margin="0,0,20,0"
+                Content="Editar Alumno"
+                DockPanel.Dock="Right" />
+            <!--  StackPanel con el toggle button y text block  -->
+            <StackPanel Margin="20,0,0,0" Orientation="Horizontal">
+                <TextBlock
+                    Height="30"
+                    VerticalAlignment="Center"
+                    Text="Solo Xarxa" />
+                <ToggleButton
+                    x:Name="SoloXarxaToggleButton"
+                    VerticalAlignment="Center"
+                    Click="SoloXarxaToggleButton_Click"
+                    IsChecked="False"
+                    Style="{StaticResource MaterialDesignSwitchLightToggleButton}"
+                    ToolTip="Mostrar solo alumnos pertenecientes a la Xarxa" />
+            </StackPanel>
+            <!--  StackPanel superior  -->
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <materialDesign:PackIcon
+                    Width="30"
+                    Height="30"
+                    Margin="10,0,10,0"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Left"
+                    Kind="AccountFilter" />
+                <TextBox
+                    x:Name="buscador"
+                    Margin="0,0,0,10"
+                    VerticalAlignment="Center"
+                    materialDesign:HintAssist.Hint="Filtra por NIA, nombre, apellido o curso"
+                    DockPanel.Dock="Left"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                    Text="{Binding Path=Buscador}"
+                    TextChanged="buscador_TextChanged" />
+            </StackPanel>
+        </DockPanel>
+
+        <StackPanel VerticalAlignment="Center" DockPanel.Dock="Right">
+            <Button
+                Margin="10"
+                Command="{Binding Path=VerLoteAlumnoCommand}"
+                Content="Ver Lote" />
+            <Button
+                Margin="10"
+                Command="{Binding Path=VerIncidenciasCommand}"
+                Content="Ver Incidencias" />
+        </StackPanel>
+
+
+        <!--  Contenedor de la lista de alumnos  -->
+        <ListView
+            x:Name="listview"
+            IsSynchronizedWithCurrentItem="True"
+            ItemsSource="{Binding Path=ListaAlumnos}"
+            SelectedItem="{Binding Path=AlumnoSeleccionado}">
+
+            <ListView.View>
+                <GridView>
+                    <!--  Columna que contiene la lista de NIAs  -->
+                    <GridViewColumn Width="120" Header="NIA">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}"
+                                    Text="{Binding Path=Nia}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <!--  Columna que muestra los nombres  -->
+                    <GridViewColumn
+                        Width="170"
+                        DisplayMemberBinding="{Binding Path=Nombre}"
+                        Header="Nombre">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock HorizontalAlignment="Center" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <!--  Columna que contiene la lista de apellidos  -->
+                    <GridViewColumn Width="220" Header="Apellidos">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}">
+                                    <Run Text="{Binding Path=Apellido1}" />
+                                    <Run Text="{Binding Path=Apellido2}" />
+                                </TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <!--  Columna que muestra el grupo  -->
+                    <GridViewColumn
+                        Width="120"
+                        DisplayMemberBinding="{Binding Path=Grupo}"
+                        Header="Grupo" />
+
+                    <!--  Columna que muestra la matriculacion  -->
+                    <GridViewColumn
+                        Width="120"
+                        DisplayMemberBinding="{Binding Path=Matricula}"
+                        Header="Matriculación" />
+
+                    <!--  Columna que muestra si pertenece a la xarxa  -->
+                    <GridViewColumn
+                        Width="120"
+                        DisplayMemberBinding="{Binding Path=PerteneceXarxa, Converter={StaticResource BooleanToSiNoConverter}}"
+                        Header="Xarxa" />
+
+                    <!--  Columna que muestra si tiene incidencias  -->
+                    <GridViewColumn Width="130" Header="Incidencias">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Style="{StaticResource EstiloTriggerIncidencias}" Text="{Binding Path=Incidencias, Converter={StaticResource IncidenciasConverter}}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+</UserControl>

@@ -1,0 +1,155 @@
+﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Input;
+using Microsoft.Toolkit.Mvvm.Messaging;
+using Proyecto_Xarxa_Desktop.mensajeria;
+using Proyecto_Xarxa_Desktop.modelo;
+using Proyecto_Xarxa_Desktop.servicios;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+
+namespace Proyecto_Xarxa_Desktop.vms
+{
+    class AlumnosVM : ObservableObject
+    {
+        private ObservableCollection<Alumno> listaAlumnos;
+
+        public ObservableCollection<Alumno> ListaAlumnos
+        {
+            get { return listaAlumnos; }
+            set { SetProperty(ref listaAlumnos, value); }
+        }
+
+        private Alumno alumnoSeleccionado;
+
+        public Alumno AlumnoSeleccionado
+        {
+            get { return alumnoSeleccionado; }
+            set { SetProperty(ref alumnoSeleccionado, value); }
+        }
+
+        private string apellidos;
+
+        public string Apellidos
+        {
+            get { return apellidos; }
+            set { SetProperty(ref apellidos, value); }
+        }
+
+        // Propiedad de la cadena que se está pasando en el buscador
+        private string buscador;
+
+        public string Buscador
+        {
+            get { return buscador; }
+            set { SetProperty(ref buscador, value); }
+        }
+
+        // Api
+        private ServicioAPI servicioAPI;
+
+        // Comandos
+        public RelayCommand DarDeAltaCommand { get; }
+
+        public RelayCommand VerLoteAlumnoCommand { get; }
+        public RelayCommand VerIncidenciasCommand { get; }
+
+        public AlumnosVM()
+        {
+            servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
+            ListaAlumnos = servicioAPI.GetAlumnos();
+            //ListaAlumnos = ServicioCsv.GetListaAlumnosFromCSV();
+            // Comandos
+            DarDeAltaCommand = new RelayCommand(DarDeAlta);
+            VerLoteAlumnoCommand = new RelayCommand(VerLoteAlumno);
+            VerIncidenciasCommand = new RelayCommand(VerIncidenciasAlumno);
+
+            // Mensajeria Ver Lote
+            try
+            {
+                // Suscripción para mandar el alumno a ver lote
+                WeakReferenceMessenger.Default.Register<AlumnosVM, VerLoteRequestMessage>
+                    (this, (r, m) =>
+                    {
+                        m.Reply(servicioAPI.GetLote(AlumnoSeleccionado.IdLote));
+                    });
+            }
+            // Para que no salte error de null reference (controlado con dialogo en front)
+            catch (NullReferenceException)
+            {
+
+            }
+
+            // Mensajeria Ver Incidencias
+
+            // Suscripción para mandar el alumno a Ver Incidencias
+            WeakReferenceMessenger.Default.Register<AlumnosVM, IncidenciasRequestMessage>
+                (this, (r, m) =>
+                {
+                    m.Reply(AlumnoSeleccionado);
+                });
+        }
+
+        // Método que abre ventana de dar de alta al pulsar el botón "Dar de alta"
+        public void DarDeAlta()
+        {
+            ServicioNavegacion.AbrirVistaDarDeAlta();
+        }
+
+        // Da de baja de la xarxa a un alumno seleccionado
+        public void DarDeBaja()
+        {
+            try
+            {
+                if (!AlumnoSeleccionado.PerteneceXarxa)
+                {
+                    ServicioDialogos.ServicioMessageBox("El alumno seleccionado no pertenece a la Xarxa", "Alumno no dado de alta", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                }
+                else
+                {
+                    // Mostramos un dialogo preguntando si está seguro de dar de baja
+                    MessageBoxResult resultDialog = ServicioDialogos.ServicioMessageBoxResult($"Seguro que quieres dar de baja al alumno con NIA: {AlumnoSeleccionado.Nia}", "¿Estas seguro?", System.Windows.MessageBoxButton.YesNo, System.Windows.MessageBoxImage.Question);
+
+                    // Si selecciona que si damos de baja el alumno
+                    if (resultDialog.Equals(MessageBoxResult.Yes))
+                    {
+                        AlumnoSeleccionado.PerteneceXarxa = false;
+                        HttpStatusCode? statusCode = servicioAPI.PutAlumno(AlumnoSeleccionado);
+                        ServicioDialogos.ServicioMessageBox($"Resultado de la baja del alumno: {statusCode}", "Resultado baja", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+
+            }
+            catch (NullReferenceException)
+            {
+                ServicioDialogos.ServicioMessageBox("Selecciona un alumno para ver darle de baja de la xarxa", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+            }
+        }
+
+        // Abre una instancia del dialogo ver lote al pulsar el botón ver Lote
+        public void VerLoteAlumno()
+        {
+            try
+            {
+
+                ServicioNavegacion.AbrirVistaVerLoteAlumno();
+
+            }
+            catch (NullReferenceException)
+            {
+                ServicioDialogos.ServicioMessageBox("Selecciona un alumno para ver su lote", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+            }
+        }
+
+        // Abre una instancia del diálogo de ver incidencias
+        public void VerIncidenciasAlumno()
+        {
+            ServicioNavegacion.AbrirVistaVerIncidenciasAlumno();
+        }
+    }
+}

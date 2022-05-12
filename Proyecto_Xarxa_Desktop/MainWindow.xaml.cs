@@ -1,6 +1,10 @@
-﻿using Proyecto_Xarxa_Desktop.servicios;
+﻿using Proyecto_Xarxa_Desktop.modelo;
+using Proyecto_Xarxa_Desktop.servicios;
+using Proyecto_Xarxa_Desktop.vistas;
+using Proyecto_Xarxa_Desktop.vms;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,10 +25,47 @@ namespace Proyecto_Xarxa_Desktop
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MainWindowVM vm = new MainWindowVM();
         public MainWindow()
         {
             InitializeComponent();
-            ServicioCsv.LeeCsv();
+            DataContext = vm;
+        }
+
+        // Evento para salir de la aplicación
+        private void SalirButton_Click(object sender, RoutedEventArgs e) => Application.Current.Shutdown();
+
+        private void CerrarSesionButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.CerrarSesion();
+            this.Close(); // cerrar ventana
+        }
+
+        private void CerrarMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            AbrirMenuButton.Visibility = Visibility.Visible;
+            CerrarMenuButton.Visibility = Visibility.Collapsed;
+            BalmisImagen.Visibility = Visibility.Collapsed;
+            NombreUsuarioTB.Visibility = Visibility.Collapsed;
+        }
+
+        private void AbrirMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            CerrarMenuButton.Visibility = Visibility.Visible;
+            AbrirMenuButton.Visibility = Visibility.Collapsed;
+            BalmisImagen.Visibility = Visibility.Visible;
+            NombreUsuarioTB.Visibility = Visibility.Visible;
+
+        }
+
+        private void OpcionesSUButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirOpcionesSU();
+        }
+
+        private void DarDeAltaButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirVistaDarDeAltaAlumno();
         }
     }
 }
