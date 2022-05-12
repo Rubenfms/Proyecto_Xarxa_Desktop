@@ -163,6 +163,30 @@
     <Compile Include="convertidores\IncidenciasToSiNo.cs" />
     <Compile Include="convertidores\NullToVisibilityModificado.cs" />
     <Compile Include="convertidores\TipoUsuarioToEnabled.cs" />
+     <Compile Include="informes\ConcesionReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConcesionReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\RecogidaReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecogidaReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\XarxaCompletoReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XarxaCompletoReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\XarxaGruposReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XarxaGruposReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="mensajeria\AlumnoRequestMessage.cs" />
     <Compile Include="mensajeria\AsignarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\EditarLoteRequestMessage.cs" />
@@ -177,6 +201,14 @@
     <Compile Include="servicios\ServicioNavegacion.cs" />
     <Compile Include="servicios\ServicioSQL.cs" />
     <Compile Include="servicios\ServicioValidarUsuario.cs" />
+     <Compile Include="vistasInformes\InformeConcesion.xaml.cs">
+      <DependentUpon>InformeConcesion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistasInformes\InformeLotes.xaml.cs">
+      <DependentUpon>InformeLotes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistasInformes\InformeRecogida.xaml.cs">
+      <DependentUpon>InformeRecogida.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistasInformes\InformeXarxaCompleto.xaml.cs">
       <DependentUpon>InformeXarxaCompleto.xaml</DependentUpon>
