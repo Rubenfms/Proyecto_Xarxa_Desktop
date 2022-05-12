@@ -101,15 +101,23 @@ namespace Proyecto_Xarxa_Desktop.modelo
             set { SetProperty(ref _perteneceXarxa, value); }
         }
 
-        private int? idLote;
 
         [JsonProperty("idLote")]
-        public int? IdLote
+        private int idLote;
+
+        public int IdLote
         {
             get { return idLote; }
             set { SetProperty(ref idLote, value); }
         }
 
+        private bool _concesion;
+
+        public bool Concesion
+        {
+            get { return _concesion; }
+            set { SetProperty(ref _concesion, value); }
+        }
 
         // Constructor sin lote
         public Alumno(int nia, string nombre, string apellido1, string apellido2, string matricula, string curso, string grupo, string incidencias, bool perteneceXarxa)
@@ -155,11 +163,10 @@ namespace Proyecto_Xarxa_Desktop.modelo
 
         public Alumno()
         {
-
         }
 
         // Constructor con IdLote
-        public Alumno(int nia, string nombre, string apellido1, string apellido2, string matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, int? idLote)
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, string matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, int idLote)
         {
             Nia = nia;
             Nombre = nombre;

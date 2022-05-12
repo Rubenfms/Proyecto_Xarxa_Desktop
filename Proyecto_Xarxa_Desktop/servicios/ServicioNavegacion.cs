@@ -1,4 +1,6 @@
-﻿using Proyecto_Xarxa_Desktop.vistas;
+﻿using Proyecto_Xarxa_Desktop.informes;
+using Proyecto_Xarxa_Desktop.vistas;
+using Proyecto_Xarxa_Desktop.vistasInformes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +30,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         // Abre un dialogo asignar lote
         internal static void AbrirVistaAsignarLote() => new AsignarLoteDialog().ShowDialog();        
         // Abre un dialogo ver lote del alumno
-        internal static void AbrirVistaVerLoteAlumno() => new VerLoteAlumno().ShowDialog();       
+        internal static void AbrirVistaVerLoteAlumno() => new VerLoteAlumno().ShowDialog();
         // Abre un dialogo ver incidencias del alumno
         internal static void AbrirVistaVerIncidenciasAlumno() => new VerIncidenciasAlumno().ShowDialog();
         // Abre un dialogo dar de alta
@@ -37,5 +39,14 @@ namespace Proyecto_Xarxa_Desktop.servicios
         internal static void AbrirVistaOpcionesSU() => new OpcionesSuperUsuario().ShowDialog();
         // Abre diálogo nuevo usuario
         internal static void AbrirVistaNuevoUsuario() => new NuevoUsuarioDialog().ShowDialog();
+        internal static UserControl AbrirVistaInformes() => new InformesUserControl();
+
+        // INFORMES
+
+        internal static void AbrirInformeXarxaCompleto() => new InformeXarxaCompleto().ShowDialog();
+        internal static void AbrirInformeConcesion() => new InformeConcesion().ShowDialog();
+        internal static void AbrirInformeXarxaGrupos() => new InformeXarxaGrupos().ShowDialog();
+        internal static void AbrirInformeRecogida() => new InformeRecogida().ShowDialog();
+
     }
 }
