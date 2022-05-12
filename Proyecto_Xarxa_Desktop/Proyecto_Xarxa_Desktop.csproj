@@ -177,6 +177,13 @@
     <Compile Include="servicios\ServicioNavegacion.cs" />
     <Compile Include="servicios\ServicioSQL.cs" />
     <Compile Include="servicios\ServicioValidarUsuario.cs" />
+    </Compile>
+    <Compile Include="vistasInformes\InformeXarxaCompleto.xaml.cs">
+      <DependentUpon>InformeXarxaCompleto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistasInformes\InformeXarxaGrupos.xaml.cs">
+      <DependentUpon>InformeXarxaGrupos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\AlumnosUserControl.xaml.cs">
       <DependentUpon>AlumnosUserControl.xaml</DependentUpon>
     </Compile>
@@ -194,6 +201,9 @@
     </Compile>
     <Compile Include="vistas\GenerarLote.xaml.cs">
       <DependentUpon>GenerarLote.xaml</DependentUpon>
+    </Compile>
+     <Compile Include="vistas\InformesUserControl.xaml.cs">
+      <DependentUpon>InformesUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistas\LibrosUserControl.xaml.cs">
       <DependentUpon>LibrosUserControl.xaml</DependentUpon>
@@ -222,6 +232,7 @@
     <Compile Include="vms\AlumnosVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
+    <Compile Include="vms\InformesVM.cs" />
     <Compile Include="vms\LibrosVM.cs" />
     <Compile Include="vms\NuevoUsuarioVM.cs" />
     <Compile Include="vms\DarDeAltaAlumnoVM.cs" />
@@ -321,6 +332,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="informes\ConcesionReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConcesionReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\RecogidaReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RecogidaReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\XarxaCompletoReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XarxaCompletoReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\XarxaGruposReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XarxaGruposReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
