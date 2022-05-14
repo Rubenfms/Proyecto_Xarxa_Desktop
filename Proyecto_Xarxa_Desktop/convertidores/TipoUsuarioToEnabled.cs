@@ -23,7 +23,7 @@ namespace Proyecto_Xarxa_Desktop.convertidores
         /// Valor convertido (booleano)
         /// Si el método devuelve <span class="keyword"><span class="languageSpecificText"><span class="cs">null</span><span class="vb">Nothing</span><span class="cpp">nullptr</span></span></span><span class="nu">a null reference (<span class="keyword">Nothing</span> in Visual Basic)</span>, se usa el valor nulo válido.
         /// </returns>
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture) 
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             try
             {
@@ -34,8 +34,8 @@ namespace Proyecto_Xarxa_Desktop.convertidores
                 return false;
             }
         }
-        
-        
+
+
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {

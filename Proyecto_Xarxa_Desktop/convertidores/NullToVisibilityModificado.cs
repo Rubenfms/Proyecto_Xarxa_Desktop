@@ -26,7 +26,7 @@ namespace Proyecto_Xarxa_Desktop.convertidores
         /// </returns>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            switch(value)
+            switch (value)
             {
                 case null:
                     return Visibility.Visible;

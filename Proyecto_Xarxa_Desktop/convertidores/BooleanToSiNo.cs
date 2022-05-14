@@ -33,10 +33,10 @@ namespace Proyecto_Xarxa_Desktop.convertidores
             {
                 return "Si";
             }
-/*            else if (value.ToString().Equals("Cesion"))
-            {
-                return "Cesión";
-            }*/
+            /*            else if (value.ToString().Equals("Cesion"))
+                        {
+                            return "Cesión";
+                        }*/
             else return "Error";
         }
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
