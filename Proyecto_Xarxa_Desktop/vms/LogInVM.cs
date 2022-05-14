@@ -13,35 +13,62 @@ using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
+    /// <summary>
+    /// VM de LogIn.xaml
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class LogInVM : ObservableObject
     {
-        private ObservableCollection<Usuario> listaUsuarios;
-
-        public ObservableCollection<Usuario> ListaUsuarios
-        {
-            get { return listaUsuarios; }
-            set { SetProperty(ref listaUsuarios, value); }
-        }
+        /// <summary>
+        /// Usuario que crearemos a partir de las credenciales introducidas por el usuario para comprobar posteriormente si existe en la BD
+        /// </summary>
         private Usuario usuarioXarxa;
 
+        /// <summary>
+        /// Gets or sets the usuario xarxa.
+        /// </summary>
+        /// <value>
+        /// Usuario a partir de las credenciales introducidas por el usuario
+        /// </value>
         public Usuario UsuarioXarxa
         {
             get { return usuarioXarxa; }
             set { SetProperty(ref usuarioXarxa, value); }
         }
 
+        /// <summary>
+        /// Gets the validar usuario command.
+        /// </summary>
+        /// <value>
+        /// The validar usuario command.
+        /// </value>
         public RelayCommand ValidarUsuarioCommand { get; }
 
+        /// <summary>
+        /// The servicio validar usuario
+        /// </summary>
         ServicioValidarUsuario servicioValidarUsuario;
 
+        /// <summary>
+        /// Campo necesario para la contraseña al ser SecureBox
+        /// </summary>
         private String securePassword;
 
+        /// <summary>
+        /// Gets or sets the password.
+        /// </summary>
+        /// <value>
+        /// Campo necesario para la contraseña al ser SecureBox
+        /// </value>
         public String Password
         {
             get { return securePassword; }
             set { SetProperty(ref securePassword, value); }
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogInVM"/> class.
+        /// </summary>
         public LogInVM()
         {
             UsuarioXarxa = new Usuario();
@@ -49,6 +76,9 @@ namespace Proyecto_Xarxa_Desktop.vms
             ValidarUsuarioCommand = new RelayCommand(ValidarUsuario);
         }
 
+        /// <summary>
+        /// Método que valida si el usuario creado a partir de las credenciales introducidas por el usuario existe en la BD o no
+        /// </summary>
         public void ValidarUsuario()
         {
             UsuarioXarxa.Contrasenya = Password;

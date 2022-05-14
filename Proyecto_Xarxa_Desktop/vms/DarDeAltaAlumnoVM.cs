@@ -12,49 +12,105 @@ using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
+    /// <summary>
+    /// VM de DarDeAltaDialog.xaml
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class DarDeAltaAlumnoVM : ObservableObject
     {
+        /// <summary>
+        /// The nia introducido
+        /// </summary>
         private string niaIntroducido;
 
+        /// <summary>
+        /// Gets or sets the nia introducido.
+        /// </summary>
+        /// <value>
+        /// The nia introducido.
+        /// </value>
         public string NiaIntroducido
         {
             get { return niaIntroducido; }
             set { SetProperty(ref niaIntroducido, value); }
         }
 
+        /// <summary>
+        /// The nombre introducido
+        /// </summary>
         private string nombreIntroducido;
 
+        /// <summary>
+        /// Gets or sets the nombre introducido.
+        /// </summary>
+        /// <value>
+        /// The nombre introducido.
+        /// </value>
         public string NombreIntroducido
         {
             get { return nombreIntroducido; }
             set { SetProperty(ref nombreIntroducido, value); }
         }
 
+        /// <summary>
+        /// The primer apellido introducido
+        /// </summary>
         private string primerApellidoIntroducido;
 
+        /// <summary>
+        /// Gets or sets the primer apellido introducido.
+        /// </summary>
+        /// <value>
+        /// The primer apellido introducido.
+        /// </value>
         public string PrimerApellidoIntroducido
         {
             get { return primerApellidoIntroducido; }
             set { SetProperty(ref primerApellidoIntroducido, value); }
         }
 
+        /// <summary>
+        /// The segundo apellido introducido
+        /// </summary>
         private string segundoApellidoIntroducido;
 
+        /// <summary>
+        /// Gets or sets the segundo apellido introducido.
+        /// </summary>
+        /// <value>
+        /// The segundo apellido introducido.
+        /// </value>
         public string SegundoApellidoIntroducido
         {
             get { return segundoApellidoIntroducido; }
             set { SetProperty(ref segundoApellidoIntroducido, value); }
         }
 
+        /// <summary>
+        /// Alumno encontrado a partir de los datos introducidos.
+        /// </summary>
         private Alumno alumnoEncontrado;
 
+        /// <summary>
+        /// Gets or sets the alumno encontrado.
+        /// </summary>
+        /// <value>
+        /// The alumno encontrado.
+        /// </value>
         public Alumno AlumnoEncontrado
         {
             get { return alumnoEncontrado; }
             set { SetProperty(ref alumnoEncontrado, value); }
         }
 
+        /// <summary>
+        /// The servicio API
+        /// </summary>
         private ServicioAPI servicioAPI;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DarDeAltaAlumnoVM"/> class.
+        /// </summary>
         public DarDeAltaAlumnoVM()
         {
             // Api
@@ -62,7 +118,10 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         }
 
-        // Método que se ejecuta cuando pulsas el botón de buscar en la pantalla de buscar por nombre y apellidos
+        /// <summary>
+        /// Método que se ejecuta cuando pulsas el botón de buscar en la pantalla de buscar por nombre y apellidos.
+        /// </summary>
+        /// <returns>Devuelve booleano, dependiendo de si se ha encontrado el alumno o no, de si se han rellenado todos los campos o no o de si el alumno está ya dado de alta o no.</returns>
         public bool BuscarPorNombre()
         {
             try
@@ -107,7 +166,11 @@ namespace Proyecto_Xarxa_Desktop.vms
                 return false;
             }
         }
-        // Método que se ejecuta cuando pulsas el botón de buscar en la pantalla de buscar por NIA
+
+        /// <summary>
+        ///  Método que se ejecuta cuando pulsas el botón de buscar en la pantalla de buscar por NIA.
+        /// </summary>
+        /// <returns>Devuelve booleano, dependiendo de si se ha encontrado el alumno o no, de si se han rellenado todos los campos o no o de si el alumno está ya dado de alta o no.</returns>
         public bool BuscarPorNia()
         {
             if (Int32.TryParse(NiaIntroducido, out _))
