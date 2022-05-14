@@ -8,9 +8,18 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.servicios
 {
+    /// <summary>
+    /// Servicio de obtención de datos tratados
+    /// </summary>
     class ServicioDatos
     {
         private static ServicioAPI servicioApi = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
+        /// <summary>
+        /// Hace una llamada a la api de alumnos y se queda con solo los que no tienen un lote asignado
+        /// </summary>
+        /// <returns>
+        /// Devuelve una lista de los NIAs de alumnos que no tienen un lote asignado y por tanto están disponibles
+        /// </returns>
         public static ObservableCollection<int> ObtenerNiasDisponibles()
         {
             try
