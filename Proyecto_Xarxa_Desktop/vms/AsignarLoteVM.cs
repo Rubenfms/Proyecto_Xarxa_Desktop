@@ -14,45 +14,79 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
+    /// <summary>
+    /// VM para la vista de AsignarLoteDialog.xaml
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class AsignarLoteVM : ObservableObject
     {
+        /// <summary>
+        /// Lista de NIAs
+        /// </summary>
         private ObservableCollection<int> listaNias;
 
+        /// <summary>
+        /// Gets or sets the lista NIAs.
+        /// </summary>
+        /// <value>
+        /// Lista de NIAs
+        /// </value>
         public ObservableCollection<int> ListaNias
         {
             get { return listaNias; }
             set { SetProperty(ref listaNias, value); }
         }
 
+        /// <summary>
+        /// NIA seleccionado en la lista
+        /// </summary>
         private int? niaSeleccionado;
 
+        /// <summary>
+        /// Gets or sets the nia seleccionado.
+        /// </summary>
+        /// <value>
+        /// NIA seleccionado en la lista
+        /// </value>
         public int? NiaSeleccionado
         {
             get { return niaSeleccionado; }
             set { SetProperty(ref niaSeleccionado, value); }
         }
 
-        private string buscador;
-
-        public string Buscador
-        {
-            get { return buscador; }
-            set { SetProperty(ref buscador, value); }
-        }
-
+        /// <summary>
+        /// Lote que vamos a actualizar (lo recibimos de la vista de Lotes)
+        /// </summary>
         private Lote loteAActualizar;
 
+        /// <summary>
+        /// Gets or sets the lote a actualizar.
+        /// </summary>
+        /// <value>
+        ///  Lote que vamos a actualizar
+        /// </value>
         public Lote LoteAActualizar
         {
             get { return loteAActualizar; }
             set { SetProperty(ref loteAActualizar, value); }
         }
 
-        // Comandos
+        /// <summary>
+        /// Gets the confirmar nia command.
+        /// </summary>
+        /// <value>
+        /// The confirmar nia command.
+        /// </value>
         public RelayCommand ConfirmarNiaCommand { get; }
 
-        // Api
+        /// <summary>
+        /// The servicio API
+        /// </summary>
         private ServicioAPI servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AsignarLoteVM"/> class.
+        /// </summary>
         public AsignarLoteVM()
         {
             ListaNias = ServicioDatos.ObtenerNiasDisponibles();
@@ -61,6 +95,10 @@ namespace Proyecto_Xarxa_Desktop.vms
             LoteAActualizar = WeakReferenceMessenger.Default.Send<AsignarLoteRequestMessage>();
         }
 
+        /// <summary>
+        /// Método que actualiza el lote recibido añadiéndole el NIA que queremos asignar y devuelve bool
+        /// </summary>
+        /// <returns>bool dependiendo de si se ha asignado correctamente o el usuario no ha asignado ningún NIA</returns>
         public bool? ConfirmarNia()
         {
             if (NiaSeleccionado != null)
