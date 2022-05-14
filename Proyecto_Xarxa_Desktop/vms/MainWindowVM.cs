@@ -83,7 +83,9 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// The abrir vista libros command.
         /// </value>
         public RelayCommand AbrirVistaLibrosCommand { get; }
-
+        
+        public RelayCommand AbrirVistaInformesCommand { get; }
+        
         /// <summary>
         /// Initializes a new instance of the <see cref="MainWindowVM"/> class.
         /// </summary>
@@ -98,6 +100,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             AbrirVistaAlumnosCommand = new RelayCommand(AbrirVistaAlumnos);
             AbrirVistaLibrosCommand = new RelayCommand(AbrirVistaLibros);
             GenerarLoteCommand = new RelayCommand(AbrirVistaGenerarLote);
+            AbrirVistaInformesCommand = new RelayCommand(AbrirVistaInformes);
         }
 
         /// <summary>
@@ -138,6 +141,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// Abre la vista dar de alta alumno.
         /// </summary>
         public void AbrirVistaDarDeAltaAlumno() => ServicioNavegacion.AbrirVistaDarDeAlta();
+        public void AbrirVistaInformes() => PestanyaActual = ServicioNavegacion.AbrirVistaInformes();
 
     }
 }

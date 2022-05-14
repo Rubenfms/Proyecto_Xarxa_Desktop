@@ -1,4 +1,4 @@
-﻿<Window
+<Window
     x:Class="Proyecto_Xarxa_Desktop.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -259,6 +259,25 @@
                                 Foreground="{StaticResource SecondaryColor2}"
                                 Kind="Zelda" />
                             <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Opción 4" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <Button
+                    Height="60"
+                    Background="{StaticResource PrimaryColor1}"
+                    Command="{Binding Path=AbrirVistaInformesCommand}"
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource EstiloBotonesMenu}"
+                    Template="{DynamicResource ButtonControlTemplatePrueba}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Width="25"
+                                Height="25"
+                                Margin="20,0,13,0"
+                                Foreground="{StaticResource SecondaryColor2}"
+                                Kind="Note" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Informes" />
                         </StackPanel>
                     </Button.Content>
                 </Button>
