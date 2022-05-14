@@ -58,7 +58,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             ListaNias = ServicioDatos.ObtenerNiasDisponibles();
 
             // Recibimos el lote seleccionado de la vista de todos los lotes
-            LoteAActualizar = WeakReferenceMessenger.Default.Send<EditarLoteRequestMessage>();
+            LoteAActualizar = WeakReferenceMessenger.Default.Send<AsignarLoteRequestMessage>();
         }
 
         public bool? ConfirmarNia()
