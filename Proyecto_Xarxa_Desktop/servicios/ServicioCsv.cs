@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.servicios
 {
+    /// <summary>
+    /// Servicio de la carga de datos mediante CSV
+    /// </summary>
     class ServicioCsv
     {
         private static ObservableCollection<Alumno> listaAlumnosGeneral = new ObservableCollection<Alumno>();
@@ -23,7 +26,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
         private static ObservableCollection<Alumno> listaAlumnosDefinitiva = new ObservableCollection<Alumno>();
 
-        // Lee fichero con una lista de alumnos y lo guarda en un ObservableCollection<Alumno> (ListaAlumnosGeneral)
+        /// <summary>
+        /// Lee el CSV de la lista de alumnos general y lo guarda en ListaAlumnosGeneral (ObservableCollection<Alumno>).
+        /// </summary>
         public static void LeeCsvAlumnosGeneral()
         {
             try
@@ -69,7 +74,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
-        // Lee fichero con una lista de alumnos pertenecientes a la xarxa y comprueba si están en la lista de alumnos
+        /// <summary>
+        /// Lee fichero con una lista de alumnos pertenecientes a la xarxa y comprueba si están en la lista de alumnos 
+        /// </summary>
         public static void LeeCsvAlumnosXarxa()
         {
             try
@@ -105,6 +112,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        /// <summary>
+        /// Método que quita los alumnos no pertenecientes a la Xarxa
+        /// </summary>
         public static void QuitarAlumnosNoXarxa()
         {
             foreach(Alumno a in ListaAlumnosGeneral)
@@ -115,7 +125,13 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 }
             }
         }
-        // Devuelve lista de alumnos (contrastando si pertenecen a la xarxa o no)
+
+        /// <summary>
+        /// Devuelve lista de alumnos (contrastando si pertenecen a la xarxa o no)   
+        /// </summary>
+        /// <returns>
+        /// Devuelve una lista de alumnos
+        /// </returns>
         public static ObservableCollection<Alumno> GetListaAlumnosFromCSV()
         {
             LeeCsvAlumnosGeneral();
@@ -124,7 +140,14 @@ namespace Proyecto_Xarxa_Desktop.servicios
             //return listaAlumnosDefinitiva;
             return ListaAlumnosGeneral;
         }
-        // Recibe string y devuelve Enum EstadoMatricula
+        
+        /// <summary>
+        /// Recibe string y devuelve Enum EstadoMatricula
+        /// </summary>
+        /// <param name="estadoMatricula">The estado matricula.</param>
+        /// <returns>
+        /// Devuelve un EstadoMatricula
+        /// </returns>
         public static EstadoMatricula EstadoMatriculaStringToEnum(string estadoMatricula)
             => estadoMatricula.Equals("Matriculado") ? EstadoMatricula.ALTA : EstadoMatricula.BAJA;
 

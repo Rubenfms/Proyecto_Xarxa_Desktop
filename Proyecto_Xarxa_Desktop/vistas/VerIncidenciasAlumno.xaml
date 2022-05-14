@@ -23,6 +23,7 @@
             Foreground="{StaticResource PrimaryColor3}"
             Style="{StaticResource MaterialDesignOutlinedTextBox}"
             Text="{Binding Path=TextoIncidencias}"
+            TextAlignment="Left"
             TextWrapping="Wrap" />
         <Button
             Width="150"

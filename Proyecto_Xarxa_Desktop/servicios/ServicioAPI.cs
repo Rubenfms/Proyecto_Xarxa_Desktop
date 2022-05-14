@@ -15,8 +15,12 @@ using RestSharp.Serializers;
 
 namespace Proyecto_Xarxa_Desktop.servicios
 {
+    /// <summary>
+    /// Servicio de todo lo referente a las operaciones de la API
+    /// </summary>
     class ServicioAPI
     {
+
         private RestClient cliente;
 
         public RestClient Cliente
@@ -25,13 +29,22 @@ namespace Proyecto_Xarxa_Desktop.servicios
             set { cliente = value; }
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ServicioAPI"/> class.
+        /// </summary>
+        /// <param name="cadenaConexion">Cadena de conexión a la API.</param>
         public ServicioAPI(string cadenaConexion)
         {
             Cliente = new RestClient(cadenaConexion);
         }
 
-        #region Métodos Lotes
-        // Método que devuelve todos los lotes
+        #region Métodos Lotes   
+        /// <summary>
+        /// Método que devuelve todos los lotes     
+        /// </summary>
+        /// <returns>
+        /// Devuelve una nueva lista de lotes o null
+        /// </returns>
         public ObservableCollection<Lote> GetLotes()
         {
             try
@@ -60,7 +73,13 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
-        // Método que devuelve un lote a partir de su id
+        /// <summary>
+        /// Método que devuelve un lote a partir de su id
+        /// </summary>
+        /// <param name="id">Identificador del lote que queremos obtener.</param>
+        /// <returns>
+        /// Devuelve un objeto Lote
+        /// </returns>
         public Lote GetLote(int? id)
         {
             try
@@ -93,7 +112,13 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
-        // Método que actualiza un lote
+        /// <summary>
+        /// Método que actualiza un lote    
+        /// </summary>
+        /// <param name="lote">Lote a actualizar.</param>
+        /// <returns>
+        /// Devuelve un status code que varía en función del resultado de la operación de la API
+        /// </returns>
         public HttpStatusCode? PutLote(Lote lote)
         {
             var request = new RestRequest("/xarxa/lotes", Method.PUT);
@@ -108,9 +133,15 @@ namespace Proyecto_Xarxa_Desktop.servicios
             IRestResponse response = Cliente.Execute(request);
             return response.StatusCode;
 
-        }        
-        
-        // Método que elimina un lote a partir de su id
+        }
+
+        /// <summary>
+        /// Método que elimina un lote a partir de su id        
+        /// </summary>
+        /// <param name="id">Identificador del lote a eliminar.</param>
+        /// <returns>
+        /// Devuelve un status code que varía en función del resultado de la operación de la API
+        /// </returns>
         public HttpStatusCode? DeleteLote(int id)
         {
             var request = new RestRequest($"/xarxa/lotes/{id}", Method.DELETE);
@@ -129,7 +160,12 @@ namespace Proyecto_Xarxa_Desktop.servicios
         #endregion
 
         #region Métodos Modalidades
-        // Método que devuelve todas las modalidades
+        /// <summary>
+        /// Método que devuelve todas las modalidades
+        /// </summary>
+        /// <returns>
+        /// Devuelve una lista de modalidades
+        /// </returns>
         public ObservableCollection<Modalidad> GetModalidades()
         {
             try
@@ -161,7 +197,13 @@ namespace Proyecto_Xarxa_Desktop.servicios
         #endregion
 
         #region Métodos Usuarios
-        // Método que recibe un nombre de usuario y hace una petición a /xarxa/usuarios/nombre
+        /// <summary>
+        /// Método que devuelve un usuario a partir de un nombre de usuario.
+        /// </summary>
+        /// <param name="username">Nombre de usuario del usuario que queremos.</param>
+        /// <returns>
+        /// Devuelve un objeto Usuario o null
+        /// </returns>
         public Usuario GetUsuario(String username)
         {
             try
@@ -189,20 +231,28 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
-        // Método que añade un usuario
+        /// <summary>
+        /// Método que añade un usuario        
+        /// </summary>
+        /// <param name="usuario">Usuario a añadir.</param>
+        /// <returns>
+        /// Devuelve un status code que varía en función del resultado de la operación de la API
+        /// </returns>
         public HttpStatusCode? PostUsuario(Usuario usuario)
         {
             try
             {
-                RestRequest peticion = new RestRequest($"/xarxa/usuarios", Method.POST);
-
-                /*                var json = JsonConvert.SerializeObject(usuario); */
-                peticion.RequestFormat = DataFormat.Json;
-
-                peticion.AddJsonBody(usuario);
-
-                var response = Cliente.Execute(peticion);
-
+                var client = new RestClient("http://localhost:8081/apixarxa/xarxa/usuarios");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.POST);
+                request.AddHeader("Accept", "application/json");
+                request.AddHeader("x-", "");
+                request.AddHeader("Content-Type", "application/json");
+                request.RequestFormat = DataFormat.Json;
+                request.AddJsonBody(usuario);
+                var body = JsonConvert.SerializeObject(usuario);
+                //request.AddParameter("application/json", usuario, ParameterType.RequestBody);
+                IRestResponse response = Cliente.Execute(request);
                 return response.StatusCode;
             }
             catch (AggregateException)
@@ -215,7 +265,12 @@ namespace Proyecto_Xarxa_Desktop.servicios
         #endregion
 
         #region Métodos Alumnos
-        // Método que devuelve todos los alumnos
+        /// <summary>
+        /// Método que devuelve todos los alumnos        
+        /// </summary>
+        /// <returns>
+        /// Devuelve una nueva lista de alumnos
+        /// </returns>
         public ObservableCollection<Alumno> GetAlumnos()
         {
             try
@@ -244,7 +299,13 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
-        // Método que devuelve un alumno a partir de su NIA
+        /// <summary>
+        /// Devuelve un alumno a partir de un NIA
+        /// </summary>
+        /// <param name="nia">NIA del alumno que queremos.</param>
+        /// <returns>
+        /// Devuelve un objeto Alumno
+        /// </returns>
         public Alumno GetAlumno(int nia)
         {
             try
@@ -266,7 +327,13 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
-        // Método que actualiza un alumno
+        /// <summary>
+        /// Método que actualiza un alumno.
+        /// </summary>
+        /// <param name="alumno">Alumno a actualizar.</param>
+        /// <returns>
+        /// Devuelve un status code que varía en función del resultado de la operación de la API
+        /// </returns>
         public HttpStatusCode? PutAlumno(Alumno alumno)
         {
             var request = new RestRequest("/xarxa/alumnos", Method.PUT);
@@ -286,8 +353,12 @@ namespace Proyecto_Xarxa_Desktop.servicios
         #endregion
 
         #region Métodos Libros
-        // Método que devuelve todos los libros
-        // Método que devuelve todos los alumnos
+        /// <summary>
+        /// Método que devuelve todos los libros    
+        /// </summary>
+        /// <returns>
+        /// Devuelve una lista de libros
+        /// </returns>
         public ObservableCollection<Libro> GetLibros()
         {
             try

@@ -14,35 +14,104 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
+    /// <summary>
+    /// VM de LotesUserControl
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class LotesVM : ObservableObject
     {
+        /// <summary>
+        /// Lista de lotes que cargamos en la vista
+        /// </summary>
         private ObservableCollection<Lote> listaLotes;
 
+        /// <summary>
+        /// Gets or sets the lista lotes.
+        /// </summary>
+        /// <value>
+        /// Lista de lotes que cargamos en la vista
+        /// </value>
         public ObservableCollection<Lote> ListaLotes
         {
             get { return listaLotes; }
             set { SetProperty(ref listaLotes, value); }
         }
 
+        /// <summary>
+        /// El lote seleccionado de la lista de la vista
+        /// </summary>
         private Lote loteSeleccionado;
 
+        /// <summary>
+        /// Gets or sets the lote seleccionado.
+        /// </summary>
+        /// <value>
+        /// El lote seleccionado de la lista de la vista
+        /// </value>
         public Lote LoteSeleccionado
         {
             get { return loteSeleccionado; }
             set { SetProperty(ref loteSeleccionado, value); }
         }
 
+        /// <summary>
+        /// The servicio API
+        /// </summary>
         private ServicioAPI servicioAPI;
 
-        // Comandos
+        // Comandos        
+        /// <summary>
+        /// Gets the generar lote command.
+        /// </summary>
+        /// <value>
+        /// The generar lote command.
+        /// </value>
         public RelayCommand GenerarLoteCommand { get; }
+
+        /// <summary>
+        /// Gets the eliminar lote command.
+        /// </summary>
+        /// <value>
+        /// The eliminar lote command.
+        /// </value>
         public RelayCommand EliminarLoteCommand { get; }
+
+        /// <summary>
+        /// Gets the editar lote command.
+        /// </summary>
+        /// <value>
+        /// The editar lote command.
+        /// </value>
         public RelayCommand EditarLoteCommand { get; }
+
+        /// <summary>
+        /// Gets the asignar lote command.
+        /// </summary>
+        /// <value>
+        /// The asignar lote command.
+        /// </value>
         public RelayCommand AsignarLoteCommand { get; }
+
+        /// <summary>
+        /// Gets the desasignar lote command.
+        /// </summary>
+        /// <value>
+        /// The desasignar lote command.
+        /// </value>
         public RelayCommand DesasignarLoteCommand { get; }
+
+        /// <summary>
+        /// Gets the generar cb command.
+        /// </summary>
+        /// <value>
+        /// The generar cb command.
+        /// </value>
         public RelayCommand GenerarCBCommand { get; }
 
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LotesVM"/> class.
+        /// </summary>
         public LotesVM()
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
@@ -72,11 +141,17 @@ namespace Proyecto_Xarxa_Desktop.vms
                 });
         }
 
+        /// <summary>
+        /// Abre la vista generar lote.
+        /// </summary>
         public void AbrirVistaGenerarLote()
         {
             ServicioNavegacion.AbrirVistaGenerarLote();
         }
 
+        /// <summary>
+        /// Abre una vista Asignar lote si el lote seleccionado puede asignarse a algún alumno.
+        /// </summary>
         public void AsignarLote()
         {
             // Comprobación de si hay lote seleccionado
@@ -95,6 +170,10 @@ namespace Proyecto_Xarxa_Desktop.vms
             }
 
         }
+
+        /// <summary>
+        /// Desasigna el lote seleccionado si está asignado a un alumno.
+        /// </summary>
         public void DesasignarLote()
         {
             // Comprobación de si hay lote seleccionado
@@ -115,6 +194,9 @@ namespace Proyecto_Xarxa_Desktop.vms
             }
         }
 
+        /// <summary>
+        /// Genera el código de barras del lote.
+        /// </summary>
         public void GenerarCodigoBarras()
         {
 
@@ -128,10 +210,18 @@ namespace Proyecto_Xarxa_Desktop.vms
                 ServicioDialogos.MensajeAlerta("Codigo de barras creado en C:\\Xarxa");
             }
         }
+
+        /// <summary>
+        /// Abre una vista de Editar Lote
+        /// </summary>
         public void EditarLote()
         {
             ServicioNavegacion.AbrirVistaEditarLote();
         }
+
+        /// <summary>
+        /// Elimina el lote seleccionado.
+        /// </summary>
         public void EliminarLote()
         {
             HttpStatusCode? statusCode = servicioAPI.DeleteLote(LoteSeleccionado.IdLote);

@@ -10,24 +10,46 @@ using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.servicios
 {
+    /// <summary>
+    /// Servicio para validar las credenciales que introduce en la pantalla LogIn un usuario
+    /// </summary>
     class ServicioValidarUsuario
     {
+        /// <summary>
+        /// The usuario actual
+        /// </summary>
         private static Usuario usuarioActual;
 
+        /// <summary>
+        /// Gets or sets the usuario actual.
+        /// </summary>
+        /// <value>
+        /// The usuario actual.
+        /// </value>
         public static Usuario UsuarioActual
         {
             get { return usuarioActual; }
             set { usuarioActual = value; }
         }
 
+        /// <summary>
+        /// The servicio API
+        /// </summary>
         ServicioAPI servicioApi;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ServicioValidarUsuario"/> class.
+        /// </summary>
         public ServicioValidarUsuario()
         {
             servicioApi = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
 
         }
 
-        // Método que recibe un usuario introducido en el formulario de LogIn y lo compara con el que devuelve la API a partir de su nickname
+        /// <summary>
+        ///  Método que recibe un usuario introducido en el formulario de LogIn y lo compara con el que devuelve la API a partir de su nickname
+        /// </summary>
+        /// <param name="UsuarioAValidar">The usuario a validar.</param>
+        /// <returns>Devuelve true o false dependiendo de si el usuario introducido es igual que el de la BD</returns>
         public bool ValidarUsuario(Usuario UsuarioAValidar)
         {
             try
@@ -48,6 +70,12 @@ namespace Proyecto_Xarxa_Desktop.servicios
             ServicioDialogos.ServicioMessageBox("Usuario o contraseña incorrectos", "Credenciales Incorrectas", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             return false;
         }
+
+        /// <summary>
+        /// Sha256encrypts the specified phrase.
+        /// </summary>
+        /// <param name="phrase">The phrase.</param>
+        /// <returns>Frase encriptada.</returns>
         public static string Sha256encrypt(string phrase)
         {
             using (SHA256 sha256Hash = SHA256.Create())

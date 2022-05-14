@@ -8,7 +8,11 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.mensajeria
 {
-    // Mensajeria para establecer comunicacion entre Lote y Ver lote
+    /// <summary>
+    /// Mensajeria para establecer comunicacion entre Lote y EditarLote
+    /// Manda el lote seleccionado al diálogo EditarLote
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage&lt;Proyecto_Xarxa_Desktop.modelo.Lote&gt;" />
     class EditarLoteRequestMessage : RequestMessage<Lote>
     {
 

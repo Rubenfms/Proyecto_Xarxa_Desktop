@@ -8,9 +8,18 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.servicios
 {
+    /// <summary>
+    /// Servicios de consultas SQL
+    /// </summary>
     class ServicioSQL
     {
-        // Devuelve el último lote registrado con X numero de curso y X modalidad
+
+        /// <summary>
+        /// Halla el último lote registrado de X curso y X modalidad.
+        /// </summary>
+        /// <param name="numeroCurso">The numero curso.</param>
+        /// <param name="numeroModalidad">The numero modalidad.</param>
+        /// <returns>Devuelve el último lote registrado con X numero de curso y X modalidad o null.</returns>
         public static int? HallarUltLote(int numeroCurso, int numeroModalidad)
         {
             // Conexión a BD
@@ -38,7 +47,13 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
-        // Devuelve un alumno registrado cuyo nombre y apellidos sean iguales
+        /// <summary>
+        /// Obtiene un alumno a partir de su nombre y apellidos.
+        /// </summary>
+        /// <param name="nombre">The nombre.</param>
+        /// <param name="apellido1">The apellido1.</param>
+        /// <param name="apellido2">The apellido2.</param>
+        /// <returns>Devuelve un alumno registrado cuyo nombre y apellidos sean iguales.</returns>
         public static int? GetAlumnoByNombreYApellidos(string nombre, string apellido1, string apellido2)
         {
             // Conexión a BD

@@ -10,34 +10,77 @@ using System.Windows.Controls;
 
 namespace Proyecto_Xarxa_Desktop.servicios
 {
+    /// <summary>
+    /// Servicio de navegación entre ventanas/diálogos
+    /// </summary>
     internal class ServicioNavegacion
     {
         public ServicioNavegacion()
         { }
 
-        // Devuelve un nuevo UserControl de Lotes
+        /// <summary>
+        /// Devuelve un nuevo UserControl de Lotes.
+        /// </summary>
+        /// <returns>Devuelve un nuevo UserControl de Lotes.</returns>
         internal static UserControl AbrirVistaLotes() => new LotesUserControl();
-        // Devuelve un nuevo UserControl de Alumnos
-        internal static UserControl AbrirVistaAlumnos() => new AlumnosUserControl();        
-        // Devuelve un nuevo UserControl de Libros
+
+        /// <summary>
+        /// Devuelve un nuevo UserControl de Alumnos.
+        /// </summary>
+        /// <returns>Devuelve un nuevo UserControl de Alumnos.</returns>
+        internal static UserControl AbrirVistaAlumnos() => new AlumnosUserControl();
+
+        /// <summary>
+        /// Devuelve un nuevo UserControl de Libros.
+        /// </summary>
+        /// <returns>Devuelve un nuevo UserControl de Libros.</returns>
         internal static UserControl AbrirVistaLibros() => new LibrosUserControl();
-        // Abre una nueva instancia de la ventana de login
+
+        /// <summary>
+        /// Abre una nueva instancia de la ventana de login
+        /// </summary>
         internal static void AbrirVistaLogIn() => new LogIn().Show();
-        // Abre un dialogo generar lote
-        internal static void AbrirVistaGenerarLote() => new GenerarLote().ShowDialog();        
-        // Abre un dialogo editar lote
-        internal static void AbrirVistaEditarLote() => new EditarLote().ShowDialog();          
-        // Abre un dialogo asignar lote
-        internal static void AbrirVistaAsignarLote() => new AsignarLoteDialog().ShowDialog();        
-        // Abre un dialogo ver lote del alumno
+
+        /// <summary>
+        /// Abre un dialogo generar lote.
+        /// </summary>
+        internal static void AbrirVistaGenerarLote() => new GenerarLote().ShowDialog();
+
+        /// <summary>
+        /// Abre un dialogo editar lote.
+        /// </summary>
+        internal static void AbrirVistaEditarLote() => new EditarLote().ShowDialog();
+
+
+        /// <summary>
+        /// Abre un dialogo asignar lote.
+        /// </summary>
+        internal static void AbrirVistaAsignarLote() => new AsignarLoteDialog().ShowDialog();
+
+        /// <summary>
+        /// Abre un dialogo ver lote del alumno.
+        /// </summary>
         internal static void AbrirVistaVerLoteAlumno() => new VerLoteAlumno().ShowDialog();
-        // Abre un dialogo ver incidencias del alumno
+
+
+        /// <summary>
+        /// Abre un dialogo ver incidencias del alumno.
+        /// </summary>
         internal static void AbrirVistaVerIncidenciasAlumno() => new VerIncidenciasAlumno().ShowDialog();
-        // Abre un dialogo dar de alta
+
+        /// <summary>
+        /// Abre un dialogo dar de alta.
+        /// </summary>
         internal static void AbrirVistaDarDeAlta() => new DarDeAltaDialog().ShowDialog();
-        // Abre diálogo opciones superusuario
+
+        /// <summary>
+        /// Abre diálogo opciones superusuario.
+        /// </summary>
         internal static void AbrirVistaOpcionesSU() => new OpcionesSuperUsuario().ShowDialog();
-        // Abre diálogo nuevo usuario
+
+        /// <summary>
+        /// Abre diálogo nuevo usuario.
+        /// </summary>
         internal static void AbrirVistaNuevoUsuario() => new NuevoUsuarioDialog().ShowDialog();
         internal static UserControl AbrirVistaInformes() => new InformesUserControl();
 
