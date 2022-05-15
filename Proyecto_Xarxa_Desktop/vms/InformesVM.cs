@@ -23,6 +23,9 @@ namespace Proyecto_Xarxa_Desktop.vms
             ConcesionReportCommand = new RelayCommand(InformeConcesion);
             GruposXarxaReportCommand = new RelayCommand(InformeXarxaGrupos);
             RecogidaReportCommand = new RelayCommand(InformeRecogida);
+            LotesReportCommand = new RelayCommand(InformeLotes);
+            EtiquetasReportCommand = new RelayCommand(InformeEtiquetas);
+            EtiquetasBolsaReportCommand = new RelayCommand(InformeEtiquetasBolsa);
         }
 
         public RelayCommand XarxaCompletoReportCommand { get; }
@@ -37,6 +40,10 @@ namespace Proyecto_Xarxa_Desktop.vms
         private void InformeConcesion() => ServicioNavegacion.AbrirInformeConcesion();
         private void InformeXarxaGrupos() => ServicioNavegacion.AbrirInformeXarxaGrupos();
         private void InformeRecogida() => ServicioNavegacion.AbrirInformeRecogida();
+        private void InformeLotes() => ServicioNavegacion.AbrirInformeLotes();
+        private void InformeEtiquetas() => ServicioNavegacion.AbrirInformeEtiquetas();
+        private void InformeEtiquetasBolsa() => ServicioNavegacion.AbrirInformeEtiquetasBolsa();
+
 
 
 

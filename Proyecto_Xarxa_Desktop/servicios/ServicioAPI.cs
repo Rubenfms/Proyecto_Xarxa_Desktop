@@ -306,7 +306,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <returns>
         /// Devuelve un objeto Alumno
         /// </returns>
-        public Alumno GetAlumno(int nia)
+        public Alumno GetAlumno(int? nia)
         {
             try
             {

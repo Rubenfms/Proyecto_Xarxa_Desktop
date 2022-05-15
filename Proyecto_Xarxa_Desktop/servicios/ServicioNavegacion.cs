@@ -90,6 +90,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
         internal static void AbrirInformeConcesion() => new InformeConcesion().ShowDialog();
         internal static void AbrirInformeXarxaGrupos() => new InformeXarxaGrupos().ShowDialog();
         internal static void AbrirInformeRecogida() => new InformeRecogida().ShowDialog();
+        internal static void AbrirInformeLotes() => new InformeLotes().ShowDialog();
+        internal static void AbrirInformeEtiquetas() => new InformeEtiquetas().ShowDialog();
+        internal static void AbrirInformeEtiquetasBolsa() => new InformeEtiquetasBolsa().ShowDialog();
 
     }
 }

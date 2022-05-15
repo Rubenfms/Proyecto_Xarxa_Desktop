@@ -16,14 +16,14 @@ namespace Proyecto_Xarxa_Desktop.informes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class RecogidaReport : ReportClass {
+    public class EtiquetasBolsaReport : ReportClass {
         
-        public RecogidaReport() {
+        public EtiquetasBolsaReport() {
         }
         
         public override string ResourceName {
             get {
-                return "RecogidaReport.rpt";
+                return "EtiquetasBolsaReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Proyecto_Xarxa_Desktop.informes {
         
         public override string FullResourceName {
             get {
-                return "Proyecto_Xarxa_Desktop.informes.RecogidaReport.rpt";
+                return "Proyecto_Xarxa_Desktop.informes.EtiquetasBolsaReport.rpt";
             }
             set {
                 // Do nothing
@@ -82,7 +82,7 @@ namespace Proyecto_Xarxa_Desktop.informes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
+        public CrystalDecisions.CrystalReports.Engine.Section DetailSection1 {
             get {
                 return this.ReportDefinition.Sections[4];
             }
@@ -90,7 +90,7 @@ namespace Proyecto_Xarxa_Desktop.informes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[5];
             }
@@ -98,17 +98,25 @@ namespace Proyecto_Xarxa_Desktop.informes {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
             get {
                 return this.ReportDefinition.Sections[6];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[7];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedRecogidaReport : Component, ICachedReport {
+    public class CachedEtiquetasBolsaReport : Component, ICachedReport {
         
-        public CachedRecogidaReport() {
+        public CachedEtiquetasBolsaReport() {
         }
         
         [Browsable(false)]
@@ -145,7 +153,7 @@ namespace Proyecto_Xarxa_Desktop.informes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            RecogidaReport rpt = new RecogidaReport();
+            EtiquetasBolsaReport rpt = new EtiquetasBolsaReport();
             rpt.Site = this.Site;
             return rpt;
         }

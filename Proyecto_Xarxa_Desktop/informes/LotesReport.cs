@@ -16,14 +16,14 @@ namespace Proyecto_Xarxa_Desktop.informes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class RecogidaReport : ReportClass {
+    public class LotesReport : ReportClass {
         
-        public RecogidaReport() {
+        public LotesReport() {
         }
         
         public override string ResourceName {
             get {
-                return "RecogidaReport.rpt";
+                return "LotesReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Proyecto_Xarxa_Desktop.informes {
         
         public override string FullResourceName {
             get {
-                return "Proyecto_Xarxa_Desktop.informes.RecogidaReport.rpt";
+                return "Proyecto_Xarxa_Desktop.informes.LotesReport.rpt";
             }
             set {
                 // Do nothing
@@ -106,9 +106,9 @@ namespace Proyecto_Xarxa_Desktop.informes {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedRecogidaReport : Component, ICachedReport {
+    public class CachedLotesReport : Component, ICachedReport {
         
-        public CachedRecogidaReport() {
+        public CachedLotesReport() {
         }
         
         [Browsable(false)]
@@ -145,7 +145,7 @@ namespace Proyecto_Xarxa_Desktop.informes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            RecogidaReport rpt = new RecogidaReport();
+            LotesReport rpt = new LotesReport();
             rpt.Site = this.Site;
             return rpt;
         }
