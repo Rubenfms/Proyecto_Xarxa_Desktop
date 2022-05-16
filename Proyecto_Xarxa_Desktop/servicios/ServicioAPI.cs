@@ -13,6 +13,9 @@ using RestSharp;
 using System.Net.Sockets;
 using RestSharp.Serializers;
 
+/// <summary>
+/// Paquete que contiene los servicios
+/// </summary>
 namespace Proyecto_Xarxa_Desktop.servicios
 {
     /// <summary>
