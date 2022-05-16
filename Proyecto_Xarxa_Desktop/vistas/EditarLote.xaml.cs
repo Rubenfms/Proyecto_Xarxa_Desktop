@@ -20,7 +20,14 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class EditarLote : Window
     {
+        /// <summary>
+        /// VM de Editar Lote
+        /// </summary>
         private EditarLoteVM vm = new EditarLoteVM();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EditarLote"/> class.
+        /// </summary>
         public EditarLote()
         {
             InitializeComponent();

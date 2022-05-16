@@ -288,7 +288,7 @@
                         PlacementMode="TopAndAlignLeftEdges"
                         StaysOpen="False">
                         <StackPanel>
-                            <Button Content="Cuenta" />
+                            <Button Content="Doc. Técnica" Click="DocTecnicaButton_Click" />
                             <Button
                                 x:Name="OpcionesSUButton"
                                 Click="OpcionesSUButton_Click"

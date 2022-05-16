@@ -21,7 +21,13 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class OpcionesSuperUsuario : Window
     {
+        /// <summary>
+        /// VM de Opciones Super Usuario
+        /// </summary>
         private OpcionesSuperUsuarioVM vm = new OpcionesSuperUsuarioVM();
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OpcionesSuperUsuario"/> class.
+        /// </summary>
         public OpcionesSuperUsuario()
         {
             InitializeComponent();

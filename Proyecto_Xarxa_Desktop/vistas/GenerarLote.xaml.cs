@@ -21,13 +21,26 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class GenerarLote : Window
     {
+        /// <summary>
+        /// VM de Generar Lote
+        /// </summary>
         private GenerarLoteVM vm = new GenerarLoteVM();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GenerarLote"/> class.
+        /// </summary>
         public GenerarLote()
         {
             InitializeComponent();
             DataContext = vm;
         }
 
+        /// <summary>
+        /// Handles the SelectionChanged event of the ComboBoxModalidad control.
+        /// Dependiendo de la modalidad seleccionada carga los libros de dicha modalidad.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="SelectionChangedEventArgs"/> instance containing the event data.</param>
         private void ComboBoxModalidad_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Modalidad modalidadSeleccionada = (Modalidad)ModalidadComboBox.SelectedItem;

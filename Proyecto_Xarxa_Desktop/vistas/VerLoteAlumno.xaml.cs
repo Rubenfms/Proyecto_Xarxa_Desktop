@@ -20,7 +20,14 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class VerLoteAlumno : Window
     {
+        /// <summary>
+        /// VM de Ver Lote del Alumno
+        /// </summary>
         private VerLoteAlumnoVM vm = new VerLoteAlumnoVM();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="VerLoteAlumno"/> class.
+        /// </summary>
         public VerLoteAlumno()
         {
             DataContext = vm;

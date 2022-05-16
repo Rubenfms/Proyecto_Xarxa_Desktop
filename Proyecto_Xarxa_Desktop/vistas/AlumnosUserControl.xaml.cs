@@ -22,21 +22,33 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class AlumnosUserControl : UserControl
     {
+        /// <summary>
+        /// VM de Alumnos VM
+        /// </summary>
         private AlumnosVM vm = new AlumnosVM();
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AlumnosUserControl"/> class.
+        /// </summary>
         public AlumnosUserControl()
         {
             InitializeComponent();
             DataContext = vm;
         }
 
-        private void buscador_TextChanged(object sender, TextChangedEventArgs e)
+        /// <summary>
+        /// Handles the TextChanged event of the buscador control.
+        /// Filtra en la lista de alumnos lo que le hayan pasado (NIA, Nombre, Apellidos o Grupo).
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="TextChangedEventArgs"/> instance containing the event data.</param>
+        private void Buscador_TextChanged(object sender, TextChangedEventArgs e)
         {
             listview.ClearValue(ListView.ItemsSourceProperty); // Eliminamos el valor de la propiedad Items Source para poder usar Clear items
             listview.Items.Clear(); // Eliminamos los items actuales antes de añadir los nuevos filtrados
 
 
             // Filtramos y mostramos el resultado filtrado
-            string filtro = buscador.Text.ToUpper();
+            string filtro = Buscador.Text.ToUpper();
             foreach (Alumno a in vm.ListaAlumnos)
             {
                 if (a.Nombre.ToUpper().Contains(filtro) || a.Nia.ToString().Contains(filtro) ||
@@ -48,11 +60,22 @@ namespace Proyecto_Xarxa_Desktop.vistas
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the DarDeBajaButton control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void DarDeBajaButton_Click(object sender, RoutedEventArgs e)
         {
             vm.DarDeBaja();
         }
 
+        /// <summary>
+        /// Handles the Click event of the SoloXarxaRadioButton control.
+        /// Filtra la lista por solo alumnos que estén en la Xarxa.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void SoloXarxaRadioButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -74,6 +97,12 @@ namespace Proyecto_Xarxa_Desktop.vistas
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the NoXarxaRadioButton control.
+        /// Filtra la lista por solo alumnos que no estén en la Xarxa.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void NoXarxaRadioButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -95,6 +124,12 @@ namespace Proyecto_Xarxa_Desktop.vistas
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the SinFiltroRadioButton control.
+        /// Quita todos los filtros y muestra la lista normal.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void SinFiltroRadioButton_Click(object sender, RoutedEventArgs e)
         {
 

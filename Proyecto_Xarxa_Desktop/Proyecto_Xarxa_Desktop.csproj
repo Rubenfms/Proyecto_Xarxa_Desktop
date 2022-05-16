@@ -214,7 +214,6 @@
       <DependentUpon>XarxaGruposReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="mensajeria\AlumnoRequestMessage.cs" />
     <Compile Include="mensajeria\AsignarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\EditarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\IncidenciasRequestMessage.cs" />

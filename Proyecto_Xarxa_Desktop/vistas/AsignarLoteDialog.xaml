@@ -24,13 +24,13 @@
     <StackPanel HorizontalAlignment="Center">
         <TextBlock HorizontalAlignment="Center" Text="NIAs disponibles: " />
         <TextBox
-            x:Name="buscador"
+            x:Name="Buscador"
             Margin="0,0,0,10"
             VerticalAlignment="Center"
             materialDesign:HintAssist.Hint="Filtrar..."
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
             Text="{Binding Path=Buscador}"
-            TextChanged="buscador_TextChanged" />
+            TextChanged="Buscador_TextChanged" />
         <ListBox
             x:Name="MiListbox"
             Height="300"

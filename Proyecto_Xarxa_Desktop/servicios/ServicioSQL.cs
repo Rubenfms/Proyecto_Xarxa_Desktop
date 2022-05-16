@@ -42,8 +42,6 @@ namespace Proyecto_Xarxa_Desktop.servicios
                     // Si no devolvemos que el idlote será el primero (11001 por ej)
                     return Int32.Parse($"{numeroCurso}{numeroModalidad}001"); 
                 }
-
-                cn.Close();
             }
         }
 
@@ -75,7 +73,6 @@ namespace Proyecto_Xarxa_Desktop.servicios
                     // Si no devolvemos null
                     return null;
                 }
-                cn.Close();
             }
         }
     }

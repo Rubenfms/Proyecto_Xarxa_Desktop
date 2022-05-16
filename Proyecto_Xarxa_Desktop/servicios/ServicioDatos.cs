@@ -30,7 +30,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 foreach (Alumno a in listaAlumnos)
                 {
                     // Si el alumno actual no tiene lote asignado, añadimos el nia de ese alumno a la lista de Nias disponibles
-                    if (a.IdLote == null || a.IdLote <= 0)
+                    if (a.IdLote <= 0)
                     {
                         result.Add(a.Nia);
                     }

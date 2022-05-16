@@ -19,6 +19,9 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class EditarAlumnoDialog : Window
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EditarAlumnoDialog"/> class.
+        /// </summary>
         public EditarAlumnoDialog()
         {
             InitializeComponent();

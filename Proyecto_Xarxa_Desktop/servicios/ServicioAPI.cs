@@ -13,9 +13,6 @@ using RestSharp;
 using System.Net.Sockets;
 using RestSharp.Serializers;
 
-/// <summary>
-/// Paquete que contiene los servicios
-/// </summary>
 namespace Proyecto_Xarxa_Desktop.servicios
 {
     /// <summary>
@@ -245,8 +242,10 @@ namespace Proyecto_Xarxa_Desktop.servicios
         {
             try
             {
-                var client = new RestClient("http://localhost:8081/apixarxa/xarxa/usuarios");
-                client.Timeout = -1;
+                var client = new RestClient("http://localhost:8081/apixarxa/xarxa/usuarios")
+                {
+                    Timeout = -1
+                };
                 var request = new RestRequest(Method.POST);
                 request.AddHeader("Accept", "application/json");
                 request.AddHeader("x-", "");

@@ -22,7 +22,14 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class LotesUserControl : UserControl
     {
+        /// <summary>
+        /// VM de Lotes
+        /// </summary>
         private LotesVM vm = new LotesVM();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LotesUserControl"/> class.
+        /// </summary>
         public LotesUserControl()
         {
             InitializeComponent();
