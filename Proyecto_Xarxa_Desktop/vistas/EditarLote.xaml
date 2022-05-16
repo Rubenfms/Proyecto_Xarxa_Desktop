@@ -8,6 +8,7 @@
     Title="Editar Lote"
     Width="900"
     Height="500"
+    Icon="../assets/editlote.ico"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterScreen"

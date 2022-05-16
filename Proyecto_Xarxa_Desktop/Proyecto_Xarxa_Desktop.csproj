@@ -232,7 +232,6 @@
       <DependentUpon>XarxaGruposReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="mensajeria\AlumnoRequestMessage.cs" />
     <Compile Include="mensajeria\AsignarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\EditarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\IncidenciasRequestMessage.cs" />
@@ -267,6 +266,9 @@
     </Compile>
     <Compile Include="vistasInformes\InformeXarxaGrupos.xaml.cs">
       <DependentUpon>InformeXarxaGrupos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\AdministrarUsuariosDialog.xaml.cs">
+      <DependentUpon>AdministrarUsuariosDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistas\AlumnosUserControl.xaml.cs">
       <DependentUpon>AlumnosUserControl.xaml</DependentUpon>
@@ -313,6 +315,7 @@
     <Compile Include="vistas\VistaInicialContentControl.xaml.cs">
       <DependentUpon>VistaInicialContentControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vms\AdministrarUsuariosVM.cs" />
     <Compile Include="vms\AlumnosVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
@@ -365,6 +368,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistasInformes\InformeXarxaGrupos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\AdministrarUsuariosDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -480,6 +487,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="data\alumnosxarxa.csv" />
     <None Include="data\todos.csv" />
     <None Include="packages.config" />
@@ -513,6 +521,20 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="assets\account.ico" />
+    <Resource Include="assets\book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\personadd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\addlote.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\editlote.ico" />
     <Resource Include="assets\report.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

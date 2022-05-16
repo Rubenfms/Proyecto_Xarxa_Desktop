@@ -55,7 +55,8 @@ namespace Proyecto_Xarxa_Desktop.informes {
                 return this.ReportDefinition.Sections[0];
             }
         }
-        
+
+        /// <exclude />
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public CrystalDecisions.CrystalReports.Engine.Section Section2 {

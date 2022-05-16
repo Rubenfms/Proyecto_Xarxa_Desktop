@@ -27,7 +27,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         private static ObservableCollection<Alumno> listaAlumnosDefinitiva = new ObservableCollection<Alumno>();
 
         /// <summary>
-        /// Lee el CSV de la lista de alumnos general y lo guarda en ListaAlumnosGeneral (ObservableCollection<Alumno>).
+        /// Lee el CSV de la lista de alumnos general y lo guarda en la lista de alumnos general.
         /// </summary>
         public static void LeeCsvAlumnosGeneral()
         {

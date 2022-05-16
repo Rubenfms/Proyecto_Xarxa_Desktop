@@ -65,6 +65,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
             catch (NullReferenceException)
             {
+                ServicioDialogos.ServicioMessageBox("El usuario introducido está registrado en el sistema", "Usuario no encontrado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                 return false;
             }
             ServicioDialogos.ServicioMessageBox("Usuario o contraseña incorrectos", "Credenciales Incorrectas", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);

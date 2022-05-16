@@ -10,6 +10,7 @@
     Width="900"
     Height="500"
     d:DataContext="{d:DesignInstance Type=vms:GenerarLoteVM}"
+    Icon="../assets/addlote.ico"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterScreen"

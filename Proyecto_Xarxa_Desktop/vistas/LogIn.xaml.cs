@@ -24,27 +24,54 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class LogIn : Window
     {
+        /// <summary>
+        /// VM de LogIn.
+        /// </summary>
         private LogInVM vm = new LogInVM();
 
+        /// <summary>
+        /// El campo de la contraseña.
+        /// </summary>
         private SecureString password;
 
+        /// <summary>
+        /// Gets or sets the password.
+        /// </summary>
+        /// <value>
+        /// Propiedad bindeada al secure box de la contraseña.
+        /// </value>
         public SecureString Password
         {
             get { return password; }
             set { password = value; }
         }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogIn"/> class.
+        /// </summary>
         public LogIn()
         {
             InitializeComponent();
             DataContext = vm;
         }
 
-        // Hace se pueda arrastrar la pantalla
+        // Hace se pueda arrastrar la pantalla        
+        /// <summary>
+        /// Handles the MouseDown event of the Grid control.
+        /// Hace que se pueda arrastrar la pantalla.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="MouseButtonEventArgs"/> instance containing the event data.</param>
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
 
+        /// <summary>
+        /// Handles the PasswordChanged event of the PasswordBox control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
             // Actualiza la propiedad Password del vm con la password que esta siendo introducida en el SecureBox

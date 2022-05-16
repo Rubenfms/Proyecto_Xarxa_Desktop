@@ -61,7 +61,14 @@ namespace Proyecto_Xarxa_Desktop.vms
         public EditarLoteVM()
         {
             // Recibimos el lote seleccionado de la vista de todos los lotes
-            Lote = WeakReferenceMessenger.Default.Send<EditarLoteRequestMessage>();
+            try
+            {
+                Lote = WeakReferenceMessenger.Default.Send<EditarLoteRequestMessage>();
+            }
+            catch (InvalidOperationException)
+            {
+                Lote = null;
+            }
         }
     }
 }

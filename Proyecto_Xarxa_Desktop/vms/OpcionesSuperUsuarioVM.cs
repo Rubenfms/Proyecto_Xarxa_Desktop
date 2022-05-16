@@ -33,12 +33,22 @@ namespace Proyecto_Xarxa_Desktop.vms
         public RelayCommand CargaInicialCSVCommand { get; }
 
         /// <summary>
+        /// Gets the abrir vista administrar usuarios command.
+        /// </summary>
+        /// <value>
+        /// The abrir vista administrar usuarios command.
+        /// </value>
+        public RelayCommand AbrirVistaAdministrarUsuariosCommand { get; }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="OpcionesSuperUsuarioVM"/> class.
         /// </summary>
         public OpcionesSuperUsuarioVM()
         {
             AbrirVistaUsuarioCommand = new RelayCommand(AbrirVistaNuevoUsuario);
             CargaInicialCSVCommand = new RelayCommand(CargaInicialCSV);
+            AbrirVistaAdministrarUsuariosCommand = new RelayCommand(AbrirVistaAdministrarUsuarios);
+
         }
 
         /// <summary>
@@ -50,6 +60,11 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// Abre un dialogo para seleccionar archivos
         /// </summary>
         public void CargaInicialCSV() => ServicioDialogos.OpenFileDialogService();
+
+        /// <summary>
+        /// Abre la vista administrar usuarios.
+        /// </summary>
+        public void AbrirVistaAdministrarUsuarios() => ServicioNavegacion.AbrirVistaAdministrarUsuarios();
 
     }
 }

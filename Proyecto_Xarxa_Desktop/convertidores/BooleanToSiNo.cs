@@ -21,6 +21,7 @@ namespace Proyecto_Xarxa_Desktop.convertidores
         /// <param name="targetType">El tipo de la propiedad del destino de enlace.</param>
         /// <param name="parameter">Parámetro de convertidor que se va a usar.</param>
         /// <param name="culture">Referencia cultural que se va a usar en el convertidor.</param>
+        /// <return>
         /// Devuelve "No" si recibe False o "Si" si recibe true
         /// </return>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)

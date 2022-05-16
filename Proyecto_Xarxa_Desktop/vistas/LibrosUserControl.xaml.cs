@@ -21,7 +21,14 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class LibrosUserControl : UserControl
     {
+        /// <summary>
+        /// VM de LibrosUserControl.
+        /// </summary>
         private LibrosVM vm = new LibrosVM();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LibrosUserControl"/> class.
+        /// </summary>
         public LibrosUserControl()
         {
             InitializeComponent();

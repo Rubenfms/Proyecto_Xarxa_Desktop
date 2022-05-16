@@ -16,19 +16,18 @@ using System.Windows.Shapes;
 namespace Proyecto_Xarxa_Desktop.vistas
 {
     /// <summary>
-    /// Lógica de interacción para VerLoteAlumno.xaml
+    /// Lógica de interacción para AdministrarUsuariosDialog.xaml
     /// </summary>
-    public partial class VerLoteAlumno : Window
+    public partial class AdministrarUsuariosDialog : Window
     {
         /// <summary>
-        /// VM de Ver Lote del Alumno
+        /// VM de AdministrarUsuarios
         /// </summary>
-        private VerLoteAlumnoVM vm = new VerLoteAlumnoVM();
-
+        private AdministrarUsuariosVM vm = new AdministrarUsuariosVM();
         /// <summary>
-        /// Initializes a new instance of the <see cref="VerLoteAlumno"/> class.
+        /// Initializes a new instance of the <see cref="AdministrarUsuariosDialog"/> class.
         /// </summary>
-        public VerLoteAlumno()
+        public AdministrarUsuariosDialog()
         {
             DataContext = vm;
             InitializeComponent();

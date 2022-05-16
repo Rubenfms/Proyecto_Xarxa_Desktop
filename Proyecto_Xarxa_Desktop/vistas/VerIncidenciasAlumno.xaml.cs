@@ -20,7 +20,13 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class VerIncidenciasAlumno : Window
     {
+        /// <summary>
+        /// VM de Ver Incidencias del alumno
+        /// </summary>
         private VerIncidenciasAlumnoVM vm = new VerIncidenciasAlumnoVM();
+        /// <summary>
+        /// Initializes a new instance of the <see cref="VerIncidenciasAlumno"/> class.
+        /// </summary>
         public VerIncidenciasAlumno()
         {
             DataContext = vm;

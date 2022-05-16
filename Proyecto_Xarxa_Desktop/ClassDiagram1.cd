@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Proyecto_Xarxa_Desktop.App" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAAAAAgAAgQAAAAAAAAAAAAAAAAAAAAACAAACA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.convertidores.BooleanToSiNo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>convertidores\BooleanToSiNo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.convertidores.IncidenciasToSiNo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>convertidores\IncidenciasToSiNo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.convertidores.NullToVisibilityModificado" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>convertidores\NullToVisibilityModificado.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.convertidores.TipoUsuarioToEnabled" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>convertidores\TipoUsuarioToEnabled.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.informes.ConcesionReport" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>informes\ConcesionReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.informes.CachedConcesionReport" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>informes\ConcesionReport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.informes.RecogidaReport" Collapsed="true">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>informes\RecogidaReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.informes.CachedRecogidaReport" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>informes\RecogidaReport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.informes.XarxaCompletoReport" Collapsed="true">
+    <Position X="4.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>informes\XarxaCompletoReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.informes.CachedXarxaCompletoReport" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>informes\XarxaCompletoReport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.informes.XarxaGruposReport" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>informes\XarxaGruposReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.informes.CachedXarxaGruposReport" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>informes\XarxaGruposReport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.mensajeria.AlumnoRequestMessage" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mensajeria\AlumnoRequestMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.mensajeria.AsignarLoteRequestMessage" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mensajeria\AsignarLoteRequestMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.mensajeria.EditarLoteRequestMessage" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mensajeria\EditarLoteRequestMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.mensajeria.IncidenciasRequestMessage" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mensajeria\IncidenciasRequestMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.mensajeria.VerLoteRequestMessage" Collapsed="true">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mensajeria\VerLoteRequestMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.modelo.Alumno" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAQAAAEQAAAhAEgABAgABAAAAkAAAAgBCAIAMQAAg=</HashCode>
+      <FileName>modelo\Alumno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.modelo.Libro" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAQAAAAAEAAAgAAAAAQAAAAAABAAAAAIAABE=</HashCode>
+      <FileName>modelo\Libro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.modelo.LibroXarxa" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>modelo\LibroXarxa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.modelo.Lote" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAQAIAgAAAAAAAIABAAQAAgAAA=</HashCode>
+      <FileName>modelo\Lote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.modelo.Modalidad" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAQEEAABAgAAAAAAAAAAAAAAAAAIAAIA=</HashCode>
+      <FileName>modelo\Modalidad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.modelo.Usuario" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAAAAAAAgAAAAIAAAAAAgAIAAIACAAAA=</HashCode>
+      <FileName>modelo\Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.Properties.Resources" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.Properties.Settings" Collapsed="true">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAJAAAABAAAAAAAIAAAAAABAEAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.servicios.ServicioAPI" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAEkAAAACAAAAAiBAAAAABAEAARgAAAAA=</HashCode>
+      <FileName>servicios\ServicioAPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.servicios.ServicioCodigoBarras" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAABAAQAAAAA=</HashCode>
+      <FileName>servicios\ServicioCodigoBarras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.servicios.ServicioCsv" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAACYAAAAAAAAAAAAAgAAAAAQAAEAAAAAAAAAAgA=</HashCode>
+      <FileName>servicios\ServicioCsv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.servicios.ServicioDatos" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>servicios\ServicioDatos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.servicios.ServicioDialogos" Collapsed="true">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAIAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAQCAA=</HashCode>
+      <FileName>servicios\ServicioDialogos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.servicios.ServicioNavegacion" Collapsed="true">
+    <Position X="15.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAIAAACMQAQCQAAAAAAAQDAASAAAAAAAAAgI=</HashCode>
+      <FileName>servicios\ServicioNavegacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.servicios.ServicioSQL" Collapsed="true">
+    <Position X="17" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>servicios\ServicioSQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.servicios.ServicioValidarUsuario" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAIEQAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>servicios\ServicioValidarUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.AlumnosUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAAAAgAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\AlumnosUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.AsignarLoteDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\AsignarLoteDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.DarDeAltaDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAIAAAAAAAAgAAAAAAAAQAAAAAAAAE=</HashCode>
+      <FileName>vistas\DarDeAltaDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.EditarAlumnoDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\EditarAlumnoDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.EditarLote" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\EditarLote.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.GenerarLote" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\GenerarLote.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.InformesUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\InformesUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.LibrosUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\LibrosUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.LogIn" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAgAAAAAAAEAAAAAAAAAAACAAAAAgAAAAA=</HashCode>
+      <FileName>vistas\LogIn.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.LotesUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\LotesUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.NuevoUsuarioDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAgAAAAAAAAAAAAAAAAAAAGAAAAAgAAIAA=</HashCode>
+      <FileName>vistas\NuevoUsuarioDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.261" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.OpcionesSuperUsuario" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\OpcionesSuperUsuario.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.VerIncidenciasAlumno" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\VerIncidenciasAlumno.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.VerLoteAlumno" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\VerLoteAlumno.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistas.VistaInicialContentControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vistas\VistaInicialContentControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistasInformes.InformeConcesion" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>vistasInformes\InformeConcesion.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistasInformes.InformeRecogida" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>vistasInformes\InformeRecogida.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistasInformes.InformeXarxaCompleto" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>vistasInformes\InformeXarxaCompleto.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vistasInformes.InformeXarxaGrupos" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>vistasInformes\InformeXarxaGrupos.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.AlumnosVM" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAABAAAAAAAEAAIIAFCBAQgQAAAAAAAIAAAAAAEA=</HashCode>
+      <FileName>vms\AlumnosVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.AsignarLoteVM" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAEAAAAAAAAAEAAAAEAAAAEAAAAEEAAABAABAAAA=</HashCode>
+      <FileName>vms\AsignarLoteVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.DarDeAltaAlumnoVM" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACABAAAAAAAAAEAAQEBAAAAAAAAAAEEAAEAI=</HashCode>
+      <FileName>vms\DarDeAltaAlumnoVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.EditarLoteVM" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAA=</HashCode>
+      <FileName>vms\EditarLoteVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.GenerarLoteVM" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAEAAAIAAAAAAAABEAAAAAAAAAAAABBQACAwAAg=</HashCode>
+      <FileName>vms\GenerarLoteVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.InformesVM" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAABAAAAAAAkAAQAAAAQAIgAAAAAAAAAAQACAAAQA=</HashCode>
+      <FileName>vms\InformesVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.LibrosVM" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>vms\LibrosVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.LogInVM" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAABQAQCAQAAAAAAgAA=</HashCode>
+      <FileName>vms\LogInVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.LotesVM" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACQAgAQGAAAAAAAAE4AAAABEAAAAAIAACEAAAgQ=</HashCode>
+      <FileName>vms\LotesVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.MainWindowVM" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAECAEBBAIAAAACAAAQAgAAAAAQACgSAAAACAAAAgA=</HashCode>
+      <FileName>vms\MainWindowVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.NuevoUsuarioVM" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAACEAAAAggAAAI=</HashCode>
+      <FileName>vms\NuevoUsuarioVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.OpcionesSuperUsuarioVM" Collapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAACAAAAACBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>vms\OpcionesSuperUsuarioVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.VerIncidenciasAlumnoVM" Collapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAACAAAIQEAIAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>vms\VerIncidenciasAlumnoVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Xarxa_Desktop.vms.VerLoteAlumnoVM" Collapsed="true">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAEAAAEAAAABAAAAAAAAAQAAA=</HashCode>
+      <FileName>vms\VerLoteAlumnoVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Proyecto_Xarxa_Desktop.enumerados.EstadoMatricula" Collapsed="true">
+    <Position X="3" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>enumerados\EstadoMatricula.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

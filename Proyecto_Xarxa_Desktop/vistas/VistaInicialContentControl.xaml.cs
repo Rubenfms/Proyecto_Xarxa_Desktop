@@ -20,6 +20,9 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class VistaInicialContentControl : UserControl
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="VistaInicialContentControl"/> class.
+        /// </summary>
         public VistaInicialContentControl()
         {
             InitializeComponent();

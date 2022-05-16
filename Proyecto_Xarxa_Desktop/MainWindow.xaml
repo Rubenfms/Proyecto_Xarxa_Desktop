@@ -12,6 +12,7 @@
     Height="600"
     MinWidth="1080"
     MinHeight="600"
+    Icon="../assets/book.ico"
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <Window.Resources>
@@ -242,26 +243,8 @@
                         </StackPanel>
                     </Button.Content>
                 </Button>
-                <!--  Opción 4  -->
-                <Button
-                    Height="60"
-                    Background="{StaticResource PrimaryColor1}"
-                    BorderBrush="{x:Null}"
-                    DockPanel.Dock="Top"
-                    Style="{StaticResource EstiloBotonesMenu}"
-                    Template="{DynamicResource ButtonControlTemplatePrueba}">
-                    <Button.Content>
-                        <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon
-                                Width="25"
-                                Height="25"
-                                Margin="20,0,13,0"
-                                Foreground="{StaticResource SecondaryColor2}"
-                                Kind="Zelda" />
-                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Opción 4" />
-                        </StackPanel>
-                    </Button.Content>
-                </Button>
+
+                <!--  Opción informes  -->
                 <Button
                     Height="60"
                     Background="{StaticResource PrimaryColor1}"
@@ -288,13 +271,13 @@
                         PlacementMode="TopAndAlignLeftEdges"
                         StaysOpen="False">
                         <StackPanel>
-                            <Button Content="Cuenta" />
+                            <Button Click="DocTecnicaButton_Click" Content="Doc. Técnica" />
                             <Button
                                 x:Name="OpcionesSUButton"
                                 Click="OpcionesSUButton_Click"
                                 Content="Opciones SuperUser"
                                 IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource TipoUsuarioToEnabledConverter}}" />
-                            <Button Content="Ayuda" />
+                            <Button Click="AyudaButton_Click" Content="Ayuda" />
                             <Separator />
                             <Button
                                 x:Name="CerrarSesionButton"
