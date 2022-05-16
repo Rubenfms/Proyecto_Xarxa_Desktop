@@ -57,20 +57,28 @@
                 Margin="0,0,20,0"
                 Content="Editar Alumno"
                 DockPanel.Dock="Right" />
-            <!--  StackPanel con el toggle button y text block  -->
-            <StackPanel Margin="20,0,0,0" Orientation="Horizontal">
-                <TextBlock
-                    Height="30"
-                    VerticalAlignment="Center"
-                    Text="Solo Xarxa" />
-                <ToggleButton
-                    x:Name="SoloXarxaToggleButton"
-                    VerticalAlignment="Center"
-                    Click="SoloXarxaToggleButton_Click"
-                    IsChecked="False"
-                    Style="{StaticResource MaterialDesignSwitchLightToggleButton}"
-                    ToolTip="Mostrar solo alumnos pertenecientes a la Xarxa" />
-            </StackPanel>
+
+            <!--  Filtros  -->
+            <GroupBox Margin="20,10,0,0">
+                <GroupBox.Header>
+                    <TextBlock Foreground="{StaticResource PrimaryColor1}" Text="Filtros:" />
+                </GroupBox.Header>
+                <StackPanel>
+                    <RadioButton
+                        x:Name="SoloXarxaRadioButton"
+                        Click="SoloXarxaRadioButton_Click"
+                        Content="Solo Xarxa" />
+                    <RadioButton
+                        x:Name="NoXarxaRadioButton"
+                        Click="NoXarxaRadioButton_Click"
+                        Content="No Xarxa" />
+                    <RadioButton
+                        x:Name="SinFiltroRadioButton"
+                        Click="SinFiltroRadioButton_Click"
+                        Content="Sin Filtro"
+                        IsChecked="True" />
+                </StackPanel>
+            </GroupBox>
             <!--  StackPanel superior  -->
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <materialDesign:PackIcon
@@ -166,10 +174,28 @@
                         Header="Matriculación" />
 
                     <!--  Columna que muestra si pertenece a la xarxa  -->
-                    <GridViewColumn
-                        Width="120"
-                        DisplayMemberBinding="{Binding Path=PerteneceXarxa, Converter={StaticResource BooleanToSiNoConverter}}"
-                        Header="Xarxa" />
+                    <GridViewColumn Width="120" Header="Xarxa">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox
+                                    IsChecked="{Binding Path=PerteneceXarxa}"
+                                    IsEnabled="False"
+                                    Style="{StaticResource ReadOnlyCheckBoxPersonalizado}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <!--  Columna que muestra si tiene libros en concesión  -->
+                    <GridViewColumn Width="120" Header="Concesion">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox
+                                    IsChecked="{Binding Path=Concesion}"
+                                    IsEnabled="False"
+                                    Style="{StaticResource ReadOnlyCheckBoxPersonalizado}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
 
                     <!--  Columna que muestra si tiene incidencias  -->
                     <GridViewColumn Width="130" Header="Incidencias">

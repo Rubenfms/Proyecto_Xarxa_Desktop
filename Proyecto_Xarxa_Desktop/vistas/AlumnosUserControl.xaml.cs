@@ -39,7 +39,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
             string filtro = buscador.Text.ToUpper();
             foreach (Alumno a in vm.ListaAlumnos)
             {
-                if (a.Nombre.ToUpper().Contains(filtro) || a.Nia.ToString().Contains(filtro) || 
+                if (a.Nombre.ToUpper().Contains(filtro) || a.Nia.ToString().Contains(filtro) ||
                     a.Apellido1.ToUpper().Contains(filtro) || a.Apellido2.ToUpper().Contains(filtro) ||
                     a.Grupo.ToUpper().Contains(filtro))
                 {
@@ -48,7 +48,12 @@ namespace Proyecto_Xarxa_Desktop.vistas
             }
         }
 
-        private void SoloXarxaToggleButton_Click(object sender, RoutedEventArgs e)
+        private void DarDeBajaButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.DarDeBaja();
+        }
+
+        private void SoloXarxaRadioButton_Click(object sender, RoutedEventArgs e)
         {
 
             listview.ClearValue(ListView.ItemsSourceProperty); // Eliminamos el valor de la propiedad Items Source para poder usar Clear items
@@ -58,7 +63,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
             foreach (Alumno a in vm.ListaAlumnos)
             {
                 // Si el botón está activo mostramos solo los alumnos que pertenezcan a la xarxa
-                if ((bool)SoloXarxaToggleButton.IsChecked)
+                if ((bool)SoloXarxaRadioButton.IsChecked)
                 {
                     if (a.PerteneceXarxa)
                     {
@@ -69,9 +74,41 @@ namespace Proyecto_Xarxa_Desktop.vistas
             }
         }
 
-        private void DarDeBajaButton_Click(object sender, RoutedEventArgs e)
+        private void NoXarxaRadioButton_Click(object sender, RoutedEventArgs e)
         {
-            vm.DarDeBaja();
+
+            listview.ClearValue(ListView.ItemsSourceProperty); // Eliminamos el valor de la propiedad Items Source para poder usar Clear items
+            listview.Items.Clear(); // Eliminamos los items actuales antes de añadir los nuevos filtrados
+
+            // Mostramos alumnos solo que NO sean de la Xarxa
+            foreach (Alumno a in vm.ListaAlumnos)
+            {
+                // Si el botón está activo mostramos solo los alumnos que NO pertenezcan a la xarxa
+                if ((bool)NoXarxaRadioButton.IsChecked)
+                {
+                    if (!a.PerteneceXarxa)
+                    {
+                        listview.Items.Add(a);
+                    }
+                }
+                else listview.Items.Add(a); // Si no está checkeado mostramos todos
+            }
+        }
+
+        private void SinFiltroRadioButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            listview.ClearValue(ListView.ItemsSourceProperty); // Eliminamos el valor de la propiedad Items Source para poder usar Clear items
+            listview.Items.Clear(); // Eliminamos los items actuales antes de añadir los nuevos filtrados
+
+            // Mostramos todos los alumnos
+            foreach (Alumno a in vm.ListaAlumnos)
+            {
+                if ((bool)SinFiltroRadioButton.IsChecked)
+                {
+                    listview.Items.Add(a); 
+                }
+            }
         }
     }
 }
