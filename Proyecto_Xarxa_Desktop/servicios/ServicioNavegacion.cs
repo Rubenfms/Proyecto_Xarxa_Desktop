@@ -1,4 +1,6 @@
-﻿using Proyecto_Xarxa_Desktop.vistas;
+﻿using Proyecto_Xarxa_Desktop.informes;
+using Proyecto_Xarxa_Desktop.vistas;
+using Proyecto_Xarxa_Desktop.vistasInformes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +40,6 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// Abre una nueva instancia de la ventana de login
         /// </summary>
         internal static void AbrirVistaLogIn() => new LogIn().Show();
-
 
         /// <summary>
         /// Abre un dialogo generar lote.
@@ -81,5 +82,14 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// Abre diálogo nuevo usuario.
         /// </summary>
         internal static void AbrirVistaNuevoUsuario() => new NuevoUsuarioDialog().ShowDialog();
+        internal static UserControl AbrirVistaInformes() => new InformesUserControl();
+
+        // INFORMES
+
+        internal static void AbrirInformeXarxaCompleto() => new InformeXarxaCompleto().ShowDialog();
+        internal static void AbrirInformeConcesion() => new InformeConcesion().ShowDialog();
+        internal static void AbrirInformeXarxaGrupos() => new InformeXarxaGrupos().ShowDialog();
+        internal static void AbrirInformeRecogida() => new InformeRecogida().ShowDialog();
+
     }
 }

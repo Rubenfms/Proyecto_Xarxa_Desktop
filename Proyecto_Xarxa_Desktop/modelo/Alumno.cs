@@ -200,7 +200,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
         /// <summary>
         /// Identificador del lote que le pertenece al Alumno
         /// </summary>
-        private int? idLote;
+        private int idLote;
 
         /// <summary>
         /// Gets or sets the identifier lote.
@@ -209,12 +209,19 @@ namespace Proyecto_Xarxa_Desktop.modelo
         /// Identificador del lote que le pertenece al Alumno
         /// </value>
         [JsonProperty("idLote")]
-        public int? IdLote
+        public int IdLote
         {
             get { return idLote; }
             set { SetProperty(ref idLote, value); }
         }
 
+        private bool _concesion;
+
+        public bool Concesion
+        {
+            get { return _concesion; }
+            set { SetProperty(ref _concesion, value); }
+        }
 
         // Constructor sin lote        
         /// <summary>
@@ -296,7 +303,6 @@ namespace Proyecto_Xarxa_Desktop.modelo
         /// <summary>Initializes a new empty instance of the <see cref="Alumno" /> class.</summary>
         public Alumno()
         {
-
         }
 
         // Constructor con IdLote
@@ -311,7 +317,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
         /// <param name="incidencias">The incidencias.</param>
         /// <param name="perteneceXarxa">if set to <c>true</c> [pertenece xarxa].</param>
         /// <param name="idLote">The identifier lote.</param>
-        public Alumno(int nia, string nombre, string apellido1, string apellido2, string matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, int? idLote)
+        public Alumno(int nia, string nombre, string apellido1, string apellido2, string matricula, string curso, string grupo, string incidencias, bool perteneceXarxa, int idLote)
         {
             Nia = nia;
             Nombre = nombre;
