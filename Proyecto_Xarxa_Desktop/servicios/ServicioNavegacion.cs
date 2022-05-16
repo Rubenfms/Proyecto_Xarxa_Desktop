@@ -82,13 +82,37 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// Abre diálogo nuevo usuario.
         /// </summary>
         internal static void AbrirVistaNuevoUsuario() => new NuevoUsuarioDialog().ShowDialog();
+
+        /// <summary>
+        /// Abre la vista administrar usuarios.
+        /// </summary>
+        internal static void AbrirVistaAdministrarUsuarios() => new AdministrarUsuariosDialog().ShowDialog();
+        /// <summary>
+        /// Abre la vista informes.
+        /// </summary>
+        /// <returns></returns>
         internal static UserControl AbrirVistaInformes() => new InformesUserControl();
 
         // INFORMES
 
+        /// <summary>
+        /// Abre la vista informe xarxa completo.
+        /// </summary>
         internal static void AbrirInformeXarxaCompleto() => new InformeXarxaCompleto().ShowDialog();
+
+        /// <summary>
+        /// Abre la vista informe concesion.
+        /// </summary>
         internal static void AbrirInformeConcesion() => new InformeConcesion().ShowDialog();
+
+        /// <summary>
+        /// Abre la vista informe xarxa grupos.
+        /// </summary>
         internal static void AbrirInformeXarxaGrupos() => new InformeXarxaGrupos().ShowDialog();
+
+        /// <summary>
+        /// Abre la vista the informe recogida.
+        /// </summary>
         internal static void AbrirInformeRecogida() => new InformeRecogida().ShowDialog();
 
     }

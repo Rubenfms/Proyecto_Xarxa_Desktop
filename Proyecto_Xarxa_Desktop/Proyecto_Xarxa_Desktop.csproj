@@ -239,6 +239,9 @@
     <Compile Include="vistasInformes\InformeXarxaGrupos.xaml.cs">
       <DependentUpon>InformeXarxaGrupos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\AdministrarUsuariosDialog.xaml.cs">
+      <DependentUpon>AdministrarUsuariosDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\AlumnosUserControl.xaml.cs">
       <DependentUpon>AlumnosUserControl.xaml</DependentUpon>
     </Compile>
@@ -284,6 +287,7 @@
     <Compile Include="vistas\VistaInicialContentControl.xaml.cs">
       <DependentUpon>VistaInicialContentControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vms\AdministrarUsuariosVM.cs" />
     <Compile Include="vms\AlumnosVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
@@ -324,6 +328,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistasInformes\InformeXarxaGrupos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\AdministrarUsuariosDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -264,6 +264,59 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 throw;
             }
         }
+
+        /// <summary>
+        /// Obtiene una lista de usuarios.
+        /// </summary>
+        /// <returns>Devuelve la lista de usuarios</returns>
+        public ObservableCollection<Usuario> GetUsuarios()
+        {
+            try
+            {
+                ObservableCollection<Usuario> result = new ObservableCollection<Usuario>();
+
+                RestRequest peticion = new RestRequest("/xarxa/usuarios", Method.GET);
+
+                var response = Cliente.Execute(peticion);
+
+                result = JsonConvert.DeserializeObject<ObservableCollection<Usuario>>(response.Content);
+
+                return result;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de usuarios", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+            catch (ArgumentNullException)
+            {
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando la lista de usuarios", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Método que actualiza el usuario.
+        /// </summary>
+        /// <param name="usuario">The usuario.</param>
+        /// <returns> Devuelve un status code que varía en función del resultado de la operación de la API. </returns>
+        public HttpStatusCode? PutUsuario(Usuario usuario)
+        {
+            var request = new RestRequest("/xarxa/usuarios", Method.PUT);
+
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("x-", "");
+            request.AddHeader("Content-Type", "application/json");
+
+            var body = JsonConvert.SerializeObject(usuario);
+            request.AddParameter("application/json", body, ParameterType.RequestBody);
+
+            IRestResponse response = Cliente.Execute(request);
+            return response.StatusCode;
+
+        }
         #endregion
 
         #region Métodos Alumnos
