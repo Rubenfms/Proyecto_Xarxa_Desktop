@@ -468,6 +468,22 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\account.ico" />
+    <Resource Include="assets\book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\personadd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\addlote.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\editlote.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -178,6 +178,7 @@
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <CheckBox
+                                    HorizontalAlignment="Center"
                                     IsChecked="{Binding Path=PerteneceXarxa}"
                                     IsEnabled="False"
                                     Style="{StaticResource ReadOnlyCheckBoxPersonalizado}" />
@@ -186,10 +187,11 @@
                     </GridViewColumn>
 
                     <!--  Columna que muestra si tiene libros en concesión  -->
-                    <GridViewColumn Width="120" Header="Concesion">
+                    <GridViewColumn Width="130" Header="Concesion">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <CheckBox
+                                    HorizontalAlignment="Center"
                                     IsChecked="{Binding Path=Concesion}"
                                     IsEnabled="False"
                                     Style="{StaticResource ReadOnlyCheckBoxPersonalizado}" />

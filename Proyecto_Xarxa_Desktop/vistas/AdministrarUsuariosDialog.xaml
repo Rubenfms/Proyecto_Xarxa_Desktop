@@ -8,6 +8,7 @@
     Title="Administrar Usuarios"
     Width="450"
     Height="450"
+    Icon="../assets/settings.ico"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterScreen"

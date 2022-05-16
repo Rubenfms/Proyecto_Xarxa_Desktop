@@ -116,10 +116,27 @@ namespace Proyecto_Xarxa_Desktop
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void DocTecnicaButton_Click(object sender, RoutedEventArgs e)
         {
-            String helpFileName = @"..\..\..\help\documentacion\Help\Documentation.chm";
+            string helpFileName = @"..\..\..\help\documentacion\Help\Documentation.chm";
 
+            if (System.IO.File.Exists(helpFileName))
+            {
                 System.Diagnostics.Process.Start(helpFileName);
-            
+            }
+        }
+
+        /// <summary>
+        /// Handles the Click event of the AyudaButton control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void AyudaButton_Click(object sender, RoutedEventArgs e)
+        {
+            string helpFileName = @"..\..\..\help\manual\Manual_Usuario_Xarxa.chm";
+
+            if (System.IO.File.Exists(helpFileName))
+            {
+                System.Diagnostics.Process.Start(helpFileName);
+            }
         }
     }
 }

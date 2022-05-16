@@ -202,12 +202,12 @@ namespace Proyecto_Xarxa_Desktop.vms
 
             if (LoteSeleccionado == null)
             {
-                ServicioDialogos.MensajeAlerta("No hay ningun lote seleccionado");
+                ServicioDialogos.ServicioMessageBox("Tienes que seleccionar un lote primero.", "Selecciona un lote primero", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
             }
             else
             {
                 new ServicioCodigoBarras().GenerarCB(LoteSeleccionado.IdLote);
-                ServicioDialogos.MensajeAlerta("Codigo de barras creado en C:\\Xarxa");
+                ServicioDialogos.ServicioMessageBox("Codigo de barras creado en C:\\Xarxa", "Código creado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
             }
         }
 
@@ -216,7 +216,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public void EditarLote()
         {
-            ServicioNavegacion.AbrirVistaEditarLote();
+            if (LoteSeleccionado != null) ServicioNavegacion.AbrirVistaEditarLote();
+            else ServicioDialogos.ServicioMessageBox("Tienes que seleccionar un lote para poder editarlo.", "Selecciona un lote primero", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
         }
 
         /// <summary>
@@ -224,8 +225,14 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public void EliminarLote()
         {
-            HttpStatusCode? statusCode = servicioAPI.DeleteLote(LoteSeleccionado.IdLote);
-            ServicioDialogos.ServicioMessageBox($"Resultado de la eliminación del lote: {statusCode}", "Eliminación lote", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+            if (LoteSeleccionado != null)
+            {
+                HttpStatusCode? statusCode = servicioAPI.DeleteLote(LoteSeleccionado.IdLote);
+                ServicioDialogos.ServicioMessageBox($"Resultado de la eliminación del lote: {statusCode}", "Eliminación lote", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+            }
+            else ServicioDialogos.ServicioMessageBox("Tienes que seleccionar un lote para poder eliminarlo.", "Selecciona un lote primero", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+
+
         }
     }
 }

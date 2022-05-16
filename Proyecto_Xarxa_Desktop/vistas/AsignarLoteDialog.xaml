@@ -9,6 +9,7 @@
     Title="Asignar Lote"
     Width="450"
     Height="450"
+    Icon="../assets/personadd.ico"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterScreen"

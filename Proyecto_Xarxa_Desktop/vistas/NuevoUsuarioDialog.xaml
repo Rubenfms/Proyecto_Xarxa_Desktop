@@ -9,6 +9,7 @@
     Title="Crear Nuevo Usuario"
     Width="400"
     Height="400"
+    Icon="../assets/personadd.ico"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterScreen"

@@ -27,7 +27,7 @@ namespace Proyecto_Xarxa_Desktop.convertidores
         {
             try
             {
-                if (value.ToString().Equals("") || value == null) return "No"; else return "Si";
+                if (value == null || value.ToString().Equals("")) return "No"; else return "Si";
             }
             catch (NullReferenceException)
             {
