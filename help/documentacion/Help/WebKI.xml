@@ -1,0 +1,1270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AbrirMenuButton field" Url="html/f6fa658c-c3cf-ab4d-d9c9-bd386dc922be.htm" />
+  <HelpKINode Title="AbrirMenuButton_Click method" Url="html/97758fde-7f53-a28d-5c8b-f2b5d471fd58.htm" />
+  <HelpKINode Title="AbrirOpcionesSU method" Url="html/dfa0a80b-ffbe-368f-db95-e0bb684334ba.htm" />
+  <HelpKINode Title="AbrirVistaAlumnos method">
+    <HelpKINode Title="MainWindowVM.AbrirVistaAlumnos (M&#233;todo )" Url="html/586562a8-2a40-1493-b7fe-aa135103ee96.htm" />
+    <HelpKINode Title="ServicioNavegacion.AbrirVistaAlumnos (M&#233;todo )" Url="html/985e45a4-0599-0ede-55fa-402a90a6b984.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AbrirVistaAlumnosCommand property" Url="html/0452b26d-c1f3-2436-04f5-72e767a7316e.htm" />
+  <HelpKINode Title="AbrirVistaAsignarLote method" Url="html/99b29b6b-53c9-516a-7309-5bb63e7694e3.htm" />
+  <HelpKINode Title="AbrirVistaDarDeAlta method" Url="html/13f772f6-618d-3a22-5f77-7fa0d70951ee.htm" />
+  <HelpKINode Title="AbrirVistaDarDeAltaAlumno method" Url="html/f073ec5b-0a82-2f19-5591-999394af18cf.htm" />
+  <HelpKINode Title="AbrirVistaEditarLote method" Url="html/1eacdc27-5f68-3e03-c289-677432c95e56.htm" />
+  <HelpKINode Title="AbrirVistaGenerarLote method">
+    <HelpKINode Title="LotesVM.AbrirVistaGenerarLote (M&#233;todo )" Url="html/99e51c0a-522f-5a65-2172-89edeef336e3.htm" />
+    <HelpKINode Title="MainWindowVM.AbrirVistaGenerarLote (M&#233;todo )" Url="html/7f80da2a-99b8-eea0-d9d4-b252538e5b23.htm" />
+    <HelpKINode Title="ServicioNavegacion.AbrirVistaGenerarLote (M&#233;todo )" Url="html/e8fc23e3-4fbd-9951-eb02-5b2b05c4b192.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AbrirVistaLibros method">
+    <HelpKINode Title="MainWindowVM.AbrirVistaLibros (M&#233;todo )" Url="html/102a7cda-cfd0-8ef6-d95b-5341ffe1e922.htm" />
+    <HelpKINode Title="ServicioNavegacion.AbrirVistaLibros (M&#233;todo )" Url="html/4a51b5b8-949e-bc84-572a-7f51f49b6cd6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AbrirVistaLibrosCommand property" Url="html/4ac09739-49e3-699d-b898-a01d131812c0.htm" />
+  <HelpKINode Title="AbrirVistaLogIn method" Url="html/e7b8ba47-9afe-cac2-7906-565dd6b4e3a0.htm" />
+  <HelpKINode Title="AbrirVistaLotes method">
+    <HelpKINode Title="MainWindowVM.AbrirVistaLotes (M&#233;todo )" Url="html/aaf7fe79-46aa-18e0-b756-03fe02a80e46.htm" />
+    <HelpKINode Title="ServicioNavegacion.AbrirVistaLotes (M&#233;todo )" Url="html/ccf0c943-e673-d6fc-0d71-22db4d9a6b85.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AbrirVistaLotesCommand property" Url="html/23c8650b-f281-be56-6f4f-96f8396e1c3f.htm" />
+  <HelpKINode Title="AbrirVistaNuevoUsuario method">
+    <HelpKINode Title="OpcionesSuperUsuarioVM.AbrirVistaNuevoUsuario (M&#233;todo )" Url="html/a7adf399-edc1-e0d6-9b4a-fdf58f20780c.htm" />
+    <HelpKINode Title="ServicioNavegacion.AbrirVistaNuevoUsuario (M&#233;todo )" Url="html/41e83ecf-469a-6387-9bc1-42806e147fa2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AbrirVistaOpcionesSU method" Url="html/b6465f91-9210-442f-1225-cc825008d370.htm" />
+  <HelpKINode Title="AbrirVistaUsuarioCommand property" Url="html/a6a684c3-de2b-9e65-74da-1a94a9448c50.htm" />
+  <HelpKINode Title="AbrirVistaVerIncidenciasAlumno method" Url="html/284c83ee-9b85-7b58-c20c-9bfdab760e7d.htm" />
+  <HelpKINode Title="AbrirVistaVerLoteAlumno method" Url="html/561cb06d-6035-4ba3-d179-b56d17bde2e9.htm" />
+  <HelpKINode Title="activo field" Url="html/5da136a9-d4ae-923b-ba6c-9ba6bd096be1.htm" />
+  <HelpKINode Title="Activo property" Url="html/c7e40d23-5939-d240-f506-6a8ec4a0efff.htm" />
+  <HelpKINode Title="ALTA enumeration member" Url="html/1e3a4eb4-b988-52e5-8217-f526f51c8bca.htm" />
+  <HelpKINode Title="Alumno class">
+    <HelpKINode Title="Alumno (Clase)" Url="html/3244c946-a98e-402e-3c02-07420ea7c1cd.htm" />
+    <HelpKINode Title="constructor" Url="html/a20ad9c5-bfa6-cb7b-24be-f83c0a2199c0.htm" />
+    <HelpKINode Title="events" Url="html/a40cf0cc-bf8e-a1dd-e6ab-6df0c06693d4.htm" />
+    <HelpKINode Title="fields" Url="html/13b7b5fe-e6bf-3cd0-ae98-1ab1a07a94c7.htm" />
+    <HelpKINode Title="methods" Url="html/32790e77-1512-b40f-ff5a-d2f9a48e639b.htm" />
+    <HelpKINode Title="properties" Url="html/d9ff06f6-8487-b6a5-b908-cfb8633b1ffc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="alumno field" Url="html/e7eb6544-2826-bde9-0e37-60e01ba8f762.htm" />
+  <HelpKINode Title="Alumno property" Url="html/31e419d7-d6c1-f325-37cf-816a027344c8.htm" />
+  <HelpKINode Title="Alumno.Alumno constructor" Url="html/a20ad9c5-bfa6-cb7b-24be-f83c0a2199c0.htm" />
+  <HelpKINode Title="Alumno.Apellido1 property" Url="html/99983b04-dd3e-115a-5ca6-6b36325d4994.htm" />
+  <HelpKINode Title="Alumno.Apellido2 property" Url="html/f2ed9681-a291-cdad-6ba3-dcc7812820f9.htm" />
+  <HelpKINode Title="Alumno.Curso property" Url="html/e6920073-63af-2307-fdfc-1e195ebdbf37.htm" />
+  <HelpKINode Title="Alumno.Grupo property" Url="html/fddf1434-05cc-ee4c-0695-7f8bd8612a01.htm" />
+  <HelpKINode Title="Alumno.idLote field" Url="html/704e1208-a45e-0186-084e-6987f561a155.htm" />
+  <HelpKINode Title="Alumno.IdLote property" Url="html/97184cd3-2eab-7021-254f-0ba7f88160a6.htm" />
+  <HelpKINode Title="Alumno.Incidencias property" Url="html/89cac3ad-e779-a97a-b884-5e6701854d4d.htm" />
+  <HelpKINode Title="Alumno.Lote property" Url="html/8df84a7a-69e5-806e-8819-e753616a976c.htm" />
+  <HelpKINode Title="Alumno.Matricula property" Url="html/2dfbb7f0-1670-a18b-5df8-86c6477af9fa.htm" />
+  <HelpKINode Title="Alumno.Nia property" Url="html/a2e63982-7a59-8bd8-4aff-d1bfc6b57990.htm" />
+  <HelpKINode Title="Alumno.Nombre property" Url="html/b5bfbf5b-95bb-6c79-4cb8-29f47ec11919.htm" />
+  <HelpKINode Title="Alumno.PerteneceXarxa property" Url="html/7e3713e4-7b41-3472-c072-2081484ced51.htm" />
+  <HelpKINode Title="Alumno._apellido1 field" Url="html/4d9ea246-1ab1-beda-5006-f9083670ad2c.htm" />
+  <HelpKINode Title="Alumno._apellido2 field" Url="html/752c0f85-2604-6f9e-515a-0b2f4b7953c4.htm" />
+  <HelpKINode Title="Alumno._curso field" Url="html/2dc0b127-4f92-5c14-50f7-f0cbcfaa037a.htm" />
+  <HelpKINode Title="Alumno._grupo field" Url="html/14286fdf-1f58-59a2-20ec-7716c2954ee6.htm" />
+  <HelpKINode Title="Alumno._incidencias field" Url="html/120de8bb-9ca6-b507-12cc-d9113f8900e0.htm" />
+  <HelpKINode Title="Alumno._lote field" Url="html/05bc6bd1-1b28-62e7-5dfc-60f2212ee3f2.htm" />
+  <HelpKINode Title="Alumno._matricula field" Url="html/1d89c741-b6b9-9856-5aa7-12fbbc18033d.htm" />
+  <HelpKINode Title="Alumno._nia field" Url="html/80b03a23-795d-49dd-0045-61945f4c927d.htm" />
+  <HelpKINode Title="Alumno._nombre field" Url="html/88f3d1e0-dbf4-f381-5b81-7fea75db3653.htm" />
+  <HelpKINode Title="Alumno._perteneceXarxa field" Url="html/f74f6ca3-ab40-2f8f-f8fa-fdca4b0ffa60.htm" />
+  <HelpKINode Title="alumnoEncontrado field" Url="html/9681e0a7-8f6e-3ddb-847d-1115b8818d28.htm" />
+  <HelpKINode Title="AlumnoEncontrado property" Url="html/93271ae3-68db-7ab0-4258-97d6dd670829.htm" />
+  <HelpKINode Title="AlumnoRequestMessage class">
+    <HelpKINode Title="AlumnoRequestMessage (Clase)" Url="html/b3345a43-7bc6-bb19-ff77-c209c2d054b0.htm" />
+    <HelpKINode Title="constructor" Url="html/5126f9b8-e10f-3a18-e2b0-f018a55efbe1.htm" />
+    <HelpKINode Title="methods" Url="html/ca26980a-45a0-6b6e-10b9-0280471c398c.htm" />
+    <HelpKINode Title="properties" Url="html/28982699-ba4e-b12f-3de8-9992a2f1b0dc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AlumnoRequestMessage.AlumnoRequestMessage constructor" Url="html/5126f9b8-e10f-3a18-e2b0-f018a55efbe1.htm" />
+  <HelpKINode Title="alumnoSeleccionado field">
+    <HelpKINode Title="AlumnosVM.alumnoSeleccionado (Campo)" Url="html/ba69abb5-5bfa-21aa-c612-0e30cb93fd4e.htm" />
+    <HelpKINode Title="VerIncidenciasAlumnoVM.alumnoSeleccionado (Campo)" Url="html/057fb107-728d-0b82-aa4b-f9140e4387bf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AlumnoSeleccionado property">
+    <HelpKINode Title="AlumnosVM.AlumnoSeleccionado (Propiedad )" Url="html/e23f0f6f-4ec4-9c31-dd65-99d17a8998ab.htm" />
+    <HelpKINode Title="VerIncidenciasAlumnoVM.AlumnoSeleccionado (Propiedad )" Url="html/459cc4eb-48a6-5d1f-c28b-77139dc1fcbe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AlumnosUserControl class">
+    <HelpKINode Title="AlumnosUserControl (Clase)" Url="html/359a41a2-b17f-178c-f0d0-66eaf56b59d7.htm" />
+    <HelpKINode Title="constructor" Url="html/5ad10a69-4400-c749-c3f1-592587afbd83.htm" />
+    <HelpKINode Title="events" Url="html/abd8f778-1a33-d29e-1333-41f8252d9055.htm" />
+    <HelpKINode Title="fields" Url="html/778708cb-40ad-80e9-7cdb-f55067875461.htm" />
+    <HelpKINode Title="methods" Url="html/0b86c7d3-56ec-648e-a224-3c0489b91ba8.htm" />
+    <HelpKINode Title="properties" Url="html/5c4cdcd8-cc7d-4107-2612-c977a00de1ea.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AlumnosUserControl.AlumnosUserControl constructor" Url="html/5ad10a69-4400-c749-c3f1-592587afbd83.htm" />
+  <HelpKINode Title="AlumnosUserControl.buscador field" Url="html/04adf8b3-2252-d318-8c3c-b3ddb9743fd0.htm" />
+  <HelpKINode Title="AlumnosUserControl.buscador_TextChanged method" Url="html/6bfb7f62-acd0-a442-5cd4-a82c8c714cf8.htm" />
+  <HelpKINode Title="AlumnosUserControl.DarDeBajaButton_Click method" Url="html/6b5c9834-8561-29dd-f671-ec5855bb44df.htm" />
+  <HelpKINode Title="AlumnosUserControl.InitializeComponent method" Url="html/e0bb5f71-65ab-d04d-3012-4fb3034fc283.htm" />
+  <HelpKINode Title="AlumnosUserControl.listview field" Url="html/5d7bb08a-3568-7c5f-2496-f6ab116b3c9a.htm" />
+  <HelpKINode Title="AlumnosUserControl.SoloXarxaToggleButton field" Url="html/96ce70b1-e6ff-2710-af57-42b47dfeb6b8.htm" />
+  <HelpKINode Title="AlumnosUserControl.SoloXarxaToggleButton_Click method" Url="html/66ae8d36-d3c9-cb5d-d69c-3c3588a60a19.htm" />
+  <HelpKINode Title="AlumnosUserControl.vm field" Url="html/a3a64d28-9722-7a2c-cd58-b90e388e4802.htm" />
+  <HelpKINode Title="AlumnosUserControl._contentLoaded field" Url="html/e3c4ef5b-3c4f-e345-4a4a-50c999d3fd1e.htm" />
+  <HelpKINode Title="AlumnosVM class">
+    <HelpKINode Title="AlumnosVM (Clase)" Url="html/4e40bf84-1a7b-6a89-52a6-b878cfa15a2b.htm" />
+    <HelpKINode Title="constructor" Url="html/d3dc3fb3-266e-cac5-6117-31e326807cd3.htm" />
+    <HelpKINode Title="events" Url="html/44dc5320-40ea-d707-48d0-4cf57bb0c328.htm" />
+    <HelpKINode Title="fields" Url="html/5f2fccc8-fb27-94cf-8353-cb7988c69664.htm" />
+    <HelpKINode Title="methods" Url="html/5062bef7-6116-6bfd-ab98-276389c795ed.htm" />
+    <HelpKINode Title="properties" Url="html/5e1d6a8c-9814-f498-d442-6e6d47f0844f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AlumnosVM.alumnoSeleccionado field" Url="html/ba69abb5-5bfa-21aa-c612-0e30cb93fd4e.htm" />
+  <HelpKINode Title="AlumnosVM.AlumnoSeleccionado property" Url="html/e23f0f6f-4ec4-9c31-dd65-99d17a8998ab.htm" />
+  <HelpKINode Title="AlumnosVM.AlumnosVM constructor" Url="html/d3dc3fb3-266e-cac5-6117-31e326807cd3.htm" />
+  <HelpKINode Title="AlumnosVM.apellidos field" Url="html/345bd472-a18a-f584-bd41-1c865c075485.htm" />
+  <HelpKINode Title="AlumnosVM.Apellidos property" Url="html/10efb41f-467d-725c-220e-49cdb94ab055.htm" />
+  <HelpKINode Title="AlumnosVM.buscador field" Url="html/c5298b8e-f4a7-e467-3a2e-580d6dddd644.htm" />
+  <HelpKINode Title="AlumnosVM.Buscador property" Url="html/5e01c970-4a0f-04b4-b7d9-0b185c264900.htm" />
+  <HelpKINode Title="AlumnosVM.DarDeAlta method" Url="html/7819c42d-25a7-afda-62d7-5c4d28df6ade.htm" />
+  <HelpKINode Title="AlumnosVM.DarDeAltaCommand property" Url="html/7d6c31fd-c276-2dc6-5cf6-a0d7d9b18f69.htm" />
+  <HelpKINode Title="AlumnosVM.DarDeBaja method" Url="html/b6cc79b7-b5c4-55a3-e448-564143f3d0bb.htm" />
+  <HelpKINode Title="AlumnosVM.listaAlumnos field" Url="html/d802beb3-e0e1-0868-fbc7-321cbb543268.htm" />
+  <HelpKINode Title="AlumnosVM.ListaAlumnos property" Url="html/06637b92-b31f-48ec-6838-040c602aede3.htm" />
+  <HelpKINode Title="AlumnosVM.servicioAPI field" Url="html/f539b53e-0a49-1495-c388-0dbc5853f48b.htm" />
+  <HelpKINode Title="AlumnosVM.VerIncidenciasAlumno method" Url="html/83a4c07a-9390-dba4-123f-e8bb38c808ab.htm" />
+  <HelpKINode Title="AlumnosVM.VerIncidenciasCommand property" Url="html/5f61590a-6c92-4399-21be-b55fbdf99b26.htm" />
+  <HelpKINode Title="AlumnosVM.VerLoteAlumno method" Url="html/9361d343-cbfc-4f35-364f-e1f448fed9e3.htm" />
+  <HelpKINode Title="AlumnosVM.VerLoteAlumnoCommand property" Url="html/e06c8412-e95c-11c4-aabc-4dbd632c4e5a.htm" />
+  <HelpKINode Title="AnyadirLibroCommand property" Url="html/13711f01-5eb5-8c2c-c025-c016ecd7cea0.htm" />
+  <HelpKINode Title="Apellido1 property" Url="html/99983b04-dd3e-115a-5ca6-6b36325d4994.htm" />
+  <HelpKINode Title="Apellido2 property" Url="html/f2ed9681-a291-cdad-6ba3-dcc7812820f9.htm" />
+  <HelpKINode Title="apellidos field" Url="html/345bd472-a18a-f584-bd41-1c865c075485.htm" />
+  <HelpKINode Title="Apellidos property" Url="html/10efb41f-467d-725c-220e-49cdb94ab055.htm" />
+  <HelpKINode Title="App class">
+    <HelpKINode Title="App (Clase)" Url="html/90d119d5-27cf-463b-9e95-5e22f3d035e4.htm" />
+    <HelpKINode Title="constructor" Url="html/62e5c69e-6df6-2dcb-cb53-7e2ad5267bb8.htm" />
+    <HelpKINode Title="events" Url="html/2cf118ec-cee5-9cea-8df6-0b6087c4e172.htm" />
+    <HelpKINode Title="fields" Url="html/992cd692-5ca9-0497-bd1a-8cf78735d870.htm" />
+    <HelpKINode Title="methods" Url="html/a7eea37a-1d72-7d75-69d8-7ecd20bdd7bc.htm" />
+    <HelpKINode Title="properties" Url="html/2ab52b9a-c022-7288-d241-6f657c9af18f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/62e5c69e-6df6-2dcb-cb53-7e2ad5267bb8.htm" />
+  <HelpKINode Title="App.InitializeComponent method" Url="html/c2194822-342e-7c34-542c-9e4c518c5d6e.htm" />
+  <HelpKINode Title="App.Main method" Url="html/0f4772a1-68a7-5bd8-8107-b50d39610f7a.htm" />
+  <HelpKINode Title="App._contentLoaded field" Url="html/9d16beef-a55f-e7a7-4c8e-6023e0ed57a4.htm" />
+  <HelpKINode Title="archivoSeleccionado field" Url="html/8fe666cb-be06-5c88-616e-2aa853c122f7.htm" />
+  <HelpKINode Title="ArchivoSeleccionado property" Url="html/7fe1ff6f-4fa3-6a96-1cca-69688963a4a9.htm" />
+  <HelpKINode Title="AsignarLote method" Url="html/6eb44b60-9ac6-7075-faa9-3e50a5782ccd.htm" />
+  <HelpKINode Title="AsignarLoteCommand property" Url="html/942f0c58-c6c6-32ec-96f3-639cc3ae2506.htm" />
+  <HelpKINode Title="AsignarLoteDialog class">
+    <HelpKINode Title="AsignarLoteDialog (Clase)" Url="html/cfd9cfe5-fab3-9780-895b-9bed32a89833.htm" />
+    <HelpKINode Title="constructor" Url="html/ead21803-1668-3836-c50e-4bc01de01559.htm" />
+    <HelpKINode Title="events" Url="html/4fc7ce74-72f8-3418-d342-d03b19f0ee9b.htm" />
+    <HelpKINode Title="fields" Url="html/bf454594-593f-1ed4-1829-c4262b2573a0.htm" />
+    <HelpKINode Title="methods" Url="html/1f15f3a9-07f3-4b93-d5d3-1dd8813b484c.htm" />
+    <HelpKINode Title="properties" Url="html/62393573-a0c6-4f66-4eaf-9d809fe8b0ec.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsignarLoteDialog.AsignarLoteDialog constructor" Url="html/ead21803-1668-3836-c50e-4bc01de01559.htm" />
+  <HelpKINode Title="AsignarLoteDialog.buscador field" Url="html/2bd67b8e-9a93-f74b-57d2-4bf119a833b1.htm" />
+  <HelpKINode Title="AsignarLoteDialog.buscador_TextChanged method" Url="html/187a3e32-19c4-d852-0619-5f2f00f0bd40.htm" />
+  <HelpKINode Title="AsignarLoteDialog.ConfirmarNiaButton_Click method" Url="html/f10f547b-ce58-acfc-a097-c17ef6c2e1ad.htm" />
+  <HelpKINode Title="AsignarLoteDialog.InitializeComponent method" Url="html/81fd49a0-0401-ea4b-c284-fe9e848fd561.htm" />
+  <HelpKINode Title="AsignarLoteDialog.MiListbox field" Url="html/573b80ab-220e-472f-df24-a7b07003f785.htm" />
+  <HelpKINode Title="AsignarLoteDialog.vm field" Url="html/2731abb4-7918-87e2-9214-43c90056c96a.htm" />
+  <HelpKINode Title="AsignarLoteDialog._contentLoaded field" Url="html/f31eda47-58d2-8dac-4c00-572b022eb551.htm" />
+  <HelpKINode Title="AsignarLoteRequestMessage class">
+    <HelpKINode Title="AsignarLoteRequestMessage (Clase)" Url="html/edfc824d-4b39-ac23-5afe-88358138b905.htm" />
+    <HelpKINode Title="constructor" Url="html/6270818f-f95f-1de0-830a-44c1e30d8e3f.htm" />
+    <HelpKINode Title="methods" Url="html/c9be2dbc-1cc0-c9ff-4707-ef4a88552932.htm" />
+    <HelpKINode Title="properties" Url="html/5e10b63f-0ca2-646a-e190-967f9ecc1cc0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsignarLoteRequestMessage.AsignarLoteRequestMessage constructor" Url="html/6270818f-f95f-1de0-830a-44c1e30d8e3f.htm" />
+  <HelpKINode Title="AsignarLoteVM class">
+    <HelpKINode Title="AsignarLoteVM (Clase)" Url="html/a95dd965-bca5-794b-8a6e-6110b031982f.htm" />
+    <HelpKINode Title="constructor" Url="html/d175b316-87fe-1d8a-1ed0-b42dc2a349b4.htm" />
+    <HelpKINode Title="events" Url="html/d00bac63-2db7-0fdb-b87a-e0350041150c.htm" />
+    <HelpKINode Title="fields" Url="html/7debd4f4-631c-1686-7662-6a52dbe583ee.htm" />
+    <HelpKINode Title="methods" Url="html/99b600ec-c9fa-7e96-4cba-660ea881c61e.htm" />
+    <HelpKINode Title="properties" Url="html/8ac29a31-75d8-18ca-f604-91f2268ce82d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AsignarLoteVM.AsignarLoteVM constructor" Url="html/d175b316-87fe-1d8a-1ed0-b42dc2a349b4.htm" />
+  <HelpKINode Title="AsignarLoteVM.buscador field" Url="html/986eedc5-ee10-f5b5-b35d-7d51f9e5f3fd.htm" />
+  <HelpKINode Title="AsignarLoteVM.Buscador property" Url="html/1baf85cb-16d6-9539-3fcc-9f7a1ab529c5.htm" />
+  <HelpKINode Title="AsignarLoteVM.ConfirmarNia method" Url="html/bdfd17ce-a1b5-4481-8395-0f4579c17fe3.htm" />
+  <HelpKINode Title="AsignarLoteVM.ConfirmarNiaCommand property" Url="html/4e92dce3-4ec1-c4ef-8ba8-97c3e48524ab.htm" />
+  <HelpKINode Title="AsignarLoteVM.listaNias field" Url="html/7d5eb232-0a21-b41c-ee4f-fb1fcfd76397.htm" />
+  <HelpKINode Title="AsignarLoteVM.ListaNias property" Url="html/61eca221-8e7f-badb-1029-d1bd26d312f0.htm" />
+  <HelpKINode Title="AsignarLoteVM.loteAActualizar field" Url="html/94f50c3e-2c21-641d-5e50-59e81c2956d4.htm" />
+  <HelpKINode Title="AsignarLoteVM.LoteAActualizar property" Url="html/e226f766-25bc-2fd4-a49f-42bcf4e250e4.htm" />
+  <HelpKINode Title="AsignarLoteVM.niaSeleccionado field" Url="html/3d77c21c-9c12-74aa-c096-0a02726cb433.htm" />
+  <HelpKINode Title="AsignarLoteVM.NiaSeleccionado property" Url="html/df293b21-65cf-fce4-d916-6fc3b1b8bfc3.htm" />
+  <HelpKINode Title="AsignarLoteVM.servicioAPI field" Url="html/edc6ab64-c977-44be-8c6e-6f2e0e98c391.htm" />
+  <HelpKINode Title="BAJA enumeration member" Url="html/1e3a4eb4-b988-52e5-8217-f526f51c8bca.htm" />
+  <HelpKINode Title="BalmisImagen field" Url="html/e8e0f258-9ab6-d691-6107-65f4790faf87.htm" />
+  <HelpKINode Title="BooleanToSiNo class">
+    <HelpKINode Title="BooleanToSiNo (Clase)" Url="html/9a7755d3-9549-ae58-7016-cc0de63b7e70.htm" />
+    <HelpKINode Title="constructor" Url="html/371c4110-51fb-ca3d-d607-b772fb354085.htm" />
+    <HelpKINode Title="methods" Url="html/bb3981d2-5d60-c70b-9aa6-8018060c359e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BooleanToSiNo.BooleanToSiNo constructor" Url="html/371c4110-51fb-ca3d-d607-b772fb354085.htm" />
+  <HelpKINode Title="BooleanToSiNo.Convert method" Url="html/b4a42f84-c60b-acba-f882-64bc81c31423.htm" />
+  <HelpKINode Title="BooleanToSiNo.ConvertBack method" Url="html/f27474d5-7297-bcad-c6c2-5a46116bb792.htm" />
+  <HelpKINode Title="buscador field">
+    <HelpKINode Title="AlumnosUserControl.buscador (Campo)" Url="html/04adf8b3-2252-d318-8c3c-b3ddb9743fd0.htm" />
+    <HelpKINode Title="AlumnosVM.buscador (Campo)" Url="html/c5298b8e-f4a7-e467-3a2e-580d6dddd644.htm" />
+    <HelpKINode Title="AsignarLoteDialog.buscador (Campo)" Url="html/2bd67b8e-9a93-f74b-57d2-4bf119a833b1.htm" />
+    <HelpKINode Title="AsignarLoteVM.buscador (Campo)" Url="html/986eedc5-ee10-f5b5-b35d-7d51f9e5f3fd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Buscador property">
+    <HelpKINode Title="AlumnosVM.Buscador (Propiedad )" Url="html/5e01c970-4a0f-04b4-b7d9-0b185c264900.htm" />
+    <HelpKINode Title="AsignarLoteVM.Buscador (Propiedad )" Url="html/1baf85cb-16d6-9539-3fcc-9f7a1ab529c5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="buscador_TextChanged method">
+    <HelpKINode Title="AlumnosUserControl.buscador_TextChanged (M&#233;todo )" Url="html/6bfb7f62-acd0-a442-5cd4-a82c8c714cf8.htm" />
+    <HelpKINode Title="AsignarLoteDialog.buscador_TextChanged (M&#233;todo )" Url="html/187a3e32-19c4-d852-0619-5f2f00f0bd40.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BuscarPorNia method" Url="html/eae681f7-f16f-89fa-f7e0-89b48dbc25d0.htm" />
+  <HelpKINode Title="BuscarPorNiaButton_Click method" Url="html/d1f0ca0f-7abb-f4c7-e945-02ad0a420b29.htm" />
+  <HelpKINode Title="BuscarPorNombre method" Url="html/4a9d19ff-5071-7926-af1b-4086440ca58f.htm" />
+  <HelpKINode Title="BuscarPorNombreButton_Click method" Url="html/3131b956-bbcc-b1c6-e9b7-17332a0c1b75.htm" />
+  <HelpKINode Title="CargaInicialCSV method" Url="html/1b0a0d20-fcf7-52ea-532f-7a7b6b01cfc1.htm" />
+  <HelpKINode Title="CargaInicialCSVCommand property" Url="html/b578afa1-9998-a3c1-49bc-6a913d28e7dd.htm" />
+  <HelpKINode Title="CargarModalidades method" Url="html/e699625f-d02b-2f1f-7d2e-7914b2627cd2.htm" />
+  <HelpKINode Title="CerrarMenuButton field" Url="html/0da875fe-062d-1410-15d4-168d35d683bf.htm" />
+  <HelpKINode Title="CerrarMenuButton_Click method" Url="html/68f2358c-f856-b97e-bb3a-c9c15f1869eb.htm" />
+  <HelpKINode Title="CerrarSesion method" Url="html/2da35a06-54f8-d05c-289b-d20b0d8eefaa.htm" />
+  <HelpKINode Title="CerrarSesionButton field" Url="html/46166e3a-e40a-8c52-8bc0-7112f8372187.htm" />
+  <HelpKINode Title="CerrarSesionButton_Click method" Url="html/14fd6f6e-ce71-c055-26b4-14b07b4e3e64.htm" />
+  <HelpKINode Title="cliente field" Url="html/8519b806-c37a-2632-3da2-b9e8a00fac4a.htm" />
+  <HelpKINode Title="Cliente property" Url="html/58ca961c-f8ab-378e-9e5b-6a363b2a7e77.htm" />
+  <HelpKINode Title="CodigoXarxa property" Url="html/1fddc5e3-b07e-ac91-9406-785419184e87.htm" />
+  <HelpKINode Title="ComboBoxModalidad_SelectionChanged method" Url="html/2d34d98c-b1c6-3e04-e35c-cb90c76dc6c7.htm" />
+  <HelpKINode Title="ComprobarCredenciales method" Url="html/e5cf5111-89da-5910-fa97-663129c0f643.htm" />
+  <HelpKINode Title="ConfirmarLote method" Url="html/c884e16d-3908-6b7d-8694-730ecaacda0f.htm" />
+  <HelpKINode Title="ConfirmarLoteCommand property" Url="html/34bfa4af-e195-7630-da48-83332631a321.htm" />
+  <HelpKINode Title="ConfirmarNia method" Url="html/bdfd17ce-a1b5-4481-8395-0f4579c17fe3.htm" />
+  <HelpKINode Title="ConfirmarNiaButton_Click method" Url="html/f10f547b-ce58-acfc-a097-c17ef6c2e1ad.htm" />
+  <HelpKINode Title="ConfirmarNiaCommand property" Url="html/4e92dce3-4ec1-c4ef-8ba8-97c3e48524ab.htm" />
+  <HelpKINode Title="ContenedorBuscarPorNia field" Url="html/b09630b0-0815-a6e6-0adc-5b8a489c6e4e.htm" />
+  <HelpKINode Title="ContenedorBuscarPorNombre field" Url="html/17f645aa-2a50-fab3-d696-8ae9876ee4f4.htm" />
+  <HelpKINode Title="ContenedorInicial field" Url="html/d51c1b45-4c86-3b60-f8c7-546afdc3ab28.htm" />
+  <HelpKINode Title="contrasenya field" Url="html/7416d4c6-3b06-e148-5312-081104a99e0a.htm" />
+  <HelpKINode Title="Contrasenya property" Url="html/7927d088-b363-3547-677d-24bf338f543d.htm" />
+  <HelpKINode Title="Convert method">
+    <HelpKINode Title="BooleanToSiNo.Convert (M&#233;todo )" Url="html/b4a42f84-c60b-acba-f882-64bc81c31423.htm" />
+    <HelpKINode Title="IncidenciasToSiNo.Convert (M&#233;todo )" Url="html/3dc34546-96e9-9529-5e8e-eb90c840e2c5.htm" />
+    <HelpKINode Title="NullToVisibilityModificado.Convert (M&#233;todo )" Url="html/8de1f7f4-979b-9d95-e9a2-ae1f59548a08.htm" />
+    <HelpKINode Title="TipoUsuarioToEnabled.Convert (M&#233;todo )" Url="html/bec094f2-6e31-d3ed-c9c0-98f0360aa49f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConvertBack method">
+    <HelpKINode Title="BooleanToSiNo.ConvertBack (M&#233;todo )" Url="html/f27474d5-7297-bcad-c6c2-5a46116bb792.htm" />
+    <HelpKINode Title="IncidenciasToSiNo.ConvertBack (M&#233;todo )" Url="html/bef17ea3-f254-4737-acbe-4a72549bec0d.htm" />
+    <HelpKINode Title="NullToVisibilityModificado.ConvertBack (M&#233;todo )" Url="html/d18ad65c-7978-5eef-ad65-6cefcb603879.htm" />
+    <HelpKINode Title="TipoUsuarioToEnabled.ConvertBack (M&#233;todo )" Url="html/0786649c-b2d3-ab7f-77cf-a739150aa8de.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CrearUsuario method" Url="html/8136b928-fadc-18f5-d2e4-728bad08fceb.htm" />
+  <HelpKINode Title="CrearUsuarioButton_Click method" Url="html/c16c3230-eda4-c77d-38a1-18d50c574a55.htm" />
+  <HelpKINode Title="curso field" Url="html/8b323e2b-8248-1239-7963-15e8ec96232d.htm" />
+  <HelpKINode Title="Curso property">
+    <HelpKINode Title="Alumno.Curso (Propiedad )" Url="html/e6920073-63af-2307-fdfc-1e195ebdbf37.htm" />
+    <HelpKINode Title="Libro.Curso (Propiedad )" Url="html/2d5dfdd6-20ee-b002-e407-5c96c74b669d.htm" />
+    <HelpKINode Title="Modalidad.Curso (Propiedad )" Url="html/4d0981f5-28f4-6e85-dd92-b5a1f1ba40b7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DarDeAlta method" Url="html/7819c42d-25a7-afda-62d7-5c4d28df6ade.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM class">
+    <HelpKINode Title="DarDeAltaAlumnoVM (Clase)" Url="html/2d608572-a86b-4e6c-2037-1623e96ac453.htm" />
+    <HelpKINode Title="constructor" Url="html/219686ea-af11-3bd1-eeba-41ed63264ae1.htm" />
+    <HelpKINode Title="events" Url="html/0b3f975f-bbcf-4d6b-7363-ba84e43c5fb5.htm" />
+    <HelpKINode Title="fields" Url="html/9c2835b4-908e-3182-fa5c-61f3a4d282a8.htm" />
+    <HelpKINode Title="methods" Url="html/8fde08ac-d29c-5bcd-9cd0-1c3a96c68a4f.htm" />
+    <HelpKINode Title="properties" Url="html/007e1dcc-61db-8664-ac92-18e96964b18b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DarDeAltaAlumnoVM.alumnoEncontrado field" Url="html/9681e0a7-8f6e-3ddb-847d-1115b8818d28.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.AlumnoEncontrado property" Url="html/93271ae3-68db-7ab0-4258-97d6dd670829.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.BuscarPorNia method" Url="html/eae681f7-f16f-89fa-f7e0-89b48dbc25d0.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.BuscarPorNombre method" Url="html/4a9d19ff-5071-7926-af1b-4086440ca58f.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.DarDeAltaAlumnoVM constructor" Url="html/219686ea-af11-3bd1-eeba-41ed63264ae1.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.niaIntroducido field" Url="html/16b42dfa-7be2-836c-fad5-b08788104b86.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.NiaIntroducido property" Url="html/4340f4f6-bb39-f24c-2511-402f7e14949c.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.nombreIntroducido field" Url="html/4f3e158e-0b39-4be3-6f9a-34e0dcd929e3.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.NombreIntroducido property" Url="html/7749d44a-a083-7f79-3038-c85a6dc308ac.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.primerApellidoIntroducido field" Url="html/066051da-c392-b3dd-1594-d414554e9eb4.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.PrimerApellidoIntroducido property" Url="html/f0014edb-62b2-1d06-b874-797503eb8334.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.segundoApellidoIntroducido field" Url="html/6364c3fb-4aec-750b-b238-ddc8300f2139.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.SegundoApellidoIntroducido property" Url="html/299f03d1-b579-ea03-a8e7-e48b65786341.htm" />
+  <HelpKINode Title="DarDeAltaAlumnoVM.servicioAPI field" Url="html/ad1e5d49-fc74-14f0-58cc-4fd14a915060.htm" />
+  <HelpKINode Title="DarDeAltaButton_Click method" Url="html/5e98565f-b50a-8f03-1dce-969a3af362b7.htm" />
+  <HelpKINode Title="DarDeAltaCommand property" Url="html/7d6c31fd-c276-2dc6-5cf6-a0d7d9b18f69.htm" />
+  <HelpKINode Title="DarDeAltaDialog class">
+    <HelpKINode Title="DarDeAltaDialog (Clase)" Url="html/563fefe3-1930-14a1-992e-8a706211e740.htm" />
+    <HelpKINode Title="constructor" Url="html/5fde62b9-6c02-e16e-a421-8ba78443e7e4.htm" />
+    <HelpKINode Title="events" Url="html/61268470-4598-409b-127a-04c12cdef2b8.htm" />
+    <HelpKINode Title="fields" Url="html/03de5003-4cbe-2997-5405-6e96afc8c6ab.htm" />
+    <HelpKINode Title="methods" Url="html/699dd840-29ff-d207-dc17-493af8b6f2b5.htm" />
+    <HelpKINode Title="properties" Url="html/36dcf139-6f95-5f72-509b-eddb44601c50.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DarDeAltaDialog.BuscarPorNiaButton_Click method" Url="html/d1f0ca0f-7abb-f4c7-e945-02ad0a420b29.htm" />
+  <HelpKINode Title="DarDeAltaDialog.BuscarPorNombreButton_Click method" Url="html/3131b956-bbcc-b1c6-e9b7-17332a0c1b75.htm" />
+  <HelpKINode Title="DarDeAltaDialog.ContenedorBuscarPorNia field" Url="html/b09630b0-0815-a6e6-0adc-5b8a489c6e4e.htm" />
+  <HelpKINode Title="DarDeAltaDialog.ContenedorBuscarPorNombre field" Url="html/17f645aa-2a50-fab3-d696-8ae9876ee4f4.htm" />
+  <HelpKINode Title="DarDeAltaDialog.ContenedorInicial field" Url="html/d51c1b45-4c86-3b60-f8c7-546afdc3ab28.htm" />
+  <HelpKINode Title="DarDeAltaDialog.DarDeAltaDialog constructor" Url="html/5fde62b9-6c02-e16e-a421-8ba78443e7e4.htm" />
+  <HelpKINode Title="DarDeAltaDialog.InitializeComponent method" Url="html/04b76e60-5706-fc87-ecaf-3ef6cca38cde.htm" />
+  <HelpKINode Title="DarDeAltaDialog.SeleccionBusquedaPorNiaButton_Click method" Url="html/a457a63b-e07f-73ea-e1a4-6fd73ab4a76f.htm" />
+  <HelpKINode Title="DarDeAltaDialog.SeleccionBusquedaPorNombreButton_Click method" Url="html/da3dcc04-3292-4320-2544-d66c3b4e8fa6.htm" />
+  <HelpKINode Title="DarDeAltaDialog.vm field" Url="html/fdcad154-45ea-5975-9014-2bf7a660bf79.htm" />
+  <HelpKINode Title="DarDeAltaDialog.VolverAtrasButton field" Url="html/2c4b2759-b684-96d0-32e4-4eb1c3767d33.htm" />
+  <HelpKINode Title="DarDeAltaDialog.VolverAtrasButton_Click method" Url="html/36faaacf-1c23-2cdb-e1a1-db5ed7919578.htm" />
+  <HelpKINode Title="DarDeAltaDialog._contentLoaded field" Url="html/4655507d-2181-0880-1f89-9f2c69c1bb92.htm" />
+  <HelpKINode Title="DarDeBaja method" Url="html/b6cc79b7-b5c4-55a3-e448-564143f3d0bb.htm" />
+  <HelpKINode Title="DarDeBajaButton_Click method" Url="html/6b5c9834-8561-29dd-f671-ec5855bb44df.htm" />
+  <HelpKINode Title="date field" Url="html/c9c459a6-4980-805b-d3c9-cf018a2e0e7c.htm" />
+  <HelpKINode Title="DeleteLote method" Url="html/ab381400-b0b3-eb55-8ef3-2371ed8c27ca.htm" />
+  <HelpKINode Title="Departamento property" Url="html/c6cbcf84-0699-d8cf-b645-0ef46d5cbe92.htm" />
+  <HelpKINode Title="DesasignarLote method" Url="html/bda7504e-4fdb-6063-9e41-eb1455ab646f.htm" />
+  <HelpKINode Title="DesasignarLoteCommand property" Url="html/5586a030-f782-ec24-cc50-e2dd80c440e6.htm" />
+  <HelpKINode Title="EditarAlumnoDialog class">
+    <HelpKINode Title="EditarAlumnoDialog (Clase)" Url="html/df1bf60b-88cf-85c9-5b0e-12cc6fd82a90.htm" />
+    <HelpKINode Title="constructor" Url="html/fa6492f3-9724-c882-ebac-660024e0c61c.htm" />
+    <HelpKINode Title="events" Url="html/7c10d658-5546-9c01-c7f5-304799e84eeb.htm" />
+    <HelpKINode Title="fields" Url="html/ba6f4992-2382-0061-455a-d2a1754ef744.htm" />
+    <HelpKINode Title="methods" Url="html/84d68760-52ce-31a6-f302-43e6470a259c.htm" />
+    <HelpKINode Title="properties" Url="html/bb998ccc-01a1-53dd-174c-cca4ce160e94.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EditarAlumnoDialog.EditarAlumnoDialog constructor" Url="html/fa6492f3-9724-c882-ebac-660024e0c61c.htm" />
+  <HelpKINode Title="EditarAlumnoDialog.InitializeComponent method" Url="html/6972fad3-030b-fb12-7eb4-37c7ab539e92.htm" />
+  <HelpKINode Title="EditarAlumnoDialog._contentLoaded field" Url="html/705c246e-4905-fd6c-b5ee-a6f3b09b1426.htm" />
+  <HelpKINode Title="EditarLote class">
+    <HelpKINode Title="EditarLote (Clase)" Url="html/a41f5e2e-8529-ea07-5b42-523a89e2c5d8.htm" />
+    <HelpKINode Title="constructor" Url="html/f0f64a7b-31a6-d263-e5ff-ae6d830ed838.htm" />
+    <HelpKINode Title="events" Url="html/5fd14a98-56c4-ae88-73c7-1ebd1a9e91e9.htm" />
+    <HelpKINode Title="fields" Url="html/c0c7146c-bb01-22b8-2085-fcca8508aacc.htm" />
+    <HelpKINode Title="methods" Url="html/3badefb1-d346-9398-8a9c-84d9822212e8.htm" />
+    <HelpKINode Title="properties" Url="html/ea190eb0-3afe-dc5e-21f7-68d369957170.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EditarLote method" Url="html/fd2930c2-7b2f-c97c-660e-52381f8c0fd3.htm" />
+  <HelpKINode Title="EditarLote.EditarLote constructor" Url="html/f0f64a7b-31a6-d263-e5ff-ae6d830ed838.htm" />
+  <HelpKINode Title="EditarLote.InitializeComponent method" Url="html/319148ee-4c1c-f1cc-a7d1-d217c163ec93.htm" />
+  <HelpKINode Title="EditarLote.vm field" Url="html/d1b23aa6-5228-1e7d-93f3-055cdf0d4dfa.htm" />
+  <HelpKINode Title="EditarLote._contentLoaded field" Url="html/794644a5-8393-6ad5-2327-588edb8b1c8f.htm" />
+  <HelpKINode Title="EditarLoteCommand property" Url="html/09d4ae95-62d8-0fa6-a780-38af25f0fc34.htm" />
+  <HelpKINode Title="EditarLoteRequestMessage class">
+    <HelpKINode Title="EditarLoteRequestMessage (Clase)" Url="html/3384baf4-d642-921a-58e0-3682edecfef8.htm" />
+    <HelpKINode Title="constructor" Url="html/8059fd60-cb2d-e197-9e8f-db61cd03d32a.htm" />
+    <HelpKINode Title="methods" Url="html/77ac63fd-c80e-d0f6-b544-4897ac298934.htm" />
+    <HelpKINode Title="properties" Url="html/69b86abe-8f9e-07cf-4362-1800648b3467.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EditarLoteRequestMessage.EditarLoteRequestMessage constructor" Url="html/8059fd60-cb2d-e197-9e8f-db61cd03d32a.htm" />
+  <HelpKINode Title="EditarLoteVM class">
+    <HelpKINode Title="EditarLoteVM (Clase)" Url="html/b9766e52-772e-08b3-6c51-d8be6790f1b7.htm" />
+    <HelpKINode Title="constructor" Url="html/66179e88-3417-3e43-5319-5f739485f30e.htm" />
+    <HelpKINode Title="events" Url="html/19b9212c-50f6-867e-f15b-33fabe4383a8.htm" />
+    <HelpKINode Title="fields" Url="html/2a5ff853-0572-832c-b98a-284d839f0d7c.htm" />
+    <HelpKINode Title="methods" Url="html/b3dad252-7000-2bbb-5775-482ad1d23aa5.htm" />
+    <HelpKINode Title="properties" Url="html/8effd9b0-e9cc-03d8-2c36-8695ebcf7f84.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EditarLoteVM.AnyadirLibroCommand property" Url="html/13711f01-5eb5-8c2c-c025-c016ecd7cea0.htm" />
+  <HelpKINode Title="EditarLoteVM.EditarLoteVM constructor" Url="html/66179e88-3417-3e43-5319-5f739485f30e.htm" />
+  <HelpKINode Title="EditarLoteVM.EliminarLibroCommand property" Url="html/3f1b7b93-134e-44d6-40ef-6e47461f96df.htm" />
+  <HelpKINode Title="EditarLoteVM.lote field" Url="html/ca538110-193a-1fd4-ba61-d448d025d65b.htm" />
+  <HelpKINode Title="EditarLoteVM.Lote property" Url="html/57993766-8389-6b31-f2e1-c54945ec02f1.htm" />
+  <HelpKINode Title="Editorial property" Url="html/d11794e6-ef94-2e58-0f5d-d7d7a86ecd36.htm" />
+  <HelpKINode Title="EliminarLibroCommand property" Url="html/3f1b7b93-134e-44d6-40ef-6e47461f96df.htm" />
+  <HelpKINode Title="EliminarLote method" Url="html/224aeb6a-9f27-7c21-2a59-84b73ca87be8.htm" />
+  <HelpKINode Title="EliminarLoteCommand property" Url="html/67cf7797-bd97-20ac-9cc7-ea226a05bbf2.htm" />
+  <HelpKINode Title="EntrarButton field" Url="html/a14c6a16-b883-10a5-3c31-1f9739f8bd04.htm" />
+  <HelpKINode Title="EstadoMatricula enumeration" Url="html/1e3a4eb4-b988-52e5-8217-f526f51c8bca.htm" />
+  <HelpKINode Title="EstadoMatriculaStringToEnum method" Url="html/c80ff8a2-3835-4c27-5727-e2bc5c6a0c0d.htm" />
+  <HelpKINode Title="GenerarCB method" Url="html/4aaf7d48-960f-5b5a-d703-e32e529911ce.htm" />
+  <HelpKINode Title="GenerarCBCommand property" Url="html/d5a81a29-a0cc-1c54-24b3-71a6a282482d.htm" />
+  <HelpKINode Title="GenerarCodigoBarras method" Url="html/bc1674ea-4292-1898-e241-e612d3521e88.htm" />
+  <HelpKINode Title="GenerarLote class">
+    <HelpKINode Title="GenerarLote (Clase)" Url="html/cf40743f-7b6d-4de3-04b8-61c754937728.htm" />
+    <HelpKINode Title="constructor" Url="html/794e9d9b-db5b-6452-cfd4-d281ea74c617.htm" />
+    <HelpKINode Title="events" Url="html/dfe43cf5-d654-7edd-a0db-b7fa4ecfc48a.htm" />
+    <HelpKINode Title="fields" Url="html/d7db727e-ebd1-2a46-65ec-53e18f1a4b51.htm" />
+    <HelpKINode Title="methods" Url="html/e81c4311-6610-a289-9e70-a0ce2d77c242.htm" />
+    <HelpKINode Title="properties" Url="html/5298037b-1af3-f5fb-08eb-68a279fe78fa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GenerarLote.ComboBoxModalidad_SelectionChanged method" Url="html/2d34d98c-b1c6-3e04-e35c-cb90c76dc6c7.htm" />
+  <HelpKINode Title="GenerarLote.GenerarLote constructor" Url="html/794e9d9b-db5b-6452-cfd4-d281ea74c617.htm" />
+  <HelpKINode Title="GenerarLote.InitializeComponent method" Url="html/e2633395-b9a9-735a-a489-28da00c7b0fe.htm" />
+  <HelpKINode Title="GenerarLote.ModalidadComboBox field" Url="html/e9d3dce8-06b2-9a4c-b313-594604db7bc9.htm" />
+  <HelpKINode Title="GenerarLote.NumeroLoteTB field" Url="html/e4bc5e12-b56e-a135-033d-6caab6ca2a47.htm" />
+  <HelpKINode Title="GenerarLote.vm field" Url="html/5f8bc98e-d3a0-bfc9-12bc-71a610c78eb1.htm" />
+  <HelpKINode Title="GenerarLote._contentLoaded field" Url="html/3e9ad14b-ac78-006f-d024-ebc2880f6017.htm" />
+  <HelpKINode Title="GenerarLoteCommand property">
+    <HelpKINode Title="LotesVM.GenerarLoteCommand (Propiedad )" Url="html/e13fdc30-651f-8514-7ff0-180648c9b05e.htm" />
+    <HelpKINode Title="MainWindowVM.GenerarLoteCommand (Propiedad )" Url="html/58d6ce40-398a-4a08-ef0c-0a1856125924.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GenerarLoteVM class">
+    <HelpKINode Title="GenerarLoteVM (Clase)" Url="html/4631317a-5bb6-e9b5-d088-1b709640fb1a.htm" />
+    <HelpKINode Title="constructor" Url="html/14bd573c-7632-385f-a462-55cf921d3905.htm" />
+    <HelpKINode Title="events" Url="html/868a5410-01fe-2ab4-ed47-4287783f087a.htm" />
+    <HelpKINode Title="fields" Url="html/639238e7-5005-cbbc-e9a0-37caa88c97a5.htm" />
+    <HelpKINode Title="methods" Url="html/fac53c3b-d554-c989-30dc-ba46c25f0aa6.htm" />
+    <HelpKINode Title="properties" Url="html/944ed261-f94b-87ba-7a82-007c7dd3f835.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GenerarLoteVM.CargarModalidades method" Url="html/e699625f-d02b-2f1f-7d2e-7914b2627cd2.htm" />
+  <HelpKINode Title="GenerarLoteVM.ConfirmarLote method" Url="html/c884e16d-3908-6b7d-8694-730ecaacda0f.htm" />
+  <HelpKINode Title="GenerarLoteVM.ConfirmarLoteCommand property" Url="html/34bfa4af-e195-7630-da48-83332631a321.htm" />
+  <HelpKINode Title="GenerarLoteVM.GenerarLoteVM constructor" Url="html/14bd573c-7632-385f-a462-55cf921d3905.htm" />
+  <HelpKINode Title="GenerarLoteVM.GenerarNumeroLote method" Url="html/bcea192d-5127-a482-f4f4-d924693c19e9.htm" />
+  <HelpKINode Title="GenerarLoteVM.idLote field" Url="html/46988581-7fdd-ee25-4f2a-2b7fe70c8a74.htm" />
+  <HelpKINode Title="GenerarLoteVM.IdLote property" Url="html/48cc0a7a-c85b-fb82-bce0-84fea431c989.htm" />
+  <HelpKINode Title="GenerarLoteVM.LimpiarIdLote method" Url="html/33ba2f6a-416b-f9b4-7483-9f1a143a99f6.htm" />
+  <HelpKINode Title="GenerarLoteVM.LimpiarSeleccionCommand property" Url="html/47d04e03-6382-8b96-94f6-77c69340ed0e.htm" />
+  <HelpKINode Title="GenerarLoteVM.listaModalidades field" Url="html/be0f9eb1-77cd-94b5-2349-7744825e6285.htm" />
+  <HelpKINode Title="GenerarLoteVM.ListaModalidades property" Url="html/2835ff58-14c2-6250-b0e8-5a740c0e0477.htm" />
+  <HelpKINode Title="GenerarLoteVM.modalidadSeleccionada field" Url="html/1fbc243d-c9df-f926-1ebe-e636003bd319.htm" />
+  <HelpKINode Title="GenerarLoteVM.ModalidadSeleccionada property" Url="html/85f3cd48-3081-5c48-991e-1c902311f2e7.htm" />
+  <HelpKINode Title="GenerarLoteVM.servicioAPI field" Url="html/c013d5f9-400e-56d9-e57b-5fcc92352130.htm" />
+  <HelpKINode Title="GenerarNumeroLote method" Url="html/bcea192d-5127-a482-f4f4-d924693c19e9.htm" />
+  <HelpKINode Title="GetAlumno method" Url="html/142c05a3-5e46-60e2-655b-8fa5c3f05cd9.htm" />
+  <HelpKINode Title="GetAlumnoByNombreYApellidos method" Url="html/162f0f2f-7060-b9a9-5611-b35b7b555b7d.htm" />
+  <HelpKINode Title="GetAlumnos method" Url="html/d2d2876d-ac0d-b9d6-0f99-fd9af01d6db4.htm" />
+  <HelpKINode Title="GetLibros method" Url="html/0bf1b44e-cfe8-790c-88e8-bf95a2217e47.htm" />
+  <HelpKINode Title="GetListaAlumnosFromCSV method" Url="html/587b1be2-356b-32fa-328e-fb73cedfcf0f.htm" />
+  <HelpKINode Title="GetLote method" Url="html/ffad14f9-1a0f-dc86-8134-e478cbbfedc0.htm" />
+  <HelpKINode Title="GetLotes method" Url="html/763977c8-dd77-c9a1-8870-acc004f8a3ed.htm" />
+  <HelpKINode Title="GetModalidades method" Url="html/d4be375c-5330-c292-dc24-a14fb55f91ae.htm" />
+  <HelpKINode Title="GetUsuario method" Url="html/4a6364ef-7675-1c1d-1373-1030a6aeb87f.htm" />
+  <HelpKINode Title="Grid_MouseDown method" Url="html/9a1c54a0-4ed6-7376-a788-e96f67f806c4.htm" />
+  <HelpKINode Title="Grupo property" Url="html/fddf1434-05cc-ee4c-0695-7f8bd8612a01.htm" />
+  <HelpKINode Title="GuardarIncidencia method" Url="html/90e04549-7ce1-1b47-ef29-d340d8768ec1.htm" />
+  <HelpKINode Title="GuardarIncidenciaCommand property" Url="html/acd399bc-eb85-905a-82a8-f2916522d28d.htm" />
+  <HelpKINode Title="HallarUltLote method" Url="html/67376a41-818a-10f8-cac0-54d621e82472.htm" />
+  <HelpKINode Title="Id property" Url="html/7ab08494-8d76-d876-bb23-146307f29a9b.htm" />
+  <HelpKINode Title="idLote field">
+    <HelpKINode Title="Alumno.idLote (Campo)" Url="html/704e1208-a45e-0186-084e-6987f561a155.htm" />
+    <HelpKINode Title="GenerarLoteVM.idLote (Campo)" Url="html/46988581-7fdd-ee25-4f2a-2b7fe70c8a74.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IdLote property">
+    <HelpKINode Title="Alumno.IdLote (Propiedad )" Url="html/97184cd3-2eab-7021-254f-0ba7f88160a6.htm" />
+    <HelpKINode Title="GenerarLoteVM.IdLote (Propiedad )" Url="html/48cc0a7a-c85b-fb82-bce0-84fea431c989.htm" />
+    <HelpKINode Title="Lote.IdLote (Propiedad )" Url="html/02a7f05d-f15c-6d31-1791-ddd035edab26.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Incidencias property" Url="html/89cac3ad-e779-a97a-b884-5e6701854d4d.htm" />
+  <HelpKINode Title="IncidenciasRequestMessage class">
+    <HelpKINode Title="IncidenciasRequestMessage (Clase)" Url="html/92ecd76c-d522-0b81-8f93-eb02d0a01e24.htm" />
+    <HelpKINode Title="constructor" Url="html/2d22640c-d320-4301-5ef6-852e38d3d537.htm" />
+    <HelpKINode Title="methods" Url="html/0f9f2267-98ac-a537-acff-e60712929df2.htm" />
+    <HelpKINode Title="properties" Url="html/d80a3037-cfa0-51f4-bf07-862d73acae70.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IncidenciasRequestMessage.IncidenciasRequestMessage constructor" Url="html/2d22640c-d320-4301-5ef6-852e38d3d537.htm" />
+  <HelpKINode Title="IncidenciasToSiNo class">
+    <HelpKINode Title="IncidenciasToSiNo (Clase)" Url="html/ba614cc6-f3e2-723b-b6e8-903d911fb7a3.htm" />
+    <HelpKINode Title="constructor" Url="html/7e878c21-15bd-4776-5f28-4285354b31c2.htm" />
+    <HelpKINode Title="methods" Url="html/f63bcfb4-2b98-88c2-1f15-cf40b8b76ef4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IncidenciasToSiNo.Convert method" Url="html/3dc34546-96e9-9529-5e8e-eb90c840e2c5.htm" />
+  <HelpKINode Title="IncidenciasToSiNo.ConvertBack method" Url="html/bef17ea3-f254-4737-acbe-4a72549bec0d.htm" />
+  <HelpKINode Title="IncidenciasToSiNo.IncidenciasToSiNo constructor" Url="html/7e878c21-15bd-4776-5f28-4285354b31c2.htm" />
+  <HelpKINode Title="InitializeComponent method">
+    <HelpKINode Title="AlumnosUserControl.InitializeComponent (M&#233;todo )" Url="html/e0bb5f71-65ab-d04d-3012-4fb3034fc283.htm" />
+    <HelpKINode Title="App.InitializeComponent (M&#233;todo )" Url="html/c2194822-342e-7c34-542c-9e4c518c5d6e.htm" />
+    <HelpKINode Title="AsignarLoteDialog.InitializeComponent (M&#233;todo )" Url="html/81fd49a0-0401-ea4b-c284-fe9e848fd561.htm" />
+    <HelpKINode Title="DarDeAltaDialog.InitializeComponent (M&#233;todo )" Url="html/04b76e60-5706-fc87-ecaf-3ef6cca38cde.htm" />
+    <HelpKINode Title="EditarAlumnoDialog.InitializeComponent (M&#233;todo )" Url="html/6972fad3-030b-fb12-7eb4-37c7ab539e92.htm" />
+    <HelpKINode Title="EditarLote.InitializeComponent (M&#233;todo )" Url="html/319148ee-4c1c-f1cc-a7d1-d217c163ec93.htm" />
+    <HelpKINode Title="GenerarLote.InitializeComponent (M&#233;todo )" Url="html/e2633395-b9a9-735a-a489-28da00c7b0fe.htm" />
+    <HelpKINode Title="LibrosUserControl.InitializeComponent (M&#233;todo )" Url="html/4191dbb4-0afa-50af-5a11-ffbfaf5fedfa.htm" />
+    <HelpKINode Title="LogIn.InitializeComponent (M&#233;todo )" Url="html/5302f66f-2e0e-914f-7a06-c5a6c5b9882e.htm" />
+    <HelpKINode Title="LotesUserControl.InitializeComponent (M&#233;todo )" Url="html/a1a73175-a50e-6868-8cf5-0d1ffac4819d.htm" />
+    <HelpKINode Title="MainWindow.InitializeComponent (M&#233;todo )" Url="html/cae62a71-7590-aa87-512a-ead098897f4a.htm" />
+    <HelpKINode Title="NuevoUsuarioDialog.InitializeComponent (M&#233;todo )" Url="html/b1ac0099-fd6d-447c-596b-bb75530eaa5a.htm" />
+    <HelpKINode Title="OpcionesSuperUsuario.InitializeComponent (M&#233;todo )" Url="html/cfde7e7d-36e8-d0a7-8d2c-0aec9768f5c2.htm" />
+    <HelpKINode Title="VerIncidenciasAlumno.InitializeComponent (M&#233;todo )" Url="html/f400ad4c-c6d8-3f79-c9da-7e515b9cd4e6.htm" />
+    <HelpKINode Title="VerLoteAlumno.InitializeComponent (M&#233;todo )" Url="html/66c7fcb0-aa3d-2978-367b-3579710dc55b.htm" />
+    <HelpKINode Title="VistaInicialContentControl.InitializeComponent (M&#233;todo )" Url="html/cdc6c07a-7ca3-56a5-7b12-a04ff1611e4d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Isbn property" Url="html/51bc252a-f355-4917-3cd6-b8d6b5343e11.htm" />
+  <HelpKINode Title="LeeCsvAlumnosGeneral method" Url="html/d75b878e-32ce-42a0-cf39-54962ab7cd01.htm" />
+  <HelpKINode Title="LeeCsvAlumnosXarxa method" Url="html/78c3303f-750f-81f0-b400-f5152a07e766.htm" />
+  <HelpKINode Title="Libro class">
+    <HelpKINode Title="Libro (Clase)" Url="html/38c5d58c-3f1a-1b95-e508-adf8b1c5e9e1.htm" />
+    <HelpKINode Title="constructor" Url="html/42274e53-15a7-42f3-ef07-13df16f6e8e9.htm" />
+    <HelpKINode Title="events" Url="html/b04be2d3-b0e2-96c3-5d22-42dde1fc1279.htm" />
+    <HelpKINode Title="fields" Url="html/a81fa86e-0cb4-b879-b35f-27ad5b6f432d.htm" />
+    <HelpKINode Title="methods" Url="html/1cfe835d-7538-49eb-f141-42c83a036bf8.htm" />
+    <HelpKINode Title="properties" Url="html/68fdc1cd-e5fc-af33-c7fc-6a85babfa503.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Libro.Curso property" Url="html/2d5dfdd6-20ee-b002-e407-5c96c74b669d.htm" />
+  <HelpKINode Title="Libro.Departamento property" Url="html/c6cbcf84-0699-d8cf-b645-0ef46d5cbe92.htm" />
+  <HelpKINode Title="Libro.Editorial property" Url="html/d11794e6-ef94-2e58-0f5d-d7d7a86ecd36.htm" />
+  <HelpKINode Title="Libro.Isbn property" Url="html/51bc252a-f355-4917-3cd6-b8d6b5343e11.htm" />
+  <HelpKINode Title="Libro.Libro constructor" Url="html/42274e53-15a7-42f3-ef07-13df16f6e8e9.htm" />
+  <HelpKINode Title="Libro.Titulo property" Url="html/5e91a208-ebf1-2eb4-fa7c-ffefa0721676.htm" />
+  <HelpKINode Title="Libro._curso field" Url="html/43e1f64d-93ff-333f-56a6-d06210bb64c6.htm" />
+  <HelpKINode Title="Libro._departamento field" Url="html/40b886bf-7f7e-4709-737f-84ff98dafada.htm" />
+  <HelpKINode Title="Libro._editorial field" Url="html/eb889289-5248-1cbe-579e-9d2327fd06d3.htm" />
+  <HelpKINode Title="Libro._isbn field" Url="html/c2b4395d-d101-c7e7-3b7e-1a88bdb5af3f.htm" />
+  <HelpKINode Title="Libro._titulo field" Url="html/7e8bc8e9-bc21-5670-a2e7-c28b352936f4.htm" />
+  <HelpKINode Title="libroSeleccionado field" Url="html/24121aa1-7248-8018-4aff-3ece0c604a80.htm" />
+  <HelpKINode Title="LibroSeleccionado property" Url="html/4b657635-25b1-27b8-979b-e62e8c030e22.htm" />
+  <HelpKINode Title="LibrosLote property" Url="html/8fbcae15-8153-3893-15b3-57a8c33f8762.htm" />
+  <HelpKINode Title="LibrosModalidad property" Url="html/b1436a09-77b5-3b68-59cb-eb10ff8d4b26.htm" />
+  <HelpKINode Title="LibrosUserControl class">
+    <HelpKINode Title="LibrosUserControl (Clase)" Url="html/a349c50e-9a15-bdcb-4187-8176e2f2b3c4.htm" />
+    <HelpKINode Title="constructor" Url="html/63f7dbfb-63d9-5419-824f-f2897603ca83.htm" />
+    <HelpKINode Title="events" Url="html/00b3f18c-9126-1d1a-0c6b-b96736f561a7.htm" />
+    <HelpKINode Title="fields" Url="html/abc02b3c-57c7-1dbc-a7bc-0ca5af85123d.htm" />
+    <HelpKINode Title="methods" Url="html/8ea49275-e497-81a2-bd74-a20c5bd31a1b.htm" />
+    <HelpKINode Title="properties" Url="html/67fc8e79-ef46-5eca-219f-c4db135ed12c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LibrosUserControl.InitializeComponent method" Url="html/4191dbb4-0afa-50af-5a11-ffbfaf5fedfa.htm" />
+  <HelpKINode Title="LibrosUserControl.LibrosUserControl constructor" Url="html/63f7dbfb-63d9-5419-824f-f2897603ca83.htm" />
+  <HelpKINode Title="LibrosUserControl.listview field" Url="html/fe21bcbf-ff6f-a234-7e89-d6adf14f7b18.htm" />
+  <HelpKINode Title="LibrosUserControl.vm field" Url="html/08fe38a7-1439-425d-9fda-23b2d074fde4.htm" />
+  <HelpKINode Title="LibrosUserControl._contentLoaded field" Url="html/681eae05-3c5e-6888-27a5-693077b0a983.htm" />
+  <HelpKINode Title="LibrosVM class">
+    <HelpKINode Title="LibrosVM (Clase)" Url="html/3350cfea-6dc5-ca5e-c249-b1f1063d879a.htm" />
+    <HelpKINode Title="constructor" Url="html/48e6b079-f64a-0017-87a1-45caf343e454.htm" />
+    <HelpKINode Title="events" Url="html/d1392ddf-bd25-3299-39ed-aa229e2fe6eb.htm" />
+    <HelpKINode Title="fields" Url="html/87e3930c-6c8e-0f96-dcf1-e8488d9d34dd.htm" />
+    <HelpKINode Title="methods" Url="html/af8f3902-23bd-bbac-8dc8-57eb7564e138.htm" />
+    <HelpKINode Title="properties" Url="html/9c946b33-7680-fb40-212e-29036e11aa77.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LibrosVM.libroSeleccionado field" Url="html/24121aa1-7248-8018-4aff-3ece0c604a80.htm" />
+  <HelpKINode Title="LibrosVM.LibroSeleccionado property" Url="html/4b657635-25b1-27b8-979b-e62e8c030e22.htm" />
+  <HelpKINode Title="LibrosVM.LibrosVM constructor" Url="html/48e6b079-f64a-0017-87a1-45caf343e454.htm" />
+  <HelpKINode Title="LibrosVM.listaLibros field" Url="html/5e7d9016-29e6-24ac-d861-d2f518fb66de.htm" />
+  <HelpKINode Title="LibrosVM.ListaLibros property" Url="html/ad536e38-c608-2646-a416-b67b82482359.htm" />
+  <HelpKINode Title="LibrosVM.servicioAPI field" Url="html/39036815-ec97-e923-b50c-1169a13bab01.htm" />
+  <HelpKINode Title="LibroXarxa class">
+    <HelpKINode Title="LibroXarxa (Clase)" Url="html/713f1fb3-4008-2b58-62b4-8b01acfa3dfb.htm" />
+    <HelpKINode Title="constructor" Url="html/a4cc42b9-11d1-7d28-fcfb-f2ae040c09ec.htm" />
+    <HelpKINode Title="events" Url="html/86e7ac6e-b05c-60f0-8816-4ad74f5c5105.htm" />
+    <HelpKINode Title="fields" Url="html/b287fcaf-c632-087a-8c72-3632cd257d47.htm" />
+    <HelpKINode Title="methods" Url="html/e9062bc2-216c-0dc9-c9ec-37048c5131e1.htm" />
+    <HelpKINode Title="properties" Url="html/b86fd39a-697e-5efd-052f-703b0017d560.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LibroXarxa.CodigoXarxa property" Url="html/1fddc5e3-b07e-ac91-9406-785419184e87.htm" />
+  <HelpKINode Title="LibroXarxa.LibroXarxa constructor" Url="html/a4cc42b9-11d1-7d28-fcfb-f2ae040c09ec.htm" />
+  <HelpKINode Title="LibroXarxa._codigoXarxa field" Url="html/4a8996dd-5732-812a-fa30-c6e7bfb51d68.htm" />
+  <HelpKINode Title="LimpiarIdLote method" Url="html/33ba2f6a-416b-f9b4-7483-9f1a143a99f6.htm" />
+  <HelpKINode Title="LimpiarSeleccionCommand property" Url="html/47d04e03-6382-8b96-94f6-77c69340ed0e.htm" />
+  <HelpKINode Title="listaAlumnos field" Url="html/d802beb3-e0e1-0868-fbc7-321cbb543268.htm" />
+  <HelpKINode Title="ListaAlumnos property" Url="html/06637b92-b31f-48ec-6838-040c602aede3.htm" />
+  <HelpKINode Title="listaAlumnosDefinitiva field" Url="html/72f0dcc2-e0e0-eb4c-45d3-8002683e3680.htm" />
+  <HelpKINode Title="listaAlumnosGeneral field" Url="html/e4ea1c61-04d5-7377-1c23-3f1a20e35642.htm" />
+  <HelpKINode Title="ListaAlumnosGeneral property" Url="html/94299529-bb0e-58ab-920b-3d0cfac5eb37.htm" />
+  <HelpKINode Title="listaLibros field" Url="html/5e7d9016-29e6-24ac-d861-d2f518fb66de.htm" />
+  <HelpKINode Title="ListaLibros property" Url="html/ad536e38-c608-2646-a416-b67b82482359.htm" />
+  <HelpKINode Title="listaLotes field" Url="html/6ac2728e-372f-a94d-e327-818268e31f3b.htm" />
+  <HelpKINode Title="ListaLotes property" Url="html/32da1e59-1916-8d32-a2e8-516f98db0d1c.htm" />
+  <HelpKINode Title="listaModalidades field" Url="html/be0f9eb1-77cd-94b5-2349-7744825e6285.htm" />
+  <HelpKINode Title="ListaModalidades property" Url="html/2835ff58-14c2-6250-b0e8-5a740c0e0477.htm" />
+  <HelpKINode Title="listaNias field" Url="html/7d5eb232-0a21-b41c-ee4f-fb1fcfd76397.htm" />
+  <HelpKINode Title="ListaNias property" Url="html/61eca221-8e7f-badb-1029-d1bd26d312f0.htm" />
+  <HelpKINode Title="listaUsuarios field" Url="html/85d01658-1fea-251b-078c-5e511a265c8c.htm" />
+  <HelpKINode Title="ListaUsuarios property" Url="html/0f600b13-c52b-3bc9-ae91-41d64a90221b.htm" />
+  <HelpKINode Title="listview field">
+    <HelpKINode Title="AlumnosUserControl.listview (Campo)" Url="html/5d7bb08a-3568-7c5f-2496-f6ab116b3c9a.htm" />
+    <HelpKINode Title="LibrosUserControl.listview (Campo)" Url="html/fe21bcbf-ff6f-a234-7e89-d6adf14f7b18.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LogIn class">
+    <HelpKINode Title="LogIn (Clase)" Url="html/326ffa7d-3c2f-ee8a-5548-dee540242945.htm" />
+    <HelpKINode Title="constructor" Url="html/81482072-92ec-ee7c-2da0-f3d466bf954c.htm" />
+    <HelpKINode Title="events" Url="html/f752adde-ffb7-2822-53b1-74c1b1af646d.htm" />
+    <HelpKINode Title="fields" Url="html/d1b21e55-15dc-e1c0-3763-88d32060498a.htm" />
+    <HelpKINode Title="methods" Url="html/ede2d39c-256d-1a3d-0efe-82411fa4f64b.htm" />
+    <HelpKINode Title="properties" Url="html/b93438a1-bb09-6b8f-ec0c-32cf94ebd96e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LogIn.EntrarButton field" Url="html/a14c6a16-b883-10a5-3c31-1f9739f8bd04.htm" />
+  <HelpKINode Title="LogIn.Grid_MouseDown method" Url="html/9a1c54a0-4ed6-7376-a788-e96f67f806c4.htm" />
+  <HelpKINode Title="LogIn.InitializeComponent method" Url="html/5302f66f-2e0e-914f-7a06-c5a6c5b9882e.htm" />
+  <HelpKINode Title="LogIn.LogIn constructor" Url="html/81482072-92ec-ee7c-2da0-f3d466bf954c.htm" />
+  <HelpKINode Title="LogIn.password field" Url="html/ab8a76b1-c19d-3565-6bfb-b1b286366eb5.htm" />
+  <HelpKINode Title="LogIn.Password property" Url="html/e5d8ca09-f9cc-2925-2578-e5ec0e3c7ede.htm" />
+  <HelpKINode Title="LogIn.PasswordBox field" Url="html/6b0ae030-10f1-d1b6-543a-73d399aca6e2.htm" />
+  <HelpKINode Title="LogIn.PasswordBox_PasswordChanged method" Url="html/b3e38cfb-0379-903b-485c-9ec5ab33c8bd.htm" />
+  <HelpKINode Title="LogIn.UsernameTextBox field" Url="html/f2c4fe14-e2ec-cadf-a8df-0c318dde182f.htm" />
+  <HelpKINode Title="LogIn.vm field" Url="html/80e52f91-6e27-b026-fe86-0e8dbbf5c4ae.htm" />
+  <HelpKINode Title="LogIn._contentLoaded field" Url="html/0aae16f6-376e-7522-0b98-25af71d340a6.htm" />
+  <HelpKINode Title="LogInVM class">
+    <HelpKINode Title="LogInVM (Clase)" Url="html/684bd1c8-22e9-0d18-f5e7-5429c4d09e79.htm" />
+    <HelpKINode Title="constructor" Url="html/ca788cd0-08e8-70e8-650a-87b6d89b5369.htm" />
+    <HelpKINode Title="events" Url="html/cb3de552-c77e-b08c-7414-43ff9e5401dc.htm" />
+    <HelpKINode Title="fields" Url="html/4ccf6d9c-1b7a-a64e-c4ac-5148f3762cfd.htm" />
+    <HelpKINode Title="methods" Url="html/5a0db8c0-c7a1-d525-7968-39690b56cb7b.htm" />
+    <HelpKINode Title="properties" Url="html/a695ab20-a70c-4f4a-9bb0-e3c779556881.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LogInVM.listaUsuarios field" Url="html/85d01658-1fea-251b-078c-5e511a265c8c.htm" />
+  <HelpKINode Title="LogInVM.ListaUsuarios property" Url="html/0f600b13-c52b-3bc9-ae91-41d64a90221b.htm" />
+  <HelpKINode Title="LogInVM.LogInVM constructor" Url="html/ca788cd0-08e8-70e8-650a-87b6d89b5369.htm" />
+  <HelpKINode Title="LogInVM.Password property" Url="html/85ec029f-fc15-d48b-81d3-f2a697f16a75.htm" />
+  <HelpKINode Title="LogInVM.securePassword field" Url="html/a5131d99-77df-e92c-8760-188f5b7ecb0a.htm" />
+  <HelpKINode Title="LogInVM.servicioValidarUsuario field" Url="html/96d9b063-a074-cb3d-1cfa-908080f1290d.htm" />
+  <HelpKINode Title="LogInVM.usuarioXarxa field" Url="html/a3d0a22e-3b2f-c7ae-60af-22d3073ad1e4.htm" />
+  <HelpKINode Title="LogInVM.UsuarioXarxa property" Url="html/8ec32ca0-74a1-d66e-6039-d2491d5d7c5b.htm" />
+  <HelpKINode Title="LogInVM.ValidarUsuario method" Url="html/0313b5cb-ca6c-13f1-6b5b-703d5bbd9b4c.htm" />
+  <HelpKINode Title="LogInVM.ValidarUsuarioCommand property" Url="html/59e76da3-e9d5-69dd-ea06-760cb6f02d96.htm" />
+  <HelpKINode Title="Lote class">
+    <HelpKINode Title="Lote (Clase)" Url="html/f407bc6f-02cd-9d76-f9cd-165e5994e192.htm" />
+    <HelpKINode Title="constructor" Url="html/24d38247-a184-d7e6-756e-4bd119d95e34.htm" />
+    <HelpKINode Title="events" Url="html/1dd59a02-4946-bf5b-9e74-836555cf5d3f.htm" />
+    <HelpKINode Title="fields" Url="html/07bc5bd2-c17c-7a79-db2e-b19becf386c1.htm" />
+    <HelpKINode Title="methods" Url="html/39895fd6-44db-bc6e-0977-7091ab2dc77a.htm" />
+    <HelpKINode Title="properties" Url="html/458eb80e-fbf9-2eac-cc7b-528fff81daa1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="lote field" Url="html/ca538110-193a-1fd4-ba61-d448d025d65b.htm" />
+  <HelpKINode Title="Lote property">
+    <HelpKINode Title="Alumno.Lote (Propiedad )" Url="html/8df84a7a-69e5-806e-8819-e753616a976c.htm" />
+    <HelpKINode Title="EditarLoteVM.Lote (Propiedad )" Url="html/57993766-8389-6b31-f2e1-c54945ec02f1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Lote.IdLote property" Url="html/02a7f05d-f15c-6d31-1791-ddd035edab26.htm" />
+  <HelpKINode Title="Lote.LibrosLote property" Url="html/8fbcae15-8153-3893-15b3-57a8c33f8762.htm" />
+  <HelpKINode Title="Lote.Lote constructor" Url="html/24d38247-a184-d7e6-756e-4bd119d95e34.htm" />
+  <HelpKINode Title="Lote.ModalidadLote property" Url="html/cbe84dba-b60d-63ca-27de-10ad68b8dae7.htm" />
+  <HelpKINode Title="Lote.niaAlumno field" Url="html/3c111472-dae9-35df-9983-9d8737e2985a.htm" />
+  <HelpKINode Title="Lote.NiaAlumno property" Url="html/3aadc645-6eb9-d06e-5edf-581c43cf6301.htm" />
+  <HelpKINode Title="Lote._idLote field" Url="html/c58cf9b6-df77-8ce4-aaa2-7a85af382d16.htm" />
+  <HelpKINode Title="Lote._librosLote field" Url="html/aa364777-ac94-92ca-b21e-f722a4be6eaa.htm" />
+  <HelpKINode Title="Lote._modalidadLote field" Url="html/afcdd98c-d4dc-9afd-aec8-3e087b1c4209.htm" />
+  <HelpKINode Title="loteAActualizar field" Url="html/94f50c3e-2c21-641d-5e50-59e81c2956d4.htm" />
+  <HelpKINode Title="LoteAActualizar property" Url="html/e226f766-25bc-2fd4-a49f-42bcf4e250e4.htm" />
+  <HelpKINode Title="loteAlumno field" Url="html/13432807-701d-c0a2-296e-76311ceb0600.htm" />
+  <HelpKINode Title="LoteAlumno property" Url="html/5bcabcb0-5ca6-ab1e-47cf-214507db9bb2.htm" />
+  <HelpKINode Title="loteSeleccionado field" Url="html/54f357a0-44c7-13fd-bea6-ca385711ed05.htm" />
+  <HelpKINode Title="LoteSeleccionado property" Url="html/f953d71e-7a00-9ab2-010b-ceb2402f1b93.htm" />
+  <HelpKINode Title="LotesUserControl class">
+    <HelpKINode Title="LotesUserControl (Clase)" Url="html/4c887089-80be-61b6-542a-ddff990866f6.htm" />
+    <HelpKINode Title="constructor" Url="html/3342c33e-02b0-aa20-48a8-8ea3894452fd.htm" />
+    <HelpKINode Title="events" Url="html/92338e93-7acd-1dc5-1152-e6785fbb9677.htm" />
+    <HelpKINode Title="fields" Url="html/0e84f0ae-c33a-a7ad-7d57-c76f186c5f12.htm" />
+    <HelpKINode Title="methods" Url="html/b7d8c108-fe99-5670-dfc6-55ce9b9ba11e.htm" />
+    <HelpKINode Title="properties" Url="html/7d57b2ef-e79b-f88c-ad56-e96df2a0b62f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LotesUserControl.InitializeComponent method" Url="html/a1a73175-a50e-6868-8cf5-0d1ffac4819d.htm" />
+  <HelpKINode Title="LotesUserControl.LotesUserControl constructor" Url="html/3342c33e-02b0-aa20-48a8-8ea3894452fd.htm" />
+  <HelpKINode Title="LotesUserControl.vm field" Url="html/c61f4456-96e5-b53a-0723-e232bdf57ad0.htm" />
+  <HelpKINode Title="LotesUserControl._contentLoaded field" Url="html/a38d95dd-972c-3219-b0b5-928e40cdd8c1.htm" />
+  <HelpKINode Title="LotesVM class">
+    <HelpKINode Title="LotesVM (Clase)" Url="html/7491fd73-974a-a911-83eb-be64a3d5be7b.htm" />
+    <HelpKINode Title="constructor" Url="html/060dc276-4c8c-e020-3b6f-208e9fcad235.htm" />
+    <HelpKINode Title="events" Url="html/9769f9f7-44a4-e448-9f5b-bdcf057f8aa6.htm" />
+    <HelpKINode Title="fields" Url="html/f6436300-4357-7f8c-b18f-935128735028.htm" />
+    <HelpKINode Title="methods" Url="html/11fcffa7-9748-5d22-a1f9-4a505bfdf37d.htm" />
+    <HelpKINode Title="properties" Url="html/074ec7fd-ca2b-fb5b-0c9e-d6150ebd774c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LotesVM.AbrirVistaGenerarLote method" Url="html/99e51c0a-522f-5a65-2172-89edeef336e3.htm" />
+  <HelpKINode Title="LotesVM.AsignarLote method" Url="html/6eb44b60-9ac6-7075-faa9-3e50a5782ccd.htm" />
+  <HelpKINode Title="LotesVM.AsignarLoteCommand property" Url="html/942f0c58-c6c6-32ec-96f3-639cc3ae2506.htm" />
+  <HelpKINode Title="LotesVM.DesasignarLote method" Url="html/bda7504e-4fdb-6063-9e41-eb1455ab646f.htm" />
+  <HelpKINode Title="LotesVM.DesasignarLoteCommand property" Url="html/5586a030-f782-ec24-cc50-e2dd80c440e6.htm" />
+  <HelpKINode Title="LotesVM.EditarLote method" Url="html/fd2930c2-7b2f-c97c-660e-52381f8c0fd3.htm" />
+  <HelpKINode Title="LotesVM.EditarLoteCommand property" Url="html/09d4ae95-62d8-0fa6-a780-38af25f0fc34.htm" />
+  <HelpKINode Title="LotesVM.EliminarLote method" Url="html/224aeb6a-9f27-7c21-2a59-84b73ca87be8.htm" />
+  <HelpKINode Title="LotesVM.EliminarLoteCommand property" Url="html/67cf7797-bd97-20ac-9cc7-ea226a05bbf2.htm" />
+  <HelpKINode Title="LotesVM.GenerarCBCommand property" Url="html/d5a81a29-a0cc-1c54-24b3-71a6a282482d.htm" />
+  <HelpKINode Title="LotesVM.GenerarCodigoBarras method" Url="html/bc1674ea-4292-1898-e241-e612d3521e88.htm" />
+  <HelpKINode Title="LotesVM.GenerarLoteCommand property" Url="html/e13fdc30-651f-8514-7ff0-180648c9b05e.htm" />
+  <HelpKINode Title="LotesVM.listaLotes field" Url="html/6ac2728e-372f-a94d-e327-818268e31f3b.htm" />
+  <HelpKINode Title="LotesVM.ListaLotes property" Url="html/32da1e59-1916-8d32-a2e8-516f98db0d1c.htm" />
+  <HelpKINode Title="LotesVM.loteSeleccionado field" Url="html/54f357a0-44c7-13fd-bea6-ca385711ed05.htm" />
+  <HelpKINode Title="LotesVM.LoteSeleccionado property" Url="html/f953d71e-7a00-9ab2-010b-ceb2402f1b93.htm" />
+  <HelpKINode Title="LotesVM.LotesVM constructor" Url="html/060dc276-4c8c-e020-3b6f-208e9fcad235.htm" />
+  <HelpKINode Title="LotesVM.servicioAPI field" Url="html/a0354ed9-a387-529e-c0d0-35a1efdfe1dd.htm" />
+  <HelpKINode Title="Main method" Url="html/0f4772a1-68a7-5bd8-8107-b50d39610f7a.htm" />
+  <HelpKINode Title="MainWindow class">
+    <HelpKINode Title="MainWindow (Clase)" Url="html/6a4227a6-e8b9-476b-8cf2-e2f527a62383.htm" />
+    <HelpKINode Title="constructor" Url="html/b9bcfc13-9f19-4313-8d3b-1622a0ac60f8.htm" />
+    <HelpKINode Title="events" Url="html/ace03f4b-f8c8-31af-84a7-c31add74e967.htm" />
+    <HelpKINode Title="fields" Url="html/706c9ebc-6760-2dac-69c7-3a251e4d4c94.htm" />
+    <HelpKINode Title="methods" Url="html/5ffbcdb5-1dff-9a0d-4dee-c89bd4d8165c.htm" />
+    <HelpKINode Title="properties" Url="html/f38d36fa-65d3-31b6-0caf-e314830fb736.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindow.AbrirMenuButton field" Url="html/f6fa658c-c3cf-ab4d-d9c9-bd386dc922be.htm" />
+  <HelpKINode Title="MainWindow.AbrirMenuButton_Click method" Url="html/97758fde-7f53-a28d-5c8b-f2b5d471fd58.htm" />
+  <HelpKINode Title="MainWindow.BalmisImagen field" Url="html/e8e0f258-9ab6-d691-6107-65f4790faf87.htm" />
+  <HelpKINode Title="MainWindow.CerrarMenuButton field" Url="html/0da875fe-062d-1410-15d4-168d35d683bf.htm" />
+  <HelpKINode Title="MainWindow.CerrarMenuButton_Click method" Url="html/68f2358c-f856-b97e-bb3a-c9c15f1869eb.htm" />
+  <HelpKINode Title="MainWindow.CerrarSesionButton field" Url="html/46166e3a-e40a-8c52-8bc0-7112f8372187.htm" />
+  <HelpKINode Title="MainWindow.CerrarSesionButton_Click method" Url="html/14fd6f6e-ce71-c055-26b4-14b07b4e3e64.htm" />
+  <HelpKINode Title="MainWindow.DarDeAltaButton_Click method" Url="html/5e98565f-b50a-8f03-1dce-969a3af362b7.htm" />
+  <HelpKINode Title="MainWindow.InitializeComponent method" Url="html/cae62a71-7590-aa87-512a-ead098897f4a.htm" />
+  <HelpKINode Title="MainWindow.MainWindow constructor" Url="html/b9bcfc13-9f19-4313-8d3b-1622a0ac60f8.htm" />
+  <HelpKINode Title="MainWindow.MenuLateralStackPanel field" Url="html/6791c11f-98df-7a38-b563-4ac13868d77c.htm" />
+  <HelpKINode Title="MainWindow.NombreUsuarioTB field" Url="html/84e58305-d479-0e87-0768-352bc2dcfe12.htm" />
+  <HelpKINode Title="MainWindow.OpcionesSUButton field" Url="html/e0a38a28-c850-20a7-cb01-b49ea1bcfa2b.htm" />
+  <HelpKINode Title="MainWindow.OpcionesSUButton_Click method" Url="html/44586a47-4ac4-ba97-3430-6d1adb55fd08.htm" />
+  <HelpKINode Title="MainWindow.SalirButton field" Url="html/eb74aae7-f5c1-0988-f597-28e4ceb13335.htm" />
+  <HelpKINode Title="MainWindow.SalirButton_Click method" Url="html/c11dd5c1-650c-9b12-c485-4505962df05f.htm" />
+  <HelpKINode Title="MainWindow.SubMenuLotes field" Url="html/d0c5c213-6bb7-fc20-7485-dfebe65bf1ce.htm" />
+  <HelpKINode Title="MainWindow.vm field" Url="html/5da51d57-b95d-c4f4-4811-48ccdcd97a6d.htm" />
+  <HelpKINode Title="MainWindow._contentLoaded field" Url="html/b10eae78-2a21-7275-6b74-164c25038f81.htm" />
+  <HelpKINode Title="MainWindowVM class">
+    <HelpKINode Title="MainWindowVM (Clase)" Url="html/32a36471-ddde-0f25-e035-4bfec4549cb9.htm" />
+    <HelpKINode Title="constructor" Url="html/3dea50d8-96f9-c989-23da-275e487e4f46.htm" />
+    <HelpKINode Title="events" Url="html/732aca15-8845-6212-35da-6df2ed5a53e8.htm" />
+    <HelpKINode Title="fields" Url="html/f963654c-e614-91e1-02f5-1ffd72c3ffa5.htm" />
+    <HelpKINode Title="methods" Url="html/24bb8467-cc4c-6db2-5938-9ccd057a7c49.htm" />
+    <HelpKINode Title="properties" Url="html/82586f35-4cb5-cfc0-b9a2-aeb156dfc282.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindowVM.AbrirOpcionesSU method" Url="html/dfa0a80b-ffbe-368f-db95-e0bb684334ba.htm" />
+  <HelpKINode Title="MainWindowVM.AbrirVistaAlumnos method" Url="html/586562a8-2a40-1493-b7fe-aa135103ee96.htm" />
+  <HelpKINode Title="MainWindowVM.AbrirVistaAlumnosCommand property" Url="html/0452b26d-c1f3-2436-04f5-72e767a7316e.htm" />
+  <HelpKINode Title="MainWindowVM.AbrirVistaDarDeAltaAlumno method" Url="html/f073ec5b-0a82-2f19-5591-999394af18cf.htm" />
+  <HelpKINode Title="MainWindowVM.AbrirVistaGenerarLote method" Url="html/7f80da2a-99b8-eea0-d9d4-b252538e5b23.htm" />
+  <HelpKINode Title="MainWindowVM.AbrirVistaLibros method" Url="html/102a7cda-cfd0-8ef6-d95b-5341ffe1e922.htm" />
+  <HelpKINode Title="MainWindowVM.AbrirVistaLibrosCommand property" Url="html/4ac09739-49e3-699d-b898-a01d131812c0.htm" />
+  <HelpKINode Title="MainWindowVM.AbrirVistaLotes method" Url="html/aaf7fe79-46aa-18e0-b756-03fe02a80e46.htm" />
+  <HelpKINode Title="MainWindowVM.AbrirVistaLotesCommand property" Url="html/23c8650b-f281-be56-6f4f-96f8396e1c3f.htm" />
+  <HelpKINode Title="MainWindowVM.CerrarSesion method" Url="html/2da35a06-54f8-d05c-289b-d20b0d8eefaa.htm" />
+  <HelpKINode Title="MainWindowVM.GenerarLoteCommand property" Url="html/58d6ce40-398a-4a08-ef0c-0a1856125924.htm" />
+  <HelpKINode Title="MainWindowVM.MainWindowVM constructor" Url="html/3dea50d8-96f9-c989-23da-275e487e4f46.htm" />
+  <HelpKINode Title="MainWindowVM.pestanyaActual field" Url="html/c79221ee-89d4-7fa8-5eed-80045ba4a973.htm" />
+  <HelpKINode Title="MainWindowVM.PestanyaActual property" Url="html/180b2f97-8301-7857-1f7c-40ecac5de8c6.htm" />
+  <HelpKINode Title="MainWindowVM.usuarioLogeado field" Url="html/6af24e04-14b2-d573-5ed3-dfd3dd0f360b.htm" />
+  <HelpKINode Title="MainWindowVM.UsuarioLogeado property" Url="html/ffbaa7c7-9af8-7fe6-66a7-aa837de53489.htm" />
+  <HelpKINode Title="Matricula property" Url="html/2dfbb7f0-1670-a18b-5df8-86c6477af9fa.htm" />
+  <HelpKINode Title="MensajeAlerta method" Url="html/44876770-3955-eb55-813c-67642da0815b.htm" />
+  <HelpKINode Title="MenuLateralStackPanel field" Url="html/6791c11f-98df-7a38-b563-4ac13868d77c.htm" />
+  <HelpKINode Title="MiListbox field" Url="html/573b80ab-220e-472f-df24-a7b07003f785.htm" />
+  <HelpKINode Title="Modalidad class">
+    <HelpKINode Title="Modalidad (Clase)" Url="html/0262daa0-28da-a89e-c837-8183b1d78282.htm" />
+    <HelpKINode Title="constructor" Url="html/610d23e4-5ece-172f-9419-709cfe09be84.htm" />
+    <HelpKINode Title="events" Url="html/db71ca48-58d0-7824-6fb8-0ba9384ccc79.htm" />
+    <HelpKINode Title="fields" Url="html/30fdb514-c9b0-177f-84ab-624635ec3865.htm" />
+    <HelpKINode Title="methods" Url="html/c22784ab-6a30-0a03-d41d-062243410221.htm" />
+    <HelpKINode Title="properties" Url="html/ce1f96c2-d78e-f203-52ac-497a69250c9d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Modalidad.curso field" Url="html/8b323e2b-8248-1239-7963-15e8ec96232d.htm" />
+  <HelpKINode Title="Modalidad.Curso property" Url="html/4d0981f5-28f4-6e85-dd92-b5a1f1ba40b7.htm" />
+  <HelpKINode Title="Modalidad.Id property" Url="html/7ab08494-8d76-d876-bb23-146307f29a9b.htm" />
+  <HelpKINode Title="Modalidad.LibrosModalidad property" Url="html/b1436a09-77b5-3b68-59cb-eb10ff8d4b26.htm" />
+  <HelpKINode Title="Modalidad.Modalidad constructor" Url="html/610d23e4-5ece-172f-9419-709cfe09be84.htm" />
+  <HelpKINode Title="Modalidad.Nombre property" Url="html/94b15e7c-dbb4-1ce0-f657-55813a3310c1.htm" />
+  <HelpKINode Title="Modalidad.ToString method" Url="html/7f0849dc-c170-df0e-e29b-87c027b6b651.htm" />
+  <HelpKINode Title="Modalidad._id field" Url="html/477d8aa3-a51a-a698-dd1e-f2017cc9025f.htm" />
+  <HelpKINode Title="Modalidad._librosModalidad field" Url="html/7c37398f-cbe1-6f29-c026-0a99d52f496c.htm" />
+  <HelpKINode Title="Modalidad._nombre field" Url="html/a9c7e019-2cef-d61c-8c42-4f9775b75175.htm" />
+  <HelpKINode Title="ModalidadComboBox field" Url="html/e9d3dce8-06b2-9a4c-b313-594604db7bc9.htm" />
+  <HelpKINode Title="ModalidadLote property" Url="html/cbe84dba-b60d-63ca-27de-10ad68b8dae7.htm" />
+  <HelpKINode Title="modalidadSeleccionada field" Url="html/1fbc243d-c9df-f926-1ebe-e636003bd319.htm" />
+  <HelpKINode Title="ModalidadSeleccionada property" Url="html/85f3cd48-3081-5c48-991e-1c902311f2e7.htm" />
+  <HelpKINode Title="Nia property" Url="html/a2e63982-7a59-8bd8-4aff-d1bfc6b57990.htm" />
+  <HelpKINode Title="niaAlumno field" Url="html/3c111472-dae9-35df-9983-9d8737e2985a.htm" />
+  <HelpKINode Title="NiaAlumno property" Url="html/3aadc645-6eb9-d06e-5edf-581c43cf6301.htm" />
+  <HelpKINode Title="niaIntroducido field" Url="html/16b42dfa-7be2-836c-fad5-b08788104b86.htm" />
+  <HelpKINode Title="NiaIntroducido property" Url="html/4340f4f6-bb39-f24c-2511-402f7e14949c.htm" />
+  <HelpKINode Title="niaSeleccionado field" Url="html/3d77c21c-9c12-74aa-c096-0a02726cb433.htm" />
+  <HelpKINode Title="NiaSeleccionado property" Url="html/df293b21-65cf-fce4-d916-6fc3b1b8bfc3.htm" />
+  <HelpKINode Title="Nombre property">
+    <HelpKINode Title="Alumno.Nombre (Propiedad )" Url="html/b5bfbf5b-95bb-6c79-4cb8-29f47ec11919.htm" />
+    <HelpKINode Title="Modalidad.Nombre (Propiedad )" Url="html/94b15e7c-dbb4-1ce0-f657-55813a3310c1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="nombreIntroducido field" Url="html/4f3e158e-0b39-4be3-6f9a-34e0dcd929e3.htm" />
+  <HelpKINode Title="NombreIntroducido property" Url="html/7749d44a-a083-7f79-3038-c85a6dc308ac.htm" />
+  <HelpKINode Title="nombreUsuario field" Url="html/38800f64-9d61-ed2c-6d46-40ae997b1198.htm" />
+  <HelpKINode Title="NombreUsuario property" Url="html/20e14e9b-a752-d2a5-cf3a-cd00b6f958c0.htm" />
+  <HelpKINode Title="NombreUsuarioTB field" Url="html/84e58305-d479-0e87-0768-352bc2dcfe12.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog class">
+    <HelpKINode Title="NuevoUsuarioDialog (Clase)" Url="html/282359f2-4747-9d6c-05d1-ad86afbb2605.htm" />
+    <HelpKINode Title="constructor" Url="html/80ca74d5-f77e-d59b-01fe-3446e2221a91.htm" />
+    <HelpKINode Title="events" Url="html/4d2ca264-2345-eed8-5725-513e7b05fc2a.htm" />
+    <HelpKINode Title="fields" Url="html/689c775e-c5f9-ce1f-a0ac-b2c1a0aab36a.htm" />
+    <HelpKINode Title="methods" Url="html/df7d2498-7601-f08d-a2e1-a11cb488e018.htm" />
+    <HelpKINode Title="properties" Url="html/4cda86c6-42fb-3b88-75c9-ebfc773a87fa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NuevoUsuarioDialog.CrearUsuarioButton_Click method" Url="html/c16c3230-eda4-c77d-38a1-18d50c574a55.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.InitializeComponent method" Url="html/b1ac0099-fd6d-447c-596b-bb75530eaa5a.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.NuevoUsuarioDialog constructor" Url="html/80ca74d5-f77e-d59b-01fe-3446e2221a91.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.password1 field" Url="html/de19e175-4a09-fdef-c16e-a49dd0f63563.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.Password1 property" Url="html/f4bda94a-6ea2-4007-35bb-84e40927992f.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.password2 field" Url="html/1e732060-98d2-0a08-3008-fc746ac6c506.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.Password2 property" Url="html/e98317f2-4280-32db-c366-185e3f8dee51.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.PasswordBox field" Url="html/ac69c9fe-3df5-780a-d2f4-c7bea46fd4bb.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.PasswordBox2 field" Url="html/03cfd2f5-7553-f58b-1e20-6943b830445d.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.PasswordBox2_PasswordChanged method" Url="html/b6fd52e9-009a-dc31-da6c-5ce15776cca4.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.PasswordBox_PasswordChanged method" Url="html/3b314478-0db8-d1fd-6c96-378cd642f3ac.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.UsernameTextBox field" Url="html/8ac3a578-b49e-1f04-f9a5-dfb9b833eb19.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog.vm field" Url="html/f77a6f8b-1917-6f44-a552-968832354284.htm" />
+  <HelpKINode Title="NuevoUsuarioDialog._contentLoaded field" Url="html/471e7319-06b0-1400-f8d4-22cac8588617.htm" />
+  <HelpKINode Title="NuevoUsuarioVM class">
+    <HelpKINode Title="NuevoUsuarioVM (Clase)" Url="html/15ed0bad-2084-2877-f9a2-4746ec86a0a7.htm" />
+    <HelpKINode Title="constructor" Url="html/bc3e40c7-36dd-a96a-7159-7ec33590fcb3.htm" />
+    <HelpKINode Title="events" Url="html/b163a6ab-799a-3df5-e5d7-af3fe99744db.htm" />
+    <HelpKINode Title="fields" Url="html/6001f8eb-d4d6-80bc-4766-83dce1b5089b.htm" />
+    <HelpKINode Title="methods" Url="html/48d6cd3c-8986-3314-d15b-54046a1b480f.htm" />
+    <HelpKINode Title="properties" Url="html/fb218c6f-a92f-92ce-5a02-a56f6253e245.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NuevoUsuarioVM.ComprobarCredenciales method" Url="html/e5cf5111-89da-5910-fa97-663129c0f643.htm" />
+  <HelpKINode Title="NuevoUsuarioVM.CrearUsuario method" Url="html/8136b928-fadc-18f5-d2e4-728bad08fceb.htm" />
+  <HelpKINode Title="NuevoUsuarioVM.NuevoUsuarioVM constructor" Url="html/bc3e40c7-36dd-a96a-7159-7ec33590fcb3.htm" />
+  <HelpKINode Title="NuevoUsuarioVM.password1 field" Url="html/e82b275e-0e04-88a5-c1cb-94e9b984ebcc.htm" />
+  <HelpKINode Title="NuevoUsuarioVM.Password1 property" Url="html/86bda996-d6c7-3082-7f43-afed0a1cb829.htm" />
+  <HelpKINode Title="NuevoUsuarioVM.password2 field" Url="html/01db2c6c-fd5e-8e29-d72d-a7ed91ef0f71.htm" />
+  <HelpKINode Title="NuevoUsuarioVM.Password2 property" Url="html/36db4018-2cac-ee26-b35a-18e622a5c221.htm" />
+  <HelpKINode Title="NuevoUsuarioVM.servicioApi field" Url="html/1f5f1f47-a599-e4cd-dc05-61c982ce0001.htm" />
+  <HelpKINode Title="NuevoUsuarioVM.usuarioNuevo field" Url="html/8ab84dec-a39c-cba1-b25d-0b45b41d3fe3.htm" />
+  <HelpKINode Title="NuevoUsuarioVM.UsuarioNuevo property" Url="html/19355957-ec07-cc44-cf4e-1bc4fe1f24c3.htm" />
+  <HelpKINode Title="NullToVisibilityModificado class">
+    <HelpKINode Title="NullToVisibilityModificado (Clase)" Url="html/31c521b6-c4d5-eb97-f051-3e968ba67f33.htm" />
+    <HelpKINode Title="constructor" Url="html/d4f7ebbf-62de-f0c1-7836-5cbb6b7aa041.htm" />
+    <HelpKINode Title="methods" Url="html/d332b185-259a-178c-4c82-15d29f67c43a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NullToVisibilityModificado.Convert method" Url="html/8de1f7f4-979b-9d95-e9a2-ae1f59548a08.htm" />
+  <HelpKINode Title="NullToVisibilityModificado.ConvertBack method" Url="html/d18ad65c-7978-5eef-ad65-6cefcb603879.htm" />
+  <HelpKINode Title="NullToVisibilityModificado.NullToVisibilityModificado constructor" Url="html/d4f7ebbf-62de-f0c1-7836-5cbb6b7aa041.htm" />
+  <HelpKINode Title="NumeroLoteTB field" Url="html/e4bc5e12-b56e-a135-033d-6caab6ca2a47.htm" />
+  <HelpKINode Title="ObtenerNiasDisponibles method" Url="html/0f1d765f-e5f4-8331-4777-70d07ba4e75a.htm" />
+  <HelpKINode Title="OpcionesSUButton field" Url="html/e0a38a28-c850-20a7-cb01-b49ea1bcfa2b.htm" />
+  <HelpKINode Title="OpcionesSUButton_Click method" Url="html/44586a47-4ac4-ba97-3430-6d1adb55fd08.htm" />
+  <HelpKINode Title="OpcionesSuperUsuario class">
+    <HelpKINode Title="OpcionesSuperUsuario (Clase)" Url="html/b2a7079a-4328-a27a-7156-fa3d8e6789ad.htm" />
+    <HelpKINode Title="constructor" Url="html/da9ba21c-23e5-3421-3295-43da3c106263.htm" />
+    <HelpKINode Title="events" Url="html/acaa4492-153c-a7cf-6f7b-3e04b19dae33.htm" />
+    <HelpKINode Title="fields" Url="html/ae84e760-cac2-4706-b2cd-04f21558f0fa.htm" />
+    <HelpKINode Title="methods" Url="html/cecdecd6-ec12-9f6c-72b1-2a5ad583fd26.htm" />
+    <HelpKINode Title="properties" Url="html/e1866d39-f5bc-1732-1355-2363ec7cc098.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OpcionesSuperUsuario.InitializeComponent method" Url="html/cfde7e7d-36e8-d0a7-8d2c-0aec9768f5c2.htm" />
+  <HelpKINode Title="OpcionesSuperUsuario.OpcionesSuperUsuario constructor" Url="html/da9ba21c-23e5-3421-3295-43da3c106263.htm" />
+  <HelpKINode Title="OpcionesSuperUsuario.vm field" Url="html/4e6dd477-f67c-430a-fc1f-929a39d9d8c8.htm" />
+  <HelpKINode Title="OpcionesSuperUsuario._contentLoaded field" Url="html/bd499587-79a4-80d0-16b2-dc2d62c87425.htm" />
+  <HelpKINode Title="OpcionesSuperUsuarioVM class">
+    <HelpKINode Title="OpcionesSuperUsuarioVM (Clase)" Url="html/3823a4cb-ef23-cdc0-c5c7-b78dcacc1d02.htm" />
+    <HelpKINode Title="constructor" Url="html/b994bbd6-7280-a929-ba53-085cb0157c66.htm" />
+    <HelpKINode Title="events" Url="html/ef065b29-a5ce-3e4f-2dd2-2db29739fe86.htm" />
+    <HelpKINode Title="methods" Url="html/61b3dc98-6605-5061-0d65-a579069928c9.htm" />
+    <HelpKINode Title="properties" Url="html/0189689b-c84a-4f2b-ec88-186843673aff.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OpcionesSuperUsuarioVM.AbrirVistaNuevoUsuario method" Url="html/a7adf399-edc1-e0d6-9b4a-fdf58f20780c.htm" />
+  <HelpKINode Title="OpcionesSuperUsuarioVM.AbrirVistaUsuarioCommand property" Url="html/a6a684c3-de2b-9e65-74da-1a94a9448c50.htm" />
+  <HelpKINode Title="OpcionesSuperUsuarioVM.CargaInicialCSV method" Url="html/1b0a0d20-fcf7-52ea-532f-7a7b6b01cfc1.htm" />
+  <HelpKINode Title="OpcionesSuperUsuarioVM.CargaInicialCSVCommand property" Url="html/b578afa1-9998-a3c1-49bc-6a913d28e7dd.htm" />
+  <HelpKINode Title="OpcionesSuperUsuarioVM.OpcionesSuperUsuarioVM constructor" Url="html/b994bbd6-7280-a929-ba53-085cb0157c66.htm" />
+  <HelpKINode Title="OpenFileDialogService method" Url="html/cb36c521-1f47-86a2-54a2-8b01223e6e7b.htm" />
+  <HelpKINode Title="password field" Url="html/ab8a76b1-c19d-3565-6bfb-b1b286366eb5.htm" />
+  <HelpKINode Title="Password property">
+    <HelpKINode Title="LogIn.Password (Propiedad )" Url="html/e5d8ca09-f9cc-2925-2578-e5ec0e3c7ede.htm" />
+    <HelpKINode Title="LogInVM.Password (Propiedad )" Url="html/85ec029f-fc15-d48b-81d3-f2a697f16a75.htm" />
+  </HelpKINode>
+  <HelpKINode Title="password1 field">
+    <HelpKINode Title="NuevoUsuarioDialog.password1 (Campo)" Url="html/de19e175-4a09-fdef-c16e-a49dd0f63563.htm" />
+    <HelpKINode Title="NuevoUsuarioVM.password1 (Campo)" Url="html/e82b275e-0e04-88a5-c1cb-94e9b984ebcc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Password1 property">
+    <HelpKINode Title="NuevoUsuarioDialog.Password1 (Propiedad )" Url="html/f4bda94a-6ea2-4007-35bb-84e40927992f.htm" />
+    <HelpKINode Title="NuevoUsuarioVM.Password1 (Propiedad )" Url="html/86bda996-d6c7-3082-7f43-afed0a1cb829.htm" />
+  </HelpKINode>
+  <HelpKINode Title="password2 field">
+    <HelpKINode Title="NuevoUsuarioDialog.password2 (Campo)" Url="html/1e732060-98d2-0a08-3008-fc746ac6c506.htm" />
+    <HelpKINode Title="NuevoUsuarioVM.password2 (Campo)" Url="html/01db2c6c-fd5e-8e29-d72d-a7ed91ef0f71.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Password2 property">
+    <HelpKINode Title="NuevoUsuarioDialog.Password2 (Propiedad )" Url="html/e98317f2-4280-32db-c366-185e3f8dee51.htm" />
+    <HelpKINode Title="NuevoUsuarioVM.Password2 (Propiedad )" Url="html/36db4018-2cac-ee26-b35a-18e622a5c221.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PasswordBox field">
+    <HelpKINode Title="LogIn.PasswordBox (Campo)" Url="html/6b0ae030-10f1-d1b6-543a-73d399aca6e2.htm" />
+    <HelpKINode Title="NuevoUsuarioDialog.PasswordBox (Campo)" Url="html/ac69c9fe-3df5-780a-d2f4-c7bea46fd4bb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PasswordBox2 field" Url="html/03cfd2f5-7553-f58b-1e20-6943b830445d.htm" />
+  <HelpKINode Title="PasswordBox2_PasswordChanged method" Url="html/b6fd52e9-009a-dc31-da6c-5ce15776cca4.htm" />
+  <HelpKINode Title="PasswordBox_PasswordChanged method">
+    <HelpKINode Title="LogIn.PasswordBox_PasswordChanged (M&#233;todo )" Url="html/b3e38cfb-0379-903b-485c-9ec5ab33c8bd.htm" />
+    <HelpKINode Title="NuevoUsuarioDialog.PasswordBox_PasswordChanged (M&#233;todo )" Url="html/3b314478-0db8-d1fd-6c96-378cd642f3ac.htm" />
+  </HelpKINode>
+  <HelpKINode Title="path field" Url="html/cde33c05-db52-b331-0df7-6d7529ee59e6.htm" />
+  <HelpKINode Title="PerteneceXarxa property" Url="html/7e3713e4-7b41-3472-c072-2081484ced51.htm" />
+  <HelpKINode Title="pestanyaActual field" Url="html/c79221ee-89d4-7fa8-5eed-80045ba4a973.htm" />
+  <HelpKINode Title="PestanyaActual property" Url="html/180b2f97-8301-7857-1f7c-40ecac5de8c6.htm" />
+  <HelpKINode Title="PostUsuario method" Url="html/877c3268-8858-f6f2-f562-020ec95f6b93.htm" />
+  <HelpKINode Title="primerApellidoIntroducido field" Url="html/066051da-c392-b3dd-1594-d414554e9eb4.htm" />
+  <HelpKINode Title="PrimerApellidoIntroducido property" Url="html/f0014edb-62b2-1d06-b874-797503eb8334.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop namespace" Url="html/dcf2aa46-32ae-93a9-09ab-6ac018778212.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.App class" Url="html/90d119d5-27cf-463b-9e95-5e22f3d035e4.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.convertidores namespace" Url="html/ba70256e-b836-3ee4-3ff3-9a7fdd0dfff0.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.convertidores.BooleanToSiNo class" Url="html/9a7755d3-9549-ae58-7016-cc0de63b7e70.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.convertidores.IncidenciasToSiNo class" Url="html/ba614cc6-f3e2-723b-b6e8-903d911fb7a3.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.convertidores.NullToVisibilityModificado class" Url="html/31c521b6-c4d5-eb97-f051-3e968ba67f33.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.convertidores.TipoUsuarioToEnabled class" Url="html/70f5ca82-7621-8f7a-c855-74a0edfb8263.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.enumerados namespace" Url="html/dbe87247-dcc6-d0cb-ce52-57c556cc47ce.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.enumerados.EstadoMatricula enumeration" Url="html/1e3a4eb4-b988-52e5-8217-f526f51c8bca.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.MainWindow class" Url="html/6a4227a6-e8b9-476b-8cf2-e2f527a62383.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.mensajeria namespace" Url="html/240be15c-1c0d-9a4b-3f33-b3dd3e577122.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.mensajeria.AlumnoRequestMessage class" Url="html/b3345a43-7bc6-bb19-ff77-c209c2d054b0.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.mensajeria.AsignarLoteRequestMessage class" Url="html/edfc824d-4b39-ac23-5afe-88358138b905.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.mensajeria.EditarLoteRequestMessage class" Url="html/3384baf4-d642-921a-58e0-3682edecfef8.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.mensajeria.IncidenciasRequestMessage class" Url="html/92ecd76c-d522-0b81-8f93-eb02d0a01e24.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.mensajeria.VerLoteRequestMessage class" Url="html/0ee79289-63c8-b352-4f68-ab4a346a8ee1.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.modelo namespace" Url="html/fcc970e5-eaa0-4f39-b869-43c490798393.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.modelo.Alumno class" Url="html/3244c946-a98e-402e-3c02-07420ea7c1cd.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.modelo.Libro class" Url="html/38c5d58c-3f1a-1b95-e508-adf8b1c5e9e1.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.modelo.LibroXarxa class" Url="html/713f1fb3-4008-2b58-62b4-8b01acfa3dfb.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.modelo.Lote class" Url="html/f407bc6f-02cd-9d76-f9cd-165e5994e192.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.modelo.Modalidad class" Url="html/0262daa0-28da-a89e-c837-8183b1d78282.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.modelo.Usuario class" Url="html/b5298066-d74e-d20f-56ac-50542f7618d4.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.servicios namespace" Url="html/7f2aa845-d47e-b928-fd8d-c1e71b169ec2.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.servicios.ServicioAPI class" Url="html/3116f759-1a72-9039-f02e-ae3ff79640d1.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.servicios.ServicioCodigoBarras class" Url="html/f2799b5e-db5b-871f-d161-3fd049f025d0.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.servicios.ServicioCsv class" Url="html/6fa1dc94-794f-3a96-4214-236c10940643.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.servicios.ServicioDatos class" Url="html/276785a2-4e60-fe81-3580-58d41a5e4fe5.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.servicios.ServicioDialogos class" Url="html/c6d7cf45-d3ca-5092-0c93-703341977738.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.servicios.ServicioNavegacion class" Url="html/5a332912-279e-eddd-5518-d445ff136fa8.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.servicios.ServicioSQL class" Url="html/ee609397-78f2-553d-52c3-b4f186c26f5e.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.servicios.ServicioValidarUsuario class" Url="html/b22fa690-164c-6412-f455-aed079f65444.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas namespace" Url="html/2825e0a0-0aa0-d998-e307-bd8a2d2efc76.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.AlumnosUserControl class" Url="html/359a41a2-b17f-178c-f0d0-66eaf56b59d7.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.AsignarLoteDialog class" Url="html/cfd9cfe5-fab3-9780-895b-9bed32a89833.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.DarDeAltaDialog class" Url="html/563fefe3-1930-14a1-992e-8a706211e740.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.EditarAlumnoDialog class" Url="html/df1bf60b-88cf-85c9-5b0e-12cc6fd82a90.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.EditarLote class" Url="html/a41f5e2e-8529-ea07-5b42-523a89e2c5d8.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.GenerarLote class" Url="html/cf40743f-7b6d-4de3-04b8-61c754937728.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.LibrosUserControl class" Url="html/a349c50e-9a15-bdcb-4187-8176e2f2b3c4.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.LogIn class" Url="html/326ffa7d-3c2f-ee8a-5548-dee540242945.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.LotesUserControl class" Url="html/4c887089-80be-61b6-542a-ddff990866f6.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.NuevoUsuarioDialog class" Url="html/282359f2-4747-9d6c-05d1-ad86afbb2605.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.OpcionesSuperUsuario class" Url="html/b2a7079a-4328-a27a-7156-fa3d8e6789ad.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.VerIncidenciasAlumno class" Url="html/320e6343-e34b-ff37-2564-85dfa1533a67.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.VerLoteAlumno class" Url="html/18eb1cb2-e4e9-6bfd-a35e-837929d778da.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vistas.VistaInicialContentControl class" Url="html/54455c0b-9434-6120-1535-100509d14dde.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms namespace" Url="html/58fbab88-e78e-b20b-f99e-6fd2a28660a7.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.AlumnosVM class" Url="html/4e40bf84-1a7b-6a89-52a6-b878cfa15a2b.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.AsignarLoteVM class" Url="html/a95dd965-bca5-794b-8a6e-6110b031982f.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.DarDeAltaAlumnoVM class" Url="html/2d608572-a86b-4e6c-2037-1623e96ac453.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.EditarLoteVM class" Url="html/b9766e52-772e-08b3-6c51-d8be6790f1b7.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.GenerarLoteVM class" Url="html/4631317a-5bb6-e9b5-d088-1b709640fb1a.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.LibrosVM class" Url="html/3350cfea-6dc5-ca5e-c249-b1f1063d879a.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.LogInVM class" Url="html/684bd1c8-22e9-0d18-f5e7-5429c4d09e79.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.LotesVM class" Url="html/7491fd73-974a-a911-83eb-be64a3d5be7b.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.MainWindowVM class" Url="html/32a36471-ddde-0f25-e035-4bfec4549cb9.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.NuevoUsuarioVM class" Url="html/15ed0bad-2084-2877-f9a2-4746ec86a0a7.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.OpcionesSuperUsuarioVM class" Url="html/3823a4cb-ef23-cdc0-c5c7-b78dcacc1d02.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.VerIncidenciasAlumnoVM class" Url="html/84accea2-2edf-475a-d54b-c9bc0337985d.htm" />
+  <HelpKINode Title="Proyecto_Xarxa_Desktop.vms.VerLoteAlumnoVM class" Url="html/287b7336-5f5f-1194-b01a-c5dc88361209.htm" />
+  <HelpKINode Title="PutAlumno method" Url="html/9828a455-ebef-d5fa-442e-ad9a1d83cc59.htm" />
+  <HelpKINode Title="PutLote method" Url="html/307c5ff2-41e4-e8b1-31ae-39aa43cd950d.htm" />
+  <HelpKINode Title="QuitarAlumnosNoXarxa method" Url="html/19306f78-441c-dc01-05b5-4dd7e477e547.htm" />
+  <HelpKINode Title="SalirButton field" Url="html/eb74aae7-f5c1-0988-f597-28e4ceb13335.htm" />
+  <HelpKINode Title="SalirButton_Click method" Url="html/c11dd5c1-650c-9b12-c485-4505962df05f.htm" />
+  <HelpKINode Title="securePassword field" Url="html/a5131d99-77df-e92c-8760-188f5b7ecb0a.htm" />
+  <HelpKINode Title="segundoApellidoIntroducido field" Url="html/6364c3fb-4aec-750b-b238-ddc8300f2139.htm" />
+  <HelpKINode Title="SegundoApellidoIntroducido property" Url="html/299f03d1-b579-ea03-a8e7-e48b65786341.htm" />
+  <HelpKINode Title="SeleccionBusquedaPorNiaButton_Click method" Url="html/a457a63b-e07f-73ea-e1a4-6fd73ab4a76f.htm" />
+  <HelpKINode Title="SeleccionBusquedaPorNombreButton_Click method" Url="html/da3dcc04-3292-4320-2544-d66c3b4e8fa6.htm" />
+  <HelpKINode Title="ServicioAPI class">
+    <HelpKINode Title="ServicioAPI (Clase)" Url="html/3116f759-1a72-9039-f02e-ae3ff79640d1.htm" />
+    <HelpKINode Title="constructor" Url="html/b3888478-fbe4-71c1-7d88-d41090b666f9.htm" />
+    <HelpKINode Title="fields" Url="html/33f33775-c734-91e2-0318-24691b5f323f.htm" />
+    <HelpKINode Title="methods" Url="html/af3b391e-c32b-a007-6333-8d207f3cbc12.htm" />
+    <HelpKINode Title="properties" Url="html/5e27899c-d2f9-9fbc-93c8-28e5c51bdc16.htm" />
+  </HelpKINode>
+  <HelpKINode Title="servicioApi field">
+    <HelpKINode Title="NuevoUsuarioVM.servicioApi (Campo)" Url="html/1f5f1f47-a599-e4cd-dc05-61c982ce0001.htm" />
+    <HelpKINode Title="ServicioValidarUsuario.servicioApi (Campo)" Url="html/0b6ea515-c049-a589-da66-c60790f9f1af.htm" />
+    <HelpKINode Title="ServicioDatos.servicioApi (Campo)" Url="html/be526a2c-2501-ed23-8769-839e1e7cb4f9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="servicioAPI field">
+    <HelpKINode Title="AlumnosVM.servicioAPI (Campo)" Url="html/f539b53e-0a49-1495-c388-0dbc5853f48b.htm" />
+    <HelpKINode Title="DarDeAltaAlumnoVM.servicioAPI (Campo)" Url="html/ad1e5d49-fc74-14f0-58cc-4fd14a915060.htm" />
+    <HelpKINode Title="GenerarLoteVM.servicioAPI (Campo)" Url="html/c013d5f9-400e-56d9-e57b-5fcc92352130.htm" />
+    <HelpKINode Title="LibrosVM.servicioAPI (Campo)" Url="html/39036815-ec97-e923-b50c-1169a13bab01.htm" />
+    <HelpKINode Title="AsignarLoteVM.servicioAPI (Campo)" Url="html/edc6ab64-c977-44be-8c6e-6f2e0e98c391.htm" />
+    <HelpKINode Title="LotesVM.servicioAPI (Campo)" Url="html/a0354ed9-a387-529e-c0d0-35a1efdfe1dd.htm" />
+    <HelpKINode Title="VerIncidenciasAlumnoVM.servicioAPI (Campo)" Url="html/55a9db55-f178-10b9-6d7f-e0b86587face.htm" />
+    <HelpKINode Title="VerLoteAlumnoVM.servicioAPI (Campo)" Url="html/41e9c496-43de-b240-e5aa-60c482d1dd88.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServicioAPI.cliente field" Url="html/8519b806-c37a-2632-3da2-b9e8a00fac4a.htm" />
+  <HelpKINode Title="ServicioAPI.Cliente property" Url="html/58ca961c-f8ab-378e-9e5b-6a363b2a7e77.htm" />
+  <HelpKINode Title="ServicioAPI.DeleteLote method" Url="html/ab381400-b0b3-eb55-8ef3-2371ed8c27ca.htm" />
+  <HelpKINode Title="ServicioAPI.GetAlumno method" Url="html/142c05a3-5e46-60e2-655b-8fa5c3f05cd9.htm" />
+  <HelpKINode Title="ServicioAPI.GetAlumnos method" Url="html/d2d2876d-ac0d-b9d6-0f99-fd9af01d6db4.htm" />
+  <HelpKINode Title="ServicioAPI.GetLibros method" Url="html/0bf1b44e-cfe8-790c-88e8-bf95a2217e47.htm" />
+  <HelpKINode Title="ServicioAPI.GetLote method" Url="html/ffad14f9-1a0f-dc86-8134-e478cbbfedc0.htm" />
+  <HelpKINode Title="ServicioAPI.GetLotes method" Url="html/763977c8-dd77-c9a1-8870-acc004f8a3ed.htm" />
+  <HelpKINode Title="ServicioAPI.GetModalidades method" Url="html/d4be375c-5330-c292-dc24-a14fb55f91ae.htm" />
+  <HelpKINode Title="ServicioAPI.GetUsuario method" Url="html/4a6364ef-7675-1c1d-1373-1030a6aeb87f.htm" />
+  <HelpKINode Title="ServicioAPI.PostUsuario method" Url="html/877c3268-8858-f6f2-f562-020ec95f6b93.htm" />
+  <HelpKINode Title="ServicioAPI.PutAlumno method" Url="html/9828a455-ebef-d5fa-442e-ad9a1d83cc59.htm" />
+  <HelpKINode Title="ServicioAPI.PutLote method" Url="html/307c5ff2-41e4-e8b1-31ae-39aa43cd950d.htm" />
+  <HelpKINode Title="ServicioAPI.ServicioAPI constructor" Url="html/b3888478-fbe4-71c1-7d88-d41090b666f9.htm" />
+  <HelpKINode Title="ServicioCodigoBarras class">
+    <HelpKINode Title="ServicioCodigoBarras (Clase)" Url="html/f2799b5e-db5b-871f-d161-3fd049f025d0.htm" />
+    <HelpKINode Title="constructor" Url="html/c7d38364-8d4a-e38f-eb1a-ac358195d2c0.htm" />
+    <HelpKINode Title="fields" Url="html/2913254e-c53e-8b24-8619-b75257e6a04d.htm" />
+    <HelpKINode Title="methods" Url="html/76aa2fee-238b-5029-12a3-cd39324de96d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServicioCodigoBarras.date field" Url="html/c9c459a6-4980-805b-d3c9-cf018a2e0e7c.htm" />
+  <HelpKINode Title="ServicioCodigoBarras.GenerarCB method" Url="html/4aaf7d48-960f-5b5a-d703-e32e529911ce.htm" />
+  <HelpKINode Title="ServicioCodigoBarras.path field" Url="html/cde33c05-db52-b331-0df7-6d7529ee59e6.htm" />
+  <HelpKINode Title="ServicioCodigoBarras.ServicioCodigoBarras constructor" Url="html/c7d38364-8d4a-e38f-eb1a-ac358195d2c0.htm" />
+  <HelpKINode Title="ServicioCsv class">
+    <HelpKINode Title="ServicioCsv (Clase)" Url="html/6fa1dc94-794f-3a96-4214-236c10940643.htm" />
+    <HelpKINode Title="constructor" Url="html/7656044c-5279-56c6-0096-5356a5cd88f4.htm" />
+    <HelpKINode Title="constructor" Url="html/3886c991-96e4-4a03-05c6-8ab1d0c31d26.htm" />
+    <HelpKINode Title="fields" Url="html/60081669-dd2b-159b-a36e-e40956251982.htm" />
+    <HelpKINode Title="methods" Url="html/8c79cfaa-f093-65d2-40e0-3bd9b85af424.htm" />
+    <HelpKINode Title="properties" Url="html/1cafcf41-921f-78db-62aa-cc9a28cee799.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServicioCsv.EstadoMatriculaStringToEnum method" Url="html/c80ff8a2-3835-4c27-5727-e2bc5c6a0c0d.htm" />
+  <HelpKINode Title="ServicioCsv.GetListaAlumnosFromCSV method" Url="html/587b1be2-356b-32fa-328e-fb73cedfcf0f.htm" />
+  <HelpKINode Title="ServicioCsv.LeeCsvAlumnosGeneral method" Url="html/d75b878e-32ce-42a0-cf39-54962ab7cd01.htm" />
+  <HelpKINode Title="ServicioCsv.LeeCsvAlumnosXarxa method" Url="html/78c3303f-750f-81f0-b400-f5152a07e766.htm" />
+  <HelpKINode Title="ServicioCsv.listaAlumnosDefinitiva field" Url="html/72f0dcc2-e0e0-eb4c-45d3-8002683e3680.htm" />
+  <HelpKINode Title="ServicioCsv.listaAlumnosGeneral field" Url="html/e4ea1c61-04d5-7377-1c23-3f1a20e35642.htm" />
+  <HelpKINode Title="ServicioCsv.ListaAlumnosGeneral property" Url="html/94299529-bb0e-58ab-920b-3d0cfac5eb37.htm" />
+  <HelpKINode Title="ServicioCsv.QuitarAlumnosNoXarxa method" Url="html/19306f78-441c-dc01-05b5-4dd7e477e547.htm" />
+  <HelpKINode Title="ServicioCsv.ServicioCsv constructor">
+    <HelpKINode Title="ServicioCsv (Constructor )" Url="html/3886c991-96e4-4a03-05c6-8ab1d0c31d26.htm" />
+    <HelpKINode Title="ServicioCsv (Constructor )" Url="html/7656044c-5279-56c6-0096-5356a5cd88f4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServicioDatos class">
+    <HelpKINode Title="ServicioDatos (Clase)" Url="html/276785a2-4e60-fe81-3580-58d41a5e4fe5.htm" />
+    <HelpKINode Title="constructor" Url="html/196984e3-6d23-0d2d-5d1b-9a641d7a8037.htm" />
+    <HelpKINode Title="constructor" Url="html/daaef62b-32fe-2529-e693-6ffc31425f71.htm" />
+    <HelpKINode Title="fields" Url="html/4dba54e4-d77b-89bd-9735-c0819ac7c50b.htm" />
+    <HelpKINode Title="methods" Url="html/60cb909f-d348-520b-87fe-866302066a54.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServicioDatos.ObtenerNiasDisponibles method" Url="html/0f1d765f-e5f4-8331-4777-70d07ba4e75a.htm" />
+  <HelpKINode Title="ServicioDatos.servicioApi field" Url="html/be526a2c-2501-ed23-8769-839e1e7cb4f9.htm" />
+  <HelpKINode Title="ServicioDatos.ServicioDatos constructor">
+    <HelpKINode Title="ServicioDatos (Constructor )" Url="html/daaef62b-32fe-2529-e693-6ffc31425f71.htm" />
+    <HelpKINode Title="ServicioDatos (Constructor )" Url="html/196984e3-6d23-0d2d-5d1b-9a641d7a8037.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServicioDialogos class">
+    <HelpKINode Title="ServicioDialogos (Clase)" Url="html/c6d7cf45-d3ca-5092-0c93-703341977738.htm" />
+    <HelpKINode Title="constructor" Url="html/31f54b1e-78e2-f5ad-0337-dab594ad1a0a.htm" />
+    <HelpKINode Title="fields" Url="html/9cd098ff-4ce1-92e0-76ba-b8cb25dbea7e.htm" />
+    <HelpKINode Title="methods" Url="html/d07fef82-9cad-d34d-bdf0-7ba21316ca9d.htm" />
+    <HelpKINode Title="properties" Url="html/45b18ced-bc2d-86f9-c696-944cbaf2420a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServicioDialogos.archivoSeleccionado field" Url="html/8fe666cb-be06-5c88-616e-2aa853c122f7.htm" />
+  <HelpKINode Title="ServicioDialogos.ArchivoSeleccionado property" Url="html/7fe1ff6f-4fa3-6a96-1cca-69688963a4a9.htm" />
+  <HelpKINode Title="ServicioDialogos.MensajeAlerta method" Url="html/44876770-3955-eb55-813c-67642da0815b.htm" />
+  <HelpKINode Title="ServicioDialogos.OpenFileDialogService method" Url="html/cb36c521-1f47-86a2-54a2-8b01223e6e7b.htm" />
+  <HelpKINode Title="ServicioDialogos.ServicioDialogos constructor" Url="html/31f54b1e-78e2-f5ad-0337-dab594ad1a0a.htm" />
+  <HelpKINode Title="ServicioDialogos.ServicioMessageBox method" Url="html/1728065a-8e06-09d5-4ac2-6520d6ccd03c.htm" />
+  <HelpKINode Title="ServicioDialogos.ServicioMessageBoxResult method" Url="html/f3e8f4c6-4384-179a-df99-637d992b37ff.htm" />
+  <HelpKINode Title="ServicioMessageBox method" Url="html/1728065a-8e06-09d5-4ac2-6520d6ccd03c.htm" />
+  <HelpKINode Title="ServicioMessageBoxResult method" Url="html/f3e8f4c6-4384-179a-df99-637d992b37ff.htm" />
+  <HelpKINode Title="ServicioNavegacion class">
+    <HelpKINode Title="ServicioNavegacion (Clase)" Url="html/5a332912-279e-eddd-5518-d445ff136fa8.htm" />
+    <HelpKINode Title="constructor" Url="html/1aaaaf16-37c8-c4c3-2dde-bd3cdd71cb18.htm" />
+    <HelpKINode Title="methods" Url="html/ce33a538-b15c-98a3-f85f-4db6c95889ed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaAlumnos method" Url="html/985e45a4-0599-0ede-55fa-402a90a6b984.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaAsignarLote method" Url="html/99b29b6b-53c9-516a-7309-5bb63e7694e3.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaDarDeAlta method" Url="html/13f772f6-618d-3a22-5f77-7fa0d70951ee.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaEditarLote method" Url="html/1eacdc27-5f68-3e03-c289-677432c95e56.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaGenerarLote method" Url="html/e8fc23e3-4fbd-9951-eb02-5b2b05c4b192.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaLibros method" Url="html/4a51b5b8-949e-bc84-572a-7f51f49b6cd6.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaLogIn method" Url="html/e7b8ba47-9afe-cac2-7906-565dd6b4e3a0.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaLotes method" Url="html/ccf0c943-e673-d6fc-0d71-22db4d9a6b85.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaNuevoUsuario method" Url="html/41e83ecf-469a-6387-9bc1-42806e147fa2.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaOpcionesSU method" Url="html/b6465f91-9210-442f-1225-cc825008d370.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaVerIncidenciasAlumno method" Url="html/284c83ee-9b85-7b58-c20c-9bfdab760e7d.htm" />
+  <HelpKINode Title="ServicioNavegacion.AbrirVistaVerLoteAlumno method" Url="html/561cb06d-6035-4ba3-d179-b56d17bde2e9.htm" />
+  <HelpKINode Title="ServicioNavegacion.ServicioNavegacion constructor" Url="html/1aaaaf16-37c8-c4c3-2dde-bd3cdd71cb18.htm" />
+  <HelpKINode Title="ServicioSQL class">
+    <HelpKINode Title="ServicioSQL (Clase)" Url="html/ee609397-78f2-553d-52c3-b4f186c26f5e.htm" />
+    <HelpKINode Title="constructor" Url="html/f120d69d-3070-262b-81d9-6003cc65b813.htm" />
+    <HelpKINode Title="methods" Url="html/e721235b-ca1d-0fb1-0e0b-843d002371e3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServicioSQL.GetAlumnoByNombreYApellidos method" Url="html/162f0f2f-7060-b9a9-5611-b35b7b555b7d.htm" />
+  <HelpKINode Title="ServicioSQL.HallarUltLote method" Url="html/67376a41-818a-10f8-cac0-54d621e82472.htm" />
+  <HelpKINode Title="ServicioSQL.ServicioSQL constructor" Url="html/f120d69d-3070-262b-81d9-6003cc65b813.htm" />
+  <HelpKINode Title="ServicioValidarUsuario class">
+    <HelpKINode Title="ServicioValidarUsuario (Clase)" Url="html/b22fa690-164c-6412-f455-aed079f65444.htm" />
+    <HelpKINode Title="constructor" Url="html/7d85443f-5b89-117f-dbd8-15aa45d021eb.htm" />
+    <HelpKINode Title="fields" Url="html/185a87c7-cb60-21f7-d787-8569ce1f5323.htm" />
+    <HelpKINode Title="methods" Url="html/56dc29bf-ad54-9c7e-8dd6-d50f88935d48.htm" />
+    <HelpKINode Title="properties" Url="html/772629ae-939b-3354-e9a2-074a99d208ba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="servicioValidarUsuario field" Url="html/96d9b063-a074-cb3d-1cfa-908080f1290d.htm" />
+  <HelpKINode Title="ServicioValidarUsuario.servicioApi field" Url="html/0b6ea515-c049-a589-da66-c60790f9f1af.htm" />
+  <HelpKINode Title="ServicioValidarUsuario.ServicioValidarUsuario constructor" Url="html/7d85443f-5b89-117f-dbd8-15aa45d021eb.htm" />
+  <HelpKINode Title="ServicioValidarUsuario.Sha256encrypt method" Url="html/a8519637-e4f4-a9ad-6cf5-811b3f61dd7f.htm" />
+  <HelpKINode Title="ServicioValidarUsuario.usuarioActual field" Url="html/f35a6673-faee-6e5b-6344-67b35d868786.htm" />
+  <HelpKINode Title="ServicioValidarUsuario.UsuarioActual property" Url="html/d88c17e9-e624-b095-bce3-df48c7dee5a4.htm" />
+  <HelpKINode Title="ServicioValidarUsuario.ValidarUsuario method" Url="html/d6eb2cf0-d179-ffad-e5e2-e7dde5c64895.htm" />
+  <HelpKINode Title="Sha256encrypt method" Url="html/a8519637-e4f4-a9ad-6cf5-811b3f61dd7f.htm" />
+  <HelpKINode Title="SoloXarxaToggleButton field" Url="html/96ce70b1-e6ff-2710-af57-42b47dfeb6b8.htm" />
+  <HelpKINode Title="SoloXarxaToggleButton_Click method" Url="html/66ae8d36-d3c9-cb5d-d69c-3c3588a60a19.htm" />
+  <HelpKINode Title="SubMenuLotes field" Url="html/d0c5c213-6bb7-fc20-7485-dfebe65bf1ce.htm" />
+  <HelpKINode Title="textoIncidencias field" Url="html/fcf9e4d6-eedd-2854-1298-4dd04c63cc94.htm" />
+  <HelpKINode Title="TextoIncidencias property" Url="html/1bbd4ae3-e04a-10d2-1724-7750bb108316.htm" />
+  <HelpKINode Title="tipoUsuario field" Url="html/2055750a-ffde-ac90-4ab7-621720ab7c36.htm" />
+  <HelpKINode Title="TipoUsuario property" Url="html/90fc6697-06b8-4cae-a533-9d12f84b6a50.htm" />
+  <HelpKINode Title="TipoUsuarioToEnabled class">
+    <HelpKINode Title="TipoUsuarioToEnabled (Clase)" Url="html/70f5ca82-7621-8f7a-c855-74a0edfb8263.htm" />
+    <HelpKINode Title="constructor" Url="html/08971d0b-51e5-6fb4-e2ff-a0acb19f883f.htm" />
+    <HelpKINode Title="methods" Url="html/a2fa6614-df37-f5fa-b037-fcffaf4f159a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TipoUsuarioToEnabled.Convert method" Url="html/bec094f2-6e31-d3ed-c9c0-98f0360aa49f.htm" />
+  <HelpKINode Title="TipoUsuarioToEnabled.ConvertBack method" Url="html/0786649c-b2d3-ab7f-77cf-a739150aa8de.htm" />
+  <HelpKINode Title="TipoUsuarioToEnabled.TipoUsuarioToEnabled constructor" Url="html/08971d0b-51e5-6fb4-e2ff-a0acb19f883f.htm" />
+  <HelpKINode Title="Titulo property" Url="html/5e91a208-ebf1-2eb4-fa7c-ffefa0721676.htm" />
+  <HelpKINode Title="ToString method" Url="html/7f0849dc-c170-df0e-e29b-87c027b6b651.htm" />
+  <HelpKINode Title="UsernameTextBox field">
+    <HelpKINode Title="LogIn.UsernameTextBox (Campo)" Url="html/f2c4fe14-e2ec-cadf-a8df-0c318dde182f.htm" />
+    <HelpKINode Title="NuevoUsuarioDialog.UsernameTextBox (Campo)" Url="html/8ac3a578-b49e-1f04-f9a5-dfb9b833eb19.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Usuario class">
+    <HelpKINode Title="Usuario (Clase)" Url="html/b5298066-d74e-d20f-56ac-50542f7618d4.htm" />
+    <HelpKINode Title="constructor" Url="html/6b6f1ab4-177f-7532-8841-2d408ed95e3c.htm" />
+    <HelpKINode Title="events" Url="html/f2d7f31c-af13-b403-d7af-c1b15a179b5b.htm" />
+    <HelpKINode Title="fields" Url="html/062b9b13-2b59-0de9-b695-ea0c9125c9ab.htm" />
+    <HelpKINode Title="methods" Url="html/87cd41f3-f307-7ed4-b18e-2ff1643db21d.htm" />
+    <HelpKINode Title="properties" Url="html/8686961f-b523-d6d3-1a24-ce26d8309ad2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Usuario.activo field" Url="html/5da136a9-d4ae-923b-ba6c-9ba6bd096be1.htm" />
+  <HelpKINode Title="Usuario.Activo property" Url="html/c7e40d23-5939-d240-f506-6a8ec4a0efff.htm" />
+  <HelpKINode Title="Usuario.contrasenya field" Url="html/7416d4c6-3b06-e148-5312-081104a99e0a.htm" />
+  <HelpKINode Title="Usuario.Contrasenya property" Url="html/7927d088-b363-3547-677d-24bf338f543d.htm" />
+  <HelpKINode Title="Usuario.nombreUsuario field" Url="html/38800f64-9d61-ed2c-6d46-40ae997b1198.htm" />
+  <HelpKINode Title="Usuario.NombreUsuario property" Url="html/20e14e9b-a752-d2a5-cf3a-cd00b6f958c0.htm" />
+  <HelpKINode Title="Usuario.tipoUsuario field" Url="html/2055750a-ffde-ac90-4ab7-621720ab7c36.htm" />
+  <HelpKINode Title="Usuario.TipoUsuario property" Url="html/90fc6697-06b8-4cae-a533-9d12f84b6a50.htm" />
+  <HelpKINode Title="Usuario.Usuario constructor" Url="html/6b6f1ab4-177f-7532-8841-2d408ed95e3c.htm" />
+  <HelpKINode Title="usuarioActual field" Url="html/f35a6673-faee-6e5b-6344-67b35d868786.htm" />
+  <HelpKINode Title="UsuarioActual property" Url="html/d88c17e9-e624-b095-bce3-df48c7dee5a4.htm" />
+  <HelpKINode Title="usuarioLogeado field" Url="html/6af24e04-14b2-d573-5ed3-dfd3dd0f360b.htm" />
+  <HelpKINode Title="UsuarioLogeado property" Url="html/ffbaa7c7-9af8-7fe6-66a7-aa837de53489.htm" />
+  <HelpKINode Title="usuarioNuevo field" Url="html/8ab84dec-a39c-cba1-b25d-0b45b41d3fe3.htm" />
+  <HelpKINode Title="UsuarioNuevo property" Url="html/19355957-ec07-cc44-cf4e-1bc4fe1f24c3.htm" />
+  <HelpKINode Title="usuarioXarxa field" Url="html/a3d0a22e-3b2f-c7ae-60af-22d3073ad1e4.htm" />
+  <HelpKINode Title="UsuarioXarxa property" Url="html/8ec32ca0-74a1-d66e-6039-d2491d5d7c5b.htm" />
+  <HelpKINode Title="ValidarUsuario method">
+    <HelpKINode Title="LogInVM.ValidarUsuario (M&#233;todo )" Url="html/0313b5cb-ca6c-13f1-6b5b-703d5bbd9b4c.htm" />
+    <HelpKINode Title="ServicioValidarUsuario.ValidarUsuario (M&#233;todo )" Url="html/d6eb2cf0-d179-ffad-e5e2-e7dde5c64895.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ValidarUsuarioCommand property" Url="html/59e76da3-e9d5-69dd-ea06-760cb6f02d96.htm" />
+  <HelpKINode Title="VerIncidenciasAlumno class">
+    <HelpKINode Title="VerIncidenciasAlumno (Clase)" Url="html/320e6343-e34b-ff37-2564-85dfa1533a67.htm" />
+    <HelpKINode Title="constructor" Url="html/55e75319-2460-4284-50f0-7766b1286f89.htm" />
+    <HelpKINode Title="events" Url="html/32e54add-044a-3dab-9a1d-162b01b80cc4.htm" />
+    <HelpKINode Title="fields" Url="html/ac6aa341-5e2d-5ac5-47fc-7848f0f24fe6.htm" />
+    <HelpKINode Title="methods" Url="html/10730d34-6896-e083-bdd2-e1993bf95f68.htm" />
+    <HelpKINode Title="properties" Url="html/fa0b241a-8f3a-d4a1-2101-b78b5547fc5c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VerIncidenciasAlumno method" Url="html/83a4c07a-9390-dba4-123f-e8bb38c808ab.htm" />
+  <HelpKINode Title="VerIncidenciasAlumno.InitializeComponent method" Url="html/f400ad4c-c6d8-3f79-c9da-7e515b9cd4e6.htm" />
+  <HelpKINode Title="VerIncidenciasAlumno.VerIncidenciasAlumno constructor" Url="html/55e75319-2460-4284-50f0-7766b1286f89.htm" />
+  <HelpKINode Title="VerIncidenciasAlumno.vm field" Url="html/1dd506e5-6a6e-5329-0f0b-9a2a5e5568a2.htm" />
+  <HelpKINode Title="VerIncidenciasAlumno._contentLoaded field" Url="html/75ee901b-2517-89e1-f309-4c48027b83e7.htm" />
+  <HelpKINode Title="VerIncidenciasAlumnoVM class">
+    <HelpKINode Title="VerIncidenciasAlumnoVM (Clase)" Url="html/84accea2-2edf-475a-d54b-c9bc0337985d.htm" />
+    <HelpKINode Title="constructor" Url="html/34f14523-781a-c314-1af6-b370c183c321.htm" />
+    <HelpKINode Title="events" Url="html/a0dd53d1-abd6-30a6-094a-00302ec67025.htm" />
+    <HelpKINode Title="fields" Url="html/efbb9913-245c-1b16-77a1-01504525f145.htm" />
+    <HelpKINode Title="methods" Url="html/c9e7be29-5615-8899-7296-8de0358ff160.htm" />
+    <HelpKINode Title="properties" Url="html/3d88ef8d-e627-3fee-fc0a-25a94e525bee.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VerIncidenciasAlumnoVM.alumnoSeleccionado field" Url="html/057fb107-728d-0b82-aa4b-f9140e4387bf.htm" />
+  <HelpKINode Title="VerIncidenciasAlumnoVM.AlumnoSeleccionado property" Url="html/459cc4eb-48a6-5d1f-c28b-77139dc1fcbe.htm" />
+  <HelpKINode Title="VerIncidenciasAlumnoVM.GuardarIncidencia method" Url="html/90e04549-7ce1-1b47-ef29-d340d8768ec1.htm" />
+  <HelpKINode Title="VerIncidenciasAlumnoVM.GuardarIncidenciaCommand property" Url="html/acd399bc-eb85-905a-82a8-f2916522d28d.htm" />
+  <HelpKINode Title="VerIncidenciasAlumnoVM.servicioAPI field" Url="html/55a9db55-f178-10b9-6d7f-e0b86587face.htm" />
+  <HelpKINode Title="VerIncidenciasAlumnoVM.textoIncidencias field" Url="html/fcf9e4d6-eedd-2854-1298-4dd04c63cc94.htm" />
+  <HelpKINode Title="VerIncidenciasAlumnoVM.TextoIncidencias property" Url="html/1bbd4ae3-e04a-10d2-1724-7750bb108316.htm" />
+  <HelpKINode Title="VerIncidenciasAlumnoVM.VerIncidenciasAlumnoVM constructor" Url="html/34f14523-781a-c314-1af6-b370c183c321.htm" />
+  <HelpKINode Title="VerIncidenciasCommand property" Url="html/5f61590a-6c92-4399-21be-b55fbdf99b26.htm" />
+  <HelpKINode Title="VerLoteAlumno class">
+    <HelpKINode Title="VerLoteAlumno (Clase)" Url="html/18eb1cb2-e4e9-6bfd-a35e-837929d778da.htm" />
+    <HelpKINode Title="constructor" Url="html/95b095e3-e485-134a-bc40-7c4c33974828.htm" />
+    <HelpKINode Title="events" Url="html/7ad4bcc5-d0ab-d3b6-cd94-af4883d1809a.htm" />
+    <HelpKINode Title="fields" Url="html/a350096d-6f8b-1e07-cb84-b42aa0b3a884.htm" />
+    <HelpKINode Title="methods" Url="html/47f62633-667f-9d5f-e9f9-4af778053393.htm" />
+    <HelpKINode Title="properties" Url="html/6a501bc9-34fb-3c99-fd76-bc3116d0e70d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VerLoteAlumno method" Url="html/9361d343-cbfc-4f35-364f-e1f448fed9e3.htm" />
+  <HelpKINode Title="VerLoteAlumno.InitializeComponent method" Url="html/66c7fcb0-aa3d-2978-367b-3579710dc55b.htm" />
+  <HelpKINode Title="VerLoteAlumno.VerLoteAlumno constructor" Url="html/95b095e3-e485-134a-bc40-7c4c33974828.htm" />
+  <HelpKINode Title="VerLoteAlumno.vm field" Url="html/cb84cc7d-b3c9-27a2-3525-5f2869e71333.htm" />
+  <HelpKINode Title="VerLoteAlumno._contentLoaded field" Url="html/426ebf4a-4d2b-5117-890c-9d74f80d00b9.htm" />
+  <HelpKINode Title="VerLoteAlumnoCommand property" Url="html/e06c8412-e95c-11c4-aabc-4dbd632c4e5a.htm" />
+  <HelpKINode Title="VerLoteAlumnoVM class">
+    <HelpKINode Title="VerLoteAlumnoVM (Clase)" Url="html/287b7336-5f5f-1194-b01a-c5dc88361209.htm" />
+    <HelpKINode Title="constructor" Url="html/40285436-1d08-3980-edb5-da642b266f07.htm" />
+    <HelpKINode Title="events" Url="html/ea099702-ab5b-5e96-1290-3fb6d2b9697a.htm" />
+    <HelpKINode Title="fields" Url="html/c5f9ca1a-b030-4597-e78f-5b8ab21d008e.htm" />
+    <HelpKINode Title="methods" Url="html/1ec7ca7a-ba34-c021-c90d-9b6b16f6284d.htm" />
+    <HelpKINode Title="properties" Url="html/3de2ea03-3e2b-81a5-61c0-f980802863b2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VerLoteAlumnoVM.alumno field" Url="html/e7eb6544-2826-bde9-0e37-60e01ba8f762.htm" />
+  <HelpKINode Title="VerLoteAlumnoVM.Alumno property" Url="html/31e419d7-d6c1-f325-37cf-816a027344c8.htm" />
+  <HelpKINode Title="VerLoteAlumnoVM.loteAlumno field" Url="html/13432807-701d-c0a2-296e-76311ceb0600.htm" />
+  <HelpKINode Title="VerLoteAlumnoVM.LoteAlumno property" Url="html/5bcabcb0-5ca6-ab1e-47cf-214507db9bb2.htm" />
+  <HelpKINode Title="VerLoteAlumnoVM.servicioAPI field" Url="html/41e9c496-43de-b240-e5aa-60c482d1dd88.htm" />
+  <HelpKINode Title="VerLoteAlumnoVM.VerLoteAlumnoVM constructor" Url="html/40285436-1d08-3980-edb5-da642b266f07.htm" />
+  <HelpKINode Title="VerLoteRequestMessage class">
+    <HelpKINode Title="VerLoteRequestMessage (Clase)" Url="html/0ee79289-63c8-b352-4f68-ab4a346a8ee1.htm" />
+    <HelpKINode Title="constructor" Url="html/3a062b51-4cc3-414f-752f-c4abb0c08bd8.htm" />
+    <HelpKINode Title="methods" Url="html/af229dde-df18-9892-8605-13ffd2b50e89.htm" />
+    <HelpKINode Title="properties" Url="html/81975aea-d4c2-4f59-4888-c195e34b4b8e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VerLoteRequestMessage.VerLoteRequestMessage constructor" Url="html/3a062b51-4cc3-414f-752f-c4abb0c08bd8.htm" />
+  <HelpKINode Title="VistaInicialContentControl class">
+    <HelpKINode Title="VistaInicialContentControl (Clase)" Url="html/54455c0b-9434-6120-1535-100509d14dde.htm" />
+    <HelpKINode Title="constructor" Url="html/ef02e6b7-c6e4-07b3-e9bc-0916ed782e36.htm" />
+    <HelpKINode Title="events" Url="html/f6a6a2ae-0de0-2f4e-c025-0f3ff2a8b2c9.htm" />
+    <HelpKINode Title="fields" Url="html/33a60b6c-ddb4-caaa-628b-973557293f24.htm" />
+    <HelpKINode Title="methods" Url="html/86097ba2-1967-a9fd-1af3-ab9afd6952f5.htm" />
+    <HelpKINode Title="properties" Url="html/4dea679c-3907-6979-8ae3-62e460a49b15.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VistaInicialContentControl.InitializeComponent method" Url="html/cdc6c07a-7ca3-56a5-7b12-a04ff1611e4d.htm" />
+  <HelpKINode Title="VistaInicialContentControl.VistaInicialContentControl constructor" Url="html/ef02e6b7-c6e4-07b3-e9bc-0916ed782e36.htm" />
+  <HelpKINode Title="VistaInicialContentControl._contentLoaded field" Url="html/97347730-6796-50e0-4a65-71f768ae3d4d.htm" />
+  <HelpKINode Title="vm field">
+    <HelpKINode Title="AlumnosUserControl.vm (Campo)" Url="html/a3a64d28-9722-7a2c-cd58-b90e388e4802.htm" />
+    <HelpKINode Title="AsignarLoteDialog.vm (Campo)" Url="html/2731abb4-7918-87e2-9214-43c90056c96a.htm" />
+    <HelpKINode Title="DarDeAltaDialog.vm (Campo)" Url="html/fdcad154-45ea-5975-9014-2bf7a660bf79.htm" />
+    <HelpKINode Title="EditarLote.vm (Campo)" Url="html/d1b23aa6-5228-1e7d-93f3-055cdf0d4dfa.htm" />
+    <HelpKINode Title="GenerarLote.vm (Campo)" Url="html/5f8bc98e-d3a0-bfc9-12bc-71a610c78eb1.htm" />
+    <HelpKINode Title="LibrosUserControl.vm (Campo)" Url="html/08fe38a7-1439-425d-9fda-23b2d074fde4.htm" />
+    <HelpKINode Title="LogIn.vm (Campo)" Url="html/80e52f91-6e27-b026-fe86-0e8dbbf5c4ae.htm" />
+    <HelpKINode Title="LotesUserControl.vm (Campo)" Url="html/c61f4456-96e5-b53a-0723-e232bdf57ad0.htm" />
+    <HelpKINode Title="MainWindow.vm (Campo)" Url="html/5da51d57-b95d-c4f4-4811-48ccdcd97a6d.htm" />
+    <HelpKINode Title="NuevoUsuarioDialog.vm (Campo)" Url="html/f77a6f8b-1917-6f44-a552-968832354284.htm" />
+    <HelpKINode Title="OpcionesSuperUsuario.vm (Campo)" Url="html/4e6dd477-f67c-430a-fc1f-929a39d9d8c8.htm" />
+    <HelpKINode Title="VerIncidenciasAlumno.vm (Campo)" Url="html/1dd506e5-6a6e-5329-0f0b-9a2a5e5568a2.htm" />
+    <HelpKINode Title="VerLoteAlumno.vm (Campo)" Url="html/cb84cc7d-b3c9-27a2-3525-5f2869e71333.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VolverAtrasButton field" Url="html/2c4b2759-b684-96d0-32e4-4eb1c3767d33.htm" />
+  <HelpKINode Title="VolverAtrasButton_Click method" Url="html/36faaacf-1c23-2cdb-e1a1-db5ed7919578.htm" />
+  <HelpKINode Title="_apellido1 field" Url="html/4d9ea246-1ab1-beda-5006-f9083670ad2c.htm" />
+  <HelpKINode Title="_apellido2 field" Url="html/752c0f85-2604-6f9e-515a-0b2f4b7953c4.htm" />
+  <HelpKINode Title="_codigoXarxa field" Url="html/4a8996dd-5732-812a-fa30-c6e7bfb51d68.htm" />
+  <HelpKINode Title="_contentLoaded field">
+    <HelpKINode Title="AlumnosUserControl._contentLoaded (Campo)" Url="html/e3c4ef5b-3c4f-e345-4a4a-50c999d3fd1e.htm" />
+    <HelpKINode Title="App._contentLoaded (Campo)" Url="html/9d16beef-a55f-e7a7-4c8e-6023e0ed57a4.htm" />
+    <HelpKINode Title="AsignarLoteDialog._contentLoaded (Campo)" Url="html/f31eda47-58d2-8dac-4c00-572b022eb551.htm" />
+    <HelpKINode Title="DarDeAltaDialog._contentLoaded (Campo)" Url="html/4655507d-2181-0880-1f89-9f2c69c1bb92.htm" />
+    <HelpKINode Title="EditarAlumnoDialog._contentLoaded (Campo)" Url="html/705c246e-4905-fd6c-b5ee-a6f3b09b1426.htm" />
+    <HelpKINode Title="EditarLote._contentLoaded (Campo)" Url="html/794644a5-8393-6ad5-2327-588edb8b1c8f.htm" />
+    <HelpKINode Title="GenerarLote._contentLoaded (Campo)" Url="html/3e9ad14b-ac78-006f-d024-ebc2880f6017.htm" />
+    <HelpKINode Title="LibrosUserControl._contentLoaded (Campo)" Url="html/681eae05-3c5e-6888-27a5-693077b0a983.htm" />
+    <HelpKINode Title="LogIn._contentLoaded (Campo)" Url="html/0aae16f6-376e-7522-0b98-25af71d340a6.htm" />
+    <HelpKINode Title="LotesUserControl._contentLoaded (Campo)" Url="html/a38d95dd-972c-3219-b0b5-928e40cdd8c1.htm" />
+    <HelpKINode Title="MainWindow._contentLoaded (Campo)" Url="html/b10eae78-2a21-7275-6b74-164c25038f81.htm" />
+    <HelpKINode Title="NuevoUsuarioDialog._contentLoaded (Campo)" Url="html/471e7319-06b0-1400-f8d4-22cac8588617.htm" />
+    <HelpKINode Title="OpcionesSuperUsuario._contentLoaded (Campo)" Url="html/bd499587-79a4-80d0-16b2-dc2d62c87425.htm" />
+    <HelpKINode Title="VerIncidenciasAlumno._contentLoaded (Campo)" Url="html/75ee901b-2517-89e1-f309-4c48027b83e7.htm" />
+    <HelpKINode Title="VerLoteAlumno._contentLoaded (Campo)" Url="html/426ebf4a-4d2b-5117-890c-9d74f80d00b9.htm" />
+    <HelpKINode Title="VistaInicialContentControl._contentLoaded (Campo)" Url="html/97347730-6796-50e0-4a65-71f768ae3d4d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_curso field">
+    <HelpKINode Title="Alumno._curso (Campo)" Url="html/2dc0b127-4f92-5c14-50f7-f0cbcfaa037a.htm" />
+    <HelpKINode Title="Libro._curso (Campo)" Url="html/43e1f64d-93ff-333f-56a6-d06210bb64c6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_departamento field" Url="html/40b886bf-7f7e-4709-737f-84ff98dafada.htm" />
+  <HelpKINode Title="_editorial field" Url="html/eb889289-5248-1cbe-579e-9d2327fd06d3.htm" />
+  <HelpKINode Title="_grupo field" Url="html/14286fdf-1f58-59a2-20ec-7716c2954ee6.htm" />
+  <HelpKINode Title="_id field" Url="html/477d8aa3-a51a-a698-dd1e-f2017cc9025f.htm" />
+  <HelpKINode Title="_idLote field" Url="html/c58cf9b6-df77-8ce4-aaa2-7a85af382d16.htm" />
+  <HelpKINode Title="_incidencias field" Url="html/120de8bb-9ca6-b507-12cc-d9113f8900e0.htm" />
+  <HelpKINode Title="_isbn field" Url="html/c2b4395d-d101-c7e7-3b7e-1a88bdb5af3f.htm" />
+  <HelpKINode Title="_librosLote field" Url="html/aa364777-ac94-92ca-b21e-f722a4be6eaa.htm" />
+  <HelpKINode Title="_librosModalidad field" Url="html/7c37398f-cbe1-6f29-c026-0a99d52f496c.htm" />
+  <HelpKINode Title="_lote field" Url="html/05bc6bd1-1b28-62e7-5dfc-60f2212ee3f2.htm" />
+  <HelpKINode Title="_matricula field" Url="html/1d89c741-b6b9-9856-5aa7-12fbbc18033d.htm" />
+  <HelpKINode Title="_modalidadLote field" Url="html/afcdd98c-d4dc-9afd-aec8-3e087b1c4209.htm" />
+  <HelpKINode Title="_nia field" Url="html/80b03a23-795d-49dd-0045-61945f4c927d.htm" />
+  <HelpKINode Title="_nombre field">
+    <HelpKINode Title="Alumno._nombre (Campo)" Url="html/88f3d1e0-dbf4-f381-5b81-7fea75db3653.htm" />
+    <HelpKINode Title="Modalidad._nombre (Campo)" Url="html/a9c7e019-2cef-d61c-8c42-4f9775b75175.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_perteneceXarxa field" Url="html/f74f6ca3-ab40-2f8f-f8fa-fdca4b0ffa60.htm" />
+  <HelpKINode Title="_titulo field" Url="html/7e8bc8e9-bc21-5670-a2e7-c28b352936f4.htm" />
+</HelpKI>
