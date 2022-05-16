@@ -1,0 +1,9 @@
+﻿<Window x:Class="Proyecto_Xarxa_Desktop.vistasInformes.InformeEtiquetas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cr="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer"
+        Title="Informe etiquetas" Icon="../assets/report.png" Width="1080" Height="600" MinWidth="1080" MinHeight="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <cr:CrystalReportsViewer Name="reportViewerEtiquetas"/>
+    </Grid>
+</Window>

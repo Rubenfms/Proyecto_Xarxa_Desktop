@@ -114,6 +114,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// Abre la vista the informe recogida.
         /// </summary>
         internal static void AbrirInformeRecogida() => new InformeRecogida().ShowDialog();
+        internal static void AbrirInformeLotes() => new InformeLotes().ShowDialog();
+        internal static void AbrirInformeEtiquetas() => new InformeEtiquetas().ShowDialog();
+        internal static void AbrirInformeEtiquetasBolsa() => new InformeEtiquetasBolsa().ShowDialog();
 
     }
 }

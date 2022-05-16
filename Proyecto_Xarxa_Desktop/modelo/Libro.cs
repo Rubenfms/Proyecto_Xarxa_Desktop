@@ -128,5 +128,11 @@ namespace Proyecto_Xarxa_Desktop.modelo
         {
 
         }
+
+        public override string ToString()
+        {
+            return Isbn + " - " + Titulo + " - " + Editorial;
+        }
+
     }
 }

@@ -196,6 +196,24 @@
       <DependentUpon>ConcesionReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="informes\EtiquetasBolsaReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtiquetasBolsaReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\EtiquetasReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtiquetasReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="informes\LotesReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LotesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="informes\RecogidaReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -218,6 +236,7 @@
     <Compile Include="mensajeria\EditarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\IncidenciasRequestMessage.cs" />
     <Compile Include="mensajeria\VerLoteRequestMessage.cs" />
+    <Compile Include="modelo\LoteInformeEtiquetas.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="servicios\ServicioAPI.cs" />
     <Compile Include="servicios\ServicioCodigoBarras.cs" />
@@ -229,6 +248,15 @@
     <Compile Include="servicios\ServicioValidarUsuario.cs" />
     <Compile Include="vistasInformes\InformeConcesion.xaml.cs">
       <DependentUpon>InformeConcesion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistasInformes\InformeEtiquetas.xaml.cs">
+      <DependentUpon>InformeEtiquetas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistasInformes\InformeEtiquetasBolsa.xaml.cs">
+      <DependentUpon>InformeEtiquetasBolsa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistasInformes\InformeLotes.xaml.cs">
+      <DependentUpon>InformeLotes.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistasInformes\InformeRecogida.xaml.cs">
       <DependentUpon>InformeRecogida.xaml</DependentUpon>
@@ -316,6 +344,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="vistasInformes\InformeConcesion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistasInformes\InformeEtiquetas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistasInformes\InformeEtiquetasBolsa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistasInformes\InformeLotes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -419,6 +459,18 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ConcesionReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="informes\EtiquetasBolsaReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtiquetasBolsaReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\EtiquetasReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtiquetasReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informes\LotesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LotesReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="informes\RecogidaReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RecogidaReport.cs</LastGenOutput>
@@ -483,6 +535,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\editlote.ico" />
+    <Resource Include="assets\report.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets')" />

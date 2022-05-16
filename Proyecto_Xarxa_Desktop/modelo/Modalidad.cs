@@ -87,6 +87,21 @@ namespace Proyecto_Xarxa_Desktop.modelo
             set { SetProperty(ref curso, value); }
         }
 
+        // PARA LOS INFORMES
+        public string Libros
+        {
+            get
+            {
+                StringBuilder libros = new StringBuilder();
+                foreach(Libro l in LibrosModalidad)
+                {
+                    libros.Append(l.ToString()).Append("\n");
+                    libros.Append("\t\t\t\t\t--------------------------------------------------").Append("\n");
+                }
+                return libros.ToString();
+            }
+        }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Modalidad"/> class.
         /// </summary>
