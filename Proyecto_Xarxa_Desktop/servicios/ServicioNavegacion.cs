@@ -93,6 +93,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <returns></returns>
         internal static UserControl AbrirVistaInformes() => new InformesUserControl();
 
+        /// <summary>
+        /// Abre la vista anyadir alumno
+        /// </summary>
+        internal static void AbrirVistaAnyadirAlumno() => new AnyadirAlumno().ShowDialog();
+
         // INFORMES
 
         /// <summary>

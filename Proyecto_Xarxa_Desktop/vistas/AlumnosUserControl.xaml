@@ -103,6 +103,10 @@
         <StackPanel VerticalAlignment="Center" DockPanel.Dock="Right">
             <Button
                 Margin="10"
+                Command="{Binding AnyadirAlumnoCommand}"
+                Content="Crear nuevo alumno" />
+            <Button
+                Margin="10"
                 Command="{Binding Path=VerLoteAlumnoCommand}"
                 Content="Ver Lote" />
             <Button
