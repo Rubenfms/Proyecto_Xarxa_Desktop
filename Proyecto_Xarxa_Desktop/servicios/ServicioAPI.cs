@@ -21,6 +21,8 @@ namespace Proyecto_Xarxa_Desktop.servicios
     class ServicioAPI
     {
 
+        public const string COOKIE_SESSION = "JSESSIONID";
+
         private RestClient cliente;
 
         public RestClient Cliente
@@ -38,6 +40,35 @@ namespace Proyecto_Xarxa_Desktop.servicios
             Cliente = new RestClient(cadenaConexion);
         }
 
+        public string GetSessionId()
+        {
+           return System.Windows.Application.Current.Resources["sessionId"] != null 
+                ? System.Windows.Application.Current.Resources["sessionId"].ToString() : "";
+        }
+
+        #region Métodos Auth
+
+        public string LoginUsuario(string nombreUsuario, string contrasenya)
+        {
+            string sessionId = "";
+            var request = new RestRequest("/xarxa/auth/login", Method.POST);
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("Content-Type", "application/json");
+
+            Usuario u = new Usuario(nombreUsuario, contrasenya);
+            var body = JsonConvert.SerializeObject(u);
+            request.AddParameter("application/json", body, ParameterType.RequestBody);
+
+            IRestResponse response = Cliente.Execute(request);
+            if (response.Cookies != null && response.Cookies.Count > 0)
+            {
+                sessionId = response.Cookies[0].Value;
+            }
+            return sessionId;
+        }
+
+        #endregion
+
         #region Métodos Lotes   
         /// <summary>
         /// Método que devuelve todos los lotes     
@@ -52,6 +83,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 ObservableCollection<Lote> result = new ObservableCollection<Lote>();
 
                 RestRequest peticion = new RestRequest("/xarxa/lotes", Method.GET);
+                peticion.AddCookie(COOKIE_SESSION, GetSessionId());
 
                 var response = Cliente.ExecuteGetAsync(peticion);
 
@@ -87,6 +119,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 Lote result = new Lote();
 
                 RestRequest peticion = new RestRequest($"/xarxa/lotes/{id}", Method.GET);
+                peticion.AddCookie(COOKIE_SESSION, GetSessionId());
 
                 var response = Cliente.ExecuteGetAsync(peticion);
 
@@ -106,7 +139,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 return null;
                 throw;
             }
-            catch(JsonSerializationException)
+            catch (JsonSerializationException)
             {
                 return null;
             }
@@ -122,6 +155,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         public HttpStatusCode? PutLote(Lote lote)
         {
             var request = new RestRequest("/xarxa/lotes", Method.PUT);
+            request.AddCookie(COOKIE_SESSION, GetSessionId());
 
             request.AddHeader("Accept", "application/json");
             request.AddHeader("x-", "");
@@ -145,6 +179,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         public HttpStatusCode? DeleteLote(int id)
         {
             var request = new RestRequest($"/xarxa/lotes/{id}", Method.DELETE);
+            request.AddCookie(COOKIE_SESSION, GetSessionId());
 
             request.AddHeader("Accept", "application/json");
             request.AddHeader("x-", "");
@@ -155,7 +190,6 @@ namespace Proyecto_Xarxa_Desktop.servicios
             return response.StatusCode;
 
         }
-
 
         #endregion
 
@@ -173,6 +207,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 ObservableCollection<Modalidad> result = new ObservableCollection<Modalidad>();
 
                 RestRequest peticion = new RestRequest("/xarxa/modalidades", Method.GET);
+                peticion.AddCookie(COOKIE_SESSION, GetSessionId());
 
                 var response = Cliente.Execute(peticion);
 
@@ -211,6 +246,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 Usuario result = new Usuario();
 
                 RestRequest peticion = new RestRequest($"/xarxa/usuarios/{username}", Method.GET);
+                peticion.AddCookie(COOKIE_SESSION, GetSessionId());
 
                 var response = Cliente.Execute(peticion);
 
@@ -247,6 +283,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                     Timeout = -1
                 };
                 var request = new RestRequest(Method.POST);
+                request.AddCookie(COOKIE_SESSION, GetSessionId());
                 request.AddHeader("Accept", "application/json");
                 request.AddHeader("x-", "");
                 request.AddHeader("Content-Type", "application/json");
@@ -276,6 +313,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 ObservableCollection<Usuario> result = new ObservableCollection<Usuario>();
 
                 RestRequest peticion = new RestRequest("/xarxa/usuarios", Method.GET);
+                peticion.AddCookie(COOKIE_SESSION, GetSessionId());
 
                 var response = Cliente.Execute(peticion);
 
@@ -305,6 +343,8 @@ namespace Proyecto_Xarxa_Desktop.servicios
         public HttpStatusCode? PutUsuario(Usuario usuario)
         {
             var request = new RestRequest("/xarxa/usuarios", Method.PUT);
+            request.AddCookie(COOKIE_SESSION, GetSessionId());
+
 
             request.AddHeader("Accept", "application/json");
             request.AddHeader("x-", "");
@@ -333,6 +373,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 ObservableCollection<Alumno> result = new ObservableCollection<Alumno>();
 
                 RestRequest peticion = new RestRequest("/xarxa/alumnos", Method.GET);
+                peticion.AddCookie(COOKIE_SESSION, GetSessionId());
 
                 var response = Cliente.Execute(peticion);
 
@@ -368,6 +409,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 Alumno result = new Alumno();
 
                 RestRequest peticion = new RestRequest($"/xarxa/alumnos/{nia}", Method.GET);
+                peticion.AddCookie(COOKIE_SESSION, GetSessionId());
 
                 var response = Cliente.Execute(peticion);
 
@@ -392,6 +434,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         public HttpStatusCode? PutAlumno(Alumno alumno)
         {
             var request = new RestRequest("/xarxa/alumnos", Method.PUT);
+            request.AddCookie(COOKIE_SESSION, GetSessionId());
 
             request.AddHeader("Accept", "application/json");
             request.AddHeader("x-", "");
@@ -421,6 +464,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 ObservableCollection<Libro> result = new ObservableCollection<Libro>();
 
                 RestRequest peticion = new RestRequest("/xarxa/libros", Method.GET);
+                peticion.AddCookie(COOKIE_SESSION, GetSessionId());
 
                 var response = Cliente.Execute(peticion);
 
