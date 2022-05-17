@@ -273,6 +273,9 @@
     <Compile Include="vistas\AlumnosUserControl.xaml.cs">
       <DependentUpon>AlumnosUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\AnyadirAlumno.xaml.cs">
+      <DependentUpon>AnyadirAlumno.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\AsignarLoteDialog.xaml.cs">
       <DependentUpon>AsignarLoteDialog.xaml</DependentUpon>
     </Compile>
@@ -317,6 +320,7 @@
     </Compile>
     <Compile Include="vms\AdministrarUsuariosVM.cs" />
     <Compile Include="vms\AlumnosVM.cs" />
+    <Compile Include="vms\AnyadirAlumnoVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
     <Compile Include="vms\InformesVM.cs" />
@@ -376,6 +380,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\AlumnosUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\AnyadirAlumno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

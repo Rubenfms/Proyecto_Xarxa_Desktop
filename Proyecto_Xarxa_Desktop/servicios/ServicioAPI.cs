@@ -405,6 +405,40 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
         }
 
+        /// <summary>
+        /// Método que añade un alumno        
+        /// </summary>
+        /// <param name="usuario">Alumno a añadir.</param>
+        /// <returns>
+        /// Devuelve un status code que varía en función del resultado de la operación de la API
+        /// </returns>
+        public HttpStatusCode? PostAlumno(Alumno alumno)
+        {
+            try
+            {
+                var client = new RestClient("http://localhost:8081/apixarxa/xarxa/alumnos")
+                {
+                    Timeout = -1
+                };
+                var request = new RestRequest(Method.POST);
+                request.AddHeader("Accept", "application/json");
+                request.AddHeader("x-", "");
+                request.AddHeader("Content-Type", "application/json");
+                request.RequestFormat = DataFormat.Json;
+                request.AddJsonBody(alumno);
+                var body = JsonConvert.SerializeObject(alumno);
+                //request.AddParameter("application/json", alumno, ParameterType.RequestBody);
+                IRestResponse response = Cliente.Execute(request);
+                return response.StatusCode;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("Error con la API al introducir el alumno", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
+
         #endregion
 
         #region Métodos Libros
