@@ -278,19 +278,14 @@ namespace Proyecto_Xarxa_Desktop.servicios
         {
             try
             {
-                var client = new RestClient("http://localhost:8081/apixarxa/xarxa/usuarios")
-                {
-                    Timeout = -1
-                };
-                var request = new RestRequest(Method.POST);
+                RestRequest request = new RestRequest("/xarxa/usuarios", Method.POST);
                 request.AddCookie(COOKIE_SESSION, GetSessionId());
                 request.AddHeader("Accept", "application/json");
                 request.AddHeader("x-", "");
                 request.AddHeader("Content-Type", "application/json");
-                request.RequestFormat = DataFormat.Json;
-                request.AddJsonBody(usuario);
                 var body = JsonConvert.SerializeObject(usuario);
-                //request.AddParameter("application/json", usuario, ParameterType.RequestBody);
+                request.AddParameter("application/json", body, ParameterType.RequestBody);
+
                 IRestResponse response = Cliente.Execute(request);
                 return response.StatusCode;
             }
