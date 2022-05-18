@@ -280,6 +280,9 @@
     <Compile Include="vistas\AsignarLoteDialog.xaml.cs">
       <DependentUpon>AsignarLoteDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\CargarCSVDialog.xaml.cs">
+      <DependentUpon>CargarCSVDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\DarDeAltaDialog.xaml.cs">
       <DependentUpon>DarDeAltaDialog.xaml</DependentUpon>
     </Compile>
@@ -323,6 +326,7 @@
     <Compile Include="vms\AlumnosVM.cs" />
     <Compile Include="vms\AnyadirAlumnoVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
+    <Compile Include="vms\CargarCSVDialogVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
     <Compile Include="vms\InformesVM.cs" />
     <Compile Include="vms\LibrosVM.cs" />
@@ -389,6 +393,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\AsignarLoteDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\CargarCSVDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -545,6 +553,12 @@
   <ItemGroup>
     <Resource Include="assets\editlote.ico" />
     <Resource Include="assets\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\eye_sushi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\emblem_danger.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets')" />

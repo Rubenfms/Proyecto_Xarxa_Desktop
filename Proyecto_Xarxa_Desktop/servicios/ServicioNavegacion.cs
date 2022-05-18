@@ -87,6 +87,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// Abre la vista administrar usuarios.
         /// </summary>
         internal static void AbrirVistaAdministrarUsuarios() => new AdministrarUsuariosDialog().ShowDialog();
+
+        /// <summary>
+        /// Abre la vista cargar CSV.
+        /// </summary>
+        internal static void AbrirVistaCargarCSV() => new CargarCSVDialog().ShowDialog();
         /// <summary>
         /// Abre la vista informes.
         /// </summary>
@@ -116,11 +121,23 @@ namespace Proyecto_Xarxa_Desktop.servicios
         internal static void AbrirInformeXarxaGrupos() => new InformeXarxaGrupos().ShowDialog();
 
         /// <summary>
-        /// Abre la vista the informe recogida.
+        /// Abre la vista informe recogida.
         /// </summary>
         internal static void AbrirInformeRecogida() => new InformeRecogida().ShowDialog();
+
+        /// <summary>
+        /// Abre la vista informe lotes.
+        /// </summary>
         internal static void AbrirInformeLotes() => new InformeLotes().ShowDialog();
+
+        /// <summary>
+        /// Abrire la vista etiquetas.
+        /// </summary>
         internal static void AbrirInformeEtiquetas() => new InformeEtiquetas().ShowDialog();
+
+        /// <summary>
+        /// Abre la vista etiquetas bolsa.
+        /// </summary>
         internal static void AbrirInformeEtiquetasBolsa() => new InformeEtiquetasBolsa().ShowDialog();
 
     }

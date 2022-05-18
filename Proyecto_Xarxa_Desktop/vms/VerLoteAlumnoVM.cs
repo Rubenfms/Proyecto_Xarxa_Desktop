@@ -65,8 +65,15 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </remarks>
         public VerLoteAlumnoVM()
         {
-            // Recibimos el alumno seleccionado de la vista de todos los alumnos
-            LoteAlumno = WeakReferenceMessenger.Default.Send<VerLoteRequestMessage>();
+            try
+            {
+                // Recibimos el alumno seleccionado de la vista de todos los alumnos
+                LoteAlumno = WeakReferenceMessenger.Default.Send<VerLoteRequestMessage>();
+            }
+            catch (InvalidOperationException)
+            {
+                LoteAlumno = null;
+            }
         }
     }
 }

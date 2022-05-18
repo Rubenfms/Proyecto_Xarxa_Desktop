@@ -110,6 +110,15 @@ namespace Proyecto_Xarxa_Desktop
         }
 
         /// <summary>
+        /// Handles the Click event of the CrearAlumnoButton control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void CrearAlumnoButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirVistaAnyadirAlumno();
+        }
+        /// <summary>
         /// Handles the Click event of the DocTecnicaButton control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
