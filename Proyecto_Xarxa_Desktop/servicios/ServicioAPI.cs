@@ -461,7 +461,6 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 request.AddHeader("Content-Type", "application/json");
                 var body = JsonConvert.SerializeObject(alumno);
                 request.AddParameter("application/json", body, ParameterType.RequestBody);
-
                 IRestResponse response = Cliente.Execute(request);
                 return response.StatusCode;
             }
