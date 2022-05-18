@@ -35,7 +35,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <summary>
         /// The servicio API
         /// </summary>
-        ServicioAPI servicioApi;
+        readonly ServicioAPI servicioApi;
         /// <summary>
         /// Initializes a new instance of the <see cref="ServicioValidarUsuario"/> class.
         /// </summary>
@@ -54,14 +54,20 @@ namespace Proyecto_Xarxa_Desktop.servicios
         {
             try
             {
-                Usuario usuarioBD = servicioApi.GetUsuario(UsuarioAValidar.NombreUsuario);
+                //Application.Current.Resources["sessionId"] = servicioApi.LoginUsuario(UsuarioAValidar.NombreUsuario, Sha256encrypt(UsuarioAValidar.Contrasenya));
 
-                string hashedPass = Sha256encrypt(UsuarioAValidar.Contrasenya);
-                if (usuarioBD.Contrasenya.Equals(hashedPass) && usuarioBD.NombreUsuario.Equals(UsuarioAValidar.NombreUsuario))
-                {
-                    UsuarioActual = usuarioBD;
-                    return true;
-                }
+                //if (Application.Current.Resources["sessionId"].ToString().Length > 0)
+                //{
+
+                    Usuario usuarioBD = servicioApi.GetUsuario(UsuarioAValidar.NombreUsuario);
+
+                    string hashedPass = Sha256encrypt(UsuarioAValidar.Contrasenya);
+                    if (usuarioBD.Contrasenya.Equals(hashedPass) && usuarioBD.NombreUsuario.Equals(UsuarioAValidar.NombreUsuario))
+                    {
+                        UsuarioActual = usuarioBD;
+                        return true;
+                    }
+                //}
             }
             catch (NullReferenceException)
             {

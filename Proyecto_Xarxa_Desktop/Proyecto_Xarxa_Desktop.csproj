@@ -233,6 +233,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="mensajeria\AsignarLoteRequestMessage.cs" />
+    <Compile Include="mensajeria\DatoCambiadoOModificadoMessage.cs" />
     <Compile Include="mensajeria\EditarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\IncidenciasRequestMessage.cs" />
     <Compile Include="mensajeria\VerLoteRequestMessage.cs" />

@@ -100,6 +100,6 @@
             Width="200"
             Margin="30"
             Click="AnyadirAlumnoButton_Click"
-            Content="Añadir Alumno" />
+            Content="Añadir alumno" />
     </StackPanel>
 </Window>

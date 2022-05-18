@@ -1,4 +1,6 @@
-﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Messaging;
+using Proyecto_Xarxa_Desktop.mensajeria;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -81,6 +83,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             {
                 HttpStatusCode? statusCode = servicioAPI.PostAlumno(new Alumno(Int32.Parse(Nia), Nombre, Apellido1, Apellido2, Matricula, Curso, Curso, "", Xarxa));
                 ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.Created));
                 return true;
             }
             else return false;
@@ -88,32 +91,32 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         public bool ComprobarDatosIntroducidos()
         {
-            if(!Int32.TryParse(Nia, out _))
+            if (!Int32.TryParse(Nia, out _))
             {
                 ServicioDialogos.ServicioMessageBox("El formato de NIA introducido no es válido. Prueba a introducir solo números.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;
             }
-            else if(Nombre.Length == 0)
+            else if (Nombre.Length == 0)
             {
                 ServicioDialogos.ServicioMessageBox("Introduce un nombre.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;
             }
-            else if(Apellido1.Length == 0)
+            else if (Apellido1.Length == 0)
             {
                 ServicioDialogos.ServicioMessageBox("Introduce un primer apellido.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;
             }
-            else if(Apellido2.Length == 0)
+            else if (Apellido2.Length == 0)
             {
                 ServicioDialogos.ServicioMessageBox("Introduce un segundo apellido.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;
             }
-            else if(Matricula.Length == 0)
+            else if (Matricula.Length == 0)
             {
                 ServicioDialogos.ServicioMessageBox("Introduce un estado de matriculación.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;
             }
-            else if(Curso.Length == 0)
+            else if (Curso.Length == 0)
             {
                 ServicioDialogos.ServicioMessageBox("Introduce un curso.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;

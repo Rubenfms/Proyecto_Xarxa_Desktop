@@ -91,6 +91,12 @@ namespace Proyecto_Xarxa_Desktop.modelo
         /// </summary>
         public Usuario() {; }
 
+        public Usuario(string nombreUsuario, string contrasenya)
+        {
+            NombreUsuario = nombreUsuario;
+            Contrasenya = contrasenya;
+        }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Usuario"/> class.
         /// </summary>

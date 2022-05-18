@@ -71,6 +71,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <value>Comando para el botón de ver incidencias.</value>
         public RelayCommand VerIncidenciasCommand { get; }
 
+        public RelayCommand AnyadirAlumnoCommand { get; }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="AlumnosVM"/> class.
         /// </summary>
@@ -78,11 +80,13 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaAlumnos = servicioAPI.GetAlumnos();
+            EsperarCambioEnLaLista();
             //ListaAlumnos = ServicioCsv.GetListaAlumnosFromCSV();
             // Comandos
             DarDeAltaCommand = new RelayCommand(DarDeAlta);
             VerLoteAlumnoCommand = new RelayCommand(VerLoteAlumno);
             VerIncidenciasCommand = new RelayCommand(VerIncidenciasAlumno);
+            AnyadirAlumnoCommand = new RelayCommand(AnyadirAlumno);
 
             // Mensajeria Ver Lote
             try
@@ -108,6 +112,19 @@ namespace Proyecto_Xarxa_Desktop.vms
                 {
                     m.Reply(AlumnoSeleccionado);
                 });
+        }
+
+        public void AnyadirAlumno() => ServicioNavegacion.AbrirVistaAnyadirAlumno();
+
+        private void EsperarCambioEnLaLista()
+        {
+            WeakReferenceMessenger.Default.Register<DatoAñadidoOModificadoMessage>(this, (r, m) =>
+            {
+                if (m.Value)
+                {
+                    ListaAlumnos = servicioAPI.GetAlumnos();
+                }
+            });
         }
 
         /// <summary>
