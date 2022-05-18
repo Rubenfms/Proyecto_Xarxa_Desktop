@@ -141,6 +141,15 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// Abre la vista dar de alta alumno.
         /// </summary>
         public void AbrirVistaDarDeAltaAlumno() => ServicioNavegacion.AbrirVistaDarDeAlta();
+
+        /// <summary>
+        /// Abrir la vista añadir alumno.
+        /// </summary>
+        public void AbrirVistaAnyadirAlumno() => ServicioNavegacion.AbrirVistaAnyadirAlumno();
+
+        /// <summary>
+        /// Abrir la vista informes.
+        /// </summary>
         public void AbrirVistaInformes() => PestanyaActual = ServicioNavegacion.AbrirVistaInformes();
 
     }

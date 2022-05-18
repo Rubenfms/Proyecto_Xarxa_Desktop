@@ -59,7 +59,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <summary>
         /// Abre un dialogo para seleccionar archivos
         /// </summary>
-        public void CargaInicialCSV() => ServicioDialogos.OpenFileDialogService();
+        public void CargaInicialCSV() => ServicioNavegacion.AbrirVistaCargarCSV();
 
         /// <summary>
         /// Abre la vista administrar usuarios.

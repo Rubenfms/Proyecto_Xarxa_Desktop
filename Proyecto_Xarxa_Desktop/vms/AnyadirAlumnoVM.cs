@@ -91,39 +91,46 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         public bool ComprobarDatosIntroducidos()
         {
-            if (!Int32.TryParse(Nia, out _))
+            try
             {
-                ServicioDialogos.ServicioMessageBox("El formato de NIA introducido no es válido. Prueba a introducir solo números.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
-                return false;
+                if (Nia == null || !Int32.TryParse(Nia, out _) || Nia.Length != 8)
+                {
+                    ServicioDialogos.ServicioMessageBox("El formato de NIA introducido no es válido (Ej:10099888). Prueba a introducir solo números.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return false;
+                }
+                else if (Nombre == null || Nombre.Length == 0)
+                {
+                    ServicioDialogos.ServicioMessageBox("Introduce un nombre.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return false;
+                }
+                else if (Apellido1 == null || Apellido1.Length == 0)
+                {
+                    ServicioDialogos.ServicioMessageBox("Introduce un primer apellido.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return false;
+                }
+                else if (Apellido2 == null || Apellido2.Length == 0)
+                {
+                    ServicioDialogos.ServicioMessageBox("Introduce un segundo apellido.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return false;
+                }
+                else if (Matricula == null || Matricula.Length == 0)
+                {
+                    ServicioDialogos.ServicioMessageBox("Introduce un estado de matriculación.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return false;
+                }
+                else if (Curso == null || Curso.Length == 0)
+                {
+                    ServicioDialogos.ServicioMessageBox("Introduce un curso.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
-            else if (Nombre.Length == 0)
+            catch (NullReferenceException)
             {
-                ServicioDialogos.ServicioMessageBox("Introduce un nombre.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;
-            }
-            else if (Apellido1.Length == 0)
-            {
-                ServicioDialogos.ServicioMessageBox("Introduce un primer apellido.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
-                return false;
-            }
-            else if (Apellido2.Length == 0)
-            {
-                ServicioDialogos.ServicioMessageBox("Introduce un segundo apellido.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
-                return false;
-            }
-            else if (Matricula.Length == 0)
-            {
-                ServicioDialogos.ServicioMessageBox("Introduce un estado de matriculación.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
-                return false;
-            }
-            else if (Curso.Length == 0)
-            {
-                ServicioDialogos.ServicioMessageBox("Introduce un curso.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
-                return false;
-            }
-            else
-            {
-                return true;
             }
         }
     }
