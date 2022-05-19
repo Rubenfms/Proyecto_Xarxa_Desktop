@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Xarxa_Desktop.vms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,11 +20,16 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class CargarCSVDialog : Window
     {
-        private CargarCSVDialog vm = new CargarCSVDialog();
+        private CargarCSVDialogVM vm = new CargarCSVDialogVM();
         public CargarCSVDialog()
         {
             DataContext = vm;
             InitializeComponent();
+        }
+
+        private void CargarButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.HacerCarga();
         }
     }
 }

@@ -25,13 +25,15 @@
                 Width="350"
                 Height="50"
                 Margin="0,0,0,20"
-                materialDesign:HintAssist.Hint="Introduce CSV con todos los alumnos"
+                materialDesign:HintAssist.Hint="Examina el CSV con todos los alumnos"
                 BorderBrush="{StaticResource PrimaryColor3}"
                 FontSize="18"
                 Foreground="{StaticResource PrimaryColor3}"
+                IsReadOnly="True"
                 SelectionBrush="{StaticResource SecondaryColor1}"
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-            <Button Content="Examinar" />
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=RutaPrimerCSV}" />
+            <Button Command="{Binding Path=ExaminarPrimerCSVCommand}" Content="Examinar" />
         </StackPanel>
 
         <StackPanel
@@ -43,17 +45,19 @@
                 Width="350"
                 Height="50"
                 Margin="0,0,0,20"
-                materialDesign:HintAssist.Hint="Introduce CSV de filtro de cursos"
+                materialDesign:HintAssist.Hint="Examina el CSV de filtro de cursos"
                 BorderBrush="{StaticResource PrimaryColor3}"
                 FontSize="18"
                 Foreground="{StaticResource PrimaryColor3}"
+                IsReadOnly="True"
                 SelectionBrush="{StaticResource SecondaryColor1}"
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-            <Button Content="Examinar" />
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=RutaSegundoCSV}" />
+            <Button Command="{Binding Path=ExaminarSegundoCSVCommand}" Content="Examinar" />
         </StackPanel>
 
         <StackPanel
-            Margin="10"
+            Margin="5"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Orientation="Horizontal">
@@ -61,14 +65,26 @@
                 x:Name="TercerCSVTextBlock"
                 Width="350"
                 Height="50"
-                Margin="0,0,0,20"
-                materialDesign:HintAssist.Hint="Introduce CSV de filtro de alumnos xarxa"
+                Margin="0,0,0,0"
+                materialDesign:HintAssist.Hint="Examina el CSV de filtro de alumnos xarxa"
                 BorderBrush="{StaticResource PrimaryColor3}"
                 FontSize="18"
                 Foreground="{StaticResource PrimaryColor3}"
+                IsReadOnly="True"
                 SelectionBrush="{StaticResource SecondaryColor1}"
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-            <Button Content="Examinar" />
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=RutaTercerCSV}" />
+            <Button Command="{Binding Path=ExaminarTercerCSVCommand}" Content="Examinar" />
         </StackPanel>
+        <CheckBox
+            Margin="30,20,0,20"
+            Content="Borrar alumnos que no sean de la Xarxa"
+            FontSize="15"
+            Foreground="{StaticResource PrimaryColor3}" />
+
+        <Button
+            Width="200"
+            Click="CargarButton_Click"
+            Content="Hacer carga" />
     </StackPanel>
 </Window>
