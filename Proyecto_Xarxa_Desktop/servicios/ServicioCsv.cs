@@ -74,6 +74,35 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        public static void LeeCsvFiltroGrupos()
+        {
+            StreamReader archivo = new StreamReader(Properties.Settings.Default.UbicacionCsvFiltroGrupos);
+            archivo.ReadLine(); // Leer la primera línea para descartarla porque es el encabezado
+            string linea = "";
+            char separador = ',';
+
+            while ((linea = archivo.ReadLine()) != null)
+            {
+                string[] fila = linea.Replace("\"", "").Split(separador); // Replace para eliminar todas las comillas dobles 
+
+                // Comprobamos si el nia del alumno del fichero coincide con alguno de la lista
+                string nia = fila[0];
+                foreach (Alumno a in ListaAlumnosGeneral)
+                {
+                    // Si coincide y además es de la eso le añadimos el grupo
+                    if (a.Nia == int.Parse(nia) && a.Curso.Contains("ESO"))
+                    {
+                        a.Grupo = fila[1];
+                    }
+                    // Si coincide pero no es de la eso, quitamos el campo grupo para que no aparezca dos veces en la pantalla alumnos
+                    else if (a.Nia == int.Parse(nia))
+                    {
+                        a.Grupo = "";
+                    }
+                }
+            }
+        }
+
         /// <summary>
         /// Lee fichero con una lista de alumnos pertenecientes a la xarxa y comprueba si están en la lista de alumnos 
         /// </summary>
@@ -104,7 +133,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
             catch (IOException)
             {
-                ServicioDialogos.ServicioMessageBox("Error de entrada/salida en el fichero de datos", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                ServicioDialogos.ServicioMessageBox("Error de entrada/salida en el fichero de datos. Comprueba que no tienes el fichero abierto.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             }
             catch (Exception)
             {
@@ -134,9 +163,10 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// </returns>
         public static ObservableCollection<Alumno> GetListaAlumnosFromCSV()
         {
-            LeeCsvAlumnosGeneral();
-            LeeCsvAlumnosXarxa();
-            //QuitarAlumnosNoXarxa();
+            LeeCsvAlumnosGeneral(); // Introduce todos los alumnos de entre 1º de la eso a 2FPB en la lista
+            LeeCsvFiltroGrupos(); // Lee el csv donde están los grupos de la eso y modifica los campos de la lista
+            LeeCsvAlumnosXarxa(); // Marca con false los que no están en la Xarxa
+            //QuitarAlumnosNoXarxa(); // Quita de la lista los que no están en la xarxa
             //return listaAlumnosDefinitiva;
             return ListaAlumnosGeneral;
         }

@@ -166,10 +166,20 @@
                     </GridViewColumn>
 
                     <!--  Columna que muestra el grupo  -->
-                    <GridViewColumn
-                        Width="120"
-                        DisplayMemberBinding="{Binding Path=Grupo}"
-                        Header="Grupo" />
+                    <GridViewColumn Width="120" Header="Grupo">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="{StaticResource PrimaryColor3}">
+                                    <Run Text="{Binding Path=Curso}" />
+                                    <Run Text="{Binding Path=Grupo}" />
+                                </TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+
+                    </GridViewColumn>
 
                     <!--  Columna que muestra la matriculacion  -->
                     <GridViewColumn

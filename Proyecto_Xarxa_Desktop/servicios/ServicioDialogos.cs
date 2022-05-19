@@ -29,7 +29,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <summary>
         /// Opens the file dialog service.
         /// </summary>
-        public static void OpenFileDialogService()
+        public static string OpenFileDialogService()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Spreadsheet Files|*.csv;*.xls;*.xlsm;*.xlsx;"; // Se recomienda CSV
@@ -39,9 +39,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
             if (resultado == true)
             {
-                archivoSeleccionado = openFileDialog.FileName;
                 ServicioMessageBox($"Archivo {openFileDialog.SafeFileName} cargado", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+                archivoSeleccionado = openFileDialog.FileName;
+                return archivoSeleccionado;
             }
+            else return "";
         }
 
         /// <summary>

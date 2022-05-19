@@ -14,5 +14,8 @@
     <Setting Name="CarpetaXarxa" Type="System.String" Scope="Application">
       <Value Profile="(Default)">C:\Xarxa</Value>
     </Setting>
+    <Setting Name="UbicacionCsvFiltroGrupos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">../../data/filtro_grupos.csv</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
