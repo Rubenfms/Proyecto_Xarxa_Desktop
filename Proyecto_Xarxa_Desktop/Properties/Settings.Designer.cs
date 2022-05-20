@@ -59,15 +59,21 @@ namespace Proyecto_Xarxa_Desktop.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("../../data/filtro_grupos.csv")]
         public string UbicacionCsvFiltroGrupos {
             get {
                 return ((string)(this["UbicacionCsvFiltroGrupos"]));
             }
-            set {
-                this["UbicacionCsvFiltroGrupos"] = value;
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("server = 127.0.0.1; database = bdxarxa; Uid = root; pwd =1234")]
+        public string CadenaConexionMySQL {
+            get {
+                return ((string)(this["CadenaConexionMySQL"]));
             }
         }
     }
