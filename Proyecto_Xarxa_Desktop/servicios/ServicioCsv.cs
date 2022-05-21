@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
     /// </summary>
     class ServicioCsv
     {
+        private static ServicioAPI servicioApi = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
         private static ObservableCollection<Alumno> listaAlumnosGeneral = new ObservableCollection<Alumno>();
 
         public static ObservableCollection<Alumno> ListaAlumnosGeneral
@@ -24,16 +26,15 @@ namespace Proyecto_Xarxa_Desktop.servicios
             set { listaAlumnosGeneral = value; }
         }
 
-        private static ObservableCollection<Alumno> listaAlumnosDefinitiva = new ObservableCollection<Alumno>();
 
         /// <summary>
         /// Lee el CSV de la lista de alumnos general y lo guarda en la lista de alumnos general.
         /// </summary>
-        public static void LeeCsvAlumnosGeneral()
+        public static void LeeCsvAlumnosGeneral(string ruta)
         {
             try
             {
-                StreamReader archivo = new StreamReader(Properties.Settings.Default.UbicacionCsvListaAlumnosGeneral);
+                StreamReader archivo = new StreamReader(ruta);
                 archivo.ReadLine(); // Leer la primera línea para descartarla porque es el encabezado
                 string linea = "";
                 char separador = ',';
@@ -74,9 +75,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
-        public static void LeeCsvFiltroGrupos()
+        public static void LeeCsvFiltroGrupos(string ruta)
         {
-            StreamReader archivo = new StreamReader(Properties.Settings.Default.UbicacionCsvFiltroGrupos);
+            StreamReader archivo = new StreamReader(ruta);
             archivo.ReadLine(); // Leer la primera línea para descartarla porque es el encabezado
             string linea = "";
             char separador = ',';
@@ -106,11 +107,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <summary>
         /// Lee fichero con una lista de alumnos pertenecientes a la xarxa y comprueba si están en la lista de alumnos 
         /// </summary>
-        public static void LeeCsvAlumnosXarxa()
+        public static void LeeCsvAlumnosXarxa(string ruta)
         {
             try
             {
-                StreamReader archivo = new StreamReader(Properties.Settings.Default.UbicacionCsvListaAlumnosXarxa);
+                StreamReader archivo = new StreamReader(ruta);
                 archivo.ReadLine(); // Leer la primera línea para descartarla porque es el encabezado
                 string linea = "";
                 char separador = ',';
@@ -146,13 +147,16 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// </summary>
         public static void QuitarAlumnosNoXarxa()
         {
+            ObservableCollection<Alumno> listaTemp = new ObservableCollection<Alumno>();
             foreach(Alumno a in ListaAlumnosGeneral)
             {
                 if(a.PerteneceXarxa)
                 {
-                    listaAlumnosDefinitiva.Add(a);
+                    listaTemp.Add(a);
                 }
             }
+
+            ListaAlumnosGeneral = listaTemp;
         }
 
         /// <summary>
@@ -161,7 +165,8 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <returns>
         /// Devuelve una lista de alumnos
         /// </returns>
-        public static ObservableCollection<Alumno> GetListaAlumnosFromCSV()
+        /*
+        public ObservableCollection<Alumno> GetListaAlumnosFromCSV()
         {
             LeeCsvAlumnosGeneral(); // Introduce todos los alumnos de entre 1º de la eso a 2FPB en la lista
             LeeCsvFiltroGrupos(); // Lee el csv donde están los grupos de la eso y modifica los campos de la lista
@@ -169,6 +174,19 @@ namespace Proyecto_Xarxa_Desktop.servicios
             //QuitarAlumnosNoXarxa(); // Quita de la lista los que no están en la xarxa
             //return listaAlumnosDefinitiva;
             return ListaAlumnosGeneral;
+        }*/
+
+        public static void RealizarCargaCSV(string rutaPrimerCSV, string rutaSegundoCSV, string rutaTercerCSV, bool borrarAlumnosNoXarxa)
+        {
+            LeeCsvAlumnosGeneral(rutaPrimerCSV); // Introduce todos los alumnos de entre 1º de la eso a 2FPB en la lista
+            LeeCsvFiltroGrupos(rutaSegundoCSV); // Lee el csv donde están los grupos de la eso y modifica los campos de la lista
+            LeeCsvAlumnosXarxa(rutaTercerCSV); // Marca con false los que no están en la Xarxa
+            if(borrarAlumnosNoXarxa) QuitarAlumnosNoXarxa(); // Quita de la lista los que no están en la xarxa
+
+            HttpStatusCode? statusCode = servicioApi.PostAlumnos(ListaAlumnosGeneral);
+
+            ServicioDialogos.ServicioMessageBox(statusCode.ToString(), ",", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+
         }
         
         /// <summary>

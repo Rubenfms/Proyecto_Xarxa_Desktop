@@ -14,8 +14,11 @@
     <Setting Name="CarpetaXarxa" Type="System.String" Scope="Application">
       <Value Profile="(Default)">C:\Xarxa</Value>
     </Setting>
-    <Setting Name="UbicacionCsvFiltroGrupos" Type="System.String" Scope="User">
+    <Setting Name="UbicacionCsvFiltroGrupos" Type="System.String" Scope="Application">
       <Value Profile="(Default)">../../data/filtro_grupos.csv</Value>
+    </Setting>
+    <Setting Name="CadenaConexionMySQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">server = 127.0.0.1; database = bdxarxa; Uid = root; pwd =1234</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -80,7 +80,8 @@
             Margin="30,20,0,20"
             Content="Borrar alumnos que no sean de la Xarxa"
             FontSize="15"
-            Foreground="{StaticResource PrimaryColor3}" />
+            Foreground="{StaticResource PrimaryColor3}"
+            IsChecked="{Binding Path=BorrarAlumnosNoXarxa}" />
 
         <Button
             Width="200"

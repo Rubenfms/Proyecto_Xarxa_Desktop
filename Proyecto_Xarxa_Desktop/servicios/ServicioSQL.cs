@@ -55,7 +55,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         public static int? GetAlumnoByNombreYApellidos(string nombre, string apellido1, string apellido2)
         {
             // Conexión a BD
-            using (MySqlConnection cn = new MySqlConnection("server = 127.0.0.1; database = bdxarxa; Uid = root; pwd =1234"))
+            using (MySqlConnection cn = new MySqlConnection(Properties.Settings.Default.CadenaConexionMySQL))
             {
                 cn.Open();
 
