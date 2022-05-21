@@ -17,6 +17,7 @@
     mc:Ignorable="d">
     <Window.Resources>
         <convertidores:TipoUsuarioToEnabled x:Key="TipoUsuarioToEnabledConverter" />
+        <convertidores:InvitadoToBoolean x:Key="EnabledConverter" />
         <!--  Estilo genérico para los textblock  -->
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontSize" Value="18" />
@@ -135,6 +136,7 @@
                         Background="{StaticResource PrimaryColor2}"
                         Command="{Binding Path=GenerarLoteCommand}"
                         DockPanel.Dock="Top"
+                        IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                         Style="{StaticResource EstiloBotonesMenu}"
                         Template="{DynamicResource ButtonControlTemplatePrueba}">
                         <Button.Content>
@@ -209,6 +211,7 @@
                     Background="{StaticResource PrimaryColor2}"
                     Click="DarDeAltaButton_Click"
                     DockPanel.Dock="Top"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                     Style="{StaticResource EstiloBotonesMenu}"
                     Template="{DynamicResource ButtonControlTemplatePrueba}">
                     <Button.Content>
@@ -230,6 +233,7 @@
                     Background="{StaticResource PrimaryColor2}"
                     Click="CrearAlumnoButton_Click"
                     DockPanel.Dock="Top"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                     Style="{StaticResource EstiloBotonesMenu}"
                     Template="{DynamicResource ButtonControlTemplatePrueba}">
                     <Button.Content>
@@ -239,7 +243,7 @@
                                 Height="25"
                                 Margin="20,0,12,0"
                                 Foreground="{StaticResource SecondaryColor2}"
-                                Kind="AccountPlus" />
+                                Kind="PlusBox" />
                             <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Crear alumno" />
                         </StackPanel>
                     </Button.Content>
@@ -271,6 +275,7 @@
                     Background="{StaticResource PrimaryColor1}"
                     Command="{Binding Path=AbrirVistaInformesCommand}"
                     DockPanel.Dock="Top"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                     Style="{StaticResource EstiloBotonesMenu}"
                     Template="{DynamicResource ButtonControlTemplatePrueba}">
                     <Button.Content>

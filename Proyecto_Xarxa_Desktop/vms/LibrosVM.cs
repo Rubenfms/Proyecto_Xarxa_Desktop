@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
@@ -31,6 +32,23 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             get { return libroSeleccionado; }
             set { SetProperty(ref libroSeleccionado, value); }
+        }
+
+        /// <summary>
+        /// El usuario logeado
+        /// </summary>
+        private Usuario usuarioLogeado;
+
+        /// <summary>
+        /// Gets or sets el usuario logeado.
+        /// </summary>
+        /// <value>
+        /// El usuario logeado.
+        /// </value>
+        public Usuario UsuarioLogeado
+        {
+            get { return usuarioLogeado; }
+            set { SetProperty(ref usuarioLogeado, value); }
         }
 
         /// <summary>
@@ -60,6 +78,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public LibrosVM()
         {
+            UsuarioLogeado = (Usuario)Application.Current.Resources["UsuarioLogeado"];
+
             // Api
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
 

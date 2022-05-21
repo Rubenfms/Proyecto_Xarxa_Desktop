@@ -3,7 +3,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop"
-    StartupUri="MainWindow.xaml">
+    xmlns:modelo="clr-namespace:Proyecto_Xarxa_Desktop.modelo"
+    StartupUri="./vistas/LogIn.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -13,6 +14,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />-->
             </ResourceDictionary.MergedDictionaries>
 
+            <modelo:Usuario x:Key="UsuarioLogeado" />
             <!--  Colores MaterialDesign  -->
             <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#F9AA33" />
             <SolidColorBrush x:Key="PrimaryHueLightForegroundBrush" Color="Blue" />
@@ -66,7 +68,7 @@
                         <Setter TargetName="border" Property="BorderBrush" Value="#FF245A83" />
                     </Trigger>
                     <Trigger Property="IsEnabled" Value="False">
-                        <Setter TargetName="border" Property="Background" Value="#FFF4F4F4" />
+                        <Setter TargetName="border" Property="Background" Value="#FFADB2B5" />
                         <Setter TargetName="border" Property="BorderBrush" Value="#FFADB2B5" />
                         <Setter Property="Foreground" Value="#FF838383" />
                     </Trigger>

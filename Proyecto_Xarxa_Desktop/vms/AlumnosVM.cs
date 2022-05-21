@@ -53,6 +53,23 @@ namespace Proyecto_Xarxa_Desktop.vms
         }
 
         /// <summary>
+        /// El usuario logeado
+        /// </summary>
+        private Usuario usuarioLogeado;
+
+        /// <summary>
+        /// Gets or sets el usuario logeado.
+        /// </summary>
+        /// <value>
+        /// El usuario logeado.
+        /// </value>
+        public Usuario UsuarioLogeado
+        {
+            get { return usuarioLogeado; }
+            set { SetProperty(ref usuarioLogeado, value); }
+        }
+
+        /// <summary>
         /// Campo del servicio para la API.
         /// </summary>
         private ServicioAPI servicioAPI;
@@ -71,6 +88,12 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <value>Comando para el botón de ver incidencias.</value>
         public RelayCommand VerIncidenciasCommand { get; }
 
+        /// <summary>
+        /// Gets the anyadir alumno command.
+        /// </summary>
+        /// <value>
+        /// The anyadir alumno command.
+        /// </value>
         public RelayCommand AnyadirAlumnoCommand { get; }
 
         /// <summary>
@@ -78,6 +101,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public AlumnosVM()
         {
+            UsuarioLogeado = (Usuario)Application.Current.Resources["UsuarioLogeado"];
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaAlumnos = servicioAPI.GetAlumnos();
             //ListaAlumnos = ServicioCsv.GetListaAlumnosFromCSV();

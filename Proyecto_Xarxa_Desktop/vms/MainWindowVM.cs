@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace Proyecto_Xarxa_Desktop.vms
@@ -93,7 +94,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             // Instancia vacía para que al iniciar el programa no aparezca ningún UserControl seleccionado
             PestanyaActual = new VistaInicialContentControl();
-            UsuarioLogeado = ServicioValidarUsuario.UsuarioActual;
+            UsuarioLogeado = (Usuario)Application.Current.Resources["UsuarioLogeado"];
+
 
             // Comandos
             AbrirVistaLotesCommand = new RelayCommand(AbrirVistaLotes);
