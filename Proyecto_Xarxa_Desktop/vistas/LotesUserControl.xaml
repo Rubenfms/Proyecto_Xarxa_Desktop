@@ -13,6 +13,7 @@
     mc:Ignorable="d">
 
     <UserControl.Resources>
+        <convertidores:InvitadoToBoolean x:Key="EnabledConverter" />
 
         <!--  Estilo para aplicar margen a los botones de la derecha  -->
         <Style
@@ -38,23 +39,28 @@
             <Button
                 Command="{Binding Path=GenerarLoteCommand}"
                 Content="Generar Lote"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                 Style="{StaticResource EstiloBoton}" />
             <Button
                 Command="{Binding Path=EditarLoteCommand}"
                 Content="Editar Lote"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                 Style="{StaticResource EstiloBoton}" />
             <Button
                 Command="{Binding Path=EliminarLoteCommand}"
                 Content="Eliminar Lote"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                 Style="{StaticResource EstiloBoton}" />
             <StackPanel Margin="0,60,0,0">
                 <Button
                     Command="{Binding Path=AsignarLoteCommand}"
                     Content="Asignar Lote"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                     Style="{StaticResource EstiloBoton}" />
                 <Button
                     Command="{Binding Path=DesasignarLoteCommand}"
                     Content="Desasignar Lote"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                     Style="{StaticResource EstiloBoton}" />
             </StackPanel>
             <StackPanel Margin="0,60,0,0">

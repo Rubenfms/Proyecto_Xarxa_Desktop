@@ -188,6 +188,7 @@
     </ApplicationDefinition>
     <Compile Include="convertidores\BooleanToSiNo.cs" />
     <Compile Include="convertidores\IncidenciasToSiNo.cs" />
+    <Compile Include="convertidores\InvitadoToBoolean.cs" />
     <Compile Include="convertidores\NullToVisibilityModificado.cs" />
     <Compile Include="convertidores\TipoUsuarioToEnabled.cs" />
     <Compile Include="informes\ConcesionReport.cs">

@@ -15,6 +15,7 @@
     <UserControl.Resources>
         <convertidores:BooleanToSiNo x:Key="BooleanToSiNoConverter" />
         <convertidores:IncidenciasToSiNo x:Key="IncidenciasConverter" />
+        <convertidores:InvitadoToBoolean x:Key="EnabledConverter" />
         <!--  Estilo para aplicar margen a los botones de la derecha  -->
         <Style
             x:Key="EstiloBoton"
@@ -47,16 +48,19 @@
                 Margin="0,0,20,0"
                 Click="DarDeBajaButton_Click"
                 Content="Dar de Baja"
-                DockPanel.Dock="Right" />
+                DockPanel.Dock="Right"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Margin="0,0,20,0"
                 Command="{Binding Path=DarDeAltaCommand}"
                 Content="Dar de Alta"
-                DockPanel.Dock="Right" />
+                DockPanel.Dock="Right"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Margin="0,0,20,0"
                 Content="Editar Alumno"
-                DockPanel.Dock="Right" />
+                DockPanel.Dock="Right"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
 
             <!--  Filtros  -->
             <GroupBox Margin="20,10,0,0">
@@ -104,7 +108,8 @@
             <Button
                 Margin="10"
                 Command="{Binding AnyadirAlumnoCommand}"
-                Content="Crear nuevo alumno" />
+                Content="Crear nuevo alumno"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Margin="10"
                 Command="{Binding Path=VerLoteAlumnoCommand}"

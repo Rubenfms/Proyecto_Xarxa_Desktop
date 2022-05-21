@@ -11,6 +11,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
@@ -52,6 +53,23 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             get { return loteSeleccionado; }
             set { SetProperty(ref loteSeleccionado, value); }
+        }
+
+        /// <summary>
+        /// El usuario logeado
+        /// </summary>
+        private Usuario usuarioLogeado;
+
+        /// <summary>
+        /// Gets or sets el usuario logeado.
+        /// </summary>
+        /// <value>
+        /// El usuario logeado.
+        /// </value>
+        public Usuario UsuarioLogeado
+        {
+            get { return usuarioLogeado; }
+            set { SetProperty(ref usuarioLogeado, value); }
         }
 
         /// <summary>
@@ -114,6 +132,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public LotesVM()
         {
+            UsuarioLogeado = (Usuario)Application.Current.Resources["UsuarioLogeado"];
+
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaLotes = servicioAPI.GetLotes();
             LoteSeleccionado = null;

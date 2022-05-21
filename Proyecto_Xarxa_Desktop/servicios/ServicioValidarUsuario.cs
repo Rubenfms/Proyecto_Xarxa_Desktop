@@ -59,14 +59,17 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 //if (Application.Current.Resources["sessionId"].ToString().Length > 0)
                 //{
 
-                    Usuario usuarioBD = servicioApi.GetUsuario(UsuarioAValidar.NombreUsuario);
+                Usuario usuarioBD = servicioApi.GetUsuario(UsuarioAValidar.NombreUsuario);
 
-                    string hashedPass = Sha256encrypt(UsuarioAValidar.Contrasenya);
-                    if (usuarioBD.Contrasenya.Equals(hashedPass) && usuarioBD.NombreUsuario.Equals(UsuarioAValidar.NombreUsuario))
-                    {
-                        UsuarioActual = usuarioBD;
-                        return true;
-                    }
+                string hashedPass = Sha256encrypt(UsuarioAValidar.Contrasenya);
+                if (usuarioBD.Contrasenya.Equals(hashedPass) && usuarioBD.NombreUsuario.Equals(UsuarioAValidar.NombreUsuario))
+                {
+                    UsuarioActual = usuarioBD;
+
+                    Application.Current.Resources["UsuarioLogeado"] = UsuarioActual;
+                    return true;
+                }
+
                 //}
             }
             catch (NullReferenceException)
