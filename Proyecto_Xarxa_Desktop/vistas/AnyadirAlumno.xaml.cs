@@ -41,7 +41,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void AnyadirAlumnoButton_Click(object sender, RoutedEventArgs e)
         {
-            bool resultDialog = vm.AnyadirUsuario();
+            bool resultDialog = vm.AnyadirAlumno();
             if (resultDialog) DialogResult = resultDialog;
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Xarxa_Desktop.vms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,12 +20,18 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class EditarAlumnoDialog : Window
     {
+
+        private readonly EditarAlumnoVM vm;
         /// <summary>
         /// Initializes a new instance of the <see cref="EditarAlumnoDialog"/> class.
         /// </summary>
         public EditarAlumnoDialog()
         {
+            vm = new EditarAlumnoVM();
+            this.DataContext = vm;
             InitializeComponent();
         }
+
+        private void EditarAlumno_Click(object sender, RoutedEventArgs e) => DialogResult = true;
     }
 }
