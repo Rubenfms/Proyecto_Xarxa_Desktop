@@ -472,6 +472,28 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        public HttpStatusCode? PostAlumnos(ObservableCollection<Alumno> listaAlumnos)
+        {
+            try
+            {
+                RestRequest request = new RestRequest("/xarxa/alumnos", Method.POST);
+                request.AddCookie(COOKIE_SESSION, GetSessionId());
+                request.AddHeader("Accept", "application/json");
+                request.AddHeader("x-", "");
+                request.AddHeader("Content-Type", "application/json");
+                request.RequestFormat = DataFormat.Json; 
+                var body = JsonConvert.SerializeObject(listaAlumnos);
+                request.AddParameter("application/json", body, ParameterType.RequestBody);
+                IRestResponse response = Cliente.Execute(request);
+                return response.StatusCode;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("Error con la API al introducir el alumno", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
         #endregion
 
         #region Métodos Libros

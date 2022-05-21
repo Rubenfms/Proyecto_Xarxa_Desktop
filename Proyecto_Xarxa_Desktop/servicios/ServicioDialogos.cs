@@ -39,11 +39,14 @@ namespace Proyecto_Xarxa_Desktop.servicios
 
             if (resultado == true)
             {
-                ServicioMessageBox($"Archivo {openFileDialog.SafeFileName} cargado", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
                 archivoSeleccionado = openFileDialog.FileName;
                 return archivoSeleccionado;
             }
-            else return "";
+            else
+            {
+                ServicioMessageBox($"No se ha podido cargar el archivo seleccionado.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return "";
+            }
         }
 
         /// <summary>

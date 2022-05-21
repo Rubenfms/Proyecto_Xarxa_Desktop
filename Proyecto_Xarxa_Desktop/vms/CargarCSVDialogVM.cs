@@ -4,6 +4,7 @@ using Proyecto_Xarxa_Desktop.servicios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -63,6 +64,24 @@ namespace Proyecto_Xarxa_Desktop.vms
         }
 
         /// <summary>
+        /// Booleano bindeado al checkbox. Si está a true se borrarán todos los alumnos que no pertenezcan a la Xarxa.
+        /// </summary>
+        private bool borrarAlumnosNoXarxa;
+
+        /// <summary>
+        /// Gets or sets a value indicating whether [borrar alumnos no xarxa].
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if [borrar alumnos no xarxa]; otherwise, <c>false</c>.
+        /// </value>
+        public bool BorrarAlumnosNoXarxa
+        {
+            get { return borrarAlumnosNoXarxa; }
+            set { borrarAlumnosNoXarxa = value; }
+        }
+
+
+        /// <summary>
         /// Gets the examinar primer CSV command.
         /// </summary>
         /// <value>
@@ -91,6 +110,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public CargarCSVDialogVM()
         {
+            BorrarAlumnosNoXarxa = false;
             ExaminarPrimerCSVCommand = new RelayCommand(ExaminarPrimerCSV);
             ExaminarSegundoCSVCommand = new RelayCommand(ExaminarSegundoCSV);
             ExaminarTercerCSVCommand = new RelayCommand(ExaminarTercerCSV);
@@ -113,7 +133,7 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         public void HacerCarga()
         {
-
+            ServicioCsv.RealizarCargaCSV(RutaPrimerCSV, RutaSegundoCSV, RutaTercerCSV, BorrarAlumnosNoXarxa);
         }
     }
 }
