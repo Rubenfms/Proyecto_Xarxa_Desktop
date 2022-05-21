@@ -14,7 +14,14 @@ namespace Proyecto_Xarxa_Desktop.convertidores
         {
             try
             {
-                return value.ToString().ToLower().Equals("invitado") ? false : true;
+                if (value != null)
+                {
+                    return value.ToString().ToLower().Equals("invitado") ? false : true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             catch (NullReferenceException)
             {
