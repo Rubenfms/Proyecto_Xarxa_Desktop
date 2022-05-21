@@ -233,10 +233,10 @@
       <DependentUpon>XarxaGruposReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="mensajeria\AlumnoSeleccionadoRequestMessage.cs" />
     <Compile Include="mensajeria\AsignarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\DatoCambiadoOModificadoMessage.cs" />
     <Compile Include="mensajeria\EditarLoteRequestMessage.cs" />
-    <Compile Include="mensajeria\IncidenciasRequestMessage.cs" />
     <Compile Include="mensajeria\VerLoteRequestMessage.cs" />
     <Compile Include="modelo\LoteInformeEtiquetas.cs" />
     <Compile Include="modelo\Usuario.cs" />
@@ -328,6 +328,7 @@
     <Compile Include="vms\AnyadirAlumnoVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
     <Compile Include="vms\CargarCSVDialogVM.cs" />
+    <Compile Include="vms\EditarAlumnoVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
     <Compile Include="vms\InformesVM.cs" />
     <Compile Include="vms\LibrosVM.cs" />
