@@ -223,6 +223,22 @@ namespace Proyecto_Xarxa_Desktop.modelo
             set { SetProperty(ref _concesion, value); }
         }
 
+        // Constructor copia       
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Alumno"/> class. without Lote
+        public Alumno(Alumno alumno)
+        {
+            Nia = alumno.Nia;
+            Nombre = alumno.Nombre;
+            Apellido1 = alumno.Apellido1;
+            Apellido2 = alumno.Apellido2;
+            Matricula = alumno.Matricula;
+            Curso = alumno.Curso;
+            Grupo = alumno.Grupo;
+            Incidencias = alumno.Incidencias;
+            PerteneceXarxa = alumno.PerteneceXarxa;
+        }
+
         // Constructor sin lote        
         /// <summary>
         /// Initializes a new instance of the <see cref="Alumno"/> class. without Lote

@@ -1,5 +1,7 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
 using Microsoft.Toolkit.Mvvm.Input;
+using Microsoft.Toolkit.Mvvm.Messaging;
+using Proyecto_Xarxa_Desktop.mensajeria;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -155,6 +157,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                             alumnoEncontrado.PerteneceXarxa = true;
                             HttpStatusCode? statusCode = servicioAPI.PutAlumno(alumnoEncontrado);
                             ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                            WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.OK));
                             return true;
                         }
                     }
@@ -191,6 +194,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                     aEncontrado.PerteneceXarxa = true;
                     HttpStatusCode? statusCode = servicioAPI.PutAlumno(aEncontrado);
                     ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                    WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.OK));
                     return true;
                 }
             }

@@ -108,6 +108,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// </summary>
         internal static void AbrirVistaAnyadirAlumno() => new AnyadirAlumno().ShowDialog();
 
+        /// <summary>
+        /// Abre la vista editar alumno
+        /// </summary>
+        internal static void AbrirVistaEditarAlumno() => new EditarAlumnoDialog().ShowDialog();
+
         // INFORMES
 
         /// <summary>
