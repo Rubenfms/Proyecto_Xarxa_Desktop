@@ -549,7 +549,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         {
             try
             {
-                RestRequest request = new RestRequest("/xarxa/libro", Method.POST);
+                RestRequest request = new RestRequest("/xarxa/libros", Method.POST);
                 request.AddCookie(COOKIE_SESSION, GetSessionId());
                 request.AddHeader("Accept", "application/json");
                 request.AddHeader("x-", "");
@@ -574,7 +574,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <returns> Devuelve un status code que varía en función del resultado de la operación de la API. </returns>
         public HttpStatusCode? PutLibro(Libro libro)
         {
-            var request = new RestRequest("/xarxa/libro", Method.PUT);
+            var request = new RestRequest("/xarxa/libros", Method.PUT);
             request.AddCookie(COOKIE_SESSION, GetSessionId());
 
 
@@ -597,7 +597,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <returns>
         /// Devuelve un status code que varía en función del resultado de la operación de la API
         /// </returns>
-        public HttpStatusCode? DeleteIsbn(string isbn)
+        public HttpStatusCode? DeleteLibro(string isbn)
         {
             var request = new RestRequest($"/xarxa/libros/{isbn}", Method.DELETE);
             request.AddCookie(COOKIE_SESSION, GetSessionId());

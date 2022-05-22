@@ -24,7 +24,7 @@
                 IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Margin="10"
-                Command="{Binding Path=EditarLibroCommand}"
+                Click="EditarLibroButton_Click"
                 Content="Editar Libro"
                 IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button

@@ -147,5 +147,15 @@ namespace Proyecto_Xarxa_Desktop
                 System.Diagnostics.Process.Start(helpFileName);
             }
         }
+
+        /// <summary>
+        /// Handles the Click event of the AnyadirLibroButton control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void AnyadirLibroButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirVistaAnyadirLibro();
+        }
     }
 }

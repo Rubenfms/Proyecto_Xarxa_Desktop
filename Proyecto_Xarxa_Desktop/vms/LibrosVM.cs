@@ -1,13 +1,11 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
 using Microsoft.Toolkit.Mvvm.Input;
+using Microsoft.Toolkit.Mvvm.Messaging;
+using Proyecto_Xarxa_Desktop.mensajeria;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
@@ -116,6 +114,20 @@ namespace Proyecto_Xarxa_Desktop.vms
             EditarLibroCommand = new RelayCommand(AbrirVistaEditarLibro);
             EliminarLibroCommand = new RelayCommand(EliminarLibro);
 
+            // Suscripción para mandar el libro a EditarLote
+            // TODO: controlar el invalidoperationexception
+            try
+            {
+                WeakReferenceMessenger.Default.Register<LibrosVM, EditarLibroRequestMessage>
+                (this, (r, m) =>
+                {
+                    m.Reply(LibroSeleccionado);
+                });
+            }
+            catch (InvalidOperationException)
+            {
+
+            }
         }
 
         /// <summary>
@@ -131,7 +143,15 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public void AbrirVistaEditarLibro()
         {
+            try
+            {
+                ServicioNavegacion.AbrirVistaEditarLibro();
 
+            }
+            catch (NullReferenceException)
+            {
+                ServicioDialogos.ServicioMessageBox("Selecciona un libro para poder editarlo.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+            }
         }
 
         /// <summary>

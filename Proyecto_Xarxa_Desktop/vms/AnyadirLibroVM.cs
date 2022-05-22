@@ -124,6 +124,10 @@ namespace Proyecto_Xarxa_Desktop.vms
             else return false;
         }
 
+        /// <summary>
+        /// Comprueba los datos introducidos en el formulario.
+        /// </summary>
+        /// <returns>true si todos los datos introducidos o false si algún dato érroneo</returns>
         public bool ComprobarDatosIntroducidos()
         {
             if (Isbn == null || !Int32.TryParse(Isbn, out _))
