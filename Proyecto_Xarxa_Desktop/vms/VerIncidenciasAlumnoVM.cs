@@ -79,7 +79,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         public VerIncidenciasAlumnoVM()
         {
             // Recibimos el alumno del que queremos ver las incidencias
-            AlumnoSeleccionado = WeakReferenceMessenger.Default.Send<IncidenciasRequestMessage>();
+            AlumnoSeleccionado = WeakReferenceMessenger.Default.Send<AlumnoSeleccionadoRequestMessage>();
 
             // Asignamos las incidencias del alumno a nuestra entrada de texto
             TextoIncidencias = AlumnoSeleccionado.Incidencias;

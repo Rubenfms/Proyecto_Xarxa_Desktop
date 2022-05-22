@@ -4,19 +4,82 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="EditarAlumnoDialog"
-    Width="450"
-    Height="450"
+    Title="Editar alumno"
+    Width="400"
+    Height="600"
+    Icon="../assets/personadd.ico"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
 
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock HorizontalAlignment="Center" Text="Modificar Alumno:" />
-        <TextBlock>
-            <Run Text="Curso:" />
-        </TextBlock>
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
+            <Setter Property="Margin" Value="0,0,0,10" />
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="300" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="IsEnabled" Value="False" />
+        </Style>
+
+    </Window.Resources>
+
+    <StackPanel>
+        <TextBlock
+            Margin="0,20,0,0"
+            HorizontalAlignment="Center"
+            FontSize="25"
+            Foreground="{StaticResource PrimaryColor1}"
+            Text="Editar alumno" />
+        <!--  NIA  -->
+        <TextBox
+            materialDesign:HintAssist.Hint="NIA"
+            Text="{Binding Path=Alumno.Nia}" />
+
+        <!--  Nombre  -->
+        <TextBox
+            materialDesign:HintAssist.Hint="Nombre"
+            Text="{Binding Path=Alumno.Nombre}" />
+
+        <!--  Primer Apellido  -->
+        <TextBox
+            materialDesign:HintAssist.Hint="Primer apellido"
+            Text="{Binding Path=Alumno.Apellido1}" />
+
+        <!--  Segundo Apellido  -->
+        <TextBox
+            materialDesign:HintAssist.Hint="Introduce Segundo Apellido"
+            Text="{Binding Path=Alumno.Apellido2}" />
+
+        <!--  Curso  -->
+        <TextBox
+            materialDesign:HintAssist.Hint="Introduce Curso (1ESOC)"
+            Text="{Binding Path=Alumno.Curso}"
+            IsEnabled="True">
+        </TextBox>
+
+        <TextBox
+            materialDesign:HintAssist.Hint="Introduce grupo (sólo para ESO)"
+            IsEnabled="True"
+            Text="{Binding Path=Alumno.Grupo}" />
+
+        <CheckBox
+            Width="300"
+            Margin="0,20,0,0"
+            Content="¿Pertenece a la Xarxa?"
+            FontSize="16"
+            Foreground="{StaticResource PrimaryColor2}"
+            IsChecked="{Binding Path=Alumno.PerteneceXarxa}"
+            IsEnabled="False"/>
+
+        <Button
+            Width="200"
+            Margin="30"
+            Command="{Binding EditarAlumnoCommand}"
+            Click="EditarAlumno_Click"
+            Content="Editar alumno" />
     </StackPanel>
 </Window>

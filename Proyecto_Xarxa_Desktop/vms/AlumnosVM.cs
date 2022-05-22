@@ -88,13 +88,15 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <value>Comando para el botón de ver incidencias.</value>
         public RelayCommand VerIncidenciasCommand { get; }
 
-        /// <summary>
-        /// Gets the anyadir alumno command.
-        /// </summary>
-        /// <value>
-        /// The anyadir alumno command.
-        /// </value>
+        /// <summary>Comando para añadir alumno nuevo.</summary>
+        /// <value>Comando para añadir alumno nuevo.</value>
         public RelayCommand AnyadirAlumnoCommand { get; }
+
+        /// <summary>Comando para editar un alumno</summary>
+        /// <value>Comando para editar un alumno</value>
+        public RelayCommand EditarAlumnoCommand { get; }
+
+        public RelayCommand LimpiarSeleccionCommand { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AlumnosVM"/> class.
@@ -111,6 +113,8 @@ namespace Proyecto_Xarxa_Desktop.vms
             VerLoteAlumnoCommand = new RelayCommand(VerLoteAlumno);
             VerIncidenciasCommand = new RelayCommand(VerIncidenciasAlumno);
             AnyadirAlumnoCommand = new RelayCommand(AnyadirAlumno);
+            EditarAlumnoCommand = new RelayCommand(EditarAlumno);
+            LimpiarSeleccionCommand = new RelayCommand(LimpiarSeleccion);
 
             // Mensajeria Ver Lote
             try
@@ -131,7 +135,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             // Mensajeria Ver Incidencias
 
             // Suscripción para mandar el alumno a Ver Incidencias
-            WeakReferenceMessenger.Default.Register<AlumnosVM, IncidenciasRequestMessage>
+            WeakReferenceMessenger.Default.Register<AlumnosVM, AlumnoSeleccionadoRequestMessage>
                 (this, (r, m) =>
                 {
                     m.Reply(AlumnoSeleccionado);
@@ -139,6 +143,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         }
 
         public void AnyadirAlumno() => ServicioNavegacion.AbrirVistaAnyadirAlumno();
+        public void EditarAlumno() => ServicioNavegacion.AbrirVistaEditarAlumno();
+        public void LimpiarSeleccion() => AlumnoSeleccionado = null;
 
         private void EsperarCambioEnLaLista()
         {

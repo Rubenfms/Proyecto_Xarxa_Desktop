@@ -27,7 +27,15 @@ namespace Proyecto_Xarxa_Desktop.convertidores
         {
             try
             {
-                return value.ToString().ToLower().Equals("superadmin") ? true : false;
+                if (value != null)
+                {
+                    return value.ToString().ToLower().Equals("superadmin") ? true : false;
+                }
+                else
+                {
+                    return false;
+                }
+
             }
             catch (NullReferenceException)
             {
