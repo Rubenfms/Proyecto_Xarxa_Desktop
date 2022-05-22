@@ -16,32 +16,33 @@ using System.Windows.Shapes;
 namespace Proyecto_Xarxa_Desktop.vistas
 {
     /// <summary>
-    /// Lógica de interacción para AnyadirAlumno.xaml
+    /// Lógica de interacción para AnyadirLibroDialog.xaml
     /// </summary>
-    public partial class AnyadirAlumno : Window
+    public partial class AnyadirLibroDialog : Window
     {
         /// <summary>
-        /// VM de AnyadirAlumno
+        /// La VM de AnyadirLibroDialog
         /// </summary>
-        private AnyadirAlumnoVM vm = new AnyadirAlumnoVM();
+        private AnyadirLibroVM vm = new AnyadirLibroVM();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AnyadirAlumno"/> class.
+        /// Initializes a new instance of the <see cref="AnyadirLibroDialog"/> class.
         /// </summary>
-        public AnyadirAlumno()
+        public AnyadirLibroDialog()
         {
             DataContext = vm;
             InitializeComponent();
         }
 
+
         /// <summary>
-        /// Handles the Click event of the AnyadirAlumnoButton control.
+        /// Handles the Click event of the AnyadirLibroButton control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
-        private void AnyadirAlumnoButton_Click(object sender, RoutedEventArgs e)
+        private void AnyadirLibroButton_Click(object sender, RoutedEventArgs e)
         {
-            bool resultDialog = vm.AnyadirAlumno();
+            bool resultDialog = vm.AnyadirLibro();
             if (resultDialog) DialogResult = resultDialog;
         }
     }

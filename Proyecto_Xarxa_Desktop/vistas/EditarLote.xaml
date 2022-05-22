@@ -43,7 +43,10 @@
                 Margin="0,0,5,20"
                 Command="{Binding Path=EditarLoteCommand}"
                 Content="Eliminar Libro" />
-            <Button Margin="0,0,5,20" Content="Confirmar Cambios" />
+            <Button
+                Margin="0,0,5,20"
+                Content="Confirmar Cambios"
+                IsDefault="True" />
         </StackPanel>
         <ListView IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Path=Lote.LibrosLote}">
             <ListView.View>

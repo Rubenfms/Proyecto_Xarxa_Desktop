@@ -1,4 +1,5 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Input;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -74,6 +75,30 @@ namespace Proyecto_Xarxa_Desktop.vms
         private ServicioAPI servicioAPI;
 
         /// <summary>
+        /// Gets the anyadir libro command.
+        /// </summary>
+        /// <value>
+        /// The anyadir libro command.
+        /// </value>
+        public RelayCommand AnyadirLibroCommand { get; }
+
+        /// <summary>
+        /// Gets the editar libro command.
+        /// </summary>
+        /// <value>
+        /// The editar libro command.
+        /// </value>
+        public RelayCommand EditarLibroCommand { get; }
+
+        /// <summary>
+        /// Gets the eliminar libro command.
+        /// </summary>
+        /// <value>
+        /// The eliminar libro command.
+        /// </value>
+        public RelayCommand EliminarLibroCommand { get; }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="LibrosVM"/> class.
         /// </summary>
         public LibrosVM()
@@ -85,6 +110,36 @@ namespace Proyecto_Xarxa_Desktop.vms
 
             // Carga libros
             ListaLibros = servicioAPI.GetLibros();
+
+            // Comandos
+            AnyadirLibroCommand = new RelayCommand(AbrirVistaAnyadirLibro);
+            EditarLibroCommand = new RelayCommand(AbrirVistaEditarLibro);
+            EliminarLibroCommand = new RelayCommand(EliminarLibro);
+
+        }
+
+        /// <summary>
+        /// Abre la vista anyadir libro.
+        /// </summary>
+        public void AbrirVistaAnyadirLibro()
+        {
+            ServicioNavegacion.AbrirVistaAnyadirLibro();
+        }
+
+        /// <summary>
+        /// Abre la vista editar libro.
+        /// </summary>
+        public void AbrirVistaEditarLibro()
+        {
+
+        }
+
+        /// <summary>
+        /// Elimina un libro.
+        /// </summary>
+        public void EliminarLibro()
+        {
+
         }
     }
 }
