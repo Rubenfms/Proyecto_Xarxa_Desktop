@@ -22,7 +22,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             set => SetProperty(ref alumno, value);
         }
 
-        private ServicioAPI servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
+        private readonly ServicioAPI servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
         public AnyadirAlumnoVM()
         {
             Alumno = new Alumno();
@@ -32,7 +32,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             if (ComprobarDatosIntroducidos())
             {
-                HttpStatusCode? statusCode = servicioAPI.PostAlumno(new Alumno(Int32.Parse(Nia), Nombre, Apellido1, Apellido2, Matricula, Curso, Curso.Substring(Curso.Length - 1, 1), "", Xarxa));
+                HttpStatusCode? statusCode = servicioAPI.PostAlumno(Alumno);
                 ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
                 WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.Created));
                 return true;
