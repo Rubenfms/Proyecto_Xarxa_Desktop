@@ -273,6 +273,7 @@
                 <Button
                     Height="40"
                     Background="{StaticResource PrimaryColor2}"
+                    Click="AnyadirLibroButton_Click"
                     DockPanel.Dock="Top"
                     IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                     Style="{StaticResource EstiloBotonesMenu}"

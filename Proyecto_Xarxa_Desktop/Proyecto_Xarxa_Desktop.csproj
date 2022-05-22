@@ -235,6 +235,7 @@
     </Compile>
     <Compile Include="mensajeria\AsignarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\DatoCambiadoOModificadoMessage.cs" />
+    <Compile Include="mensajeria\EditarLibroRequestMessage.cs" />
     <Compile Include="mensajeria\EditarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\IncidenciasRequestMessage.cs" />
     <Compile Include="mensajeria\VerLoteRequestMessage.cs" />
@@ -293,6 +294,9 @@
     <Compile Include="vistas\EditarAlumnoDialog.xaml.cs">
       <DependentUpon>EditarAlumnoDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\EditarLibroDialog.xaml.cs">
+      <DependentUpon>EditarLibroDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\EditarLote.xaml.cs">
       <DependentUpon>EditarLote.xaml</DependentUpon>
     </Compile>
@@ -332,6 +336,7 @@
     <Compile Include="vms\AnyadirLibroVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
     <Compile Include="vms\CargarCSVDialogVM.cs" />
+    <Compile Include="vms\EditarLibroVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
     <Compile Include="vms\InformesVM.cs" />
     <Compile Include="vms\LibrosVM.cs" />
@@ -414,6 +419,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\EditarAlumnoDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\EditarLibroDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -34,5 +34,10 @@ namespace Proyecto_Xarxa_Desktop.vistas
             InitializeComponent();
             DataContext = vm;
         }
+
+        private void EditarLibroButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirVistaEditarLibro();
+        }
     }
 }
