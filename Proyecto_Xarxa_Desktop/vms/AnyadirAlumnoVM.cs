@@ -32,7 +32,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             if (ComprobarDatosIntroducidos())
             {
-                HttpStatusCode? statusCode = servicioAPI.PostAlumno(Alumno);
+                HttpStatusCode? statusCode = servicioAPI.PostAlumno(new Alumno(Int32.Parse(Nia), Nombre, Apellido1, Apellido2, Matricula, Curso, Curso.Substring(Curso.Length - 1, 1), "", Xarxa));
                 ServicioDialogos.ServicioMessageBox($"Resultado del alta del alumno: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
                 WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.Created));
                 return true;

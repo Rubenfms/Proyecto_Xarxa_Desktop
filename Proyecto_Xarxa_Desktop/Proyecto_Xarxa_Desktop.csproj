@@ -278,6 +278,9 @@
     <Compile Include="vistas\AnyadirAlumno.xaml.cs">
       <DependentUpon>AnyadirAlumno.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\AnyadirLibroDialog.xaml.cs">
+      <DependentUpon>AnyadirLibroDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\AsignarLoteDialog.xaml.cs">
       <DependentUpon>AsignarLoteDialog.xaml</DependentUpon>
     </Compile>
@@ -326,6 +329,7 @@
     <Compile Include="vms\AdministrarUsuariosVM.cs" />
     <Compile Include="vms\AlumnosVM.cs" />
     <Compile Include="vms\AnyadirAlumnoVM.cs" />
+    <Compile Include="vms\AnyadirLibroVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
     <Compile Include="vms\CargarCSVDialogVM.cs" />
     <Compile Include="vms\EditarAlumnoVM.cs" />
@@ -391,6 +395,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\AnyadirAlumno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\AnyadirLibroDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -561,6 +569,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\emblem_danger.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\add_book.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets')" />

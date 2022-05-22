@@ -86,6 +86,7 @@
         <Button
             Width="200"
             Click="CargarButton_Click"
-            Content="Hacer carga" />
+            Content="Hacer carga"
+            IsDefault="True" />
     </StackPanel>
 </Window>

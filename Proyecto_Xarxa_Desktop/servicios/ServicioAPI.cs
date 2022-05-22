@@ -538,6 +538,80 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        /// <summary>
+        /// Método que añade un libro.        
+        /// </summary>
+        /// <param name="usuario">Libro a añadir.</param>
+        /// <returns>
+        /// Devuelve un status code que varía en función del resultado de la operación de la API.
+        /// </returns>
+        public HttpStatusCode? PostLibro(Libro libro)
+        {
+            try
+            {
+                RestRequest request = new RestRequest("/xarxa/libro", Method.POST);
+                request.AddCookie(COOKIE_SESSION, GetSessionId());
+                request.AddHeader("Accept", "application/json");
+                request.AddHeader("x-", "");
+                request.AddHeader("Content-Type", "application/json");
+                var body = JsonConvert.SerializeObject(libro);
+                request.AddParameter("application/json", body, ParameterType.RequestBody);
+                IRestResponse response = Cliente.Execute(request);
+                return response.StatusCode;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("Error con la API al introducir el libro", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Método que actualiza un libro.
+        /// </summary>
+        /// <param name="usuario">El libro a actualizar.</param>
+        /// <returns> Devuelve un status code que varía en función del resultado de la operación de la API. </returns>
+        public HttpStatusCode? PutLibro(Libro libro)
+        {
+            var request = new RestRequest("/xarxa/libro", Method.PUT);
+            request.AddCookie(COOKIE_SESSION, GetSessionId());
+
+
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("x-", "");
+            request.AddHeader("Content-Type", "application/json");
+
+            var body = JsonConvert.SerializeObject(libro);
+            request.AddParameter("application/json", body, ParameterType.RequestBody);
+
+            IRestResponse response = Cliente.Execute(request);
+            return response.StatusCode;
+
+        }
+
+        /// <summary>
+        /// Método que elimina un libro a partir de su ibsn      
+        /// </summary>
+        /// <param name="id">ISBN del libro a eliminar.</param>
+        /// <returns>
+        /// Devuelve un status code que varía en función del resultado de la operación de la API
+        /// </returns>
+        public HttpStatusCode? DeleteIsbn(string isbn)
+        {
+            var request = new RestRequest($"/xarxa/libros/{isbn}", Method.DELETE);
+            request.AddCookie(COOKIE_SESSION, GetSessionId());
+
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("x-", "");
+            var body = @"";
+            request.AddParameter("text/plain", body, ParameterType.RequestBody);
+
+            IRestResponse response = Cliente.Execute(request);
+            return response.StatusCode;
+
+        }
+
         #endregion
     }
 }

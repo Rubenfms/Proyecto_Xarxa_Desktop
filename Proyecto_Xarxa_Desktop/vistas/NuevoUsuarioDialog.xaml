@@ -86,6 +86,7 @@
 
         <Button
             Width="100"
+            IsDefault="True"
             Height="30"
             Click="CrearUsuarioButton_Click"
             Content="Crear" />

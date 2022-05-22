@@ -37,6 +37,11 @@ namespace Proyecto_Xarxa_Desktop.servicios
         internal static UserControl AbrirVistaLibros() => new LibrosUserControl();
 
         /// <summary>
+        /// Abre una nueva instancia del dialogo anyadir libro.
+        /// </summary>
+        internal static void AbrirVistaAnyadirLibro() => new AnyadirLibroDialog().ShowDialog();
+
+        /// <summary>
         /// Abre una nueva instancia de la ventana de login
         /// </summary>
         internal static void AbrirVistaLogIn() => new LogIn().Show();

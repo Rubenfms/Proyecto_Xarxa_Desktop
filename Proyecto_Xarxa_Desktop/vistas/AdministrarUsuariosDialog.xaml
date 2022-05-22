@@ -19,7 +19,8 @@
                 Width="180"
                 Margin="20"
                 Command="{Binding Path=ActivarUsuarioCommand}"
-                Content="Activar Usuario" />
+                Content="Activar Usuario"
+                IsDefault="True" />
             <Button
                 Width="180"
                 Margin="20"

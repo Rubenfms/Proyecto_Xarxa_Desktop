@@ -269,6 +269,27 @@
                     </Button.Content>
                 </Button>
 
+                <!--  Añadir libro  -->
+                <Button
+                    Height="40"
+                    Background="{StaticResource PrimaryColor2}"
+                    DockPanel.Dock="Top"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
+                    Style="{StaticResource EstiloBotonesMenu}"
+                    Template="{DynamicResource ButtonControlTemplatePrueba}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Width="25"
+                                Height="25"
+                                Margin="20,0,12,0"
+                                Foreground="{StaticResource SecondaryColor2}"
+                                Kind="BookAdd" />
+                            <TextBlock Foreground="{StaticResource SecondaryColor2}" Text="Añadir Libro" />
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+
                 <!--  Opción informes  -->
                 <Button
                     Height="60"
