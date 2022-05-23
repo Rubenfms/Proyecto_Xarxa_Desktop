@@ -118,6 +118,13 @@ namespace Proyecto_Xarxa_Desktop.modelo
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="Modalidad"/> class.
+        /// </summary>
+        public Modalidad()
+        {
+        }
+
+        /// <summary>
         /// Converts to string.
         /// </summary>
         /// <returns>

@@ -50,7 +50,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         }
 
         /// <summary>
-        /// Servicioes the message box.
+        /// Servicio del message box con todos los parámetros.
         /// </summary>
         /// <param name="mensaje">The mensaje.</param>
         /// <param name="titulo">The titulo.</param>
@@ -61,8 +61,19 @@ namespace Proyecto_Xarxa_Desktop.servicios
             MessageBox.Show(mensaje, titulo, boxButton, messageBoxImage);
         }
 
+
         /// <summary>
-        /// Servicioes the message box result.
+        /// Servicio del message box con todos los parámetros menos la imagen.
+        /// </summary>
+        /// <param name="mensaje">The mensaje.</param>
+        /// <param name="titulo">The titulo.</param>
+        /// <param name="boxButton">The box button.</param>
+        public static void ServicioMessageBoxWithoutImage(string mensaje, string titulo, MessageBoxButton boxButton)
+        {
+            MessageBox.Show(mensaje, titulo, boxButton);
+        }
+        /// <summary>
+        /// Servicio del message box con todos los parámetros con resultado.
         /// </summary>
         /// <param name="mensaje">The mensaje.</param>
         /// <param name="titulo">The titulo.</param>

@@ -226,6 +226,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
         // Constructor copia       
         /// <summary>
         /// Initializes a new instance of the <see cref="Alumno"/> class. without Lote
+        /// </summary>
         public Alumno(Alumno alumno)
         {
             Nia = alumno.Nia;
