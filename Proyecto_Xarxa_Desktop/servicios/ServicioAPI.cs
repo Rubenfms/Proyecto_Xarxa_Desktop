@@ -229,6 +229,34 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        /// <summary>
+        /// Método que añade un Modalidad        
+        /// </summary>
+        /// <param name="modalidad">Modalidad a añadir.</param>
+        /// <returns>
+        /// Devuelve un status code que varía en función del resultado de la operación de la API
+        /// </returns>
+        public HttpStatusCode? PostModalidad(Modalidad modalidad)
+        {
+            try
+            {
+                RestRequest request = new RestRequest("/xarxa/modalidades", Method.POST);
+                request.AddCookie(COOKIE_SESSION, GetSessionId());
+                request.AddHeader("Accept", "application/json");
+                request.AddHeader("x-", "");
+                request.AddHeader("Content-Type", "application/json");
+                var body = JsonConvert.SerializeObject(modalidad);
+                request.AddParameter("application/json", body, ParameterType.RequestBody);
+                IRestResponse response = Cliente.Execute(request);
+                return response.StatusCode;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("Error con la API al crear la modalidad", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
+        }
         #endregion
 
         #region Métodos Usuarios
@@ -452,7 +480,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <summary>
         /// Método que añade un alumno        
         /// </summary>
-        /// <param name="usuario">Alumno a añadir.</param>
+        /// <param name="alumno">Alumno a añadir.</param>
         /// <returns>
         /// Devuelve un status code que varía en función del resultado de la operación de la API
         /// </returns>

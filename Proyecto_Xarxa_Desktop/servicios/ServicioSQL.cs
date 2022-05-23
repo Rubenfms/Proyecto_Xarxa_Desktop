@@ -2,6 +2,7 @@
 using Proyecto_Xarxa_Desktop.modelo;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -73,6 +74,30 @@ namespace Proyecto_Xarxa_Desktop.servicios
                     // Si no devolvemos null
                     return null;
                 }
+            }
+        }
+
+        public static ObservableCollection<string> GetCursos()
+        {
+            // Conexión a BD
+            using (MySqlConnection cn = new MySqlConnection(Properties.Settings.Default.CadenaConexionMySQL))
+            {
+                cn.Open();
+
+                // Creamos la query buscando todos los cursos
+                MySqlDataReader dr = new MySqlCommand($"SELECT curso FROM alumno;", cn).ExecuteReader();
+
+                ObservableCollection<string> result = new ObservableCollection<string>();
+
+                while (dr.Read())
+                { 
+                    if(!result.Contains(dr[0].ToString()))
+                    {
+                        result.Add(dr[0].ToString()); // Añadimos los cursos a la lista
+                    }
+                }
+
+                return result;
             }
         }
     }
