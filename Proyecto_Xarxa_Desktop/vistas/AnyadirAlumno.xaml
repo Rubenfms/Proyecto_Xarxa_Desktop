@@ -15,9 +15,9 @@
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <Window.Resources>
-        <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
+        <Style BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}" TargetType="{x:Type TextBox}">
             <Setter Property="Margin" Value="0,0,0,10" />
-            <Setter Property="Height" Value="50"/>
+            <Setter Property="Height" Value="50" />
             <Setter Property="Width" Value="300" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="FontSize" Value="18" />
@@ -32,33 +32,21 @@
             Foreground="{StaticResource PrimaryColor1}"
             Text="Añadir alumno" />
         <!--  NIA  -->
-        <TextBox
-            materialDesign:HintAssist.Hint="NIA"
-            Text="{Binding Path=Alumno.Nia}" />
+        <TextBox materialDesign:HintAssist.Hint="NIA" Text="{Binding Path=Alumno.Nia}" />
 
         <!--  Nombre  -->
-        <TextBox
-            materialDesign:HintAssist.Hint="Nombre"
-            Text="{Binding Path=Alumno.Nombre}" />
+        <TextBox materialDesign:HintAssist.Hint="Nombre" Text="{Binding Path=Alumno.Nombre}" />
 
         <!--  Primer Apellido  -->
-        <TextBox
-            materialDesign:HintAssist.Hint="Primer apellido"
-            Text="{Binding Path=Alumno.Apellido1}" />
+        <TextBox materialDesign:HintAssist.Hint="Primer apellido" Text="{Binding Path=Alumno.Apellido1}" />
 
         <!--  Segundo Apellido  -->
-        <TextBox
-            materialDesign:HintAssist.Hint="Segundo apellido"
-            Text="{Binding Path=Alumno.Apellido2}" />
+        <TextBox materialDesign:HintAssist.Hint="Segundo apellido" Text="{Binding Path=Alumno.Apellido2}" />
 
         <!--  Curso  -->
-        <TextBox
-            materialDesign:HintAssist.Hint="Curso (1ESO, 2ESO)"
-            Text="{Binding Path=Alumno.Curso}" />
+        <TextBox materialDesign:HintAssist.Hint="Curso (1ESO, 2ESO)" Text="{Binding Path=Alumno.Curso}" />
 
-        <TextBox
-            materialDesign:HintAssist.Hint="Grupo (sólo para ESO)"
-            Text="{Binding Path=Alumno.Grupo}" />
+        <TextBox materialDesign:HintAssist.Hint="Grupo (sólo para ESO)" Text="{Binding Path=Alumno.Grupo}" />
 
         <ComboBox
             Width="300"

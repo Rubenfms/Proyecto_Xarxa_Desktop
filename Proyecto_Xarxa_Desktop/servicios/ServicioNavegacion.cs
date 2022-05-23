@@ -155,5 +155,14 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// </summary>
         internal static void AbrirInformeEtiquetasBolsa() => new InformeEtiquetasBolsa().ShowDialog();
 
+        /// <summary>
+        /// Abre la vista para crear una nueva modalidad.
+        /// </summary>
+        internal static void AbrirVistaCrearModalidad() => new CrearModalidadDialog().ShowDialog();
+
+        /// <summary>
+        /// Abre la vista para añadir un libro a la modalidad.
+        /// </summary>
+        internal static void AbrirVistaAnyadirLibroModalidad() => new AnyadirLibroModalidad().ShowDialog();
     }
 }

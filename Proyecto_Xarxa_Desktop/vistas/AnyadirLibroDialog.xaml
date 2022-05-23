@@ -72,15 +72,15 @@
             Height="50"
             Margin="0,0,0,10"
             VerticalAlignment="Center"
-            materialDesign:HintAssist.Hint="Introduce Editorial ..."
+            materialDesign:HintAssist.Hint="Introduce Editorial..."
             FontSize="18"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
             Text="{Binding Path=Editorial}" />
         <Button
             Width="200"
-            IsDefault="True"
             Margin="30"
             Click="AnyadirLibroButton_Click"
-            Content="Añadir libro" />
+            Content="Añadir libro"
+            IsDefault="True" />
     </StackPanel>
 </Window>

@@ -35,5 +35,10 @@ namespace Proyecto_Xarxa_Desktop.vistas
             InitializeComponent();
             DataContext = vm;
         }
+
+        private void CrearModalidadButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.AbrirVistaCrearModalidad();
+        }
     }
 }

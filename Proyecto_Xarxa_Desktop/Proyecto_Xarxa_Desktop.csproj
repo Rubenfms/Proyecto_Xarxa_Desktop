@@ -234,6 +234,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="mensajeria\AlumnoSeleccionadoRequestMessage.cs" />
+    <Compile Include="mensajeria\AnyadirLibroAModalidadMessage.cs" />
     <Compile Include="mensajeria\AsignarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\DatoCambiadoOModificadoMessage.cs" />
     <Compile Include="mensajeria\EditarLibroRequestMessage.cs" />
@@ -282,11 +283,17 @@
     <Compile Include="vistas\AnyadirLibroDialog.xaml.cs">
       <DependentUpon>AnyadirLibroDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\AnyadirLibroModalidad.xaml.cs">
+      <DependentUpon>AnyadirLibroModalidad.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\AsignarLoteDialog.xaml.cs">
       <DependentUpon>AsignarLoteDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistas\CargarCSVDialog.xaml.cs">
       <DependentUpon>CargarCSVDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\CrearModalidadDialog.xaml.cs">
+      <DependentUpon>CrearModalidadDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="vistas\DarDeAltaDialog.xaml.cs">
       <DependentUpon>DarDeAltaDialog.xaml</DependentUpon>
@@ -333,9 +340,11 @@
     <Compile Include="vms\AdministrarUsuariosVM.cs" />
     <Compile Include="vms\AlumnosVM.cs" />
     <Compile Include="vms\AnyadirAlumnoVM.cs" />
+    <Compile Include="vms\AnyadirLibroModalidadVM.cs" />
     <Compile Include="vms\AnyadirLibroVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
     <Compile Include="vms\CargarCSVDialogVM.cs" />
+    <Compile Include="vms\CrearModalidadVM.cs" />
     <Compile Include="vms\EditarAlumnoVM.cs" />
     <Compile Include="vms\EditarLibroVM.cs" />
     <Compile Include="vms\EditarLoteVM.cs" />
@@ -407,11 +416,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="vistas\AnyadirLibroModalidad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="vistas\AsignarLoteDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\CargarCSVDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\CrearModalidadDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -36,6 +36,12 @@
             Margin="0,50,0,0"
             VerticalAlignment="Center"
             DockPanel.Dock="Right">
+
+            <Button
+                Click="CrearModalidadButton_Click"
+                Content="Crear Modalidad"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
+                Style="{StaticResource EstiloBoton}" />
             <Button
                 Command="{Binding Path=GenerarLoteCommand}"
                 Content="Generar Lote"

@@ -251,8 +251,14 @@ namespace Proyecto_Xarxa_Desktop.vms
                 ServicioDialogos.ServicioMessageBox($"Resultado de la eliminación del lote: {statusCode}", "Eliminación lote", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
             }
             else ServicioDialogos.ServicioMessageBox("Tienes que seleccionar un lote para poder eliminarlo.", "Selecciona un lote primero", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+        }
 
-
+        /// <summary>
+        /// Abre una vista de crear modalidad.
+        /// </summary>
+        public void AbrirVistaCrearModalidad()
+        {
+            ServicioNavegacion.AbrirVistaCrearModalidad();
         }
     }
 }

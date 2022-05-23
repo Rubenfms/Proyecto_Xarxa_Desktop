@@ -113,8 +113,6 @@ namespace Proyecto_Xarxa_Desktop.vms
                 ServicioDialogos.ServicioMessageBox("Tienes que seleccionar un NIA", "Selecciona un NIA", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
                 return false;
             }
-
-
         }
 
     }
