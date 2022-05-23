@@ -478,11 +478,18 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+        /// <summary>
+        /// Añade una lista de alumnos.
+        /// </summary>
+        /// <param name="listaAlumnos">La lista de alumnos a añadir.</param>
+        /// <returns>
+        /// Devuelve un status code que varía en función del resultado de la operación de la API
+        /// </returns>
         public HttpStatusCode? PostAlumnos(ObservableCollection<Alumno> listaAlumnos)
         {
             try
             {
-                RestRequest request = new RestRequest("/xarxa/alumnos", Method.POST);
+                RestRequest request = new RestRequest("/xarxa/alumnos/addLista", Method.POST);
                 request.AddCookie(COOKIE_SESSION, GetSessionId());
                 request.AddHeader("Accept", "application/json");
                 request.AddHeader("x-", "");
@@ -541,7 +548,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <summary>
         /// Método que añade un libro.        
         /// </summary>
-        /// <param name="usuario">Libro a añadir.</param>
+        /// <param name="libro">Libro a añadir.</param>
         /// <returns>
         /// Devuelve un status code que varía en función del resultado de la operación de la API.
         /// </returns>
@@ -570,7 +577,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <summary>
         /// Método que actualiza un libro.
         /// </summary>
-        /// <param name="usuario">El libro a actualizar.</param>
+        /// <param name="libro">El libro a actualizar.</param>
         /// <returns> Devuelve un status code que varía en función del resultado de la operación de la API. </returns>
         public HttpStatusCode? PutLibro(Libro libro)
         {
@@ -593,7 +600,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <summary>
         /// Método que elimina un libro a partir de su ibsn      
         /// </summary>
-        /// <param name="id">ISBN del libro a eliminar.</param>
+        /// <param name="isbn">ISBN del libro a eliminar.</param>
         /// <returns>
         /// Devuelve un status code que varía en función del resultado de la operación de la API
         /// </returns>

@@ -165,17 +165,18 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// <returns>
         /// Devuelve una lista de alumnos
         /// </returns>
-        /*
-        public ObservableCollection<Alumno> GetListaAlumnosFromCSV()
+        
+        public static ObservableCollection<Alumno> GetListaAlumnosFromCSV()
         {
-            LeeCsvAlumnosGeneral(); // Introduce todos los alumnos de entre 1º de la eso a 2FPB en la lista
-            LeeCsvFiltroGrupos(); // Lee el csv donde están los grupos de la eso y modifica los campos de la lista
-            LeeCsvAlumnosXarxa(); // Marca con false los que no están en la Xarxa
+            LeeCsvAlumnosGeneral(@"C:\Users\Ruben\Documents\todos.csv"); // Introduce todos los alumnos de entre 1º de la eso a 2FPB en la lista
+            LeeCsvFiltroGrupos(@"C:\Users\Ruben\Documents\filtro_grupos.csv"); // Lee el csv donde están los grupos de la eso y modifica los campos de la lista
+            LeeCsvAlumnosXarxa(@"C:\Users\Ruben\Documents\alumnosxarxa.csv"); // Marca con false los que no están en la Xarxa
             //QuitarAlumnosNoXarxa(); // Quita de la lista los que no están en la xarxa
             //return listaAlumnosDefinitiva;
             return ListaAlumnosGeneral;
-        }*/
+        }
 
+        // a medias
         public static void RealizarCargaCSV(string rutaPrimerCSV, string rutaSegundoCSV, string rutaTercerCSV, bool borrarAlumnosNoXarxa)
         {
             LeeCsvAlumnosGeneral(rutaPrimerCSV); // Introduce todos los alumnos de entre 1º de la eso a 2FPB en la lista
