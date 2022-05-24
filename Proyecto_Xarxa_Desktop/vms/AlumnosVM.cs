@@ -123,7 +123,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                 WeakReferenceMessenger.Default.Register<AlumnosVM, VerLoteRequestMessage>
                     (this, (r, m) =>
                     {
-                        m.Reply(servicioAPI.GetLote(AlumnoSeleccionado.IdLote));
+                        if (!m.HasReceivedResponse) m.Reply(servicioAPI.GetLote(AlumnoSeleccionado.IdLote));
                     });
             }
             // Para que no salte error de null reference (controlado con dialogo en front)
@@ -138,7 +138,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             WeakReferenceMessenger.Default.Register<AlumnosVM, AlumnoSeleccionadoRequestMessage>
                 (this, (r, m) =>
                 {
-                    m.Reply(AlumnoSeleccionado);
+                    if (!m.HasReceivedResponse) m.Reply(AlumnoSeleccionado);
                 });
         }
 

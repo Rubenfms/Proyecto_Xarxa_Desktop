@@ -150,14 +150,14 @@ namespace Proyecto_Xarxa_Desktop.vms
             WeakReferenceMessenger.Default.Register<LotesVM, EditarLoteRequestMessage>
                 (this, (r, m) =>
                 {
-                    m.Reply(LoteSeleccionado);
+                    if (!m.HasReceivedResponse) m.Reply(LoteSeleccionado);
                 });
 
             // Suscripción para mandar el lote a Asignar lote
             WeakReferenceMessenger.Default.Register<LotesVM, AsignarLoteRequestMessage>
                 (this, (r, m) =>
                 {
-                    m.Reply(LoteSeleccionado);
+                    if (!m.HasReceivedResponse) m.Reply(LoteSeleccionado);
                 });
         }
 

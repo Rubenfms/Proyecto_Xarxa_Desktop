@@ -115,13 +115,13 @@ namespace Proyecto_Xarxa_Desktop.vms
             EliminarLibroCommand = new RelayCommand(EliminarLibro);
 
             // Suscripción para mandar el libro a EditarLote
-            // TODO: controlar el invalidoperationexception
             try
             {
+                
                 WeakReferenceMessenger.Default.Register<LibrosVM, EditarLibroRequestMessage>
                 (this, (r, m) =>
                 {
-                    m.Reply(LibroSeleccionado);
+                    if(!m.HasReceivedResponse) m.Reply(LibroSeleccionado);
                 });
             }
             catch (InvalidOperationException)
