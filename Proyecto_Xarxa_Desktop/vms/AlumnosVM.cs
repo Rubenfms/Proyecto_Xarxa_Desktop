@@ -142,10 +142,24 @@ namespace Proyecto_Xarxa_Desktop.vms
                 });
         }
 
+        /// <summary>
+        /// Abre la vista añadir alumno.
+        /// </summary>
         public void AnyadirAlumno() => ServicioNavegacion.AbrirVistaAnyadirAlumno();
+
+        /// <summary>
+        /// Abre la vista editar alumno.
+        /// </summary>
         public void EditarAlumno() => ServicioNavegacion.AbrirVistaEditarAlumno();
+
+        /// <summary>
+        /// Limpia la selección del alumno.
+        /// </summary>
         public void LimpiarSeleccion() => AlumnoSeleccionado = null;
 
+        /// <summary>
+        /// Espera un cambio en la lista.
+        /// </summary>
         private void EsperarCambioEnLaLista()
         {
             WeakReferenceMessenger.Default.Register<DatoAñadidoOModificadoMessage>(this, (r, m) =>

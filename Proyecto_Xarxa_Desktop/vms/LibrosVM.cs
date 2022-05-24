@@ -109,6 +109,8 @@ namespace Proyecto_Xarxa_Desktop.vms
             // Carga libros
             ListaLibros = servicioAPI.GetLibros();
 
+            EsperarCambioEnLaLista();
+
             // Comandos
             AnyadirLibroCommand = new RelayCommand(AbrirVistaAnyadirLibro);
             EditarLibroCommand = new RelayCommand(AbrirVistaEditarLibro);
@@ -128,6 +130,20 @@ namespace Proyecto_Xarxa_Desktop.vms
             {
 
             }
+        }
+
+        /// <summary>
+        /// Espera un cambio en la lista.
+        /// </summary>
+        private void EsperarCambioEnLaLista()
+        {
+            WeakReferenceMessenger.Default.Register<DatoAñadidoOModificadoMessage>(this, (r, m) =>
+            {
+                if (m.Value)
+                {
+                    ListaLibros = servicioAPI.GetLibros();
+                }
+            });
         }
 
         /// <summary>

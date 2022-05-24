@@ -1,4 +1,6 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
+using Microsoft.Toolkit.Mvvm.Messaging;
+using Proyecto_Xarxa_Desktop.mensajeria;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
@@ -119,6 +121,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             {
                 HttpStatusCode? statusCode = servicioAPI.PostLibro(new Libro(Isbn, Titulo, Curso, Departamento, Editorial));
                 ServicioDialogos.ServicioMessageBox($"Resultado del alta del libro: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.Created));
                 return true;
             }
             else return false;
