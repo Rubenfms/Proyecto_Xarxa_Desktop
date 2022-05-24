@@ -83,10 +83,18 @@
             Foreground="{StaticResource PrimaryColor3}"
             IsChecked="{Binding Path=BorrarAlumnosNoXarxa}" />
 
-        <Button
-            Width="200"
-            Click="CargarButton_Click"
-            Content="Hacer carga"
-            IsDefault="True" />
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button
+                Width="150"
+                Margin="10"
+                Content="Cancelar"
+                IsCancel="True" />
+            <Button
+                Width="150"
+                Margin="10"
+                Click="CargarButton_Click"
+                Content="Hacer carga"
+                IsDefault="True" />
+        </StackPanel>
     </StackPanel>
 </Window>

@@ -22,6 +22,15 @@
             <Run Text="Lote Nº:" />
             <Run Text="{Binding Path=LoteAlumno.IdLote}" />
         </TextBlock>
+
+        <Button
+            Width="200"
+            Margin="10"
+            Content="Salir"
+            DockPanel.Dock="Bottom"
+            IsCancel="True" />
+
+
         <ListView IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Path=LoteAlumno.LibrosLote}">
             <ListView.View>
                 <GridView>

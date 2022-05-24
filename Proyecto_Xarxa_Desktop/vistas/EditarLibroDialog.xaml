@@ -76,11 +76,17 @@
             FontSize="18"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
             Text="{Binding Path=LibroSeleccionado.Editorial}" />
-        <Button
-            Width="200"
-            Margin="30"
-            Click="EditarLibroButton_Click"
-            Content="Editar libro"
-            IsDefault="True" />
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="30">
+            <Button
+                Width="200"
+                Content="Cancelar"
+                IsCancel="True" Margin="0,0,20,0" />
+            <Button
+                Width="200"
+                Click="EditarLibroButton_Click"
+                Content="Editar libro"
+                IsDefault="True" />
+        </StackPanel>
     </StackPanel>
 </Window>

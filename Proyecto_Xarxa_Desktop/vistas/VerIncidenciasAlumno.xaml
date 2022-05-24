@@ -26,10 +26,18 @@
             Text="{Binding Path=TextoIncidencias}"
             TextAlignment="Left"
             TextWrapping="Wrap" />
-        <Button
-            Width="150"
-            Command="{Binding Path=GuardarIncidenciaCommand}"
-            Content="Guardar"
-            IsDefault="True" />
+
+        <DockPanel Margin="20,0,20,10" LastChildFill="False">
+            <Button
+                Width="150"
+                Content="Cancelar"
+                IsCancel="True" />
+            <Button
+                Width="150"
+                Command="{Binding Path=GuardarIncidenciaCommand}"
+                Content="Guardar"
+                DockPanel.Dock="Right"
+                IsDefault="True" />
+        </DockPanel>
     </StackPanel>
 </Window>

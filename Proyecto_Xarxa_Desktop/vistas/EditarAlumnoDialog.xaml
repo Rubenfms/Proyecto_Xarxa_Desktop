@@ -16,9 +16,9 @@
     mc:Ignorable="d">
 
     <Window.Resources>
-        <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
+        <Style BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}" TargetType="{x:Type TextBox}">
             <Setter Property="Margin" Value="0,0,0,10" />
-            <Setter Property="Height" Value="50"/>
+            <Setter Property="Height" Value="50" />
             <Setter Property="Width" Value="300" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="FontSize" Value="18" />
@@ -35,31 +35,22 @@
             Foreground="{StaticResource PrimaryColor1}"
             Text="Editar alumno" />
         <!--  NIA  -->
-        <TextBox
-            materialDesign:HintAssist.Hint="NIA"
-            Text="{Binding Path=Alumno.Nia}" />
+        <TextBox materialDesign:HintAssist.Hint="NIA" Text="{Binding Path=Alumno.Nia}" />
 
         <!--  Nombre  -->
-        <TextBox
-            materialDesign:HintAssist.Hint="Nombre"
-            Text="{Binding Path=Alumno.Nombre}" />
+        <TextBox materialDesign:HintAssist.Hint="Nombre" Text="{Binding Path=Alumno.Nombre}" />
 
         <!--  Primer Apellido  -->
-        <TextBox
-            materialDesign:HintAssist.Hint="Primer apellido"
-            Text="{Binding Path=Alumno.Apellido1}" />
+        <TextBox materialDesign:HintAssist.Hint="Primer apellido" Text="{Binding Path=Alumno.Apellido1}" />
 
         <!--  Segundo Apellido  -->
-        <TextBox
-            materialDesign:HintAssist.Hint="Introduce Segundo Apellido"
-            Text="{Binding Path=Alumno.Apellido2}" />
+        <TextBox materialDesign:HintAssist.Hint="Introduce Segundo Apellido" Text="{Binding Path=Alumno.Apellido2}" />
 
         <!--  Curso  -->
         <TextBox
             materialDesign:HintAssist.Hint="Introduce Curso (1ESOC)"
-            Text="{Binding Path=Alumno.Curso}"
-            IsEnabled="True">
-        </TextBox>
+            IsEnabled="True"
+            Text="{Binding Path=Alumno.Curso}" />
 
         <TextBox
             materialDesign:HintAssist.Hint="Introduce grupo (sólo para ESO)"
@@ -73,13 +64,23 @@
             FontSize="16"
             Foreground="{StaticResource PrimaryColor2}"
             IsChecked="{Binding Path=Alumno.PerteneceXarxa}"
-            IsEnabled="False"/>
+            IsEnabled="False" />
 
-        <Button
-            Width="200"
-            Margin="30"
-            Command="{Binding EditarAlumnoCommand}"
-            Click="EditarAlumno_Click"
-            Content="Editar alumno" />
+        <StackPanel
+            Margin="40"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <Button
+                Width="150"
+                Margin="0,0,20,0"
+                Content="Cancelar"
+                IsCancel="True" />
+            <Button
+                Width="150"
+                Click="EditarAlumno_Click"
+                Command="{Binding EditarAlumnoCommand}"
+                Content="Editar alumno"
+                IsDefault="True" />
+        </StackPanel>
     </StackPanel>
 </Window>

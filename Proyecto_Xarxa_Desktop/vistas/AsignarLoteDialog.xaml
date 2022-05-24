@@ -45,10 +45,16 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
         </ListBox>
-        <Button
-            Margin="0,5,0,0"
-            Click="ConfirmarNiaButton_Click"
-            Content="Confirmar"
-            IsDefault="True" />
+        <StackPanel Orientation="Horizontal">
+            <Button
+                Margin="0,5,30,0"
+                Content="Cancelar"
+                IsCancel="True" />
+            <Button
+                Margin="0,5,0,0"
+                Click="ConfirmarNiaButton_Click"
+                Content="Confirmar"
+                IsDefault="True" />
+        </StackPanel>
     </StackPanel>
 </Window>

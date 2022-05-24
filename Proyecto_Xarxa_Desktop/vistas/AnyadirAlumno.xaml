@@ -67,11 +67,18 @@
             Foreground="{StaticResource PrimaryColor2}"
             IsChecked="{Binding Path=Alumno.PerteneceXarxa}" />
 
-        <Button
-            Width="200"
-            Margin="30"
-            Click="AnyadirAlumnoButton_Click"
-            Content="Añadir alumno"
-            IsDefault="True" />
+        <DockPanel Margin="30,40,30,30" LastChildFill="False">
+            <Button
+                Width="150"
+                Margin="0,0,20,0"
+                Content="Salir"
+                IsCancel="True" />
+            <Button
+                Width="150"
+                Click="AnyadirAlumnoButton_Click"
+                Content="Añadir alumno"
+                DockPanel.Dock="Right"
+                IsDefault="True" />
+        </DockPanel>
     </StackPanel>
 </Window>

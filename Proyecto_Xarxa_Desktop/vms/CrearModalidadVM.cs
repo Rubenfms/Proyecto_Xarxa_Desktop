@@ -118,6 +118,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             if(ComprobarDatosIntroducidos())
             {
+                // TODO: Controlar tema id modalidad
                 HttpStatusCode? statusCode = servicioAPI.PostModalidad(NuevaModalidad);
                 ServicioDialogos.ServicioMessageBox($"Resultado de la creación de la modalidad: {statusCode}", statusCode.ToString(), System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.None);
                 return true;
