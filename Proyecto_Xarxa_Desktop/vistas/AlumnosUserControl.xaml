@@ -16,22 +16,24 @@
         <convertidores:BooleanToSiNo x:Key="BooleanToSiNoConverter" />
         <convertidores:IncidenciasToSiNo x:Key="IncidenciasConverter" />
         <convertidores:InvitadoToBoolean x:Key="EnabledConverter" />
+
         <!--  Estilo para aplicar margen a los botones de la derecha  -->
-        <Style
-            BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}"
-            TargetType="{x:Type Button}">
+        <Style BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}" TargetType="{x:Type Button}">
             <Style.Triggers>
                 <DataTrigger Binding="{Binding AlumnoSeleccionado}" Value="{x:Null}">
-                    <Setter Property="IsEnabled" Value="False"></Setter>
+                    <Setter Property="IsEnabled" Value="False" />
                 </DataTrigger>
             </Style.Triggers>
             <Setter Property="Margin" Value="10" />
         </Style>
 
-        <Style TargetType="{x:Type Button}" x:Key="EstiloAdminButton" BasedOn="{StaticResource {x:Type Button}}">
+        <Style
+            x:Key="EstiloAdminButton"
+            BasedOn="{StaticResource {x:Type Button}}"
+            TargetType="{x:Type Button}">
             <Style.Triggers>
                 <DataTrigger Binding="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" Value="False">
-                    <Setter Property="IsEnabled" Value="False"></Setter>
+                    <Setter Property="IsEnabled" Value="False" />
                 </DataTrigger>
             </Style.Triggers>
         </Style>
@@ -60,8 +62,8 @@
                 Margin="0,0,20,0"
                 Click="DarDeBajaButton_Click"
                 Content="Dar de Baja"
-                Style="{StaticResource EstiloAdminButton}"
-                DockPanel.Dock="Right"/>
+                DockPanel.Dock="Right"
+                Style="{StaticResource EstiloAdminButton}" />
             <Button
                 Margin="0,0,20,0"
                 Command="{Binding Path=DarDeAltaCommand}"
@@ -70,9 +72,9 @@
                 Style="{StaticResource EstiloAdminButton}" />
             <Button
                 Margin="0,0,20,0"
+                Command="{Binding EditarAlumnoCommand}"
                 Content="Editar Alumno"
                 DockPanel.Dock="Right"
-                Command="{Binding EditarAlumnoCommand}"
                 Style="{StaticResource EstiloAdminButton}" />
             <!--  Filtros  -->
             <GroupBox Margin="20,10,0,0">
@@ -128,8 +130,8 @@
             <Button
                 Margin="10,30,10,10"
                 Command="{Binding AnyadirAlumnoCommand}"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" 
-                Content="Crear nuevo alumno" />
+                Content="Crear nuevo alumno"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Margin="10"
                 Command="{Binding LimpiarSeleccionCommand}"
