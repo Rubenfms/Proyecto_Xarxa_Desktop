@@ -116,6 +116,12 @@ namespace Proyecto_Xarxa_Desktop.modelo
             LibrosLote = librosLote;
         }
 
+        public Lote(int idLote, Modalidad modalidad)
+        {
+            IdLote = idLote;
+            ModalidadLote = modalidad;
+        }
+
         /// <summary>
         /// Initializes a new empty instance of the <see cref="Lote"/> class.
         /// </summary>

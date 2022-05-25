@@ -145,6 +145,42 @@ namespace Proyecto_Xarxa_Desktop.servicios
             }
         }
 
+
+        public int GetNextIdLote(int cursoModalidad)
+        {
+            try
+            {
+                Numero result = new Numero();
+
+                RestRequest peticion = new RestRequest($"/xarxa/lotes/nextid/{cursoModalidad}", Method.GET);
+                peticion.AddCookie(COOKIE_SESSION, GetSessionId());
+                peticion.AddHeader("Content-Type", "application/json");
+
+                var response = Cliente.ExecuteGetAsync(peticion);
+
+                result = JsonConvert.DeserializeObject<Numero>(response.Result.Content);
+
+                return int.Parse(result.Contenido.ToString());
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando lote", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return 0;
+                throw;
+            }
+            catch (ArgumentNullException)
+            {
+                ServicioDialogos.ServicioMessageBox("La API ha tenido un error recuperando lote", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return 0;
+                throw;
+            }
+            catch (JsonSerializationException)
+            {
+                return 0;
+            }
+        }
+
+
         /// <summary>
         /// Método que actualiza un lote    
         /// </summary>
@@ -189,6 +225,34 @@ namespace Proyecto_Xarxa_Desktop.servicios
             IRestResponse response = Cliente.Execute(request);
             return response.StatusCode;
 
+        }
+
+        /// <summary>
+        /// Post de un nuevo lote.
+        /// </summary>
+        /// <value>
+        /// Lote a insertar en la bd.
+        /// </value>
+        public HttpStatusCode? PostLote(Lote lote)
+        {
+            try
+            {
+                RestRequest request = new RestRequest("/xarxa/lotes", Method.POST);
+                request.AddCookie(COOKIE_SESSION, GetSessionId());
+                request.AddHeader("Accept", "application/json");
+                request.AddHeader("x-", "");
+                request.AddHeader("Content-Type", "application/json");
+                var body = JsonConvert.SerializeObject(lote);
+                request.AddParameter("application/json", body, ParameterType.RequestBody);
+                IRestResponse response = Cliente.Execute(request);
+                return response.StatusCode;
+            }
+            catch (AggregateException)
+            {
+                ServicioDialogos.ServicioMessageBox("Error con la API al introducir el alumno", "Error con la API", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return null;
+                throw;
+            }
         }
 
         #endregion

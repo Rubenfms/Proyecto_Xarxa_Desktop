@@ -6,8 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
@@ -126,8 +128,9 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             string curso = ModalidadSeleccionada.Curso.Remove(1, ModalidadSeleccionada.Curso.Length - 1); // Como viene en formato (1ºESO) me quedo solo con el numero
 
+            string cabeceraId = curso + modalidadSeleccionada.Id;
             // Hallamos el idLote
-            IdLote = ServicioSQL.HallarUltLote(Int32.Parse(curso), modalidadSeleccionada.Id);
+            IdLote = int.Parse( cabeceraId + servicioAPI.GetNextIdLote(int.Parse(cabeceraId)).ToString().PadLeft(3, '0'));
 
         }
 
@@ -145,7 +148,10 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public void ConfirmarLote()
         {
-            //Lote nuevolote = new Lote((int)IdLote, modalidadSeleccionada.LibrosModalidad, ModalidadSeleccionada);
+            Lote nuevolote = new Lote((int)IdLote, ModalidadSeleccionada);
+            HttpStatusCode? statusCode = servicioAPI.PostLote(nuevolote);
+            ServicioDialogos.ServicioMessageBox($"Resultado del alta del lote: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+
         }
     }
 }

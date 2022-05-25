@@ -241,6 +241,7 @@
     <Compile Include="mensajeria\EditarLoteRequestMessage.cs" />
     <Compile Include="mensajeria\VerLoteRequestMessage.cs" />
     <Compile Include="modelo\LoteInformeEtiquetas.cs" />
+    <Compile Include="modelo\Numero.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="servicios\ServicioAPI.cs" />
     <Compile Include="servicios\ServicioCodigoBarras.cs" />
