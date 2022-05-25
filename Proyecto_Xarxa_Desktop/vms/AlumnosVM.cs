@@ -72,7 +72,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <summary>
         /// Campo del servicio para la API.
         /// </summary>
-        private ServicioAPI servicioAPI;
+        private readonly ServicioAPI servicioAPI;
 
         // Comandos
 

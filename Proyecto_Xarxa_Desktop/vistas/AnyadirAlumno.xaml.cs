@@ -23,7 +23,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <summary>
         /// VM de AnyadirAlumno
         /// </summary>
-        private AnyadirAlumnoVM vm = new AnyadirAlumnoVM();
+        private readonly AnyadirAlumnoVM vm = new AnyadirAlumnoVM();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AnyadirAlumno"/> class.

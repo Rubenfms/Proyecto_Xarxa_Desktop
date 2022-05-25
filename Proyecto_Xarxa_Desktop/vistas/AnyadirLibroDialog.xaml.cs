@@ -23,7 +23,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <summary>
         /// La VM de AnyadirLibroDialog
         /// </summary>
-        private AnyadirLibroVM vm = new AnyadirLibroVM();
+        private readonly AnyadirLibroVM vm = new AnyadirLibroVM();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AnyadirLibroDialog"/> class.

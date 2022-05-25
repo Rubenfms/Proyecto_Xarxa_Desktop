@@ -23,7 +23,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <summary>
         /// El vm de CrearModalidadDialog
         /// </summary>
-        private CrearModalidadVM vm = new CrearModalidadVM();
+        private readonly CrearModalidadVM vm = new CrearModalidadVM();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CrearModalidadDialog"/> class.

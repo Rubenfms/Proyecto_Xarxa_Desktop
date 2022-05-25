@@ -24,7 +24,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <summary>
         /// El vm de AnyadirLibroModalidad
         /// </summary>
-        private AnyadirLibroModalidadVM vm = new AnyadirLibroModalidadVM();
+        private readonly AnyadirLibroModalidadVM vm = new AnyadirLibroModalidadVM();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AnyadirLibroModalidad"/> class.

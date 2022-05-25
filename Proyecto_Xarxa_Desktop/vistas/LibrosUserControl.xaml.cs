@@ -24,7 +24,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <summary>
         /// VM de LibrosUserControl.
         /// </summary>
-        private LibrosVM vm = new LibrosVM();
+        private readonly LibrosVM vm = new LibrosVM();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LibrosUserControl"/> class.

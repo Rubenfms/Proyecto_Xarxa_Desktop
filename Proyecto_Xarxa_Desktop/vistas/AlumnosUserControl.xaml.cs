@@ -25,7 +25,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <summary>
         /// VM de Alumnos VM
         /// </summary>
-        private AlumnosVM vm = new AlumnosVM();
+        private readonly AlumnosVM vm = new AlumnosVM();
         /// <summary>
         /// Initializes a new instance of the <see cref="AlumnosUserControl"/> class.
         /// </summary>

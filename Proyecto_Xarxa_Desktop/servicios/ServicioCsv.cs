@@ -17,7 +17,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
     /// </summary>
     class ServicioCsv
     {
-        private static ServicioAPI servicioApi = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
+        private static readonly ServicioAPI servicioApi = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
         private static ObservableCollection<Alumno> listaAlumnosGeneral = new ObservableCollection<Alumno>();
 
         public static ObservableCollection<Alumno> ListaAlumnosGeneral
@@ -79,9 +79,9 @@ namespace Proyecto_Xarxa_Desktop.servicios
         {
             StreamReader archivo = new StreamReader(ruta);
             archivo.ReadLine(); // Leer la primera línea para descartarla porque es el encabezado
-            string linea = "";
             char separador = ',';
 
+            string linea;
             while ((linea = archivo.ReadLine()) != null)
             {
                 string[] fila = linea.Replace("\"", "").Split(separador); // Replace para eliminar todas las comillas dobles 

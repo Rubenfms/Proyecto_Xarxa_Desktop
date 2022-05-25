@@ -25,7 +25,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <summary>
         /// VM de Lotes
         /// </summary>
-        private LotesVM vm = new LotesVM();
+        private readonly LotesVM vm = new LotesVM();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LotesUserControl"/> class.

@@ -47,7 +47,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <summary>
         /// The servicio validar usuario
         /// </summary>
-        ServicioValidarUsuario servicioValidarUsuario;
+        private readonly ServicioValidarUsuario servicioValidarUsuario;
 
         /// <summary>
         /// Campo necesario para la contraseña al ser SecureBox

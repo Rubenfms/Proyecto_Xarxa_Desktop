@@ -31,8 +31,10 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// </summary>
         public static string OpenFileDialogService()
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Spreadsheet Files|*.csv;*.xls;*.xlsm;*.xlsx;"; // Se recomienda CSV
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "Spreadsheet Files|*.csv;*.xls;*.xlsm;*.xlsx;" // Se recomienda CSV
+            };
 
 
             bool? resultado = openFileDialog.ShowDialog();

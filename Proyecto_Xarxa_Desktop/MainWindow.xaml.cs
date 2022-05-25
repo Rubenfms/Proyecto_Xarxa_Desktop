@@ -28,7 +28,7 @@ namespace Proyecto_Xarxa_Desktop
         /// <summary>
         /// VM de MainWindow
         /// </summary>
-        private MainWindowVM vm = new MainWindowVM();
+        private readonly MainWindowVM vm = new MainWindowVM();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MainWindow"/> class.

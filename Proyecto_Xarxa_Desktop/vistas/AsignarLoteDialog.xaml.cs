@@ -23,7 +23,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <summary>
         /// La VM de AsignarLote
         /// </summary>
-        private AsignarLoteVM vm = new AsignarLoteVM();
+        private readonly AsignarLoteVM vm = new AsignarLoteVM();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AsignarLoteDialog"/> class.

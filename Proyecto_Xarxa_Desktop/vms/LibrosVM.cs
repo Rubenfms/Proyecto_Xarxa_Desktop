@@ -71,7 +71,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <summary>
         /// The servicio API
         /// </summary>
-        private ServicioAPI servicioAPI;
+        private readonly ServicioAPI servicioAPI;
 
         /// <summary>
         /// Gets the anyadir libro command.

@@ -23,7 +23,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
         /// <summary>
         /// VM de Dar De Alta alumno
         /// </summary>
-        private DarDeAltaAlumnoVM vm = new DarDeAltaAlumnoVM();
+        private readonly DarDeAltaAlumnoVM vm = new DarDeAltaAlumnoVM();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DarDeAltaDialog"/> class.

@@ -51,7 +51,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <summary>
         /// The servicio API
         /// </summary>
-        private ServicioAPI servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
+        private readonly ServicioAPI servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AnyadirLibroModalidadVM"/> class.
