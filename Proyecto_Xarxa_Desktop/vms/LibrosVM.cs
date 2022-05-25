@@ -6,6 +6,7 @@ using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
 using System.Collections.ObjectModel;
+using System.Net;
 using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
@@ -119,11 +120,11 @@ namespace Proyecto_Xarxa_Desktop.vms
             // Suscripción para mandar el libro a EditarLote
             try
             {
-                
+
                 WeakReferenceMessenger.Default.Register<LibrosVM, EditarLibroRequestMessage>
                 (this, (r, m) =>
                 {
-                    if(!m.HasReceivedResponse) m.Reply(LibroSeleccionado);
+                    if (!m.HasReceivedResponse) m.Reply(LibroSeleccionado);
                 });
             }
             catch (InvalidOperationException)
@@ -159,15 +160,11 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public void AbrirVistaEditarLibro()
         {
-            try
+            if (LibroSeleccionado != null)
             {
                 ServicioNavegacion.AbrirVistaEditarLibro();
-
             }
-            catch (NullReferenceException)
-            {
-                ServicioDialogos.ServicioMessageBox("Selecciona un libro para poder editarlo.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
-            }
+            else ServicioDialogos.ServicioMessageBox("Selecciona un libro para poder editarlo.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
         }
 
         /// <summary>
@@ -175,7 +172,13 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public void EliminarLibro()
         {
-
+            if (LibroSeleccionado != null)
+            {
+                HttpStatusCode? statusCode = servicioAPI.DeleteLibro(LibroSeleccionado.Isbn);
+                ServicioDialogos.ServicioMessageBox($"Resultado del borrado del libro: {statusCode}", $"{statusCode}", MessageBoxButton.OK, MessageBoxImage.Information);
+                WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.Created));
+            }
+            else ServicioDialogos.ServicioMessageBox("Selecciona un libro para poder eliminarlo.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
         }
     }
 }

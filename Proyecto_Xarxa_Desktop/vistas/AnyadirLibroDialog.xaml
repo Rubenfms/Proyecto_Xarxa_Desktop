@@ -6,9 +6,11 @@
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vms="clr-namespace:Proyecto_Xarxa_Desktop.vms"
     Title="Añadir libro"
     Width="450"
     Height="500"
+    d:DataContext="{d:DesignInstance Type=vms:AnyadirLibroVM}"
     Icon="../assets/add_book.ico"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
@@ -22,16 +24,17 @@
             FontSize="25"
             Foreground="{StaticResource PrimaryColor1}"
             Text="Añadir Libro" />
+
         <!--  ISBN  -->
         <TextBox
             Width="300"
             Height="50"
             Margin="0,0,0,10"
             VerticalAlignment="Center"
-            materialDesign:HintAssist.Hint="Introduce ISBN..."
+            materialDesign:HintAssist.Hint="Introduce ISBN (Ej:978963516711)..."
             FontSize="18"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-            Text="{Binding Path=Isbn}" />
+            Text="{Binding Path=LibroSel.Isbn}" />
 
         <!--  Titulo  -->
         <TextBox
@@ -42,7 +45,7 @@
             materialDesign:HintAssist.Hint="Introduce Titulo..."
             FontSize="18"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-            Text="{Binding Path=Titulo}" />
+            Text="{Binding Path=LibroSel.Titulo}" />
 
         <!--  Curso  -->
         <TextBox
@@ -53,7 +56,7 @@
             materialDesign:HintAssist.Hint="Introduce Curso (Ej 1ESOC)..."
             FontSize="18"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-            Text="{Binding Path=Curso}" />
+            Text="{Binding Path=LibroSel.Curso}" />
 
         <!--  Departamento  -->
         <TextBox
@@ -64,7 +67,7 @@
             materialDesign:HintAssist.Hint="Introduce Departamento..."
             FontSize="18"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-            Text="{Binding Path=Departamento}" />
+            Text="{Binding Path=LibroSel.Departamento}" />
 
         <!--  Editorial  -->
         <TextBox
@@ -75,7 +78,7 @@
             materialDesign:HintAssist.Hint="Introduce Editorial..."
             FontSize="18"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-            Text="{Binding Path=Editorial}" />
+            Text="{Binding Path=LibroSel.Editorial}" />
 
         <StackPanel Orientation="Horizontal">
             <Button

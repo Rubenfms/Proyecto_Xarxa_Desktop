@@ -67,7 +67,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <returns>true si todos los datos introducidos o false si algún dato érroneo</returns>
         public bool ComprobarDatosIntroducidos()
         {
-            if (LibroSeleccionado.Isbn == null || !Int32.TryParse(LibroSeleccionado.Isbn, out _))
+            if (LibroSeleccionado.Isbn == null || !long.TryParse(LibroSeleccionado.Isbn, out _))
             {
                 ServicioDialogos.ServicioMessageBox("El formato de ISBN introducido no es válido (Ej:978963516711). Prueba a introducir solo números y que el ISBN sea mayor de 10 digitos.", "Formato no válido", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;
