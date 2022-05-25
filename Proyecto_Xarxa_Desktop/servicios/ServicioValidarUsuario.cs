@@ -54,23 +54,22 @@ namespace Proyecto_Xarxa_Desktop.servicios
         {
             try
             {
-                //Application.Current.Resources["sessionId"] = servicioApi.LoginUsuario(UsuarioAValidar.NombreUsuario, Sha256encrypt(UsuarioAValidar.Contrasenya));
+                Application.Current.Resources["sessionId"] = servicioApi.LoginUsuario(UsuarioAValidar.NombreUsuario, Sha256encrypt(UsuarioAValidar.Contrasenya));
 
-                //if (Application.Current.Resources["sessionId"].ToString().Length > 0)
-                //{
-
-                Usuario usuarioBD = servicioApi.GetUsuario(UsuarioAValidar.NombreUsuario);
-
-                string hashedPass = Sha256encrypt(UsuarioAValidar.Contrasenya);
-                if (usuarioBD.Contrasenya.Equals(hashedPass) && usuarioBD.NombreUsuario.Equals(UsuarioAValidar.NombreUsuario))
+                if (Application.Current.Resources["sessionId"].ToString().Length > 0)
                 {
-                    UsuarioActual = usuarioBD;
 
-                    Application.Current.Resources["UsuarioLogeado"] = UsuarioActual;
-                    return true;
+                    Usuario usuarioBD = servicioApi.GetUsuario(UsuarioAValidar.NombreUsuario);
+
+                    string hashedPass = Sha256encrypt(UsuarioAValidar.Contrasenya);
+                    if (usuarioBD.Contrasenya.Equals(hashedPass) && usuarioBD.NombreUsuario.Equals(UsuarioAValidar.NombreUsuario))
+                    {
+                        UsuarioActual = usuarioBD;
+
+                        Application.Current.Resources["UsuarioLogeado"] = UsuarioActual;
+                        return true;
+                    }
                 }
-
-                //}
             }
             catch (NullReferenceException)
             {

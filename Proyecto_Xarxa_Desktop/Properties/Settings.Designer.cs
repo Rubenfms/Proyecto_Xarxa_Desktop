@@ -43,7 +43,7 @@ namespace Proyecto_Xarxa_Desktop.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:8081/apixarxa")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://xarxa.eastus.cloudapp.azure.com:8081/apixarxa/")]
         public string CadenaConexionLocalhost {
             get {
                 return ((string)(this["CadenaConexionLocalhost"]));
