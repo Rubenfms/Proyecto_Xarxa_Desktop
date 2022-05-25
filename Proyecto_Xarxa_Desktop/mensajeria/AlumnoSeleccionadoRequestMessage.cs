@@ -8,5 +8,8 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.mensajeria
 {
+    /// <summary>
+    /// Mensajeria para mandar el alumno seleccionado.
+    /// </summary>
     class AlumnoSeleccionadoRequestMessage : RequestMessage<Alumno> { }
 }

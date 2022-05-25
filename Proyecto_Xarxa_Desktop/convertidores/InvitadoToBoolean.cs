@@ -8,6 +8,10 @@ using System.Windows.Data;
 
 namespace Proyecto_Xarxa_Desktop.convertidores
 {
+    /// <summary>
+    /// Convertidor que devuelve true si el usuario no es invitado
+    /// </summary>
+    /// <seealso cref="System.Windows.Data.IValueConverter" />
     class InvitadoToBoolean : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)

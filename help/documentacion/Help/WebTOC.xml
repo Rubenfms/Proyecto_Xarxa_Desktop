@@ -1,33 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="280c97e9-c639-4d4f-b87a-9a1c8bd7243b" Title="Proyecto_Xarxa_Desktop" Url="html/dcf2aa46-32ae-93a9-09ab-6ac018778212.htm">
-    <HelpTOCNode Id="14f9db87-1524-4312-8a08-fc4a80c8ab70" Title="App (Clase)" Url="html/90d119d5-27cf-463b-9e95-5e22f3d035e4.htm">
+  <HelpTOCNode Id="d2212445-0299-4fa3-9e76-29975fc9d818" Title="Proyecto_Xarxa_Desktop" Url="html/dcf2aa46-32ae-93a9-09ab-6ac018778212.htm">
+    <HelpTOCNode Id="30701c79-0f5c-4cc1-bd2a-48f35be8f30e" Title="App (Clase)" Url="html/90d119d5-27cf-463b-9e95-5e22f3d035e4.htm">
       <HelpTOCNode Title="App (Constructor )" Url="html/62e5c69e-6df6-2dcb-cb53-7e2ad5267bb8.htm" />
       <HelpTOCNode Title="App (Propiedades)" Url="html/2ab52b9a-c022-7288-d241-6f657c9af18f.htm" />
-      <HelpTOCNode Id="dc806f0c-e0af-4169-ab62-1dedabefc8f4" Title="App (M&#233;todos)" Url="html/a7eea37a-1d72-7d75-69d8-7ecd20bdd7bc.htm">
+      <HelpTOCNode Id="1aea968c-ddea-41ce-947d-b6e17d725555" Title="App (M&#233;todos)" Url="html/a7eea37a-1d72-7d75-69d8-7ecd20bdd7bc.htm">
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/c2194822-342e-7c34-542c-9e4c518c5d6e.htm" />
         <HelpTOCNode Title="Main (M&#233;todo )" Url="html/0f4772a1-68a7-5bd8-8107-b50d39610f7a.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="App (Eventos)" Url="html/2cf118ec-cee5-9cea-8df6-0b6087c4e172.htm" />
-      <HelpTOCNode Id="e91b5d85-fd5c-4e19-a8e5-2c659cd38f6e" Title="App (Campos)" Url="html/992cd692-5ca9-0497-bd1a-8cf78735d870.htm">
+      <HelpTOCNode Id="ac4712ad-a448-4962-b66d-2275c6d0cf14" Title="App (Campos)" Url="html/992cd692-5ca9-0497-bd1a-8cf78735d870.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/9d16beef-a55f-e7a7-4c8e-6023e0ed57a4.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="09fe878e-6589-4952-8e6c-2fb82687a6bb" Title="MainWindow (Clase)" Url="html/6a4227a6-e8b9-476b-8cf2-e2f527a62383.htm">
+    <HelpTOCNode Id="be02da51-f6df-4a88-ae64-da7616de770a" Title="MainWindow (Clase)" Url="html/6a4227a6-e8b9-476b-8cf2-e2f527a62383.htm">
       <HelpTOCNode Title="MainWindow (Constructor )" Url="html/b9bcfc13-9f19-4313-8d3b-1622a0ac60f8.htm" />
       <HelpTOCNode Title="MainWindow (Propiedades)" Url="html/f38d36fa-65d3-31b6-0caf-e314830fb736.htm" />
-      <HelpTOCNode Id="17b91099-864d-4521-b008-0028b8bd18fb" Title="MainWindow (M&#233;todos)" Url="html/5ffbcdb5-1dff-9a0d-4dee-c89bd4d8165c.htm">
+      <HelpTOCNode Id="f021bc6f-7ce6-452d-ad68-dbe3c876f6fc" Title="MainWindow (M&#233;todos)" Url="html/5ffbcdb5-1dff-9a0d-4dee-c89bd4d8165c.htm">
         <HelpTOCNode Title="AbrirMenuButton_Click (M&#233;todo )" Url="html/97758fde-7f53-a28d-5c8b-f2b5d471fd58.htm" />
+        <HelpTOCNode Title="AnyadirLibroButton_Click (M&#233;todo )" Url="html/986efcee-24b8-8db6-1717-fe9551534297.htm" />
+        <HelpTOCNode Title="AyudaButton_Click (M&#233;todo )" Url="html/63bb64a6-dd2d-f193-3b63-a0f8f60d337c.htm" />
         <HelpTOCNode Title="CerrarMenuButton_Click (M&#233;todo )" Url="html/68f2358c-f856-b97e-bb3a-c9c15f1869eb.htm" />
         <HelpTOCNode Title="CerrarSesionButton_Click (M&#233;todo )" Url="html/14fd6f6e-ce71-c055-26b4-14b07b4e3e64.htm" />
+        <HelpTOCNode Title="CrearAlumnoButton_Click (M&#233;todo )" Url="html/aa84df36-35a0-5638-2e7c-af5e8bbde4ae.htm" />
         <HelpTOCNode Title="DarDeAltaButton_Click (M&#233;todo )" Url="html/5e98565f-b50a-8f03-1dce-969a3af362b7.htm" />
+        <HelpTOCNode Title="DocTecnicaButton_Click (M&#233;todo )" Url="html/8b297d8a-daf0-8afe-cb49-a2a7354dfbe7.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/cae62a71-7590-aa87-512a-ead098897f4a.htm" />
         <HelpTOCNode Title="OpcionesSUButton_Click (M&#233;todo )" Url="html/44586a47-4ac4-ba97-3430-6d1adb55fd08.htm" />
         <HelpTOCNode Title="SalirButton_Click (M&#233;todo )" Url="html/c11dd5c1-650c-9b12-c485-4505962df05f.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="MainWindow (Eventos)" Url="html/ace03f4b-f8c8-31af-84a7-c31add74e967.htm" />
-      <HelpTOCNode Id="3b87c828-04fa-4a93-82ea-c4b7437ac51b" Title="MainWindow (Campos)" Url="html/706c9ebc-6760-2dac-69c7-3a251e4d4c94.htm">
+      <HelpTOCNode Id="bfb5ab7b-02b2-4b7c-a750-fccd97801d02" Title="MainWindow (Campos)" Url="html/706c9ebc-6760-2dac-69c7-3a251e4d4c94.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/b10eae78-2a21-7275-6b74-164c25038f81.htm" />
         <HelpTOCNode Title="AbrirMenuButton (Campo)" Url="html/f6fa658c-c3cf-ab4d-d9c9-bd386dc922be.htm" />
         <HelpTOCNode Title="BalmisImagen (Campo)" Url="html/e8e0f258-9ab6-d691-6107-65f4790faf87.htm" />
@@ -42,78 +46,310 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="988b82e2-6e84-4540-896b-11252d1b2169" Title="Proyecto_Xarxa_Desktop.convertidores" Url="html/ba70256e-b836-3ee4-3ff3-9a7fdd0dfff0.htm">
-    <HelpTOCNode Id="4f459c54-24b6-46d4-af9e-b17980234aaa" Title="BooleanToSiNo (Clase)" Url="html/9a7755d3-9549-ae58-7016-cc0de63b7e70.htm">
+  <HelpTOCNode Id="119c93aa-7257-4ba7-a95a-6e36829891a6" Title="Proyecto_Xarxa_Desktop.convertidores" Url="html/ba70256e-b836-3ee4-3ff3-9a7fdd0dfff0.htm">
+    <HelpTOCNode Id="971ea083-da75-4171-8ac8-6f48ded0af36" Title="BooleanToSiNo (Clase)" Url="html/9a7755d3-9549-ae58-7016-cc0de63b7e70.htm">
       <HelpTOCNode Title="BooleanToSiNo (Constructor )" Url="html/371c4110-51fb-ca3d-d607-b772fb354085.htm" />
-      <HelpTOCNode Id="227ff61b-5123-4cb5-a2c4-67fa2324e051" Title="BooleanToSiNo (M&#233;todos)" Url="html/bb3981d2-5d60-c70b-9aa6-8018060c359e.htm">
+      <HelpTOCNode Id="fbc4ec79-35b0-4d83-a10c-576abcf29955" Title="BooleanToSiNo (M&#233;todos)" Url="html/bb3981d2-5d60-c70b-9aa6-8018060c359e.htm">
         <HelpTOCNode Title="Convert (M&#233;todo )" Url="html/b4a42f84-c60b-acba-f882-64bc81c31423.htm" />
         <HelpTOCNode Title="ConvertBack (M&#233;todo )" Url="html/f27474d5-7297-bcad-c6c2-5a46116bb792.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="d7fa16c6-15cb-4869-b16a-3c1ecd44efa9" Title="IncidenciasToSiNo (Clase)" Url="html/ba614cc6-f3e2-723b-b6e8-903d911fb7a3.htm">
+    <HelpTOCNode Id="fa34d75d-26c4-4877-9418-cc7b40d50fed" Title="IncidenciasToSiNo (Clase)" Url="html/ba614cc6-f3e2-723b-b6e8-903d911fb7a3.htm">
       <HelpTOCNode Title="IncidenciasToSiNo (Constructor )" Url="html/7e878c21-15bd-4776-5f28-4285354b31c2.htm" />
-      <HelpTOCNode Id="345b7b69-c9e8-42c4-afc0-0a7bf58c2398" Title="IncidenciasToSiNo (M&#233;todos)" Url="html/f63bcfb4-2b98-88c2-1f15-cf40b8b76ef4.htm">
+      <HelpTOCNode Id="1320f3ca-e76a-49c0-a18c-853799d7f0be" Title="IncidenciasToSiNo (M&#233;todos)" Url="html/f63bcfb4-2b98-88c2-1f15-cf40b8b76ef4.htm">
         <HelpTOCNode Title="Convert (M&#233;todo )" Url="html/3dc34546-96e9-9529-5e8e-eb90c840e2c5.htm" />
         <HelpTOCNode Title="ConvertBack (M&#233;todo )" Url="html/bef17ea3-f254-4737-acbe-4a72549bec0d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e4509243-97fc-4c8b-a03b-ea7815e37c53" Title="NullToVisibilityModificado (Clase)" Url="html/31c521b6-c4d5-eb97-f051-3e968ba67f33.htm">
+    <HelpTOCNode Id="c79abb67-3e69-4a04-a5e1-baf2601196a3" Title="InvitadoToBoolean (Clase)" Url="html/2774bec0-c14c-b6e3-1d11-ab5e9837a427.htm">
+      <HelpTOCNode Title="InvitadoToBoolean (Constructor )" Url="html/7bb51d0e-8c3d-62dd-843f-8cd28ee38247.htm" />
+      <HelpTOCNode Id="0a162d5a-4a91-4886-985e-dee93b02deb8" Title="InvitadoToBoolean (M&#233;todos)" Url="html/30b32740-1487-ba0b-73d5-3e2d6c2284b0.htm">
+        <HelpTOCNode Title="Convert (M&#233;todo )" Url="html/61c1fb36-eac8-8356-d97d-aa692dce7ecb.htm" />
+        <HelpTOCNode Title="ConvertBack (M&#233;todo )" Url="html/b6653a4c-e806-e1ed-4bb6-28dedb0d5f05.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9e0a08f5-dc0e-4142-b4a4-dc389b674e14" Title="NullToVisibilityModificado (Clase)" Url="html/31c521b6-c4d5-eb97-f051-3e968ba67f33.htm">
       <HelpTOCNode Title="NullToVisibilityModificado (Constructor )" Url="html/d4f7ebbf-62de-f0c1-7836-5cbb6b7aa041.htm" />
-      <HelpTOCNode Id="5bc56026-8c28-4181-80cc-ea476ebde55c" Title="NullToVisibilityModificado (M&#233;todos)" Url="html/d332b185-259a-178c-4c82-15d29f67c43a.htm">
+      <HelpTOCNode Id="1384cb02-cbaa-40d4-bb1c-822bccc624e3" Title="NullToVisibilityModificado (M&#233;todos)" Url="html/d332b185-259a-178c-4c82-15d29f67c43a.htm">
         <HelpTOCNode Title="Convert (M&#233;todo )" Url="html/8de1f7f4-979b-9d95-e9a2-ae1f59548a08.htm" />
         <HelpTOCNode Title="ConvertBack (M&#233;todo )" Url="html/d18ad65c-7978-5eef-ad65-6cefcb603879.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="2678866f-c427-44ab-b74a-058ab81cf201" Title="TipoUsuarioToEnabled (Clase)" Url="html/70f5ca82-7621-8f7a-c855-74a0edfb8263.htm">
+    <HelpTOCNode Id="b8afe1cf-f4e4-452d-a07c-c3f26b603418" Title="TipoUsuarioToEnabled (Clase)" Url="html/70f5ca82-7621-8f7a-c855-74a0edfb8263.htm">
       <HelpTOCNode Title="TipoUsuarioToEnabled (Constructor )" Url="html/08971d0b-51e5-6fb4-e2ff-a0acb19f883f.htm" />
-      <HelpTOCNode Id="75970d71-677d-41b0-9a15-afea42453a5c" Title="TipoUsuarioToEnabled (M&#233;todos)" Url="html/a2fa6614-df37-f5fa-b037-fcffaf4f159a.htm">
+      <HelpTOCNode Id="af456423-7751-4bb6-97a1-3679c75c086f" Title="TipoUsuarioToEnabled (M&#233;todos)" Url="html/a2fa6614-df37-f5fa-b037-fcffaf4f159a.htm">
         <HelpTOCNode Title="Convert (M&#233;todo )" Url="html/bec094f2-6e31-d3ed-c9c0-98f0360aa49f.htm" />
         <HelpTOCNode Title="ConvertBack (M&#233;todo )" Url="html/0786649c-b2d3-ab7f-77cf-a739150aa8de.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="f8409a98-59cf-4d1f-bf63-4c9fea3372a1" Title="Proyecto_Xarxa_Desktop.enumerados" Url="html/dbe87247-dcc6-d0cb-ce52-57c556cc47ce.htm">
+  <HelpTOCNode Id="396b1299-b044-49b3-9727-8f26cccf1567" Title="Proyecto_Xarxa_Desktop.enumerados" Url="html/dbe87247-dcc6-d0cb-ce52-57c556cc47ce.htm">
     <HelpTOCNode Title="EstadoMatricula (Enumeraci&#243;n)" Url="html/1e3a4eb4-b988-52e5-8217-f526f51c8bca.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="8bd91409-ddc5-4e9e-9ca4-0b2a213d4a35" Title="Proyecto_Xarxa_Desktop.mensajeria" Url="html/240be15c-1c0d-9a4b-3f33-b3dd3e577122.htm">
-    <HelpTOCNode Id="ccfbd76a-e2a5-4432-8ded-24754368a235" Title="AlumnoRequestMessage (Clase)" Url="html/b3345a43-7bc6-bb19-ff77-c209c2d054b0.htm">
-      <HelpTOCNode Title="AlumnoRequestMessage (Constructor )" Url="html/5126f9b8-e10f-3a18-e2b0-f018a55efbe1.htm" />
-      <HelpTOCNode Title="AlumnoRequestMessage (Propiedades)" Url="html/28982699-ba4e-b12f-3de8-9992a2f1b0dc.htm" />
-      <HelpTOCNode Title="AlumnoRequestMessage (M&#233;todos)" Url="html/ca26980a-45a0-6b6e-10b9-0280471c398c.htm" />
+  <HelpTOCNode Id="ef263280-ff10-4409-8b45-11254d5742cc" Title="Proyecto_Xarxa_Desktop.informes" Url="html/76de40a0-3e36-9bf5-9284-dcc99aa0167a.htm">
+    <HelpTOCNode Id="6de7b55f-56fe-4c09-a1c4-5da21e28a0e2" Title="CachedConcesionReport (Clase)" Url="html/b2d47014-a227-bec2-f6dc-65d915348e79.htm">
+      <HelpTOCNode Title="CachedConcesionReport (Constructor )" Url="html/0bad7ade-d664-c364-93fc-0f6fe9b6eace.htm" />
+      <HelpTOCNode Id="62e716fd-308e-4414-920d-91f59dca226c" Title="CachedConcesionReport (Propiedades)" Url="html/aa1bb80e-b28e-04ff-b0e9-c6f010fad690.htm">
+        <HelpTOCNode Title="CacheTimeOut (Propiedad )" Url="html/486b466a-e975-35f1-29fe-5b03003b0466.htm" />
+        <HelpTOCNode Title="IsCacheable (Propiedad )" Url="html/6d9e11a4-e0a3-3693-c2f9-36802436920b.htm" />
+        <HelpTOCNode Title="ShareDBLogonInfo (Propiedad )" Url="html/754a36b9-a388-4e01-cbc8-91b1e4ade1ee.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fe5120fd-01e4-422a-8bd0-d87f05085546" Title="CachedConcesionReport (M&#233;todos)" Url="html/e6935d88-533c-f48d-6608-146d5e75cc74.htm">
+        <HelpTOCNode Title="CreateReport (M&#233;todo )" Url="html/079b936e-2d64-2083-b66a-e5b717c6c60b.htm" />
+        <HelpTOCNode Title="GetCustomizedCacheKey (M&#233;todo )" Url="html/24a942fd-5f7f-a58d-1f24-8d85a32da2ff.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CachedConcesionReport (Eventos)" Url="html/8879fce4-bec2-70a3-2f0d-e0079d5bf206.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="0ac81e70-9ca1-43a9-a8fb-7357525ade33" Title="AsignarLoteRequestMessage (Clase)" Url="html/edfc824d-4b39-ac23-5afe-88358138b905.htm">
+    <HelpTOCNode Id="9bd95ad5-197d-448f-b4b1-8709b171bd0c" Title="CachedEtiquetasBolsaReport (Clase)" Url="html/880df391-c8ad-a9ae-b312-bb254bb43fde.htm">
+      <HelpTOCNode Title="CachedEtiquetasBolsaReport (Constructor )" Url="html/933c0efb-6344-b830-eb2a-86574980bb1f.htm" />
+      <HelpTOCNode Id="b4cd0ab4-987f-4c76-82fb-cad9ff8adf82" Title="CachedEtiquetasBolsaReport (Propiedades)" Url="html/382d13f2-429c-3afc-8c09-c22ea3187e66.htm">
+        <HelpTOCNode Title="CacheTimeOut (Propiedad )" Url="html/724fc32f-c58e-cd34-4bc6-43db8a70c64d.htm" />
+        <HelpTOCNode Title="IsCacheable (Propiedad )" Url="html/353265ce-6ecd-959c-d2e2-f0e424ae5071.htm" />
+        <HelpTOCNode Title="ShareDBLogonInfo (Propiedad )" Url="html/3a9cef15-b7a6-4b92-009a-1b3e2a4c2253.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="18f8e656-a981-431b-b5ae-deba0e2f79c0" Title="CachedEtiquetasBolsaReport (M&#233;todos)" Url="html/4492444c-810b-a627-3b43-9b79a0a5ddb4.htm">
+        <HelpTOCNode Title="CreateReport (M&#233;todo )" Url="html/71c76778-7dba-bada-27b1-713ee36eed0b.htm" />
+        <HelpTOCNode Title="GetCustomizedCacheKey (M&#233;todo )" Url="html/d560e36f-46a6-e144-2df3-7ae647ed2638.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CachedEtiquetasBolsaReport (Eventos)" Url="html/5d1a58a8-69ed-2200-d649-669b7c13d2c3.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="11335342-1a76-4476-b4ce-0ac370f9fcac" Title="CachedEtiquetasReport (Clase)" Url="html/c19a24a7-88d2-5420-eb7a-34c20d5954e5.htm">
+      <HelpTOCNode Title="CachedEtiquetasReport (Constructor )" Url="html/0b746a81-a201-bf6e-3022-81157d97789c.htm" />
+      <HelpTOCNode Id="d6ef2a24-84d3-4f99-8a54-28bea1976a4e" Title="CachedEtiquetasReport (Propiedades)" Url="html/4c748773-3466-617a-5a2d-c3f40129e13e.htm">
+        <HelpTOCNode Title="CacheTimeOut (Propiedad )" Url="html/613852f4-830c-786c-81c9-029ec9b4b973.htm" />
+        <HelpTOCNode Title="IsCacheable (Propiedad )" Url="html/60da241a-b485-8ba4-ea2a-be2f9650b637.htm" />
+        <HelpTOCNode Title="ShareDBLogonInfo (Propiedad )" Url="html/1b557dcd-bf82-9967-78b6-e073766104db.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="eea61781-c5f0-450d-a41d-385f5b8ca310" Title="CachedEtiquetasReport (M&#233;todos)" Url="html/58dd1f9a-3c75-3e05-30ab-ae66055745e7.htm">
+        <HelpTOCNode Title="CreateReport (M&#233;todo )" Url="html/57de0636-efaa-1ff4-6a57-f890147d811c.htm" />
+        <HelpTOCNode Title="GetCustomizedCacheKey (M&#233;todo )" Url="html/c5a58e8f-996e-f144-aaf9-606b6ffb9cb2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CachedEtiquetasReport (Eventos)" Url="html/458859aa-9440-c175-febe-ea136db1ddad.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e0dab398-9b76-4ced-9386-94340b30b993" Title="CachedLotesReport (Clase)" Url="html/f001a904-8ae6-a796-48b6-bb21b72ea9f1.htm">
+      <HelpTOCNode Title="CachedLotesReport (Constructor )" Url="html/e56389a7-d089-c491-7a5d-69a2f6d8e827.htm" />
+      <HelpTOCNode Id="dd9d5f86-2387-4f39-9be2-19b5a2e62cb8" Title="CachedLotesReport (Propiedades)" Url="html/6c276281-b60f-737a-4f28-43900c2e4bab.htm">
+        <HelpTOCNode Title="CacheTimeOut (Propiedad )" Url="html/47038422-6b53-96b8-ede3-26bac640624e.htm" />
+        <HelpTOCNode Title="IsCacheable (Propiedad )" Url="html/7006aa0b-0716-e90e-1266-2314d4337846.htm" />
+        <HelpTOCNode Title="ShareDBLogonInfo (Propiedad )" Url="html/fd2f64bb-2874-7dd1-4ea0-6579ac989e47.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d980f51f-f19e-4993-a1db-fe7b14825608" Title="CachedLotesReport (M&#233;todos)" Url="html/c783ff5a-5e4e-75e9-70ea-f34bd6996bd9.htm">
+        <HelpTOCNode Title="CreateReport (M&#233;todo )" Url="html/6af6d4fb-2974-cd6c-7bea-ac386f1b2e0e.htm" />
+        <HelpTOCNode Title="GetCustomizedCacheKey (M&#233;todo )" Url="html/4ca4f2cd-8c6e-41e2-324f-c4524e3b2355.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CachedLotesReport (Eventos)" Url="html/fb3258a9-5228-540e-17ad-622ae6695b77.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7afdec17-d5e2-46d6-aa36-561cf6b77256" Title="CachedRecogidaReport (Clase)" Url="html/50c31924-8adf-5606-8b48-94de1f68680f.htm">
+      <HelpTOCNode Title="CachedRecogidaReport (Constructor )" Url="html/26d1df4a-5603-54a4-7c56-9dfa1649ab7d.htm" />
+      <HelpTOCNode Id="f463b017-63e1-4d1f-829f-d5a6076092dd" Title="CachedRecogidaReport (Propiedades)" Url="html/5eaacb62-fa35-98b0-7573-8c323e0b60a2.htm">
+        <HelpTOCNode Title="CacheTimeOut (Propiedad )" Url="html/97a614fc-04b0-8787-7e4b-01be94848a8a.htm" />
+        <HelpTOCNode Title="IsCacheable (Propiedad )" Url="html/e9d95421-d7c4-87c6-d060-cb75a7e5a1ad.htm" />
+        <HelpTOCNode Title="ShareDBLogonInfo (Propiedad )" Url="html/3555adcf-af4a-927c-829f-9f9e84105447.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f420f2e4-23bf-4434-9974-8b25a06a5a66" Title="CachedRecogidaReport (M&#233;todos)" Url="html/ff20575d-6022-64f2-a879-d18a800d6591.htm">
+        <HelpTOCNode Title="CreateReport (M&#233;todo )" Url="html/315cb00e-efbd-73f4-c011-a46addb8daff.htm" />
+        <HelpTOCNode Title="GetCustomizedCacheKey (M&#233;todo )" Url="html/1e705f86-6f60-fd2d-f348-33e32b8e14ac.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CachedRecogidaReport (Eventos)" Url="html/ce2373a8-709b-b6ec-d584-d47219eee93a.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f6dc7d1a-f4eb-4152-ae8e-4bfb7b4e1182" Title="CachedXarxaCompletoReport (Clase)" Url="html/7ef6b533-364e-3387-d3ea-a2964c2e3a75.htm">
+      <HelpTOCNode Title="CachedXarxaCompletoReport (Constructor )" Url="html/23a1af19-bb9e-0519-6777-85cb4cf6a577.htm" />
+      <HelpTOCNode Id="a6f55a47-41ce-47a6-b494-94dbe7f57272" Title="CachedXarxaCompletoReport (Propiedades)" Url="html/5e9e7c38-06df-e533-309a-33d6084d34eb.htm">
+        <HelpTOCNode Title="CacheTimeOut (Propiedad )" Url="html/f6d966ee-cd20-7085-c8e7-25ace23f27ea.htm" />
+        <HelpTOCNode Title="IsCacheable (Propiedad )" Url="html/b74683bc-f0b9-85fe-b3ae-71e854f10176.htm" />
+        <HelpTOCNode Title="ShareDBLogonInfo (Propiedad )" Url="html/a879d4cc-5ae5-77a2-8c04-a78c33c923c0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a4ebec0f-2252-4297-b234-a76b9844489d" Title="CachedXarxaCompletoReport (M&#233;todos)" Url="html/89cf5397-c36d-20cb-6e85-f63867216e07.htm">
+        <HelpTOCNode Title="CreateReport (M&#233;todo )" Url="html/5d7511f0-bdc5-cc07-6edb-3fbc9e39100a.htm" />
+        <HelpTOCNode Title="GetCustomizedCacheKey (M&#233;todo )" Url="html/c82cae25-5254-ddfc-d87d-7d5fc2140ef2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CachedXarxaCompletoReport (Eventos)" Url="html/a7b855ad-8f8e-d185-f4e3-6596ca8054a7.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="52877b4a-cd6f-4bc1-8101-46e11abdba9c" Title="CachedXarxaGruposReport (Clase)" Url="html/81b86e95-70ae-3bf4-3907-9a2ae9dc7aa7.htm">
+      <HelpTOCNode Title="CachedXarxaGruposReport (Constructor )" Url="html/ad0b4634-dcf6-0eb9-0a4f-9693e38e91d8.htm" />
+      <HelpTOCNode Id="2edb350f-e800-451e-866e-113a37551e0c" Title="CachedXarxaGruposReport (Propiedades)" Url="html/d633d710-07d0-de12-c534-811622517d19.htm">
+        <HelpTOCNode Title="CacheTimeOut (Propiedad )" Url="html/da2f8996-4b70-18cd-f859-29d3fad01079.htm" />
+        <HelpTOCNode Title="IsCacheable (Propiedad )" Url="html/7ca6c861-6c3f-9424-2193-57338e7ca4cd.htm" />
+        <HelpTOCNode Title="ShareDBLogonInfo (Propiedad )" Url="html/035577e8-1ccf-a997-9ed9-b23aff7f1cdb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7c77b1c6-c55c-48d7-97b0-9a26c29da461" Title="CachedXarxaGruposReport (M&#233;todos)" Url="html/e9f649bb-15fd-c3ed-fd4b-88617079347f.htm">
+        <HelpTOCNode Title="CreateReport (M&#233;todo )" Url="html/57a1fb63-8fc4-d74c-1a2e-8279ee1fccbf.htm" />
+        <HelpTOCNode Title="GetCustomizedCacheKey (M&#233;todo )" Url="html/07ff18a3-4ffc-9753-d771-5f732def8a1e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CachedXarxaGruposReport (Eventos)" Url="html/e224b89d-e1dc-7619-9614-a4935e31d204.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5ea6aadd-1a43-478e-a769-563f6b64b2a0" Title="ConcesionReport (Clase)" Url="html/45ac3fa5-6e54-76ac-c71b-6ddb625c8d49.htm">
+      <HelpTOCNode Title="ConcesionReport (Constructor )" Url="html/8a4021f0-cd72-1e54-f706-99d30f3c2ae3.htm" />
+      <HelpTOCNode Id="cc05c586-fdbe-4d12-8143-167493fe22a1" Title="ConcesionReport (Propiedades)" Url="html/ef66d13d-5b06-caec-9c2c-0a8faae91b2f.htm">
+        <HelpTOCNode Title="FullResourceName (Propiedad )" Url="html/648db01f-40f2-02a7-809c-2bf25ebb8687.htm" />
+        <HelpTOCNode Title="NewGenerator (Propiedad )" Url="html/84a03a35-28a0-cb18-2622-492e5efb51f0.htm" />
+        <HelpTOCNode Title="ResourceName (Propiedad )" Url="html/fe523e2e-cd0a-088f-ff66-99cf6fbdc9af.htm" />
+        <HelpTOCNode Title="Section1 (Propiedad )" Url="html/e0f0673f-79b2-7a41-cba8-8f172ab82f1e.htm" />
+        <HelpTOCNode Title="Section2 (Propiedad )" Url="html/2c17d4b3-32b2-9813-901b-3c5d9c16672a.htm" />
+        <HelpTOCNode Title="Section3 (Propiedad )" Url="html/4135259e-f626-a6e7-261b-2617a3ecfe9c.htm" />
+        <HelpTOCNode Title="Section4 (Propiedad )" Url="html/05df917d-4155-409b-54fb-400ceb4c0ead.htm" />
+        <HelpTOCNode Title="Section5 (Propiedad )" Url="html/7e4803e2-5086-262f-ed32-705d8bfd53aa.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ConcesionReport (M&#233;todos)" Url="html/9aaeed6e-3954-625c-61d9-fdefe7402755.htm" />
+      <HelpTOCNode Title="ConcesionReport (Eventos)" Url="html/17085096-bd0f-bb53-3cc0-90a525ca809f.htm" />
+      <HelpTOCNode Title="ConcesionReport (Campos)" Url="html/86a26cb1-08ee-9ad1-b9e7-788d04149abd.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f459ec3d-4fdf-4a28-9f31-f5b05e117f5b" Title="EtiquetasBolsaReport (Clase)" Url="html/2cad0771-0d16-2ae5-d20e-e16b319cae7c.htm">
+      <HelpTOCNode Title="EtiquetasBolsaReport (Constructor )" Url="html/f8e4a4e5-6da0-784b-1582-fc01c61e85e0.htm" />
+      <HelpTOCNode Id="fcebdc5e-7978-4281-9157-49bacf7519ae" Title="EtiquetasBolsaReport (Propiedades)" Url="html/10f5793d-58a1-f90e-3711-5e0afdfdedd1.htm">
+        <HelpTOCNode Title="DetailSection1 (Propiedad )" Url="html/3f225189-20a9-6e15-964a-fd0b0178f5c9.htm" />
+        <HelpTOCNode Title="FullResourceName (Propiedad )" Url="html/ccdf5000-8499-d744-5008-42c6378a097f.htm" />
+        <HelpTOCNode Title="GroupFooterSection1 (Propiedad )" Url="html/3341bb19-a479-e409-cca5-929bc32f3057.htm" />
+        <HelpTOCNode Title="GroupHeaderSection1 (Propiedad )" Url="html/7996b84d-5f53-cdec-b58a-1507f00854e4.htm" />
+        <HelpTOCNode Title="NewGenerator (Propiedad )" Url="html/6af11dcf-56b4-d1f1-c9f7-0dd31a6fde15.htm" />
+        <HelpTOCNode Title="ResourceName (Propiedad )" Url="html/f57f41e2-af28-ab31-6bde-5c7f0779e7e8.htm" />
+        <HelpTOCNode Title="Section1 (Propiedad )" Url="html/eb6ac6ca-79af-cbbb-6cda-f8750ad3d69d.htm" />
+        <HelpTOCNode Title="Section2 (Propiedad )" Url="html/ce762b0a-a739-a4cc-cf7f-3df046a49494.htm" />
+        <HelpTOCNode Title="Section3 (Propiedad )" Url="html/c9b78094-c54c-4fa3-f687-52b4bfda245b.htm" />
+        <HelpTOCNode Title="Section4 (Propiedad )" Url="html/2b23cd48-d0df-33a2-951b-11585b0534c1.htm" />
+        <HelpTOCNode Title="Section5 (Propiedad )" Url="html/c893b502-a975-82e6-41c6-e7758d938f7d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EtiquetasBolsaReport (M&#233;todos)" Url="html/8acf9145-7bbe-aeef-d490-de3947ae5de5.htm" />
+      <HelpTOCNode Title="EtiquetasBolsaReport (Eventos)" Url="html/68871338-ef02-cc26-046e-2a1712e3dd5b.htm" />
+      <HelpTOCNode Title="EtiquetasBolsaReport (Campos)" Url="html/7a5f4fbd-85da-6efd-7211-fe0bdb1f06dd.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="82c363f7-64cd-4957-8d0d-d8875ae04c9d" Title="EtiquetasReport (Clase)" Url="html/d6160390-f3b6-fc79-0ed5-a1d19649af01.htm">
+      <HelpTOCNode Title="EtiquetasReport (Constructor )" Url="html/0364096b-f1da-2e33-0454-33d757a6ea3a.htm" />
+      <HelpTOCNode Id="06e5a3f0-6e29-4797-8ea7-7262c7516a9c" Title="EtiquetasReport (Propiedades)" Url="html/f59aaa8b-3103-b551-8227-84e3ec7b7cb3.htm">
+        <HelpTOCNode Title="FullResourceName (Propiedad )" Url="html/b2e4280e-bf69-d7a2-da7d-7b7db655b0d2.htm" />
+        <HelpTOCNode Title="GroupFooterSection1 (Propiedad )" Url="html/3d27e97e-5a71-2b01-bd09-50d79d74a741.htm" />
+        <HelpTOCNode Title="GroupHeaderSection1 (Propiedad )" Url="html/afaafbb5-6a80-7043-63f0-671a93ef2221.htm" />
+        <HelpTOCNode Title="NewGenerator (Propiedad )" Url="html/4c9431ff-9be0-4af4-7b4a-4a5e925301c2.htm" />
+        <HelpTOCNode Title="ResourceName (Propiedad )" Url="html/f995d487-b9ef-46ad-37f4-14a5d94369ed.htm" />
+        <HelpTOCNode Title="Section1 (Propiedad )" Url="html/e2e8594e-c54a-bb63-b343-77eb008b1a60.htm" />
+        <HelpTOCNode Title="Section2 (Propiedad )" Url="html/d0211597-d947-aa78-883f-6ec6e695c8f5.htm" />
+        <HelpTOCNode Title="Section3 (Propiedad )" Url="html/630d8b8d-7e98-b8f5-5aa8-021de2fbc23e.htm" />
+        <HelpTOCNode Title="Section4 (Propiedad )" Url="html/998ba5cf-48eb-5547-1acf-0bc05edbffa1.htm" />
+        <HelpTOCNode Title="Section5 (Propiedad )" Url="html/f6704485-8e7e-82f1-0509-a753b5c3a553.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EtiquetasReport (M&#233;todos)" Url="html/259999e0-284b-7fa4-685b-65c2b3bb12cb.htm" />
+      <HelpTOCNode Title="EtiquetasReport (Eventos)" Url="html/02ee8a39-5b1b-f41e-5a78-53b27ef83f13.htm" />
+      <HelpTOCNode Title="EtiquetasReport (Campos)" Url="html/fa555fa4-97a4-a688-80b4-94a5d532e63b.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a17e5460-8022-4a9b-a4bf-19309c2fc513" Title="LotesReport (Clase)" Url="html/610e71f0-bab9-6d83-f7e2-56e5113dfced.htm">
+      <HelpTOCNode Title="LotesReport (Constructor )" Url="html/c1b98e5b-6cb5-4055-7011-3bef9667d00e.htm" />
+      <HelpTOCNode Id="66f108b8-cb7d-4a7c-8d33-17ede14ca97d" Title="LotesReport (Propiedades)" Url="html/4559507a-c48e-d82b-9e4e-ba2238f4725d.htm">
+        <HelpTOCNode Title="FullResourceName (Propiedad )" Url="html/116fcb9a-4037-b30b-16e8-5097e0f8c7d0.htm" />
+        <HelpTOCNode Title="GroupFooterSection1 (Propiedad )" Url="html/99a6e18c-150c-6c9b-38d6-879f9bf55023.htm" />
+        <HelpTOCNode Title="GroupHeaderSection1 (Propiedad )" Url="html/dd457637-95f1-7df2-e592-08fcf0c230a1.htm" />
+        <HelpTOCNode Title="NewGenerator (Propiedad )" Url="html/306c8389-8b3b-6826-236e-fdebabc01947.htm" />
+        <HelpTOCNode Title="ResourceName (Propiedad )" Url="html/932a4432-9a47-c711-8932-ad1f2d6ede37.htm" />
+        <HelpTOCNode Title="Section1 (Propiedad )" Url="html/060a9f65-da89-a0db-340a-e3965086d521.htm" />
+        <HelpTOCNode Title="Section2 (Propiedad )" Url="html/82ba0b15-6ac2-9ba7-57f8-84ab75a94443.htm" />
+        <HelpTOCNode Title="Section3 (Propiedad )" Url="html/3dcfc92a-08bd-be35-e3a5-fb9d820e74bd.htm" />
+        <HelpTOCNode Title="Section4 (Propiedad )" Url="html/a26f62d9-7cb7-1f2b-7531-b9cac7b23ccb.htm" />
+        <HelpTOCNode Title="Section5 (Propiedad )" Url="html/995ac55d-5768-1d57-cc3a-ce6b59c9f195.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="LotesReport (M&#233;todos)" Url="html/ac00553f-68b3-f00a-b198-fea58d0caff3.htm" />
+      <HelpTOCNode Title="LotesReport (Eventos)" Url="html/2f7fbc02-4b43-735b-3f1f-748b35e80c18.htm" />
+      <HelpTOCNode Title="LotesReport (Campos)" Url="html/bfc81f2e-13e8-c808-3a9e-b13d93db19e4.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7cb4dcae-1f23-410f-b660-2307f10afe6e" Title="RecogidaReport (Clase)" Url="html/0fb55fba-37bb-df74-0460-728b7cd17b66.htm">
+      <HelpTOCNode Title="RecogidaReport (Constructor )" Url="html/85a5c05e-150e-5f1d-03a1-c1bc88b81aff.htm" />
+      <HelpTOCNode Id="7eaaa184-20d2-4e9f-9516-20a147030d42" Title="RecogidaReport (Propiedades)" Url="html/1ba572ba-9e85-1867-0452-6fb3cdfc303a.htm">
+        <HelpTOCNode Title="FullResourceName (Propiedad )" Url="html/aa847e58-c997-fb24-8019-88def9972392.htm" />
+        <HelpTOCNode Title="GroupFooterSection1 (Propiedad )" Url="html/5ff450f9-3fca-ab32-857f-4cdf11013204.htm" />
+        <HelpTOCNode Title="GroupHeaderSection1 (Propiedad )" Url="html/9674f488-c6ec-e2e9-b427-707ea78a31fc.htm" />
+        <HelpTOCNode Title="NewGenerator (Propiedad )" Url="html/cebc24f2-4bdf-5e68-8705-fafdd91cedcb.htm" />
+        <HelpTOCNode Title="ResourceName (Propiedad )" Url="html/bdab9059-6b53-71a3-f44e-bd0b7b9bd58f.htm" />
+        <HelpTOCNode Title="Section1 (Propiedad )" Url="html/98f3cb1b-ad55-d3d8-2b1d-1c5eaa6651b1.htm" />
+        <HelpTOCNode Title="Section2 (Propiedad )" Url="html/f64d035c-c986-6397-bf3a-450ee18be5bc.htm" />
+        <HelpTOCNode Title="Section3 (Propiedad )" Url="html/03e11ebf-282f-7727-0180-b4e49a558b3d.htm" />
+        <HelpTOCNode Title="Section4 (Propiedad )" Url="html/1c40db04-2c4a-4fa4-f6e9-0a2bf6383737.htm" />
+        <HelpTOCNode Title="Section5 (Propiedad )" Url="html/2796ee21-dae3-6660-1d27-06d87465e624.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="RecogidaReport (M&#233;todos)" Url="html/fb56f89b-1ca4-9882-8567-4da68f250555.htm" />
+      <HelpTOCNode Title="RecogidaReport (Eventos)" Url="html/2fc68fb6-7a8f-3399-df34-02fb117f17e0.htm" />
+      <HelpTOCNode Title="RecogidaReport (Campos)" Url="html/8a01d2ff-1710-fb33-4a81-3ea74bf0cc8d.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="818bf42f-c450-48ac-b022-cb7d942e2391" Title="XarxaCompletoReport (Clase)" Url="html/f373dd5e-05bf-05df-d710-6f37bc48101c.htm">
+      <HelpTOCNode Title="XarxaCompletoReport (Constructor )" Url="html/5a917be8-978e-f5dd-8b90-15de95a847b6.htm" />
+      <HelpTOCNode Id="735ffb1c-97ff-44c5-9096-4d2edf78af2b" Title="XarxaCompletoReport (Propiedades)" Url="html/e57b44ce-3561-8506-66f8-1b2ff80b0795.htm">
+        <HelpTOCNode Title="FullResourceName (Propiedad )" Url="html/54ff134c-9fc0-33ed-9d08-e56770fedf98.htm" />
+        <HelpTOCNode Title="NewGenerator (Propiedad )" Url="html/2aa7f5f6-2c97-a12b-3a17-043b857a6cdd.htm" />
+        <HelpTOCNode Title="ResourceName (Propiedad )" Url="html/3261b201-2889-1189-0e86-024171f5a5c7.htm" />
+        <HelpTOCNode Title="Section1 (Propiedad )" Url="html/93e42ef0-f890-03dc-33c0-aa5b2ba72a74.htm" />
+        <HelpTOCNode Title="Section2 (Propiedad )" Url="html/3174d2ca-22b5-9a60-ad61-168cf34eead2.htm" />
+        <HelpTOCNode Title="Section3 (Propiedad )" Url="html/fd47ef36-c014-d039-fb9f-4cec626314c5.htm" />
+        <HelpTOCNode Title="Section4 (Propiedad )" Url="html/466c3dce-0ad7-21b4-3757-0c423980487b.htm" />
+        <HelpTOCNode Title="Section5 (Propiedad )" Url="html/eec9abfb-36c7-32cd-421e-c48f8893e00c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="XarxaCompletoReport (M&#233;todos)" Url="html/faf332be-9e29-9924-8d8a-c014c6dd00b2.htm" />
+      <HelpTOCNode Title="XarxaCompletoReport (Eventos)" Url="html/1fd985cb-e2bb-5312-7413-62bdcf9ad1c7.htm" />
+      <HelpTOCNode Title="XarxaCompletoReport (Campos)" Url="html/fbf252c2-626d-af59-c89b-b95b15acfede.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="8ce41432-cdf4-4802-9b36-2d6e21f7d416" Title="XarxaGruposReport (Clase)" Url="html/2d1059d9-b3e6-1d9a-0944-a4fed27e13b4.htm">
+      <HelpTOCNode Title="XarxaGruposReport (Constructor )" Url="html/51c8ed6a-a3ac-b0c8-f257-4cc494369340.htm" />
+      <HelpTOCNode Id="576936f6-a31f-4007-9329-3095fe206638" Title="XarxaGruposReport (Propiedades)" Url="html/7e68dd77-638f-5e49-2585-3240664926b8.htm">
+        <HelpTOCNode Title="FullResourceName (Propiedad )" Url="html/db349240-6e81-812f-7d1b-cf96c217f895.htm" />
+        <HelpTOCNode Title="NewGenerator (Propiedad )" Url="html/3e0d6511-e6ab-b923-1741-a535d659ec56.htm" />
+        <HelpTOCNode Title="ResourceName (Propiedad )" Url="html/e45361f5-682c-87d3-de36-5359ecdfd567.htm" />
+        <HelpTOCNode Title="Section1 (Propiedad )" Url="html/227093fa-1878-2fc0-b579-11c7f946054b.htm" />
+        <HelpTOCNode Title="Section3 (Propiedad )" Url="html/a179809c-58a1-fdb1-338c-1ed58b812e8b.htm" />
+        <HelpTOCNode Title="Section4 (Propiedad )" Url="html/d820a5d4-8a68-a062-b1ec-8eb4dd692c34.htm" />
+        <HelpTOCNode Title="Section5 (Propiedad )" Url="html/8982bd48-a8e9-391c-f349-a38c32e32fc3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="XarxaGruposReport (M&#233;todos)" Url="html/640015c6-e9b8-24ba-2c4e-8ac910b6df3f.htm" />
+      <HelpTOCNode Title="XarxaGruposReport (Eventos)" Url="html/c47c18ef-98bb-4b67-f992-e6497c176cfb.htm" />
+      <HelpTOCNode Title="XarxaGruposReport (Campos)" Url="html/4eb367dc-573d-cebb-c9ee-6054424f5c62.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d69fe806-70b7-40a2-949f-ef08704be9df" Title="Proyecto_Xarxa_Desktop.mensajeria" Url="html/240be15c-1c0d-9a4b-3f33-b3dd3e577122.htm">
+    <HelpTOCNode Id="ddc37305-3be7-4cc5-b75c-cd2383b6e224" Title="AlumnoSeleccionadoRequestMessage (Clase)" Url="html/794a25b9-d453-71ea-228e-cd0e571c974a.htm">
+      <HelpTOCNode Title="AlumnoSeleccionadoRequestMessage (Constructor )" Url="html/6845d991-0d02-92a8-ba9a-13f7057bf7e8.htm" />
+      <HelpTOCNode Title="AlumnoSeleccionadoRequestMessage (Propiedades)" Url="html/9722081f-eaa4-f3f6-dbdc-89f1520ec239.htm" />
+      <HelpTOCNode Title="AlumnoSeleccionadoRequestMessage (M&#233;todos)" Url="html/20677461-37be-d396-9683-dcddb9cc3805.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7f0fdf19-4715-4031-b0e3-7c2b87baab18" Title="AnyadirLibroAModalidadMessage (Clase)" Url="html/7d866f42-f1f9-be76-17de-cfa2bc23d2b0.htm">
+      <HelpTOCNode Title="AnyadirLibroAModalidadMessage (Constructor )" Url="html/1859ffe9-0b59-98e7-46b1-ac16c578179c.htm" />
+      <HelpTOCNode Title="AnyadirLibroAModalidadMessage (Propiedades)" Url="html/93d2aafe-dec0-e2e3-47dc-d84f579e900d.htm" />
+      <HelpTOCNode Title="AnyadirLibroAModalidadMessage (M&#233;todos)" Url="html/b4c4e82e-105e-393b-aafb-5e82a306786a.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="189775b3-168f-4b43-ae25-dc16d5899b60" Title="AsignarLoteRequestMessage (Clase)" Url="html/edfc824d-4b39-ac23-5afe-88358138b905.htm">
       <HelpTOCNode Title="AsignarLoteRequestMessage (Constructor )" Url="html/6270818f-f95f-1de0-830a-44c1e30d8e3f.htm" />
       <HelpTOCNode Title="AsignarLoteRequestMessage (Propiedades)" Url="html/5e10b63f-0ca2-646a-e190-967f9ecc1cc0.htm" />
       <HelpTOCNode Title="AsignarLoteRequestMessage (M&#233;todos)" Url="html/c9be2dbc-1cc0-c9ff-4707-ef4a88552932.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="a660f40a-5963-4624-a1b8-a6e7770c66c7" Title="EditarLoteRequestMessage (Clase)" Url="html/3384baf4-d642-921a-58e0-3682edecfef8.htm">
+    <HelpTOCNode Id="14bda16f-b5ef-4eff-8f2f-1239e3d90f88" Title="DatoA&#241;adidoOModificadoMessage (Clase)" Url="html/1685c490-0669-1eed-5eba-af85848459bd.htm">
+      <HelpTOCNode Title="DatoA&#241;adidoOModificadoMessage (Constructor )" Url="html/738d023f-4b32-182d-af4c-f9bb1b43299e.htm" />
+      <HelpTOCNode Title="DatoA&#241;adidoOModificadoMessage (Propiedades)" Url="html/b621946c-dbb2-ce12-242a-f8b1354aff90.htm" />
+      <HelpTOCNode Title="DatoA&#241;adidoOModificadoMessage (M&#233;todos)" Url="html/0b944931-3666-87d9-81c7-fddc2aab0acc.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0bd238f3-7eda-4887-82b2-564c8ace6cee" Title="EditarLibroRequestMessage (Clase)" Url="html/a998e054-8ba2-bd90-ce09-f2b4fce916f5.htm">
+      <HelpTOCNode Title="EditarLibroRequestMessage (Constructor )" Url="html/40700bcf-5f34-3904-b5eb-6867601d6649.htm" />
+      <HelpTOCNode Title="EditarLibroRequestMessage (Propiedades)" Url="html/ec196f14-b106-2d9f-e59a-ae141923eb32.htm" />
+      <HelpTOCNode Title="EditarLibroRequestMessage (M&#233;todos)" Url="html/d29a569c-5ac4-53ac-365b-5f8590055a48.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a8ba1afd-1a8e-4e48-a724-5359ee37621a" Title="EditarLoteRequestMessage (Clase)" Url="html/3384baf4-d642-921a-58e0-3682edecfef8.htm">
       <HelpTOCNode Title="EditarLoteRequestMessage (Constructor )" Url="html/8059fd60-cb2d-e197-9e8f-db61cd03d32a.htm" />
       <HelpTOCNode Title="EditarLoteRequestMessage (Propiedades)" Url="html/69b86abe-8f9e-07cf-4362-1800648b3467.htm" />
       <HelpTOCNode Title="EditarLoteRequestMessage (M&#233;todos)" Url="html/77ac63fd-c80e-d0f6-b544-4897ac298934.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="fd2834a5-1638-4e69-ba86-d7eefd3f64ba" Title="IncidenciasRequestMessage (Clase)" Url="html/92ecd76c-d522-0b81-8f93-eb02d0a01e24.htm">
-      <HelpTOCNode Title="IncidenciasRequestMessage (Constructor )" Url="html/2d22640c-d320-4301-5ef6-852e38d3d537.htm" />
-      <HelpTOCNode Title="IncidenciasRequestMessage (Propiedades)" Url="html/d80a3037-cfa0-51f4-bf07-862d73acae70.htm" />
-      <HelpTOCNode Title="IncidenciasRequestMessage (M&#233;todos)" Url="html/0f9f2267-98ac-a537-acff-e60712929df2.htm" />
-    </HelpTOCNode>
-    <HelpTOCNode Id="e352a5bd-0e93-4af3-86b0-812832c7676b" Title="VerLoteRequestMessage (Clase)" Url="html/0ee79289-63c8-b352-4f68-ab4a346a8ee1.htm">
+    <HelpTOCNode Id="cb193ea8-b0fa-456d-b906-165bb26d6293" Title="VerLoteRequestMessage (Clase)" Url="html/0ee79289-63c8-b352-4f68-ab4a346a8ee1.htm">
       <HelpTOCNode Title="VerLoteRequestMessage (Constructor )" Url="html/3a062b51-4cc3-414f-752f-c4abb0c08bd8.htm" />
       <HelpTOCNode Title="VerLoteRequestMessage (Propiedades)" Url="html/81975aea-d4c2-4f59-4888-c195e34b4b8e.htm" />
       <HelpTOCNode Title="VerLoteRequestMessage (M&#233;todos)" Url="html/af229dde-df18-9892-8605-13ffd2b50e89.htm" />
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="b55e2d8d-6011-420d-aec7-6c509f6f1c6a" Title="Proyecto_Xarxa_Desktop.modelo" Url="html/fcc970e5-eaa0-4f39-b869-43c490798393.htm">
-    <HelpTOCNode Id="9e07b808-cc80-429e-abf2-925cb50d0a75" Title="Alumno (Clase)" Url="html/3244c946-a98e-402e-3c02-07420ea7c1cd.htm">
-      <HelpTOCNode Id="6225a551-7940-49a6-9ba1-a4ad4a5e7fa3" Title="Alumno (Constructor )" Url="html/a20ad9c5-bfa6-cb7b-24be-f83c0a2199c0.htm">
+  <HelpTOCNode Id="e49ac4b6-861f-401e-881c-d1ff9be4e9df" Title="Proyecto_Xarxa_Desktop.modelo" Url="html/fcc970e5-eaa0-4f39-b869-43c490798393.htm">
+    <HelpTOCNode Id="86f5a71a-4779-438b-a502-2eda650dbdef" Title="Alumno (Clase)" Url="html/3244c946-a98e-402e-3c02-07420ea7c1cd.htm">
+      <HelpTOCNode Id="ef5c3736-efba-4202-a701-bc5a38b4f392" Title="Alumno (Constructor )" Url="html/a20ad9c5-bfa6-cb7b-24be-f83c0a2199c0.htm">
         <HelpTOCNode Title="Alumno (Constructor )" Url="html/77cca3ee-9772-556b-43c8-1eb423203d4f.htm" />
+        <HelpTOCNode Title="Alumno (Constructor (Alumno))" Url="html/e5319705-ccd6-32b3-8f5b-7bec58095451.htm" />
         <HelpTOCNode Title="Alumno (Constructor (Int32, String, String, String, String, String, String, String))" Url="html/abbec0aa-7862-d8d9-fd1e-477b9a4b107d.htm" />
         <HelpTOCNode Title="Alumno (Constructor (Int32, String, String, String, String, String, String, String, Boolean))" Url="html/441c2a2a-6ec6-a67d-aab0-76022dcb0303.htm" />
         <HelpTOCNode Title="Alumno (Constructor (Int32, String, String, String, String, String, String, String, Boolean, Lote))" Url="html/d9fbe153-a6aa-910e-4704-bbd0e0701471.htm" />
-        <HelpTOCNode Title="Alumno (Constructor (Int32, String, String, String, String, String, String, String, Boolean, Nullable(Int32)))" Url="html/5504a561-6b88-598e-388c-7a24dcf3acd9.htm" />
+        <HelpTOCNode Title="Alumno (Constructor (Int32, String, String, String, String, String, String, String, Boolean, Int32))" Url="html/32036912-f73d-2390-7ce6-2ba177f8d29b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="234fe186-d69d-4b09-ac63-9e4ac9f6953d" Title="Alumno (Propiedades)" Url="html/d9ff06f6-8487-b6a5-b908-cfb8633b1ffc.htm">
+      <HelpTOCNode Id="c4884a27-4e13-45dd-a849-065f9b113732" Title="Alumno (Propiedades)" Url="html/d9ff06f6-8487-b6a5-b908-cfb8633b1ffc.htm">
         <HelpTOCNode Title="Apellido1 (Propiedad )" Url="html/99983b04-dd3e-115a-5ca6-6b36325d4994.htm" />
         <HelpTOCNode Title="Apellido2 (Propiedad )" Url="html/f2ed9681-a291-cdad-6ba3-dcc7812820f9.htm" />
+        <HelpTOCNode Title="Concesion (Propiedad )" Url="html/b05f8799-361f-53e5-612c-6d2f5a4f49b7.htm" />
         <HelpTOCNode Title="Curso (Propiedad )" Url="html/e6920073-63af-2307-fdfc-1e195ebdbf37.htm" />
         <HelpTOCNode Title="Grupo (Propiedad )" Url="html/fddf1434-05cc-ee4c-0695-7f8bd8612a01.htm" />
         <HelpTOCNode Title="IdLote (Propiedad )" Url="html/97184cd3-2eab-7021-254f-0ba7f88160a6.htm" />
@@ -126,9 +362,10 @@
       </HelpTOCNode>
       <HelpTOCNode Title="Alumno (M&#233;todos)" Url="html/32790e77-1512-b40f-ff5a-d2f9a48e639b.htm" />
       <HelpTOCNode Title="Alumno (Eventos)" Url="html/a40cf0cc-bf8e-a1dd-e6ab-6df0c06693d4.htm" />
-      <HelpTOCNode Id="e1298a2d-48d9-44aa-af57-65a6241c7f06" Title="Alumno (Campos)" Url="html/13b7b5fe-e6bf-3cd0-ae98-1ab1a07a94c7.htm">
+      <HelpTOCNode Id="ae2fb169-a54d-47d0-895e-2bb7040e7ff1" Title="Alumno (Campos)" Url="html/13b7b5fe-e6bf-3cd0-ae98-1ab1a07a94c7.htm">
         <HelpTOCNode Title="_apellido1 (Campo)" Url="html/4d9ea246-1ab1-beda-5006-f9083670ad2c.htm" />
         <HelpTOCNode Title="_apellido2 (Campo)" Url="html/752c0f85-2604-6f9e-515a-0b2f4b7953c4.htm" />
+        <HelpTOCNode Title="_concesion (Campo)" Url="html/55b52570-ac60-476f-5f18-a16094a4a20e.htm" />
         <HelpTOCNode Title="_curso (Campo)" Url="html/2dc0b127-4f92-5c14-50f7-f0cbcfaa037a.htm" />
         <HelpTOCNode Title="_grupo (Campo)" Url="html/14286fdf-1f58-59a2-20ec-7716c2954ee6.htm" />
         <HelpTOCNode Title="_incidencias (Campo)" Url="html/120de8bb-9ca6-b507-12cc-d9113f8900e0.htm" />
@@ -140,18 +377,23 @@
         <HelpTOCNode Title="idLote (Campo)" Url="html/704e1208-a45e-0186-084e-6987f561a155.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="be8e6b3f-c799-4769-9fa5-26de0dce5bf1" Title="Libro (Clase)" Url="html/38c5d58c-3f1a-1b95-e508-adf8b1c5e9e1.htm">
-      <HelpTOCNode Title="Libro (Constructor )" Url="html/42274e53-15a7-42f3-ef07-13df16f6e8e9.htm" />
-      <HelpTOCNode Id="c1884d4c-9109-4835-bc5d-e48aebda653a" Title="Libro (Propiedades)" Url="html/68fdc1cd-e5fc-af33-c7fc-6a85babfa503.htm">
+    <HelpTOCNode Id="3f8a3aa3-9f1a-4c2a-8d50-808bae3681d6" Title="Libro (Clase)" Url="html/38c5d58c-3f1a-1b95-e508-adf8b1c5e9e1.htm">
+      <HelpTOCNode Id="be58de2b-91a8-4b70-8d21-18a0b3c1b35e" Title="Libro (Constructor )" Url="html/fc3af8eb-4f63-de86-f4ab-1e01e2e82839.htm">
+        <HelpTOCNode Title="Libro (Constructor )" Url="html/fb849fef-fe39-78fa-150d-a43a940b4dff.htm" />
+        <HelpTOCNode Title="Libro (Constructor (String, String, String, String, String))" Url="html/42274e53-15a7-42f3-ef07-13df16f6e8e9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a069508b-2c75-40a2-a294-2734d794127d" Title="Libro (Propiedades)" Url="html/68fdc1cd-e5fc-af33-c7fc-6a85babfa503.htm">
         <HelpTOCNode Title="Curso (Propiedad )" Url="html/2d5dfdd6-20ee-b002-e407-5c96c74b669d.htm" />
         <HelpTOCNode Title="Departamento (Propiedad )" Url="html/c6cbcf84-0699-d8cf-b645-0ef46d5cbe92.htm" />
         <HelpTOCNode Title="Editorial (Propiedad )" Url="html/d11794e6-ef94-2e58-0f5d-d7d7a86ecd36.htm" />
         <HelpTOCNode Title="Isbn (Propiedad )" Url="html/51bc252a-f355-4917-3cd6-b8d6b5343e11.htm" />
         <HelpTOCNode Title="Titulo (Propiedad )" Url="html/5e91a208-ebf1-2eb4-fa7c-ffefa0721676.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="Libro (M&#233;todos)" Url="html/1cfe835d-7538-49eb-f141-42c83a036bf8.htm" />
+      <HelpTOCNode Id="c2f1b579-f972-42d9-b662-ce72b7950924" Title="Libro (M&#233;todos)" Url="html/1cfe835d-7538-49eb-f141-42c83a036bf8.htm">
+        <HelpTOCNode Title="ToString (M&#233;todo )" Url="html/8e57a84f-458d-831b-fbac-d944027bb0fa.htm" />
+      </HelpTOCNode>
       <HelpTOCNode Title="Libro (Eventos)" Url="html/b04be2d3-b0e2-96c3-5d22-42dde1fc1279.htm" />
-      <HelpTOCNode Id="0259cb9f-6f0a-41fb-b0f5-40f3d776822e" Title="Libro (Campos)" Url="html/a81fa86e-0cb4-b879-b35f-27ad5b6f432d.htm">
+      <HelpTOCNode Id="93fca46c-0625-4c44-87d9-bc1a6121f2db" Title="Libro (Campos)" Url="html/a81fa86e-0cb4-b879-b35f-27ad5b6f432d.htm">
         <HelpTOCNode Title="_curso (Campo)" Url="html/43e1f64d-93ff-333f-56a6-d06210bb64c6.htm" />
         <HelpTOCNode Title="_departamento (Campo)" Url="html/40b886bf-7f7e-4709-737f-84ff98dafada.htm" />
         <HelpTOCNode Title="_editorial (Campo)" Url="html/eb889289-5248-1cbe-579e-9d2327fd06d3.htm" />
@@ -159,24 +401,28 @@
         <HelpTOCNode Title="_titulo (Campo)" Url="html/7e8bc8e9-bc21-5670-a2e7-c28b352936f4.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c4864cf6-3486-481a-9b69-a7beb1d674ef" Title="LibroXarxa (Clase)" Url="html/713f1fb3-4008-2b58-62b4-8b01acfa3dfb.htm">
-      <HelpTOCNode Title="LibroXarxa (Constructor )" Url="html/a4cc42b9-11d1-7d28-fcfb-f2ae040c09ec.htm" />
-      <HelpTOCNode Id="9435694c-c6b2-4b69-871c-67e367d8f4ba" Title="LibroXarxa (Propiedades)" Url="html/b86fd39a-697e-5efd-052f-703b0017d560.htm">
+    <HelpTOCNode Id="ae591222-fdbb-46b7-a133-ed1c59a488d4" Title="LibroXarxa (Clase)" Url="html/713f1fb3-4008-2b58-62b4-8b01acfa3dfb.htm">
+      <HelpTOCNode Id="277e3ab6-aed1-462a-8323-d18d151b3821" Title="LibroXarxa (Constructor )" Url="html/d8086b55-964e-c7f5-d307-58726d1e36c5.htm">
+        <HelpTOCNode Title="LibroXarxa (Constructor )" Url="html/4b5b8527-b538-bd3b-7d6c-49ecfc6ce606.htm" />
+        <HelpTOCNode Title="LibroXarxa (Constructor (Int32, String, String, String, String, String))" Url="html/a4cc42b9-11d1-7d28-fcfb-f2ae040c09ec.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="264daa9f-36fb-4ccd-8a7d-02423bd8d34e" Title="LibroXarxa (Propiedades)" Url="html/b86fd39a-697e-5efd-052f-703b0017d560.htm">
         <HelpTOCNode Title="CodigoXarxa (Propiedad )" Url="html/1fddc5e3-b07e-ac91-9406-785419184e87.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="LibroXarxa (M&#233;todos)" Url="html/e9062bc2-216c-0dc9-c9ec-37048c5131e1.htm" />
       <HelpTOCNode Title="LibroXarxa (Eventos)" Url="html/86e7ac6e-b05c-60f0-8816-4ad74f5c5105.htm" />
-      <HelpTOCNode Id="1a5dfcb1-2f3e-4080-94b9-3c7decdaa110" Title="LibroXarxa (Campos)" Url="html/b287fcaf-c632-087a-8c72-3632cd257d47.htm">
+      <HelpTOCNode Id="e5562d00-991e-4539-bd78-d32ff79e5901" Title="LibroXarxa (Campos)" Url="html/b287fcaf-c632-087a-8c72-3632cd257d47.htm">
         <HelpTOCNode Title="_codigoXarxa (Campo)" Url="html/4a8996dd-5732-812a-fa30-c6e7bfb51d68.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b99b5822-e7f6-46c8-abb8-39fd17910da5" Title="Lote (Clase)" Url="html/f407bc6f-02cd-9d76-f9cd-165e5994e192.htm">
-      <HelpTOCNode Id="f4e7dd8b-0c25-42a0-a950-919cbe9488db" Title="Lote (Constructor )" Url="html/24d38247-a184-d7e6-756e-4bd119d95e34.htm">
+    <HelpTOCNode Id="5f4aabea-1dfb-4e0b-9886-7a62dc5a53c0" Title="Lote (Clase)" Url="html/f407bc6f-02cd-9d76-f9cd-165e5994e192.htm">
+      <HelpTOCNode Id="d0b8c1d2-ddfb-445e-960a-8a3992551dad" Title="Lote (Constructor )" Url="html/24d38247-a184-d7e6-756e-4bd119d95e34.htm">
         <HelpTOCNode Title="Lote (Constructor )" Url="html/e8be2abd-c4ea-07aa-5d18-4309b064ff19.htm" />
+        <HelpTOCNode Title="Lote (Constructor (Int32, Modalidad))" Url="html/af7628bf-3717-8eac-fb21-2cd113c4188e.htm" />
         <HelpTOCNode Title="Lote (Constructor (Int32, ObservableCollection(LibroXarxa), Modalidad))" Url="html/4f63be37-2377-40dd-5f1f-d70bbd99aaf3.htm" />
         <HelpTOCNode Title="Lote (Constructor (Int32, ObservableCollection(LibroXarxa), Modalidad, Nullable(Int32)))" Url="html/a1b62462-3d57-22dc-16f7-3811bc731c61.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="80fce90d-a008-46d1-818c-5499e6fdb3d1" Title="Lote (Propiedades)" Url="html/458eb80e-fbf9-2eac-cc7b-528fff81daa1.htm">
+      <HelpTOCNode Id="82e917e1-c81f-40d3-ae1c-9fc7e3c5ca67" Title="Lote (Propiedades)" Url="html/458eb80e-fbf9-2eac-cc7b-528fff81daa1.htm">
         <HelpTOCNode Title="IdLote (Propiedad )" Url="html/02a7f05d-f15c-6d31-1791-ddd035edab26.htm" />
         <HelpTOCNode Title="LibrosLote (Propiedad )" Url="html/8fbcae15-8153-3893-15b3-57a8c33f8762.htm" />
         <HelpTOCNode Title="ModalidadLote (Propiedad )" Url="html/cbe84dba-b60d-63ca-27de-10ad68b8dae7.htm" />
@@ -184,39 +430,79 @@
       </HelpTOCNode>
       <HelpTOCNode Title="Lote (M&#233;todos)" Url="html/39895fd6-44db-bc6e-0977-7091ab2dc77a.htm" />
       <HelpTOCNode Title="Lote (Eventos)" Url="html/1dd59a02-4946-bf5b-9e74-836555cf5d3f.htm" />
-      <HelpTOCNode Id="a5404b9c-b93f-48ef-978a-6ab28cc36f74" Title="Lote (Campos)" Url="html/07bc5bd2-c17c-7a79-db2e-b19becf386c1.htm">
+      <HelpTOCNode Id="9a84edb9-6cc2-4aee-9252-c49a9ba13d18" Title="Lote (Campos)" Url="html/07bc5bd2-c17c-7a79-db2e-b19becf386c1.htm">
         <HelpTOCNode Title="_idLote (Campo)" Url="html/c58cf9b6-df77-8ce4-aaa2-7a85af382d16.htm" />
         <HelpTOCNode Title="_librosLote (Campo)" Url="html/aa364777-ac94-92ca-b21e-f722a4be6eaa.htm" />
         <HelpTOCNode Title="_modalidadLote (Campo)" Url="html/afcdd98c-d4dc-9afd-aec8-3e087b1c4209.htm" />
         <HelpTOCNode Title="niaAlumno (Campo)" Url="html/3c111472-dae9-35df-9983-9d8737e2985a.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="64a51032-daca-4c40-a394-60f6506b8efa" Title="Modalidad (Clase)" Url="html/0262daa0-28da-a89e-c837-8183b1d78282.htm">
-      <HelpTOCNode Title="Modalidad (Constructor )" Url="html/610d23e4-5ece-172f-9419-709cfe09be84.htm" />
-      <HelpTOCNode Id="a87dde89-a206-43e4-82b0-c13ba80ec4a5" Title="Modalidad (Propiedades)" Url="html/ce1f96c2-d78e-f203-52ac-497a69250c9d.htm">
+    <HelpTOCNode Id="e822553f-f330-43f2-a367-35b442234fce" Title="LoteInformeEtiquetas (Clase)" Url="html/04a88018-8092-1e0b-d760-f392fe4a563a.htm">
+      <HelpTOCNode Id="55217921-351c-4970-8b68-1545d99dd78a" Title="LoteInformeEtiquetas (Constructor )" Url="html/f31972a7-c311-0764-fd82-ff204badc0ca.htm">
+        <HelpTOCNode Title="LoteInformeEtiquetas (Constructor )" Url="html/a530b0b1-6aad-257a-c452-36c95712b412.htm" />
+        <HelpTOCNode Title="LoteInformeEtiquetas (Constructor (Int32, String))" Url="html/9339a2b2-1a5a-0b9b-f6c6-8d93a8a9b7bd.htm" />
+        <HelpTOCNode Title="LoteInformeEtiquetas (Constructor (Int32, String, String))" Url="html/d10a9ae3-7558-d771-f2e0-300cb4a9cc2a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="13c67f1c-39ac-427d-94c2-a494ab851392" Title="LoteInformeEtiquetas (Propiedades)" Url="html/fa853779-f760-154d-eb4b-e5672135d58b.htm">
+        <HelpTOCNode Title="Curso (Propiedad )" Url="html/1a7077c3-5792-c1ed-47b3-ddc242963898.htm" />
+        <HelpTOCNode Title="IdLote (Propiedad )" Url="html/4c4127d2-70cf-935d-9646-e3dd7925d8b6.htm" />
+        <HelpTOCNode Title="NombreAlumno (Propiedad )" Url="html/01a772e5-cd4e-be9c-652f-357411b10c2c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="LoteInformeEtiquetas (M&#233;todos)" Url="html/fd31f7f1-c291-81c5-eb26-a93d462d5de8.htm" />
+      <HelpTOCNode Title="LoteInformeEtiquetas (Eventos)" Url="html/9ee6fd55-5bb5-d77a-7081-1df07312b335.htm" />
+      <HelpTOCNode Id="d9d14bb5-e975-4542-92de-899c0c6781ea" Title="LoteInformeEtiquetas (Campos)" Url="html/e49fe554-f5aa-e564-2bf7-09fbc102de43.htm">
+        <HelpTOCNode Title="_curso (Campo)" Url="html/c8e3a3ad-d637-6991-0b0e-ab196f35fd93.htm" />
+        <HelpTOCNode Title="_idLote (Campo)" Url="html/c5d544f6-831d-2d81-72e6-ebfe2b232b74.htm" />
+        <HelpTOCNode Title="_nombreAlumno (Campo)" Url="html/34390417-c4d7-3269-840f-0eba800e3de4.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="12f934bf-a3c9-425f-9e09-f7b945079a60" Title="Modalidad (Clase)" Url="html/0262daa0-28da-a89e-c837-8183b1d78282.htm">
+      <HelpTOCNode Id="a1af2936-0a35-4617-a79e-e760900802a6" Title="Modalidad (Constructor )" Url="html/9f332cc8-2adf-bc43-c84e-44a495814ceb.htm">
+        <HelpTOCNode Title="Modalidad (Constructor )" Url="html/e38f12b8-721b-17de-4bd0-75b17c5999b2.htm" />
+        <HelpTOCNode Title="Modalidad (Constructor (Int32, String, ObservableCollection(Libro), String))" Url="html/610d23e4-5ece-172f-9419-709cfe09be84.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="11de8ff2-9c92-43c7-88d5-6d78b3db5f15" Title="Modalidad (Propiedades)" Url="html/ce1f96c2-d78e-f203-52ac-497a69250c9d.htm">
         <HelpTOCNode Title="Curso (Propiedad )" Url="html/4d0981f5-28f4-6e85-dd92-b5a1f1ba40b7.htm" />
         <HelpTOCNode Title="Id (Propiedad )" Url="html/7ab08494-8d76-d876-bb23-146307f29a9b.htm" />
+        <HelpTOCNode Title="Libros (Propiedad )" Url="html/fbd7b2a9-741b-39f4-a1bf-de2d6a59897f.htm" />
         <HelpTOCNode Title="LibrosModalidad (Propiedad )" Url="html/b1436a09-77b5-3b68-59cb-eb10ff8d4b26.htm" />
         <HelpTOCNode Title="Nombre (Propiedad )" Url="html/94b15e7c-dbb4-1ce0-f657-55813a3310c1.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="bf39a8cd-92d9-4886-a9b3-608623aad342" Title="Modalidad (M&#233;todos)" Url="html/c22784ab-6a30-0a03-d41d-062243410221.htm">
+      <HelpTOCNode Id="24f9840e-c798-4ccd-b865-c34c08ba8a34" Title="Modalidad (M&#233;todos)" Url="html/c22784ab-6a30-0a03-d41d-062243410221.htm">
         <HelpTOCNode Title="ToString (M&#233;todo )" Url="html/7f0849dc-c170-df0e-e29b-87c027b6b651.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="Modalidad (Eventos)" Url="html/db71ca48-58d0-7824-6fb8-0ba9384ccc79.htm" />
-      <HelpTOCNode Id="08d413a3-9b17-4fdb-9189-6abcd990266a" Title="Modalidad (Campos)" Url="html/30fdb514-c9b0-177f-84ab-624635ec3865.htm">
+      <HelpTOCNode Id="c06f0453-0535-4bff-bbe1-6e57485790c8" Title="Modalidad (Campos)" Url="html/30fdb514-c9b0-177f-84ab-624635ec3865.htm">
         <HelpTOCNode Title="_id (Campo)" Url="html/477d8aa3-a51a-a698-dd1e-f2017cc9025f.htm" />
         <HelpTOCNode Title="_librosModalidad (Campo)" Url="html/7c37398f-cbe1-6f29-c026-0a99d52f496c.htm" />
         <HelpTOCNode Title="_nombre (Campo)" Url="html/a9c7e019-2cef-d61c-8c42-4f9775b75175.htm" />
         <HelpTOCNode Title="curso (Campo)" Url="html/8b323e2b-8248-1239-7963-15e8ec96232d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="9abc50e9-495d-4ea9-b603-dacc3799c71f" Title="Usuario (Clase)" Url="html/b5298066-d74e-d20f-56ac-50542f7618d4.htm">
-      <HelpTOCNode Id="d470d636-cef6-45a6-a973-f6d830f2fdc0" Title="Usuario (Constructor )" Url="html/6b6f1ab4-177f-7532-8841-2d408ed95e3c.htm">
+    <HelpTOCNode Id="175b6ac3-f7e9-4423-b0f6-56deb013bb76" Title="Numero (Clase)" Url="html/8add4f55-cc3c-29c0-9630-11375cb1ad91.htm">
+      <HelpTOCNode Id="5f1838e0-c2a7-40e5-8b20-78ada3948b15" Title="Numero (Constructor )" Url="html/06e49d76-f68b-e69c-b165-5f7c5aa71613.htm">
+        <HelpTOCNode Title="Numero (Constructor )" Url="html/0f893357-044f-9fb4-c18a-a13076cf09c1.htm" />
+        <HelpTOCNode Title="Numero (Constructor (Int64))" Url="html/8cb03db9-f777-4f22-c13d-c9fa77d02597.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c143ffbb-f263-449f-b7e3-8798f7220436" Title="Numero (Propiedades)" Url="html/63c825f4-6e6d-4568-0b49-d0297861909f.htm">
+        <HelpTOCNode Title="Contenido (Propiedad )" Url="html/03c14d1c-9df6-7b66-0ecd-0458df5e6843.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ccfa4d97-0268-4b62-baae-754a37de62d8" Title="Numero (M&#233;todos)" Url="html/054f0cca-d18f-f0be-4747-e8fa12008d73.htm">
+        <HelpTOCNode Title="ToString (M&#233;todo )" Url="html/eac24ab5-e999-dc66-65fb-6468f9f7c608.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Numero (Eventos)" Url="html/4a634a97-40ff-c487-a2de-f88f196810d4.htm" />
+      <HelpTOCNode Id="243753ce-c034-4cc3-b954-854c521e4d6b" Title="Numero (Campos)" Url="html/dc41589a-b982-85ae-0f03-4f7a31e66fc3.htm">
+        <HelpTOCNode Title="contenido (Campo)" Url="html/ca1f19de-6c50-14c0-a114-5a70145d3e60.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="39179e42-add4-4b38-a166-410e32bff5e2" Title="Usuario (Clase)" Url="html/b5298066-d74e-d20f-56ac-50542f7618d4.htm">
+      <HelpTOCNode Id="81bdbb5b-e3b1-454f-a561-63ce151a409b" Title="Usuario (Constructor )" Url="html/6b6f1ab4-177f-7532-8841-2d408ed95e3c.htm">
         <HelpTOCNode Title="Usuario (Constructor )" Url="html/73de4f47-a495-4d55-8437-459e184c093c.htm" />
+        <HelpTOCNode Title="Usuario (Constructor (String, String))" Url="html/2755e297-6f8d-8c05-6618-ad7dcf85d9a6.htm" />
         <HelpTOCNode Title="Usuario (Constructor (String, String, String))" Url="html/833db26c-ac12-76c6-c5ed-7aa8bfe1648d.htm" />
         <HelpTOCNode Title="Usuario (Constructor (String, String, String, Boolean))" Url="html/7279fb52-f3ae-0eec-9e24-1bff05543fba.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="8f3898b4-3d90-4377-bbfe-a70558bf3740" Title="Usuario (Propiedades)" Url="html/8686961f-b523-d6d3-1a24-ce26d8309ad2.htm">
+      <HelpTOCNode Id="638694f1-d7ef-4273-bc27-7daf0dc1426e" Title="Usuario (Propiedades)" Url="html/8686961f-b523-d6d3-1a24-ce26d8309ad2.htm">
         <HelpTOCNode Title="Activo (Propiedad )" Url="html/c7e40d23-5939-d240-f506-6a8ec4a0efff.htm" />
         <HelpTOCNode Title="Contrasenya (Propiedad )" Url="html/7927d088-b363-3547-677d-24bf338f543d.htm" />
         <HelpTOCNode Title="NombreUsuario (Propiedad )" Url="html/20e14e9b-a752-d2a5-cf3a-cd00b6f958c0.htm" />
@@ -224,7 +510,7 @@
       </HelpTOCNode>
       <HelpTOCNode Title="Usuario (M&#233;todos)" Url="html/87cd41f3-f307-7ed4-b18e-2ff1643db21d.htm" />
       <HelpTOCNode Title="Usuario (Eventos)" Url="html/f2d7f31c-af13-b403-d7af-c1b15a179b5b.htm" />
-      <HelpTOCNode Id="01c83bdb-4629-4a4d-a317-119043312ee2" Title="Usuario (Campos)" Url="html/062b9b13-2b59-0de9-b695-ea0c9125c9ab.htm">
+      <HelpTOCNode Id="d2891ae9-52a9-4be6-b59e-d1b9cd37131d" Title="Usuario (Campos)" Url="html/062b9b13-2b59-0de9-b695-ea0c9125c9ab.htm">
         <HelpTOCNode Title="activo (Campo)" Url="html/5da136a9-d4ae-923b-ba6c-9ba6bd096be1.htm" />
         <HelpTOCNode Title="contrasenya (Campo)" Url="html/7416d4c6-3b06-e148-5312-081104a99e0a.htm" />
         <HelpTOCNode Title="nombreUsuario (Campo)" Url="html/38800f64-9d61-ed2c-6d46-40ae997b1198.htm" />
@@ -232,93 +518,125 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="86d4c029-84d0-434a-808b-277358b9f750" Title="Proyecto_Xarxa_Desktop.servicios" Url="html/7f2aa845-d47e-b928-fd8d-c1e71b169ec2.htm">
-    <HelpTOCNode Id="1a44a069-52b1-4705-b59f-76671c0996f2" Title="ServicioAPI (Clase)" Url="html/3116f759-1a72-9039-f02e-ae3ff79640d1.htm">
+  <HelpTOCNode Id="a4642a66-bb16-49f6-9b38-6fa75742eb8c" Title="Proyecto_Xarxa_Desktop.servicios" Url="html/7f2aa845-d47e-b928-fd8d-c1e71b169ec2.htm">
+    <HelpTOCNode Id="8710a677-6997-49f1-b875-a6700a0c9be9" Title="ServicioAPI (Clase)" Url="html/3116f759-1a72-9039-f02e-ae3ff79640d1.htm">
       <HelpTOCNode Title="ServicioAPI (Constructor )" Url="html/b3888478-fbe4-71c1-7d88-d41090b666f9.htm" />
-      <HelpTOCNode Id="e9f7780f-1ce9-4379-9664-9f43e97cdfd7" Title="ServicioAPI (Propiedades)" Url="html/5e27899c-d2f9-9fbc-93c8-28e5c51bdc16.htm">
+      <HelpTOCNode Id="d5c77051-32dc-41b3-b291-7b3c077cd76e" Title="ServicioAPI (Propiedades)" Url="html/5e27899c-d2f9-9fbc-93c8-28e5c51bdc16.htm">
         <HelpTOCNode Title="Cliente (Propiedad )" Url="html/58ca961c-f8ab-378e-9e5b-6a363b2a7e77.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="4b38cd01-7961-4067-8bdc-bf344beb34e6" Title="ServicioAPI (M&#233;todos)" Url="html/af3b391e-c32b-a007-6333-8d207f3cbc12.htm">
+      <HelpTOCNode Id="fa680adb-b0e2-4a87-84ad-8ddefd1098d5" Title="ServicioAPI (M&#233;todos)" Url="html/af3b391e-c32b-a007-6333-8d207f3cbc12.htm">
+        <HelpTOCNode Title="DeleteLibro (M&#233;todo )" Url="html/30012176-2e3d-ed4f-9bbf-be6f79efd7d1.htm" />
         <HelpTOCNode Title="DeleteLote (M&#233;todo )" Url="html/ab381400-b0b3-eb55-8ef3-2371ed8c27ca.htm" />
-        <HelpTOCNode Title="GetAlumno (M&#233;todo )" Url="html/142c05a3-5e46-60e2-655b-8fa5c3f05cd9.htm" />
+        <HelpTOCNode Title="GetAlumno (M&#233;todo )" Url="html/bffd7395-11ef-4757-e327-40a78c515b17.htm" />
         <HelpTOCNode Title="GetAlumnos (M&#233;todo )" Url="html/d2d2876d-ac0d-b9d6-0f99-fd9af01d6db4.htm" />
         <HelpTOCNode Title="GetLibros (M&#233;todo )" Url="html/0bf1b44e-cfe8-790c-88e8-bf95a2217e47.htm" />
         <HelpTOCNode Title="GetLote (M&#233;todo )" Url="html/ffad14f9-1a0f-dc86-8134-e478cbbfedc0.htm" />
         <HelpTOCNode Title="GetLotes (M&#233;todo )" Url="html/763977c8-dd77-c9a1-8870-acc004f8a3ed.htm" />
         <HelpTOCNode Title="GetModalidades (M&#233;todo )" Url="html/d4be375c-5330-c292-dc24-a14fb55f91ae.htm" />
+        <HelpTOCNode Title="GetNextIdLote (M&#233;todo )" Url="html/f872e183-da79-0164-2f02-76bd7469d33b.htm" />
+        <HelpTOCNode Title="GetSessionId (M&#233;todo )" Url="html/0e49b29e-358c-0241-b52e-9d5748df4ead.htm" />
         <HelpTOCNode Title="GetUsuario (M&#233;todo )" Url="html/4a6364ef-7675-1c1d-1373-1030a6aeb87f.htm" />
+        <HelpTOCNode Title="GetUsuarios (M&#233;todo )" Url="html/b46a55d1-33bc-985e-b4d6-d9b45b728fa6.htm" />
+        <HelpTOCNode Title="LoginUsuario (M&#233;todo )" Url="html/146af2f4-b3fd-d981-5933-1d543ff7a8f8.htm" />
+        <HelpTOCNode Title="PostAlumno (M&#233;todo )" Url="html/ce4d35f2-cf28-dd94-a4a5-657e3db533f2.htm" />
+        <HelpTOCNode Title="PostAlumnos (M&#233;todo )" Url="html/e4400834-07d2-ee80-46ca-ae5579041d75.htm" />
+        <HelpTOCNode Title="PostLibro (M&#233;todo )" Url="html/f5a7faf2-cc8e-d287-04fc-70629f56bec0.htm" />
+        <HelpTOCNode Title="PostLote (M&#233;todo )" Url="html/71b6cc8e-df29-276a-edcb-50987cc88703.htm" />
+        <HelpTOCNode Title="PostModalidad (M&#233;todo )" Url="html/6e681f5b-bb8f-3f91-6f66-2edae0726fde.htm" />
         <HelpTOCNode Title="PostUsuario (M&#233;todo )" Url="html/877c3268-8858-f6f2-f562-020ec95f6b93.htm" />
         <HelpTOCNode Title="PutAlumno (M&#233;todo )" Url="html/9828a455-ebef-d5fa-442e-ad9a1d83cc59.htm" />
+        <HelpTOCNode Title="PutLibro (M&#233;todo )" Url="html/b15923f9-bafe-9d79-63f3-2769fc36aa61.htm" />
         <HelpTOCNode Title="PutLote (M&#233;todo )" Url="html/307c5ff2-41e4-e8b1-31ae-39aa43cd950d.htm" />
+        <HelpTOCNode Title="PutUsuario (M&#233;todo )" Url="html/ea7f8859-7111-4ba2-ac74-cf310599110f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d82d85dc-25d1-4d5c-9dd9-f5a0965835bd" Title="ServicioAPI (Campos)" Url="html/33f33775-c734-91e2-0318-24691b5f323f.htm">
+      <HelpTOCNode Id="855c5eff-bd60-48db-bc6c-de3385c54246" Title="ServicioAPI (Campos)" Url="html/33f33775-c734-91e2-0318-24691b5f323f.htm">
         <HelpTOCNode Title="cliente (Campo)" Url="html/8519b806-c37a-2632-3da2-b9e8a00fac4a.htm" />
+        <HelpTOCNode Title="COOKIE_SESSION (Campo)" Url="html/c51830ae-e46b-c25b-0835-e98c85b3db88.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="6c9b0046-2f94-4dc4-b531-90cec00295e8" Title="ServicioCodigoBarras (Clase)" Url="html/f2799b5e-db5b-871f-d161-3fd049f025d0.htm">
+    <HelpTOCNode Id="8dcfec47-6147-4d0a-9311-be7f2d64c89a" Title="ServicioCodigoBarras (Clase)" Url="html/f2799b5e-db5b-871f-d161-3fd049f025d0.htm">
       <HelpTOCNode Title="ServicioCodigoBarras (Constructor )" Url="html/c7d38364-8d4a-e38f-eb1a-ac358195d2c0.htm" />
-      <HelpTOCNode Id="9baaaf5d-2145-4712-bfa6-d43c6f24e093" Title="ServicioCodigoBarras (M&#233;todos)" Url="html/76aa2fee-238b-5029-12a3-cd39324de96d.htm">
-        <HelpTOCNode Id="ece674d6-e0b3-4089-b810-b3b2d81dbed0" Title="GenerarCB (M&#233;todo )" Url="html/4aaf7d48-960f-5b5a-d703-e32e529911ce.htm">
+      <HelpTOCNode Id="d1f91265-20f8-42c8-9467-61661a69083b" Title="ServicioCodigoBarras (M&#233;todos)" Url="html/76aa2fee-238b-5029-12a3-cd39324de96d.htm">
+        <HelpTOCNode Id="b962911a-f552-47e4-a001-7b61b97a8c2e" Title="GenerarCB (M&#233;todo )" Url="html/4aaf7d48-960f-5b5a-d703-e32e529911ce.htm">
           <HelpTOCNode Title="GenerarCB (M&#233;todo (Int32))" Url="html/6aa752ff-ce61-2dc7-dd3a-347cc679e469.htm" />
           <HelpTOCNode Title="GenerarCB (M&#233;todo (String))" Url="html/38f51606-d43b-d8c7-a96a-721a829a22f5.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="b5d52887-c246-4bc9-99d6-c7426b50d770" Title="ServicioCodigoBarras (Campos)" Url="html/2913254e-c53e-8b24-8619-b75257e6a04d.htm">
+      <HelpTOCNode Id="29d9ebfc-470a-4be7-bbfe-448cc23348fc" Title="ServicioCodigoBarras (Campos)" Url="html/2913254e-c53e-8b24-8619-b75257e6a04d.htm">
         <HelpTOCNode Title="date (Campo)" Url="html/c9c459a6-4980-805b-d3c9-cf018a2e0e7c.htm" />
         <HelpTOCNode Title="path (Campo)" Url="html/cde33c05-db52-b331-0df7-6d7529ee59e6.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e618c17e-6321-4732-a8ee-544343456cdf" Title="ServicioCsv (Clase)" Url="html/6fa1dc94-794f-3a96-4214-236c10940643.htm">
+    <HelpTOCNode Id="5ebfa896-cc70-43b2-a7c7-b7ff03749f40" Title="ServicioCsv (Clase)" Url="html/6fa1dc94-794f-3a96-4214-236c10940643.htm">
       <HelpTOCNode Title="ServicioCsv (Constructor )" Url="html/3886c991-96e4-4a03-05c6-8ab1d0c31d26.htm" />
       <HelpTOCNode Title="ServicioCsv (Constructor )" Url="html/7656044c-5279-56c6-0096-5356a5cd88f4.htm" />
-      <HelpTOCNode Id="0c0c7d69-4526-4053-8d53-ff3800f7bf41" Title="ServicioCsv (Propiedades)" Url="html/1cafcf41-921f-78db-62aa-cc9a28cee799.htm">
+      <HelpTOCNode Id="7f33f345-088e-49e3-ac0d-0c434c807957" Title="ServicioCsv (Propiedades)" Url="html/1cafcf41-921f-78db-62aa-cc9a28cee799.htm">
         <HelpTOCNode Title="ListaAlumnosGeneral (Propiedad )" Url="html/94299529-bb0e-58ab-920b-3d0cfac5eb37.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="56e12327-74c6-4ee8-9ec9-27477e4b2b21" Title="ServicioCsv (M&#233;todos)" Url="html/8c79cfaa-f093-65d2-40e0-3bd9b85af424.htm">
+      <HelpTOCNode Id="6974141b-0bbd-4fc5-a722-63e00064eee7" Title="ServicioCsv (M&#233;todos)" Url="html/8c79cfaa-f093-65d2-40e0-3bd9b85af424.htm">
         <HelpTOCNode Title="EstadoMatriculaStringToEnum (M&#233;todo )" Url="html/c80ff8a2-3835-4c27-5727-e2bc5c6a0c0d.htm" />
         <HelpTOCNode Title="GetListaAlumnosFromCSV (M&#233;todo )" Url="html/587b1be2-356b-32fa-328e-fb73cedfcf0f.htm" />
-        <HelpTOCNode Title="LeeCsvAlumnosGeneral (M&#233;todo )" Url="html/d75b878e-32ce-42a0-cf39-54962ab7cd01.htm" />
-        <HelpTOCNode Title="LeeCsvAlumnosXarxa (M&#233;todo )" Url="html/78c3303f-750f-81f0-b400-f5152a07e766.htm" />
+        <HelpTOCNode Title="LeeCsvAlumnosGeneral (M&#233;todo )" Url="html/dcf63e33-828c-e684-6151-b5dbedad8459.htm" />
+        <HelpTOCNode Title="LeeCsvAlumnosXarxa (M&#233;todo )" Url="html/17f2909c-008c-8b6c-f933-b639efc17233.htm" />
+        <HelpTOCNode Title="LeeCsvFiltroGrupos (M&#233;todo )" Url="html/79b939ab-4476-a0c5-0b5a-f952d5fc9cdc.htm" />
         <HelpTOCNode Title="QuitarAlumnosNoXarxa (M&#233;todo )" Url="html/19306f78-441c-dc01-05b5-4dd7e477e547.htm" />
+        <HelpTOCNode Title="RealizarCargaCSV (M&#233;todo )" Url="html/79854a3b-6883-7517-391c-b00ddede83a6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="5f6e8725-7ed5-4b14-a994-00f4856c922b" Title="ServicioCsv (Campos)" Url="html/60081669-dd2b-159b-a36e-e40956251982.htm">
-        <HelpTOCNode Title="listaAlumnosDefinitiva (Campo)" Url="html/72f0dcc2-e0e0-eb4c-45d3-8002683e3680.htm" />
+      <HelpTOCNode Id="865cc0ec-e28d-4d1e-bf26-6cd5bf5fa228" Title="ServicioCsv (Campos)" Url="html/60081669-dd2b-159b-a36e-e40956251982.htm">
         <HelpTOCNode Title="listaAlumnosGeneral (Campo)" Url="html/e4ea1c61-04d5-7377-1c23-3f1a20e35642.htm" />
+        <HelpTOCNode Title="servicioApi (Campo)" Url="html/ec008796-fe1b-de25-e96e-e9e49b45ae58.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="6887f0c1-76ef-4a3f-b129-56dcd5d872ef" Title="ServicioDatos (Clase)" Url="html/276785a2-4e60-fe81-3580-58d41a5e4fe5.htm">
+    <HelpTOCNode Id="6b3976c9-8012-4a49-ac86-b774e59d4896" Title="ServicioDatos (Clase)" Url="html/276785a2-4e60-fe81-3580-58d41a5e4fe5.htm">
       <HelpTOCNode Title="ServicioDatos (Constructor )" Url="html/196984e3-6d23-0d2d-5d1b-9a641d7a8037.htm" />
       <HelpTOCNode Title="ServicioDatos (Constructor )" Url="html/daaef62b-32fe-2529-e693-6ffc31425f71.htm" />
-      <HelpTOCNode Id="0034085f-fc14-404d-b890-ab4ad416cbef" Title="ServicioDatos (M&#233;todos)" Url="html/60cb909f-d348-520b-87fe-866302066a54.htm">
+      <HelpTOCNode Id="dd58f694-8580-4875-b960-258836c472b5" Title="ServicioDatos (M&#233;todos)" Url="html/60cb909f-d348-520b-87fe-866302066a54.htm">
         <HelpTOCNode Title="ObtenerNiasDisponibles (M&#233;todo )" Url="html/0f1d765f-e5f4-8331-4777-70d07ba4e75a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ed04a210-9cc3-4588-b253-35d3910d5ba3" Title="ServicioDatos (Campos)" Url="html/4dba54e4-d77b-89bd-9735-c0819ac7c50b.htm">
+      <HelpTOCNode Id="ff15cb79-a2e2-4c6b-9f1c-b98834f07aef" Title="ServicioDatos (Campos)" Url="html/4dba54e4-d77b-89bd-9735-c0819ac7c50b.htm">
         <HelpTOCNode Title="servicioApi (Campo)" Url="html/be526a2c-2501-ed23-8769-839e1e7cb4f9.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e0d99a39-899e-42b4-bef2-4af6b0803ae2" Title="ServicioDialogos (Clase)" Url="html/c6d7cf45-d3ca-5092-0c93-703341977738.htm">
+    <HelpTOCNode Id="a492d418-f0ba-4f41-b1e9-8f183e4eecc8" Title="ServicioDialogos (Clase)" Url="html/c6d7cf45-d3ca-5092-0c93-703341977738.htm">
       <HelpTOCNode Title="ServicioDialogos (Constructor )" Url="html/31f54b1e-78e2-f5ad-0337-dab594ad1a0a.htm" />
-      <HelpTOCNode Id="91de6676-0320-4b8c-b0ab-13d820fe86f4" Title="ServicioDialogos (Propiedades)" Url="html/45b18ced-bc2d-86f9-c696-944cbaf2420a.htm">
+      <HelpTOCNode Id="18034aa7-b3b0-43bb-a84a-cee269f32b29" Title="ServicioDialogos (Propiedades)" Url="html/45b18ced-bc2d-86f9-c696-944cbaf2420a.htm">
         <HelpTOCNode Title="ArchivoSeleccionado (Propiedad )" Url="html/7fe1ff6f-4fa3-6a96-1cca-69688963a4a9.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c7555518-39a0-4580-82ad-c72029eee099" Title="ServicioDialogos (M&#233;todos)" Url="html/d07fef82-9cad-d34d-bdf0-7ba21316ca9d.htm">
+      <HelpTOCNode Id="65a8a8a1-94d0-4b56-bc80-814d5edad1c4" Title="ServicioDialogos (M&#233;todos)" Url="html/d07fef82-9cad-d34d-bdf0-7ba21316ca9d.htm">
         <HelpTOCNode Title="MensajeAlerta (M&#233;todo )" Url="html/44876770-3955-eb55-813c-67642da0815b.htm" />
         <HelpTOCNode Title="OpenFileDialogService (M&#233;todo )" Url="html/cb36c521-1f47-86a2-54a2-8b01223e6e7b.htm" />
         <HelpTOCNode Title="ServicioMessageBox (M&#233;todo )" Url="html/1728065a-8e06-09d5-4ac2-6520d6ccd03c.htm" />
         <HelpTOCNode Title="ServicioMessageBoxResult (M&#233;todo )" Url="html/f3e8f4c6-4384-179a-df99-637d992b37ff.htm" />
+        <HelpTOCNode Title="ServicioMessageBoxWithoutImage (M&#233;todo )" Url="html/7cf90319-351a-fdfd-6242-f74ee8b99a31.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="f0f737d8-6be2-49dd-8fed-94e5002f3916" Title="ServicioDialogos (Campos)" Url="html/9cd098ff-4ce1-92e0-76ba-b8cb25dbea7e.htm">
+      <HelpTOCNode Id="4c40d3a2-801f-42dd-bb2c-d921fd35cb06" Title="ServicioDialogos (Campos)" Url="html/9cd098ff-4ce1-92e0-76ba-b8cb25dbea7e.htm">
         <HelpTOCNode Title="archivoSeleccionado (Campo)" Url="html/8fe666cb-be06-5c88-616e-2aa853c122f7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="2c8b4a05-86eb-452d-913e-b9805d10cc2b" Title="ServicioNavegacion (Clase)" Url="html/5a332912-279e-eddd-5518-d445ff136fa8.htm">
+    <HelpTOCNode Id="c1a80084-926e-4afc-9290-3826ae12fb53" Title="ServicioNavegacion (Clase)" Url="html/5a332912-279e-eddd-5518-d445ff136fa8.htm">
       <HelpTOCNode Title="ServicioNavegacion (Constructor )" Url="html/1aaaaf16-37c8-c4c3-2dde-bd3cdd71cb18.htm" />
-      <HelpTOCNode Id="df82992a-704e-475d-82c9-6f283f9b644f" Title="ServicioNavegacion (M&#233;todos)" Url="html/ce33a538-b15c-98a3-f85f-4db6c95889ed.htm">
+      <HelpTOCNode Id="b81b44ba-b858-4aba-b1b8-fd1f0256d3d8" Title="ServicioNavegacion (M&#233;todos)" Url="html/ce33a538-b15c-98a3-f85f-4db6c95889ed.htm">
+        <HelpTOCNode Title="AbrirInformeConcesion (M&#233;todo )" Url="html/1cd38a9f-2e73-1c01-ce66-7361de94b326.htm" />
+        <HelpTOCNode Title="AbrirInformeEtiquetas (M&#233;todo )" Url="html/14d53633-e922-cdbf-2913-e6436e6298a1.htm" />
+        <HelpTOCNode Title="AbrirInformeEtiquetasBolsa (M&#233;todo )" Url="html/90528aef-37cd-3f50-161e-ec5cf2206caf.htm" />
+        <HelpTOCNode Title="AbrirInformeLotes (M&#233;todo )" Url="html/9e62bd1f-f15c-9d1e-2fc0-c99ef6e67121.htm" />
+        <HelpTOCNode Title="AbrirInformeRecogida (M&#233;todo )" Url="html/a0a0f93e-0b66-88c0-a36a-d1a748c123e1.htm" />
+        <HelpTOCNode Title="AbrirInformeXarxaCompleto (M&#233;todo )" Url="html/02cefab1-ece9-e46d-7166-4777468f3069.htm" />
+        <HelpTOCNode Title="AbrirInformeXarxaGrupos (M&#233;todo )" Url="html/3c262684-bb9c-2c85-9a23-97c25776a6b2.htm" />
+        <HelpTOCNode Title="AbrirVistaAdministrarUsuarios (M&#233;todo )" Url="html/b93ffae2-447c-8613-3e48-ed8f3f213393.htm" />
         <HelpTOCNode Title="AbrirVistaAlumnos (M&#233;todo )" Url="html/985e45a4-0599-0ede-55fa-402a90a6b984.htm" />
+        <HelpTOCNode Title="AbrirVistaAnyadirAlumno (M&#233;todo )" Url="html/ce1d8b64-c1be-c052-9e05-685101264ed3.htm" />
+        <HelpTOCNode Title="AbrirVistaAnyadirLibro (M&#233;todo )" Url="html/2a5433a3-0e2c-dd04-a751-8407069306f8.htm" />
+        <HelpTOCNode Title="AbrirVistaAnyadirLibroModalidad (M&#233;todo )" Url="html/ea424dc0-df9e-800f-a171-2c8b0d3ea5f8.htm" />
         <HelpTOCNode Title="AbrirVistaAsignarLote (M&#233;todo )" Url="html/99b29b6b-53c9-516a-7309-5bb63e7694e3.htm" />
+        <HelpTOCNode Title="AbrirVistaCargarCSV (M&#233;todo )" Url="html/b80ec6b2-48c0-3762-d998-e5e8e31a68f5.htm" />
+        <HelpTOCNode Title="AbrirVistaCrearModalidad (M&#233;todo )" Url="html/9bb359a0-6ad2-eeaf-6126-04f97b02a387.htm" />
         <HelpTOCNode Title="AbrirVistaDarDeAlta (M&#233;todo )" Url="html/13f772f6-618d-3a22-5f77-7fa0d70951ee.htm" />
+        <HelpTOCNode Title="AbrirVistaEditarAlumno (M&#233;todo )" Url="html/d1c16fdc-e0be-8f1f-cc96-52fbc5da731d.htm" />
+        <HelpTOCNode Title="AbrirVistaEditarLibro (M&#233;todo )" Url="html/f7c3d07d-6ac2-f22f-c1b4-8e0c66425bf6.htm" />
         <HelpTOCNode Title="AbrirVistaEditarLote (M&#233;todo )" Url="html/1eacdc27-5f68-3e03-c289-677432c95e56.htm" />
         <HelpTOCNode Title="AbrirVistaGenerarLote (M&#233;todo )" Url="html/e8fc23e3-4fbd-9951-eb02-5b2b05c4b192.htm" />
+        <HelpTOCNode Title="AbrirVistaInformes (M&#233;todo )" Url="html/da26c447-99a2-50d8-565c-48fa73f4a4c0.htm" />
         <HelpTOCNode Title="AbrirVistaLibros (M&#233;todo )" Url="html/4a51b5b8-949e-bc84-572a-7f51f49b6cd6.htm" />
         <HelpTOCNode Title="AbrirVistaLogIn (M&#233;todo )" Url="html/e7b8ba47-9afe-cac2-7906-565dd6b4e3a0.htm" />
         <HelpTOCNode Title="AbrirVistaLotes (M&#233;todo )" Url="html/ccf0c943-e673-d6fc-0d71-22db4d9a6b85.htm" />
@@ -328,67 +646,157 @@
         <HelpTOCNode Title="AbrirVistaVerLoteAlumno (M&#233;todo )" Url="html/561cb06d-6035-4ba3-d179-b56d17bde2e9.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c1a99d01-6751-4cab-bc38-0795e5698a81" Title="ServicioSQL (Clase)" Url="html/ee609397-78f2-553d-52c3-b4f186c26f5e.htm">
+    <HelpTOCNode Id="6ec8f65b-2622-46ce-80ca-a5913e8e4513" Title="ServicioSQL (Clase)" Url="html/ee609397-78f2-553d-52c3-b4f186c26f5e.htm">
       <HelpTOCNode Title="ServicioSQL (Constructor )" Url="html/f120d69d-3070-262b-81d9-6003cc65b813.htm" />
-      <HelpTOCNode Id="779e0410-8bf7-4c5f-a72b-999295d69998" Title="ServicioSQL (M&#233;todos)" Url="html/e721235b-ca1d-0fb1-0e0b-843d002371e3.htm">
+      <HelpTOCNode Id="9d4ebe5d-2ae7-4da8-a2ce-a2886f60bb6c" Title="ServicioSQL (M&#233;todos)" Url="html/e721235b-ca1d-0fb1-0e0b-843d002371e3.htm">
         <HelpTOCNode Title="GetAlumnoByNombreYApellidos (M&#233;todo )" Url="html/162f0f2f-7060-b9a9-5611-b35b7b555b7d.htm" />
+        <HelpTOCNode Title="GetCursos (M&#233;todo )" Url="html/ec1077f8-9826-8314-f8d1-bfae4e618aae.htm" />
         <HelpTOCNode Title="HallarUltLote (M&#233;todo )" Url="html/67376a41-818a-10f8-cac0-54d621e82472.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="040d3ed3-136d-43b2-8e94-c5bedff1636c" Title="ServicioValidarUsuario (Clase)" Url="html/b22fa690-164c-6412-f455-aed079f65444.htm">
+    <HelpTOCNode Id="0017e3fc-abb6-454f-a7df-d90a64fdd795" Title="ServicioValidarUsuario (Clase)" Url="html/b22fa690-164c-6412-f455-aed079f65444.htm">
       <HelpTOCNode Title="ServicioValidarUsuario (Constructor )" Url="html/7d85443f-5b89-117f-dbd8-15aa45d021eb.htm" />
-      <HelpTOCNode Id="146949e8-30de-4f17-a5df-373920bebad6" Title="ServicioValidarUsuario (Propiedades)" Url="html/772629ae-939b-3354-e9a2-074a99d208ba.htm">
+      <HelpTOCNode Id="a4617601-52c9-4d14-914b-bab022084504" Title="ServicioValidarUsuario (Propiedades)" Url="html/772629ae-939b-3354-e9a2-074a99d208ba.htm">
         <HelpTOCNode Title="UsuarioActual (Propiedad )" Url="html/d88c17e9-e624-b095-bce3-df48c7dee5a4.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b1cd5044-d825-4c89-8fe3-5b4d07b27830" Title="ServicioValidarUsuario (M&#233;todos)" Url="html/56dc29bf-ad54-9c7e-8dd6-d50f88935d48.htm">
+      <HelpTOCNode Id="0b6700b6-bf0b-431f-9b5f-3ee34270ca0f" Title="ServicioValidarUsuario (M&#233;todos)" Url="html/56dc29bf-ad54-9c7e-8dd6-d50f88935d48.htm">
         <HelpTOCNode Title="Sha256encrypt (M&#233;todo )" Url="html/a8519637-e4f4-a9ad-6cf5-811b3f61dd7f.htm" />
         <HelpTOCNode Title="ValidarUsuario (M&#233;todo )" Url="html/d6eb2cf0-d179-ffad-e5e2-e7dde5c64895.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="36843193-5e17-4f82-a384-b8322bb374d7" Title="ServicioValidarUsuario (Campos)" Url="html/185a87c7-cb60-21f7-d787-8569ce1f5323.htm">
+      <HelpTOCNode Id="06cac877-782a-42b7-b915-07211f9fd088" Title="ServicioValidarUsuario (Campos)" Url="html/185a87c7-cb60-21f7-d787-8569ce1f5323.htm">
         <HelpTOCNode Title="servicioApi (Campo)" Url="html/0b6ea515-c049-a589-da66-c60790f9f1af.htm" />
         <HelpTOCNode Title="usuarioActual (Campo)" Url="html/f35a6673-faee-6e5b-6344-67b35d868786.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="a7bd6f81-cce4-4200-83d1-414ae197aa8b" Title="Proyecto_Xarxa_Desktop.vistas" Url="html/2825e0a0-0aa0-d998-e307-bd8a2d2efc76.htm">
-    <HelpTOCNode Id="f1f6ead4-772b-4221-b3aa-cf85a09a7051" Title="AlumnosUserControl (Clase)" Url="html/359a41a2-b17f-178c-f0d0-66eaf56b59d7.htm">
+  <HelpTOCNode Id="047a6dd2-5f14-4bba-a616-c333654a79fd" Title="Proyecto_Xarxa_Desktop.vistas" Url="html/2825e0a0-0aa0-d998-e307-bd8a2d2efc76.htm">
+    <HelpTOCNode Id="30874f69-698b-4b31-a3e4-3360aa6c2c74" Title="AdministrarUsuariosDialog (Clase)" Url="html/f3877126-5e73-159e-07e5-a0ccad15ef0b.htm">
+      <HelpTOCNode Title="AdministrarUsuariosDialog (Constructor )" Url="html/5e73b024-21e2-a09e-254f-c031eb8332b4.htm" />
+      <HelpTOCNode Title="AdministrarUsuariosDialog (Propiedades)" Url="html/ee9ec863-e086-d3d4-7046-6cb4cf03b6ee.htm" />
+      <HelpTOCNode Id="b865f0ea-e9c8-4002-8395-d1c52349f5ae" Title="AdministrarUsuariosDialog (M&#233;todos)" Url="html/9e602da4-001a-3948-cb4c-6041ddf23d9a.htm">
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/4d0c11fd-d5cd-fe0c-e60b-ada64967adb7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AdministrarUsuariosDialog (Eventos)" Url="html/eae03977-aec5-a171-eb32-3c53327c98d5.htm" />
+      <HelpTOCNode Id="80b606de-d853-441e-996d-e2dc523c19ea" Title="AdministrarUsuariosDialog (Campos)" Url="html/8f3567f2-fd8c-8e79-e1e9-a104fcd32572.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/e7d81030-cbaa-7809-8d2d-8185a6e383b6.htm" />
+        <HelpTOCNode Title="vm (Campo)" Url="html/b7d58761-7a77-5536-27bf-03104e837544.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="161197ad-2299-4d2c-ad12-05f7bbf18a54" Title="AlumnosUserControl (Clase)" Url="html/359a41a2-b17f-178c-f0d0-66eaf56b59d7.htm">
       <HelpTOCNode Title="AlumnosUserControl (Constructor )" Url="html/5ad10a69-4400-c749-c3f1-592587afbd83.htm" />
       <HelpTOCNode Title="AlumnosUserControl (Propiedades)" Url="html/5c4cdcd8-cc7d-4107-2612-c977a00de1ea.htm" />
-      <HelpTOCNode Id="d3236bed-a61d-4e81-8bb3-caa0169218de" Title="AlumnosUserControl (M&#233;todos)" Url="html/0b86c7d3-56ec-648e-a224-3c0489b91ba8.htm">
-        <HelpTOCNode Title="buscador_TextChanged (M&#233;todo )" Url="html/6bfb7f62-acd0-a442-5cd4-a82c8c714cf8.htm" />
+      <HelpTOCNode Id="e78817da-bf12-459f-8198-ab0cc0eccf32" Title="AlumnosUserControl (M&#233;todos)" Url="html/0b86c7d3-56ec-648e-a224-3c0489b91ba8.htm">
+        <HelpTOCNode Title="Buscador_TextChanged (M&#233;todo )" Url="html/9cfc0644-95bd-4fdb-3087-eed835a40224.htm" />
         <HelpTOCNode Title="DarDeBajaButton_Click (M&#233;todo )" Url="html/6b5c9834-8561-29dd-f671-ec5855bb44df.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/e0bb5f71-65ab-d04d-3012-4fb3034fc283.htm" />
-        <HelpTOCNode Title="SoloXarxaToggleButton_Click (M&#233;todo )" Url="html/66ae8d36-d3c9-cb5d-d69c-3c3588a60a19.htm" />
+        <HelpTOCNode Title="NoXarxaRadioButton_Click (M&#233;todo )" Url="html/d74a0e9e-266d-aedd-b9ff-3428d71f7dd8.htm" />
+        <HelpTOCNode Title="SinFiltroRadioButton_Click (M&#233;todo )" Url="html/651e2a43-02b8-74c6-4fb5-6dd4603b5ef8.htm" />
+        <HelpTOCNode Title="SoloXarxaRadioButton_Click (M&#233;todo )" Url="html/e165171f-58a0-eb23-8e64-b107317ca59f.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="AlumnosUserControl (Eventos)" Url="html/abd8f778-1a33-d29e-1333-41f8252d9055.htm" />
-      <HelpTOCNode Id="9936d65c-2dc2-4fce-a251-ece758637533" Title="AlumnosUserControl (Campos)" Url="html/778708cb-40ad-80e9-7cdb-f55067875461.htm">
+      <HelpTOCNode Id="91ce3486-35e1-44d2-9194-697fd13b2166" Title="AlumnosUserControl (Campos)" Url="html/778708cb-40ad-80e9-7cdb-f55067875461.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/e3c4ef5b-3c4f-e345-4a4a-50c999d3fd1e.htm" />
-        <HelpTOCNode Title="buscador (Campo)" Url="html/04adf8b3-2252-d318-8c3c-b3ddb9743fd0.htm" />
+        <HelpTOCNode Title="Buscador (Campo)" Url="html/49619377-16da-7be3-77e5-237ab642aa76.htm" />
         <HelpTOCNode Title="listview (Campo)" Url="html/5d7bb08a-3568-7c5f-2496-f6ab116b3c9a.htm" />
-        <HelpTOCNode Title="SoloXarxaToggleButton (Campo)" Url="html/96ce70b1-e6ff-2710-af57-42b47dfeb6b8.htm" />
+        <HelpTOCNode Title="NoXarxaRadioButton (Campo)" Url="html/e2b699b5-34bb-1e26-3a19-5cd04bfcd560.htm" />
+        <HelpTOCNode Title="SinFiltroRadioButton (Campo)" Url="html/ae67f5b2-214f-61f2-c48d-5985b9e4ff74.htm" />
+        <HelpTOCNode Title="SoloXarxaRadioButton (Campo)" Url="html/1e6afe17-fe80-2a80-96b5-2ce1e0097321.htm" />
         <HelpTOCNode Title="vm (Campo)" Url="html/a3a64d28-9722-7a2c-cd58-b90e388e4802.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="656f7fb9-c52e-46c0-80f2-b2d3f927a5e7" Title="AsignarLoteDialog (Clase)" Url="html/cfd9cfe5-fab3-9780-895b-9bed32a89833.htm">
+    <HelpTOCNode Id="230069b1-2372-488e-b930-ab937d784dc4" Title="AnyadirAlumno (Clase)" Url="html/8005e8ef-00d9-0a8c-aaba-593b7744f3d1.htm">
+      <HelpTOCNode Title="AnyadirAlumno (Constructor )" Url="html/8002b468-e03f-d3e4-83fd-f7b934cdfd14.htm" />
+      <HelpTOCNode Title="AnyadirAlumno (Propiedades)" Url="html/be779d82-155a-8204-8808-96b42b56a3a4.htm" />
+      <HelpTOCNode Id="4b350228-be8e-4cfd-bf4f-35810bcd539b" Title="AnyadirAlumno (M&#233;todos)" Url="html/572c42aa-6739-50bc-e222-b4488c0d977b.htm">
+        <HelpTOCNode Title="AnyadirAlumnoButton_Click (M&#233;todo )" Url="html/4a229837-c1de-4c2c-6380-2f3c064fa7c7.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/ee1f35a9-7b15-0e24-829c-bb455805cbc1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AnyadirAlumno (Eventos)" Url="html/ae268601-86e5-67da-228e-49582a6b879a.htm" />
+      <HelpTOCNode Id="d9fb074c-eb5f-4ca6-a56e-7d4d4fcdaf2a" Title="AnyadirAlumno (Campos)" Url="html/c0e59018-2b2a-0c29-8bfb-2415471f272d.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/302796a4-7ac9-4f23-a1bc-37d4ba5b7332.htm" />
+        <HelpTOCNode Title="vm (Campo)" Url="html/cc5a8a53-afc1-63df-5cb3-7ae092cec3f2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ea359638-71b8-40f8-93d6-b084cb7e952d" Title="AnyadirLibroDialog (Clase)" Url="html/4c158186-c26b-8777-10c3-e3dca460041c.htm">
+      <HelpTOCNode Title="AnyadirLibroDialog (Constructor )" Url="html/2bef9a2f-66d7-cb56-d577-588ff00e0293.htm" />
+      <HelpTOCNode Title="AnyadirLibroDialog (Propiedades)" Url="html/91c3e774-1bcb-ec82-9718-fdf00ab086fc.htm" />
+      <HelpTOCNode Id="677ef099-8d9a-4315-b308-4cea7c83e4bd" Title="AnyadirLibroDialog (M&#233;todos)" Url="html/8aa4b30f-869f-690c-e70e-d550ff17b4f4.htm">
+        <HelpTOCNode Title="AnyadirLibroButton_Click (M&#233;todo )" Url="html/ef232841-4ddc-f981-0151-6c560c5d62f3.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/4fec3688-af4f-6eba-c2bb-dc5e16861810.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AnyadirLibroDialog (Eventos)" Url="html/da1f3486-e877-ba5f-9e5c-0e2b110c00b6.htm" />
+      <HelpTOCNode Id="8d8969bc-faa4-450a-8bbc-10fd37583e92" Title="AnyadirLibroDialog (Campos)" Url="html/4e7ac54d-eaca-5e7c-e53a-d57f76a3a733.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/012cdecf-d2b4-18be-d3b0-9966a06c176a.htm" />
+        <HelpTOCNode Title="vm (Campo)" Url="html/6fd43065-7ede-94d7-e0dc-1a5efabd1d52.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8c2de79f-0606-47c0-93f2-3e0e9044a8e7" Title="AnyadirLibroModalidad (Clase)" Url="html/76422250-b58b-fad0-8756-d562f96814b8.htm">
+      <HelpTOCNode Title="AnyadirLibroModalidad (Constructor )" Url="html/169cfda5-eb15-f28f-ca09-74994fb64ac2.htm" />
+      <HelpTOCNode Title="AnyadirLibroModalidad (Propiedades)" Url="html/52ba6fd6-ecb8-a14e-0f60-6076ec1d2e10.htm" />
+      <HelpTOCNode Id="8e82045f-9cea-41e9-a4bc-dfdd8904b431" Title="AnyadirLibroModalidad (M&#233;todos)" Url="html/493f9b6c-628f-bc30-f2da-7c9c01d38dd3.htm">
+        <HelpTOCNode Title="AnyadirLibroButton_Click (M&#233;todo )" Url="html/3d18722e-c584-f356-4759-68c62c9ee9e0.htm" />
+        <HelpTOCNode Title="Buscador_TextChanged (M&#233;todo )" Url="html/7000a298-f7eb-c9d1-7a1d-19db0dfbc147.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/159ef0af-bf3f-8073-85ea-5f4ea1262c81.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AnyadirLibroModalidad (Eventos)" Url="html/58747ead-635c-448f-e83d-0b947af40c12.htm" />
+      <HelpTOCNode Id="2f56a68a-9727-4dc3-9149-e9f13eaff04e" Title="AnyadirLibroModalidad (Campos)" Url="html/98a3349f-f921-58b5-921d-96b104e497c3.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/4633314e-8961-9b5a-9838-c31436bc63dd.htm" />
+        <HelpTOCNode Title="Buscador (Campo)" Url="html/6dd297a1-2426-cde1-657a-f2f2b77059b2.htm" />
+        <HelpTOCNode Title="MiListbox (Campo)" Url="html/951eaf5a-e642-3bb2-efee-a7a2bea0106f.htm" />
+        <HelpTOCNode Title="vm (Campo)" Url="html/d5fc6a58-3431-6d20-3dac-10593e7f9555.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="13616cae-b141-4749-9d74-6b570f91bacb" Title="AsignarLoteDialog (Clase)" Url="html/cfd9cfe5-fab3-9780-895b-9bed32a89833.htm">
       <HelpTOCNode Title="AsignarLoteDialog (Constructor )" Url="html/ead21803-1668-3836-c50e-4bc01de01559.htm" />
       <HelpTOCNode Title="AsignarLoteDialog (Propiedades)" Url="html/62393573-a0c6-4f66-4eaf-9d809fe8b0ec.htm" />
-      <HelpTOCNode Id="27a8bd58-f8a6-4288-8351-1b171cb2278d" Title="AsignarLoteDialog (M&#233;todos)" Url="html/1f15f3a9-07f3-4b93-d5d3-1dd8813b484c.htm">
-        <HelpTOCNode Title="buscador_TextChanged (M&#233;todo )" Url="html/187a3e32-19c4-d852-0619-5f2f00f0bd40.htm" />
+      <HelpTOCNode Id="7c39bfed-1bbc-41e8-9a48-938ed047bbab" Title="AsignarLoteDialog (M&#233;todos)" Url="html/1f15f3a9-07f3-4b93-d5d3-1dd8813b484c.htm">
+        <HelpTOCNode Title="Buscador_TextChanged (M&#233;todo )" Url="html/5bbf4fd3-c5d6-0c84-f268-6de2cba935fe.htm" />
         <HelpTOCNode Title="ConfirmarNiaButton_Click (M&#233;todo )" Url="html/f10f547b-ce58-acfc-a097-c17ef6c2e1ad.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/81fd49a0-0401-ea4b-c284-fe9e848fd561.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="AsignarLoteDialog (Eventos)" Url="html/4fc7ce74-72f8-3418-d342-d03b19f0ee9b.htm" />
-      <HelpTOCNode Id="2fc61f42-6c7e-44b2-9b35-5185a951f416" Title="AsignarLoteDialog (Campos)" Url="html/bf454594-593f-1ed4-1829-c4262b2573a0.htm">
+      <HelpTOCNode Id="a5f9bb6f-5a7a-4b84-9cc8-7da067474b01" Title="AsignarLoteDialog (Campos)" Url="html/bf454594-593f-1ed4-1829-c4262b2573a0.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/f31eda47-58d2-8dac-4c00-572b022eb551.htm" />
-        <HelpTOCNode Title="buscador (Campo)" Url="html/2bd67b8e-9a93-f74b-57d2-4bf119a833b1.htm" />
+        <HelpTOCNode Title="Buscador (Campo)" Url="html/3e705b6c-ebd1-7be9-acdf-9f470250db9c.htm" />
         <HelpTOCNode Title="MiListbox (Campo)" Url="html/573b80ab-220e-472f-df24-a7b07003f785.htm" />
         <HelpTOCNode Title="vm (Campo)" Url="html/2731abb4-7918-87e2-9214-43c90056c96a.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="8f12301f-35f6-4c1e-ac86-bb5cfb5597b6" Title="DarDeAltaDialog (Clase)" Url="html/563fefe3-1930-14a1-992e-8a706211e740.htm">
+    <HelpTOCNode Id="85c02e2f-3dcc-4a55-8126-ac774152ad65" Title="CargarCSVDialog (Clase)" Url="html/5d4da56c-28f9-1b30-1551-7f69ecb673b1.htm">
+      <HelpTOCNode Title="CargarCSVDialog (Constructor )" Url="html/09f94d1c-23b8-6894-3fdd-a18c4b758976.htm" />
+      <HelpTOCNode Title="CargarCSVDialog (Propiedades)" Url="html/f8f15ecb-13ab-6bbd-586a-c7fa8e3bfda6.htm" />
+      <HelpTOCNode Id="af79ee5d-f2a5-4e7a-ae12-7bce474253e0" Title="CargarCSVDialog (M&#233;todos)" Url="html/e74e1a21-02ca-12d4-6ced-d54ce9f31d5b.htm">
+        <HelpTOCNode Title="CargarButton_Click (M&#233;todo )" Url="html/7ff7228e-a674-5459-ff48-33c7395bf54e.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/b6365d6d-ffbd-0c40-3dbe-cbd4fadad144.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CargarCSVDialog (Eventos)" Url="html/87891fc1-3f5b-c8f7-098b-5163d294ed49.htm" />
+      <HelpTOCNode Id="810533bb-cfed-4049-8c2b-cc7445b4337d" Title="CargarCSVDialog (Campos)" Url="html/466e925e-d7d7-ad35-91b4-a8aaa0160b4c.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/9f02cde4-f159-bc3d-31b3-85f33cf0c55e.htm" />
+        <HelpTOCNode Title="PrimerCSVTextBlock (Campo)" Url="html/95e42a37-e24f-f831-0b26-e5ded8159309.htm" />
+        <HelpTOCNode Title="SegundoCSVTextBlock (Campo)" Url="html/a7b688d8-deca-2525-e157-159f0f92fcba.htm" />
+        <HelpTOCNode Title="TercerCSVTextBlock (Campo)" Url="html/11398384-8e00-f492-0a9c-f0fd3c44a9d7.htm" />
+        <HelpTOCNode Title="vm (Campo)" Url="html/88ab9c29-4587-d76d-7c2f-bea0967141d5.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="740ad7f5-7c4c-4371-9dfb-87f9b3f98a0f" Title="CrearModalidadDialog (Clase)" Url="html/b4fbb957-831e-0bff-fac7-1113073190da.htm">
+      <HelpTOCNode Title="CrearModalidadDialog (Constructor )" Url="html/eaa0b7f9-4629-8e69-b522-3988db42f5f4.htm" />
+      <HelpTOCNode Title="CrearModalidadDialog (Propiedades)" Url="html/f553fc10-207f-f678-c913-a3da1a27b1dd.htm" />
+      <HelpTOCNode Id="d8d8f9de-2440-418c-b65c-79fa84aa48f5" Title="CrearModalidadDialog (M&#233;todos)" Url="html/106d28e3-c5f6-6771-689c-d6e77529222c.htm">
+        <HelpTOCNode Title="AnyadirLibroButton_Click (M&#233;todo )" Url="html/158d6dce-dd6f-26d1-c7e5-29edbee3ec85.htm" />
+        <HelpTOCNode Title="EliminarLibroButton_Click (M&#233;todo )" Url="html/6b0de7d6-bca6-1d01-ec5a-269ebccc21bc.htm" />
+        <HelpTOCNode Title="GuardarModalidadButton_Click (M&#233;todo )" Url="html/5a4721d9-6917-7a7b-0b36-e35a1ced3ec4.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/bf4d0372-0db9-540e-6c8b-678533db63e9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CrearModalidadDialog (Eventos)" Url="html/e6397e65-af89-a684-0140-047f2a7c51ff.htm" />
+      <HelpTOCNode Id="dc6594ff-be3b-4ccc-845e-31d61794c05d" Title="CrearModalidadDialog (Campos)" Url="html/8d7dc361-27c0-e175-6246-42e682d7c470.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/3fefe04f-2cf4-9048-126a-4caddb8f51be.htm" />
+        <HelpTOCNode Title="vm (Campo)" Url="html/c4874afd-2c46-40a7-d8d0-87492c0b51ba.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bbfe79e7-dc50-4176-8a82-2464140d021b" Title="DarDeAltaDialog (Clase)" Url="html/563fefe3-1930-14a1-992e-8a706211e740.htm">
       <HelpTOCNode Title="DarDeAltaDialog (Constructor )" Url="html/5fde62b9-6c02-e16e-a421-8ba78443e7e4.htm" />
       <HelpTOCNode Title="DarDeAltaDialog (Propiedades)" Url="html/36dcf139-6f95-5f72-509b-eddb44601c50.htm" />
-      <HelpTOCNode Id="36fa1378-db7a-46fe-99df-1fb18daa059f" Title="DarDeAltaDialog (M&#233;todos)" Url="html/699dd840-29ff-d207-dc17-493af8b6f2b5.htm">
+      <HelpTOCNode Id="dc616f10-5893-424c-b965-574fb9c22c09" Title="DarDeAltaDialog (M&#233;todos)" Url="html/699dd840-29ff-d207-dc17-493af8b6f2b5.htm">
         <HelpTOCNode Title="BuscarPorNiaButton_Click (M&#233;todo )" Url="html/d1f0ca0f-7abb-f4c7-e945-02ad0a420b29.htm" />
         <HelpTOCNode Title="BuscarPorNombreButton_Click (M&#233;todo )" Url="html/3131b956-bbcc-b1c6-e9b7-17332a0c1b75.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/04b76e60-5706-fc87-ecaf-3ef6cca38cde.htm" />
@@ -397,7 +805,7 @@
         <HelpTOCNode Title="VolverAtrasButton_Click (M&#233;todo )" Url="html/36faaacf-1c23-2cdb-e1a1-db5ed7919578.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="DarDeAltaDialog (Eventos)" Url="html/61268470-4598-409b-127a-04c12cdef2b8.htm" />
-      <HelpTOCNode Id="540ab6e1-9bf5-415e-8847-6fc35166b236" Title="DarDeAltaDialog (Campos)" Url="html/03de5003-4cbe-2997-5405-6e96afc8c6ab.htm">
+      <HelpTOCNode Id="7d60f735-cac3-4281-87c9-0aaef6ef1b14" Title="DarDeAltaDialog (Campos)" Url="html/03de5003-4cbe-2997-5405-6e96afc8c6ab.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/4655507d-2181-0880-1f89-9f2c69c1bb92.htm" />
         <HelpTOCNode Title="ContenedorBuscarPorNia (Campo)" Url="html/b09630b0-0815-a6e6-0adc-5b8a489c6e4e.htm" />
         <HelpTOCNode Title="ContenedorBuscarPorNombre (Campo)" Url="html/17f645aa-2a50-fab3-d696-8ae9876ee4f4.htm" />
@@ -406,69 +814,97 @@
         <HelpTOCNode Title="VolverAtrasButton (Campo)" Url="html/2c4b2759-b684-96d0-32e4-4eb1c3767d33.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="90b98be1-9501-49c5-9a05-0a7fa3ee0b25" Title="EditarAlumnoDialog (Clase)" Url="html/df1bf60b-88cf-85c9-5b0e-12cc6fd82a90.htm">
+    <HelpTOCNode Id="0e6f4f37-720d-4748-b082-8841898f7dfe" Title="EditarAlumnoDialog (Clase)" Url="html/df1bf60b-88cf-85c9-5b0e-12cc6fd82a90.htm">
       <HelpTOCNode Title="EditarAlumnoDialog (Constructor )" Url="html/fa6492f3-9724-c882-ebac-660024e0c61c.htm" />
       <HelpTOCNode Title="EditarAlumnoDialog (Propiedades)" Url="html/bb998ccc-01a1-53dd-174c-cca4ce160e94.htm" />
-      <HelpTOCNode Id="738171f3-0736-4991-94ab-3f4af603b727" Title="EditarAlumnoDialog (M&#233;todos)" Url="html/84d68760-52ce-31a6-f302-43e6470a259c.htm">
+      <HelpTOCNode Id="b55b664a-9858-46d5-af41-6b738cd1d901" Title="EditarAlumnoDialog (M&#233;todos)" Url="html/84d68760-52ce-31a6-f302-43e6470a259c.htm">
+        <HelpTOCNode Title="EditarAlumno_Click (M&#233;todo )" Url="html/300e640d-ea86-472f-9df1-915d2588e7be.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/6972fad3-030b-fb12-7eb4-37c7ab539e92.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="EditarAlumnoDialog (Eventos)" Url="html/7c10d658-5546-9c01-c7f5-304799e84eeb.htm" />
-      <HelpTOCNode Id="88828488-81db-4d0e-82f6-ed6ba16ddbfd" Title="EditarAlumnoDialog (Campos)" Url="html/ba6f4992-2382-0061-455a-d2a1754ef744.htm">
+      <HelpTOCNode Id="81265a04-f4d6-4553-a8cc-9d5ab04f7910" Title="EditarAlumnoDialog (Campos)" Url="html/ba6f4992-2382-0061-455a-d2a1754ef744.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/705c246e-4905-fd6c-b5ee-a6f3b09b1426.htm" />
+        <HelpTOCNode Title="vm (Campo)" Url="html/26467e9c-cb16-d545-80cb-88229ed81d1e.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f7594f77-0b3d-451d-a89c-9006b28fca29" Title="EditarLote (Clase)" Url="html/a41f5e2e-8529-ea07-5b42-523a89e2c5d8.htm">
+    <HelpTOCNode Id="cd27d73d-fb74-4d4b-a922-82248263f49f" Title="EditarLibroDialog (Clase)" Url="html/3416071b-3590-3f17-2109-f3fcb3f15aaa.htm">
+      <HelpTOCNode Title="EditarLibroDialog (Constructor )" Url="html/6a478f3f-95e5-7ad8-962b-9a85902d70de.htm" />
+      <HelpTOCNode Title="EditarLibroDialog (Propiedades)" Url="html/a2ab9ad2-e25d-e416-297e-59e867620e6c.htm" />
+      <HelpTOCNode Id="5148971b-325d-45e8-b7da-60b3f378a589" Title="EditarLibroDialog (M&#233;todos)" Url="html/55e95ca1-3171-c6ae-8b86-908c19e481fa.htm">
+        <HelpTOCNode Title="EditarLibroButton_Click (M&#233;todo )" Url="html/9a415d05-3f30-36cb-7afb-81c5c118f4d6.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/9a8b62f0-3609-9c96-8d21-186775384821.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EditarLibroDialog (Eventos)" Url="html/95931818-c2c2-6c05-798d-8a0d6a613f20.htm" />
+      <HelpTOCNode Id="674bc4bf-3e4a-4e06-be28-ea93cad715df" Title="EditarLibroDialog (Campos)" Url="html/cb2d260b-2467-be7d-95fc-d9f00a45af0f.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/f5a3477a-77ce-67e0-d6ab-b85428284ccc.htm" />
+        <HelpTOCNode Title="vm (Campo)" Url="html/43a853a7-dc3e-82cd-634d-afe7f56fc20c.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="842ed256-062c-466e-b725-a48e4427cf5c" Title="EditarLote (Clase)" Url="html/a41f5e2e-8529-ea07-5b42-523a89e2c5d8.htm">
       <HelpTOCNode Title="EditarLote (Constructor )" Url="html/f0f64a7b-31a6-d263-e5ff-ae6d830ed838.htm" />
       <HelpTOCNode Title="EditarLote (Propiedades)" Url="html/ea190eb0-3afe-dc5e-21f7-68d369957170.htm" />
-      <HelpTOCNode Id="55dc3da7-474d-4113-b88d-38ee51d5c749" Title="EditarLote (M&#233;todos)" Url="html/3badefb1-d346-9398-8a9c-84d9822212e8.htm">
+      <HelpTOCNode Id="634f2501-9e64-4b45-ada4-75695cb67bf1" Title="EditarLote (M&#233;todos)" Url="html/3badefb1-d346-9398-8a9c-84d9822212e8.htm">
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/319148ee-4c1c-f1cc-a7d1-d217c163ec93.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="EditarLote (Eventos)" Url="html/5fd14a98-56c4-ae88-73c7-1ebd1a9e91e9.htm" />
-      <HelpTOCNode Id="b3b554e7-bc80-4156-bf46-cc6b2f1cd412" Title="EditarLote (Campos)" Url="html/c0c7146c-bb01-22b8-2085-fcca8508aacc.htm">
+      <HelpTOCNode Id="46bf578a-f012-4c89-8e56-c809ec366318" Title="EditarLote (Campos)" Url="html/c0c7146c-bb01-22b8-2085-fcca8508aacc.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/794644a5-8393-6ad5-2327-588edb8b1c8f.htm" />
         <HelpTOCNode Title="vm (Campo)" Url="html/d1b23aa6-5228-1e7d-93f3-055cdf0d4dfa.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="723b2254-70df-4ff8-9f6e-5ad2c7e70801" Title="GenerarLote (Clase)" Url="html/cf40743f-7b6d-4de3-04b8-61c754937728.htm">
+    <HelpTOCNode Id="9ca82526-8cd6-4f5b-9d8e-47ccc3906343" Title="GenerarLote (Clase)" Url="html/cf40743f-7b6d-4de3-04b8-61c754937728.htm">
       <HelpTOCNode Title="GenerarLote (Constructor )" Url="html/794e9d9b-db5b-6452-cfd4-d281ea74c617.htm" />
       <HelpTOCNode Title="GenerarLote (Propiedades)" Url="html/5298037b-1af3-f5fb-08eb-68a279fe78fa.htm" />
-      <HelpTOCNode Id="26fef17c-c178-4ede-9607-cb88c6421908" Title="GenerarLote (M&#233;todos)" Url="html/e81c4311-6610-a289-9e70-a0ce2d77c242.htm">
+      <HelpTOCNode Id="3b3025a8-1b75-4ac1-808c-dba62bad1ac2" Title="GenerarLote (M&#233;todos)" Url="html/e81c4311-6610-a289-9e70-a0ce2d77c242.htm">
         <HelpTOCNode Title="ComboBoxModalidad_SelectionChanged (M&#233;todo )" Url="html/2d34d98c-b1c6-3e04-e35c-cb90c76dc6c7.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/e2633395-b9a9-735a-a489-28da00c7b0fe.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="GenerarLote (Eventos)" Url="html/dfe43cf5-d654-7edd-a0db-b7fa4ecfc48a.htm" />
-      <HelpTOCNode Id="ae812081-4d18-4960-a6a4-8a52ae89f436" Title="GenerarLote (Campos)" Url="html/d7db727e-ebd1-2a46-65ec-53e18f1a4b51.htm">
+      <HelpTOCNode Id="99dd3fb9-f77b-4f78-8a8f-641f47be4b84" Title="GenerarLote (Campos)" Url="html/d7db727e-ebd1-2a46-65ec-53e18f1a4b51.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/3e9ad14b-ac78-006f-d024-ebc2880f6017.htm" />
         <HelpTOCNode Title="ModalidadComboBox (Campo)" Url="html/e9d3dce8-06b2-9a4c-b313-594604db7bc9.htm" />
         <HelpTOCNode Title="NumeroLoteTB (Campo)" Url="html/e4bc5e12-b56e-a135-033d-6caab6ca2a47.htm" />
         <HelpTOCNode Title="vm (Campo)" Url="html/5f8bc98e-d3a0-bfc9-12bc-71a610c78eb1.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f19b02ab-2949-4373-9388-f77baaaa887e" Title="LibrosUserControl (Clase)" Url="html/a349c50e-9a15-bdcb-4187-8176e2f2b3c4.htm">
+    <HelpTOCNode Id="940a2dec-6b09-49fc-a71e-248d289905d2" Title="InformesUserControl (Clase)" Url="html/a36da6ef-0faf-8737-2099-b71fb37ec616.htm">
+      <HelpTOCNode Title="InformesUserControl (Constructor )" Url="html/6ddaaaa6-905f-f1db-218c-8b64d543456e.htm" />
+      <HelpTOCNode Title="InformesUserControl (Propiedades)" Url="html/4b2db0df-7e96-2076-62a1-a6148101b676.htm" />
+      <HelpTOCNode Id="4b82a793-05de-42ed-a5a5-29776733508d" Title="InformesUserControl (M&#233;todos)" Url="html/383ca22a-325d-637b-3121-f94e7c03457a.htm">
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/6b622a73-6771-aa4f-2eb8-c77221206e89.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InformesUserControl (Eventos)" Url="html/5a95c64e-98c2-dce3-3e76-8a0bda638f3e.htm" />
+      <HelpTOCNode Id="3ec3a37e-1ee5-43c6-8d81-fca4bbb51cd2" Title="InformesUserControl (Campos)" Url="html/073ab3a1-7a0b-c88e-fd23-569997673530.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/2e7b45d3-70bd-eb69-f3d0-6a1b5e1f182f.htm" />
+        <HelpTOCNode Title="vm (Campo)" Url="html/3b803d6f-9bfc-8ff5-09ca-a97de1531891.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bbeffcc7-8897-4197-a8ab-305ab485bb75" Title="LibrosUserControl (Clase)" Url="html/a349c50e-9a15-bdcb-4187-8176e2f2b3c4.htm">
       <HelpTOCNode Title="LibrosUserControl (Constructor )" Url="html/63f7dbfb-63d9-5419-824f-f2897603ca83.htm" />
       <HelpTOCNode Title="LibrosUserControl (Propiedades)" Url="html/67fc8e79-ef46-5eca-219f-c4db135ed12c.htm" />
-      <HelpTOCNode Id="c17cbd46-5f66-442d-bc92-e6d0a11cedef" Title="LibrosUserControl (M&#233;todos)" Url="html/8ea49275-e497-81a2-bd74-a20c5bd31a1b.htm">
+      <HelpTOCNode Id="9ccbdee9-ea32-4230-9f23-fd30ed701380" Title="LibrosUserControl (M&#233;todos)" Url="html/8ea49275-e497-81a2-bd74-a20c5bd31a1b.htm">
+        <HelpTOCNode Title="EditarLibroButton_Click (M&#233;todo )" Url="html/06f5a304-f96d-0ed6-c813-b16b59f5613e.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/4191dbb4-0afa-50af-5a11-ffbfaf5fedfa.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="LibrosUserControl (Eventos)" Url="html/00b3f18c-9126-1d1a-0c6b-b96736f561a7.htm" />
-      <HelpTOCNode Id="f4187f1d-f7f1-4371-b3b2-5367e9f3eb60" Title="LibrosUserControl (Campos)" Url="html/abc02b3c-57c7-1dbc-a7bc-0ca5af85123d.htm">
+      <HelpTOCNode Id="0ae8ebea-ee67-4c6d-b33a-57a232e96451" Title="LibrosUserControl (Campos)" Url="html/abc02b3c-57c7-1dbc-a7bc-0ca5af85123d.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/681eae05-3c5e-6888-27a5-693077b0a983.htm" />
         <HelpTOCNode Title="listview (Campo)" Url="html/fe21bcbf-ff6f-a234-7e89-d6adf14f7b18.htm" />
         <HelpTOCNode Title="vm (Campo)" Url="html/08fe38a7-1439-425d-9fda-23b2d074fde4.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e74be12f-ff61-4850-b6fc-97c0df11ef14" Title="LogIn (Clase)" Url="html/326ffa7d-3c2f-ee8a-5548-dee540242945.htm">
+    <HelpTOCNode Id="c75bb022-5dfa-45be-af92-29c72f9bb4e0" Title="LogIn (Clase)" Url="html/326ffa7d-3c2f-ee8a-5548-dee540242945.htm">
       <HelpTOCNode Title="LogIn (Constructor )" Url="html/81482072-92ec-ee7c-2da0-f3d466bf954c.htm" />
-      <HelpTOCNode Id="8e42cb42-d271-45a0-b784-bbf3f3634456" Title="LogIn (Propiedades)" Url="html/b93438a1-bb09-6b8f-ec0c-32cf94ebd96e.htm">
+      <HelpTOCNode Id="7410af8f-87f6-4dd8-adb6-a86e885552e8" Title="LogIn (Propiedades)" Url="html/b93438a1-bb09-6b8f-ec0c-32cf94ebd96e.htm">
         <HelpTOCNode Title="Password (Propiedad )" Url="html/e5d8ca09-f9cc-2925-2578-e5ec0e3c7ede.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="f3930aba-cdb3-4d75-aa26-0d5bad83a9f4" Title="LogIn (M&#233;todos)" Url="html/ede2d39c-256d-1a3d-0efe-82411fa4f64b.htm">
+      <HelpTOCNode Id="ffaaf1bf-a074-4873-8187-d9206634481a" Title="LogIn (M&#233;todos)" Url="html/ede2d39c-256d-1a3d-0efe-82411fa4f64b.htm">
         <HelpTOCNode Title="Grid_MouseDown (M&#233;todo )" Url="html/9a1c54a0-4ed6-7376-a788-e96f67f806c4.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/5302f66f-2e0e-914f-7a06-c5a6c5b9882e.htm" />
         <HelpTOCNode Title="PasswordBox_PasswordChanged (M&#233;todo )" Url="html/b3e38cfb-0379-903b-485c-9ec5ab33c8bd.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="LogIn (Eventos)" Url="html/f752adde-ffb7-2822-53b1-74c1b1af646d.htm" />
-      <HelpTOCNode Id="5e4180be-1877-47e8-92c1-5004f526fe59" Title="LogIn (Campos)" Url="html/d1b21e55-15dc-e1c0-3763-88d32060498a.htm">
+      <HelpTOCNode Id="afd50cd5-07be-45f6-b355-111a73fc0cae" Title="LogIn (Campos)" Url="html/d1b21e55-15dc-e1c0-3763-88d32060498a.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/0aae16f6-376e-7522-0b98-25af71d340a6.htm" />
         <HelpTOCNode Title="EntrarButton (Campo)" Url="html/a14c6a16-b883-10a5-3c31-1f9739f8bd04.htm" />
         <HelpTOCNode Title="password (Campo)" Url="html/ab8a76b1-c19d-3565-6bfb-b1b286366eb5.htm" />
@@ -477,32 +913,33 @@
         <HelpTOCNode Title="vm (Campo)" Url="html/80e52f91-6e27-b026-fe86-0e8dbbf5c4ae.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="35617dbe-cc31-466d-aa85-8126ab3099af" Title="LotesUserControl (Clase)" Url="html/4c887089-80be-61b6-542a-ddff990866f6.htm">
+    <HelpTOCNode Id="5675609c-f62f-4ea1-8a0e-72d4eee61aee" Title="LotesUserControl (Clase)" Url="html/4c887089-80be-61b6-542a-ddff990866f6.htm">
       <HelpTOCNode Title="LotesUserControl (Constructor )" Url="html/3342c33e-02b0-aa20-48a8-8ea3894452fd.htm" />
       <HelpTOCNode Title="LotesUserControl (Propiedades)" Url="html/7d57b2ef-e79b-f88c-ad56-e96df2a0b62f.htm" />
-      <HelpTOCNode Id="e7ed24ab-876f-4d71-a0a1-e935f37aa3f6" Title="LotesUserControl (M&#233;todos)" Url="html/b7d8c108-fe99-5670-dfc6-55ce9b9ba11e.htm">
+      <HelpTOCNode Id="d3e01dff-5ac6-4e70-b1a2-509cb5e02fa8" Title="LotesUserControl (M&#233;todos)" Url="html/b7d8c108-fe99-5670-dfc6-55ce9b9ba11e.htm">
+        <HelpTOCNode Title="CrearModalidadButton_Click (M&#233;todo )" Url="html/7d26d9da-1f9e-2fed-0278-25258a81afed.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/a1a73175-a50e-6868-8cf5-0d1ffac4819d.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="LotesUserControl (Eventos)" Url="html/92338e93-7acd-1dc5-1152-e6785fbb9677.htm" />
-      <HelpTOCNode Id="02483a7b-2f4b-447d-9ba1-e69168dc49e8" Title="LotesUserControl (Campos)" Url="html/0e84f0ae-c33a-a7ad-7d57-c76f186c5f12.htm">
+      <HelpTOCNode Id="d1e00864-3a8b-4325-b323-cc391951c02b" Title="LotesUserControl (Campos)" Url="html/0e84f0ae-c33a-a7ad-7d57-c76f186c5f12.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/a38d95dd-972c-3219-b0b5-928e40cdd8c1.htm" />
         <HelpTOCNode Title="vm (Campo)" Url="html/c61f4456-96e5-b53a-0723-e232bdf57ad0.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="6bf01edb-5528-40c0-a1de-ba8d12b22c0d" Title="NuevoUsuarioDialog (Clase)" Url="html/282359f2-4747-9d6c-05d1-ad86afbb2605.htm">
+    <HelpTOCNode Id="9af7044b-6695-4f64-9104-b8b132491b1c" Title="NuevoUsuarioDialog (Clase)" Url="html/282359f2-4747-9d6c-05d1-ad86afbb2605.htm">
       <HelpTOCNode Title="NuevoUsuarioDialog (Constructor )" Url="html/80ca74d5-f77e-d59b-01fe-3446e2221a91.htm" />
-      <HelpTOCNode Id="270d7a5e-99a1-44ff-bc6d-9f9a92e86837" Title="NuevoUsuarioDialog (Propiedades)" Url="html/4cda86c6-42fb-3b88-75c9-ebfc773a87fa.htm">
+      <HelpTOCNode Id="24bef810-2ee6-4ca3-9d79-a3cf2fcd8d7a" Title="NuevoUsuarioDialog (Propiedades)" Url="html/4cda86c6-42fb-3b88-75c9-ebfc773a87fa.htm">
         <HelpTOCNode Title="Password1 (Propiedad )" Url="html/f4bda94a-6ea2-4007-35bb-84e40927992f.htm" />
         <HelpTOCNode Title="Password2 (Propiedad )" Url="html/e98317f2-4280-32db-c366-185e3f8dee51.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="32339814-b3a7-404d-9685-7c4792afd99a" Title="NuevoUsuarioDialog (M&#233;todos)" Url="html/df7d2498-7601-f08d-a2e1-a11cb488e018.htm">
+      <HelpTOCNode Id="d7aa8906-7090-47d2-9bdb-a17972259d5f" Title="NuevoUsuarioDialog (M&#233;todos)" Url="html/df7d2498-7601-f08d-a2e1-a11cb488e018.htm">
         <HelpTOCNode Title="CrearUsuarioButton_Click (M&#233;todo )" Url="html/c16c3230-eda4-c77d-38a1-18d50c574a55.htm" />
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/b1ac0099-fd6d-447c-596b-bb75530eaa5a.htm" />
         <HelpTOCNode Title="PasswordBox_PasswordChanged (M&#233;todo )" Url="html/3b314478-0db8-d1fd-6c96-378cd642f3ac.htm" />
         <HelpTOCNode Title="PasswordBox2_PasswordChanged (M&#233;todo )" Url="html/b6fd52e9-009a-dc31-da6c-5ce15776cca4.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="NuevoUsuarioDialog (Eventos)" Url="html/4d2ca264-2345-eed8-5725-513e7b05fc2a.htm" />
-      <HelpTOCNode Id="ad018a2e-e1aa-4127-ad54-186cdc6414c6" Title="NuevoUsuarioDialog (Campos)" Url="html/689c775e-c5f9-ce1f-a0ac-b2c1a0aab36a.htm">
+      <HelpTOCNode Id="db50ec7f-4f0a-4515-a2dc-b4835b2c3ec6" Title="NuevoUsuarioDialog (Campos)" Url="html/689c775e-c5f9-ce1f-a0ac-b2c1a0aab36a.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/471e7319-06b0-1400-f8d4-22cac8588617.htm" />
         <HelpTOCNode Title="password1 (Campo)" Url="html/de19e175-4a09-fdef-c16e-a49dd0f63563.htm" />
         <HelpTOCNode Title="password2 (Campo)" Url="html/1e732060-98d2-0a08-3008-fc746ac6c506.htm" />
@@ -512,117 +949,326 @@
         <HelpTOCNode Title="vm (Campo)" Url="html/f77a6f8b-1917-6f44-a552-968832354284.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e578c8c2-a9db-4fdb-9266-25626b6ea76c" Title="OpcionesSuperUsuario (Clase)" Url="html/b2a7079a-4328-a27a-7156-fa3d8e6789ad.htm">
+    <HelpTOCNode Id="aba30e5f-6191-4df1-81f8-1bd68d93886d" Title="OpcionesSuperUsuario (Clase)" Url="html/b2a7079a-4328-a27a-7156-fa3d8e6789ad.htm">
       <HelpTOCNode Title="OpcionesSuperUsuario (Constructor )" Url="html/da9ba21c-23e5-3421-3295-43da3c106263.htm" />
       <HelpTOCNode Title="OpcionesSuperUsuario (Propiedades)" Url="html/e1866d39-f5bc-1732-1355-2363ec7cc098.htm" />
-      <HelpTOCNode Id="e4e1eb16-963f-4a57-a834-d3d3a5464be7" Title="OpcionesSuperUsuario (M&#233;todos)" Url="html/cecdecd6-ec12-9f6c-72b1-2a5ad583fd26.htm">
+      <HelpTOCNode Id="a10abd4e-08eb-40bb-9b29-0ce8c79ada1f" Title="OpcionesSuperUsuario (M&#233;todos)" Url="html/cecdecd6-ec12-9f6c-72b1-2a5ad583fd26.htm">
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/cfde7e7d-36e8-d0a7-8d2c-0aec9768f5c2.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="OpcionesSuperUsuario (Eventos)" Url="html/acaa4492-153c-a7cf-6f7b-3e04b19dae33.htm" />
-      <HelpTOCNode Id="fb7baf70-1353-4abf-bfc9-de304d6826d2" Title="OpcionesSuperUsuario (Campos)" Url="html/ae84e760-cac2-4706-b2cd-04f21558f0fa.htm">
+      <HelpTOCNode Id="173db3d8-b0d5-49da-83d7-8ec0b0da24d8" Title="OpcionesSuperUsuario (Campos)" Url="html/ae84e760-cac2-4706-b2cd-04f21558f0fa.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/bd499587-79a4-80d0-16b2-dc2d62c87425.htm" />
         <HelpTOCNode Title="vm (Campo)" Url="html/4e6dd477-f67c-430a-fc1f-929a39d9d8c8.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="d15ce473-ee1a-4142-8b98-6b84b6039fb8" Title="VerIncidenciasAlumno (Clase)" Url="html/320e6343-e34b-ff37-2564-85dfa1533a67.htm">
+    <HelpTOCNode Id="8b33128e-ea96-4ba2-a3cc-ddccd6fa10c5" Title="VerIncidenciasAlumno (Clase)" Url="html/320e6343-e34b-ff37-2564-85dfa1533a67.htm">
       <HelpTOCNode Title="VerIncidenciasAlumno (Constructor )" Url="html/55e75319-2460-4284-50f0-7766b1286f89.htm" />
       <HelpTOCNode Title="VerIncidenciasAlumno (Propiedades)" Url="html/fa0b241a-8f3a-d4a1-2101-b78b5547fc5c.htm" />
-      <HelpTOCNode Id="2048b3a4-580f-4458-81c3-2cdf141cbbdb" Title="VerIncidenciasAlumno (M&#233;todos)" Url="html/10730d34-6896-e083-bdd2-e1993bf95f68.htm">
+      <HelpTOCNode Id="9e6b33e2-d987-4f12-b6ed-534264e16900" Title="VerIncidenciasAlumno (M&#233;todos)" Url="html/10730d34-6896-e083-bdd2-e1993bf95f68.htm">
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/f400ad4c-c6d8-3f79-c9da-7e515b9cd4e6.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="VerIncidenciasAlumno (Eventos)" Url="html/32e54add-044a-3dab-9a1d-162b01b80cc4.htm" />
-      <HelpTOCNode Id="8ff51c4e-f46c-46b3-92e3-7c5b9601f510" Title="VerIncidenciasAlumno (Campos)" Url="html/ac6aa341-5e2d-5ac5-47fc-7848f0f24fe6.htm">
+      <HelpTOCNode Id="1771abda-795b-4d3a-a858-6bbda64de06c" Title="VerIncidenciasAlumno (Campos)" Url="html/ac6aa341-5e2d-5ac5-47fc-7848f0f24fe6.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/75ee901b-2517-89e1-f309-4c48027b83e7.htm" />
         <HelpTOCNode Title="vm (Campo)" Url="html/1dd506e5-6a6e-5329-0f0b-9a2a5e5568a2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="6bcf95a0-7334-426f-ad26-546a35a4d1b7" Title="VerLoteAlumno (Clase)" Url="html/18eb1cb2-e4e9-6bfd-a35e-837929d778da.htm">
+    <HelpTOCNode Id="0dc8e915-c002-4698-b321-b57ec1db6a3b" Title="VerLoteAlumno (Clase)" Url="html/18eb1cb2-e4e9-6bfd-a35e-837929d778da.htm">
       <HelpTOCNode Title="VerLoteAlumno (Constructor )" Url="html/95b095e3-e485-134a-bc40-7c4c33974828.htm" />
       <HelpTOCNode Title="VerLoteAlumno (Propiedades)" Url="html/6a501bc9-34fb-3c99-fd76-bc3116d0e70d.htm" />
-      <HelpTOCNode Id="608fbbf0-01aa-475c-9871-6c7f3dca5f33" Title="VerLoteAlumno (M&#233;todos)" Url="html/47f62633-667f-9d5f-e9f9-4af778053393.htm">
+      <HelpTOCNode Id="44dfd46c-3650-45c7-8a8b-57fc63eac4e5" Title="VerLoteAlumno (M&#233;todos)" Url="html/47f62633-667f-9d5f-e9f9-4af778053393.htm">
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/66c7fcb0-aa3d-2978-367b-3579710dc55b.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="VerLoteAlumno (Eventos)" Url="html/7ad4bcc5-d0ab-d3b6-cd94-af4883d1809a.htm" />
-      <HelpTOCNode Id="18c172a1-d1a5-4e15-aae4-d8765c49ce52" Title="VerLoteAlumno (Campos)" Url="html/a350096d-6f8b-1e07-cb84-b42aa0b3a884.htm">
+      <HelpTOCNode Id="a9684fc3-2a14-48ef-bbe1-ae392452f442" Title="VerLoteAlumno (Campos)" Url="html/a350096d-6f8b-1e07-cb84-b42aa0b3a884.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/426ebf4a-4d2b-5117-890c-9d74f80d00b9.htm" />
         <HelpTOCNode Title="vm (Campo)" Url="html/cb84cc7d-b3c9-27a2-3525-5f2869e71333.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="67a62f0f-033a-450d-b30e-97a6f963dd0a" Title="VistaInicialContentControl (Clase)" Url="html/54455c0b-9434-6120-1535-100509d14dde.htm">
+    <HelpTOCNode Id="5c744ec8-69c5-408c-bcea-0a9a3df13549" Title="VistaInicialContentControl (Clase)" Url="html/54455c0b-9434-6120-1535-100509d14dde.htm">
       <HelpTOCNode Title="VistaInicialContentControl (Constructor )" Url="html/ef02e6b7-c6e4-07b3-e9bc-0916ed782e36.htm" />
       <HelpTOCNode Title="VistaInicialContentControl (Propiedades)" Url="html/4dea679c-3907-6979-8ae3-62e460a49b15.htm" />
-      <HelpTOCNode Id="82afcbbc-fa6c-42bf-a5f3-df3b98201cdd" Title="VistaInicialContentControl (M&#233;todos)" Url="html/86097ba2-1967-a9fd-1af3-ab9afd6952f5.htm">
+      <HelpTOCNode Id="792a7b83-4b99-4039-8bea-153ffda0f195" Title="VistaInicialContentControl (M&#233;todos)" Url="html/86097ba2-1967-a9fd-1af3-ab9afd6952f5.htm">
         <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/cdc6c07a-7ca3-56a5-7b12-a04ff1611e4d.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="VistaInicialContentControl (Eventos)" Url="html/f6a6a2ae-0de0-2f4e-c025-0f3ff2a8b2c9.htm" />
-      <HelpTOCNode Id="a5fd0f13-3b9e-4fb0-9325-308843700659" Title="VistaInicialContentControl (Campos)" Url="html/33a60b6c-ddb4-caaa-628b-973557293f24.htm">
+      <HelpTOCNode Id="cf9f920c-3bfd-4c55-8ce4-6ae4b646e141" Title="VistaInicialContentControl (Campos)" Url="html/33a60b6c-ddb4-caaa-628b-973557293f24.htm">
         <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/97347730-6796-50e0-4a65-71f768ae3d4d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="ae37a27b-2f21-4b09-b6a0-c432f91dc0c9" Title="Proyecto_Xarxa_Desktop.vms" Url="html/58fbab88-e78e-b20b-f99e-6fd2a28660a7.htm">
-    <HelpTOCNode Id="4c273643-b11a-4eed-aa3b-c7b200ac735f" Title="AlumnosVM (Clase)" Url="html/4e40bf84-1a7b-6a89-52a6-b878cfa15a2b.htm">
+  <HelpTOCNode Id="78d0371e-1350-433f-83b8-729dd0f06934" Title="Proyecto_Xarxa_Desktop.vistasInformes" Url="html/75e0ee9b-1cc1-f61f-e7d1-b95c3aa6bbfe.htm">
+    <HelpTOCNode Id="b4675099-f2ff-475c-9412-1421c2fd7d2c" Title="InformeConcesion (Clase)" Url="html/e4b2e468-8afb-b0a5-ab16-0c9bcfdfe705.htm">
+      <HelpTOCNode Title="InformeConcesion (Constructor )" Url="html/dec75772-67ad-17b0-7b1a-f9cba378c299.htm" />
+      <HelpTOCNode Title="InformeConcesion (Propiedades)" Url="html/65213641-f28c-020b-934a-71304d46e844.htm" />
+      <HelpTOCNode Id="6a8b3b99-75e0-416d-a31d-79137599995b" Title="InformeConcesion (M&#233;todos)" Url="html/965b4d6a-7897-bdfe-bd62-c6df7751d9c2.htm">
+        <HelpTOCNode Title="GenerarInforme (M&#233;todo )" Url="html/15828a5a-60ff-2a68-3f65-8b29747d3f6b.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/715b6153-ee0a-110b-20ab-c4cec213929a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InformeConcesion (Eventos)" Url="html/1aca9b4d-3539-3e35-a1a0-27988f8d2076.htm" />
+      <HelpTOCNode Id="3c5a7b90-d10d-4558-83c7-bee19140159c" Title="InformeConcesion (Campos)" Url="html/5cd082ea-b7ec-e59a-21ef-c3adc75fa411.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/9592da09-1ac1-388e-820a-85da8f5e34c8.htm" />
+        <HelpTOCNode Title="reportViewerConcesion (Campo)" Url="html/12cc612f-bfcf-6691-12bd-7300d02db137.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="328236cb-7355-422d-a274-2a8435f0b5ca" Title="InformeEtiquetas (Clase)" Url="html/97a97620-0781-1c9b-c298-d83d37311969.htm">
+      <HelpTOCNode Title="InformeEtiquetas (Constructor )" Url="html/d174daeb-c909-dd23-0ce7-d684ba599a23.htm" />
+      <HelpTOCNode Title="InformeEtiquetas (Propiedades)" Url="html/423682a5-8791-5c75-27e7-5d2ac356580e.htm" />
+      <HelpTOCNode Id="5282eb8f-27be-4926-b342-45294ac66eaa" Title="InformeEtiquetas (M&#233;todos)" Url="html/5733b45d-8920-a530-b45d-a5c7d199f7c1.htm">
+        <HelpTOCNode Title="GenerarInforme (M&#233;todo )" Url="html/14f2dc91-3715-d40c-977f-a0ea455eb88b.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/3d5c6a08-43af-5d32-41b9-7de3a3815453.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InformeEtiquetas (Eventos)" Url="html/bc17b256-cb3f-283e-db10-f537608657da.htm" />
+      <HelpTOCNode Id="447e5606-17de-493f-9c94-9822663c6a6e" Title="InformeEtiquetas (Campos)" Url="html/a208806c-2729-1949-6bec-54f2e863058a.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/c32e3044-3cca-e711-62db-1c6f83546657.htm" />
+        <HelpTOCNode Title="reportViewerEtiquetas (Campo)" Url="html/1cfacb8b-d849-6e09-700a-d53e297cda20.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8a59a11d-bcf4-4ab0-9746-6bc2d5b876b9" Title="InformeEtiquetasBolsa (Clase)" Url="html/c0b8ee1f-d08d-5e75-9c6e-93c7aa755be2.htm">
+      <HelpTOCNode Title="InformeEtiquetasBolsa (Constructor )" Url="html/b94447d7-fc07-34ba-9329-f73993422de5.htm" />
+      <HelpTOCNode Title="InformeEtiquetasBolsa (Propiedades)" Url="html/d7ac017a-9708-9baf-f210-240797c5ce21.htm" />
+      <HelpTOCNode Id="f69e3da5-ab99-40db-803e-70ab25c8fe49" Title="InformeEtiquetasBolsa (M&#233;todos)" Url="html/fcd0ed22-9d4e-c59f-27c4-7e5095fb5187.htm">
+        <HelpTOCNode Title="GenerarInforme (M&#233;todo )" Url="html/50684eca-952a-1bc2-1198-a444a63a58e4.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/71b58f1d-0b3b-6583-8ba4-414a8ff0b331.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InformeEtiquetasBolsa (Eventos)" Url="html/219896e3-9198-9dde-ef87-48cc226420bd.htm" />
+      <HelpTOCNode Id="c519276d-0a06-4351-b8e6-c2a7e902a64b" Title="InformeEtiquetasBolsa (Campos)" Url="html/0354b768-d8a1-b737-c360-85d25a8ea13f.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/7182951d-2ce5-c3ca-2ae3-f9e4d236f199.htm" />
+        <HelpTOCNode Title="reportViewerEtiquetasBolsa (Campo)" Url="html/420a55be-d36a-1116-4427-d295348f897b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6b900931-00dd-4773-9e2f-41731d8a148d" Title="InformeLotes (Clase)" Url="html/7f8604e5-2b78-c7b3-cf7d-2d42e7c8d67b.htm">
+      <HelpTOCNode Title="InformeLotes (Constructor )" Url="html/cccba5f3-f49c-20ae-fe89-32351a7ceafe.htm" />
+      <HelpTOCNode Title="InformeLotes (Propiedades)" Url="html/7eb9e2f8-4de6-6f4a-e714-6654d959cf85.htm" />
+      <HelpTOCNode Id="993d33e8-abb6-4615-92a2-3d73a55b7668" Title="InformeLotes (M&#233;todos)" Url="html/77fed182-18f5-0b8f-91d2-8ee63b4c8ad7.htm">
+        <HelpTOCNode Title="GenerarInforme (M&#233;todo )" Url="html/955a13fd-4df0-135c-a8e5-060fe60f6916.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/730e320d-1630-21c6-e0d2-5d42e563277c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InformeLotes (Eventos)" Url="html/b626f593-6094-d522-6e16-c27a4ae3ae43.htm" />
+      <HelpTOCNode Id="9dfa4b3a-3a26-4b87-bb9a-3105ae547352" Title="InformeLotes (Campos)" Url="html/0c7ed1fe-4cba-4bce-5223-c631db1ae5bb.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/66c116a3-f10e-b33a-c882-9db2bd3e5040.htm" />
+        <HelpTOCNode Title="reportViewerLotes (Campo)" Url="html/260a0786-4487-5873-82ab-3592cfcedf66.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2084a941-0f35-403e-a597-3bfff2b4dfca" Title="InformeRecogida (Clase)" Url="html/3272708d-8af9-4387-ec18-c9d664133635.htm">
+      <HelpTOCNode Title="InformeRecogida (Constructor )" Url="html/5a9414cb-1849-eb29-79cd-c4b50cec01b2.htm" />
+      <HelpTOCNode Title="InformeRecogida (Propiedades)" Url="html/5cba6571-cae8-f04a-f852-4cff3a2d5172.htm" />
+      <HelpTOCNode Id="b4dedfdc-705d-4739-b66b-aefc12b292b2" Title="InformeRecogida (M&#233;todos)" Url="html/1befbe00-2107-5712-d51a-2f9f7643bf13.htm">
+        <HelpTOCNode Title="GenerarInforme (M&#233;todo )" Url="html/900a9c3a-369e-dedd-2316-38584baf0503.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/e024dfb2-f337-f5bd-d496-522a2270e25a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InformeRecogida (Eventos)" Url="html/18cd0322-9829-a5a0-6a62-12d394181851.htm" />
+      <HelpTOCNode Id="f4320fcf-c948-46be-b2c2-8d480eedb4ee" Title="InformeRecogida (Campos)" Url="html/db735d61-8a5c-51e5-e585-79b5d11847bb.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/1876056f-19b1-6d39-c404-5f261c3f1047.htm" />
+        <HelpTOCNode Title="reportViewerRecogida (Campo)" Url="html/6fa40932-6dec-4f9a-869a-697d860db6cb.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e4ae9673-ba12-47d9-8d0d-fc5db7f0e8e4" Title="InformeXarxaCompleto (Clase)" Url="html/18430aa2-430a-8ce1-2b95-c1b7ee512ad3.htm">
+      <HelpTOCNode Title="InformeXarxaCompleto (Constructor )" Url="html/cdb36c55-0587-3d0b-73e5-08f03897f912.htm" />
+      <HelpTOCNode Title="InformeXarxaCompleto (Propiedades)" Url="html/62faac15-335a-58bd-cb8a-6f189c36b6b0.htm" />
+      <HelpTOCNode Id="3b9f39f7-31c3-45c7-bc79-558c013323e2" Title="InformeXarxaCompleto (M&#233;todos)" Url="html/ea2d498e-23c6-d161-2027-5377f4deca44.htm">
+        <HelpTOCNode Title="GenerarInforme (M&#233;todo )" Url="html/f5c5e1f6-68d7-637b-de07-11232ca73693.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/b531988b-33de-1af5-14b3-e83947f739c3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InformeXarxaCompleto (Eventos)" Url="html/3ab90121-d4cf-eaac-5a44-ecfbd15ba66b.htm" />
+      <HelpTOCNode Id="be8c8c20-8715-42f4-a571-8e1c2bef626d" Title="InformeXarxaCompleto (Campos)" Url="html/1424d90a-fa78-34c8-ca02-dd7093d62c04.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/9b8d2dad-eeae-b2ef-1792-3cdd3a1b54d5.htm" />
+        <HelpTOCNode Title="reportViewerXarxa (Campo)" Url="html/cdaf86cd-43c8-b615-3db6-aba786f0f819.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8b7fec12-c58a-4a68-9aab-7793ddb7d288" Title="InformeXarxaGrupos (Clase)" Url="html/b1b79dbc-3032-27d9-811f-e5a16467fc06.htm">
+      <HelpTOCNode Title="InformeXarxaGrupos (Constructor )" Url="html/c8ef5861-0552-258b-d83c-6799465fafcf.htm" />
+      <HelpTOCNode Title="InformeXarxaGrupos (Propiedades)" Url="html/50e3916d-6d63-62ba-5d69-eeeaccf9f638.htm" />
+      <HelpTOCNode Id="72c52e8e-0881-4953-8905-c8fc92d46065" Title="InformeXarxaGrupos (M&#233;todos)" Url="html/26ca2cb5-5756-55bf-e86b-c98bca8ba189.htm">
+        <HelpTOCNode Title="GenerarInforme (M&#233;todo )" Url="html/6d549fc4-7f1d-741a-6220-87d042e127bc.htm" />
+        <HelpTOCNode Title="InitializeComponent (M&#233;todo )" Url="html/f1612274-6138-5731-87ae-69f58eb97be9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InformeXarxaGrupos (Eventos)" Url="html/0a5752eb-0295-9d98-cda7-ef3dd673fb68.htm" />
+      <HelpTOCNode Id="ab1ef6a0-dc51-4c5e-853d-4a0f04f9b1eb" Title="InformeXarxaGrupos (Campos)" Url="html/382db9b8-380d-55fb-b7da-c6f207a570b8.htm">
+        <HelpTOCNode Title="_contentLoaded (Campo)" Url="html/377407f4-a872-ed08-7a50-48b8173cdc36.htm" />
+        <HelpTOCNode Title="reportViewerGrupos (Campo)" Url="html/7532f5b7-12a9-844c-1101-3026051a6bc5.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="e695656d-0dc4-44a3-815c-b19108d6923f" Title="Proyecto_Xarxa_Desktop.vms" Url="html/58fbab88-e78e-b20b-f99e-6fd2a28660a7.htm">
+    <HelpTOCNode Id="42e6f806-e40f-425f-a9c6-ee40b434d43e" Title="AdministrarUsuariosVM (Clase)" Url="html/1c7289ed-8d11-5948-7d94-d9dbefeef2ff.htm">
+      <HelpTOCNode Title="AdministrarUsuariosVM (Constructor )" Url="html/bfdb761b-6b2a-7d4b-60fc-68cbc2e743e2.htm" />
+      <HelpTOCNode Id="51034c2e-f830-4ed0-88c8-815abc03062c" Title="AdministrarUsuariosVM (Propiedades)" Url="html/11459ef4-d13f-850e-5812-8317612a58e1.htm">
+        <HelpTOCNode Title="ActivarUsuarioCommand (Propiedad )" Url="html/d1677dbe-917a-7963-220f-b41831f27489.htm" />
+        <HelpTOCNode Title="DesactivarUsuarioCommand (Propiedad )" Url="html/08dc6fd7-c2a4-3871-2779-1389179d9065.htm" />
+        <HelpTOCNode Title="ListaUsuarios (Propiedad )" Url="html/72ed35ad-5295-d7bc-5fbf-a381548633e8.htm" />
+        <HelpTOCNode Title="UsuarioSeleccionado (Propiedad )" Url="html/d22c201e-a894-1c34-5158-ed22d342c0ae.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="703a4257-ded1-4e3f-90b5-797d44433f96" Title="AdministrarUsuariosVM (M&#233;todos)" Url="html/88f51327-97bb-eb22-af2a-37bf24e6a21a.htm">
+        <HelpTOCNode Title="ActivarUsuario (M&#233;todo )" Url="html/3ca17401-739d-5eec-3425-f51810bf188a.htm" />
+        <HelpTOCNode Title="DesactivarUsuario (M&#233;todo )" Url="html/b4e84d9b-6f3e-e75c-9852-775b17bdd003.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AdministrarUsuariosVM (Eventos)" Url="html/a2ea19f7-3144-329c-864a-7db081fd8e85.htm" />
+      <HelpTOCNode Id="1e7eca89-5f4a-4e12-a769-02ec26e5b0b7" Title="AdministrarUsuariosVM (Campos)" Url="html/7e281a41-9dd7-fe67-1058-9b6f5783fbf8.htm">
+        <HelpTOCNode Title="listaUsuarios (Campo)" Url="html/74abc68a-95b7-1cc8-827b-215213adef41.htm" />
+        <HelpTOCNode Title="servicioAPI (Campo)" Url="html/0a6d495c-9050-c560-a91e-b9446492ecf6.htm" />
+        <HelpTOCNode Title="usuarioSeleccionado (Campo)" Url="html/777988cf-5538-f642-bc93-a379bb1a8b55.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2e801b60-dc14-4a7c-8fc6-9e184e137547" Title="AlumnosVM (Clase)" Url="html/4e40bf84-1a7b-6a89-52a6-b878cfa15a2b.htm">
       <HelpTOCNode Title="AlumnosVM (Constructor )" Url="html/d3dc3fb3-266e-cac5-6117-31e326807cd3.htm" />
-      <HelpTOCNode Id="0c25518f-6cc3-4b0c-b463-5227c1fa2753" Title="AlumnosVM (Propiedades)" Url="html/5e1d6a8c-9814-f498-d442-6e6d47f0844f.htm">
+      <HelpTOCNode Id="cbabe7e1-290b-4f56-8438-081179d743c7" Title="AlumnosVM (Propiedades)" Url="html/5e1d6a8c-9814-f498-d442-6e6d47f0844f.htm">
         <HelpTOCNode Title="AlumnoSeleccionado (Propiedad )" Url="html/e23f0f6f-4ec4-9c31-dd65-99d17a8998ab.htm" />
-        <HelpTOCNode Title="Apellidos (Propiedad )" Url="html/10efb41f-467d-725c-220e-49cdb94ab055.htm" />
+        <HelpTOCNode Title="AnyadirAlumnoCommand (Propiedad )" Url="html/56bbd913-d293-b539-fe5d-fb0317046d8f.htm" />
         <HelpTOCNode Title="Buscador (Propiedad )" Url="html/5e01c970-4a0f-04b4-b7d9-0b185c264900.htm" />
         <HelpTOCNode Title="DarDeAltaCommand (Propiedad )" Url="html/7d6c31fd-c276-2dc6-5cf6-a0d7d9b18f69.htm" />
+        <HelpTOCNode Title="EditarAlumnoCommand (Propiedad )" Url="html/8daa59bc-4329-6f4c-b357-26c418479600.htm" />
+        <HelpTOCNode Title="LimpiarSeleccionCommand (Propiedad )" Url="html/f801be5a-92bc-1782-2944-b9ae282fe09e.htm" />
         <HelpTOCNode Title="ListaAlumnos (Propiedad )" Url="html/06637b92-b31f-48ec-6838-040c602aede3.htm" />
+        <HelpTOCNode Title="UsuarioLogeado (Propiedad )" Url="html/487cda97-beec-1b23-07e5-2ce77d1a2a21.htm" />
         <HelpTOCNode Title="VerIncidenciasCommand (Propiedad )" Url="html/5f61590a-6c92-4399-21be-b55fbdf99b26.htm" />
         <HelpTOCNode Title="VerLoteAlumnoCommand (Propiedad )" Url="html/e06c8412-e95c-11c4-aabc-4dbd632c4e5a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="881a4f10-4294-4af8-b2a1-f8b9cbea06e7" Title="AlumnosVM (M&#233;todos)" Url="html/5062bef7-6116-6bfd-ab98-276389c795ed.htm">
+      <HelpTOCNode Id="4b3a3100-4907-4035-99d9-d32e963f184e" Title="AlumnosVM (M&#233;todos)" Url="html/5062bef7-6116-6bfd-ab98-276389c795ed.htm">
+        <HelpTOCNode Title="AnyadirAlumno (M&#233;todo )" Url="html/c5d12e3c-5c13-b33a-e71d-d5833fd22914.htm" />
         <HelpTOCNode Title="DarDeAlta (M&#233;todo )" Url="html/7819c42d-25a7-afda-62d7-5c4d28df6ade.htm" />
         <HelpTOCNode Title="DarDeBaja (M&#233;todo )" Url="html/b6cc79b7-b5c4-55a3-e448-564143f3d0bb.htm" />
+        <HelpTOCNode Title="EditarAlumno (M&#233;todo )" Url="html/fe8e6863-115c-f9ba-1b75-c45a508f823b.htm" />
+        <HelpTOCNode Title="EsperarCambioEnLaLista (M&#233;todo )" Url="html/02c85131-0dc0-ef4c-9240-abeacf8e6a32.htm" />
+        <HelpTOCNode Title="LimpiarSeleccion (M&#233;todo )" Url="html/24996a33-b649-2e22-aeb9-01c6961f100d.htm" />
         <HelpTOCNode Title="VerIncidenciasAlumno (M&#233;todo )" Url="html/83a4c07a-9390-dba4-123f-e8bb38c808ab.htm" />
         <HelpTOCNode Title="VerLoteAlumno (M&#233;todo )" Url="html/9361d343-cbfc-4f35-364f-e1f448fed9e3.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="AlumnosVM (Eventos)" Url="html/44dc5320-40ea-d707-48d0-4cf57bb0c328.htm" />
-      <HelpTOCNode Id="ef7cf8c9-59e9-426f-9f76-7799cf96a580" Title="AlumnosVM (Campos)" Url="html/5f2fccc8-fb27-94cf-8353-cb7988c69664.htm">
+      <HelpTOCNode Id="7865e7d0-ecb5-4120-ba57-e8c5705026f4" Title="AlumnosVM (Campos)" Url="html/5f2fccc8-fb27-94cf-8353-cb7988c69664.htm">
         <HelpTOCNode Title="alumnoSeleccionado (Campo)" Url="html/ba69abb5-5bfa-21aa-c612-0e30cb93fd4e.htm" />
-        <HelpTOCNode Title="apellidos (Campo)" Url="html/345bd472-a18a-f584-bd41-1c865c075485.htm" />
         <HelpTOCNode Title="buscador (Campo)" Url="html/c5298b8e-f4a7-e467-3a2e-580d6dddd644.htm" />
         <HelpTOCNode Title="listaAlumnos (Campo)" Url="html/d802beb3-e0e1-0868-fbc7-321cbb543268.htm" />
         <HelpTOCNode Title="servicioAPI (Campo)" Url="html/f539b53e-0a49-1495-c388-0dbc5853f48b.htm" />
+        <HelpTOCNode Title="usuarioLogeado (Campo)" Url="html/821dd83f-8a3e-a804-7f55-b95029b94b66.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5d7b6f42-3d38-40da-a54c-39fb630bbcd7" Title="AsignarLoteVM (Clase)" Url="html/a95dd965-bca5-794b-8a6e-6110b031982f.htm">
+    <HelpTOCNode Id="252df2cc-522c-4261-aa74-77ef41322d1c" Title="AnyadirAlumnoVM (Clase)" Url="html/798f1bba-5924-eeaa-00a5-143674281ce1.htm">
+      <HelpTOCNode Title="AnyadirAlumnoVM (Constructor )" Url="html/d14de850-c1be-d5ae-b496-b0592a2bf8e6.htm" />
+      <HelpTOCNode Id="f19bc2d8-4a05-4d1e-9751-0f882e87ae28" Title="AnyadirAlumnoVM (Propiedades)" Url="html/7c164075-5a83-cec8-9237-8fada6874c43.htm">
+        <HelpTOCNode Title="Alumno (Propiedad )" Url="html/2cd9990a-4565-0c01-ae90-8a5832d0f935.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="89ad0986-91e3-4a5f-923c-f5560180ca3d" Title="AnyadirAlumnoVM (M&#233;todos)" Url="html/91c07155-96dd-d59f-7b69-f0abc9173cf3.htm">
+        <HelpTOCNode Title="AnyadirAlumno (M&#233;todo )" Url="html/65205e92-2fca-a246-da91-387f97945154.htm" />
+        <HelpTOCNode Title="ComprobarDatosIntroducidos (M&#233;todo )" Url="html/50aba22a-959c-51d2-6d32-80b36a3cee54.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AnyadirAlumnoVM (Eventos)" Url="html/b6560338-bd96-1eb6-d5bd-0f11ba49ffc3.htm" />
+      <HelpTOCNode Id="263c1655-36f3-4fde-82fb-440d655eaf3f" Title="AnyadirAlumnoVM (Campos)" Url="html/89dfc812-f786-24c5-02c7-91e542e1e9be.htm">
+        <HelpTOCNode Title="alumno (Campo)" Url="html/9951cc1e-9ce2-fb2e-d6e0-5f5cae285e3a.htm" />
+        <HelpTOCNode Title="servicioAPI (Campo)" Url="html/ecebe162-5ba6-14ca-7d39-a704fc8ec5d9.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bd43c379-1fbc-4ee1-bacb-019395302db2" Title="AnyadirLibroModalidadVM (Clase)" Url="html/1d3105b0-6b7d-d08c-583c-0742bf58d8da.htm">
+      <HelpTOCNode Title="AnyadirLibroModalidadVM (Constructor )" Url="html/6fd76cea-2b21-56b2-6cfb-d6ef2813320f.htm" />
+      <HelpTOCNode Id="f6ebdb3b-c6e4-44f6-9b51-b2c8a3ee8eab" Title="AnyadirLibroModalidadVM (Propiedades)" Url="html/9188f5c1-90e0-fd15-7f5f-588edf5603fd.htm">
+        <HelpTOCNode Title="LibroSeleccionado (Propiedad )" Url="html/a9927761-26e1-6209-b9b2-4ee5825a3fa8.htm" />
+        <HelpTOCNode Title="ListaLibros (Propiedad )" Url="html/c313d06b-988f-4cfc-f459-98e6e9b71d80.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7bcb2e4b-bae0-4c4b-9e5a-0dc9ba1742ba" Title="AnyadirLibroModalidadVM (M&#233;todos)" Url="html/77e3bd52-2512-3e9a-818b-c5d8ac0cee23.htm">
+        <HelpTOCNode Title="AnyadirLibro (M&#233;todo )" Url="html/dc9a4414-92f1-f350-8ad4-a391a563e546.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AnyadirLibroModalidadVM (Eventos)" Url="html/708b01d7-8507-6be1-0b90-1304e2fbd4c2.htm" />
+      <HelpTOCNode Id="0a634f8f-2fe9-456f-8d5c-fa38f5830bfb" Title="AnyadirLibroModalidadVM (Campos)" Url="html/8c715f25-3346-d310-ecf9-8e3d39036ccc.htm">
+        <HelpTOCNode Title="libroSeleccionado (Campo)" Url="html/0debadb0-0885-97be-32e0-06fe428ec372.htm" />
+        <HelpTOCNode Title="listaLibros (Campo)" Url="html/34f8bd34-910c-e9d6-d5c2-cb9c6b1ee340.htm" />
+        <HelpTOCNode Title="servicioAPI (Campo)" Url="html/aa87c920-0682-37d9-d352-e227b284787b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="368d9102-3911-4cf2-a9fc-026eed18d3f9" Title="AnyadirLibroVM (Clase)" Url="html/0d337baf-5c8b-5329-6257-b42348a7000e.htm">
+      <HelpTOCNode Title="AnyadirLibroVM (Constructor )" Url="html/965384c3-110a-b3c8-18ac-38c34e9200cc.htm" />
+      <HelpTOCNode Id="a7c9a5c7-e9c4-44d7-a8d6-11a0dc6d4539" Title="AnyadirLibroVM (Propiedades)" Url="html/c54fc99b-fc0e-a6d7-7fba-17c5ba4b44af.htm">
+        <HelpTOCNode Title="LibroSel (Propiedad )" Url="html/7abb1398-fe06-7743-0a5d-e4a51938f138.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="37378860-f803-471b-867a-948e0e8891ca" Title="AnyadirLibroVM (M&#233;todos)" Url="html/268a49ee-c4a6-a00b-2a15-161682ebb712.htm">
+        <HelpTOCNode Title="AnyadirLibro (M&#233;todo )" Url="html/63e19459-3daa-0b66-4c2c-3bb18dd8bff3.htm" />
+        <HelpTOCNode Title="ComprobarDatosIntroducidos (M&#233;todo )" Url="html/24f19123-4c34-cca4-ab3c-ac0e168dbe30.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AnyadirLibroVM (Eventos)" Url="html/ed434ba9-3134-0b4f-6823-87f60b707dd3.htm" />
+      <HelpTOCNode Id="0a6eef37-1909-4a24-a9bd-d72e6606cc6f" Title="AnyadirLibroVM (Campos)" Url="html/29848a3a-d9e0-313f-6ff8-6533427bd699.htm">
+        <HelpTOCNode Title="libroSel (Campo)" Url="html/dbb1d6f7-de37-6568-75ab-466f5ecbf18a.htm" />
+        <HelpTOCNode Title="servicioAPI (Campo)" Url="html/6090f985-f62c-d5f0-01df-c04176cc3dd8.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a5c114d6-e4ab-46e7-bef7-1166a730654f" Title="AsignarLoteVM (Clase)" Url="html/a95dd965-bca5-794b-8a6e-6110b031982f.htm">
       <HelpTOCNode Title="AsignarLoteVM (Constructor )" Url="html/d175b316-87fe-1d8a-1ed0-b42dc2a349b4.htm" />
-      <HelpTOCNode Id="8508508b-ff41-4454-9f8e-593a26d8b8a2" Title="AsignarLoteVM (Propiedades)" Url="html/8ac29a31-75d8-18ca-f604-91f2268ce82d.htm">
-        <HelpTOCNode Title="Buscador (Propiedad )" Url="html/1baf85cb-16d6-9539-3fcc-9f7a1ab529c5.htm" />
+      <HelpTOCNode Id="88777391-d128-4d1b-8719-225aa8b37b4e" Title="AsignarLoteVM (Propiedades)" Url="html/8ac29a31-75d8-18ca-f604-91f2268ce82d.htm">
         <HelpTOCNode Title="ConfirmarNiaCommand (Propiedad )" Url="html/4e92dce3-4ec1-c4ef-8ba8-97c3e48524ab.htm" />
         <HelpTOCNode Title="ListaNias (Propiedad )" Url="html/61eca221-8e7f-badb-1029-d1bd26d312f0.htm" />
         <HelpTOCNode Title="LoteAActualizar (Propiedad )" Url="html/e226f766-25bc-2fd4-a49f-42bcf4e250e4.htm" />
         <HelpTOCNode Title="NiaSeleccionado (Propiedad )" Url="html/df293b21-65cf-fce4-d916-6fc3b1b8bfc3.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a67705e0-5099-4e7f-b76f-bbb7beb55b52" Title="AsignarLoteVM (M&#233;todos)" Url="html/99b600ec-c9fa-7e96-4cba-660ea881c61e.htm">
+      <HelpTOCNode Id="ebb4fb72-c444-4f8a-8377-cb7efa132ab8" Title="AsignarLoteVM (M&#233;todos)" Url="html/99b600ec-c9fa-7e96-4cba-660ea881c61e.htm">
         <HelpTOCNode Title="ConfirmarNia (M&#233;todo )" Url="html/bdfd17ce-a1b5-4481-8395-0f4579c17fe3.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="AsignarLoteVM (Eventos)" Url="html/d00bac63-2db7-0fdb-b87a-e0350041150c.htm" />
-      <HelpTOCNode Id="4dd38751-e904-425f-93ed-51853d9ad01b" Title="AsignarLoteVM (Campos)" Url="html/7debd4f4-631c-1686-7662-6a52dbe583ee.htm">
-        <HelpTOCNode Title="buscador (Campo)" Url="html/986eedc5-ee10-f5b5-b35d-7d51f9e5f3fd.htm" />
+      <HelpTOCNode Id="ff5d74cc-bbc6-4633-9785-67e22f432da9" Title="AsignarLoteVM (Campos)" Url="html/7debd4f4-631c-1686-7662-6a52dbe583ee.htm">
         <HelpTOCNode Title="listaNias (Campo)" Url="html/7d5eb232-0a21-b41c-ee4f-fb1fcfd76397.htm" />
         <HelpTOCNode Title="loteAActualizar (Campo)" Url="html/94f50c3e-2c21-641d-5e50-59e81c2956d4.htm" />
         <HelpTOCNode Title="niaSeleccionado (Campo)" Url="html/3d77c21c-9c12-74aa-c096-0a02726cb433.htm" />
         <HelpTOCNode Title="servicioAPI (Campo)" Url="html/edc6ab64-c977-44be-8c6e-6f2e0e98c391.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="eec073b7-e5d1-4efa-a86c-e2dafaeef7f1" Title="DarDeAltaAlumnoVM (Clase)" Url="html/2d608572-a86b-4e6c-2037-1623e96ac453.htm">
+    <HelpTOCNode Id="d58765fa-1d62-41dc-887f-c847aea6bdf1" Title="CargarCSVDialogVM (Clase)" Url="html/85fd0f02-3918-738f-6fd5-10868a1553c2.htm">
+      <HelpTOCNode Title="CargarCSVDialogVM (Constructor )" Url="html/ac79757e-be30-95ff-a3ec-c70e400d56b1.htm" />
+      <HelpTOCNode Id="ee64e5ee-b23e-4f1f-9023-2915b5437544" Title="CargarCSVDialogVM (Propiedades)" Url="html/9caf7845-7ed4-ac95-a842-7107877554a3.htm">
+        <HelpTOCNode Title="BorrarAlumnosNoXarxa (Propiedad )" Url="html/1434df6c-b3fb-d0a2-5fa9-3eb1e0d3bd56.htm" />
+        <HelpTOCNode Title="ExaminarPrimerCSVCommand (Propiedad )" Url="html/de877634-208a-4ba4-fe58-fc36ccdd5ed6.htm" />
+        <HelpTOCNode Title="ExaminarSegundoCSVCommand (Propiedad )" Url="html/b8328a5f-be34-0828-c01d-90d3f205ec56.htm" />
+        <HelpTOCNode Title="ExaminarTercerCSVCommand (Propiedad )" Url="html/25de2a7b-2e6a-14ff-ec81-0f5574c6da33.htm" />
+        <HelpTOCNode Title="RutaPrimerCSV (Propiedad )" Url="html/e4f46b08-d12b-ff0c-e8ed-c2d393a4f893.htm" />
+        <HelpTOCNode Title="RutaSegundoCSV (Propiedad )" Url="html/7b22f282-bb1b-1991-16b1-8797d96798dc.htm" />
+        <HelpTOCNode Title="RutaTercerCSV (Propiedad )" Url="html/64d750a8-15f5-7eeb-42f6-71b6cf25fc3b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="03aefb4f-7ec3-4d35-8f7d-ce36d332311e" Title="CargarCSVDialogVM (M&#233;todos)" Url="html/cb674ebd-163d-0d89-d98d-0132ebd5c82d.htm">
+        <HelpTOCNode Title="ExaminarPrimerCSV (M&#233;todo )" Url="html/afdec420-01ec-3d40-df5e-bc499290e3a2.htm" />
+        <HelpTOCNode Title="ExaminarSegundoCSV (M&#233;todo )" Url="html/4f546ed4-d202-64f7-f534-3a351b0b7a6a.htm" />
+        <HelpTOCNode Title="ExaminarTercerCSV (M&#233;todo )" Url="html/0d46b378-c132-ac9f-f532-1ef6c6db50b9.htm" />
+        <HelpTOCNode Title="HacerCarga (M&#233;todo )" Url="html/9d7c4923-6968-c4e6-d65e-e088ee34c32c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CargarCSVDialogVM (Eventos)" Url="html/61c543a0-cf0f-e29a-3a40-7b752dbcdf47.htm" />
+      <HelpTOCNode Id="84834102-90a5-475e-84f8-f30b82e11ac7" Title="CargarCSVDialogVM (Campos)" Url="html/077efcf6-6cc9-60db-9260-ca43e5fd53ae.htm">
+        <HelpTOCNode Title="borrarAlumnosNoXarxa (Campo)" Url="html/54734554-f9c8-200d-39bc-85b62435c68e.htm" />
+        <HelpTOCNode Title="rutaPrimerCSV (Campo)" Url="html/d423d657-e38e-824c-c7a4-758becc48fcd.htm" />
+        <HelpTOCNode Title="rutaSegundoCSV (Campo)" Url="html/6c5adc12-70de-328f-ad84-14cc1b7e12ac.htm" />
+        <HelpTOCNode Title="rutaTercerCSV (Campo)" Url="html/24342631-6bc7-8dc9-c672-fc3cac9a9378.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e495087a-e8c7-4d78-a907-211f972a6c22" Title="CrearModalidadVM (Clase)" Url="html/95dc7dca-3db5-c4f1-f628-801d875cbbff.htm">
+      <HelpTOCNode Title="CrearModalidadVM (Constructor )" Url="html/9e387782-8749-d52a-3e1c-af995fff1dd4.htm" />
+      <HelpTOCNode Id="d079f84f-c43a-4fe7-821e-4ae16f3828e8" Title="CrearModalidadVM (Propiedades)" Url="html/d97beb20-75f6-4581-da2c-17e0b0f75d5a.htm">
+        <HelpTOCNode Title="LibroSeleccionado (Propiedad )" Url="html/8ded5158-f92f-afbb-9cf6-d18c25b0f511.htm" />
+        <HelpTOCNode Title="ListaCursos (Propiedad )" Url="html/6e17abdd-d636-931b-c240-8c4d24fd6a33.htm" />
+        <HelpTOCNode Title="NuevaModalidad (Propiedad )" Url="html/55511c44-718c-3f3b-eee0-1648af32ef77.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d47646bb-8a01-49f1-bed1-7a923c4c7de1" Title="CrearModalidadVM (M&#233;todos)" Url="html/a98b0dd0-9585-266f-bcb5-fa6cc8ff6e03.htm">
+        <HelpTOCNode Title="AbrirVistaAnyadirLibro (M&#233;todo )" Url="html/9b76241c-9c46-72a6-caa1-704bbe88dedf.htm" />
+        <HelpTOCNode Title="ComprobarDatosIntroducidos (M&#233;todo )" Url="html/f32c7d14-6894-9d9f-7be2-63bd89ec6971.htm" />
+        <HelpTOCNode Title="EliminarLibro (M&#233;todo )" Url="html/34a7caa1-552e-f092-5888-b4b3062e1895.htm" />
+        <HelpTOCNode Title="GuardarModalidad (M&#233;todo )" Url="html/8a7afe86-8854-d2d4-c135-43a3acb453de.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CrearModalidadVM (Eventos)" Url="html/df7cfc6e-15bb-35aa-b204-5365cffc0ad7.htm" />
+      <HelpTOCNode Id="46343fc2-c0ee-4f08-97e9-1dac5f7e68f8" Title="CrearModalidadVM (Campos)" Url="html/730a683b-94f6-6f0f-04d0-7ee83256e480.htm">
+        <HelpTOCNode Title="libroSeleccionado (Campo)" Url="html/a6323f2f-66bb-f037-bf4e-046073e87af6.htm" />
+        <HelpTOCNode Title="listaCursos (Campo)" Url="html/a23984c6-11d3-baf9-3bd1-4493be430983.htm" />
+        <HelpTOCNode Title="nuevaModalidad (Campo)" Url="html/57231d18-23a3-d15f-3c61-64d92c418673.htm" />
+        <HelpTOCNode Title="servicioAPI (Campo)" Url="html/4ccf51ba-0998-a8af-5905-6b6c191f8822.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d3583f6f-9f24-464a-86c3-8e901c90fcd3" Title="DarDeAltaAlumnoVM (Clase)" Url="html/2d608572-a86b-4e6c-2037-1623e96ac453.htm">
       <HelpTOCNode Title="DarDeAltaAlumnoVM (Constructor )" Url="html/219686ea-af11-3bd1-eeba-41ed63264ae1.htm" />
-      <HelpTOCNode Id="19777b79-ce4b-43c1-9cc9-a42984b19501" Title="DarDeAltaAlumnoVM (Propiedades)" Url="html/007e1dcc-61db-8664-ac92-18e96964b18b.htm">
+      <HelpTOCNode Id="673a3225-b42e-43eb-a1ab-7faca9be00a3" Title="DarDeAltaAlumnoVM (Propiedades)" Url="html/007e1dcc-61db-8664-ac92-18e96964b18b.htm">
         <HelpTOCNode Title="AlumnoEncontrado (Propiedad )" Url="html/93271ae3-68db-7ab0-4258-97d6dd670829.htm" />
         <HelpTOCNode Title="NiaIntroducido (Propiedad )" Url="html/4340f4f6-bb39-f24c-2511-402f7e14949c.htm" />
         <HelpTOCNode Title="NombreIntroducido (Propiedad )" Url="html/7749d44a-a083-7f79-3038-c85a6dc308ac.htm" />
         <HelpTOCNode Title="PrimerApellidoIntroducido (Propiedad )" Url="html/f0014edb-62b2-1d06-b874-797503eb8334.htm" />
         <HelpTOCNode Title="SegundoApellidoIntroducido (Propiedad )" Url="html/299f03d1-b579-ea03-a8e7-e48b65786341.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6fd7076a-af7a-48ca-8450-35b431546c39" Title="DarDeAltaAlumnoVM (M&#233;todos)" Url="html/8fde08ac-d29c-5bcd-9cd0-1c3a96c68a4f.htm">
+      <HelpTOCNode Id="4304534d-f4c3-43b1-9db6-db4720af4dad" Title="DarDeAltaAlumnoVM (M&#233;todos)" Url="html/8fde08ac-d29c-5bcd-9cd0-1c3a96c68a4f.htm">
         <HelpTOCNode Title="BuscarPorNia (M&#233;todo )" Url="html/eae681f7-f16f-89fa-f7e0-89b48dbc25d0.htm" />
         <HelpTOCNode Title="BuscarPorNombre (M&#233;todo )" Url="html/4a9d19ff-5071-7926-af1b-4086440ca58f.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="DarDeAltaAlumnoVM (Eventos)" Url="html/0b3f975f-bbcf-4d6b-7363-ba84e43c5fb5.htm" />
-      <HelpTOCNode Id="6ac029d5-b905-4c82-9252-e31dd83f516a" Title="DarDeAltaAlumnoVM (Campos)" Url="html/9c2835b4-908e-3182-fa5c-61f3a4d282a8.htm">
+      <HelpTOCNode Id="84e1dfbe-d7eb-4993-b000-d0978e540089" Title="DarDeAltaAlumnoVM (Campos)" Url="html/9c2835b4-908e-3182-fa5c-61f3a4d282a8.htm">
         <HelpTOCNode Title="alumnoEncontrado (Campo)" Url="html/9681e0a7-8f6e-3ddb-847d-1115b8818d28.htm" />
         <HelpTOCNode Title="niaIntroducido (Campo)" Url="html/16b42dfa-7be2-836c-fad5-b08788104b86.htm" />
         <HelpTOCNode Title="nombreIntroducido (Campo)" Url="html/4f3e158e-0b39-4be3-6f9a-34e0dcd929e3.htm" />
@@ -631,78 +1277,140 @@
         <HelpTOCNode Title="servicioAPI (Campo)" Url="html/ad1e5d49-fc74-14f0-58cc-4fd14a915060.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b6673431-cde7-4403-9530-e079ef9c66d9" Title="EditarLoteVM (Clase)" Url="html/b9766e52-772e-08b3-6c51-d8be6790f1b7.htm">
+    <HelpTOCNode Id="27e50e54-5c36-4373-bfad-e63bbba631e5" Title="EditarAlumnoVM (Clase)" Url="html/c2714326-b058-f68c-95eb-49652ea08007.htm">
+      <HelpTOCNode Title="EditarAlumnoVM (Constructor )" Url="html/895f9290-6127-27ca-d9b2-4db5ff3212b7.htm" />
+      <HelpTOCNode Id="0548d5b7-768a-4ad5-8222-0e0e4dd99a46" Title="EditarAlumnoVM (Propiedades)" Url="html/12c95341-8695-68ee-7d7c-ce4afedef14e.htm">
+        <HelpTOCNode Title="Alumno (Propiedad )" Url="html/9374c040-48ae-8314-84f0-4568cb013b12.htm" />
+        <HelpTOCNode Title="EditarAlumnoCommand (Propiedad )" Url="html/9dd747b1-0197-a68c-3091-a7ef59b54adb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3cd873a2-987b-4f56-bb56-754203f15b15" Title="EditarAlumnoVM (M&#233;todos)" Url="html/26f59c1b-caeb-1fcf-438e-8db0996ff8d5.htm">
+        <HelpTOCNode Title="ComprobarDatosIntroducidos (M&#233;todo )" Url="html/45f68464-83b1-b403-3b85-20656394408e.htm" />
+        <HelpTOCNode Title="EditarAlumno (M&#233;todo )" Url="html/86c978f7-7f0e-1af9-7fdd-14572a8e9c54.htm" />
+        <HelpTOCNode Title="RecibirAlumno (M&#233;todo )" Url="html/7fc390e3-f71c-6d3e-58c1-552c35a50208.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EditarAlumnoVM (Eventos)" Url="html/1dbda948-d893-8d3e-0379-7821164642e6.htm" />
+      <HelpTOCNode Id="5a74de29-5287-4fea-958f-7587f537328a" Title="EditarAlumnoVM (Campos)" Url="html/81721be4-a125-9b26-d05f-ddd96c798b55.htm">
+        <HelpTOCNode Title="alumno (Campo)" Url="html/b8f67fe6-6f4c-8254-7fed-a30d950942f0.htm" />
+        <HelpTOCNode Title="servicioAPI (Campo)" Url="html/ab22d4e3-3ffe-c716-8d88-56b7ec58ee37.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b2415bef-25cd-43d2-b382-4f1a92e84373" Title="EditarLibroVM (Clase)" Url="html/941f5c47-14b2-b441-d824-65b1240aab49.htm">
+      <HelpTOCNode Title="EditarLibroVM (Constructor )" Url="html/95db6987-1a90-36f9-f9ce-d4318a37e99b.htm" />
+      <HelpTOCNode Id="7f259718-4842-4a41-a86c-0b3ac69672cf" Title="EditarLibroVM (Propiedades)" Url="html/1ee9c681-c3db-90e9-2a22-3809ced3681e.htm">
+        <HelpTOCNode Title="LibroSeleccionado (Propiedad )" Url="html/0f330324-fa62-9f4d-e354-30af6ac4a4ab.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4842047a-d22f-4737-8813-2e26c811f2af" Title="EditarLibroVM (M&#233;todos)" Url="html/d93efed4-7615-7351-f25b-a72cb5643617.htm">
+        <HelpTOCNode Title="ComprobarDatosIntroducidos (M&#233;todo )" Url="html/ba4e6eee-3e52-c73e-8dee-4deeac9fc7bb.htm" />
+        <HelpTOCNode Title="EditarLibro (M&#233;todo )" Url="html/c8742a12-116c-b514-f2ff-236e43157b99.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EditarLibroVM (Eventos)" Url="html/ca139c25-4fac-b2fb-b973-378b5db4dec9.htm" />
+      <HelpTOCNode Id="2da36ae1-d741-49d6-affc-55ecb3234cd9" Title="EditarLibroVM (Campos)" Url="html/f38d9688-6b50-886f-e371-c9023608d99e.htm">
+        <HelpTOCNode Title="libroSeleccionado (Campo)" Url="html/f45816d1-7b5d-d309-6f65-4b4e2d37d750.htm" />
+        <HelpTOCNode Title="servicioAPI (Campo)" Url="html/b3e00a61-a1ba-07f1-c8f3-16f57cf49ec7.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="255bc93e-a68c-4458-98ba-956bf6011bdf" Title="EditarLoteVM (Clase)" Url="html/b9766e52-772e-08b3-6c51-d8be6790f1b7.htm">
       <HelpTOCNode Title="EditarLoteVM (Constructor )" Url="html/66179e88-3417-3e43-5319-5f739485f30e.htm" />
-      <HelpTOCNode Id="9d458e26-fb3a-4a29-8aaf-c91e86238585" Title="EditarLoteVM (Propiedades)" Url="html/8effd9b0-e9cc-03d8-2c36-8695ebcf7f84.htm">
+      <HelpTOCNode Id="e10ecac4-b61e-48bd-8092-57e0fd2cbc31" Title="EditarLoteVM (Propiedades)" Url="html/8effd9b0-e9cc-03d8-2c36-8695ebcf7f84.htm">
         <HelpTOCNode Title="AnyadirLibroCommand (Propiedad )" Url="html/13711f01-5eb5-8c2c-c025-c016ecd7cea0.htm" />
         <HelpTOCNode Title="EliminarLibroCommand (Propiedad )" Url="html/3f1b7b93-134e-44d6-40ef-6e47461f96df.htm" />
         <HelpTOCNode Title="Lote (Propiedad )" Url="html/57993766-8389-6b31-f2e1-c54945ec02f1.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="EditarLoteVM (M&#233;todos)" Url="html/b3dad252-7000-2bbb-5775-482ad1d23aa5.htm" />
       <HelpTOCNode Title="EditarLoteVM (Eventos)" Url="html/19b9212c-50f6-867e-f15b-33fabe4383a8.htm" />
-      <HelpTOCNode Id="e40cc989-ef38-40d5-af95-5cfcb9c9e89c" Title="EditarLoteVM (Campos)" Url="html/2a5ff853-0572-832c-b98a-284d839f0d7c.htm">
+      <HelpTOCNode Id="e7456961-55df-4146-8379-0305a3f3ae7c" Title="EditarLoteVM (Campos)" Url="html/2a5ff853-0572-832c-b98a-284d839f0d7c.htm">
         <HelpTOCNode Title="lote (Campo)" Url="html/ca538110-193a-1fd4-ba61-d448d025d65b.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="3b92b588-0d10-43dd-a336-21853092b3bb" Title="GenerarLoteVM (Clase)" Url="html/4631317a-5bb6-e9b5-d088-1b709640fb1a.htm">
+    <HelpTOCNode Id="9d0392ac-1dcf-4cd2-bf72-a6840acd14d1" Title="GenerarLoteVM (Clase)" Url="html/4631317a-5bb6-e9b5-d088-1b709640fb1a.htm">
       <HelpTOCNode Title="GenerarLoteVM (Constructor )" Url="html/14bd573c-7632-385f-a462-55cf921d3905.htm" />
-      <HelpTOCNode Id="046cb54b-8ebd-4446-be3d-59d85d6d704c" Title="GenerarLoteVM (Propiedades)" Url="html/944ed261-f94b-87ba-7a82-007c7dd3f835.htm">
+      <HelpTOCNode Id="23214239-efac-4e83-9b98-b6478048dff0" Title="GenerarLoteVM (Propiedades)" Url="html/944ed261-f94b-87ba-7a82-007c7dd3f835.htm">
         <HelpTOCNode Title="ConfirmarLoteCommand (Propiedad )" Url="html/34bfa4af-e195-7630-da48-83332631a321.htm" />
         <HelpTOCNode Title="IdLote (Propiedad )" Url="html/48cc0a7a-c85b-fb82-bce0-84fea431c989.htm" />
         <HelpTOCNode Title="LimpiarSeleccionCommand (Propiedad )" Url="html/47d04e03-6382-8b96-94f6-77c69340ed0e.htm" />
         <HelpTOCNode Title="ListaModalidades (Propiedad )" Url="html/2835ff58-14c2-6250-b0e8-5a740c0e0477.htm" />
         <HelpTOCNode Title="ModalidadSeleccionada (Propiedad )" Url="html/85f3cd48-3081-5c48-991e-1c902311f2e7.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e7ab88d8-e91b-4aba-a58e-547d62fb0af6" Title="GenerarLoteVM (M&#233;todos)" Url="html/fac53c3b-d554-c989-30dc-ba46c25f0aa6.htm">
+      <HelpTOCNode Id="6bd3bcfa-cf56-4e5f-870e-9f9379f6e065" Title="GenerarLoteVM (M&#233;todos)" Url="html/fac53c3b-d554-c989-30dc-ba46c25f0aa6.htm">
         <HelpTOCNode Title="CargarModalidades (M&#233;todo )" Url="html/e699625f-d02b-2f1f-7d2e-7914b2627cd2.htm" />
         <HelpTOCNode Title="ConfirmarLote (M&#233;todo )" Url="html/c884e16d-3908-6b7d-8694-730ecaacda0f.htm" />
         <HelpTOCNode Title="GenerarNumeroLote (M&#233;todo )" Url="html/bcea192d-5127-a482-f4f4-d924693c19e9.htm" />
-        <HelpTOCNode Title="LimpiarIdLote (M&#233;todo )" Url="html/33ba2f6a-416b-f9b4-7483-9f1a143a99f6.htm" />
+        <HelpTOCNode Title="LimpiarSeleccion (M&#233;todo )" Url="html/527e8b35-4375-f9cd-72b1-d6201af72582.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="GenerarLoteVM (Eventos)" Url="html/868a5410-01fe-2ab4-ed47-4287783f087a.htm" />
-      <HelpTOCNode Id="205a7b19-9607-4309-af3c-99651489ee91" Title="GenerarLoteVM (Campos)" Url="html/639238e7-5005-cbbc-e9a0-37caa88c97a5.htm">
+      <HelpTOCNode Id="6b04742a-b673-46f8-a07a-d6cb05e72364" Title="GenerarLoteVM (Campos)" Url="html/639238e7-5005-cbbc-e9a0-37caa88c97a5.htm">
         <HelpTOCNode Title="idLote (Campo)" Url="html/46988581-7fdd-ee25-4f2a-2b7fe70c8a74.htm" />
         <HelpTOCNode Title="listaModalidades (Campo)" Url="html/be0f9eb1-77cd-94b5-2349-7744825e6285.htm" />
         <HelpTOCNode Title="modalidadSeleccionada (Campo)" Url="html/1fbc243d-c9df-f926-1ebe-e636003bd319.htm" />
         <HelpTOCNode Title="servicioAPI (Campo)" Url="html/c013d5f9-400e-56d9-e57b-5fcc92352130.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="3d621b01-95bd-440b-b3e0-1403705a722b" Title="LibrosVM (Clase)" Url="html/3350cfea-6dc5-ca5e-c249-b1f1063d879a.htm">
+    <HelpTOCNode Id="7e0fbdcc-a272-4662-9c11-c52291cd2ac5" Title="InformesVM (Clase)" Url="html/40eacdbc-63c8-4cc8-457b-7d976d285169.htm">
+      <HelpTOCNode Title="InformesVM (Constructor )" Url="html/f41ab006-ecad-1fcd-6343-74745fe065bd.htm" />
+      <HelpTOCNode Id="39b71ec2-ace2-4597-bd37-fe96f218765e" Title="InformesVM (Propiedades)" Url="html/7000f629-a12e-8b63-f118-ee2290f304f9.htm">
+        <HelpTOCNode Title="ConcesionReportCommand (Propiedad )" Url="html/cc9c7255-fa57-c77b-e8a0-3b0187576d71.htm" />
+        <HelpTOCNode Title="EtiquetasBolsaReportCommand (Propiedad )" Url="html/250c1493-2136-d7a1-7694-3d84a16c103f.htm" />
+        <HelpTOCNode Title="EtiquetasReportCommand (Propiedad )" Url="html/d3b977bc-113c-9774-d258-74b58c634f45.htm" />
+        <HelpTOCNode Title="GruposXarxaReportCommand (Propiedad )" Url="html/bb56daab-66fe-0a75-be9d-c4dd82ac98de.htm" />
+        <HelpTOCNode Title="LotesReportCommand (Propiedad )" Url="html/be9b21a8-219b-2ded-3bcd-f334a1860728.htm" />
+        <HelpTOCNode Title="RecogidaReportCommand (Propiedad )" Url="html/4c3489c6-84ef-a7e6-c2fe-e19ab79f09dc.htm" />
+        <HelpTOCNode Title="XarxaCompletoReportCommand (Propiedad )" Url="html/fedfc30c-27a7-f0f5-ad30-70746beeeb40.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ecb27ce0-f96b-4d04-9b04-0eb353401bf0" Title="InformesVM (M&#233;todos)" Url="html/05339039-c7da-8f03-b3bb-0fbc5505dc65.htm">
+        <HelpTOCNode Title="InformeConcesion (M&#233;todo )" Url="html/96dadae4-4456-8de2-d59e-ab74a7edc664.htm" />
+        <HelpTOCNode Title="InformeEtiquetas (M&#233;todo )" Url="html/25f0439e-3dff-9f9b-0d63-43885b70d6f5.htm" />
+        <HelpTOCNode Title="InformeEtiquetasBolsa (M&#233;todo )" Url="html/48d6f73c-45bb-4291-ef95-b9032439db99.htm" />
+        <HelpTOCNode Title="InformeLotes (M&#233;todo )" Url="html/7468930e-936e-5521-34c8-4f3d4c6a2d64.htm" />
+        <HelpTOCNode Title="InformeRecogida (M&#233;todo )" Url="html/9711f943-e7a2-9720-28dd-63a4db28f40d.htm" />
+        <HelpTOCNode Title="InformeXarxaCompleto (M&#233;todo )" Url="html/540ad6b2-b619-38ad-def3-5dedf69396c7.htm" />
+        <HelpTOCNode Title="InformeXarxaGrupos (M&#233;todo )" Url="html/662dd161-29dd-e589-3865-62653a409bf5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InformesVM (Eventos)" Url="html/c2558c1d-32c5-49ed-bc43-06593f528913.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="38fd5701-19b3-42b2-a309-9764b22779d0" Title="LibrosVM (Clase)" Url="html/3350cfea-6dc5-ca5e-c249-b1f1063d879a.htm">
       <HelpTOCNode Title="LibrosVM (Constructor )" Url="html/48e6b079-f64a-0017-87a1-45caf343e454.htm" />
-      <HelpTOCNode Id="55695685-6c8c-4d34-9afa-c9703da296c1" Title="LibrosVM (Propiedades)" Url="html/9c946b33-7680-fb40-212e-29036e11aa77.htm">
+      <HelpTOCNode Id="aab94789-3d97-461b-97bb-2485c20a0aaa" Title="LibrosVM (Propiedades)" Url="html/9c946b33-7680-fb40-212e-29036e11aa77.htm">
+        <HelpTOCNode Title="AnyadirLibroCommand (Propiedad )" Url="html/23da6191-9959-2e41-b63a-eca28fd8d27b.htm" />
+        <HelpTOCNode Title="EditarLibroCommand (Propiedad )" Url="html/59bfc496-a7d7-3762-22be-465828c499b1.htm" />
+        <HelpTOCNode Title="EliminarLibroCommand (Propiedad )" Url="html/549a5d50-729e-ff60-44e1-753accb7b5a5.htm" />
         <HelpTOCNode Title="LibroSeleccionado (Propiedad )" Url="html/4b657635-25b1-27b8-979b-e62e8c030e22.htm" />
         <HelpTOCNode Title="ListaLibros (Propiedad )" Url="html/ad536e38-c608-2646-a416-b67b82482359.htm" />
+        <HelpTOCNode Title="UsuarioLogeado (Propiedad )" Url="html/ac0e0c0d-0d45-5fcd-ad6b-ef70caaa9e1d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Title="LibrosVM (M&#233;todos)" Url="html/af8f3902-23bd-bbac-8dc8-57eb7564e138.htm" />
+      <HelpTOCNode Id="c838a694-f8ee-4c60-81e5-809a320821fb" Title="LibrosVM (M&#233;todos)" Url="html/af8f3902-23bd-bbac-8dc8-57eb7564e138.htm">
+        <HelpTOCNode Title="AbrirVistaAnyadirLibro (M&#233;todo )" Url="html/26d42b6a-8bbe-aece-28e7-c9aa5158b02b.htm" />
+        <HelpTOCNode Title="AbrirVistaEditarLibro (M&#233;todo )" Url="html/541a024c-3f8e-44f0-b4dc-71cab452424e.htm" />
+        <HelpTOCNode Title="EliminarLibro (M&#233;todo )" Url="html/0d8cef5c-2233-4aad-14c3-c5a581a542d5.htm" />
+        <HelpTOCNode Title="EsperarCambioEnLaLista (M&#233;todo )" Url="html/3ea54dda-eda9-2d4f-ef10-fc64304a2805.htm" />
+      </HelpTOCNode>
       <HelpTOCNode Title="LibrosVM (Eventos)" Url="html/d1392ddf-bd25-3299-39ed-aa229e2fe6eb.htm" />
-      <HelpTOCNode Id="ca4cfc57-ca47-4c69-a5a7-dc7db97c6611" Title="LibrosVM (Campos)" Url="html/87e3930c-6c8e-0f96-dcf1-e8488d9d34dd.htm">
+      <HelpTOCNode Id="2def0ec7-0d2a-4a3b-8cc6-1d6b0b66d259" Title="LibrosVM (Campos)" Url="html/87e3930c-6c8e-0f96-dcf1-e8488d9d34dd.htm">
         <HelpTOCNode Title="libroSeleccionado (Campo)" Url="html/24121aa1-7248-8018-4aff-3ece0c604a80.htm" />
         <HelpTOCNode Title="listaLibros (Campo)" Url="html/5e7d9016-29e6-24ac-d861-d2f518fb66de.htm" />
         <HelpTOCNode Title="servicioAPI (Campo)" Url="html/39036815-ec97-e923-b50c-1169a13bab01.htm" />
+        <HelpTOCNode Title="usuarioLogeado (Campo)" Url="html/81596cca-7d0f-732f-70ce-4e84c2c1b39e.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ad6d333e-b2bb-4f8b-a798-f29b827bf89d" Title="LogInVM (Clase)" Url="html/684bd1c8-22e9-0d18-f5e7-5429c4d09e79.htm">
+    <HelpTOCNode Id="22a42016-a7a9-4f7f-a1a3-407d55852c0b" Title="LogInVM (Clase)" Url="html/684bd1c8-22e9-0d18-f5e7-5429c4d09e79.htm">
       <HelpTOCNode Title="LogInVM (Constructor )" Url="html/ca788cd0-08e8-70e8-650a-87b6d89b5369.htm" />
-      <HelpTOCNode Id="80f1ce74-2dad-4f1f-95f2-a1c7887715bb" Title="LogInVM (Propiedades)" Url="html/a695ab20-a70c-4f4a-9bb0-e3c779556881.htm">
-        <HelpTOCNode Title="ListaUsuarios (Propiedad )" Url="html/0f600b13-c52b-3bc9-ae91-41d64a90221b.htm" />
+      <HelpTOCNode Id="723009ab-b729-40a0-9dda-6ea178970a4c" Title="LogInVM (Propiedades)" Url="html/a695ab20-a70c-4f4a-9bb0-e3c779556881.htm">
         <HelpTOCNode Title="Password (Propiedad )" Url="html/85ec029f-fc15-d48b-81d3-f2a697f16a75.htm" />
         <HelpTOCNode Title="UsuarioXarxa (Propiedad )" Url="html/8ec32ca0-74a1-d66e-6039-d2491d5d7c5b.htm" />
         <HelpTOCNode Title="ValidarUsuarioCommand (Propiedad )" Url="html/59e76da3-e9d5-69dd-ea06-760cb6f02d96.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="35a328a9-8e52-47cb-b626-1d6c868b0980" Title="LogInVM (M&#233;todos)" Url="html/5a0db8c0-c7a1-d525-7968-39690b56cb7b.htm">
+      <HelpTOCNode Id="e9654ec6-350e-4ec3-a29c-10d8b320e66e" Title="LogInVM (M&#233;todos)" Url="html/5a0db8c0-c7a1-d525-7968-39690b56cb7b.htm">
         <HelpTOCNode Title="ValidarUsuario (M&#233;todo )" Url="html/0313b5cb-ca6c-13f1-6b5b-703d5bbd9b4c.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="LogInVM (Eventos)" Url="html/cb3de552-c77e-b08c-7414-43ff9e5401dc.htm" />
-      <HelpTOCNode Id="802be106-ded9-47cc-8e5a-722b9d2982de" Title="LogInVM (Campos)" Url="html/4ccf6d9c-1b7a-a64e-c4ac-5148f3762cfd.htm">
-        <HelpTOCNode Title="listaUsuarios (Campo)" Url="html/85d01658-1fea-251b-078c-5e511a265c8c.htm" />
+      <HelpTOCNode Id="32ad64c9-90b4-46f3-a6e2-e9aced8d4ec4" Title="LogInVM (Campos)" Url="html/4ccf6d9c-1b7a-a64e-c4ac-5148f3762cfd.htm">
         <HelpTOCNode Title="securePassword (Campo)" Url="html/a5131d99-77df-e92c-8760-188f5b7ecb0a.htm" />
         <HelpTOCNode Title="servicioValidarUsuario (Campo)" Url="html/96d9b063-a074-cb3d-1cfa-908080f1290d.htm" />
         <HelpTOCNode Title="usuarioXarxa (Campo)" Url="html/a3d0a22e-3b2f-c7ae-60af-22d3073ad1e4.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="faaeb83c-c960-4e45-9a44-d78e3c755bc5" Title="LotesVM (Clase)" Url="html/7491fd73-974a-a911-83eb-be64a3d5be7b.htm">
+    <HelpTOCNode Id="283fb0d5-2542-4eb3-9a8b-554d2f743db0" Title="LotesVM (Clase)" Url="html/7491fd73-974a-a911-83eb-be64a3d5be7b.htm">
       <HelpTOCNode Title="LotesVM (Constructor )" Url="html/060dc276-4c8c-e020-3b6f-208e9fcad235.htm" />
-      <HelpTOCNode Id="f4568524-ee6b-4934-abe9-4d1576e17338" Title="LotesVM (Propiedades)" Url="html/074ec7fd-ca2b-fb5b-0c9e-d6150ebd774c.htm">
+      <HelpTOCNode Id="147ed035-bf60-4d15-b5f2-453f569e3b7d" Title="LotesVM (Propiedades)" Url="html/074ec7fd-ca2b-fb5b-0c9e-d6150ebd774c.htm">
         <HelpTOCNode Title="AsignarLoteCommand (Propiedad )" Url="html/942f0c58-c6c6-32ec-96f3-639cc3ae2506.htm" />
         <HelpTOCNode Title="DesasignarLoteCommand (Propiedad )" Url="html/5586a030-f782-ec24-cc50-e2dd80c440e6.htm" />
         <HelpTOCNode Title="EditarLoteCommand (Propiedad )" Url="html/09d4ae95-62d8-0fa6-a780-38af25f0fc34.htm" />
@@ -711,8 +1419,10 @@
         <HelpTOCNode Title="GenerarLoteCommand (Propiedad )" Url="html/e13fdc30-651f-8514-7ff0-180648c9b05e.htm" />
         <HelpTOCNode Title="ListaLotes (Propiedad )" Url="html/32da1e59-1916-8d32-a2e8-516f98db0d1c.htm" />
         <HelpTOCNode Title="LoteSeleccionado (Propiedad )" Url="html/f953d71e-7a00-9ab2-010b-ceb2402f1b93.htm" />
+        <HelpTOCNode Title="UsuarioLogeado (Propiedad )" Url="html/1d730f44-9a8d-fa68-958a-3a90ea508308.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="94823dca-480e-4977-89a8-59a4f9434ede" Title="LotesVM (M&#233;todos)" Url="html/11fcffa7-9748-5d22-a1f9-4a505bfdf37d.htm">
+      <HelpTOCNode Id="b6e39b1a-a1d6-4131-933c-3b9cb41670d8" Title="LotesVM (M&#233;todos)" Url="html/11fcffa7-9748-5d22-a1f9-4a505bfdf37d.htm">
+        <HelpTOCNode Title="AbrirVistaCrearModalidad (M&#233;todo )" Url="html/ea98a11b-ce30-41f5-7fda-9e422f15c4ad.htm" />
         <HelpTOCNode Title="AbrirVistaGenerarLote (M&#233;todo )" Url="html/99e51c0a-522f-5a65-2172-89edeef336e3.htm" />
         <HelpTOCNode Title="AsignarLote (M&#233;todo )" Url="html/6eb44b60-9ac6-7075-faa9-3e50a5782ccd.htm" />
         <HelpTOCNode Title="DesasignarLote (M&#233;todo )" Url="html/bda7504e-4fdb-6063-9e41-eb1455ab646f.htm" />
@@ -721,94 +1431,102 @@
         <HelpTOCNode Title="GenerarCodigoBarras (M&#233;todo )" Url="html/bc1674ea-4292-1898-e241-e612d3521e88.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="LotesVM (Eventos)" Url="html/9769f9f7-44a4-e448-9f5b-bdcf057f8aa6.htm" />
-      <HelpTOCNode Id="df797541-ff43-4c2b-81ac-56f127139da8" Title="LotesVM (Campos)" Url="html/f6436300-4357-7f8c-b18f-935128735028.htm">
+      <HelpTOCNode Id="a916132e-38ab-4894-828e-bf313162e2d0" Title="LotesVM (Campos)" Url="html/f6436300-4357-7f8c-b18f-935128735028.htm">
         <HelpTOCNode Title="listaLotes (Campo)" Url="html/6ac2728e-372f-a94d-e327-818268e31f3b.htm" />
         <HelpTOCNode Title="loteSeleccionado (Campo)" Url="html/54f357a0-44c7-13fd-bea6-ca385711ed05.htm" />
         <HelpTOCNode Title="servicioAPI (Campo)" Url="html/a0354ed9-a387-529e-c0d0-35a1efdfe1dd.htm" />
+        <HelpTOCNode Title="usuarioLogeado (Campo)" Url="html/018d01ed-ae01-2e9f-aabc-e721b3727d84.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e9fbdb89-2cf4-4c4f-93c6-9eb90bdf2a8f" Title="MainWindowVM (Clase)" Url="html/32a36471-ddde-0f25-e035-4bfec4549cb9.htm">
+    <HelpTOCNode Id="6830c073-7a66-4e9d-b2e0-46fd42d2f9d8" Title="MainWindowVM (Clase)" Url="html/32a36471-ddde-0f25-e035-4bfec4549cb9.htm">
       <HelpTOCNode Title="MainWindowVM (Constructor )" Url="html/3dea50d8-96f9-c989-23da-275e487e4f46.htm" />
-      <HelpTOCNode Id="5b4b9d0f-d3c0-4d86-a2cc-5406f15b2bc9" Title="MainWindowVM (Propiedades)" Url="html/82586f35-4cb5-cfc0-b9a2-aeb156dfc282.htm">
+      <HelpTOCNode Id="3c399620-3457-4f28-8f7a-45d49da5b2a2" Title="MainWindowVM (Propiedades)" Url="html/82586f35-4cb5-cfc0-b9a2-aeb156dfc282.htm">
         <HelpTOCNode Title="AbrirVistaAlumnosCommand (Propiedad )" Url="html/0452b26d-c1f3-2436-04f5-72e767a7316e.htm" />
+        <HelpTOCNode Title="AbrirVistaInformesCommand (Propiedad )" Url="html/3ff6354c-53e8-6618-8be3-2f8ded787e8e.htm" />
         <HelpTOCNode Title="AbrirVistaLibrosCommand (Propiedad )" Url="html/4ac09739-49e3-699d-b898-a01d131812c0.htm" />
         <HelpTOCNode Title="AbrirVistaLotesCommand (Propiedad )" Url="html/23c8650b-f281-be56-6f4f-96f8396e1c3f.htm" />
+        <HelpTOCNode Title="AnyadirLibroCommand (Propiedad )" Url="html/e9e3aab6-dff1-af2a-52a9-6872c659038e.htm" />
         <HelpTOCNode Title="GenerarLoteCommand (Propiedad )" Url="html/58d6ce40-398a-4a08-ef0c-0a1856125924.htm" />
         <HelpTOCNode Title="PestanyaActual (Propiedad )" Url="html/180b2f97-8301-7857-1f7c-40ecac5de8c6.htm" />
         <HelpTOCNode Title="UsuarioLogeado (Propiedad )" Url="html/ffbaa7c7-9af8-7fe6-66a7-aa837de53489.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b9038739-23a1-446f-8273-0985cbbf78b7" Title="MainWindowVM (M&#233;todos)" Url="html/24bb8467-cc4c-6db2-5938-9ccd057a7c49.htm">
+      <HelpTOCNode Id="d12a3b63-7ac0-40c5-b693-b1944f0eb47f" Title="MainWindowVM (M&#233;todos)" Url="html/24bb8467-cc4c-6db2-5938-9ccd057a7c49.htm">
         <HelpTOCNode Title="AbrirOpcionesSU (M&#233;todo )" Url="html/dfa0a80b-ffbe-368f-db95-e0bb684334ba.htm" />
         <HelpTOCNode Title="AbrirVistaAlumnos (M&#233;todo )" Url="html/586562a8-2a40-1493-b7fe-aa135103ee96.htm" />
+        <HelpTOCNode Title="AbrirVistaAnyadirAlumno (M&#233;todo )" Url="html/55523cd9-98cb-0a72-7df7-7c2966bfe7ff.htm" />
+        <HelpTOCNode Title="AbrirVistaAnyadirLibro (M&#233;todo )" Url="html/c5ef264d-bcbc-5a7d-d042-eabc322e8f4f.htm" />
         <HelpTOCNode Title="AbrirVistaDarDeAltaAlumno (M&#233;todo )" Url="html/f073ec5b-0a82-2f19-5591-999394af18cf.htm" />
         <HelpTOCNode Title="AbrirVistaGenerarLote (M&#233;todo )" Url="html/7f80da2a-99b8-eea0-d9d4-b252538e5b23.htm" />
+        <HelpTOCNode Title="AbrirVistaInformes (M&#233;todo )" Url="html/753ae78c-5335-e531-e94a-348583356b0f.htm" />
         <HelpTOCNode Title="AbrirVistaLibros (M&#233;todo )" Url="html/102a7cda-cfd0-8ef6-d95b-5341ffe1e922.htm" />
         <HelpTOCNode Title="AbrirVistaLotes (M&#233;todo )" Url="html/aaf7fe79-46aa-18e0-b756-03fe02a80e46.htm" />
         <HelpTOCNode Title="CerrarSesion (M&#233;todo )" Url="html/2da35a06-54f8-d05c-289b-d20b0d8eefaa.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="MainWindowVM (Eventos)" Url="html/732aca15-8845-6212-35da-6df2ed5a53e8.htm" />
-      <HelpTOCNode Id="fc7ab81b-c330-45da-98cd-41828d7f3c01" Title="MainWindowVM (Campos)" Url="html/f963654c-e614-91e1-02f5-1ffd72c3ffa5.htm">
+      <HelpTOCNode Id="fceed56e-55f4-44a1-8aed-6ae2874fceb6" Title="MainWindowVM (Campos)" Url="html/f963654c-e614-91e1-02f5-1ffd72c3ffa5.htm">
         <HelpTOCNode Title="pestanyaActual (Campo)" Url="html/c79221ee-89d4-7fa8-5eed-80045ba4a973.htm" />
         <HelpTOCNode Title="usuarioLogeado (Campo)" Url="html/6af24e04-14b2-d573-5ed3-dfd3dd0f360b.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="2fe11081-4eef-4aac-9453-a0492c1acc96" Title="NuevoUsuarioVM (Clase)" Url="html/15ed0bad-2084-2877-f9a2-4746ec86a0a7.htm">
+    <HelpTOCNode Id="a1d759f0-21e8-4ead-ab44-01d1f52c6ba5" Title="NuevoUsuarioVM (Clase)" Url="html/15ed0bad-2084-2877-f9a2-4746ec86a0a7.htm">
       <HelpTOCNode Title="NuevoUsuarioVM (Constructor )" Url="html/bc3e40c7-36dd-a96a-7159-7ec33590fcb3.htm" />
-      <HelpTOCNode Id="c632cec4-81bb-42c1-b746-17fbee52f831" Title="NuevoUsuarioVM (Propiedades)" Url="html/fb218c6f-a92f-92ce-5a02-a56f6253e245.htm">
+      <HelpTOCNode Id="3ac61bd0-d027-42fd-a7f7-224edd99f58c" Title="NuevoUsuarioVM (Propiedades)" Url="html/fb218c6f-a92f-92ce-5a02-a56f6253e245.htm">
         <HelpTOCNode Title="Password1 (Propiedad )" Url="html/86bda996-d6c7-3082-7f43-afed0a1cb829.htm" />
         <HelpTOCNode Title="Password2 (Propiedad )" Url="html/36db4018-2cac-ee26-b35a-18e622a5c221.htm" />
         <HelpTOCNode Title="UsuarioNuevo (Propiedad )" Url="html/19355957-ec07-cc44-cf4e-1bc4fe1f24c3.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c70bb172-7a14-4636-a3ea-2d75d743c16a" Title="NuevoUsuarioVM (M&#233;todos)" Url="html/48d6cd3c-8986-3314-d15b-54046a1b480f.htm">
+      <HelpTOCNode Id="dc39cfc0-56ef-4649-af1a-0541680a66d1" Title="NuevoUsuarioVM (M&#233;todos)" Url="html/48d6cd3c-8986-3314-d15b-54046a1b480f.htm">
         <HelpTOCNode Title="ComprobarCredenciales (M&#233;todo )" Url="html/e5cf5111-89da-5910-fa97-663129c0f643.htm" />
         <HelpTOCNode Title="CrearUsuario (M&#233;todo )" Url="html/8136b928-fadc-18f5-d2e4-728bad08fceb.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="NuevoUsuarioVM (Eventos)" Url="html/b163a6ab-799a-3df5-e5d7-af3fe99744db.htm" />
-      <HelpTOCNode Id="fd6c3450-7bd9-4b07-ab8f-475459dff947" Title="NuevoUsuarioVM (Campos)" Url="html/6001f8eb-d4d6-80bc-4766-83dce1b5089b.htm">
+      <HelpTOCNode Id="6961818a-6149-4db3-b8b6-7c10791027da" Title="NuevoUsuarioVM (Campos)" Url="html/6001f8eb-d4d6-80bc-4766-83dce1b5089b.htm">
         <HelpTOCNode Title="password1 (Campo)" Url="html/e82b275e-0e04-88a5-c1cb-94e9b984ebcc.htm" />
         <HelpTOCNode Title="password2 (Campo)" Url="html/01db2c6c-fd5e-8e29-d72d-a7ed91ef0f71.htm" />
         <HelpTOCNode Title="servicioApi (Campo)" Url="html/1f5f1f47-a599-e4cd-dc05-61c982ce0001.htm" />
         <HelpTOCNode Title="usuarioNuevo (Campo)" Url="html/8ab84dec-a39c-cba1-b25d-0b45b41d3fe3.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5b20a850-cb7c-4372-bbdf-5c67f52fa833" Title="OpcionesSuperUsuarioVM (Clase)" Url="html/3823a4cb-ef23-cdc0-c5c7-b78dcacc1d02.htm">
+    <HelpTOCNode Id="2f602313-ee1c-4e6b-9ce8-39079b73c0b7" Title="OpcionesSuperUsuarioVM (Clase)" Url="html/3823a4cb-ef23-cdc0-c5c7-b78dcacc1d02.htm">
       <HelpTOCNode Title="OpcionesSuperUsuarioVM (Constructor )" Url="html/b994bbd6-7280-a929-ba53-085cb0157c66.htm" />
-      <HelpTOCNode Id="87bd83df-46c1-4bcc-a102-2df5471b06b2" Title="OpcionesSuperUsuarioVM (Propiedades)" Url="html/0189689b-c84a-4f2b-ec88-186843673aff.htm">
+      <HelpTOCNode Id="50fd4dfb-2aca-438c-b599-f69009d18a0d" Title="OpcionesSuperUsuarioVM (Propiedades)" Url="html/0189689b-c84a-4f2b-ec88-186843673aff.htm">
+        <HelpTOCNode Title="AbrirVistaAdministrarUsuariosCommand (Propiedad )" Url="html/34e94a72-8789-64b9-d313-84e172703853.htm" />
         <HelpTOCNode Title="AbrirVistaUsuarioCommand (Propiedad )" Url="html/a6a684c3-de2b-9e65-74da-1a94a9448c50.htm" />
         <HelpTOCNode Title="CargaInicialCSVCommand (Propiedad )" Url="html/b578afa1-9998-a3c1-49bc-6a913d28e7dd.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="5e347187-72e5-4d36-87ee-95fc36f077c3" Title="OpcionesSuperUsuarioVM (M&#233;todos)" Url="html/61b3dc98-6605-5061-0d65-a579069928c9.htm">
+      <HelpTOCNode Id="1dedf677-50b5-4598-bff6-4faa42795406" Title="OpcionesSuperUsuarioVM (M&#233;todos)" Url="html/61b3dc98-6605-5061-0d65-a579069928c9.htm">
+        <HelpTOCNode Title="AbrirVistaAdministrarUsuarios (M&#233;todo )" Url="html/ea73e653-046d-2454-bb7d-c6d7dc4ea3fc.htm" />
         <HelpTOCNode Title="AbrirVistaNuevoUsuario (M&#233;todo )" Url="html/a7adf399-edc1-e0d6-9b4a-fdf58f20780c.htm" />
         <HelpTOCNode Title="CargaInicialCSV (M&#233;todo )" Url="html/1b0a0d20-fcf7-52ea-532f-7a7b6b01cfc1.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="OpcionesSuperUsuarioVM (Eventos)" Url="html/ef065b29-a5ce-3e4f-2dd2-2db29739fe86.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="04ce4fcf-ed73-47ac-b8b9-56eff3b30a8c" Title="VerIncidenciasAlumnoVM (Clase)" Url="html/84accea2-2edf-475a-d54b-c9bc0337985d.htm">
+    <HelpTOCNode Id="9e34e82d-48e7-4379-8646-dce11724c38f" Title="VerIncidenciasAlumnoVM (Clase)" Url="html/84accea2-2edf-475a-d54b-c9bc0337985d.htm">
       <HelpTOCNode Title="VerIncidenciasAlumnoVM (Constructor )" Url="html/34f14523-781a-c314-1af6-b370c183c321.htm" />
-      <HelpTOCNode Id="c5ba347a-5167-4d0e-8f49-b99a84ca889e" Title="VerIncidenciasAlumnoVM (Propiedades)" Url="html/3d88ef8d-e627-3fee-fc0a-25a94e525bee.htm">
+      <HelpTOCNode Id="8e7f3a66-0daf-4806-a692-c965129c83a3" Title="VerIncidenciasAlumnoVM (Propiedades)" Url="html/3d88ef8d-e627-3fee-fc0a-25a94e525bee.htm">
         <HelpTOCNode Title="AlumnoSeleccionado (Propiedad )" Url="html/459cc4eb-48a6-5d1f-c28b-77139dc1fcbe.htm" />
         <HelpTOCNode Title="GuardarIncidenciaCommand (Propiedad )" Url="html/acd399bc-eb85-905a-82a8-f2916522d28d.htm" />
         <HelpTOCNode Title="TextoIncidencias (Propiedad )" Url="html/1bbd4ae3-e04a-10d2-1724-7750bb108316.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="9d0ac974-2e0d-4cae-b9a2-1985fd15d37a" Title="VerIncidenciasAlumnoVM (M&#233;todos)" Url="html/c9e7be29-5615-8899-7296-8de0358ff160.htm">
+      <HelpTOCNode Id="791d2874-cdf8-4394-a052-90660c4b19fa" Title="VerIncidenciasAlumnoVM (M&#233;todos)" Url="html/c9e7be29-5615-8899-7296-8de0358ff160.htm">
         <HelpTOCNode Title="GuardarIncidencia (M&#233;todo )" Url="html/90e04549-7ce1-1b47-ef29-d340d8768ec1.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="VerIncidenciasAlumnoVM (Eventos)" Url="html/a0dd53d1-abd6-30a6-094a-00302ec67025.htm" />
-      <HelpTOCNode Id="6fa32cd4-7a99-4844-b7b6-0eee9aab18a8" Title="VerIncidenciasAlumnoVM (Campos)" Url="html/efbb9913-245c-1b16-77a1-01504525f145.htm">
+      <HelpTOCNode Id="6ba22f51-6112-4728-9edd-b6ae8fde713a" Title="VerIncidenciasAlumnoVM (Campos)" Url="html/efbb9913-245c-1b16-77a1-01504525f145.htm">
         <HelpTOCNode Title="alumnoSeleccionado (Campo)" Url="html/057fb107-728d-0b82-aa4b-f9140e4387bf.htm" />
         <HelpTOCNode Title="servicioAPI (Campo)" Url="html/55a9db55-f178-10b9-6d7f-e0b86587face.htm" />
         <HelpTOCNode Title="textoIncidencias (Campo)" Url="html/fcf9e4d6-eedd-2854-1298-4dd04c63cc94.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="d705ae6b-fe94-4f34-81f9-cdfae35ff173" Title="VerLoteAlumnoVM (Clase)" Url="html/287b7336-5f5f-1194-b01a-c5dc88361209.htm">
+    <HelpTOCNode Id="9a9c301d-5f4d-4ec9-bd6e-5a28f8e1083d" Title="VerLoteAlumnoVM (Clase)" Url="html/287b7336-5f5f-1194-b01a-c5dc88361209.htm">
       <HelpTOCNode Title="VerLoteAlumnoVM (Constructor )" Url="html/40285436-1d08-3980-edb5-da642b266f07.htm" />
-      <HelpTOCNode Id="65715a09-dd6f-4a12-b9cd-9baa43dc2f39" Title="VerLoteAlumnoVM (Propiedades)" Url="html/3de2ea03-3e2b-81a5-61c0-f980802863b2.htm">
+      <HelpTOCNode Id="5be50527-5026-4b5e-a9b8-257163e0fd80" Title="VerLoteAlumnoVM (Propiedades)" Url="html/3de2ea03-3e2b-81a5-61c0-f980802863b2.htm">
         <HelpTOCNode Title="Alumno (Propiedad )" Url="html/31e419d7-d6c1-f325-37cf-816a027344c8.htm" />
         <HelpTOCNode Title="LoteAlumno (Propiedad )" Url="html/5bcabcb0-5ca6-ab1e-47cf-214507db9bb2.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="VerLoteAlumnoVM (M&#233;todos)" Url="html/1ec7ca7a-ba34-c021-c90d-9b6b16f6284d.htm" />
       <HelpTOCNode Title="VerLoteAlumnoVM (Eventos)" Url="html/ea099702-ab5b-5e96-1290-3fb6d2b9697a.htm" />
-      <HelpTOCNode Id="2a3f07e2-31ab-4b4e-a386-95a93a3ef552" Title="VerLoteAlumnoVM (Campos)" Url="html/c5f9ca1a-b030-4597-e78f-5b8ab21d008e.htm">
+      <HelpTOCNode Id="4a79808a-c27b-4c3a-b25c-2dd2282c1a51" Title="VerLoteAlumnoVM (Campos)" Url="html/c5f9ca1a-b030-4597-e78f-5b8ab21d008e.htm">
         <HelpTOCNode Title="alumno (Campo)" Url="html/e7eb6544-2826-bde9-0e37-60e01ba8f762.htm" />
         <HelpTOCNode Title="loteAlumno (Campo)" Url="html/13432807-701d-c0a2-296e-76311ceb0600.htm" />
         <HelpTOCNode Title="servicioAPI (Campo)" Url="html/41e9c496-43de-b240-e5aa-60c482d1dd88.htm" />

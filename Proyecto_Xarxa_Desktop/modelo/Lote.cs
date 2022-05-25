@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Proyecto_Xarxa_Desktop.modelo
 {
     /// <summary>
-    /// Clase Modelo de los lotes de libros que tienen los alumnos
+    /// Clase modelo de los lotes de libros que tienen los alumnos
     /// </summary>
     /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class Lote : ObservableObject

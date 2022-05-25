@@ -13,6 +13,10 @@ using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
+    /// <summary>
+    /// VM de EditarLibroDialog
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class EditarLibroVM : ObservableObject
     {
         /// <summary>

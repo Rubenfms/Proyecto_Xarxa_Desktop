@@ -11,7 +11,7 @@ namespace Proyecto_Xarxa_Desktop.modelo
 {
 
     /// <summary>
-    /// Clase Modelo de alumno
+    /// Clase modelo de alumno
     /// </summary>
     /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class Alumno : ObservableObject

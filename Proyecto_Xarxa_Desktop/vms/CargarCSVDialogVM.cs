@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
+    /// <summary>
+    /// VM de CargarCSVDialog
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class CargarCSVDialogVM : ObservableObject
     {
         /// <summary>

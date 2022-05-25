@@ -8,6 +8,10 @@ using Newtonsoft.Json;
 
 namespace Proyecto_Xarxa_Desktop.modelo
 {
+    /// <summary>
+    /// Clase modelo para el numero del siguiente lote en generar lote
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class Numero : ObservableObject
     {
         /// <summary>

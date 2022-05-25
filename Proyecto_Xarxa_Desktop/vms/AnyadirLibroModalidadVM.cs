@@ -12,6 +12,10 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
+    /// <summary>
+    /// VM de AnyadirLibroModalidadDialog
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class AnyadirLibroModalidadVM : ObservableObject
     {
         /// <summary>

@@ -14,31 +14,62 @@ using System.Windows;
 
 namespace Proyecto_Xarxa_Desktop.vms
 {
+    /// <summary>
+    /// VM de EditarAlumnoDialog
+    /// </summary>
+    /// <seealso cref="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
     class EditarAlumnoVM : ObservableObject
     {
+        /// <summary>
+        /// El alumno que está siendo editado.
+        /// </summary>
         private Alumno alumno;
+        /// <summary>
+        /// Gets or sets el alumno que está siendo editado.
+        /// </summary>
+        /// <value>
+        /// El alumno que está siendo editado.
+        /// </value>
         public Alumno Alumno
         {
             get => alumno;
             set => SetProperty(ref alumno, value);
         }
 
+        /// <summary>
+        /// The servicio API
+        /// </summary>
         private ServicioAPI servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EditarAlumnoVM"/> class.
+        /// </summary>
         public EditarAlumnoVM()
         {
             RecibirAlumno();
             EditarAlumnoCommand = new RelayCommand(EditarAlumno);
         }
 
+        /// <summary>
+        /// Gets the editar alumno command.
+        /// </summary>
+        /// <value>
+        /// The editar alumno command.
+        /// </value>
         public RelayCommand EditarAlumnoCommand { get; }
 
+        /// <summary>
+        /// Recibirs the alumno.
+        /// </summary>
         public void RecibirAlumno()
         {
             Alumno = WeakReferenceMessenger.Default.Send<AlumnoSeleccionadoRequestMessage>();
             Alumno = new Alumno(Alumno);
         }
 
-
+        /// <summary>
+        /// Edita el alumno the alumno.
+        /// </summary>
         public void EditarAlumno()
         {
             if (ComprobarDatosIntroducidos())
@@ -49,6 +80,10 @@ namespace Proyecto_Xarxa_Desktop.vms
             }
         }
 
+        /// <summary>
+        /// Comprueba los datos introducidos en el formulario.
+        /// </summary>
+        /// <returns>Devuelve true o false dependiendo de si los datos introducidos son correctos</returns>
         public bool ComprobarDatosIntroducidos()
         {
             try

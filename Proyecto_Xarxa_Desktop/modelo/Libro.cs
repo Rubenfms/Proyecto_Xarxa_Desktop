@@ -6,6 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// Ola
+/// </summary>
 namespace Proyecto_Xarxa_Desktop.modelo
 {
     /// <summary>
