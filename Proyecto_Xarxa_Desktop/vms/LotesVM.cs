@@ -138,6 +138,8 @@ namespace Proyecto_Xarxa_Desktop.vms
             ListaLotes = servicioAPI.GetLotes();
             LoteSeleccionado = null;
 
+            EsperarCambioEnLaLista();
+
             // Comandos
             GenerarLoteCommand = new RelayCommand(AbrirVistaGenerarLote);
             AsignarLoteCommand = new RelayCommand(AsignarLote);
@@ -159,6 +161,20 @@ namespace Proyecto_Xarxa_Desktop.vms
                 {
                     if (!m.HasReceivedResponse) m.Reply(LoteSeleccionado);
                 });
+        }
+
+        /// <summary>
+        /// Espera un cambio en la lista.
+        /// </summary>
+        private void EsperarCambioEnLaLista()
+        {
+            WeakReferenceMessenger.Default.Register<DatoAñadidoOModificadoMessage>(this, (r, m) =>
+            {
+                if (m.Value)
+                {
+                    ListaLotes = servicioAPI.GetLotes();
+                }
+            });
         }
 
         /// <summary>

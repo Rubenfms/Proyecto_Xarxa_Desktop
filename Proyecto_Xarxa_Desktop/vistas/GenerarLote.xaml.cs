@@ -55,5 +55,11 @@ namespace Proyecto_Xarxa_Desktop.vistas
                 vm.GenerarNumeroLote(modalidadSeleccionada);
             }
         }
-}
+
+        private void GenerarLoteButton_Click(object sender, RoutedEventArgs e)
+        {
+            bool resultDialog = vm.ConfirmarLote();
+            if (resultDialog) DialogResult = resultDialog;
+        }
+    }
 }

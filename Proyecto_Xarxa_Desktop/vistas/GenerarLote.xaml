@@ -54,7 +54,8 @@
             Grid.RowSpan="3"
             Grid.Column="0"
             IsSynchronizedWithCurrentItem="True"
-            ItemsSource="{Binding Path=ModalidadSeleccionada.LibrosModalidad}">
+            ItemsSource="{Binding Path=ModalidadSeleccionada.LibrosModalidad}"
+            ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.View>
                 <GridView>
                     <GridViewColumn
@@ -87,26 +88,29 @@
                 SelectionChanged="ComboBoxModalidad_SelectionChanged" />
         </StackPanel>
 
-        <Button Grid.Row="3"
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="150"
+            Command="{Binding Path=LimpiarSeleccionCommand}"
+            Content="Eliminar Selección" />
+
+        <StackPanel
+            Grid.Row="4"
+            Grid.Column="1"
+            Orientation="Vertical">
+            <TextBlock>Cantidad de lotes a generar:</TextBlock>
+            <TextBox
+                Grid.Row="4"
                 Grid.Column="1"
                 Width="150"
-                Command="{Binding Path=LimpiarSeleccionCommand}"
-                Content="Eliminar Selección" />
+                Margin="5"
+                Text="{Binding Path=NumeroLotes}" />
 
-        <StackPanel Orientation="Vertical"
-                    Grid.Row="4"
-                    Grid.Column="1"
-                    >
-            <TextBlock>Cantidad de lotes a generar:</TextBlock>
-            <TextBox Text="{Binding Path=NumeroLotes}"
-                       Grid.Row="4"
-                       Grid.Column="1"
-                     Margin="5"
-                     Width="150"/>
-
-            <Button Width="150"
-                    Command="{Binding Path=ConfirmarLoteCommand}"
-                    Content="Confirmar Lote" />
+            <Button
+                Width="150"
+                Click="GenerarLoteButton_Click"
+                Content="Confirmar Lote" />
         </StackPanel>
     </Grid>
 </Window>
