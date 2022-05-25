@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace Proyecto_Xarxa_Desktop.vistas
 {
@@ -54,5 +55,5 @@ namespace Proyecto_Xarxa_Desktop.vistas
                 vm.GenerarNumeroLote(modalidadSeleccionada);
             }
         }
-    }
+}
 }

@@ -87,18 +87,26 @@
                 SelectionChanged="ComboBoxModalidad_SelectionChanged" />
         </StackPanel>
 
-        <Button
-            Grid.Row="3"
-            Grid.Column="1"
-            Width="150"
-            Command="{Binding Path=LimpiarSeleccionCommand}"
-            Content="Eliminar Selección" />
+        <Button Grid.Row="3"
+                Grid.Column="1"
+                Width="150"
+                Command="{Binding Path=LimpiarSeleccionCommand}"
+                Content="Eliminar Selección" />
 
-        <Button
-            Grid.Row="4"
-            Grid.Column="1"
-            Width="150"
-            Command="{Binding Path=ConfirmarLoteCommand}"
-            Content="Confirmar Lote" />
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    >
+            <TextBlock>Cantidad de lotes a generar:</TextBlock>
+            <TextBox Text="{Binding Path=NumeroLotes}"
+                       Grid.Row="4"
+                       Grid.Column="1"
+                     Margin="5"
+                     Width="150"/>
+
+            <Button Width="150"
+                    Command="{Binding Path=ConfirmarLoteCommand}"
+                    Content="Confirmar Lote" />
+        </StackPanel>
     </Grid>
 </Window>

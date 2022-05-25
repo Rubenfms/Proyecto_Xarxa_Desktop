@@ -70,6 +70,14 @@ namespace Proyecto_Xarxa_Desktop.vms
             set { SetProperty(ref idLote, value); }
         }
 
+        private string numeroLotes;
+
+        public string NumeroLotes
+        {
+            get { return numeroLotes; }
+            set { SetProperty(ref numeroLotes, value); }
+        }
+
         /// <summary>
         /// The servicio API
         /// </summary>
@@ -99,6 +107,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             servicioAPI = new ServicioAPI(Properties.Settings.Default.CadenaConexionLocalhost);
             ListaModalidades = servicioAPI.GetModalidades();
+            NumeroLotes = "1";
 
             // Comandos
             LimpiarSeleccionCommand = new RelayCommand(LimpiarSeleccion);
@@ -148,10 +157,33 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </summary>
         public void ConfirmarLote()
         {
-            Lote nuevolote = new Lote((int)IdLote, ModalidadSeleccionada);
-            HttpStatusCode? statusCode = servicioAPI.PostLote(nuevolote);
-            ServicioDialogos.ServicioMessageBox($"Resultado del alta del lote: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+            int numero;
+            if (int.TryParse(NumeroLotes, out numero))
+            {
+                for (int i = 0; i < numero; i++)
+                {
+                    Lote nuevolote = new Lote((int)IdLote, ModalidadSeleccionada);
+                    HttpStatusCode? statusCode = servicioAPI.PostLote(nuevolote);
 
+                    string curso = ModalidadSeleccionada.Curso.Remove(1, ModalidadSeleccionada.Curso.Length - 1);
+                    string cabeceraId = curso + modalidadSeleccionada.Id;
+                    IdLote = int.Parse(cabeceraId + servicioAPI.GetNextIdLote(int.Parse(cabeceraId)).ToString().PadLeft(3, '0'));
+
+                    if (statusCode != HttpStatusCode.Created)
+                    {
+                        ServicioDialogos.ServicioMessageBox($"Resultado del alta del lote: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+                ServicioDialogos.ServicioMessageBox($"{numero} lotes dados de alta", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else if (numero < 1)
+            {
+                ServicioDialogos.ServicioMessageBox($"Introduce un numero correcto de lotes", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                ServicioDialogos.ServicioMessageBox($"Introduce un numero en el recuadro", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }
