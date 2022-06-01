@@ -4,15 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
-        Title="Asignar Lote"
-        Width="450"
-        Height="450"
-        Icon="../assets/personadd.ico"
+        Title="Borrar modalidad"
+        Width="250"
+        Height="150"
+        Icon="../assets/emblem_danger.ico"
         ResizeMode="NoResize"
         ShowInTaskbar="False"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d">
     <Grid>
-        
+        <StackPanel>
+            <TextBlock Margin="0,0,0,20"
+                       HorizontalAlignment="Center"
+                       Text="Modalidad:" />
+            <ComboBox x:Name="ModalidadComboBox"
+                      Width="200"
+                      DisplayMemberPath="Nombre"
+                      ItemsSource="{Binding Path=ListaModalidades}"
+                      SelectedItem="{Binding Path=ModalidadSeleccionada}"
+                      SelectionChanged="ComboBoxModalidad_SelectionChanged" />
+            <DockPanel>
+                <Button Margin="20,15,20,15"
+                    DockPanel.Dock="Right"
+                        Command="{Binding Path=BorrarCommand}"
+                        Content="Borrar">
+                </Button>
+            </DockPanel>
+        </StackPanel>
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
-﻿using Proyecto_Xarxa_Desktop.vms;
+﻿using Proyecto_Xarxa_Desktop.modelo;
+using Proyecto_Xarxa_Desktop.vms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,10 +21,24 @@ namespace Proyecto_Xarxa_Desktop.vistas
     /// </summary>
     public partial class BorrarModalidadDialog : Window
     {
+        BorrarModalidadVM vm = new BorrarModalidadVM();
+
         public BorrarModalidadDialog()
         {
             InitializeComponent();
-            DataContext = new BorrarModalidadVM();
+            DataContext = vm;
+        }
+
+        private void ComboBoxModalidad_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Modalidad modalidadSeleccionada = (Modalidad)ModalidadComboBox.SelectedItem;
+
+            // Añadido condicional para que no de conflicto al limpiar la selección
+            if (modalidadSeleccionada != null)
+            {
+                // Mostramos el listbox con todas las modalidades
+                vm.CargarModalidades(modalidadSeleccionada.Nombre);
+            }
         }
     }
 }

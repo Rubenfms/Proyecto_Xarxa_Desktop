@@ -321,6 +321,22 @@ namespace Proyecto_Xarxa_Desktop.servicios
                 throw;
             }
         }
+
+        public HttpStatusCode? DeleteModalidad(int id)
+        {
+            var request = new RestRequest($"/xarxa/modalidades/{id}", Method.DELETE);
+            request.AddCookie(COOKIE_SESSION, GetSessionId());
+
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("x-", "");
+            var body = @"";
+            request.AddParameter("text/plain", body, ParameterType.RequestBody);
+
+            IRestResponse response = Cliente.Execute(request);
+            return response.StatusCode;
+
+        }
+
         #endregion
 
         #region Métodos Usuarios
