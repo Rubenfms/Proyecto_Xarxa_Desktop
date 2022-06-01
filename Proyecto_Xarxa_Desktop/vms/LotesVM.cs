@@ -126,6 +126,9 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </value>
         public RelayCommand GenerarCBCommand { get; }
 
+        public RelayCommand EliminarModalidadCommand { get; }
+        
+
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LotesVM"/> class.
@@ -147,6 +150,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             EditarLoteCommand = new RelayCommand(EditarLote);
             EliminarLoteCommand = new RelayCommand(EliminarLote);
             GenerarCBCommand = new RelayCommand(GenerarCodigoBarras);
+            EliminarModalidadCommand = new RelayCommand(BorrarModalidad);
 
             // Suscripción para mandar el lote a Editar Lote
             WeakReferenceMessenger.Default.Register<LotesVM, EditarLoteRequestMessage>
@@ -161,6 +165,14 @@ namespace Proyecto_Xarxa_Desktop.vms
                 {
                     if (!m.HasReceivedResponse) m.Reply(LoteSeleccionado);
                 });
+        }
+
+        private void BorrarModalidad()
+        {
+            if (true) //mensaje de confirmacion
+            {
+
+            }
         }
 
         /// <summary>

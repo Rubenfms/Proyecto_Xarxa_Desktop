@@ -37,6 +37,10 @@
             VerticalAlignment="Center"
             DockPanel.Dock="Right">
 
+            <Button Command="{Binding Path=EliminarModalidadCommand}"
+                    Content="Crear Modalidad"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
+                    Style="{StaticResource EstiloBoton}" />
             <Button
                 Click="CrearModalidadButton_Click"
                 Content="Crear Modalidad"

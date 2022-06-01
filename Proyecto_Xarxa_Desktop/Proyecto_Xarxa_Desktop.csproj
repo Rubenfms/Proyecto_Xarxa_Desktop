@@ -291,6 +291,9 @@
     <Compile Include="vistas\AsignarLoteDialog.xaml.cs">
       <DependentUpon>AsignarLoteDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vistas\BorrarModalidadDialog.xaml.cs">
+      <DependentUpon>BorrarModalidadDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="vistas\CargarCSVDialog.xaml.cs">
       <DependentUpon>CargarCSVDialog.xaml</DependentUpon>
     </Compile>
@@ -345,6 +348,7 @@
     <Compile Include="vms\AnyadirLibroModalidadVM.cs" />
     <Compile Include="vms\AnyadirLibroVM.cs" />
     <Compile Include="vms\AsignarLoteVM.cs" />
+    <Compile Include="vms\BorrarModalidadVM.cs" />
     <Compile Include="vms\CargarCSVDialogVM.cs" />
     <Compile Include="vms\CrearModalidadVM.cs" />
     <Compile Include="vms\EditarAlumnoVM.cs" />
@@ -423,6 +427,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vistas\AsignarLoteDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vistas\BorrarModalidadDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
