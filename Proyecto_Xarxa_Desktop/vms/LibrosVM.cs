@@ -97,6 +97,8 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// </value>
         public RelayCommand EliminarLibroCommand { get; }
 
+        public RelayCommand LimpiarSeleccionCommand { get; }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="LibrosVM"/> class.
         /// </summary>
@@ -116,6 +118,8 @@ namespace Proyecto_Xarxa_Desktop.vms
             AnyadirLibroCommand = new RelayCommand(AbrirVistaAnyadirLibro);
             EditarLibroCommand = new RelayCommand(AbrirVistaEditarLibro);
             EliminarLibroCommand = new RelayCommand(EliminarLibro);
+            LimpiarSeleccionCommand = new RelayCommand(LimpiarSeleccion);
+
 
             // Suscripción para mandar el libro a EditarLote
             try
@@ -154,6 +158,11 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             ServicioNavegacion.AbrirVistaAnyadirLibro();
         }
+
+        /// <summary>
+        /// Limpia la selección del libro.
+        /// </summary>
+        public void LimpiarSeleccion() => LibroSeleccionado = null;
 
         /// <summary>
         /// Abre la vista editar libro.
