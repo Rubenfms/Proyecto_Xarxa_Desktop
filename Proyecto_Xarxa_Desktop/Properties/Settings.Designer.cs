@@ -70,7 +70,8 @@ namespace Proyecto_Xarxa_Desktop.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("server = 127.0.0.1; database = bdxarxa; Uid = root; pwd =1234")]
+        [global::System.Configuration.DefaultSettingValueAttribute("server = xarxa.eastus.cloudapp.azure.com; database = bdxarxa; Uid = juandiremoto;" +
+            " pwd =1234")]
         public string CadenaConexionMySQL {
             get {
                 return ((string)(this["CadenaConexionMySQL"]));
