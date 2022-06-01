@@ -88,6 +88,7 @@
                 Content="Editar Alumno"
                 DockPanel.Dock="Right"
                 Style="{StaticResource EstiloAdminButton}" />
+            
             <!--  Filtros  -->
             <GroupBox Margin="20,10,0,0">
                 <GroupBox.Header>

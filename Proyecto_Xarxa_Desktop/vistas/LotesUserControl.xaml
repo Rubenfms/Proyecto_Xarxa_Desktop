@@ -47,36 +47,17 @@
 
     <DockPanel>
         <StackPanel
-            HorizontalAlignment="Center"
-            DockPanel.Dock="Top"
-            Orientation="Horizontal">
-            <materialDesign:PackIcon
-                Width="30"
-                Height="30"
-                Margin="10,0,10,0"
-                VerticalAlignment="Center"
-                DockPanel.Dock="Left"
-                Kind="Pencil" />
-            <TextBox
-                x:Name="Buscador"
-                Margin="0,0,0,10"
-                VerticalAlignment="Center"
-                materialDesign:HintAssist.Hint="Filtra por ID, Modalidad o NIA..."
-                DockPanel.Dock="Left"
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                Text="{Binding Path=Buscador}"
-                TextChanged="Buscador_TextChanged" />
-        </StackPanel>
-        <StackPanel
             Margin="5,30,5,5"
             VerticalAlignment="Center"
             DockPanel.Dock="Right">
 
             <Button
+                Margin="0,0,0,10"
                 Command="{Binding Path=EliminarModalidadCommand}"
                 Content="Borrar Modalidad"
                 IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
+                Margin="0,0,0,30"
                 Click="CrearModalidadButton_Click"
                 Content="Crear Modalidad"
                 IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
@@ -108,6 +89,52 @@
                     Content="Generar Código de Barras"
                     Style="{StaticResource EstiloAdminButton}" />
                 <Button Command="{Binding LimpiarSeleccionCommand}" Content="Limpiar selección" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <!--  Filtros  -->
+            <GroupBox Margin="20,10,0,0">
+                <GroupBox.Header>
+                    <TextBlock Foreground="{StaticResource PrimaryColor1}" Text="Filtros:" />
+                </GroupBox.Header>
+                <StackPanel>
+                    <RadioButton
+                        x:Name="SoloXarxaRadioButton"
+                        Click="LotesAsignadosRadioButton_Click"
+                        Content="Lotes asignados" />
+                    <RadioButton
+                        x:Name="NoXarxaRadioButton"
+                        Click="LotesNoAsignadosRadioButton_Click"
+                        Content="Lotes no asignados" />
+                    <RadioButton
+                        x:Name="SinFiltroRadioButton"
+                        Click="SinFiltroRadioButton_Click"
+                        Content="Sin filtro"
+                        IsChecked="True" />
+                </StackPanel>
+            </GroupBox>
+            <StackPanel
+                Margin="30,0,0,0"
+                HorizontalAlignment="Center"
+                DockPanel.Dock="Top"
+                Orientation="Horizontal">
+                <materialDesign:PackIcon
+                    Width="30"
+                    Height="30"
+                    Margin="10,0,10,0"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Left"
+                    Kind="Pencil" />
+                <TextBox
+                    x:Name="Buscador"
+                    Width="250"
+                    Margin="0,0,0,10"
+                    VerticalAlignment="Center"
+                    materialDesign:HintAssist.Hint="Filtra por ID, Modalidad o NIA..."
+                    DockPanel.Dock="Left"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                    Text="{Binding Path=Buscador}"
+                    TextChanged="Buscador_TextChanged" />
             </StackPanel>
         </StackPanel>
 
