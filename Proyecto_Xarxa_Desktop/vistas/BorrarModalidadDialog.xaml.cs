@@ -40,5 +40,10 @@ namespace Proyecto_Xarxa_Desktop.vistas
                 vm.CargarModalidades(modalidadSeleccionada.Nombre);
             }
         }
+
+        private void Borrar_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = true;
+        }
     }
 }

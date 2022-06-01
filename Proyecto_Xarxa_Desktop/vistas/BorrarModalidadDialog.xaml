@@ -27,7 +27,8 @@
                 <Button Margin="20,15,20,15"
                     DockPanel.Dock="Right"
                         Command="{Binding Path=BorrarCommand}"
-                        Content="Borrar">
+                        Content="Borrar"
+                        Click="Borrar_Click">
                 </Button>
             </DockPanel>
         </StackPanel>

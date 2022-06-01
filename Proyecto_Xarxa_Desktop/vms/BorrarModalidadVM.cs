@@ -1,11 +1,14 @@
 ﻿using Microsoft.Toolkit.Mvvm.ComponentModel;
 using Microsoft.Toolkit.Mvvm.Input;
+using Microsoft.Toolkit.Mvvm.Messaging;
+using Proyecto_Xarxa_Desktop.mensajeria;
 using Proyecto_Xarxa_Desktop.modelo;
 using Proyecto_Xarxa_Desktop.servicios;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -67,9 +70,14 @@ namespace Proyecto_Xarxa_Desktop.vms
                     }
                 }
 
-                servicioAPI.DeleteModalidad(ModalidadSeleccionada.Id);
+                HttpStatusCode? statusCode = servicioAPI.DeleteModalidad(ModalidadSeleccionada.Id);
+
+                WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.OK));
+
+                ServicioDialogos.ServicioMessageBox($"Resultado de la eliminacion de la modalidad: {statusCode}", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
+
+
             }
         }
-
     }
 }

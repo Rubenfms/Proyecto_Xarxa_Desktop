@@ -281,8 +281,10 @@ namespace Proyecto_Xarxa_Desktop.vms
             {
                 HttpStatusCode? statusCode = servicioAPI.DeleteLote(LoteSeleccionado.IdLote);
                 ServicioDialogos.ServicioMessageBox($"Resultado de la eliminación del lote: {statusCode}", "Eliminación lote", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+                ListaLotes = servicioAPI.GetLotes();
             }
             else ServicioDialogos.ServicioMessageBox("Tienes que seleccionar un lote para poder eliminarlo.", "Selecciona un lote primero", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+
         }
 
         /// <summary>

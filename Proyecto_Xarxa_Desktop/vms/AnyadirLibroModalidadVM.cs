@@ -74,7 +74,6 @@ namespace Proyecto_Xarxa_Desktop.vms
             if (LibroSeleccionado != null)
             {
                 WeakReferenceMessenger.Default.Send(new AnyadirLibroAModalidadMessage(LibroSeleccionado));
-                ServicioDialogos.ServicioMessageBoxWithoutImage("Libro añadido", "Libro Añadido", System.Windows.MessageBoxButton.OK);
 
             }
             else ServicioDialogos.ServicioMessageBox("Selecciona un libro para añadirlo a la modalidad.", "Selecciona un libro primero", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
