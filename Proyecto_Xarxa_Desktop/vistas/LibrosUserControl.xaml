@@ -13,6 +13,26 @@
 
     <UserControl.Resources>
         <convertidores:InvitadoToBoolean x:Key="EnabledConverter" />
+
+        <Style BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding LibroSeleccionado}" Value="{x:Null}">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="Margin" Value="10" />
+        </Style>
+
+        <Style
+            x:Key="EstiloAdminButton"
+            BasedOn="{StaticResource {x:Type Button}}"
+            TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" Value="False">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
     </UserControl.Resources>
     <DockPanel>
 
@@ -23,15 +43,17 @@
                 Content="Añadir libro"
                 IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
-                Margin="10"
                 Click="EditarLibroButton_Click"
                 Content="Editar Libro"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
+                Style="{StaticResource EstiloAdminButton}" />
             <Button
-                Margin="10"
                 Command="{Binding Path=EliminarLibroCommand}"
                 Content="Eliminar Libro"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
+                Style="{StaticResource EstiloAdminButton}" />
+            <Button
+                Margin="10"
+                Command="{Binding LimpiarSeleccionCommand}"
+                Content="Limpiar selección" />
         </StackPanel>
 
 
