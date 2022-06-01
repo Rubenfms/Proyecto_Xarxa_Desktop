@@ -72,9 +72,10 @@
             VerticalAlignment="Center"
             DockPanel.Dock="Right">
 
-            <Button Command="{Binding Path=EliminarModalidadCommand}"
-                    Content="Borrar Modalidad"
-                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
+            <Button
+                Command="{Binding Path=EliminarModalidadCommand}"
+                Content="Borrar Modalidad"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Click="CrearModalidadButton_Click"
                 Content="Crear Modalidad"
@@ -82,7 +83,7 @@
             <Button
                 Command="{Binding Path=GenerarLoteCommand}"
                 Content="Generar Lote"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"/>
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Command="{Binding Path=EditarLoteCommand}"
                 Content="Editar Lote"
@@ -105,10 +106,8 @@
                 <Button
                     Command="{Binding Path=GenerarCBCommand}"
                     Content="Generar Código de Barras"
-                    Style="{StaticResource EstiloAdminButton}"/>
-                <Button
-                    Command="{Binding LimpiarSeleccionCommand}"
-                    Content="Limpiar selección" />
+                    Style="{StaticResource EstiloAdminButton}" />
+                <Button Command="{Binding LimpiarSeleccionCommand}" Content="Limpiar selección" />
             </StackPanel>
         </StackPanel>
 
