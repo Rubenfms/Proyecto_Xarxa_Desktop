@@ -59,7 +59,7 @@
             DockPanel.Dock="Right">
 
             <Button Command="{Binding Path=EliminarModalidadCommand}"
-                    Content="Crear Modalidad"
+                    Content="Borrar Modalidad"
                     IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                     Style="{StaticResource EstiloBoton}" />
             <Button

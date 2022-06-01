@@ -169,10 +169,8 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         private void BorrarModalidad()
         {
-            if (true) //mensaje de confirmacion
-            {
                 _ = ServicioNavegacion.AbrirVistaBorrarModalidad();
-            }
+
         }
 
         /// <summary>
