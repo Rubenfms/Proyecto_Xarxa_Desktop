@@ -16,12 +16,26 @@
         <convertidores:InvitadoToBoolean x:Key="EnabledConverter" />
 
         <!--  Estilo para aplicar margen a los botones de la derecha  -->
-        <Style
-            x:Key="EstiloBoton"
-            BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}"
-            TargetType="{x:Type Button}">
-            <Setter Property="Margin" Value="10" />
+        <Style BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding LoteSeleccionado}" Value="{x:Null}">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Style.Triggers>
+            <Setter Property="Margin" Value="5" />
         </Style>
+
+        <Style
+            x:Key="EstiloAdminButton"
+            BasedOn="{StaticResource {x:Type Button}}"
+            TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" Value="False">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
 
         <!--  Estilo genérico para los textblock  -->
         <Style TargetType="{x:Type TextBlock}">
@@ -58,47 +72,42 @@
             VerticalAlignment="Center"
             DockPanel.Dock="Right">
 
-            <Button Command="{Binding Path=EliminarModalidadCommand}"
-                    Content="Borrar Modalidad"
-                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
-                    Style="{StaticResource EstiloBoton}" />
+            <Button
+                Command="{Binding Path=EliminarModalidadCommand}"
+                Content="Borrar Modalidad"
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Click="CrearModalidadButton_Click"
                 Content="Crear Modalidad"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
-                Style="{StaticResource EstiloBoton}" />
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Command="{Binding Path=GenerarLoteCommand}"
                 Content="Generar Lote"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
-                Style="{StaticResource EstiloBoton}" />
+                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
             <Button
                 Command="{Binding Path=EditarLoteCommand}"
                 Content="Editar Lote"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
-                Style="{StaticResource EstiloBoton}" />
+                Style="{StaticResource EstiloAdminButton}" />
             <Button
                 Command="{Binding Path=EliminarLoteCommand}"
                 Content="Eliminar Lote"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
-                Style="{StaticResource EstiloBoton}" />
+                Style="{StaticResource EstiloAdminButton}" />
             <StackPanel Margin="0,40,0,0">
                 <Button
                     Command="{Binding Path=AsignarLoteCommand}"
                     Content="Asignar Lote"
-                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
-                    Style="{StaticResource EstiloBoton}" />
+                    Style="{StaticResource EstiloAdminButton}" />
                 <Button
                     Command="{Binding Path=DesasignarLoteCommand}"
                     Content="Desasignar Lote"
-                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
-                    Style="{StaticResource EstiloBoton}" />
+                    Style="{StaticResource EstiloAdminButton}" />
             </StackPanel>
             <StackPanel Margin="0,40,0,0">
                 <Button
                     Command="{Binding Path=GenerarCBCommand}"
                     Content="Generar Código de Barras"
-                    Style="{StaticResource EstiloBoton}" />
+                    Style="{StaticResource EstiloAdminButton}" />
+                <Button Command="{Binding LimpiarSeleccionCommand}" Content="Limpiar selección" />
             </StackPanel>
         </StackPanel>
 

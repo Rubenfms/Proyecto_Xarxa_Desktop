@@ -5,6 +5,7 @@
     xmlns:convertidores="clr-namespace:Proyecto_Xarxa_Desktop.convertidores"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     d:DesignHeight="450"
     d:DesignWidth="800"
@@ -35,6 +36,27 @@
         </Style>
     </UserControl.Resources>
     <DockPanel>
+        <StackPanel
+            HorizontalAlignment="Center"
+            DockPanel.Dock="Top"
+            Orientation="Horizontal">
+            <materialDesign:PackIcon
+                Width="30"
+                Height="30"
+                Margin="10,0,10,0"
+                VerticalAlignment="Center"
+                DockPanel.Dock="Left"
+                Kind="BookSearch" />
+            <TextBox
+                x:Name="Buscador"
+                Margin="0,0,0,10"
+                VerticalAlignment="Center"
+                materialDesign:HintAssist.Hint="Filtra por ISBN, titulo, curso o departamento"
+                DockPanel.Dock="Left"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=Buscador}"
+                TextChanged="Buscador_TextChanged" />
+        </StackPanel>
 
         <StackPanel VerticalAlignment="Center" DockPanel.Dock="Right">
             <Button

@@ -140,7 +140,7 @@ namespace Proyecto_Xarxa_Desktop
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void AyudaButton_Click(object sender, RoutedEventArgs e)
         {
-            string helpFileName = @"..\..\..\help\manual\Manual_Usuario_Xarxa.chm";
+            string helpFileName = @"..\..\..\help\Manual_Usuario_Xarxa.chm";
 
             if (System.IO.File.Exists(helpFileName))
             {
