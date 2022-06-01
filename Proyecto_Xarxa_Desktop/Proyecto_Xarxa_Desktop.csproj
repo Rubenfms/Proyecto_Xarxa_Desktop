@@ -191,6 +191,7 @@
     <Compile Include="convertidores\IncidenciasToSiNo.cs" />
     <Compile Include="convertidores\InvitadoToBoolean.cs" />
     <Compile Include="convertidores\NullToVisibilityModificado.cs" />
+    <Compile Include="convertidores\NumeroToSiNo.cs" />
     <Compile Include="convertidores\TipoUsuarioToEnabled.cs" />
     <Compile Include="informes\ConcesionReport.cs">
       <AutoGen>True</AutoGen>

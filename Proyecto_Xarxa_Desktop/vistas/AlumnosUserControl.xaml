@@ -16,6 +16,7 @@
         <convertidores:BooleanToSiNo x:Key="BooleanToSiNoConverter" />
         <convertidores:IncidenciasToSiNo x:Key="IncidenciasConverter" />
         <convertidores:InvitadoToBoolean x:Key="EnabledConverter" />
+        <convertidores:NumeroToSiNo x:Key="VerLoteConverter" />
 
         <!--  Estilo para aplicar margen a los botones de la derecha  -->
         <Style BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}" TargetType="{x:Type Button}">
@@ -33,6 +34,17 @@
             TargetType="{x:Type Button}">
             <Style.Triggers>
                 <DataTrigger Binding="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" Value="False">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style
+            x:Key="EstiloVerLote"
+            BasedOn="{StaticResource {x:Type Button}}"
+            TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=AlumnoSeleccionado.IdLote, Converter={StaticResource VerLoteConverter}}" Value="true">
                     <Setter Property="IsEnabled" Value="False" />
                 </DataTrigger>
             </Style.Triggers>
@@ -122,7 +134,8 @@
             <Button
                 Margin="10"
                 Command="{Binding Path=VerLoteAlumnoCommand}"
-                Content="Ver Lote" />
+                Content="Ver Lote"
+                Style="{StaticResource EstiloVerLote}" />
             <Button
                 Margin="10"
                 Command="{Binding Path=VerIncidenciasCommand}"
