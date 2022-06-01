@@ -218,8 +218,11 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             try
             {
-
-                ServicioNavegacion.AbrirVistaVerLoteAlumno();
+                if(AlumnoSeleccionado.IdLote <= 0)
+                {
+                    ServicioDialogos.ServicioMessageBox("El alumno no tiene lote asociado", "No tiene lote asociado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+                }
+                else ServicioNavegacion.AbrirVistaVerLoteAlumno();
 
             }
             catch (NullReferenceException)
