@@ -188,7 +188,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                 {
                     HttpStatusCode? statusCode = servicioAPI.DeleteLibro(LibroSeleccionado.Isbn);
                     ServicioDialogos.ServicioMessageBox($"Resultado del borrado del libro: {statusCode}", $"{statusCode}", MessageBoxButton.OK, MessageBoxImage.Information);
-                    WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.Created));
+                    ListaLibros = servicioAPI.GetLibros();
                 }
             }
             else ServicioDialogos.ServicioMessageBox("Selecciona un libro para poder eliminarlo.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
