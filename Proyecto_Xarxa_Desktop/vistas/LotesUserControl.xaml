@@ -54,10 +54,14 @@
                 TextChanged="Buscador_TextChanged" />
         </StackPanel>
         <StackPanel
-            Margin="5,50,5,5"
+            Margin="5,30,5,5"
             VerticalAlignment="Center"
             DockPanel.Dock="Right">
 
+            <Button Command="{Binding Path=EliminarModalidadCommand}"
+                    Content="Borrar Modalidad"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
+                    Style="{StaticResource EstiloBoton}" />
             <Button
                 Click="CrearModalidadButton_Click"
                 Content="Crear Modalidad"
@@ -78,7 +82,7 @@
                 Content="Eliminar Lote"
                 IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                 Style="{StaticResource EstiloBoton}" />
-            <StackPanel Margin="0,60,0,0">
+            <StackPanel Margin="0,40,0,0">
                 <Button
                     Command="{Binding Path=AsignarLoteCommand}"
                     Content="Asignar Lote"
@@ -90,7 +94,7 @@
                     IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
                     Style="{StaticResource EstiloBoton}" />
             </StackPanel>
-            <StackPanel Margin="0,60,0,0">
+            <StackPanel Margin="0,40,0,0">
                 <Button
                     Command="{Binding Path=GenerarCBCommand}"
                     Content="Generar Código de Barras"
