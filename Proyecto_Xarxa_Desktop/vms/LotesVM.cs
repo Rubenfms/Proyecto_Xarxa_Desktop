@@ -171,7 +171,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             if (true) //mensaje de confirmacion
             {
-
+                _ = ServicioNavegacion.AbrirVistaBorrarModalidad();
             }
         }
 

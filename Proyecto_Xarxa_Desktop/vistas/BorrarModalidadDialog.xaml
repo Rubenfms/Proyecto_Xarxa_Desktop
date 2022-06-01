@@ -4,8 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
-        mc:Ignorable="d"
-        Title="BorrarModalidadDialog" Height="450" Width="800">
+        Title="Asignar Lote"
+        Width="450"
+        Height="450"
+        Icon="../assets/personadd.ico"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
     <Grid>
         
     </Grid>

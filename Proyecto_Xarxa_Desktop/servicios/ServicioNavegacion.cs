@@ -164,5 +164,7 @@ namespace Proyecto_Xarxa_Desktop.servicios
         /// Abre la vista para añadir un libro a la modalidad.
         /// </summary>
         internal static void AbrirVistaAnyadirLibroModalidad() => new AnyadirLibroModalidad().ShowDialog();
+
+        internal static bool? AbrirVistaBorrarModalidad() => new BorrarModalidadDialog().ShowDialog();
     }
 }
