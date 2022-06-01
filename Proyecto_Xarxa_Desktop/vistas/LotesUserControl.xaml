@@ -33,7 +33,28 @@
 
     <DockPanel>
         <StackPanel
-            Margin="0,50,0,0"
+            HorizontalAlignment="Center"
+            DockPanel.Dock="Top"
+            Orientation="Horizontal">
+            <materialDesign:PackIcon
+                Width="30"
+                Height="30"
+                Margin="10,0,10,0"
+                VerticalAlignment="Center"
+                DockPanel.Dock="Left"
+                Kind="Pencil" />
+            <TextBox
+                x:Name="Buscador"
+                Margin="0,0,0,10"
+                VerticalAlignment="Center"
+                materialDesign:HintAssist.Hint="Filtra por ID, Modalidad o NIA..."
+                DockPanel.Dock="Left"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                Text="{Binding Path=Buscador}"
+                TextChanged="Buscador_TextChanged" />
+        </StackPanel>
+        <StackPanel
+            Margin="5,50,5,5"
             VerticalAlignment="Center"
             DockPanel.Dock="Right">
 
@@ -78,6 +99,7 @@
         </StackPanel>
 
         <ListView
+            x:Name="listview"
             IsSynchronizedWithCurrentItem="True"
             ItemsSource="{Binding Path=ListaLotes}"
             SelectedItem="{Binding Path=LoteSeleccionado}">
