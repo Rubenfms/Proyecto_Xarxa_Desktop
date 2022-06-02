@@ -136,7 +136,20 @@ namespace Proyecto_Xarxa_Desktop.vms
         /// <param name="modalidadSeleccionada">The modalidad seleccionada.</param>
         public void GenerarNumeroLote(Modalidad modalidadSeleccionada)
         {
-            string curso = ModalidadSeleccionada.Curso.Remove(1, ModalidadSeleccionada.Curso.Length - 1); // Como viene en formato (1ºESO) me quedo solo con el numero
+            string curso = "";
+            if (ModalidadSeleccionada.Curso == "1FPB")
+            {
+                curso = "5";
+            }
+            else if (ModalidadSeleccionada.Curso == "2FPB")
+            {
+                curso = "6";
+            }
+            else
+            {
+                curso = ModalidadSeleccionada.Curso.Remove(1, ModalidadSeleccionada.Curso.Length - 1); // Como viene en formato (1ºESO) me quedo solo con el numero
+
+            }
 
             string cabeceraId = curso + modalidadSeleccionada.Id;
             // Hallamos el idLote
@@ -167,9 +180,7 @@ namespace Proyecto_Xarxa_Desktop.vms
                         Lote nuevolote = new Lote((int)IdLote, ModalidadSeleccionada);
                         HttpStatusCode? statusCode = servicioAPI.PostLote(nuevolote);
 
-                        string curso = ModalidadSeleccionada.Curso.Remove(1, ModalidadSeleccionada.Curso.Length - 1);
-                        string cabeceraId = curso + modalidadSeleccionada.Id;
-                        IdLote = int.Parse(cabeceraId + servicioAPI.GetNextIdLote(int.Parse(cabeceraId)).ToString().PadLeft(3, '0'));
+                        GenerarNumeroLote(ModalidadSeleccionada);
 
                         WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(true));
 

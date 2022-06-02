@@ -1,37 +1,41 @@
-﻿<UserControl
-    x:Class="Proyecto_Xarxa_Desktop.vistas.LotesUserControl"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:convertidores="clr-namespace:Proyecto_Xarxa_Desktop.convertidores"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
-    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    d:DesignHeight="450"
-    d:DesignWidth="800"
-    Background="{StaticResource SecondaryColor2}"
-    mc:Ignorable="d">
+﻿<UserControl x:Class="Proyecto_Xarxa_Desktop.vistas.LotesUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:convertidores="clr-namespace:Proyecto_Xarxa_Desktop.convertidores"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Proyecto_Xarxa_Desktop.vistas"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             Background="{StaticResource SecondaryColor2}"
+             mc:Ignorable="d">
 
     <UserControl.Resources>
         <convertidores:InvitadoToBoolean x:Key="EnabledConverter" />
 
         <!--  Estilo para aplicar margen a los botones de la derecha  -->
-        <Style BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}" TargetType="{x:Type Button}">
+        <Style BasedOn="{StaticResource MaterialDesignFlatAccentBgButton}"
+               TargetType="{x:Type Button}">
             <Style.Triggers>
-                <DataTrigger Binding="{Binding LoteSeleccionado}" Value="{x:Null}">
-                    <Setter Property="IsEnabled" Value="False" />
+                <DataTrigger Binding="{Binding LoteSeleccionado}"
+                             Value="{x:Null}">
+                    <Setter Property="IsEnabled"
+                            Value="False" />
                 </DataTrigger>
             </Style.Triggers>
-            <Setter Property="Margin" Value="5" />
+            <Setter Property="Margin"
+                    Value="5" />
         </Style>
 
-        <Style
-            x:Key="EstiloAdminButton"
-            BasedOn="{StaticResource {x:Type Button}}"
-            TargetType="{x:Type Button}">
+        <Style x:Key="EstiloAdminButton"
+               BasedOn="{StaticResource {x:Type Button}}"
+               TargetType="{x:Type Button}">
             <Style.Triggers>
-                <DataTrigger Binding="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" Value="False">
-                    <Setter Property="IsEnabled" Value="False" />
+                <DataTrigger Binding="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}"
+                             Value="False">
+                    <Setter Property="IsEnabled"
+                            Value="False" />
                 </DataTrigger>
             </Style.Triggers>
         </Style>
@@ -39,164 +43,153 @@
 
         <!--  Estilo genérico para los textblock  -->
         <Style TargetType="{x:Type TextBlock}">
-            <Setter Property="FontSize" Value="18" />
-            <Setter Property="Foreground" Value="{StaticResource PrimaryColor3}" />
+            <Setter Property="FontSize"
+                    Value="18" />
+            <Setter Property="Foreground"
+                    Value="{StaticResource PrimaryColor3}" />
         </Style>
 
     </UserControl.Resources>
 
     <DockPanel>
-        <StackPanel
-            Margin="5,30,5,5"
-            VerticalAlignment="Center"
-            DockPanel.Dock="Right">
+        <StackPanel Margin="5,30,5,5"
+                    VerticalAlignment="Center"
+                    DockPanel.Dock="Right">
 
-            <Button
-                Margin="0,0,0,10"
-                Command="{Binding Path=EliminarModalidadCommand}"
-                Content="Borrar Modalidad"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
-            <Button
-                Margin="0,0,0,30"
-                Click="CrearModalidadButton_Click"
-                Content="Crear Modalidad"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
-            <Button
-                Command="{Binding Path=GenerarLoteCommand}"
-                Content="Generar Lote"
-                IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
-            <Button
-                Command="{Binding Path=EditarLoteCommand}"
-                Content="Editar Lote"
-                Style="{StaticResource EstiloAdminButton}" />
-            <Button
-                Command="{Binding Path=EliminarLoteCommand}"
-                Content="Eliminar Lote"
-                Style="{StaticResource EstiloAdminButton}" />
+            <Button Margin="0,0,0,10"
+                    Command="{Binding Path=EliminarModalidadCommand}"
+                    Content="Borrar Modalidad"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
+            <Button Margin="0,0,0,30"
+                    Click="CrearModalidadButton_Click"
+                    Content="Crear Modalidad"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
+            <Button Command="{Binding Path=GenerarLoteCommand}"
+                    Content="Generar Lote"
+                    IsEnabled="{Binding Path=UsuarioLogeado.TipoUsuario, Converter={StaticResource EnabledConverter}}" />
+            <Button Command="{Binding Path=EditarLoteCommand}"
+                    Content="Editar Lote"
+                    Style="{StaticResource EstiloAdminButton}" />
+            <Button Command="{Binding Path=EliminarLoteCommand}"
+                    Content="Eliminar Lote"
+                    Style="{StaticResource EstiloAdminButton}" />
             <StackPanel Margin="0,40,0,0">
-                <Button
-                    Command="{Binding Path=AsignarLoteCommand}"
-                    Content="Asignar Lote"
-                    Style="{StaticResource EstiloAdminButton}" />
-                <Button
-                    Command="{Binding Path=DesasignarLoteCommand}"
-                    Content="Desasignar Lote"
-                    Style="{StaticResource EstiloAdminButton}" />
+                <Button Command="{Binding Path=AsignarLoteCommand}"
+                        Content="Asignar Lote"
+                        Style="{StaticResource EstiloAdminButton}" />
+                <Button Command="{Binding Path=DesasignarLoteCommand}"
+                        Content="Desasignar Lote"
+                        Style="{StaticResource EstiloAdminButton}" />
             </StackPanel>
             <StackPanel Margin="0,40,0,0">
-                <Button
-                    Command="{Binding Path=GenerarCBCommand}"
-                    Content="Generar Código de Barras"
-                    Style="{StaticResource EstiloAdminButton}" />
-                <Button Command="{Binding LimpiarSeleccionCommand}" Content="Limpiar selección" />
+                <Button Command="{Binding Path=GenerarCBCommand}"
+                        Content="Generar Código de Barras"
+                        Style="{StaticResource EstiloAdminButton}" />
+                <Button Command="{Binding LimpiarSeleccionCommand}"
+                        Content="Limpiar selección" />
             </StackPanel>
         </StackPanel>
-        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+        <StackPanel DockPanel.Dock="Top"
+                    Orientation="Horizontal">
             <!--  Filtros  -->
             <GroupBox Margin="20,10,0,0">
                 <GroupBox.Header>
-                    <TextBlock Foreground="{StaticResource PrimaryColor1}" Text="Filtros:" />
+                    <TextBlock Foreground="{StaticResource PrimaryColor1}"
+                               Text="Filtros:" />
                 </GroupBox.Header>
                 <StackPanel>
-                    <RadioButton
-                        x:Name="SoloXarxaRadioButton"
-                        Click="LotesAsignadosRadioButton_Click"
-                        Content="Lotes asignados" />
-                    <RadioButton
-                        x:Name="NoXarxaRadioButton"
-                        Click="LotesNoAsignadosRadioButton_Click"
-                        Content="Lotes no asignados" />
-                    <RadioButton
-                        x:Name="SinFiltroRadioButton"
-                        Click="SinFiltroRadioButton_Click"
-                        Content="Sin filtro"
-                        IsChecked="True" />
+                    <RadioButton x:Name="SoloXarxaRadioButton"
+                                 Click="LotesAsignadosRadioButton_Click"
+                                 Content="Lotes asignados" />
+                    <RadioButton x:Name="NoXarxaRadioButton"
+                                 Click="LotesNoAsignadosRadioButton_Click"
+                                 Content="Lotes no asignados" />
+                    <RadioButton x:Name="SinFiltroRadioButton"
+                                 Click="SinFiltroRadioButton_Click"
+                                 Content="Sin filtro"
+                                 IsChecked="True" />
                 </StackPanel>
             </GroupBox>
-            <StackPanel
-                Margin="30,0,0,0"
-                HorizontalAlignment="Center"
-                DockPanel.Dock="Top"
-                Orientation="Horizontal">
-                <materialDesign:PackIcon
-                    Width="30"
-                    Height="30"
-                    Margin="10,0,10,0"
-                    VerticalAlignment="Center"
-                    DockPanel.Dock="Left"
-                    Kind="Pencil" />
-                <TextBox
-                    x:Name="Buscador"
-                    Width="250"
-                    Margin="0,0,0,10"
-                    VerticalAlignment="Center"
-                    materialDesign:HintAssist.Hint="Filtra por ID, Modalidad o NIA..."
-                    DockPanel.Dock="Left"
-                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                    Text="{Binding Path=Buscador}"
-                    TextChanged="Buscador_TextChanged" />
+            <StackPanel Margin="30,0,0,0"
+                        HorizontalAlignment="Center"
+                        DockPanel.Dock="Top"
+                        Orientation="Horizontal">
+                <materialDesign:PackIcon Width="30"
+                                         Height="30"
+                                         Margin="10,0,10,0"
+                                         VerticalAlignment="Center"
+                                         DockPanel.Dock="Left"
+                                         Kind="Pencil" />
+                <TextBox x:Name="Buscador"
+                         Width="250"
+                         Margin="0,0,0,10"
+                         VerticalAlignment="Center"
+                         materialDesign:HintAssist.Hint="Filtra por ID, Modalidad o NIA..."
+                         DockPanel.Dock="Left"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         Text="{Binding Path=Buscador}"
+                         TextChanged="Buscador_TextChanged" />
             </StackPanel>
         </StackPanel>
 
-        <ListView
-            x:Name="listview"
-            IsSynchronizedWithCurrentItem="True"
-            ItemsSource="{Binding Path=ListaLotes}"
-            SelectedItem="{Binding Path=LoteSeleccionado}">
+        <ListView x:Name="listview"
+                  IsSynchronizedWithCurrentItem="True"
+                  ItemsSource="{Binding Path=ListaLotes}"
+                  SelectedItem="{Binding Path=LoteSeleccionado}">
             <ListView.View>
                 <GridView>
                     <!--  Columna que contiene la lista de IDs  -->
-                    <GridViewColumn Width="120" Header="Id">
+                    <GridViewColumn Width="120"
+                                    Header="Id">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock
-                                    HorizontalAlignment="Center"
-                                    FontSize="18"
-                                    Foreground="{StaticResource PrimaryColor3}"
-                                    Text="{Binding Path=IdLote}" />
+                                <TextBlock HorizontalAlignment="Center"
+                                           FontSize="18"
+                                           Foreground="{StaticResource PrimaryColor3}"
+                                           Text="{Binding Path=IdLote}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
                     <!--  Columna que contiene la lista de libros  -->
-                    <GridViewColumn Width="180" Header="Libros">
+                    <GridViewColumn Width="180"
+                                    Header="Libros">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <ComboBox
-                                    Width="180"
-                                    DisplayMemberPath="Titulo"
-                                    FontSize="18"
-                                    Foreground="{StaticResource PrimaryColor3}"
-                                    IsEditable="True"
-                                    IsReadOnly="True"
-                                    ItemsSource="{Binding Path=LibrosLote}"
-                                    Text="Ver libros:" />
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-
-                    <!--  Columna que muestra la modalidad del lote  -->
-                    <GridViewColumn Width="200" Header="Modalidad">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock
-                                    HorizontalAlignment="Center"
-                                    FontSize="18"
-                                    Foreground="{StaticResource PrimaryColor3}"
-                                    Text="{Binding Path=ModalidadLote.Nombre}" />
+                                <ComboBox Width="180"
+                                          DisplayMemberPath="Titulo"
+                                          FontSize="18"
+                                          Foreground="{StaticResource PrimaryColor3}"
+                                          IsEditable="True"
+                                          IsReadOnly="True"
+                                          ItemsSource="{Binding Path=LibrosLote}"
+                                          Text="Ver libros:" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
                     <!--  Columna que muestra el NIA del alumno asociado  -->
-                    <GridViewColumn Width="120" Header="NIA">
+                    <GridViewColumn Width="120"
+                                    Header="NIA">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock
-                                    HorizontalAlignment="Center"
-                                    FontSize="18"
-                                    Foreground="{StaticResource PrimaryColor3}"
-                                    Text="{Binding Path=NiaAlumno}" />
+                                <TextBlock HorizontalAlignment="Center"
+                                           FontSize="18"
+                                           Foreground="{StaticResource PrimaryColor3}"
+                                           Text="{Binding Path=NiaAlumno}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <!--  Columna que muestra la modalidad del lote  -->
+                    <GridViewColumn Width="500"
+                                    Header="Modalidad">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock HorizontalAlignment="Center"
+                                           FontSize="18"
+                                           Foreground="{StaticResource PrimaryColor3}"
+                                           Text="{Binding Path=ModalidadLote.Nombre}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
