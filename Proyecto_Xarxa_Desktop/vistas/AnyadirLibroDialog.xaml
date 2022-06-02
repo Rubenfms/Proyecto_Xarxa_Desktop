@@ -78,7 +78,7 @@
             materialDesign:HintAssist.Hint="Introduce Editorial..."
             FontSize="18"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-            Text="{Binding Path=LibroSel.Editorial}" />
+            Text="{Binding Path=LibroSel.Editorial, UpdateSourceTrigger=PropertyChanged}" />
 
         <StackPanel Orientation="Horizontal">
             <Button

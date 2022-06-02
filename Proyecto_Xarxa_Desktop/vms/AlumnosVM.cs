@@ -98,6 +98,8 @@ namespace Proyecto_Xarxa_Desktop.vms
 
         public RelayCommand LimpiarSeleccionCommand { get; }
 
+        public RelayCommand AplicarConcesionCommand { get; }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="AlumnosVM"/> class.
         /// </summary>
@@ -115,6 +117,7 @@ namespace Proyecto_Xarxa_Desktop.vms
             AnyadirAlumnoCommand = new RelayCommand(AnyadirAlumno);
             EditarAlumnoCommand = new RelayCommand(EditarAlumno);
             LimpiarSeleccionCommand = new RelayCommand(LimpiarSeleccion);
+            AplicarConcesionCommand = new RelayCommand(AplicarConcesion);
 
             // Mensajeria Ver Lote
             try
@@ -171,6 +174,15 @@ namespace Proyecto_Xarxa_Desktop.vms
             });
         }
 
+        public void AplicarConcesion()
+        {
+            AlumnoSeleccionado.Concesion = !AlumnoSeleccionado.Concesion;
+
+            HttpStatusCode? statusCode = servicioAPI.PutAlumno(AlumnoSeleccionado);
+            ServicioDialogos.ServicioMessageBox($"Resultado de la concesión del alumno: {statusCode}", "Resultado concesión", MessageBoxButton.OK, MessageBoxImage.Information);
+
+        }
+
         /// <summary>
         /// Método que abre ventana de dar de alta al pulsar el botón "Dar de alta"
         /// </summary>
@@ -218,7 +230,7 @@ namespace Proyecto_Xarxa_Desktop.vms
         {
             try
             {
-                if(AlumnoSeleccionado.IdLote <= 0)
+                if (AlumnoSeleccionado.IdLote <= 0)
                 {
                     ServicioDialogos.ServicioMessageBox("El alumno no tiene lote asociado", "No tiene lote asociado", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
                 }

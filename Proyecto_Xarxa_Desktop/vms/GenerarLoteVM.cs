@@ -140,7 +140,7 @@ namespace Proyecto_Xarxa_Desktop.vms
 
             string cabeceraId = curso + modalidadSeleccionada.Id;
             // Hallamos el idLote
-            IdLote = int.Parse( cabeceraId + servicioAPI.GetNextIdLote(int.Parse(cabeceraId)).ToString().PadLeft(3, '0'));
+            IdLote = int.Parse(cabeceraId + servicioAPI.GetNextIdLote(int.Parse(cabeceraId)).ToString().PadLeft(3, '0'));
         }
 
         /// <summary>
@@ -158,37 +158,42 @@ namespace Proyecto_Xarxa_Desktop.vms
         public bool ConfirmarLote()
         {
             int numero;
-            if (int.TryParse(NumeroLotes, out numero))
+            if (ModalidadSeleccionada != null)
             {
-                for (int i = 0; i < numero; i++)
+                if (int.TryParse(NumeroLotes, out numero))
                 {
-                    Lote nuevolote = new Lote((int)IdLote, ModalidadSeleccionada);
-                    HttpStatusCode? statusCode = servicioAPI.PostLote(nuevolote);
-
-                    string curso = ModalidadSeleccionada.Curso.Remove(1, ModalidadSeleccionada.Curso.Length - 1);
-                    string cabeceraId = curso + modalidadSeleccionada.Id;
-                    IdLote = int.Parse(cabeceraId + servicioAPI.GetNextIdLote(int.Parse(cabeceraId)).ToString().PadLeft(3, '0'));
-
-                    WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(statusCode == HttpStatusCode.Created));
-
-                    if (statusCode != HttpStatusCode.Created)
+                    for (int i = 0; i < numero; i++)
                     {
-                        ServicioDialogos.ServicioMessageBox($"Resultado del alta del lote: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                        Lote nuevolote = new Lote((int)IdLote, ModalidadSeleccionada);
+                        HttpStatusCode? statusCode = servicioAPI.PostLote(nuevolote);
+
+                        string curso = ModalidadSeleccionada.Curso.Remove(1, ModalidadSeleccionada.Curso.Length - 1);
+                        string cabeceraId = curso + modalidadSeleccionada.Id;
+                        IdLote = int.Parse(cabeceraId + servicioAPI.GetNextIdLote(int.Parse(cabeceraId)).ToString().PadLeft(3, '0'));
+
+                        WeakReferenceMessenger.Default.Send(new DatoAñadidoOModificadoMessage(true));
+
+                        if (statusCode != HttpStatusCode.Created)
+                        {
+                            ServicioDialogos.ServicioMessageBox($"Resultado del alta del lote: {statusCode}", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                            return true;
+                        }
                     }
+                    ServicioDialogos.ServicioMessageBox($"{numero} lotes dados de alta", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return true;
                 }
-                ServicioDialogos.ServicioMessageBox($"{numero} lotes dados de alta", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
-                return true;
+                else if (numero < 1)
+                {
+                    ServicioDialogos.ServicioMessageBox($"Introduce un numero correcto de lotes", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return false;
+                }
+                else
+                {
+                    ServicioDialogos.ServicioMessageBox($"Introduce un numero en el recuadro", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return false;
+                }
             }
-            else if (numero < 1)
-            {
-                ServicioDialogos.ServicioMessageBox($"Introduce un numero correcto de lotes", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
-                return false;
-            }
-            else
-            {
-                ServicioDialogos.ServicioMessageBox($"Introduce un numero en el recuadro", "Resultado alta", MessageBoxButton.OK, MessageBoxImage.Information);
-                return false;
-            }
+            else return false;
         }
     }
 }

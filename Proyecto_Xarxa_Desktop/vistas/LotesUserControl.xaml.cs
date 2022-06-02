@@ -81,7 +81,7 @@ namespace Proyecto_Xarxa_Desktop.vistas
             string filtro = Buscador.Text.ToUpper();
             foreach (Lote l in vm.ListaLotes)
             {
-                if (l.IdLote > 0)
+                if (l.NiaAlumno > 0)
                 {
                     listview.Items.Add(l);
                 }
@@ -100,10 +100,9 @@ namespace Proyecto_Xarxa_Desktop.vistas
 
 
             // Filtramos y mostramos el resultado filtrado
-            string filtro = Buscador.Text.ToUpper();
             foreach (Lote l in vm.ListaLotes)
             {
-                if (l.IdLote == 0)
+                if (l.NiaAlumno == null || l.NiaAlumno == 0)
                 {
                     listview.Items.Add(l);
                 }
